@@ -18,6 +18,10 @@ body {
  	margin-left:2%;
  	opacity:0;
  }
+ .menuclick:hover{
+ 	cursor:pointer;
+ 	color:blue;
+ }
  ul {
 list-style-type: none;
 }

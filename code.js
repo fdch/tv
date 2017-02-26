@@ -151,46 +151,44 @@ $(function() {
 			});
 /* ====== end ALL WORK CATEGORIES IN WORKS.PHP ======*/
 	
-	$(".menuclick").hover(function() {
-		$(this).css('cursor','pointer');
-	});
 
-			$(".menuclick .bio").click(function() {
+
+			$(".bio").click(function() {
 				$("#content").fadeOut(300);
 				$("#content").load( "bio.html");
 				$("#content").fadeIn(300);
 			});
-			$(".menuclick .works").click(function() {
+			$(".works").click(function() {
 				$("#content").fadeOut(300);
 				$("#content").load( "works.html");
 				$("#content").fadeIn(300);
 			});
-			$(".menuclick .code").click(function() {
+			$(".code").click(function() {
 				$("#content").fadeOut(300);
 				$("#content").load( "code.html");
 				$("#content").fadeIn(300);
 			});
-			$(".menuclick .video").click(function() {
+			$(".video").click(function() {
 				$("#content").fadeOut(300);
 				$("#content").load( "video.html");
 				$("#content").fadeIn(300);
 			});
-			$(".menuclick .blog").click(function() {
+			$(".blog").click(function() {
 				$("#content").fadeOut(300);
 				$("#content").load( "blog.html");
 				$("#content").fadeIn(300);
 			});
-			$(".menuclick .games").click(function() {
+			$(".games").click(function() {
 				$("#content").fadeOut(300);
 				$("#content").load( "games.html");
 				$("#content").fadeIn(300);
 			});
-			$(".menuclick .social").click(function() {
+			$(".social").click(function() {
 				$("#content").fadeOut(300);
 				$("#content").load( "social.html");
 				$("#content").fadeIn(300);
 			});
-			$(".menuclick .contacto").click(function() {
+			$(".contacto").click(function() {
 				$("#content").fadeOut(300);
 				$("#content").load( "contacto.html");
 				$("#content").fadeIn(300);
