@@ -3,9 +3,9 @@
 <a href="index.html">[[[[[</a> 
 <span class="menulink bio">bi[o</span> 
 <span class="menulink works"><span class=eng>[works</span><span class=spa style=display:none>[ob]ras</span></span> 
-<span class="menulink code"><span class=eng>cod[e</span><span class=spa style=display:none>c[ó]dig]o</span></span> 	
+<a href="https://github.com/fdch"><span class="menulink code"><span class=eng>cod[e</span><span class=spa style=display:none>c[ó]dig]o</span></span> 	</a>
 <span class="menulink video">vi[deo</span> 
-<span class="menulink blog">blo[g</span> 
+<a href="https://fedecamarahalac.tumblr.com"><span class="menulink blog">blo[g</span> </a>
 <span class="menulink games"><span class=eng>g[ames</span><span class=spa style=display:none>jue[go]s</span></span> 
 <span class="menulink social">s[ocia]l</span> 
 con[t<span class="menulink contacto">act</span> ]o
@@ -26,16 +26,12 @@ con[t<span class="menulink contacto">act</span> ]o
 				$("#content-wrap").fadeOut(300);
 				$("#content").delay(300).load( "works.html");
 			});
-			$(".code").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#main").fadeOut(300).delay(300).location.href = "https://github.com/fdch";
+			$(".code, .blog").click(function() {
+				$("#main").fadeOut(300);
 			});
 			$(".video").click(function() {
 				$("#content-wrap").fadeOut(300);
 				$("#content").delay(300).load( "video.html");
-			});
-			$(".blog").click(function() {
-				$("#main").fadeOut(300).delay(300).location.href = "https://fedecamarahalac.tumblr.com";
 			});
 			$(".games").click(function() {
 				$("#content-wrap").fadeOut(300);
