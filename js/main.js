@@ -42,7 +42,7 @@ $(function() {
   var content = w * 0.9;
  /* ====== this is main menu stuff ======*/
 	
- 		$("#content").width(content).load("upcoming.html").delay(500).animate({
+ 		$("#content").width(content).load("content/upcoming.html").delay(500).animate({
   			opacity: 1
   			}, 500);
 
