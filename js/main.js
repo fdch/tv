@@ -46,38 +46,7 @@ $(function() {
   			opacity: 1
   			}, 500);
 
-			$(".bio").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "bio.html");
-			});
-			$(".works").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "works.html");
-			});
-			$(".code").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "code.html");
-			});
-			$(".video").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "video.html");
-			});
-			$(".blog").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "blog.html");
-			});
-			$(".games").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "games.html");
-			});
-			$(".social").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "social.html");
-			});
-			$(".contacto").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "contacto.html");
-			});
+			
 			
 
 /* ====== THIS IS FOR ALL WORK CATEGORIES IN WORKS ======*/
