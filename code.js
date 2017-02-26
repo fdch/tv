@@ -67,12 +67,9 @@ $(function() {
   var h = $(window).height();
   var content = w * 0.9;
  
-  $( "#props" ).load( "headproperties.html");
-  $( "#tail" ).load( "tailproperties.html");
+
   //$("a").css("color", getRandomColor());
-  $("#content").width(content).delay(500).animate({
-  	opacity: 1
-  	}, 500);
+ 
   $(".makenew").css("cursor","pointer").mouseenter(function() {
   		var rwi = Math.floor(content * Math.random() * 0.5);
   		var rhi = Math.floor(content * Math.random() * 0.5);
@@ -151,46 +148,40 @@ $(function() {
 			});
 /* ====== end ALL WORK CATEGORIES IN WORKS.PHP ======*/
 	
-
+ 		$("#content").width(content).load("upcoming.html").delay(500).animate({
+  			opacity: 1
+  			}, 500);
 
 			$(".bio").click(function() {
 				$("#content-wrap").fadeOut(300);
-				$("#content").load( "bio.html");
-				$("#content-wrap").fadeIn(300);
+				$("#content").delay(300).load( "bio.html");
 			});
 			$(".works").click(function() {
 				$("#content-wrap").fadeOut(300);
-				$("#content").load( "works.html");
-				$("#content-wrap").fadeIn(300);
+				$("#content").delay(300).load( "works.html");
 			});
 			$(".code").click(function() {
 				$("#content-wrap").fadeOut(300);
-				$("#content").load( "code.html");
-				$("#content-wrap").fadeIn(300);
+				$("#content").delay(300).load( "code.html");
 			});
 			$(".video").click(function() {
 				$("#content-wrap").fadeOut(300);
-				$("#content").load( "video.html");
-				$("#content-wrap").fadeIn(300);
+				$("#content").delay(300).load( "video.html");
 			});
 			$(".blog").click(function() {
 				$("#content-wrap").fadeOut(300);
-				$("#content").load( "blog.html");
-				$("#content-wrap").fadeIn(300);
+				$("#content").delay(300).load( "blog.html");
 			});
 			$(".games").click(function() {
 				$("#content-wrap").fadeOut(300);
-				$("#content").load( "games.html");
-				$("#content-wrap").fadeIn(300);
+				$("#content").delay(300).load( "games.html");
 			});
 			$(".social").click(function() {
 				$("#content-wrap").fadeOut(300);
-				$("#content").load( "social.html");
-				$("#content-wrap").fadeIn(300);
+				$("#content").delay(300).load( "social.html");
 			});
 			$(".contacto").click(function() {
 				$("#content-wrap").fadeOut(300);
-				$("#content").load( "contacto.html");
-				$("#content-wrap").fadeIn(300);
+				$("#content").delay(300).load( "contacto.html");
 			});
 });
