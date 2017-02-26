@@ -40,51 +40,9 @@ $(function() {
   var w = $(window).width();
   var h = $(window).height();
   var content = w * 0.9;
- /* ====== this is main menu stuff ======*/
-		$("#header").load("menu.html");
- 		$("#content").width(content).load("content/upcoming.html").delay(500).animate({
-  			opacity: 1
-  			}, 500);
+  $("#header").load("menu.html");
+  $("#content").width(content).load("content/upcoming.html").delay(500).animate({opacity: 1}, 500);
 
-			
-			
-
-/* ====== THIS IS FOR ALL WORK CATEGORIES IN WORKS ======*/
-
-			$(".duotri").click(function() {
-				$(".multimedia, .ensemble, .solo, .videoart, .orchestra, .inprogress").fadeOut(300);
-				$(".duotrio").fadeIn(300);
-			});
-			$(".inprogresso").click(function() {
-				$(".multimedia, .ensemble, .solo, .videoart, .orchestra, .duotrio").fadeOut(300);
-				$(".inprogress").fadeIn(300);
-			});
-			$(".multimedi").click(function() {
-				$(".ensemble, .solo, .videoart, .orchestra, .duotrio, .inprogress").fadeOut(300);
-				$(".multimedia").fadeIn(300);
-			});
-			$(".videoar").click(function() {
-				$(".multimedia, .ensemble, .solo, .orchestra, .duotrio, .inprogress").fadeOut(300);
-				$(".videoart").fadeIn(300);
-			});
-			$(".sol").click(function() {
-				$(".multimedia, .ensemble, .videoart, .orchestra, .duotrio, .inprogress").fadeOut(300);
-				$(".solo").fadeIn(300);
-			});
-			$(".ensembl").click(function() {
-				$(".multimedia, .solo, .videoart, .orchestra, .duotrio, .inprogress").fadeOut(300);
-				$(".ensemble").fadeIn(300);
-			});
-			$(".orchestr").click(function() {
-				$(".multimedia, .ensemble, .solo, .videoart, .duotrio, .inprogress").fadeOut(300);
-				$(".orchestra").fadeIn(300);
-			});
-			
-			
-			
-			
-			 /* ====== this is for code.html ======*/
-			
 		$("#codecontent").width(content).load("https://github.com/fdch/fd_lib/index.html").delay(500).animate({
   			opacity: 1
   			}, 500);
