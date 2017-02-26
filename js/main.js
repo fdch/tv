@@ -41,7 +41,7 @@ $(function() {
   var h = $(window).height();
   var content = w * 0.9;
  /* ====== this is main menu stuff ======*/
-	
+		$("#header").load("menu.html");
  		$("#content").width(content).load("content/upcoming.html").delay(500).animate({
   			opacity: 1
   			}, 500);
