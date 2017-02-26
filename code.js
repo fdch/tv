@@ -117,9 +117,9 @@ $(function() {
 
 /* ====== THIS IS FOR ALL WORK CATEGORIES IN WORKS.PHP ======*/
  		$(".allworks").click(function() {
-				$("#content-wrap").fadeOut(300);
+				$("#subcontent-wrap").fadeOut(300);
 				$("#content").load( "all-works.html");
-				$("#content-wrap").fadeIn(300);
+				$("#subcontent-wrap").fadeIn(300);
 			});
 			$(".duotri").click(function() {
 				$(".multimedia, .ensemble, .solo, .videoart, .orchestra, .inprogress").fadeOut(300);
@@ -154,43 +154,43 @@ $(function() {
 
 
 			$(".bio").click(function() {
-				$("#content").fadeOut(300);
+				$("#content-wrap").fadeOut(300);
 				$("#content").load( "bio.html");
-				$("#content").fadeIn(300);
+				$("#content-wrap").fadeIn(300);
 			});
 			$(".works").click(function() {
-				$("#content").fadeOut(300);
+				$("#content-wrap").fadeOut(300);
 				$("#content").load( "works.html");
-				$("#content").fadeIn(300);
+				$("#content-wrap").fadeIn(300);
 			});
 			$(".code").click(function() {
-				$("#content").fadeOut(300);
+				$("#content-wrap").fadeOut(300);
 				$("#content").load( "code.html");
-				$("#content").fadeIn(300);
+				$("#content-wrap").fadeIn(300);
 			});
 			$(".video").click(function() {
-				$("#content").fadeOut(300);
+				$("#content-wrap").fadeOut(300);
 				$("#content").load( "video.html");
-				$("#content").fadeIn(300);
+				$("#content-wrap").fadeIn(300);
 			});
 			$(".blog").click(function() {
-				$("#content").fadeOut(300);
+				$("#content-wrap").fadeOut(300);
 				$("#content").load( "blog.html");
-				$("#content").fadeIn(300);
+				$("#content-wrap").fadeIn(300);
 			});
 			$(".games").click(function() {
-				$("#content").fadeOut(300);
+				$("#content-wrap").fadeOut(300);
 				$("#content").load( "games.html");
-				$("#content").fadeIn(300);
+				$("#content-wrap").fadeIn(300);
 			});
 			$(".social").click(function() {
-				$("#content").fadeOut(300);
+				$("#content-wrap").fadeOut(300);
 				$("#content").load( "social.html");
-				$("#content").fadeIn(300);
+				$("#content-wrap").fadeIn(300);
 			});
 			$(".contacto").click(function() {
-				$("#content").fadeOut(300);
+				$("#content-wrap").fadeOut(300);
 				$("#content").load( "contacto.html");
-				$("#content").fadeIn(300);
+				$("#content-wrap").fadeIn(300);
 			});
 });
