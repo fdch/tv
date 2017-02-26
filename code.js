@@ -33,33 +33,7 @@ setInterval(function() {
 setInterval(function() {
   randomMargenWorks();
 }, 4333);
-/*
-setInterval(bkgColor, 15000)
-function bkgColor(e)
-	{
-	var col = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-	$("html, .blog").animate({
-                backgroundColor: col
-            }, 15000);
-    return true;
-	}
 
-//setInterval(function() {
-//	$(".intro").get(0).play();
-//}, 15000);
-///THIS IS EVERY PAGE REFRESH (I guess...)
-
-
-///Get a Random color
-function getRandomColor() {
-  var letters = '567567567BBBBBB'.split('');
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
-*/
 
 $(function() {
 	
@@ -68,7 +42,6 @@ $(function() {
   var content = w * 0.9;
  
 
-  //$("a").css("color", getRandomColor());
  
   $(".makenew").css("cursor","pointer").mouseenter(function() {
   		var rwi = Math.floor(content * Math.random() * 0.5);
@@ -96,11 +69,6 @@ $(function() {
   $(".video-iframe").width(content).css("margin", 0).css("padding", 0).height(content * 0.4);
   $(".audio-iframe").width(content).css("margin", 0).css("padding", 0).height(content * 0.15);
   $(".soundcloud").width(content);
-  $("html").click(function() {
-  	$("a").animate({
-  		color : getRandomColor()
-  		}, 2000);
-  });
   $(".blog").width(content).height(content);
   $(".image-window img").width(w * 0.2);
   $("#english").click(function() {
@@ -109,7 +77,6 @@ $(function() {
   $("#spanish").click(function() {
     $(".eng").hide(), $(".spa").show()
   });
-  $(".num").css("font-size", "0.8em").css("color", getRandomColor());
 
 
 /* ====== THIS IS FOR ALL WORK CATEGORIES IN WORKS.PHP ======*/
