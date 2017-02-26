@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>code</title>
+	<!--<?html include("headproperties.html");?>-->
+	<meta property="og:url" content="http://www.fedecamarahalac.com/code" />
+	<meta property="og:title" content="code" />
+	<meta property="og:site_name" content="code"/>
+</head>
+<body>
+	<div id="main">
+		<div id="header">
+			<ul id="menu">
+				<!--<?html include("menu.html");?>-->
+			</ul>
+			<div id="submenu" style="display:block;margin:10px;">
+			<button type="button" class="button allcode"><span class=eng>all</span><span class=spa style=display:none>todos</span></button>
+			<button type="button" class="button loren">lorenz.c</button>
+			<button type="button" class="button siginf">siginfo.c</button>
+			<button type="button" class="button minima">minimax.c</button>
+			<button type="button" class="button cran">crand.c</button>
+			<button type="button" class="button mtwiste">mtwister.c</button>
+			</div>
+		</div>
+		<div id="content">
+			<div id="content-wrap">
+				<div id=code>
+				<!--	<?html include("code/clase-lorenz.html")?>
+					<?html include("code/clase-siginfo.html")?>
+					<?html include("code/clase-minimax.html")?>
+					<?html include("code/clase-mtwister.html")?>
+					<?html include("code/clase-crand.html")?> -->
+				</div>
+			</div>
+		</div>
+		<footer>
+	<!--	<?html include("footer.html");?> -->
+		</footer>
+	</div>
+	<script>
+			$(".allcode").click(function() {
+				$("#siginfo, #minimax, #crand, #mtwister, #lorenz").fadeIn(300);
+			});
+			$(".loren").click(function() {
+				$("#siginfo, #minimax, #crand, #mtwister").fadeOut(300);
+				$("#lorenz").fadeIn(300);
+			});
+			$(".siginf").click(function() {
+				$("#lorenz, #minimax, #crand, #mtwister").fadeOut(300);
+				$("#siginfo").fadeIn(300);
+			});
+			$(".minima").click(function() {
+				$("#siginfo, #lorenz, #crand, #mtwister").fadeOut(300);
+				$("#minimax").fadeIn(300);
+			});
+			$(".cran").click(function() {
+				$("#siginfo, #minimax, #lorenz, #mtwister").fadeOut(300);
+				$("#crand").fadeIn(300);
+			});
+			$(".mtwiste").click(function() {
+				$("#siginfo, #minimax, #crand, #lorenz").fadeOut(300);
+				$("#mtwister").fadeIn(300);
+			});
+	</script>
+	<!--<?html include("analytics.html");?>-->
+	
+</body>
+</html>

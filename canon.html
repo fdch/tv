@@ -1,0 +1,89 @@
+
+<script src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="styles.js"></script>
+<div id=props>
+</div>
+
+<h3>canon</h3>
+
+
+<div class=eng>
+<h4>for <a href="http://www.proyectoredensamble.com.ar" target="_blank">proyecto[red]ensamble</a></h4>
+
+<h4>pr[ogram no]tes</h4>
+<p>for 5 players and potentiometers.</p>
+<p>All players have one instrument and one potentiometer. The players follow the score performing both with their potentiometer and with their instrument. The data obtained from the potentiometers is then interpreted as the speed at which a [lorenz] system is iterated (which is between 0.001 and 1 every sample, at a given samplerate, e.g 44100 Hz). The output (X,Y,Z) from each system is interpreted in two ways: first, it is read as a signal and added altogether; second, it is parsed through [siginfo] to obtain slope changes, which are as well read as signals and added altogether. Finally, the distance obtained from [siginfo] serves as gain for the final signal.</p>
+<p>One player can be given a midi input to trigger randomized variables for all (or each) lorenz system(s), generating divergence among the randomized systems. Within this midi input, one note (MIDI Note 72) serves as on/off switch for the patch.</p>
+<p>A timer is provided on the screen. The whole work lasts at least 6 minutes, but the duration bends when there are CPU overloads. It is encouraged to "surf" in and out of those CPU overloads by simply changing the potentiometer to a value closer to 1, or to 0 in case there is a need to stop all iterations from the potentiometer involved.</p>
+
+<p><i>Performed by <a href="http://www.proyectoredensamble.com.ar" target="_blank">proyecto[red]ensamble</a> at <a href="https://www.facebook.com/CentroCulturalGracielaCarena/" target="_blank">Centro Cultural Graciela Carena</a> on August 6th 2016</i></p>
+
+</div>
+
+<div class=spa style="display:none">
+<h4>para <a href="http://www.proyectoredensamble.com.ar" target="_blank">proyecto[red]ensamble</a></h4>
+
+<h4>no]tas de ]programa</h4>
+<p>para 5 ejecutantes y potenciómetros.</p>
+<p>Todos los ejecutantes tiene un potenciómetro y su instrumento. Los ejecutantes siguen la partitura tocando tanto en su instrumento como controlando su potenciómetro. La data obtenida de los potenciómetros es interpretada como la velocidad en la cual se itera un sistema de [lorenz] (que es entre 0.001 y 1 por cada sampleo, en una velocidad de sampleo dada, e.g. 44100 Hz). La salida de cada sistema (X,Y,Z) es interpretada en dos maneras: primero, como señal sumada en sus tres partes y, segundo, es analizada por [siginfo] en cuanto a cambios en la pendiente de cada eje, lo cual es nuevamente sumado como señal en sus tres partes. Finalmente, la distancia obtenida tambien por [siginfo] funciona como ganancia de la señal final.</p>
+<p>Un ejecutante puede tener un controlador midi para disparar variables randomizadas para cada (o todos los) sistema(s) de lorenz, generando divergencia entre los sistemas randomizados. Así también, una nota (MIDI Nota 72) funciona como encendido/apagado del patch.</p>
+<p>Un cronometro se provee en la pantalla. La obra dura por lo menos 6 minutos, pero esta duración se dobla cuando ocurren sobrecargas del CPU. Se alienta "surfear" dentro y fuera de estas sobrectargas del CPU simplemente cambiando el valor del potenciómetro a un valor mas cercano a 1, o a 0 en caso de que haya necesidad de detener toda iteracion del potenciómetro involucrado.</p>
+
+<p><i>Estrenada por <a href="http://www.proyectoredensamble.com.ar" target="_blank">proyecto[red]ensamble</a> en <a href="https://www.facebook.com/CentroCulturalGracielaCarena/" target="_blank">Centro Cultural Graciela Carena</a> el 6 de Agosto de 2016</i></p>
+
+</div>
+
+<h4>aud[io</h4>
+<audio controls>
+  <source src="http://www.fedecamarahalac.com/obras/2016/canon.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+<div class=eng>
+<p>Link to MP3 file <a href="http://www.fedecamarahalac.com/obras/2016/canon.mp3">here</a><p>
+<p>Link to WAV file <a href="http://www.fedecamarahalac.com/obras/2016/canon.wav">here</a><p>
+</div>
+<div class=spa style="display:none">
+<p>Hipervínculo al fichero MP3 <a href="http://www.fedecamarahalac.com/obras/2016/canon.mp3">aquí</a><p>
+<p>Hipervínculo al fichero WAV <a href="http://www.fedecamarahalac.com/obras/2016/canon.wav">aquí</a><p>
+</div>
+
+<h4>f[ph]oto</h4>
+<p>ph: Aye Savid</p>
+<div class="image-window">
+<!--<?html include("canon_images.html");?>-->
+</div>
+<h4>vid]eo</h4>
+<p>camera: Aye Savid</p>
+<iframe src="https://www.facebook.com/plugins/video.html?href=https%3A%2F%2Fwww.facebook.com%2Ffedecamarahalac%2Fvideos%2F10210449958225941%2F&width=500&show_text=false&appId=123442671081764&height=500" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+<!--
+<h4>au[dio</h4>
+<iframe scrolling="no" frameborder="no" class="audio-iframe" src="#"></iframe>
+-->
+
+<div class="eng">
+<h4>[sc]ore</h4>
+</div>
+<div class=spa style=display:none>
+<h4>[parti]tura</h4>
+</div>
+<p><a href="obras/2016/canon.pdf" target="_blank">canon.pdf</a></p>
+<object class="score-object" data="obras/2016/canon.pdf"></object>
+
+<h4>[pa[r]t]che[s] (puredata)</h4>
+<div class=eng>
+<p>This is an automated version I made in case you don't have access to Arduino</p>
+<p>click <a href="patches/fd_canon-auto-2ch.zip">here</a> to download the patch in a .zip file.</p>
+<p>You need Pd vanilla</p>
+<p>If anything, contact me, I can send you the files</p>
+</div>
+<div class=spa style=display:none>
+<p>Esta es una version automatizada que hice en caso que no tengas acceso a una placa Arduino</p>
+<p>click <a href="patches/fd_canon-auto-2ch.zip">aquí</a> para bajar el parceh en un fichero .zip.</p>
+<p>Necesitas: Pd vanilla</p>
+<p>Cualquier cosa escribime y te mando los archivos!</p>
+</div>
+
+<div id=tail>
+</div>
+
+
