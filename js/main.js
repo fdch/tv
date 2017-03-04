@@ -28,14 +28,7 @@ function languagesMenu() {
 	});
 }
 
-function getContent() {
-	jQuery.get('content.txt', function(data){
-		lines = data.split("\n");
-		$.each(lines, function(n, elem) {
-			$("work").append('<div>' + elem + '</div>');
-		});
-	});
-}
+
 
 
 //reset the layout
