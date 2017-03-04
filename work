@@ -17,13 +17,13 @@
 
 <li class=year>2016
 <ul class=year-list>
-<li class="duo"><span class=eng><a href="content/i[n.html" onClick="fdLoad(this)">i[n</a>, a 20 minute[un]work designed specifically for <b>scapegoat ensemble</b></span><span class=spa ><a href="content/i[n.html" onClick="fdLoad(this)">i[n</a>, una [des]obra de 20 minutos para <b>scapegoat ensemble</b></span></li>
+<li class="duo"><span class=eng><a href="content/i[n.html" onClick="fdLoadInner(this)">i[n</a>, a 20 minute[un]work designed specifically for <b>scapegoat ensemble</b></span><span class=spa ><a href="content/i[n.html" onClick="fdLoadInner(this)">i[n</a>, una [des]obra de 20 minutos para <b>scapegoat ensemble</b></span></li>
 
-<li class="multimedia ensemble videoart"><span class=eng><a href="content/sk.html" onClick="fdLoad(this)">sk</a>, a 10 minute multimedia [un]work designed specifically for <b>tak ensemble</b></span><span class=spa ><a href="content/sk.html" onClick="fdLoad(this)">sk</a>, una [des]obra multimedial de 10 minutos para <b>tak ensemble</b></span></li>
+<li class="multimedia ensemble videoart"><span class=eng><a href="content/sk.html" onClick="fdLoadInner(this)">sk</a>, a 10 minute multimedia [un]work designed specifically for <b>tak ensemble</b></span><span class=spa ><a href="content/sk.html" onClick="fdLoadInner(this)">sk</a>, una [des]obra multimedial de 10 minutos para <b>tak ensemble</b></span></li>
 
-<li class="multimedia ensemble "><span class=eng><a href="content/canon.html" onClick="fdLoad(this)">canon</a>, a 6 minute piece designed for <b>proyecto[red]ensamble</b> [for 5 players and potentiometers]</span><span class=spa ><a href="content/canon.html" onClick="fdLoad(this)">canon</a>, una obra de 6 minutos diseñada para <b>proyecto[red]ensamble</b>[para 5 ejecutantes y potenciometros]</span></li>
+<li class="multimedia ensemble "><span class=eng><a href="content/canon.html" onClick="fdLoadInner(this)">canon</a>, a 6 minute piece designed for <b>proyecto[red]ensamble</b> [for 5 players and potentiometers]</span><span class=spa ><a href="content/canon.html" onClick="fdLoadInner(this)">canon</a>, una obra de 6 minutos diseñada para <b>proyecto[red]ensamble</b>[para 5 ejecutantes y potenciometros]</span></li>
 
-<li class="multimedia ensemble videoart"><span class=eng><a href="content/inopera.html" onClick="fdLoad(this)">inopera</a>, a 40 minute multimedia [un]work designed specifically for <b>loadbang ensemble</b></span><span class=spa ><a href="content/inopera.html" onClick="fdLoad(this)">inopera</a>, una [des]obra multimedial de 40 minutos diseñada específicamente para <b>loadbang ensemble</b></span></li>
+<li class="multimedia ensemble videoart"><span class=eng><a href="content/inopera.html" onClick="fdLoadInner(this)">inopera</a>, a 40 minute multimedia [un]work designed specifically for <b>loadbang ensemble</b></span><span class=spa ><a href="content/inopera.html" onClick="fdLoadInner(this)">inopera</a>, una [des]obra multimedial de 40 minutos diseñada específicamente para <b>loadbang ensemble</b></span></li>
 
 
 <h5 class="inprogress">[[][][..i[e]n progres[o]...[[[[]s..[]].[[]</h5>
@@ -36,7 +36,7 @@
 
 
 
-<li class="inprogress"><span class=eng><a href="content/unstorag.html" onClick="fdLoad(this)">unstorag</a>, a 10 minute multimedia [un]work designed for <b>violin, viola, clarinet, live video and electronics</b></span><span class=spa ><a href="content/unstorag.html" onClick="fdLoad(this)">unstorag</a>, una [des]obra multimedial de 10 minutos diseñada para <b>violin, viola, clarinete, video y electronica en vivo</b></span></li>
+<li class="inprogress"><span class=eng><a href="content/unstorag.html" onClick="fdLoadInner(this)">unstorag</a>, a 10 minute multimedia [un]work designed for <b>violin, viola, clarinet, live video and electronics</b></span><span class=spa ><a href="content/unstorag.html" onClick="fdLoadInner(this)">unstorag</a>, una [des]obra multimedial de 10 minutos diseñada para <b>violin, viola, clarinete, video y electronica en vivo</b></span></li>
 
 
 
@@ -47,19 +47,19 @@
 <li class=year>2015
 <ul class=year-list>
 
-<li class="duotrio multimedia videoart"><span class=eng><a href="content/ciudad.html" onClick="fdLoad(this)">inverted city</a>, for trombone duo, live video and electronics (12’)</span><span class=spa ><a href="content/ciudad.html" onClick="fdLoad(this)">ciudad invertida</a>, para dos trombones, electrónica y video en vivo (12’)</span></li>
+<li class="duotrio multimedia videoart"><span class=eng><a href="content/ciudad.html" onClick="fdLoadInner(this)">inverted city</a>, for trombone duo, live video and electronics (12’)</span><span class=spa ><a href="content/ciudad.html" onClick="fdLoadInner(this)">ciudad invertida</a>, para dos trombones, electrónica y video en vivo (12’)</span></li>
 
 
-<li class="ensemble"><span class=eng><a href="content/bones.html" onClick="fdLoad(this)">bones</a>, for four percussionists (15-20’)</span><span class=spa ><a href="content/bones.html" onClick="fdLoad(this)">huesos</a>, para cuatro percusionistas (15-20’)</span></li>
+<li class="ensemble"><span class=eng><a href="content/bones.html" onClick="fdLoadInner(this)">bones</a>, for four percussionists (15-20’)</span><span class=spa ><a href="content/bones.html" onClick="fdLoadInner(this)">huesos</a>, para cuatro percusionistas (15-20’)</span></li>
 
 
-<li class="multimedia solo videoart"><span class=eng><a href="content/venas.html" onClick="fdLoad(this)">veins</a>, for bass clarinet live video and electronics (10’)</span><span class=spa ><a href="content/venas.html" onClick="fdLoad(this)">venas</a>, para clarinete bajo, electrónica y video en vivo (10’)</span></li>
+<li class="multimedia solo videoart"><span class=eng><a href="content/venas.html" onClick="fdLoadInner(this)">veins</a>, for bass clarinet live video and electronics (10’)</span><span class=spa ><a href="content/venas.html" onClick="fdLoadInner(this)">venas</a>, para clarinete bajo, electrónica y video en vivo (10’)</span></li>
 
 
-<li class="ensemble"><span class=eng><a href="content/flesh.html" onClick="fdLoad(this)">flesh</a>, for bass clarinet, cello, percussion, double bass and piano (8’)</span><span class=spa ><a href="content/flesh.html" onClick="fdLoad(this)">carne</a>,para clarinete bajo, cello, percusión, contrabajo y piano (8’)</span></li>
+<li class="ensemble"><span class=eng><a href="content/flesh.html" onClick="fdLoadInner(this)">flesh</a>, for bass clarinet, cello, percussion, double bass and piano (8’)</span><span class=spa ><a href="content/flesh.html" onClick="fdLoadInner(this)">carne</a>,para clarinete bajo, cello, percusión, contrabajo y piano (8’)</span></li>
 
 
-<li class="multimedia"><span class=eng><a href="content/study_duchamp.html" onClick="fdLoad(this)">study duchamp</a>, electroacoustic (5’)</span><span class=spa ><a href="content/study_duchamp.html" onClick="fdLoad(this)">study duchamp</a>, electroacústica (5’)</span></li>
+<li class="multimedia"><span class=eng><a href="content/study_duchamp.html" onClick="fdLoadInner(this)">study duchamp</a>, electroacoustic (5’)</span><span class=spa ><a href="content/study_duchamp.html" onClick="fdLoadInner(this)">study duchamp</a>, electroacústica (5’)</span></li>
 
 
 </ul>
@@ -68,10 +68,10 @@
 <li class=year>2014
 <ul class=year-list>
 
-<li class="multimedia solo videoart"><span class=eng><a href="content/venas.html" onClick="fdLoad(this)">venas</a>, for bass clarinet and electronics (8’)</span><span class=spa ><a href="content/venas.html" onClick="fdLoad(this)">venas</a>, para clarinete bajo y electrónica (8’)</span></li>
+<li class="multimedia solo videoart"><span class=eng><a href="content/venas.html" onClick="fdLoadInner(this)">venas</a>, for bass clarinet and electronics (8’)</span><span class=spa ><a href="content/venas.html" onClick="fdLoadInner(this)">venas</a>, para clarinete bajo y electrónica (8’)</span></li>
 
 
-<li class="multimedia ensemble videoart"><span class=eng><a href="content/talita.html" onClick="fdLoad(this)">talita</a>, for string quartet and video (12’)</span><span class=spa ><a href="content/talita.html" onClick="fdLoad(this)">talita</a>, para cuarteto de cuerdas y video (12’)</span></li>
+<li class="multimedia ensemble videoart"><span class=eng><a href="content/talita.html" onClick="fdLoadInner(this)">talita</a>, for string quartet and video (12’)</span><span class=spa ><a href="content/talita.html" onClick="fdLoadInner(this)">talita</a>, para cuarteto de cuerdas y video (12’)</span></li>
 
 
 </ul>
@@ -80,13 +80,13 @@
 <li class=year>2013
 <ul class=year-list>
 
-<li class="ensemble"><span class=eng><a href="content/lalineaimposible.html" onClick="fdLoad(this)">the impossible line of the horizon</a>, for large ensemble (8’)</span><span class=spa ><a href="content/lalineaimposible.html" onClick="fdLoad(this)">la linea imposible del horizonte</a>, para gran ensemble (8’)</span></li>
+<li class="ensemble"><span class=eng><a href="content/lalineaimposible.html" onClick="fdLoadInner(this)">the impossible line of the horizon</a>, for large ensemble (8’)</span><span class=spa ><a href="content/lalineaimposible.html" onClick="fdLoadInner(this)">la linea imposible del horizonte</a>, para gran ensemble (8’)</span></li>
 
 
-<li class="ensemble"><span class=eng><a href="content/aponia.html" onClick="fdLoad(this)">aponia</a>, for choir and piano (7’)</span><span class=spa ><a href="content/aponia.html" onClick="fdLoad(this)">aponia</a>, para coro y piano(7’)</span></li>
+<li class="ensemble"><span class=eng><a href="content/aponia.html" onClick="fdLoadInner(this)">aponia</a>, for choir and piano (7’)</span><span class=spa ><a href="content/aponia.html" onClick="fdLoadInner(this)">aponia</a>, para coro y piano(7’)</span></li>
 
 
-<li class="multimedia ensemble"><span class=eng><a href="content/cloud_relations.html" onClick="fdLoad(this)">cloud relations</a>, for string quartet and fixed electronics (13’)</span><span class=spa ><a href="content/cloud_relations.html" onClick="fdLoad(this)">cloud relations</a>, para cuarteto de cuerdas y electroacústica (13’)</span></li>
+<li class="multimedia ensemble"><span class=eng><a href="content/cloud_relations.html" onClick="fdLoadInner(this)">cloud relations</a>, for string quartet and fixed electronics (13’)</span><span class=spa ><a href="content/cloud_relations.html" onClick="fdLoadInner(this)">cloud relations</a>, para cuarteto de cuerdas y electroacústica (13’)</span></li>
 
 
 </ul>
@@ -95,13 +95,13 @@
 <li class=year>2012
 <ul class=year-list>
 
-<li class="ensemble"><span class=eng><a href="content/alargamiento.html" onClick="fdLoad(this)">the elonging of the shadows</a>, for chamber septet(8’) </span><span class=spa ><a href="content/alargamiento.html" onClick="fdLoad(this)">el alargamiento de las sombras</a>, para septeto de cámara (8’) </span></li>
+<li class="ensemble"><span class=eng><a href="content/alargamiento.html" onClick="fdLoadInner(this)">the elonging of the shadows</a>, for chamber septet(8’) </span><span class=spa ><a href="content/alargamiento.html" onClick="fdLoadInner(this)">el alargamiento de las sombras</a>, para septeto de cámara (8’) </span></li>
 
 
-<li class="solo"><span class=eng><a href="content/para-estar.html" onClick="fdLoad(this)">memories for esther</a>, for solo piano (7’)</span><span class=spa ><a href="content/para-estar.html" onClick="fdLoad(this)">memorias para estar</a>, para piano (7’)</span></li>
+<li class="solo"><span class=eng><a href="content/para-estar.html" onClick="fdLoadInner(this)">memories for esther</a>, for solo piano (7’)</span><span class=spa ><a href="content/para-estar.html" onClick="fdLoadInner(this)">memorias para estar</a>, para piano (7’)</span></li>
 
 
-<li class="ensemble"><span class=eng><a href="content/utopia.html" onClick="fdLoad(this)">a time in utopia</a>, for choir and large ensemble (18’)</span><span class=spa ><a href="content/utopia.html" onClick="fdLoad(this)">un tiempo en utopia</a>, para coro y gran ensemble (18’)</span></li>
+<li class="ensemble"><span class=eng><a href="content/utopia.html" onClick="fdLoadInner(this)">a time in utopia</a>, for choir and large ensemble (18’)</span><span class=spa ><a href="content/utopia.html" onClick="fdLoadInner(this)">un tiempo en utopia</a>, para coro y gran ensemble (18’)</span></li>
 
 
 </ul>
@@ -110,19 +110,19 @@
 <li class=year>2011
 <ul class=year-list>
 
-<li class="ensemble" ><span class=eng><a href="content/water_symmetries_2.html" onClick="fdLoad(this)">piano & ensemble: water symmetries nº 2</a> (10’)</span><span class=spa ><a href="content/water_symmetries_2.html" onClick="fdLoad(this)">simetrías acuáticas nº 2</a>, para piano y ensemble (10’)</span></li>
+<li class="ensemble" ><span class=eng><a href="content/water_symmetries_2.html" onClick="fdLoadInner(this)">piano & ensemble: water symmetries nº 2</a> (10’)</span><span class=spa ><a href="content/water_symmetries_2.html" onClick="fdLoadInner(this)">simetrías acuáticas nº 2</a>, para piano y ensemble (10’)</span></li>
 
 
-<li class="ensemble" ><span class=eng><a href="content/water_symmetries_1.html" onClick="fdLoad(this)">water symmetries nº 1</a>,for reed quintet (12’)</span><span class=spa ><a href="content/water_symmetries_1.html" onClick="fdLoad(this)">simetrías acuáticas nº 1</a>, para quinteto de cañas (12’)</span></li>
+<li class="ensemble" ><span class=eng><a href="content/water_symmetries_1.html" onClick="fdLoadInner(this)">water symmetries nº 1</a>,for reed quintet (12’)</span><span class=spa ><a href="content/water_symmetries_1.html" onClick="fdLoadInner(this)">simetrías acuáticas nº 1</a>, para quinteto de cañas (12’)</span></li>
 
 
-<li class="solo" ><span class=eng><a href="content/solo_viola.html" onClick="fdLoad(this)">viola</a>, for solo viola (6’)</span><span class=spa ><a href="content/solo_viola.html" onClick="fdLoad(this)">viola</a>, para viola solo (6’)</span></li>
+<li class="solo" ><span class=eng><a href="content/solo_viola.html" onClick="fdLoadInner(this)">viola</a>, for solo viola (6’)</span><span class=spa ><a href="content/solo_viola.html" onClick="fdLoadInner(this)">viola</a>, para viola solo (6’)</span></li>
 
 
-<li class="orchestra" ><span class=eng><a href="content/lagos.html" onClick="fdLoad(this)">lakes</a>, for orchestra(12’)</span><span class=spa ><a href="content/lagos.html" onClick="fdLoad(this)">lagos</a>, para orquesta (12’)</span></li>
+<li class="orchestra" ><span class=eng><a href="content/lagos.html" onClick="fdLoadInner(this)">lakes</a>, for orchestra(12’)</span><span class=spa ><a href="content/lagos.html" onClick="fdLoadInner(this)">lagos</a>, para orquesta (12’)</span></li>
 
 
-<li class="duotrio" ><span class=eng><a href="content/piano_fagot_guitarra.html" onClick="fdLoad(this)">piano, pagot y puitarra</a> for piano, passoon and guitar (10’)</span><span class=spa ><a href="content/piano_fagot_guitarra.html" onClick="fdLoad(this)">piano, fagot y guitarra</a> (10’)</span></li>
+<li class="duotrio" ><span class=eng><a href="content/piano_fagot_guitarra.html" onClick="fdLoadInner(this)">piano, pagot y puitarra</a> for piano, passoon and guitar (10’)</span><span class=spa ><a href="content/piano_fagot_guitarra.html" onClick="fdLoadInner(this)">piano, fagot y guitarra</a> (10’)</span></li>
 
 
 </ul>
@@ -131,16 +131,16 @@
 <li class=year>2010
 <ul class=year-list>
 
-<li class="solo" ><span class=eng><a href="content/11-variations.html" onClick="fdLoad(this)">11 variations</a>, for piano (10’)</span><span class=spa ><a href="content/11-variations.html" onClick="fdLoad(this)">11 variaciones </a>, para piano (10’)</span></li>
+<li class="solo" ><span class=eng><a href="content/11-variations.html" onClick="fdLoadInner(this)">11 variations</a>, for piano (10’)</span><span class=spa ><a href="content/11-variations.html" onClick="fdLoadInner(this)">11 variaciones </a>, para piano (10’)</span></li>
 
 
-<li class="ensemble" ><span class=eng><a href="content/instantaneas.html" onClick="fdLoad(this)">instantaneous</a>, for soprano (w/text) and ensemble (9’)</span><span class=spa ><a href="content/instantaneas.html" onClick="fdLoad(this)">instantáneas </a>, para soprano con texto y ensemble (9’)</span></li>
+<li class="ensemble" ><span class=eng><a href="content/instantaneas.html" onClick="fdLoadInner(this)">instantaneous</a>, for soprano (w/text) and ensemble (9’)</span><span class=spa ><a href="content/instantaneas.html" onClick="fdLoadInner(this)">instantáneas </a>, para soprano con texto y ensemble (9’)</span></li>
 
 
-<li class="duotrio multimedia" ><span class=eng><a href="content/movil-in-movil.html" onClick="fdLoad(this)">mobile-im-mobile</a>, for two percussionists, piano and electro-acoustic (8‘)</span><span class=spa ><a href="content/movil-in-movil.html" onClick="fdLoad(this)">móvil-in-móvil</a>, para dos percusionistas, piano y electroacústica (8‘)</span></li>
+<li class="duotrio multimedia" ><span class=eng><a href="content/movil-in-movil.html" onClick="fdLoadInner(this)">mobile-im-mobile</a>, for two percussionists, piano and electro-acoustic (8‘)</span><span class=spa ><a href="content/movil-in-movil.html" onClick="fdLoadInner(this)">móvil-in-móvil</a>, para dos percusionistas, piano y electroacústica (8‘)</span></li>
 
 
-<li class="ensemble" ><span class=eng><a href="content/niebla.html" onClick="fdLoad(this)">golden fog</a>, for soprano and ensemble, based on texts from <i>árbol de diana</i>, by <b>a. pizarnik</b> (10’ 30’’)</span><span class=spa ><a href="content/niebla.html" onClick="fdLoad(this)">niebla dorada</a>, para soprano y ensemble, con textos de <i>árbol de diana</i>, de <b>a. pizarnik</b> (10’ 30’’)</span></li>
+<li class="ensemble" ><span class=eng><a href="content/niebla.html" onClick="fdLoadInner(this)">golden fog</a>, for soprano and ensemble, based on texts from <i>árbol de diana</i>, by <b>a. pizarnik</b> (10’ 30’’)</span><span class=spa ><a href="content/niebla.html" onClick="fdLoadInner(this)">niebla dorada</a>, para soprano y ensemble, con textos de <i>árbol de diana</i>, de <b>a. pizarnik</b> (10’ 30’’)</span></li>
 
 
 </ul>
@@ -149,22 +149,22 @@
 <li class=year>2009
 <ul class=year-list>
 
-<li class="ensemble" ><span class=eng><a href="content/three_to_nine.html" onClick="fdLoad(this)">three to nine from slap!</a>, for wind ensemble (6’)</span><span class=spa ><a href="content/three_to_nine.html" onClick="fdLoad(this)">three to nine from slap!</a>, para ensamble de vientos (6’)</span></li>
+<li class="ensemble" ><span class=eng><a href="content/three_to_nine.html" onClick="fdLoadInner(this)">three to nine from slap!</a>, for wind ensemble (6’)</span><span class=spa ><a href="content/three_to_nine.html" onClick="fdLoadInner(this)">three to nine from slap!</a>, para ensamble de vientos (6’)</span></li>
 
 
-<li class="ensemble" ><span class=eng><a href="content/three_for_slap.html" onClick="fdLoad(this)">three for slap!</a>, for reed quintet (6’)</span><span class=spa ><a href="content/three_for_slap.html" onClick="fdLoad(this)">three for slap!</a>, para quinteto de cañas (6’)</span></li>
+<li class="ensemble" ><span class=eng><a href="content/three_for_slap.html" onClick="fdLoadInner(this)">three for slap!</a>, for reed quintet (6’)</span><span class=spa ><a href="content/three_for_slap.html" onClick="fdLoadInner(this)">three for slap!</a>, para quinteto de cañas (6’)</span></li>
 
 
-<li class="ensemble" ><span class=eng><a href="content/2_movements.html" onClick="fdLoad(this)">2 movements</a>, for string quartet (5’ 27’’)</span><span class=spa ><a href="content/2_movimientos.html" onClick="fdLoad(this)">2 movimientos</a>, para cuarteto de cuerdas (5’ 27’’)</span></li>
+<li class="ensemble" ><span class=eng><a href="content/2_movements.html" onClick="fdLoadInner(this)">2 movements</a>, for string quartet (5’ 27’’)</span><span class=spa ><a href="content/2_movimientos.html" onClick="fdLoadInner(this)">2 movimientos</a>, para cuarteto de cuerdas (5’ 27’’)</span></li>
 
 
-<li class="duotrio" ><span class=eng><a href="content/keys.html" onClick="fdLoad(this)">keys</a>, for flute and prepared piano (2’ 50’’)</span><span class=spa ><a href="content/keys.html" onClick="fdLoad(this)">keys</a>, para flauta y piano preparado (2’ 50’’)</span></li>
+<li class="duotrio" ><span class=eng><a href="content/keys.html" onClick="fdLoadInner(this)">keys</a>, for flute and prepared piano (2’ 50’’)</span><span class=spa ><a href="content/keys.html" onClick="fdLoadInner(this)">keys</a>, para flauta y piano preparado (2’ 50’’)</span></li>
 
 
-<li class="solo" ><span class=eng><a href="content/tensions.html" onClick="fdLoad(this)">tensions</a>, for solo percussion (3’)</span><span class=spa ><a href="content/tensions.html" onClick="fdLoad(this)">tensiones</a>, para percusión solo (3’)</span></li>
+<li class="solo" ><span class=eng><a href="content/tensions.html" onClick="fdLoadInner(this)">tensions</a>, for solo percussion (3’)</span><span class=spa ><a href="content/tensions.html" onClick="fdLoadInner(this)">tensiones</a>, para percusión solo (3’)</span></li>
 
 
-<li class="solo" ><span class=eng><a href="content/arpa_solo.html" onClick="fdLoad(this)">music for solo harp</a> (4’)</span><span class=spa ><a href="content/arpa_solo.html" onClick="fdLoad(this)">música para arpa solo</a> (4’)</span></li>
+<li class="solo" ><span class=eng><a href="content/arpa_solo.html" onClick="fdLoadInner(this)">music for solo harp</a> (4’)</span><span class=spa ><a href="content/arpa_solo.html" onClick="fdLoadInner(this)">música para arpa solo</a> (4’)</span></li>
 
 
 </ul>
@@ -173,13 +173,13 @@
 <li class=year>2008
 <ul class=year-list>
 
-<li class="solo" ><span class=eng><a href="content/sixty.html" onClick="fdLoad(this)">sixty</a>, for piano (2’)</span><span class=spa ><a href="content/sixty.html" onClick="fdLoad(this)">60</a>, para piano (2’)</span></li>
+<li class="solo" ><span class=eng><a href="content/sixty.html" onClick="fdLoadInner(this)">sixty</a>, for piano (2’)</span><span class=spa ><a href="content/sixty.html" onClick="fdLoadInner(this)">60</a>, para piano (2’)</span></li>
 
 
-<li class="duotrio" ><span class=eng><a href="content/she_dwelt.html" onClick="fdLoad(this)">she dwelt among the untrodden ways</a>, for voice and piano, based on <b>w. wordsworth</b>’s homonymous poem (3’)</span><span class=spa ><a href="content/she_dwelt.html" onClick="fdLoad(this)">she dwelt among the untrodden ways</a>, para voz y piano, basada en el poema homónimo de <b>w. wordsworth</b> (3’)</span></li>
+<li class="duotrio" ><span class=eng><a href="content/she_dwelt.html" onClick="fdLoadInner(this)">she dwelt among the untrodden ways</a>, for voice and piano, based on <b>w. wordsworth</b>’s homonymous poem (3’)</span><span class=spa ><a href="content/she_dwelt.html" onClick="fdLoadInner(this)">she dwelt among the untrodden ways</a>, para voz y piano, basada en el poema homónimo de <b>w. wordsworth</b> (3’)</span></li>
 
 
-<li class="solo multimedia" ><span class=eng><a href="content/meditacion.html" onClick="fdLoad(this)">meditation</a>, for mezzo-soprano, based on the sentence "<i>all art is quite useless</i>", by <b>o. wilde</b> (2’)</span><span class=spa ><a href="content/meditacion.html" onClick="fdLoad(this)">meditación</a> para mezzo-soprano, basado en la frase "<i>todo el arte es bastante inútil</i>", de <b>o. wilde</b> (2’)</span></li>
+<li class="solo multimedia" ><span class=eng><a href="content/meditacion.html" onClick="fdLoadInner(this)">meditation</a>, for mezzo-soprano, based on the sentence "<i>all art is quite useless</i>", by <b>o. wilde</b> (2’)</span><span class=spa ><a href="content/meditacion.html" onClick="fdLoadInner(this)">meditación</a> para mezzo-soprano, basado en la frase "<i>todo el arte es bastante inútil</i>", de <b>o. wilde</b> (2’)</span></li>
 
 
 </ul>
@@ -188,7 +188,7 @@
 <li class=year>2007
 <ul class=year-list>
 
-<li class="duotrio" ><span class=eng><a href="content/suite.html" onClick="fdLoad(this)">suite</a>, for violin and piano (10’)</span><span class=spa ><a href="content/suite.html" onClick="fdLoad(this)">suite</a>, para violin y piano (10’)</span></li>
+<li class="duotrio" ><span class=eng><a href="content/suite.html" onClick="fdLoadInner(this)">suite</a>, for violin and piano (10’)</span><span class=spa ><a href="content/suite.html" onClick="fdLoadInner(this)">suite</a>, para violin y piano (10’)</span></li>
 
 
 </ul>

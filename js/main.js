@@ -11,12 +11,14 @@ $(function() {
 
 //loads the id of the element passed on the content div 
 function fdLoad(x) {
-	var anchorID = x.getElementsByTagName("a");
-	if (anchorID) {
-		$("#content").load("content/" + anchorID + ".html");
-	} else {
-		myID = x.id;
-		$("#content").load(myID);
+	myID = x.id;
+	$("#content").load(myID);
+	}
+}
+//loads the innerHTML of the element passed on the content div 
+function fdLoadInner(x) {
+	myInner = x.innerHTML;
+	$("#content").load("content/" + myInner + ".html");
 	}
 }
 
