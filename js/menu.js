@@ -13,25 +13,25 @@ $(".tst").mouseover(function() {
 $("#content")load( "content/tst.html");
 });
 $(".bio").mouseover(function() {
-$("#content").load( "bio.html");
+$("#content").load( "bio");
 });
 $(".works").mouseover(function() {
-$("#content").load( "works.html");
+$("#content").load( "work");
 });
 $(".code, .blog").click(function() {
 $("#main").fadeOut(300);
 });
 $(".video").mouseover(function() {
-$("#content").load( "video.html");
+$("#content").load( "video");
 });
 $(".games").mouseover(function() {
-$("#content").load( "games.html");
+$("#content").load( "games");
 });
 $(".social").mouseover(function() {
-$("#content").load( "social.html");
+$("#content").load( "social");
 });
 $(".contacto").mouseover(function() {
-$("#content").load( "contacto.html");
+$("#content").load( "contact");
 });
 $("#english").mouseover(function() {
 $(".spa").hide(), $(".eng").show()

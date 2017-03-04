@@ -1,6 +1,6 @@
 <script>
 function fdLoad(x) {
-          document.getElementById('content').innerHTML = XMLHttpRequest().open("GET", 'content'+x+'.html', false);
+          document.getElementById('content').innerHTML = loadPage(x);
 }
 function loadPage(href) {
           var xmlhttp = new XMLHttpRequest();
