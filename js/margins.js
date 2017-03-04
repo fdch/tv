@@ -37,5 +37,4 @@ setInterval(function() {
 	var op = Math.random();
 	var timeop = (op * 4000) + 0;
 	$(".fd").delay(timeop).animate({opacity: op}, timeop);
-	return timeop;
-}, timeop);
+}, 5000);
