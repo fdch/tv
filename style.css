@@ -37,9 +37,10 @@ h3, h4, h5, h6, p, br, li {
 ul {
 	list-style-type: none;
 }
-li:hover {
+li:hover, #menu-cont span:hover, #menu-cont a:hover {
 	background:#EEEEEE;
 	font-weight:bold;
+	cursor:pointer;
 }
 #worklist li {
 	padding:5px;
@@ -48,9 +49,6 @@ a {
 	text-decoration:none
 	color: black;
 	font-weight:bold;
-}
-a:hover, .menulink:hover {
-	text-decoration:underline;
 }
 #languages {
 	cursor:pointer;
