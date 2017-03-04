@@ -10,6 +10,7 @@ body {
 	position:relative;
 	top:0;
 	right:0;
+	z-index:1000;
 }
 #content{
 	position:relative;
@@ -38,6 +39,7 @@ a:hover {
 	position:fixed;
 	bottom:0;
 	right:0;
+	z-index:-1;
 }
 audio{
 	margin:0;
