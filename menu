@@ -1,6 +1,7 @@
 <script>
 function fdLoad(x) {
-	document.getElementById('content').innerHTML = loadPage(x + '.html');
+	alert('you hovered on ' + x + ' yes, you did');
+	//document.getElementById('content').innerHTML = loadPage(x + '.html');
 }
 function loadPage(href) {
 	var xmlhttp = new XMLHttpRequest();
