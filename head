@@ -3,7 +3,7 @@
 <!--js and css linking-->
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/margins.js"></script>
-<link rel=stylesheet href="css"></style>
+<link rel=stylesheet href="style.css"></style>
 <!--metaproperties-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta property="og:image" content="fdch.github.io/tv/img/fdch.jpg" />
