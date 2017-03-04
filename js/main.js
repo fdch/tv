@@ -18,7 +18,6 @@ function fdLoad(x) {
 function fdLoadInner(x) {
 	myInner = x.innerHTML;
 	$("#content").load("content/" + myInner + ".html");
-	}
 }
 
 //establishes the language menu behavior
