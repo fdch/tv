@@ -12,6 +12,9 @@ h1, h2 {
 	font-size:1em;
 	background:white;
 }
+h3, h4, h5, h6, p, br {
+	background:white;
+}
 #menu{
 	position:relative;
 	top:0;
@@ -23,7 +26,6 @@ h1, h2 {
 	position:relative;
 	top:5px;
 	left:50px;
-	background:white;
 }
 #content-wrap{
 	position:relative;
