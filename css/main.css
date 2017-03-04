@@ -5,18 +5,18 @@ font-family:Courier;
 body {
 background:url('../img/mmn.png') right bottom no-repeat;
 min-height:800px;
- }
- #menu{
- position:relative;
- top:0;
- right:0;
- border-bottom:1px dotted black;
- }
- #content-wrap{
- position:relative;
- left:0;
- }
- ul {
+}
+#menu{
+position:relative;
+top:0;
+right:0;
+border-bottom:1px dotted black;
+}
+#content-wrap{
+position:relative;
+left:0;
+}
+ul {
 list-style-type: none;
 }
 a {
@@ -46,9 +46,9 @@ margin:0 auto;
 text-align:center;
 }
 .cpost {
- margin-bottom:10px;
- padding-bottom:10px;
- border-bottom: 2px dotted black;
+margin-bottom:10px;
+padding-bottom:10px;
+border-bottom: 2px dotted black;
 }
 .apps h4 {
 border:1px solid black;
