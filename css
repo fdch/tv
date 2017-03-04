@@ -3,7 +3,7 @@ min-height:800px;
 font-family:Courier;
 }
 body {
-background:url('../img/mmn.png') right bottom no-repeat;
+background:url('../img/mmn.png') left bottom no-repeat;
 min-height:800px;
 }
 #menu{
@@ -13,8 +13,8 @@ right:0;
 }
 #content{
 position:relative;
-top:10;
-right:10;
+top:5px;
+right:50px;
 }
 #content-wrap{
 position:relative;
