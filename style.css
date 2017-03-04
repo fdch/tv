@@ -5,7 +5,7 @@ html {
 body {
 	background:url('./img/bk0.png'), url('./img/bk1.png'), url('./img/bk2.png');
 	background-position:top, bottom, left;
-	background-repeat:repeat-x, repeat, repeat-y;
+	background-repeat:repeat;
 	min-height:800px;
 }
 #menu{
