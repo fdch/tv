@@ -10,7 +10,11 @@ min-height:800px;
 position:relative;
 top:0;
 right:0;
-border-bottom:1px dotted black;
+}
+#content{
+position:relative;
+top:10;
+right:10;
 }
 #content-wrap{
 position:relative;
