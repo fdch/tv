@@ -1,4 +1,4 @@
-void function fdLoad(x) {
+function fdLoad(x) {
 var innerContent = loadPage(x);
 $("#content").html("");
 $("#content").html("'" + innerContent + "'");
@@ -10,7 +10,7 @@ function loadPage(href) {
           return xmlhttp.responseText;
 }
 //main function on startup
-void function fdMain() {
+$(function() {
 
 	var w = $(window).width();
 	var h = $(window).height();
