@@ -46,7 +46,6 @@ function layoutSetup(w, h) {
 	$(".image-window img").width(w * 0.2);
 }
 
-$("#content-repo").repo({ user: 'fdch', name: 'tv' });
 //TODO for work
 $(".duotri").click(function() {
 $(".multimedia, .ensemble, .solo, .videoart, .orchestra, .inprogress").fadeOut(300);
