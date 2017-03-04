@@ -12,7 +12,7 @@ function fdLoad(x) {
 <!--------------------------------[BIO]------------------------------------->
 <span id=bio class=menulink onmouseover="fdLoad(this)">bi[o</span> 
 <!----------------------------------[WORK]----------------------------------->
-<span id=works class=menulink  onmouseover="fdLoad(this)"><span class=eng>[work</span><span class=spa style=display:none>[ob]ra</span></span> 
+<span id=work class=menulink  onmouseover="fdLoad(this)"><span class=eng>[work</span><span class=spa style=display:none>[ob]ra</span></span> 
 <!---------------------------------[CODE]------------------------------------>
 <a href="/"><span id=code class=menulink><span class=eng>cod[e</span><span class=spa style=display:none>c[ó]dig]o</span></span></a> 
 <!--------------------------------[VIDEO]------------------------------------>
