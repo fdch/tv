@@ -13,11 +13,13 @@ body {
 	top:0;
 	right:0;
 	z-index:1000;
+	background:white;
 }
 #content{
 	position:relative;
 	top:5px;
 	left:50px;
+	background:white;
 }
 #content-wrap{
 	position:relative;
