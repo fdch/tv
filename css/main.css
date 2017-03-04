@@ -11,40 +11,18 @@ min-height:800px;
  top:0;
  right:0;
  border-bottom:1px dotted black;
- margin-bottom:10px;
- font-size:1.2em;
  }
  #content-wrap{
  position:relative;
  left:0;
  }
- .menulink:hover{
- cursor:pointer;
- color:blue;
- }
  ul {
 list-style-type: none;
-}
-footer {
-color:white;
-margin:0;
-padding:0;
-text-align:right;
-position:relative;
-right:30px;
-bottom:5px;
 }
 a {
 text-decoration:none;
 }
 a:hover {
-text-decoration:underline;
-}
-footer a {
-color:white;
-text-decoration:none;
-}
-footer a:hover {
 text-decoration:underline;
 }
 .fixit {
@@ -62,7 +40,6 @@ padding:5%;
 margin:5%;
 background:white;
 }
-
 .headit {
 position:relative;
 margin:0 auto;
