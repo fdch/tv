@@ -19,40 +19,34 @@ con[t<span class="menulink contacto">act</span> ]o
 </div>
 </ul>
 <script>
-$(".tst").hover(function() {
-$("#content-wrap").hide();
+$(".tst").mouseenter(function() {
 $("#content")load( "content/tst.html");
 });
-$(".bio").hover(function() {
-$("#content-wrap").hide();
+$(".bio").mouseenter(function() {
 $("#content").load( "bio.html");
 });
-$(".works").hover(function() {
-$("#content-wrap").hide();
+$(".works").mouseenter(function() {
 $("#content").load( "works.html");
 });
 $(".code, .blog").click(function() {
 $("#main").fadeOut(300);
 });
-$(".video").hover(function() {
-$("#content-wrap").hide();
+$(".video").mouseenter(function() {
+$("#content").load( "video.html");
 });
-$(".games").hover(function() {
-$("#content-wrap").hide();
+$(".games").mouseenter(function() {
 $("#content").load( "games.html");
 });
-$(".social").hover(function() {
-$("#content-wrap").hide();
+$(".social").mouseenter(function() {
 $("#content").load( "social.html");
 });
-$(".contacto").hover(function() {
-$("#content-wrap").hide();
+$(".contacto").mouseenter(function() {
 $("#content").load( "contacto.html");
 });
-$("#english").hover(function() {
+$("#english").mouseenter(function() {
 $(".spa").hide(), $(".eng").show()
 });
-$("#spanish").hover(function() {
+$("#spanish").mouseenter(function() {
 $(".eng").hide(), $(".spa").show()
 }); 
 </script>
