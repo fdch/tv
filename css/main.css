@@ -14,10 +14,6 @@ min-height:800px;
  margin-bottom:10px;
  font-size:1.2em;
  }
- #content{
- margin-left:2%;
- opacity:0;
- }
  #content-wrap{
  position:relative;
  left:0;
