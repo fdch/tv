@@ -37,7 +37,7 @@ h3, h4, h5, h6, p, br, li {
 ul {
 	list-style-type: none;
 }
-li:hover, #menu-cont span:hover, #menu-cont a:hover {
+li:hover, #menu-list span:hover, #menu-list a:hover {
 	background:#EEEEEE;
 	font-weight:bold;
 	cursor:pointer;

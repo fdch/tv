@@ -4,7 +4,7 @@ function getContent() {
 		lines = data.split("\n");
 		$.each(lines, function(n, elem) {
 			$("#worklist").append("<li class=worklist onClick=\""
-+ "fdLoadWork('content/" + elem + "')\">" + elem + "</li>");
++ "fdLoad('content/" + elem + "')\">" + elem + "</li>");
 		});
 	});
 }

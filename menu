@@ -1,30 +1,28 @@
-<ul>
-<div id=menu-cont style="margin-bottom:10px">
+<ul id=menu-list>
+
 <!--------------------------------[[[[[[------------------------------------->
 <a href="https://fdch.github.io/tv">[[[[[</a> 
 <!--------------------------------[BIO]------------------------------------->
-<span id=bio class=menulink onClick="fdLoad(this)">bi[o</span> 
+<span id=bio class=menulink onClick="fdLoadID(this)">bi[o</span> 
 <!----------------------------------[WORK]----------------------------------->
-<span id=work class=menulink  onClick="fdLoad(this)"><span class=eng>[work</span><span class=spa style=display:none>[ob]ra</span></span> 
-<!---------------------------------[CODE]------------------------------------>
-<a href="https://github.com/fdch"><span id=code class=menulink><span class=eng>cod[e</span><span class=spa style=display:none>c[ó]dig]o</span></span></a> 
+<span id=work class=menulink  onClick="fdLoadID(this)"><span class=eng>[work</span><span class=spa >[ob]ra</span></span> 
 <!--------------------------------[VIDEO]------------------------------------>
-<span id=video class=menulink onClick="fdLoad(this)">>vi[deo</span>
+<span id=video class=menulink onClick="fdLoadID(this)">>vi[deo</span>
+<!---------------------------------[SOCIAL]------------------------------------>
+<span id=social class=menulink onClick="fdLoadID(this)">s[ocia]l</span> 
+<!-------------------------------[CONTACTO]----------------------------------->
+con[t<span id=contact onClick="fdLoadID(this)">act</span> ]o 
+<!-------------------------------[GAMES]-------------------------------------->
+<span id=games class=menulink onClick="fdLoadID(this)"><span class=eng>g[ames</span><span class=spa >jue[go]s</span></span> 
+<!---------------------------------[CODE]------------------------------------>
+<a href="https://github.com/fdch"><span id=code class=menulink><span class=eng>cod[e</span><span class=spa >c[ó]dig]o</span></span></a> 
 <!--------------------------------[BLOG]------------------------------------->
 <a href="https://fedecamarahalac.tumblr.com"><span class="menulink blog">blo[g</span></a> 
-<!-------------------------------[GAMES]-------------------------------------->
-<span id=games class=menulink onClick="fdLoad(this)"><span class=eng>g[ames</span><span class=spa style=display:none>jue[go]s</span></span> 
-<!---------------------------------[SOCIAL]------------------------------------>
-<span id=social class=menulink onClick="fdLoad(this)">s[ocia]l</span> 
-<!-------------------------------[CONTACTO]----------------------------------->
-con[t<span id=contact onClick="fdLoad(this)">act</span> ]o 
-
 <!------------------------------[LANGUAGES]----------------------------------->
 <div id=languages>
 <span class=menulink-left>
-<span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>&nbsp;|&nbsp;<span id=spanish ><spa class=spa style=display:none>[</spa>es<spa class=spa style=display:none>]</span>
+<span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>&nbsp;|&nbsp;<span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span>
 </span><!-- menulink-left (needed for margins.js) -->
 </div>
 
-</div><!--[menu-cont]-->
 </ul><!--[menu list end]-->
