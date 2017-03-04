@@ -28,4 +28,6 @@ randomMargenMotionR();
 }, 4333);
 setInterval(function() {
 randomMargenWorks();
+var op = Math.random();
+$(".fd").delay(3000).animate({opacity: op}, 1200);
 }, 4333);
