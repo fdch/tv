@@ -3,9 +3,12 @@ function getContent() {
 	jQuery.get('content.txt', function(data){
 		lines = data.split("\n");
 		$.each(lines, function(n, elem) {
-			$("#content").append('<div>' + elem + '</div>');
+			$("#worklist").append("<li class=worklist onClick='fdLoad(" + elem + ")>" + elem + "</li>");
 		});
 	});
 }
 $(getContent());
 </script>
+<ul id=worklist>
+
+</ul>
