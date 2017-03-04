@@ -5,12 +5,13 @@
 <script>
 $(function(){
 	$("head").load("head");
-	$("#menu, #content").css("opacity", "0");
+	$("#menu, #content, .fd").css("opacity", "0");
 	$("#menu").load("menu", function() {
 		$(this).delay(30).animate({opacity: 1}, 100);
 	});
 	$("#content").load("events", function() {
 		$(this).delay(30).animate({opacity: 1}, 100);
+		$(".fd").delay(3000).animate({opacity: 1}, 1200);
 	});
 	$("#multimedia").load("https://www.wordreference.com/definition/multimedia#articleHead");
 	$("#nautico").load("https://www.wordreference.com/definition/nautico#articleHead");
