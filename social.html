@@ -1,6 +1,5 @@
 <div id=content-wrap>
 
-
 <div class="makenew">
 <h3>so[ci]al m[edia</h3>
 <div id="social-media" style="font-size:1.3em;display:block">
@@ -11,7 +10,7 @@ f a c e b o o k</a>
 <a href="http://www.soundcloud.com/fedecamarahalac" target="_blank" title="soundcloud.com/fedecamarahalac">
 s o u n c l o u d</a>
 <a href="http://www.vimeo.com/fedecamarahalac" target="_blank" title="vimeo.com/fedecamarahalac">
-v i  m e o </a>
+v im e o </a>
 <a href="http://www.vine.co/fedecamarahalac" target="_blank" title="vine.co/fedecamarahalac">
 v i n e</a>
 <a href="https://www.youtube.com/channel/UCzOx-iKaNx9ruddNI6ykTIA" target="_blank">
@@ -64,24 +63,24 @@ l i n k e d i n</a>
 
 
 </div>
-<script>	
-	//  fun with codeback in social.html
-	$(".makenew").css("cursor","pointer").mouseenter(function() {
-  		var rwi = Math.floor(content * Math.random() * 0.5);
-  		var rhi = Math.floor(content * Math.random() * 0.5);
-  		var lim = Math.floor(Math.random()*16) + 1;
-  		for ( i = 0 ; i < lim; i++)
-  		{
-  		 $("#content").append(document.createTextNode("<span class=makenew style=cursor:pointer><img width=" + rwi + " height=" + rhi + " src=img/codeback.png /></span>" ))
-  		 }
-  	});
-  $(".makenew").click(function() {
-  		var rwi = Math.floor(content * Math.random() * 0.5);
-  		var rhi = Math.floor(content * Math.random() * 0.5);
-  		var lim = Math.floor(Math.random()*16) + 1;
-  		for ( i = 0 ; i < lim; i++)
-  		{
-  		 $("#content").append(document.createTextNode("<span class=makenew style=cursor:pointer><img width=" + rwi + " height=" + rhi + " src=img/codeback.png /></span>" ))
-  		 }
-  	});
+<script>
+//fun with codeback in social.html
+$(".makenew").css("cursor","pointer").mouseenter(function() {
+var rwi = Math.floor(content * Math.random() * 0.5);
+var rhi = Math.floor(content * Math.random() * 0.5);
+var lim = Math.floor(Math.random()*16) + 1;
+for ( i = 0 ; i < lim; i++)
+{
+ $("#content").append(document.createTextNode("<span class=makenew style=cursor:pointer><img width=" + rwi + " height=" + rhi + " src=img/codeback.png /></span>" ))
+}
+});
+$(".makenew").click(function() {
+var rwi = Math.floor(content * Math.random() * 0.5);
+var rhi = Math.floor(content * Math.random() * 0.5);
+var lim = Math.floor(Math.random()*16) + 1;
+for ( i = 0 ; i < lim; i++)
+{
+ $("#content").append(document.createTextNode("<span class=makenew style=cursor:pointer><img width=" + rwi + " height=" + rhi + " src=img/codeback.png /></span>" ))
+}
+});
 </script>

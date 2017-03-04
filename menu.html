@@ -3,14 +3,15 @@
 <a href="https://fdch.github.io/tv">[[[[[</a> 
 <span class="menulink bio">bi[o</span> 
 <span class="menulink works"><span class=eng>[works</span><span class=spa style=display:none>[ob]ras</span></span> 
-<a href="https://github.com/fdch"><span class="menulink code"><span class=eng>cod[e</span><span class=spa style=display:none>c[ó]dig]o</span></span> 	</a>
-<span class="menulink video">vi[deo</span> 
+<a href="https://github.com/fdch"><span class="menulink code"><span class=eng>cod[e</span><span class=spa style=display:none>c[ó]dig]o</span></span> </a>
+<a href="https://vimeo.com/fedecamarahalac"><span class="menulink video">vi[deo</span></a>
 <a href="https://fedecamarahalac.tumblr.com"><span class="menulink blog">blo[g</span> </a>
 <span class="menulink games"><span class=eng>g[ames</span><span class=spa style=display:none>jue[go]s</span></span> 
 <span class="menulink social">s[ocia]l</span> 
 con[t<span class="menulink contacto">act</span> ]o
+<span class=test>tst</span>
 
-<div id="languages" style="cursor:pointer;position:relative;float:right;margin-right:20px">	
+<div id="languages" style="cursor:pointer;position:relative;float:right;margin-right:20px">
 <span class="menulink-left" >
 <span id="english" ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>&nbsp;|&nbsp;<span id="spanish" ><spa class=spa style=display:none>[</spa>es<spa class=spa style=display:none>]</spa></span>
 <br/><a style="font-size:0.7em;" href="index.html">multimedianautics</a></span>
@@ -18,31 +19,40 @@ con[t<span class="menulink contacto">act</span> ]o
 </div>
 </ul>
 <script>
-			$(".bio").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "bio.html");
-			});
-			$(".works").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "works.html");
-			});
-			$(".code, .blog").click(function() {
-				$("#main").fadeOut(300);
-			});
-			$(".video").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "video.html");
-			});
-			$(".games").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "games.html");
-			});
-			$(".social").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "social.html");
-			});
-			$(".contacto").click(function() {
-				$("#content-wrap").fadeOut(300);
-				$("#content").delay(300).load( "contacto.html");
-			});
+$(".tst").click(function() {
+$("#content-wrap").fadeOut(300);
+$("#content").delay(300).load( "content/tst.html");
+});
+$(".bio").click(function() {
+$("#content-wrap").fadeOut(300);
+$("#content").delay(300).load( "bio.html");
+});
+$(".works").click(function() {
+$("#content-wrap").fadeOut(300);
+$("#content").delay(300).load( "works.html");
+});
+$(".code, .blog").click(function() {
+$("#main").fadeOut(300);
+});
+$(".video").click(function() {
+$("#content-wrap").fadeOut(300);
+});
+$(".games").click(function() {
+$("#content-wrap").fadeOut(300);
+$("#content").delay(300).load( "games.html");
+});
+$(".social").click(function() {
+$("#content-wrap").fadeOut(300);
+$("#content").delay(300).load( "social.html");
+});
+$(".contacto").click(function() {
+$("#content-wrap").fadeOut(300);
+$("#content").delay(300).load( "contacto.html");
+});
+$("#english").click(function() {
+$(".spa").hide(), $(".eng").show()
+});
+$("#spanish").click(function() {
+$(".eng").hide(), $(".spa").show()
+}); 
 </script>
