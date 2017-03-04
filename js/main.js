@@ -11,7 +11,7 @@ $(function() {
 
 //loads the id of the element passed on the content div 
 function fdLoad(x) {
-	var anchorID = x.getElementByTagName("a");
+	var anchorID = x.getElementsByTagName("a");
 	if (anchorID) {
 		$("#content").load("content/" + anchorID + ".html");
 	} else {
