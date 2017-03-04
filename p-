@@ -1,0 +1,7 @@
+#!/bin/bash
+ARG=$1
+git init
+git add .
+git commit -m '$ARG'
+git push
+exit
