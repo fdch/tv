@@ -38,7 +38,7 @@ function languagesMenu() {
 
 //reset the layout
 function layoutSetup(w, h) {
-	if (w <= 500.) {
+	if (w <= 800.) {
 		$("#content").width(content);
 		$("#content img").width(w * 0.4).css("margin", 0);
 		$(".image-window img").width(w * 0.6);
