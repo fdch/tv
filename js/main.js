@@ -6,7 +6,7 @@ $(function() {
 	
 	languagesMenu();
 	layoutSetup(w, h);
-	getContent();
+	
 	
 });
 
