@@ -3,7 +3,7 @@ function fdLoad(x) {
 	myID = x.id;
 	//alert('you hovered on ' + myID + ' yes, you did');
 	//document.getElementById('content').innerHTML = loadPage(x + '.html');
-	$("#content").load(myId + '.html')
+	$("#content").load(myID + '.html')
 }
 function loadPage(href) {
 	var xmlhttp = new XMLHttpRequest();
