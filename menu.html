@@ -20,8 +20,7 @@ con[t<span class="menulink contacto">act</span> ]o
 </ul>
 <script>
 $(".tst").click(function() {
-$("#content-wrap").animate({ opacity: 0.25, left: "-=2000"}, 400);
-$("#content").delay(400).load( "content/tst.html");
+$("#content-wrap").animate({ opacity: 0.25, left: "-=1300"}, 500, function() {$("#content").load( "content/tst.html");});
 });
 $(".bio").click(function() {
 $("#content-wrap").fadeOut(300);
