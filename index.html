@@ -3,14 +3,17 @@
 <head>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
-$(function(){ $("head").load("head") });
+$(function(){ 
+          $("head").load("head").load("meta");
+          $("#menu").load("menu");
+          $("#content").load("content/upcoming.html");
+});
 </script>
 </head>
 <body>
-<div id="main">
-<div id="header"></div>
-<!--<H1>fede camara halac</H1>-->
-<!--<H2>multimedianautics</H2>-->
-<div id="content"></div>
+<!--<h1>multimedianautics</h1>-->
+<!--<h2>fede camara halac</h2>-->
+<id id=menu></div>
+<div id=content></div>
 </body>
 </html>
