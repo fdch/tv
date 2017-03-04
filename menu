@@ -1,10 +1,3 @@
-<script>
-function fdLoad(x) {
-	myID = x.id;
-	$("#content").load(myID)
-}
-</script>
-
 <ul>
 <div id=menu-cont style="margin-bottom:10px">
 <!--------------------------------[[[[[[------------------------------------->
@@ -25,13 +18,12 @@ function fdLoad(x) {
 <span id=social class=menulink onmouseover="fdLoad(this)">s[ocia]l</span> 
 <!-------------------------------[CONTACTO]----------------------------------->
 con[t<span id=contact onmouseover="fdLoad(this)">act</span> ]o 
-<!---------------------------------[TST]------------------------------------->
-<span onmouseover="fdLoad(tst)">tst</span>
 
 <!------------------------------[LANGUAGES]----------------------------------->
 <div id=languages>
 <span class=menulink-left>
-<span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>&nbsp;|&nbsp;<span id=spanish ><spa class=spa style=display:none>[</spa>es<spa class=spa style=display:none>]</spa></span>
+<span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>&nbsp;|&nbsp;<span id=spanish ><spa class=spa style=display:none>[</spa>es<spa class=spa style=display:none>]</span>
+</span><!-- menulink-left (needed for margins.js) -->
 </div>
 
 </div><!--[menu-cont]-->
