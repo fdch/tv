@@ -1,6 +1,6 @@
 <script>
 function getContent() {
-	jQuery.get('content.txt', function(data){
+	jQuery.get('worklist', function(data){
 		lines = data.split("\n");
 		$.each(lines, function(n, elem) {
 			$("#worklist").append("<li class=worklist onClick=\""
