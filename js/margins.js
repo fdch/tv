@@ -1,33 +1,41 @@
 //Get a random number to be margin
 function getRandomMargin() {
-var margen = (5 * Math.random()) + 3;
-return margen;
+	var margen = (5 * Math.random()) + 3;
+	return margen;
 }
 ///Make Random Margins 
 function randomMargenMotionL() {
-$(".menulink-left").delay(4333).animate({
-marginLeft: (getRandomMargin() * -0.5) //up to half of the right margin
-}, 4333);
+	$(".menulink-left").delay(4333).animate({
+		marginLeft: (getRandomMargin() * -0.5) //up to half of the right margin
+		}, 4333);
 }
 function randomMargenMotionR() {
-$(".menulink").delay(4333).animate({
-marginRight: getRandomMargin()
-}, 4333);
+	$(".menulink").delay(4333).animate({
+		marginRight: getRandomMargin()
+	}, 4333);
 }
 function randomMargenWorks() {
-$(".nums").delay(4333).animate({
-marginRight: getRandomMargin()*0.5
-}, 4333*1.3);
+	$(".nums").delay(4333).animate({
+		marginRight: getRandomMargin()*0.5
+	}, 4333*1.3);
 }
 //SetRandom Margens going every 3000
 setInterval(function() {
-randomMargenMotionL();
+	randomMargenMotionL();
 }, 4333);
+
 setInterval(function() {
-randomMargenMotionR();
+	randomMargenMotionR();
 }, 4333);
+
 setInterval(function() {
-randomMargenWorks();
-var op = Math.random();
-$(".fd").delay(3000).animate({opacity: op}, 1200);
+	randomMargenWorks();
 }, 4333);
+
+//Every 5000, change the opacity of the fd image
+setInterval(function() {
+	var op = Math.random();
+	var timeop = (op * 4000) + 0;
+	$(".fd").delay(timeop).animate({opacity: op}, timeop);
+	return timeop;
+}, timeop);

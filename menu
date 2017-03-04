@@ -1,22 +1,3 @@
-<script>
-function fdLoad(x) {
-var innerContent = loadPage(x);
-$("#content").html("");
-$("#content").html("'" + innerContent + "'");
-}
-function loadPage(href) {
-          var xmlhttp = new XMLHttpRequest();
-          xmlhttp.open("GET", href, false);
-          xmlhttp.send();
-          return xmlhttp.responseText;
-}
-$("#english").mouseover(function() {
-$(".spa").hide(), $(".eng").show()
-});
-$("#spanish").mouseover(function() {
-$(".eng").hide(), $(".spa").show()
-}); 
-</script>
 <ul id="menu">
 <div id="menu-cont" style="margin-bottom:10px">
 <a href="https://fdch.github.io/tv">[[[[[</a> 
