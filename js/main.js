@@ -6,6 +6,7 @@ $(function() {
 	
 	languagesMenu();
 	layoutSetup(w, h);
+	getContent();
 	
 });
 
@@ -14,12 +15,6 @@ function fdLoad(x) {
 	myID = x.id;
 	$("#content").load(myID);
 }
-//loads the innerHTML of the element passed on the content div 
-function fdLoadInner(x) {
-	myInner = x.innerHTML;
-	$("#content").load("content/" + myInner + ".html");
-}
-
 //establishes the language menu behavior
 function languagesMenu() {
 	//default to english
@@ -30,6 +25,15 @@ function languagesMenu() {
 	});
 	$("#spanish").mouseover(function() {
 		$(".eng").hide(), $(".spa").show()
+	});
+}
+
+function getContent() {
+	jQuery.get('context.txt', function(data){
+		lines = data.split("\n");
+		$.each(lines, function(n, elem) {
+			$("work").append('<div>' + elem + '</div>');
+		});
 	});
 }
 
