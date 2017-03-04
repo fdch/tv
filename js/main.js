@@ -17,7 +17,7 @@ function fdLoad(x) {
 }
 
 function fdLoadWork(x) {
-	$("#content").load(x);
+	$("#content").load("x");
 }
 
 //establishes the language menu behavior
