@@ -18,6 +18,10 @@ min-height:800px;
  margin-left:2%;
  opacity:0;
  }
+ #content-wrap{
+ position:relative;
+ left:0;
+ }
  .menulink:hover{
  cursor:pointer;
  color:blue;
