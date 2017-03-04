@@ -1,60 +1,60 @@
 html {
-min-height:800px;
-font-family:Courier;
+	min-height:800px;
+	font-family:Courier;
 }
 body {
-background:url('../img/mmn.png') left bottom no-repeat;
-min-height:800px;
+	background:url('../img/mmn.png') left bottom no-repeat;
+	min-height:800px;
 }
 #menu{
-position:relative;
-top:0;
-right:0;
+	position:relative;
+	top:0;
+	right:0;
 }
 #content{
-position:relative;
-top:5px;
-left:50px;
+	position:relative;
+	top:5px;
+	left:50px;
 }
 #content-wrap{
-position:relative;
-left:10px;
+	position:relative;
+	left:10px;
 }
 ul {
-list-style-type: none;
+	list-style-type: none;
 }
 a {
-text-decoration:none;
+	text-decoration:none;
 }
 a:hover {
-text-decoration:underline;
+	text-decoration:underline;
 }
 .fixit {
-position:fixed;
-bottom:10px;
-right:10px;
+	position:fixed;
+	bottom:10px;
+	right:10px;
 }
 audio{
-margin:0;
-padding:0;
-border:0;
+	margin:0;
+	padding:0;
+	border:0;
 }
 #code {
-padding:5%;
-margin:5%;
-background:white;
+	padding:5%;
+	margin:5%;
+	background:white;
 }
 .headit {
-position:relative;
-margin:0 auto;
-text-align:center;
+	position:relative;
+	margin:0 auto;
+	text-align:center;
 }
 .cpost {
-margin-bottom:10px;
-padding-bottom:10px;
-border-bottom: 2px dotted black;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	border-bottom: 2px dotted black;
 }
 .apps h4 {
-border:1px solid black;
-padding:10px;
+	border:1px solid black;
+	padding:10px;
 }
