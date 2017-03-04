@@ -17,9 +17,9 @@
 
 <li class=year>2016
 <ul class=year-list>
-<li class="duo"><span class=eng><a href="content/i[n.html" onClick="fdLoadInner(this)">i[n</a>, a 20 minute[un]work designed specifically for <b>scapegoat ensemble</b></span><span class=spa ><a href="content/i[n.html" onClick="fdLoadInner(this)">i[n</a>, una [des]obra de 20 minutos para <b>scapegoat ensemble</b></span></li>
+<li class="duo" onClick="fdLoad(content/i[n.html)"><span class=eng>i[n, a 20 minute[un]work designed specifically for <b>scapegoat ensemble</b></span><span class=spa ><a href="content/i[n.html" onClick="fdLoadInner(this)">i[n</a>, una [des]obra de 20 minutos para <b>scapegoat ensemble</b></span></li>
 
-<li class="multimedia ensemble videoart"><span class=eng><a href="content/sk.html" onClick="fdLoadInner(this)">sk</a>, a 10 minute multimedia [un]work designed specifically for <b>tak ensemble</b></span><span class=spa ><a href="content/sk.html" onClick="fdLoadInner(this)">sk</a>, una [des]obra multimedial de 10 minutos para <b>tak ensemble</b></span></li>
+<li class="multimedia ensemble videoart"><span class=eng><a href="content/sk.html" onClick="fdLoadInner(this)">sk</a>, a 10 minute multimedia [un]work designed specifically for <b>tak ensemble</b></span><span class=spa ><a href="content/sk.html" >sk</a>, una [des]obra multimedial de 10 minutos para <b>tak ensemble</b></span></li>
 
 <li class="multimedia ensemble "><span class=eng><a href="content/canon.html" onClick="fdLoadInner(this)">canon</a>, a 6 minute piece designed for <b>proyecto[red]ensamble</b> [for 5 players and potentiometers]</span><span class=spa ><a href="content/canon.html" onClick="fdLoadInner(this)">canon</a>, una obra de 6 minutos diseñada para <b>proyecto[red]ensamble</b>[para 5 ejecutantes y potenciometros]</span></li>
 
