@@ -4,5 +4,5 @@ git init
 git add .
 git commit -m '$ARG'
 git push
-open http://github.com/fdch/tv
+open https://fdch.github.io
 exit
