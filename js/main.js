@@ -29,7 +29,7 @@ function languagesMenu() {
 }
 
 function getContent() {
-	jQuery.get('context.txt', function(data){
+	jQuery.get('content.txt', function(data){
 		lines = data.split("\n");
 		$.each(lines, function(n, elem) {
 			$("work").append('<div>' + elem + '</div>');
