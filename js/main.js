@@ -18,7 +18,7 @@ function languagesMenu() {
 }
 
 //reset the layout
-function layoutSetup() {
+function layoutSetup(w) {
 	$("#content").width(content);
 	//$(".score-object").width(content).height(content * 0.7);
 	//$(".audio-object").width(content);
@@ -35,7 +35,7 @@ $(function() {
 	var h = $(window).height();
 	var content = w * 0.95;
 	
-	languagesMenu();
+	languagesMenu(w);
 	layoutSetup();
 	
 });
