@@ -37,6 +37,10 @@ h3, h4, h5, h6, p, br, li {
 ul {
 	list-style-type: none;
 }
+li:hover {
+	background:#EEEEEE;
+	font-weight:bold;
+}
 #worklist li {
 	padding:5px;
 }
