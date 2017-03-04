@@ -1,3 +1,14 @@
+//main function on startup
+$(function() {
+	var w = $(window).width();
+	var h = $(window).height();
+	var content = w * 0.95;
+	
+	languagesMenu();
+	layoutSetup(w, h);
+	
+});
+
 //loads the id of the element passed on the content div 
 function fdLoad(x) {
 	myID = x.id;
@@ -17,8 +28,9 @@ function languagesMenu() {
 	});
 }
 
+
 //reset the layout
-function layoutSetup(w) {
+function layoutSetup(w, h) {
 	$("#content").width(content);
 	//$(".score-object").width(content).height(content * 0.7);
 	//$(".audio-object").width(content);
@@ -28,14 +40,3 @@ function layoutSetup(w) {
 	//$(".soundcloud").width(content);
 	$(".image-window img").width(w * 0.2);
 }
-
-//main function on startup
-$(function() {
-	var w = $(window).width();
-	var h = $(window).height();
-	var content = w * 0.95;
-	
-	languagesMenu(w);
-	layoutSetup();
-	
-});
