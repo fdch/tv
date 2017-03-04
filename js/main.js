@@ -11,8 +11,13 @@ $(function() {
 
 //loads the id of the element passed on the content div 
 function fdLoad(x) {
-	myID = x.id;
-	$("#content").load(myID)
+	if(x.element.tagName=="a") {
+		var anchorID = x.innerHTML;
+		$("#content").load("content/" + anchorID + ".html");
+	} else {
+		myID = x.id;
+		$("#content").load(myID);
+	}
 }
 
 //establishes the language menu behavior
