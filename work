@@ -3,7 +3,7 @@ function getContent() {
 	jQuery.get('content.txt', function(data){
 		lines = data.split("\n");
 		$.each(lines, function(n, elem) {
-			$("#worklist").append('<li class=worklist onClick=' + '"' + 'fdLoad(content/' + elem + ')' + '"' + ' >' + elem + '</li>');
+			$("#worklist").append('<li class=worklist onClick=' + '"' + 'fdLoadWork(content/' + elem + ')' + '"' + ' >' + elem + '</li>');
 		});
 	});
 }

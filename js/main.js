@@ -15,6 +15,11 @@ function fdLoad(x) {
 	myID = x.id;
 	$("#content").load(myID);
 }
+
+function fdLoadWork(x) {
+	$("#content").load(x);
+}
+
 //establishes the language menu behavior
 function languagesMenu() {
 	//default to english
