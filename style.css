@@ -12,10 +12,12 @@ body {
 h1, h2 {
 	font-size:1em;
 	background:white;
+	border-radius:3px;
 }
 h3, h4, h5, h6, p, br, li {
 	background:white;
 	padding:3px;
+	border-radius:3px;
 }
 #menu{
 	position:relative;
@@ -23,6 +25,7 @@ h3, h4, h5, h6, p, br, li {
 	right:0;
 	z-index:1000;
 	background:white;
+	border-radius:3px;
 }
 #content{
 	position:relative;

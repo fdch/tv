@@ -2,7 +2,7 @@
 $(function() {
 	var w = $(window).width();
 	var h = $(window).height();
-	var content = w * 0.95;
+	var content = w * 0.9;
 	
 	languagesMenu();
 	layoutSetup(w, h);
