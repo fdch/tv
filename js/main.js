@@ -42,12 +42,13 @@ function layoutSetup(w, h) {
 		$("#content").width(content);
 		$("#content img").width(w * 0.4).css("margin", 0);
 		$(".image-window img").width(w * 0.6);
+		$("#content iframe").width(content);
 	
 	} else {
 		$("#content").width(content/2.);
 		$("#content img").width(w * 0.6).css("margin", 0);
 		$(".image-window img").width(w * 0.4);
-		$(".vid").width(content/2.);
+		$("#content iframe").width(content/2.);
 	}
 	//$(".score-object").width(content).height(content * 0.7);
 	//$(".audio-object").width(content);

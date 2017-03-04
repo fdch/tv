@@ -1,5 +1,4 @@
 html {
-	min-height:800px;
 	font-family:Courier;
 }
 body {
@@ -7,7 +6,6 @@ body {
 	background-position:top, bottom, left, right;
 	background-color:grey;
 	background-repeat:repeat;
-	min-height:800px;
 }
 h1, h2 {
 	font-size:1em;
