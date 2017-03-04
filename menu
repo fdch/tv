@@ -1,6 +1,7 @@
 <script>
 function fdLoad(x) {
-	alert('you hovered on ' + x + ' yes, you did');
+	myID = x.attr('id');
+	alert('you hovered on ' + myID + ' yes, you did');
 	//document.getElementById('content').innerHTML = loadPage(x + '.html');
 }
 function loadPage(href) {
