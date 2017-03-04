@@ -3,7 +3,7 @@ html {
 	font-family:Courier;
 }
 body {
-	background:url('./img/bk0.png'), url('./img/bk1.png'), url('./img/bk2.png'),url('./img/favicon.png');
+	background:url('./img/bk0.png'), url('./img/bk1.png'), url('./img/bk2.png'),url('./img/favicon-1.png');
 	background-position:top, bottom, left, right;
 	background-color:grey;
 	background-repeat:repeat;
