@@ -5,7 +5,11 @@
 <script>
 $(function(){
 	$("head").load("head");
-	$("#menu").load("menu");
+	$("#menu").css("opacity", "0", function() {
+		$(this).load("menu", function() {
+			$(this).css("opacity", "1");
+		});
+	});
 	$("#content").css("opacity", "0", function() {
 		$(this).load("events", function() {
 			$(this).css("opacity", "1");
