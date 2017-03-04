@@ -19,40 +19,39 @@ con[t<span class="menulink contacto">act</span> ]o
 </div>
 </ul>
 <script>
-$(".tst").click(function() {
-$("#content-wrap").animate({ opacity: 0.25, left: "-=2000"}, 400);
-$("#content").delay(100).load( "content/tst.html").css({"left":"2000", "opacity":"0"}).animate({ opacity: 1, left: "-=2000"}, 400);
+$(".tst").hover(function() {
+$("#content")load( "content/tst.html").
 });
-$(".bio").click(function() {
-$("#content-wrap").fadeOut(300);
-$("#content").delay(300).load( "bio.html");
+$(".bio").hover(function() {
+
+$("#content").load( "bio.html");
 });
-$(".works").click(function() {
-$("#content-wrap").fadeOut(300);
-$("#content").delay(300).load( "works.html");
+$(".works").hover(function() {
+
+$("#content").load( "works.html");
 });
 $(".code, .blog").click(function() {
 $("#main").fadeOut(300);
 });
-$(".video").click(function() {
-$("#content-wrap").fadeOut(300);
+$(".video").hover(function() {
+
 });
-$(".games").click(function() {
-$("#content-wrap").fadeOut(300);
-$("#content").delay(300).load( "games.html");
+$(".games").hover(function() {
+
+$("#content").load( "games.html");
 });
-$(".social").click(function() {
-$("#content-wrap").fadeOut(300);
-$("#content").delay(300).load( "social.html");
+$(".social").hover(function() {
+
+$("#content").load( "social.html");
 });
-$(".contacto").click(function() {
-$("#content-wrap").fadeOut(300);
-$("#content").delay(300).load( "contacto.html");
+$(".contacto").hover(function() {
+
+$("#content").load( "contacto.html");
 });
-$("#english").click(function() {
+$("#english").hover(function() {
 $(".spa").hide(), $(".eng").show()
 });
-$("#spanish").click(function() {
+$("#spanish").hover(function() {
 $(".eng").hide(), $(".spa").show()
 }); 
 </script>
