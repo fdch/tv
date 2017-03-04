@@ -14,11 +14,11 @@ right:0;
 #content{
 position:relative;
 top:5px;
-right:50px;
+left:50px;
 }
 #content-wrap{
 position:relative;
-left:0;
+left:10px;
 }
 ul {
 list-style-type: none;
