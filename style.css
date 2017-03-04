@@ -43,7 +43,7 @@ li:hover, #menu-cont span:hover, #menu-cont a:hover {
 	cursor:pointer;
 }
 #worklist li {
-	padding:5px;
+	margin-bottom:3px;
 }
 a {
 	text-decoration:none
