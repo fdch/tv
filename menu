@@ -33,7 +33,6 @@ con[t<span onmouseover="fdLoad(contacto)">act</span> ]o
 <div id="languages" style="cursor:pointer;position:relative;float:right;margin-right:20px">
 <span class="menulink-left" >
 <span id="english" ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>&nbsp;|&nbsp;<span id="spanish" ><spa class=spa style=display:none>[</spa>es<spa class=spa style=display:none>]</spa></span>
-<br/><a style="font-size:0.7em;" href="index.html">multimedianautics</a></span>
 </div>
 </div>
 </ul>
