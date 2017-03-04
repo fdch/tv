@@ -38,14 +38,24 @@ function languagesMenu() {
 
 //reset the layout
 function layoutSetup(w, h) {
-	$("#content").width(content);
+	if (w <= 500) {
+		$("#content").width(content);
+		$("#content img").width(w * 0.4).css("margin", 0);
+		$(".image-window img").width(w * 0.6);
+	
+	} else {
+		$("#content").width(content/2);
+		$("#content img").width(w * 0.6).css("margin", 0);
+		$(".image-window img").width(w * 0.4);
+	}
 	//$(".score-object").width(content).height(content * 0.7);
 	//$(".audio-object").width(content);
-	$("#content img").width(w * 0.25).css("margin", 0);
+	
 	//$(".video-iframe").width(content).css("margin", 0).css("padding", 0).height(content * 0.4);
 	//$(".audio-iframe").width(content).css("margin", 0).css("padding", 0).height(content * 0.15);
 	//$(".soundcloud").width(content);
-	$(".image-window img").width(w * 0.2);
+	
+
 }
 
 //TODO for work
