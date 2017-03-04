@@ -34,8 +34,8 @@ $(function() {
 var w = $(window).width();
 var h = $(window).height();
 var content = w * 0.9;
-$("#header").load("menu.html");
-$("#content").width(content).load("content/upcoming.html").delay(500).animate({opacity: 1}, 500);
+$("#header").load("menu");
+$("#content").width(content).load("content/upcoming").delay(500).animate({opacity: 1}, 500);
 //adjusting margins
 $(".score-object").width(content).height(content * 0.7);
 $(".audio-object").width(content);
