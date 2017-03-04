@@ -3,7 +3,7 @@ html {
 	font-family:Courier;
 }
 body {
-	background:url('./img/background-1.png') top left repeat;
+	background:url('./img/background-0.png') top left repeat;
 	min-height:800px;
 }
 #menu{
@@ -33,6 +33,11 @@ a:hover {
 	position:fixed;
 	bottom:10px;
 	right:10px;
+}
+.fd{
+	position:fixed;
+	bottom:0;
+	left:0;
 }
 audio{
 	margin:0;
