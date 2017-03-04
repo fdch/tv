@@ -3,7 +3,9 @@ html {
 	font-family:Courier;
 }
 body {
-	background:url('./img/back.png') top left repeat;
+	background:url('./img/back.png'), url('.img/back.png') 
+	background-position:top left, bottom center;
+	background-repeat:repeat;
 	min-height:800px;
 }
 #menu{
@@ -37,7 +39,7 @@ a:hover {
 }
 .fd{
 	position:fixed;
-	bottom:0;
+	bottom:-10px;
 	right:0;
 	z-index:-1;
 }
