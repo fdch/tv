@@ -12,7 +12,7 @@ h1, h2 {
 	font-size:1em;
 	background:white;
 }
-h3, h4, h5, h6, p, br {
+h3, h4, h5, h6, p, br, li {
 	background:white;
 }
 #menu{
@@ -51,4 +51,8 @@ a:hover {
 	bottom:-10px;
 	right:0;
 	z-index:-1;
+}
+.vid {
+	position:relative;
+	padding:20px;
 }
