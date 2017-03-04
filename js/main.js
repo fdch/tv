@@ -13,7 +13,6 @@ $(function() {
 function fdLoad(x) {
 	myID = x.id;
 	$("#content").load(myID);
-	}
 }
 //loads the innerHTML of the element passed on the content div 
 function fdLoadInner(x) {
