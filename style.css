@@ -3,9 +3,9 @@ html {
 	font-family:Courier;
 }
 body {
-	background:url('./img/back.png'), url('.img/back.png');
+	background:url('./img/bk1.png'), url('.img/bk1.png');
 	background-position:top left, bottom center;
-	background-repeat:repeat;
+	background-repeat:repeat-x, repeat-y;
 	min-height:800px;
 }
 #menu{
