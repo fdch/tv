@@ -8,6 +8,9 @@ body {
 	background-repeat:repeat;
 	min-height:800px;
 }
+h1, h2 {
+	font-size:1em;
+}
 #menu{
 	position:relative;
 	top:0;
