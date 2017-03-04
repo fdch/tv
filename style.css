@@ -3,7 +3,7 @@ html {
 	font-family:Courier;
 }
 body {
-	background:url('./img/background-2.png') top left repeat;
+	background:url('./img/back.png') top left repeat;
 	min-height:800px;
 }
 #menu{
