@@ -1,10 +1,8 @@
-<!--reload jquery-->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<!--js and css linking-->
+<!--------------------[js and css linking]------------------------------------>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/margins.js"></script>
 <link rel=stylesheet href="style.css"></style>
-<!--metaproperties-->
+<!----------------------[metaproperties]-------------------------------------->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta property="og:image" content="fdch.github.io/tv/img/fdch.jpg" />
 <meta name="keywords" content="fedecamara, camarafede, fedecamarahalac, federico, camara, halac, camarahalac, nonofrodo, website, sitio web, official, oficial, music, image, sound, videoart, nyu, nyc, composer, new york university, universidad nacional de cordoba, unc, venas, huesos, manos, tumba, pelo, electronic, puredata, gem, live video, dsp, unc, pianist, conductor, designer, artist" />
@@ -16,4 +14,5 @@
 <meta property="og:url" content="fdch.github.io" />
 <meta property="og:title" content="≠>" />
 <meta property="og:site_name" content="≠>"/>
+<!-------------------------------[title]-------------------------------------->
 <title>≠></title>

@@ -1,6 +1,5 @@
 <!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 $(function(){
@@ -12,20 +11,17 @@ $(function(){
 	$("#content").load("events", function() {
 		$(this).delay(30).animate({opacity: 1}, 100);
 	});
-	$("#multimedia").html('<object data="https://www.wordreference.com/definition/multimedia#articleHead"/>');
-	$("#nautico").html('<object data="https://www.wordreference.com/definition/nautico#articleHead"/>');
+	$("#multimedianautico").append('<object data="https://www.wordreference.com/definition/multimedia#articleHead"/>').append('<object data="https://www.wordreference.com/definition/nautico#articleHead"/>');
 });
 </script>
+<head>
 </head>
 <body>
 <h1>|multimedianautics|</h1>
 <h2>|fede camara halac|| fdch|| fd || ≠> ||</h2>
 <div id=menu></div>
 <div id=content></div>
-<div id=multimedia></div>
-<div id=nautico></div>
+<div id=multimedianautico></div>
 <img class=fd src="img/fd.png" title=fd/></img>
 </body>
 </html>
-
-

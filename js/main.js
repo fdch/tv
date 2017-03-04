@@ -1,14 +1,3 @@
-function fdLoad(x) {
-var innerContent = loadPage(x);
-$("#content").html("");
-$("#content").html("'" + innerContent + "'");
-}
-function loadPage(href) {
-          var xmlhttp = new XMLHttpRequest();
-          xmlhttp.open("GET", href, false);
-          xmlhttp.send();
-          return xmlhttp.responseText;
-}
 //main function on startup
 $(function() {
 
