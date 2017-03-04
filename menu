@@ -1,7 +1,8 @@
 <script>
 function fdLoad(x) {
-          var innerContent = loadPage(x);
-         $("#content").html("'" + innerContent + "'");
+var innerContent = loadPage(x);
+$("#content").html("");
+$("#content").html("'" + innerContent + "'");
 }
 function loadPage(href) {
           var xmlhttp = new XMLHttpRequest();
