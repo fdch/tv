@@ -1,0 +1,2282 @@
+
+200
+ 
+- Hide headers -
+ 
+cache-control:  private, max-age=0, must-revalidate, no-transform
+content-encoding:  gzip
+content-length:  26658
+content-type:  application/json; charset=UTF-8
+date:  Sun, 05 Mar 2017 00:21:08 GMT
+etag:  "uQc-MPTsstrHkQcRXL3IWLmeNsM/bai4Pjwc3v5rIbpveA8O5b5a3go"
+expires:  Sun, 05 Mar 2017 00:21:08 GMT
+server:  GSE
+vary:  Origin, X-Origin
+ 
+{
+ "kind": "youtube#playlistItemListResponse",
+ "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/bai4Pjwc3v5rIbpveA8O5b5a3go\"",
+ "nextPageToken": "CDIQAA",
+ "pageInfo": {
+  "totalResults": 51,
+  "resultsPerPage": 50
+ },
+ "items": [
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/mxZGszWNqlm6AUhwkQ35OmjT5sY\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLndycjhSTlg4U1lN",
+   "snippet": {
+    "publishedAt": "2016-12-17T11:08:51.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Seiichiro Matsumura - Budrevo–Santoka Taneda",
+    "description": "Seiichiro Matsumura \nBudrevo–Santoka Taneda \n\nSeiichiro Matsumura is a composer, sound and interaction designer. He is Associate Professor of School of Design, Tokyo University of Technology in Japan. He studied at Institute of Sonology course of Royal Conservatory The Hague from 2003 to 2005 supported by grants of Agency for Cultural Affairs Japan and Pola Art Foundation. After finishing his Ph.D. at Tokyo University in 2006, Matsumura has bridged media art and experimental music field with his installation works and live performance system. His interactive installation works have been exhibited as a part of “Magical Museum” series in Japan, Korea, China, WRO Media Art Biennale 2015, Audio Art 2015 in Poland and etc. His pieces “When did you look up the sky last time?” and “Dancing Mirror” were awarded prizes of each 2012 and 2013 Asia Digital Art Grand Prix. He did live performances in Today’s Art Festival in the Netherlands, Sound and Music Computing (SMC) and etc.\n\n\n“budrevo-Santoka Taneda” is the vocal piece based on reciting “Haiku” (Japanese seventeen-syllable poem) of Santoka Taneda who was the unique, nomadic Japanese poet. “budrevo-Santoka Taneda” is constructed by the overdubbing process of solo performer’s voice of reading Haiku of Taneda in Japanese. The performer manually controls parameters of balances of amplitude, panning and delaying time while reading Haiku. This simple manipulation and the process generate thick layers of a single voice that symbolize the strength of Taneda in adversity and in his drifting life. It is spoken in Japanese but the flow of layered voices shows the toughness and purity of Taneda. Translated scripts of Taneda’s Haiku are projected and visually layered for people who don’t understand.\n\nAudio, Adam Mirza\n\nSaturday, November 19th 2016\nNew York University, Room 220\n2:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/wrr8RNX8SYM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/wrr8RNX8SYM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/wrr8RNX8SYM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/wrr8RNX8SYM/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/wrr8RNX8SYM/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 0,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "wrr8RNX8SYM"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/aL9wW3w-gxiUBt3fQQUwUU0aCEg\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLnhxZEZKSmI0UzJJ",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:13.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "PdCon16~ Trailer",
+    "description": "5th International Pure Data Convention\nNovember 16-20 2016\nNew York University\nStevens Institute of Technology",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/xqdFJJb4S2I/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/xqdFJJb4S2I/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/xqdFJJb4S2I/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/xqdFJJb4S2I/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/xqdFJJb4S2I/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 1,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "xqdFJJb4S2I"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/ynDFx7eYIsMrhxRGuYkG50DCgI0\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLlpZeFJDeGJ3TlVn",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:13.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Matthew Barber - Interface Chapel, Bass and Computer",
+    "description": "Matthew Barber \nInterface Chapel, Bass and Computer \n\nBass: Nathaniel Chase\n\nMatt Barber lives in Rochester, NY. He earned a PhD in composition from the Eastman School of Music and a BM in composition from the Juilliard school. He has been a Pd user and programmer since 2005.\n\n\nThe form of each movement of Interface Chapel (for contrabass and Pd) is modeled on geometric features of one of the five Platonic solids or the sphere. Each face of a Platonic solid is assigned some musical property; then each vertex represents a combination of the properties given to the faces meeting at that point, and the composition describes a Hamiltonian cycle, or a trip along the edges which reaches every vertex and returns to where it started. The bass processing in Sphere sounds like Shepard tones, which symbolizes the lack of obvious reference point on the surface.\n\nSunday, November 20th 2016, 2:30 PM\nNew York University, Room 220",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/ZYxRCxbwNUg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/ZYxRCxbwNUg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/ZYxRCxbwNUg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/ZYxRCxbwNUg/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/ZYxRCxbwNUg/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 2,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "ZYxRCxbwNUg"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/CXoaRzmA6YlbCs7E8hVhS3U8dnA\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLkRqZE1hR3hqWEhF",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:13.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Jaime Oliver & Miller Puckette - duo",
+    "description": "Jaime Oliver & Miller Puckette \nduo \n\nOliver La Rosa’s music and research explores the concept of musical instrument in electronic and computer music, designing instruments that listen, understand, remember and respond. His open source Silent Drum and MANO controllers use computer vision techniques to continuously track and classify hand gestures. His most recent research [notes] explores computer assisted notation and generative music in Pure Data and LilyPond. His work has been featured in many international festivals and conferences, collaborating with several composers, improvisers and artists in a field of action that spans sound performance and installation, composing and performing music, and programming open source software. Some recognitions include scholarships and grants from the Fulbright Commission, the University of California, Meet the Composer and the Ministry of Culture of Spain, and composition and research residencies at ZKM and IRCAM. He obtained the 1st prize in FILE PRIX LUX 2010, a GIGA-HERTZ-PREIS 2010 special prize from ZKM and the 1st prize in the 2009 Guthman Competition from the Georgia Tech Center for Music Technology. Oliver is Assistant Professor of Composition at NYU and co-director of the NYU Waverly Labs for Computing and Music. He obtained a PhD in Computer Music from the University of California, San Diego (2011) where he studied with Miller Puckette and was Mellon Post-Doctoral Fellow at Columbia University & the CMC in New York.\n\n\nMiller Puckette obtained a B.S. in Mathematics from MIT (1980) and Ph. D. in Mathematics from Harvard (1986). He was a member of MIT's Media Lab from its inception until 1987, and then a researcher at IRCAM (l'Institut de Recherche et de Coordination Musique/Acoustique), founded by composer and conductor Pierre Boulez. At IRCAM he wrote Max, a widely used computer music software environment, released commercially by Opcode Systems in 1990 and now available from Cycling74.com . Puckette joined the Music department of the University of California, San Diego in 1994, where he is now professor. From 2000 to 2011 he was Associate Director of Center for Research in Computing and the Arts (CRCA) at UCSD. He is currently developing Pure Data (\"Pd\"), an open-source real-time multimedia arts programming environment. Puckette has collaborated with many artists and musicians, including Philipe Manoury (whose Sonus ex Machina cycle was the first major work to use Max), and Rand Steiger, Vibeke Sorensen, and Juliana Snapper. Since 2004 he has performed with the Convolution Brothers. In 2008 Puckette received the SEAMUS Livetime Achievement Award.\n\nSunday, November 20th 2016, 2:30 PM\nNew York University, Room 220",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/DjdMaGxjXHE/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/DjdMaGxjXHE/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/DjdMaGxjXHE/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/DjdMaGxjXHE/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/DjdMaGxjXHE/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 3,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "DjdMaGxjXHE"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/rQaLrhDy7BGm67tm1ejHb7zTn6Y\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLmZkaUY2Z0thNmdF",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:14.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Patch Workshop Concert - conducted by Alexandre Porres",
+    "description": "Patch Workshop Concert\nconducted by Alexandre Porres\n\nPerformers:\n\nDavid Britton\nThomas Bloxam\nJoshua Bardsley\nAntonella Rafael\nMatthew Jennings Jr.\nLily Rogers\nTatiana Turin\nLiam Donnelly \nNicholas J Metcalfe\n\nAudio, Adam Mirza\n\nAlexandre Porres lives in São Paulo, Brazil, composer, performer, researcher, did organize the Pdcon09 in Brazil, he teaches computer music at his school \"EL Locus Solus\", has a PhD in computer music and developed a didactic material with over 300 computer music examples in Pd.\n\nSunday, November 20th 2016, 2:30 PM\nNew York University, Room 220",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/fdiF6gKa6gE/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/fdiF6gKa6gE/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/fdiF6gKa6gE/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/fdiF6gKa6gE/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/fdiF6gKa6gE/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 4,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "fdiF6gKa6gE"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/Zyb99JzYRml699sFBuyOijMuhOE\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLkZsemFiVGlobG5F",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:14.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Hans Tammen - Dark Circuits Pd Orchestra",
+    "description": "Hans Tammen \nDark Circuits Pd Orchestra\n\nPerformers: \nEd Kelly\nJulien Ottavi\nSofy Yuditskaya\nArthur Hureau--Parreira\nDerek Kwan\nAdam Mirza\nMatthew Walshe\nAlexandre Porres Torres\nAdam Mirza, Sound Engineer\n\nHans Tammen likes to set sounds in motion, and then sitting back to watch the movements unfold. Using textures, timbre and dynamics as primary elements, his music is continuously shifting, with different layers floating into the foreground while others disappear. Whether richly processed guitar sounds from his hybrid interactive guitar/software instrument Endangered Guitar, traditionally notated material for his Third Eye Chamber Orchestra, or graphically notated elements for the all-electronic Dark Circuits Orchestra, his music flows like clockwork, \"transforming a sequence of instrumental gestures into a wide territory of semi-hostile discontinuity; percussive, droning, intricately colorful, or simply blowing your socks off\" (Touching Extremes).\n\n\nSaturday, November 19th 2016\nNew York University, Room 220\n2:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/FlzabTihlnE/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/FlzabTihlnE/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/FlzabTihlnE/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/FlzabTihlnE/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/FlzabTihlnE/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 5,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "FlzabTihlnE"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/LPXtrRwHyxnCu3JDK53PDwu1MH0\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLmNBTzNFSlNnX0Zv",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:06:02.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Shawn Greenlee - Quarries - improvisation with objects",
+    "description": "Shawn Greenlee \nQuarries - improvisation with objects\n\nShawn Greenlee is a composer and sound artist. Greenlee’s solo and group discography spans over fifty releases to date, complemented by an active practice as an exhibiting artist and sound designer. He has performed extensively across the United States and Europe, appearing on several conferences, festivals, and tours. These include New Interfaces for Musical Expression (2015 Baton Rouge, 2014 London, and 2013 Daejeon), Re-new (2013 Copenhagen), International Computer Music Conference (2011 Huddersfield and 2005 Barcelona), IN TRANSIT (2008 Berlin), and Elevate (2007 Graz), among several others. Greenlee is Associate Professor at the Rhode Island School of Design (RISD), where he is also the Programs Head for the Division of Experimental & Foundation Studies. In 2008, he completed his Ph.D. in Computer Music & New Media at Brown University. In 2014, he was awarded the MacColl Johnson Fellowship for music composition by the Rhode Island Foundation.\n\nQuarries is a piece for electroacoustic improvisation centered on software created in Pure Data situated within an erratic synthesis and audio processing system devised for performance with percussion instruments, including the kkwaenggwari (a small Korean gong). This system includes a laptop alongside separate synthesizer and effects modules programmed with Pd (e.g. the Hoxton Owl, Bela platform). Both through chance and intention, using the patches running across devices, the performer records segments of the developing sound while the system outputs aleatoric recombinations and alterations. The player hunts for emergent patterns, improvising within the arising circumstances.\n\nAudio, Adam Mirza\n\nFriday, November 18, 2016\nNew York University, Room 220\n2:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/cAO3EJSg_Fo/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/cAO3EJSg_Fo/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/cAO3EJSg_Fo/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/cAO3EJSg_Fo/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/cAO3EJSg_Fo/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 6,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "cAO3EJSg_Fo"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/vZA9Z3rz2FVsBota6urdGd5S24c\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLmQ2d1NWZGstaklr",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:05:53.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Derek Kwan - shoebox memories for kalimba and live processing",
+    "description": "Derek Kwan \nshoebox memories for kalimba and live processing\n\nHailing from Fresno, California, Derek Kwan is a percussionist, electronic artist, and computer programmer exploring the expressive capabilities of computer technology through interactive media. As a composer and performer, his body of work includes improvisatory electronically-processed musical environments and immersive dynamic soundscapes where sounds are triggered on audience members' mobile devices. Kwan has appeared in such festivals as the Bang on a Can Marathon, Bang on a Can Summer Music Institute, the New York City Electronic Music Festival, and soundSCAPE and has performed with Raphael Mostel's Tibetan Singing Bowl Ensemble, Antonio de Vivo's Winds of Woods, and Elevator Rose. Derek Kwan holds BS and BA degrees in mathematics and music performance from the University of California, Davis; an MA in percussion from CUNY Queens College; and a DMA in percussion from Stony Brook University. www.derekxkwan.com\n\n\nshoebox memories draws inspiration from those Justin Bieber 800% slower videos floating around the Internet where no matter what the original input sounds like, the slowed output sounds like a beautiful, ethereal soundscape. Using onset detection to trigger constantly-recorded input played back granularly 100x slower without change in pitch, scratches on the contact-mic-equipped kalimba turn into earthquake-like ruptures while kalimba plucks turn into hazy clouds of memory. Conceptually, shoebox memories is representative of my ongoing project of creating improvisational electronic soundscapes. The title of the piece is drawn from the fact that I keep my kalimba as well as small items of sentimental value in shoeboxes and the piece's extensive use of delay systems.\n\nAudio, Adam Mirza\n\nFriday, November 18, 2016\nNew York University, Room 220\n2:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/d6wSVdk-jIk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/d6wSVdk-jIk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/d6wSVdk-jIk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/d6wSVdk-jIk/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/d6wSVdk-jIk/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 7,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "d6wSVdk-jIk"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/wM08GbPGZGJ88EcsaFu6ZOwKHt0\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLlExQTljM2dQLWFV",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:05:46.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Andrew Pfalz - Of grating impermanence",
+    "description": "Andrew Pfalz and Eric Sheffield \nOf grating impermanence\n\nAndrew Pfalz holds degrees in composition from Florida State University (BM-2011) and East Carolina University (MM-2014). He is pursuing a PhD in Experimental Music and Digital Media at Louisiana State University. His music explores physical modeling, and high performance computing. Eric Sheffield is a musician and maker focused on physical computing, interactive multimedia, and augmented non-traditional instruments. He holds a Master’s degree in Media Arts from University of Michigan and is pursuing a PhD in Experimental Music and Digital Media at Louisiana State University. Eric is a founding member of the group Bell Monks (music.bellmonks.com).\n\n\nOf grating impermanence is a piece composed by Andrew Pfalz for 2 virtual harps. These harps are instances of a physical model built using Synth-a-Modeler. The harps are being implemented on an force feedback instrument created by Eric Sheffield: the Haptic Capstans. The physical model is written in the Faust programming language and compiled to run as a Pure Data object. The object outputs both audio and physically accurate vibro-tactile feedback via the Haptic Capstans. This allows the performers to feel the strings' resistance as they are plucked. The output of the model is also processed with granular effects and distortion. The fear of meaninglessness sometimes leads to the denial of the fleetingness of things. Clinging to the illusion of constancy can make the ultimate impermanence of situation an even heavier burden. Stability in this piece comes as a struggle. Where it exists it is only temporary. Each arrival is more strenuously achieved than the last, and is also wrenched away more forcefully.\n\nAudio, Adam Mirza\n\nFriday, November 18, 2016\nNew York University, Room 220\n2:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Q1A9c3gP-aU/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Q1A9c3gP-aU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Q1A9c3gP-aU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/Q1A9c3gP-aU/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/Q1A9c3gP-aU/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 8,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "Q1A9c3gP-aU"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/xfDP5VM93MR26R2n8Qz56RBLfCc\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLnlnMHhnNGJaMFRz",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:05:38.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Matthew Barber - Pre-Concert Installation",
+    "description": "Matthew Barber  \nPre-Concert Installation\n\nMatt Barber lives in Rochester, NY. He earned a PhD in composition from the Eastman School of Music and a BM in composition from the Juilliard school. He has been a Pd user and programmer since 2005.\n\nThis installation runs in the background while members of the audience find their seats, converse, and so forth. Events become closer and closer together, so that by the end it is an intensely granular texture.\n\nAudio, Adam Mirza\n\nFriday, November 18, 2016\nNew York University, Room 220\n2:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/yg0xg4bZ0Ts/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/yg0xg4bZ0Ts/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/yg0xg4bZ0Ts/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/yg0xg4bZ0Ts/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/yg0xg4bZ0Ts/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 9,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "yg0xg4bZ0Ts"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/M0I3EBUgjrAT-RIswKM6q2Fi0V8\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLnJQTUFncllzRUFj",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:15.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Onyx Ashanti - what is sonocybin?",
+    "description": "Onyx Ashanti\nwhat is sonocybin?\n\nOnyx Ashanti describes himself as a \"sonocyberneticist\", or someone who uses the cybernetic nature of improvisational music, and overlays it onto many dimensions of expression, including but not exclusive to music, 3d printing, biomechanical computer interface design, sound design, neuromodulation and symbological fashion. to this end, he has created a wearable sonocybernetic appliance called SonoCyb1, which currently consists of a self designed exo-skeletal hand control interface he calls \"exo-hands\". the exo-hands are a new form of binary input system which uses binary fingerings to encode complex sound and function relationships, completely programmed in pure data, and as with everything he does, it is open source, as well as cheap and easy to build. Onyx has performed around the world on stage with groups such as Soul II soul and Basement Jaxx but is also an advocate of the art of street busking, which he has also been doing for 25 years on multiple continents. he also performs and lectures at universities and conferences around the world and is a 4 time TED presenter, where he is was first to expose Pure Data the global TED audience. he currently lives in Detroit, MI. For PD-con, Onyx will be presenting his Sonocybin multidimensional expression, with dimensions consisting of a music form, the exo-skeletal 3d printed prosthetic interface, and binaural quadvector synthesis-accelerometer controlled synthesis designed to induce varying cognitive, mental and emotional states.\n\n\nSonocybernetics is an evolving form of neuromodulation transduced using complex sound patterns/music created by a body worn, 3d printed prosthetic system called Sonocyb1. the purpose of this system is to evolve it, while also integrating with it, thereby evolving oneself using the most potent neuromodulatory modality known-sound. specifically, binaural sound, which, as mentioned, is self iterated. the music is personal and evolves as the patternist creating it evolves, while the programming and design are also evolveable using puredata, arduino and open source reprap 3d printers. sonocybernetics is a personal guided mutation engine, that uses sound/music as the transduction layer.\n\nSaturday, November 19th 2016, 8:30 PM\nShapeshifter Lab",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/rPMAgrYsEAc/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/rPMAgrYsEAc/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/rPMAgrYsEAc/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/rPMAgrYsEAc/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/rPMAgrYsEAc/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 10,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "rPMAgrYsEAc"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/BEvF6mmOgrP6E0ElTqhiC8vawcg\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLm95NVZ0d2s3clZv",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:15.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Instant Decomposer - A Life Recycled",
+    "description": "Instant Decomposer \nA Life Recycled \n\nBeing an instrument maker in the nineties, Katja Vetter developed a fascination for signal analysis which later put her on a track to DSP math and coding. The puppets illustrating a journey through complex numbers and Fourier transform on www.katjaas.nl are embodied as Instant Decomposer on stage.\n\n\n'There's a spiral staircase that goes from music to frequencies, from frequencies to numbers, and from numbers to bits. Each step, sound fades away. What have we left? Missing separator. Segmentation fault. The top is the bottom, as you will find out.'\n\nSaturday, November 19th 2016, 8:30 PM\nShapeshifter Lab",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/oy5Vtwk7rVo/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/oy5Vtwk7rVo/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/oy5Vtwk7rVo/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/oy5Vtwk7rVo/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/oy5Vtwk7rVo/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 11,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "oy5Vtwk7rVo"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/cPoBlGhTLWUKcYqnPG-mLFutEEY\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLkhCM0dRRndvaG1n",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:15.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Sofy Yuditskaya - Elk+Hunter",
+    "description": "Sofy Yuditskaya \nElk+Hunter \n\nSofy (@horusVacui) is a media artist and educator working with video, interactivity, projections, code, paper, and salvaged material. Her work focuses on techno-occult rituals, street performance, and participatory art. Sofy's performances enact and reframe hegemonies, she works with materials that exemplify our deep entanglement with petro-culture and technology’s affect on consciousness. She has worked on projects at Eyebeam, 3LD, the Rubin Museum, the Netherlands Institute voor Media Kunst, ARS Electronica, Games for Learning Institute, The Guggenheim (NYC) and has taught workshops at GAFFTA, and MoMA. She is a member of the Fast Food Video collective and the organizer of the NYC Patching Circles.\n\nElk + Hunter is a spoken word piece, a modern re-telling of a Komi myth with algorithmic feedback and generative music composed in Pure Data.\n\nSaturday, November 19th 2016, 8:30 PM\nShapeshifter Lab",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/HB3GQFwohmg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/HB3GQFwohmg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/HB3GQFwohmg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/HB3GQFwohmg/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/HB3GQFwohmg/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 12,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "HB3GQFwohmg"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/hnz8XTwc5MJzqM1eMvzSvCHIi14\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLklBQ3pXMzlQblc4",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:15.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "William Brent, Judy Nam and Jassie Rios - Typing Hero",
+    "description": "William Brent and Judy Nam \nTyping Hero \n\nWilliam Brent is a computer musician and Assistant Professor of Audio Technology at American University in Washington DC. His creative work is spread across the areas of experimental music performance, sound art, and instrument design, and involves various combinations of human- robotic- and computer-realized sound. Independently and in collaboration with others, he develops and operates real-time audiovisual manipulation software for varied inter-media performance works. His current lines of research include new methods for physical control of synthesized audio, signal analysis techniques for quantifying timbre, and aspects of human timbre perception. As a programmer, he has developed various software tools for use in Pd, including timbreID: an open source library of objects for real-time timbre analysis and identification. \n\n\n\n\nJudy Nam is an audio technology graduate student at American University in Washington, DC. Nam collaborated with her professor, William Brent, on the project Typing Hero for a class in the spring of 2016 for a real-time performance. She is also an editor for Potomac Talking Book Services, where she makes audio books more accessible to the blind and physically handicapped. Nam enjoys working with interactive sound applications and was introduced to the world of audio during her time at the University of Maryland, where she received her BA in broadcast journalism and volunteered as a student reporter and technical producer for the campus' college radio station. \n\n\n\n\nAn artist based in Washington, DC, Jassie Rios works at the intersection of visual art and music. She examines conceptual, experimental, and material investigations in drawing using sound, electronic media, installation, performance, text and video. She utilizes both analog and digital instruments to generate visual and sonic drawings that are both improvisatory and systematic. Her work oscillates between states of representation and fragmentation, acoustic and electronic, object and process. Lines of research include physical properties and natural phenomena, various aspects of human perception, exploring sound in raw states (sine tones/noise), and new methods for translating physical gestures into real-time interactive sound environments using synthesized audio. Rios studied Drawing at the Maryland Institute College of Art earning a Master of Fine Arts in Studio Art (2011), she received a Bachelor of Fine Arts in Studio Painting from Texas State University (2002) and she is currently working towards earning a Master of Arts in Audio Technology at American University, concentrating in Computer Music.\n\n\nThree networked laptop musicians will perform synthesized versions of JS Bach Sinfonias 10, 7, and 6 by typing as their synchronized text scores scroll across the screen. Typing Hero utilizes laptop keyboards as game controllers to simulate playing various synthesized instruments. Although the scrolling text may appear random, it is a compilation of poems and thoughts by Judy Nam that are spaced according to the rhythms in Bach’s original scores. The intention of each player to hit the correct key at the correct time resonates a fun, game-like experience.\n\nSaturday, November 19th 2016, 8:30 PM\nShapeshifter Lab",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/IACzW39PnW8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/IACzW39PnW8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/IACzW39PnW8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/IACzW39PnW8/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/IACzW39PnW8/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 13,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "IACzW39PnW8"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/mmU33Ed7CtDr4yIF3CJ7j7KF6QQ\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLi1BeGswYV8xQjNB",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:16.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Daniel Iglesia - Joint mobile performance, by the Google Mobile Orchestra and Sideband.",
+    "description": "Daniel Iglesia\nJoint mobile performance, by the Google Mobile Orchestra and Sideband. \n\nDaniel Iglesia (CA) Daniel Iglesia creates instructions and media for humans, computers, and broad interactions of the two. He performs in ensembles including Spirograph Agnew, Sideband, and Datalore. He made MiniMash and SpaceLab and MobMuPlat. He works at Google. www.danieliglesia.com Additional performer \n\n\nCurtis Ullerich (CA) studied computer music at Iowa State University, focusing on haptic control of synthesis parameters. Ullerich has performed primarily on saxophone and euphonium with the Iowa State Symphonic Band, Stanford Wind Symphony, Stanford Symphony Orchestra, and others. By day, he is a software engineer at Google. www.curtisullerich.com \n\n\nLainie Fefferman (NYC) How's \"Lainie Fefferman is a composer and performer working in Brooklyn. Her music ranges from personal and idiosyncratic to monumental and confrontational. For more information, visit http://lainiefefferman.com\" Jascha Narveson (NYC) Jascha Narveson was raised in a concert hall and put to sleep as a child with an old vinyl copy of the Bell Labratories mainframe computer singing \"Bicycle Built for Two.\" He now makes music for people, machines, and interesting combinations of people and machines. www.jaschanarveson.com\n\n\n\"There is no route out of the maze. The maze shifts as you move through it, because it is alive.\" - PKD Members of the Google Mobile Orchestra (California), and Sideband (NYC) join to perform a structured improvisational system, with mobile devices, physical controllers, shared network control, and live video for 3D glasses.\n\nSaturday, November 19th 2016, 8:30 PM\nShapeshifter Lab",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/-Axk0a_1B3A/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/-Axk0a_1B3A/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/-Axk0a_1B3A/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/-Axk0a_1B3A/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/-Axk0a_1B3A/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 14,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "-Axk0a_1B3A"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/nZf3vI8B-napTH07XtG9TeC-5qs\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLnpmSDdINVhodF9V",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:16.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "IOhannes M Zmölnig - pointillism",
+    "description": "IOhannes M Zmölnig \npointillism \n\nIOhannes m zmölnig is an Austria-based software- and media-artist and member of the art-collective forum::für::umläute. He is currently working at the Institute of Electronic Music and Acous-tics (IEM) in Graz, where he is pursuing a PhD on the topic of Live Cod-ing. Being an active member of the FLOSS-community, he is one of the core developers of the Pure Data computer music environment, for which he also provides a number of libraries, including Gem for realtime-graphics and iemguts which is targeted at writing live-coding systems within Pd. IO-hannes m zmölnig has performed concerts between Bergen and São Paolo. \n\n\n“pointillism” is a solo live-coding performance in Pd. Both the code representation and the generated audio use “points” and “dots” as building blocks: the music is generated using morse code patterns, the code is written in a “Braille” (the dot-based writing system especially designed for blind/visually-impaired people). The performance is an ironic statement on the popular “show-us-your-screens” paradigm, by presenting the code in a form that does not even pretend to be readable.\n\nFriday, November 18th, 2016\nShapeshifter Lab\n8:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/zfH7H5Xht_U/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/zfH7H5Xht_U/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/zfH7H5Xht_U/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/zfH7H5Xht_U/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/zfH7H5Xht_U/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 15,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "zfH7H5Xht_U"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/lWCZxTZh_3P-rVHbRq7eAXs0bTc\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLkYwdmtaMnZpV0hR",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:16.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Julien Ottavi - Cremator for voice & electronics",
+    "description": "Julien Ottavi\nCremator for voice & electronics \n\nA mediactivist, artist-researcher, composer / musician, poet and tongues destroyer, experimental film maker and anarchitect, founder of Apo33, Since 1997, Julien Ottavi develops audio/visual programs with Puredata, using DIY electronics (radio transmitters, oscillators, mixers, amplifiers, video transmitters…etc) He is the main developer for the Gnu/Linux operating system APODIO for digital art and A/V & streaming diffusion. His practices are not limited to the art spheres but crosses different fields from technological development to philosophy / theoretical research, biomimetic analysis & experimentation. Ottavi is currently a Phd candidate at Lorraine University, France where his research covers Sound, Noise and Online audio practices. He is also a strong defender of collective and experimental practices that put in question the authorship strategy of the “art ideology”. http://www.noiser.org\n\n\nGhosts and spirits sing through me, my ancient past is living inside me, I am myself, I am them, I am multiple, my tongue is many tongues, my voice is voices beyond voices. When my voice escapes my mouth, I suddenly became conscious that someone was talking for me, it couldn't be me who says all this. My mind and my cells are full of memories of the past, beyond my life's past. The roots of this singing come from the earliest point in humanity's history, its very fragility, its very strength, is powerful, yet nothing more that another voice belonging to this planet. Sound poetry opens up the possibility to liberate the potential of the voice, bringing the traditional singing from those roots, bringing me connections to my history. Discovering your own body, your own shout, your own chant, through the air exhaled by your lungs and vibrating through your throat. This tells of nothing more than a sound released by a mouth, and yet it is everything to do with human beings, it tells the stories that we don't remember, makes connections with that which we forgot, with people long since gone, all of this resurgent memories come back again in a furore of air that implode within the body. Naturally my voices, our voices meet with machines and became more than human, they became something else, an impossible mutation of reverberant living cells coupled with dead metals components that violently merge in a “cyborg” hybrid of voices, noise, saturated shouts and long drones of profound song.\n\nFriday, November 18th, 2016\nShapeshifter Lab\n8:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/F0vkZ2viWHQ/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/F0vkZ2viWHQ/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/F0vkZ2viWHQ/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/F0vkZ2viWHQ/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/F0vkZ2viWHQ/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 16,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "F0vkZ2viWHQ"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/uJCnSBPDRvJ7EnbAEPMhU1Rc5-g\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLjBUSk5sVzJ0aENB",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:08:16.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Kerry Hagan - Homage to Saariaho",
+    "description": "Kerry Hagan\nHomage to Saariaho \n\nKerry Hagan is a composer and researcher working in both acoustic and computer media. She develops real-time methods for spatialization and stochastic algorithms for musical practice. Her work endeavours to achieve aesthetic and philosophical aims while taking inspiration from mathematical and natural processes. Her works have been performed in San Diego, Toronto, Belfast, Dublin, Paris, Berlin, Tokyo, Sydney, Perth and elsewhere. As a researcher, Kerry’s interests include real-time algorithmic methods for music composition and sound synthesis, spatialization techniques for 3D sounds and electronic/electroacoustic musicology. In 2010, Kerry led a group of practitioners to form the Irish Sound, Science and Technology Association, where she served as President until 2015. Currently, Kerry is a Lecturer at the University of Limerick in the Digital Media and Arts Research Centre. She is the Principal Investigator for the Spatialization and Auditory Display Environment (SpADE) at the University of Limerick.\n\n\nHomage to Saariaho (2016) is an improvisation around the sonification of text from the liner notes of Maa by Kaija Saariaho (ODE 791-2, 1992). I use one paragraph of text originally written in Finnish and translated into German, French and English. Each paragraph is typed in real time, and Pd translates the text into parameters of sound synthesis, using statistical and random models. Using the text as inspiration, this work approaches pitch, harmony, timbre and noise, but in my own way. Each paragraph has its own section, so there is a growing arc in the form of the work.\n\nFriday, November 18th, 2016\nShapeshifter Lab\n8:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/0TJNlW2thCA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/0TJNlW2thCA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/0TJNlW2thCA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/0TJNlW2thCA/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/0TJNlW2thCA/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 17,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "0TJNlW2thCA"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/h_44M8eUsTjTWPBY87F19Vkuz1Q\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLmVfY3VJODJJb2JZ",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:07:23.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Arthur Hureau and Chloé Malaise - recycled day…",
+    "description": "Arthur Hureau and Chloé Malaise \nrecycled day… \n\nChloé Malaise: Born in Paris, Chloé first did design studies then moved to the Nantes school of art to study fine-arts, which get her to digital and sound practices, she is currently living and working there. Her work is about fictional dystopia in a world where machines, noise and electric fields are everywhere and control our daily routine; she hacks different human techniques such as architecture, mechanics or sound-design to confront us to our way of consumption. \nArthur Hureau: Born in 1995 in Tours, France, studied classical music in highschool then studied at the Nantes School of Arts and the Bergen Academy of Art (Norway) from 2013 to 2016; Arthur is working on pattern evolution and DIY cultures/techniques. He borrows DIY technics to underground movements (hacking, trash/ignorant graffiti, flash tattoo, sound-systems) and cross them with new medias (digital, electronic, sound) to hack daily-consumption and contemporary society. Also founder-member of Noise Happening, a francoscandinavian multimedia collective.\n\n\nThis is a sound performance where Chloé is taking electronic sounds from daily technologies (such as cellphone, coffee-machine, digital clock, lamp, etc...) with electronic microphones and send this sound on Arthur's pure data modular system as oscillators. People doesn't really understand the importance and the potential of electronic wastes thrown during their life. Our process is to create a big space of sound (like an ocean) from zero instruments, just using those wastes as oscillators in a DIY audio workstation. Therefore we want to present the potential of those wastes, prove that their energy is still functional and useful and show that via open-source knowledge you can have your own way of thinking technological tools and a reduced consumption. We're presenting noise-music and poetry from dead machines and trying to resurrect their energy flux.\n\nFriday, November 18th, 2016\nShapeshifter Lab\n8:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/e_cuI82IobY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/e_cuI82IobY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/e_cuI82IobY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/e_cuI82IobY/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/e_cuI82IobY/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 18,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "e_cuI82IobY"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/8o3uZ4KSOrKPjz5c7qJ_miQBTEk\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLno5UTl0NWFMLUQw",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:06:29.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Alexandros Drymonitis - Live Improvisation",
+    "description": "Alexandros Drymonitis \nLive Improvisation \n\nAlexandros Drymonitis is a musician, active in the field of experimental electronic music and noise. He is an MMus graduate of the Conservatorium van Amsterdam where he studied the guitar and composition. His musical practice focuses on the texture of sound and noise, exploring the borders of control, with form as a main goal. His educational aim is to provide acquired knowledge on multimedia programming. Alexandros has collaborated with various artists from different art disciplines, plus several ensembles, either interdisciplinary or music ensembles. He is currently a member of Medea Electronique and a collaborator of the ARTéfacts Ensemble. As a member of Medea Electronique, he is a main organizer of the 'Electric Nights Festival', a festival on live experimental electronic music, based in Athens. He is also a founding member of the 'Patching Circle Athens', a collective group of users of visual programming languages.\n\n\n“Live Noise/Drone Improvisation” is a noise/drone performance based on improvisation on a given set. The idea is to create a sound that will develop over time. Any audio artifacts that might occur during this process are used in the overall form, gradually determining the macro-form of the performance.\n\nFriday, November 18th, 2016\nShapeshifter Lab\n8:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/z9Q9t5aL-D0/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/z9Q9t5aL-D0/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/z9Q9t5aL-D0/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/z9Q9t5aL-D0/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/z9Q9t5aL-D0/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 19,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "z9Q9t5aL-D0"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/8steFmodDh3l6cQ5u2BdxU5XdgQ\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLnBvV3lCRGFjUWww",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:06:21.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Liam Goodacre and Tristan Chambers - Context: a generative improvisation in musical structure",
+    "description": "Liam Goodacre and Tristan Chambers\nContext: a generative improvisation in musical structure \n\nL___ G______ \u200bhas background in philosophy and education and has been a teacher for most of his career. As a part of his passion for electronic music, he has been working to create the Context sequencer in PD for over two years. Liam lives and works in India and also studies tabla and other forms of Indian classical music. \n\n\nT_____ C______\u200b is a sound artist, musician, and outsider instrument maker, born in Los Angeles, CA, and living in western Massachusetts. Formally trained in a variety of subjects including analog and digital electronics, western tonality, photography, and the philosophy of science, Chambers applies his broad set of disciplines to probe the fundamental nature of contemporary electronic music. A long time user of Pure Data, chambers has created dozens of pieces using Pd and given presentations on his use of the environment. Works exhibited or performed in Santa Fe, NM; and Northampton, MA and neighboring towns.\n\n\nThis evening’s short performance / improvisation is using the Context sequencer.\n\nFriday, November 18th, 2016\nShapeshifter Lab\n8:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/poWyBDacQl0/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/poWyBDacQl0/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/poWyBDacQl0/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/poWyBDacQl0/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/poWyBDacQl0/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 20,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "poWyBDacQl0"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/wMhtTq2kFlQ5xeqzOmOXTQhoDkk\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLkVZUWp3eUs0Yi1V",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:05:02.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Robot Cowboy - Dan Wilcox",
+    "description": "Dan Wilcox \nRobot Cowboy\n\nDan Wilcox is an artist, engineer, musician, performer who combines live musical performance techniques with experimental electronics and software for the exploration of new expression, often through themes of science fiction, space travel, cyborgification, and far futurism. His father was an aerospace engineer, he grew up in the Rocket City, and has performed in Europe and around the US with his one man band cyborg performance project, robotcowboy. Dan currently lives in Denver, CO USA and is the 2015–17 Visiting Teaching Assistant Professor at the University of Denver’s Emergent Digital Practices Program.\n\n\nrobotcowboy is a wearable computing platform to explore new types of man-machine music & artistic performance. Embedded computing, custom software, and audio electronics are utilized to    build portable, self contained systems which both embed and embody the computation on the performer. This cyborg approach is both empowering and compromising as new sonic capability & movement are offset by the need for electrical energy: elements of tension between human and system. robotcowboy shows are always live and contain aspects of improvisation, feedback with the audience, and an inherent capability of failure, i.e. the “live” in live performance. In its first incarnation, titled Cabled Madness, it is an attempt to meld rock with realtime algorithmic composition tools into a dynamic live show. A MIDI guitar, crazy control devices, various masks, and synchronized visuals make for a new new wave experience. \n\n\nThe second robotcowboy incarnation, Onward to Mars, updated the cyborg suit into a space suit worn by the first human on Mars. Sent on a one-way journey, the Astronaut must overcome the very real dangers of a hostile environment to discover the \"music of Mars.\" \n\n\nThe upcoming and as yet unnamed third incarnation of robotcowboy returns it's focus on music and gesture while continuing the focus of embodiment in computation. Expect a computer music meet the energy of rock & punk. The future is bright, do you have room to wiggle?\n \nThursday, November 17, 2016\nShapeshifter Lab\n8:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/EYQjwyK4b-U/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/EYQjwyK4b-U/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/EYQjwyK4b-U/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/EYQjwyK4b-U/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/EYQjwyK4b-U/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 21,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "EYQjwyK4b-U"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/O-JupM-0UYzjOd9YxlXo-gRQzg0\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLkdBMF9pZUZqcHVN",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:04:53.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Ciudad Invertida - Fede Camara Halac with Rage Thormbones",
+    "description": "Federico Cámara Halac & Rage Thormbones \nCiudad Invertida, (trombone duo + elec) \n\nFede Cámara Halac studied music composition at the National University of Córdoba, Argentina. His research focuses on the intersections and hybridity between multimedia: live electronics, amplification, electroacoustic, field recordings, improvisation, notation, video, live video, programming, chaos, performance, documentary, film, art and life. The musical outcome of this research calls for an immersive conception of the concert experience, where the score, its performance and the work --as idealization of meaning within the frame of a music piece-- are historical elements representing a process --i.e., experience feeding into the work-- which\nis presenting itself as life. The works/pieces/unworks are fully documented as score (combining graphic and traditional notation, improvisation, performance and technical instructions, etc.), as audio file from the live performance, and as a film (a third, videographic, work composed of an edition of the footage obtained during the concert), thus interpreting the concert experience as the shooting of a film with a live audience. He is a PhD candidate in music composition at NYU GSAS Music Department with Jaime Oliver, Elizabeth Hoffman and Louis Karchin.\nhttp://fedecamarahalac.com\n\n\nRAGE THORMBONES (Weston Olencki and Matt Barbier) perform with hyperreal accuracy a hand-written proportional score composed with an essentially incorrect implementation of a first order markov chain (i.e. an expressionistic interpolation of absurdly distributed PPRNG* sequences). Ciudad Invertida / Inverted City is a work that seeks to raise questions about chance and interactivity in the multiplicity of the media involved. The live signals caotically trigger sample capturing and sound analysis of both performers while also triggering images and transformations projected over the body of the performers. This work is made completely with puredata and GEM. All images and pre-recorded samples were taken in transit, from vantage points and in different locations around the city of Cordoba, Argentina.\n\nhttp://ragethormbones.rocks\nhttp://fedecamarahalac.com\n\nThursday, November 17, 2016\nShapeshifter Lab\n8:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/GA0_ieFjpuM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/GA0_ieFjpuM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/GA0_ieFjpuM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/GA0_ieFjpuM/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/GA0_ieFjpuM/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 22,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "GA0_ieFjpuM"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/JGY6v4z3LO7TPUlT6l_tAYVbvxk\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLmxvNkNMcDFUNUNv",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:04:45.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Adam Wilson and Arto Artinian - Eighteen",
+    "description": "Adam Wilson and Arto Artinian\nEighteen (guitar, continuum) \n\nAdam James Wilson creates software for automatic music improvisation and real-time human-computer interaction in live music performance. His work in this domain has led to or incorporated the development of software for music information retrieval, algorithmic music composition, and data sonification. He frequently performs with his software experiments on the fretless electric guitar, an instrument that caters to his penchant for microtonality. Dr. Wilson is currently Assistant Professor of Emerging Media Technologies, specializing in Media Computation, at New York City College of Technology (CUNY City Tech).\n\n\nOriginally from Bulgaria, Arto Artinian began his formal music training as a child in Plovdiv at the prestigious Dobrin Petkov National School of Music and Dance. He later studied music  composition at the Eastman School of Music and computer and experimental music at the University of Illinois at Champaign-Urbana, where he met long-time collaborator and close friend Adam James Wilson. He plays the flute, and more recently, the Haken Continuum fingerboard. His playing is influenced by Bulgarian folk music, the Sun Ra Arkestra, 1970s Miles Davis, and '90s punk and grunge music. Dr. Artinian currently resides in New York City, where he teaches political philosophy at Borough of Manhattan Community College.\n\n\nEighteen is the latest iteration of an evolving real-time human-computer improvisation system. The system incorporates a novel software component, implemented as a Pure Data external, enabling the computer to improvise music in the style of its human collaborators. It also generates formal structures for independent musical accompaniment from the aggregate data supplied by the human performers. All of this is achieved with an adaption of the online factor oracle algorithm, which is used to build and update automata representing all substrings of notes from the human performance—in the smallest number of states—and perform rapid pattern matching on the results to generate more or less stylistically coherent musical responses. In this instance, the system receives input from a fretless electric guitar and a Haken Continuum fingerboard.\n\nThursday, November 17, 2016\nShapeshifter Lab\n8:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/lo6CLp1T5Co/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/lo6CLp1T5Co/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/lo6CLp1T5Co/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/lo6CLp1T5Co/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/lo6CLp1T5Co/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 23,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "lo6CLp1T5Co"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/YG51r7qyJHMhhBPnz_UFPv4Rdrw\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLktRS2IyZ3pyS3lr",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:04:32.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Jonghyun Kim - Live Performance for Leapmotion and 4ch speakers",
+    "description": "Jonghyun Kim\nLive Performance for Leapmotion and 4ch Speakers (2014/16) \n\nJonghyun Kim studied composition, piano, and computer programming at Kyung Hee University in Seoul, Hochschule für Musik in Freiburg. His pieces have been performed in University of North Texas (USA), Griffith University (Australia), ZKM (Germany), Johannes Gutenberg-Universität Mainz, Musikhochschule Freiburg, and accepted at several international computer music festivals, such as ICMC 2015, Nime 2016, Linux Audio Conference 2015. Currently, he is teaching computer music and composition at the Kyung Hee University in Seoul, Kaywon University of Art & Design in Gyeonggi-do, Chonbuk National University in Jeonju.\n\n\n \nTonight’s performance presents a Motion Controlled Granular Synthesis Using Leapmotion and 4 Channel Speakers\n\nThursday, November 17, 2016\nShapeshifter Lab\n8:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/KQKb2gzrKyk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/KQKb2gzrKyk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/KQKb2gzrKyk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/KQKb2gzrKyk/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/KQKb2gzrKyk/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 24,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "KQKb2gzrKyk"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/FgzHEkFDoNvIeuQJbSY_AnHPWmM\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLlc5eGpjT3JsLWtr",
+   "snippet": {
+    "publishedAt": "2016-12-13T02:04:19.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Pluton (P. Manoury, 198) - Miller Puckette and Shiau-Uen Ding",
+    "description": "Miller Puckette and Shiau-Uen Ding \nPluton (Piano, Computer) (P. Manoury, 1987) \n\nA native of Taiwan, pianist Shiau-uen Ding is an energetic performer of traditional and contemporary repertoire. She studied piano with Eugene Pridonoff, Elizabeth Pridonoff, and Lina Yeh, computer music with Mara Helmuth and Christopher Bailey, and contemporary improvisation with Alan Bern at National Taiwan Normal University and University of Cincinnati, where she received her doctoral degree. She lives in New York City. \nShe has performed in France, Germany, Belgium, China, and throughout the US and Taiwan. Most recently, she premiered Christopher Bailey’s Empty Theatre, a quasi-concerto for piano and orchestra, at SinusTon Festival in Germany. She was called a “daredevil” by The New York Times for her performance at Bang on a Can Marathon and “a powerful force on the new music scene” by Array for her performance at Spark Festival in Minneapolis. She directed and co-founded NeXT Ens, the first chamber ensemble in the US performing solely electroacoustic music with national recognition. She has collaborated with internationally renowned performers and composers, including Steve Reich, Michael Kugel, George Tsontakis, who refers to her rendition of his Ghost Variations as a “monster performance,” and Moritz Eggert, who dedicated his H¨ammerklavier XIX: Hymnen der Welt (Afghanistan bis Zimbabwe) to her. She has recorded for Capstone, Centaur, Innova, and Electric Music Collective. \n\n\nOriginally a mathematician, Miller Puckette won the Putnam mathematics competition in 1979 and received a PhD from Harvard University in 1986. He was a researcher at the MIT Media lab from its inception until 1986, then at IRCAM (Paris, France), and is now professor of music at the University of California, San Diego. He has been a visiting professor at Columbia University and at the Technical University of Berlin. \nPuckette performs with the Convolution Brothers and in a duo with Juliana Snapper, and has performed in concert music by composers Rand Steiger, Philippe Manoury, and Pierre Boulez, in venues including the Ojai Music festival, the Pulitzer Arts Foundation, Centre Acantes, and Carnegie Hall. He has been awarded two honorary degrees and the SEAMUS prize.\n\n\nTonight’s work is a performance of the classic 1988-9 piece for piano and live electronics.\n\nThursday, November 17, 2016\nShapeshifter Lab\n8:30 PM",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/W9xjcOrl-kk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/W9xjcOrl-kk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/W9xjcOrl-kk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/W9xjcOrl-kk/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/W9xjcOrl-kk/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 25,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "W9xjcOrl-kk"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/9JsIbvIyGKqmPFIkIuEEZGVHGTk\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLmlDS1JQck1sUWN3",
+   "snippet": {
+    "publishedAt": "2014-12-30T16:41:10.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Vamos al Campo",
+    "description": "Montaje hecho con 700 fotos sacadas al grupo de amigos más fotogénico del universo, durante tres días en una parte de las Sierras de Córdoba conocida como \"El Campo del Payo\".",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/iCKRPrMlQcw/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/iCKRPrMlQcw/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/iCKRPrMlQcw/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/iCKRPrMlQcw/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/iCKRPrMlQcw/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 26,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "iCKRPrMlQcw"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/O3_xHEYt4TPEfQ1XS0mBQjDfMjo\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLlFVU29Oc2o5OFZr",
+   "snippet": {
+    "publishedAt": "2014-04-26T16:36:33.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Momenta Quartet Plays NYU Composers - Part 5: The Audience",
+    "description": "NYU Waverly Labs Presents\n\nMomenta Quartet Plays NYU Composers\n\n(recorded live) \nApril 21/2014, 7.30pm\nNYU GSAS Music Department\n24 Waverly Place, Room 220, NYC, NY\n\n- - - - - - - \n\nYoon-Ji Lee: Delia Elena San Marco After Borges\n\nFederico Cámara Halac: Talita\n\nHenri Dutilleux: Ainsi la Nuit\n\nIoannis Angelakis: ASC-4.1-III13, Terror and Silence and Between them a Flame\n\n- - - - - - - \n\nSpecial thanks to:\n\nMomenta Quartet\nLawren Young and Pauline Lum\nJaime Oliver de la Rosa, Elizabeth Hoffman and Louis Karchin\nAdele Fournet, Gordon Beeferman and the First Performance Club\nNYU Music Department\n\n- - - - - - - \n\nMomenta Quartet:\n\nAdda Kridler, Violin\nMichael Haas, Cello\nEmilie-Anne Gendron, Violin\nStephanie Griffin, Viola\n\n(www.momentaquartet.com)\n\n- - - - - - - \n\nCameras:\n\nFederico Cámara Halac\nAdele Fournet\nIoannis Angelakis\n\n- - - - - - - \n\nEditing/Design:\n\nFederico Cámara Halac",
+    "thumbnails": {
+     "default": {
+      "url": "https://i9.ytimg.com/vi/QUSoNsj98Vk/default.jpg?sqp=CLCz7cUF&rs=AOn4CLCwMDNT0k_05BBOui_-1wa9HwmQ8A",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i9.ytimg.com/vi/QUSoNsj98Vk/mqdefault.jpg?sqp=CLCz7cUF&rs=AOn4CLDoF9jWKHsveqUJp2zuGT7Wbp6mIQ",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i9.ytimg.com/vi/QUSoNsj98Vk/hqdefault.jpg?sqp=CLCz7cUF&rs=AOn4CLCYdwejBNOwWcMhF6J2p91ubhN7SQ",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i9.ytimg.com/vi/QUSoNsj98Vk/sddefault.jpg?sqp=CLCz7cUF&rs=AOn4CLBGi27JSXLRry7blF-aNHP7xhiaxw",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i9.ytimg.com/vi/QUSoNsj98Vk/maxresdefault.jpg?sqp=CLCz7cUF&rs=AOn4CLB0bqB2Eiiz055xfKel9D3_8YKtjQ",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 27,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "QUSoNsj98Vk"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/4EGNAhmuHwXQl-f3w1eNLjeaZbI\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLnFMOEg5aDZEdGpn",
+   "snippet": {
+    "publishedAt": "2014-04-27T21:03:07.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Momenta Quartet Plays NYU Composers - Part 4: Ioannis Angelakis",
+    "description": "NYU Waverly Labs Presents\n\nMomenta Quartet Plays NYU Composers\n\n(recorded live) \nApril 21/2014, 7.30pm\nNYU GSAS Music Department\n24 Waverly Place, Room 220, NYC, NY\n\n- - - - - - - \n\nYoon-Ji Lee: Delia Elena San Marco After Borges\n\nFederico Cámara Halac: Talita\n\nHenri Dutilleux: Ainsi la Nuit\n\nIoannis Angelakis: ASC-4.1-III13, Terror and Silence and Between them a Flame\n\n- - - - - - - \n\nSpecial thanks to:\n\nMomenta Quartet\nLawren Young and Pauline Lum\nJaime Oliver de la Rosa, Elizabeth Hoffman and Louis Karchin\nAdele Fournet, Gordon Beeferman and the First Performance Club\nNYU Music Department\n\n- - - - - - - \n\nMomenta Quartet:\n\nAdda Kridler, Violin\nMichael Haas, Cello\nEmilie-Anne Gendron, Violin\nStephanie Griffin, Viola\n\n(www.momentaquartet.com)\n\n- - - - - - - \n\nCameras:\n\nFederico Cámara Halac\nAdele Fournet\nIoannis Angelakis\n\n- - - - - - - \n\nEditing/Design:\n\nFederico Cámara Halac",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/qL8H9h6Dtjg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/qL8H9h6Dtjg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/qL8H9h6Dtjg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/qL8H9h6Dtjg/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/qL8H9h6Dtjg/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 28,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "qL8H9h6Dtjg"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/Wu1-OWyDsuAGYXF-lIr2_mDN-dY\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLjkyQXFqVGRZS3FR",
+   "snippet": {
+    "publishedAt": "2014-04-25T18:14:18.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Momenta Quartet Plays NYU Composers - Part 3: Henri Dutilleux",
+    "description": "NYU Waverly Labs Presents\n\nMomenta Quartet Plays NYU Composers\n\n(recorded live) \nApril 21/2014, 7.30pm\nNYU GSAS Music Department\n24 Waverly Place, Room 220, NYC, NY\n\n- - - - - - - \n\nYoon-Ji Lee: Delia Elena San Marco After Borges\n\nFederico Cámara Halac: Talita\n\nHenri Dutilleux: Ainsi la Nuit\n\nIoannis Angelakis: ASC-4.1-III13, Terror and Silence and Between them a Flame\n\n- - - - - - - \n\nSpecial thanks to:\n\nMomenta Quartet\nLawren Young and Pauline Lum\nJaime Oliver de la Rosa, Elizabeth Hoffman and Louis Karchin\nAdele Fournet, Gordon Beeferman and the First Performance Club\nNYU Music Department\n\n- - - - - - - \n\nMomenta Quartet:\n\nAdda Kridler, Violin\nMichael Haas, Cello\nEmilie-Anne Gendron, Violin\nStephanie Griffin, Viola\n\n(www.momentaquartet.com)\n\n- - - - - - - \n\nCameras:\n\nFederico Cámara Halac\nAdele Fournet\nIoannis Angelakis\n\n- - - - - - - \n\nEditing/Design:\n\nFederico Cámara Halac",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/92AqjTdYKqQ/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/92AqjTdYKqQ/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/92AqjTdYKqQ/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/92AqjTdYKqQ/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/92AqjTdYKqQ/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 29,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "92AqjTdYKqQ"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/veIUf2xLl3-VJdYiGK6INJfezWA\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLlg4UGlEN2hEMHpJ",
+   "snippet": {
+    "publishedAt": "2014-04-27T21:02:58.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Momenta Quartet Plays NYU Composers - Part 2: Federico Camara Halac",
+    "description": "NYU Waverly Labs Presents\n\nMomenta Quartet Plays NYU Composers\n\n(recorded live) \nApril 21/2014, 7.30pm\nNYU GSAS Music Department\n24 Waverly Place, Room 220, NYC, NY\n\n- - - - - - - \n\nYoon-Ji Lee: Delia Elena San Marco After Borges\n\nFederico Cámara Halac: Talita\n\nHenri Dutilleux: Ainsi la Nuit\n\nIoannis Angelakis: ASC-4.1-III13, Terror and Silence and Between them a Flame\n\n- - - - - - - \n\nSpecial thanks to:\n\nMomenta Quartet\nLawren Young and Pauline Lum\nJaime Oliver de la Rosa, Elizabeth Hoffman and Louis Karchin\nAdele Fournet, Gordon Beeferman and the First Performance Club\nNYU Music Department\n\n- - - - - - - \n\nMomenta Quartet:\n\nAdda Kridler, Violin\nMichael Haas, Cello\nEmilie-Anne Gendron, Violin\nStephanie Griffin, Viola\n\n(www.momentaquartet.com)\n\n- - - - - - - \n\nCameras:\n\nFederico Cámara Halac\nAdele Fournet\nIoannis Angelakis\n\n- - - - - - - \n\nEditing/Design:\n\nFederico Cámara Halac\n\nwww.fedecamarahalac.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/X8PiD7hD0zI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/X8PiD7hD0zI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/X8PiD7hD0zI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/X8PiD7hD0zI/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/X8PiD7hD0zI/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 30,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "X8PiD7hD0zI"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/l67bcKPBQ0NEuqBD31NJkXHDoII\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLm50S1ljWkNFTzF3",
+   "snippet": {
+    "publishedAt": "2014-04-27T02:20:59.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Momenta Quartet Plays NYU Composers - Part 1: Yoon-Ji Lee",
+    "description": "NYU Waverly Labs Presents\n\nMomenta Quartet Plays NYU Composers\n\n(recorded live) \nApril 21/2014, 7.30pm\nNYU GSAS Music Department\n24 Waverly Place, Room 220, NYC, NY\n\n- - - - - - - \n\nYoon-Ji Lee: Delia Elena San Marco After Borges\n\nFederico Cámara Halac: Talita\n\nHenri Dutilleux: Ainsi la Nuit\n\nIoannis Angelakis: ASC-4.1-III13, Terror and Silence and Between them a Flame\n\n- - - - - - - \n\nSpecial thanks to:\n\nMomenta Quartet\nLawren Young and Pauline Lum\nJaime Oliver de la Rosa, Elizabeth Hoffman and Louis Karchin\nAdele Fournet, Gordon Beeferman and the First Performance Club\nNYU Music Department\n\n- - - - - - - \n\nMomenta Quartet:\n\nAdda Kridler, Violin\nMichael Haas, Cello\nEmilie-Anne Gendron, Violin\nStephanie Griffin, Viola\n\n(www.momentaquartet.com)\n\n- - - - - - - \n\nCameras:\n\nFederico Cámara Halac\nAdele Fournet\nIoannis Angelakis\n\n- - - - - - - \n\nEditing/Design:\n\nFederico Cámara Halac",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/ntKYcZCEO1w/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/ntKYcZCEO1w/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/ntKYcZCEO1w/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/ntKYcZCEO1w/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/ntKYcZCEO1w/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 31,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "ntKYcZCEO1w"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/Y2PhAi-VjMS9LqVIMVYJXcmWnWk\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLnRXWHdrazllY2Q0",
+   "snippet": {
+    "publishedAt": "2014-04-12T02:45:15.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Momenta Quartet plays NYU composers",
+    "description": "Momenta Quartet plays NYU composers Ioannis Angelakis, Yoon-Ji Lee and Federico Camara Halac. The concert will be held on April 21st, 7.30pm, at NYU, 24 Waverly Place, room 220. Admission is Free.\n\nwww.fedecamarahalac.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/tWXwkk9ecd4/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/tWXwkk9ecd4/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/tWXwkk9ecd4/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/tWXwkk9ecd4/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/tWXwkk9ecd4/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 32,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "tWXwkk9ecd4"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/OPbIzpBWZwDaKDdxCIMHtSs2Z4U\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLkhwUE5WSnNuM1hR",
+   "snippet": {
+    "publishedAt": "2014-03-06T05:27:57.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Planos diferentes",
+    "description": "www.fedecamarahalac.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/HpPNVJsn3XQ/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/HpPNVJsn3XQ/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/HpPNVJsn3XQ/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/HpPNVJsn3XQ/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/HpPNVJsn3XQ/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 33,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "HpPNVJsn3XQ"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/MThXAOnnzrOYBRkwead2HJYmUho\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLmdFck5WdndzT2RJ",
+   "snippet": {
+    "publishedAt": "2014-03-05T04:45:29.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Doce minutos en fase",
+    "description": "www.fedecamarahalac.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/gErNVvwsOdI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/gErNVvwsOdI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/gErNVvwsOdI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/gErNVvwsOdI/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/gErNVvwsOdI/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 34,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "gErNVvwsOdI"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/nO0i8iI7XofCrPkCCAWiQrQ01CM\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLmRBQjdxRWRZNWc0",
+   "snippet": {
+    "publishedAt": "2011-11-13T21:25:01.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "LEIM ENSAMBLE - NONOSCOMIO - 5.SALA DE CONTENCIÓN",
+    "description": "LEIM ENSAMBLE: \nconstrucción sonora en tiempo real\n\nVIERNES 11.11.11 \nCEPIA 20.HS\n\n\"NOSOCOMIO\" (último concierto del año) \n1. Histeria: leim/ensamble \n2. Bipolaridad: alcaráz/romero \n3. Esquizo 1: bordone/ragessi \n4. Desorden de personalidad múltiple: romero/cámara halac/bordone/ragessi \n5. Sala de contención: leim/ensamble\n\nAgradecimiento especial a CePIA, Franco Pellini, Gustavo Alcaráz\n\nIntegrantes: \nvilte (fagot) romero (flauta) bordone (voz) cámara halac (piano) ragessi (laptop/bajo) pellini (laptop) alcaráz (laptop/flauta)",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/dAB7qEdY5g4/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/dAB7qEdY5g4/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/dAB7qEdY5g4/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/dAB7qEdY5g4/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 35,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "dAB7qEdY5g4"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/ly2GlsyWL-vmjEfbJQF8oVYwCGY\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLi1yeXYwOFZPRkw0",
+   "snippet": {
+    "publishedAt": "2011-11-13T20:51:59.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "LEIM ENSAMBLE - NOSOCOMIO - 4.DESORDEN DE PERSONALIDAD MÚLTIPLE",
+    "description": "LEIM ENSAMBLE: \nconstrucción sonora en tiempo real\n\nVIERNES 11.11.11 \nCEPIA 20.HS\n\n\"NOSOCOMIO\" (último concierto del año) \n1. Histeria: leim/ensamble \n2. Bipolaridad: alcaráz/romero \n3. Esquizo 1: bordone/ragessi \n4. Desorden de personalidad múltiple: romero/cámara halac/bordone/ragessi \n5. Sala de contención: leim/ensamble\n\nAgradecimiento especial a CePIA, Franco Pellini, Gustavo Alcaráz\n\nIntegrantes: \nvilte (fagot) romero (flauta) bordone (voz) cámara halac (piano) ragessi (laptop/bajo) pellini (laptop) alcaráz (laptop/flauta)",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/-ryv08VOFL4/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/-ryv08VOFL4/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/-ryv08VOFL4/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/-ryv08VOFL4/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 36,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "-ryv08VOFL4"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/L1FA6Y4He07usN9BEdMIaWxiWNA\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLnotUnYtMEJ1UkU4",
+   "snippet": {
+    "publishedAt": "2011-11-13T20:13:53.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "LEIM ENSAMBLE - NOSOCOMIO - 2.BIPOLARIDAD",
+    "description": "LEIM ENSAMBLE: \nconstrucción sonora en tiempo real\n\nVIERNES 11.11.11 \nCEPIA 20.HS\n\n\"NOSOCOMIO\" (último concierto del año) \n1. Histeria: leim/ensamble \n2. Bipolaridad: alcaráz/romero \n3. Esquizo 1: bordone/ragessi \n4. Desorden de personalidad múltiple: romero/cámara halac/bordone/ragessi \n5. Sala de contención: leim/ensamble\n\nAgradecimiento especial a CePIA, Franco Pellini, Gustavo Alcaráz\n\nIntegrantes: \nvilte (fagot) romero (flauta) bordone (voz) cámara halac (piano) ragessi (laptop/bajo) pellini (laptop) alcaráz (laptop/flauta)",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/z-Rv-0BuRE8/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/z-Rv-0BuRE8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/z-Rv-0BuRE8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/z-Rv-0BuRE8/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 37,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "z-Rv-0BuRE8"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/Aat6uI9WozHTR40vQq1wCzUHIo4\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLnd6UkVNaG5xZlBF",
+   "snippet": {
+    "publishedAt": "2011-11-13T19:47:23.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "LEIM ENSAMBLE - NOSOCOMIO - 1.HISTERIA",
+    "description": "LEIM ENSAMBLE: \nconstrucción sonora en tiempo real\n\nVIERNES 11.11.11 \nCEPIA 20.HS\n\n\"NOSOCOMIO\" (último concierto del año) \n1. Histeria: leim/ensamble \n2. Bipolaridad: alcaráz/romero \n3. Esquizo 1: bordone/ragessi \n4. Desorden de personalidad múltiple: romero/cámara halac/bordone/ragessi \n5. Sala de contención: leim/ensamble\n\nAgradecimiento especial a CePIA, Franco Pellini, Gustavo Alcaráz\n\nIntegrantes: \nvilte (fagot) romero (flauta) bordone (voz) cámara halac (piano) ragessi (laptop/bajo) pellini (laptop) alcaráz (laptop/flauta)",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/wzREMhnqfPE/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/wzREMhnqfPE/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/wzREMhnqfPE/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/wzREMhnqfPE/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 38,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "wzREMhnqfPE"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/cTvAs4lGIVaKifgIjWqDwvz8cLg\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLk1ZdmsyWmxnYmUw",
+   "snippet": {
+    "publishedAt": "2011-11-05T16:44:43.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Ensamble Buenas Salenas - La Musa de los números - Luis Toro",
+    "description": "VIII Festival Internacional de Música Contemporánea\nCórdoba 2011\n\nDirector artístico: Juan Carlos Tolosa\n\nEnsamble Buenas Salenas\nSala Luis de Tejeda\nTeatro del Libertador\n3 de noviembre 2011\n\nLA MUSA DE LOS NÚMEROS (Estreno absoluto)\n\ndedicada a Mariano Vélez y Pablo Cécere\n\nMaría Cecilia Leunda (voz)\nDiego Joyas (saxo alto)\nMauricio Pregot (violín)\nEugenia Álvarez Caturelli (violoncello)\nPablo Platte (guitarra)\nMauricio Hernández (mandolina)\nRomina Pizarro (melódica)\nEmilio Chavesta (piano)\nJavier Mazzucchelli (percusión)\n\nObra compuesta por Luis Toro.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/MYvk2Zlgbe0/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/MYvk2Zlgbe0/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/MYvk2Zlgbe0/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/MYvk2Zlgbe0/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 39,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "MYvk2Zlgbe0"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/AribLurXf7RYeDPK2Zrltu6mNMc\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLl9Fa1Z5YXU5UkNz",
+   "snippet": {
+    "publishedAt": "2011-11-04T23:45:59.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Ensamble Buenas Salenas - Ápeiron - Franco Pellini",
+    "description": "VIII Festival de Música Contemporánea\nCórdoba 2011\n\nDirección artística: Juan Carlos Tolosa\n\nEnsamble Buenas Salenas\nSala Luis de Tejeda\nTeatro del Libertador\n3 de noviembre de 2011\n\nÁPEIRON (estreno absoluto)\n\nSaxo soprano: Diego Joyas\n\nObra compuesta por Franco Pellini",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/_EkVyau9RCs/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/_EkVyau9RCs/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/_EkVyau9RCs/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/_EkVyau9RCs/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 40,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "_EkVyau9RCs"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/HDrqVCmHxFwlETnwjS-qbwVKl5o\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLnJ4LU1wT3lYOGxz",
+   "snippet": {
+    "publishedAt": "2011-11-04T23:02:08.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Ensamble Buenas Salenas - Liminis II - Federico Ragessi",
+    "description": "VIII Festival de Música Contemporánea\nCórdoba 2011\n\nDirección Artística: Juan Carlos Tolosa\n\nEnsamble Buenas Salenas\nDirección: Hernando Varela\n\nLIMINIS II (estreno absoluto)\n\nViolín: Mauricio Pregot\nFlauta: Alejandro Pittis\nSaxo Alto: Diego Joyas\nGuitarra: Pablo Platte\nVioloncello: Eugenia Álvarez Caturelli\nPiano: Emilio Chavesta\nMarimba: Javier Mazzucchelli\n\nDirección: Hernando Varela\n\nObra compuesta por Federico Ragessi",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/rx-MpOyX8ls/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/rx-MpOyX8ls/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/rx-MpOyX8ls/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/rx-MpOyX8ls/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 41,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "rx-MpOyX8ls"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/RTVCmFcPcC4L31dC_OEcvg27JSY\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLjJMMVQ4ZmdNT0I0",
+   "snippet": {
+    "publishedAt": "2011-11-04T19:29:54.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Ensamble Buenas Salenas - Móvil-in-Móvil - Federico Cámara-Halac",
+    "description": "MÓVIL-IN-MÓVIL - para percusión, piano y electroacústica\n\nVIII Festival de Música Contemporánea - Córdoba 2011 - Director Artístico: Juan Carlos Tolosa\n\nConcierto 3 de noviembre de 2011 - Sala Luis de Tejeda - Teatro del Libertador\n\nEnsamble Buenas Salenas\n\nPercusión: Javier Muñoz\nPercusión: Javier Mazzucchelli\nPiano: Emilio Chavesta\nDirección: Hernando Varela\n\nwww.fedecamarahalac.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/2L1T8fgMOB4/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/2L1T8fgMOB4/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/2L1T8fgMOB4/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/2L1T8fgMOB4/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 42,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "2L1T8fgMOB4"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/IczgD5i7FslYHH8cna8DkUTvA7Y\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLmRDSmFQMVBCaXhB",
+   "snippet": {
+    "publishedAt": "2011-07-31T02:33:20.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "11 Variaciones / 11 Variations",
+    "description": "11 VARIATIONS\n\nComposed and Interpreted by Federico Camara-Halac, for the last course of  Music Composition at the National University of Cordoba.\n\nFinal Concert, Music Composition III, 2010 - CePIa Concert Hall - UNC\n\nwww.fedecamarahalac.com\n--\n\n11 VARIACIONES\n\nObra compuesta y estrenada por Federico Cámara-Halac, dentro de la cátedra de Composición III en la UNC. \n\nConcierto Final de Composición III 2010 - Auditorio CePIA - UNC\n\nwww.fedecamarahalac.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/dCJaP1PBixA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/dCJaP1PBixA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/dCJaP1PBixA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/dCJaP1PBixA/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 43,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "dCJaP1PBixA"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/Tpr4v47XJDFf6P72QlC7rnGN67M\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLlV1SFRuQUNyQkNj",
+   "snippet": {
+    "publishedAt": "2011-07-31T01:55:36.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Instantáneas / Instantaneous",
+    "description": "INSTANTANEOUS - for soprano and ensemble\n\nComposed and Conducted by Federico Camara-Halac, for the last course of  Music Composition at the National University of Cordoba.\n\nperformed by\n\nPROYECTO[RED]ENSAMBLE\n\nSoprano: Jazmín Paz\nFlute: Ives Romero\nAlto Sax: Federico Rascón\nViolin: Soledad Maldonado\nVioloncello: Eleonora Valvasori\nPercussion: Pablo Behm\nPiano: Ezequiel Fortete\n\nFinal Concert, Music Composition III, 2010 - CePIa Concert Hall - UNC\n\nwww.fedecamarahalac.com\n\n--\n\nINSTANTÁNEAS - para soprano y ensamble\n\nObra compuesta y estrenada por Federico Cámara-Halac, dentro de la cátedra de Composición III en la UNC. \n\nejecutado por\n\nPROYECTO[RED]ENSAMBLE\n\nSoprano: Jazmín Paz\nFlauta: Ives Romero\nSaxo Alto: Federico Rascón\nViolín: Soledad Maldonado\nVioloncello: Eleonora Valvasori\nPercusión: Pablo Behm\nPiano: Ezequiel Fortete\n\nConcierto Final de Composición III 2010 - Auditorio CePIA - UNC\n\nwww.fedecamarahalac.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/UuHTnACrBCc/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/UuHTnACrBCc/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/UuHTnACrBCc/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 44,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "UuHTnACrBCc"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/yqBKK-oq42ujnElVDS1kGtCjflc\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLlkyZlIxRjMyX09n",
+   "snippet": {
+    "publishedAt": "2010-12-07T15:16:58.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Móvil-in-Móvil / Mobile-im-Mobile",
+    "description": "MÓVIL-IN-MÓVIL - para percusión, piano y electroacústica\n\nObra compuesta por Federico Cámara Halac en el Seminario de Composición con Nuevas Tecnologías, dictado por el Prof. Gonzalo Biffarella en el año 2010.\n\nGrabación realizada en estudios Paraíso Music Pro, por cortesía de Jorge Nazar.\n\nCámaras: Santiago Torres - Mariano Rupil\n\nPercusión: Javier Muñoz - Javier Mazzucchelli\n\nComposición, dirección y edición: Federico Cámara-Halac\n\nwww.fedecamarahalac.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Y2fR1F32_Og/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Y2fR1F32_Og/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Y2fR1F32_Og/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/Y2fR1F32_Og/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 45,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "Y2fR1F32_Og"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/89ZXYiCscXbcNdH5IQBitx8gpmM\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLmtSMGljZkNOSFl3",
+   "snippet": {
+    "publishedAt": "2010-11-21T22:52:49.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Móvil-in-Móvil / Mobile-im-Mobile (premiere)",
+    "description": "MÓVIL-IN-MÓVIL - para percusión, piano y electroacústica\n\nPercusión: Javier Muñoz y Javier Mazzucchelli\nPuesta en Escena: Luisina Couto\nCámara: Ayelén Savid Teixeira\nFotos: Rayén Savid Teixeira\nComposición y Dirección: Federico Cámara-Halac\n\nObra estrenada en el ciclo EXPERIMENTA SONORA 2010\ny compuesta en el Seminario de Composición con Nuevas Tecnologías.\n\nEstreno: 8 de Noviembre 2010 - 20hs - Auditorio CePIA\n\nwww.fedecamarahalac.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/kR0icfCNHYw/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/kR0icfCNHYw/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/kR0icfCNHYw/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/kR0icfCNHYw/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 46,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "kR0icfCNHYw"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/eKMTx9AF7E1hTseBeFYoIjsnZzI\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLk42SzJHblk5NGgw",
+   "snippet": {
+    "publishedAt": "2009-12-23T19:03:12.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Three to Nine from Slap!",
+    "description": "THREE TO NINE FROM SLAP! - para noneto de vientos\nConcierto final de la Cátedra de Composición II en la Escuela de Artes de la Facultad de Filosofía y Humanidades, Universidad Nacional de Córdoba.\n\nEl Ensemble de Vientos de La Colmena interpreta bajo la dirección de Nicolás Mazza una obra de Federico Cámara Halac.\n\nLa obra es resultado de un encargo del director Nicolás Mazza, de realizar una adaptación para su ensemble de la Obra para Quinteto de Cañas Slap!\n\nEl ensemble:\n\nFlauta: Eva Arce - Sergio Argüello\nTrompeta: Leonardo Ricciardino - Germán Reccitelli - Emiliano Marino \nSaxo Alto: Santiago Serena - Gabriela Grad\nSaxo Tenor: Mariano Campanella - Rodrgio Lescano\n\nDirector: Nicolás Mazza\n\nwww.fedecamarahalac.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/N6K2GnY94h0/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/N6K2GnY94h0/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/N6K2GnY94h0/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 47,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "N6K2GnY94h0"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/xeSnj2xAMT1RJ0V_5XaCx4Bx9VQ\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLnAzZmFGbGxVWEdJ",
+   "snippet": {
+    "publishedAt": "2009-11-09T02:46:51.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Three For Slap!",
+    "description": "THREE FOR SLAP! - para quinteto de cañas\nEl Quinteto Slap! en su concierto \"Efecto Doppler\" donde estrenaron obras de jóvenes compositores, alumnos de Composición Musical en la UNC. \n\nOboe: Gustavo Ahumada\nFagot: Gonzalo Brusco\nClarinete Bajo: Nicolás Mazza\nClarinete en Sib: Ramiro Dantas\nSaxo Alto: Nicolás Ahumada\nPuesta en Escena: Valeria Urigu\n\nMartes 3 de Noviembre 2009.\n\nAuditorio Cepia - Escuela de Artes - Facultad de Filosofía y Humanidades - Universidad Nacional de Córdoba.\n\nwww.fedecamarahalac.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/p3faFllUXGI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/p3faFllUXGI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/p3faFllUXGI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 48,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "p3faFllUXGI"
+    }
+   }
+  },
+  {
+
+
+   "kind": "youtube#playlistItem",
+   "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/7QxdGKMJT76eLY_LS94rye3KFgE\"",
+   "id": "VVV6T3gtaUthTng5cnVkZE5JNnlrVElBLnNJSXR6V29ReUFn",
+   "snippet": {
+    "publishedAt": "2008-06-03T04:45:51.000Z",
+    "channelId": "UCzOx-iKaNx9ruddNI6ykTIA",
+    "title": "Suite para Violín y Piano / Suite for Violin and Piano",
+    "description": "SUITE PARA VIOLÍN Y PIANO / SUITE FOR VIOLIN AND PIANO\nAudición de Introducción a la Composición II, 31 de Octubre 2007.\nPiano: Federico Cámara Halac\nViolín: Patricio Franciulli\nAuditorio Cepia, Escuela de Artes - Universidad Nacional  de Córdoba.\n\nwww.fedecamarahalac.com",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/sIItzWoQyAg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/sIItzWoQyAg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/sIItzWoQyAg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     }
+    },
+    "channelTitle": "Federico Camara Halac",
+    "playlistId": "UUzOx-iKaNx9ruddNI6ykTIA",
+    "position": 49,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "sIItzWoQyAg"
+    }
+   }
+  }
+ ]
+}
+ 
