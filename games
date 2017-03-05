@@ -4,6 +4,7 @@
 <button type=button class="button draw"onclick="location.href='draw/'"><span class=eng>draw</span><span class=spa>dibuja</span></button>
 <span class=eng><p>draw concentrical polygons as they get smaller and smaller. print page when you're done</p></span>
 <span class=spa><p>dibujá polígonos concéntricos a medida que se van haciendo cada vez más chiquitos. imprimí la página cuando termines</p></span>
+<img onclick="location.href='draw/'" src="img/draw.png"/>
 
 <!-- PNO -->
 <button type=button class="button pno"onclick="location.href='content/games/mp3/loop';"><span class=eng>piano-1</span><span class=spa>piano-1</span></button>

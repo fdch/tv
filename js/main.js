@@ -6,16 +6,17 @@ $(function() {
 	
 	languagesMenu();
 	layoutSetup(w, h);
-	readTextFile("ytinfo", function(text) {
-		var data = JSON.parse(text);
-		console.log(data);
-	});
+	
+	//readTextFile("ytinfo", function(text) {
+	//	var data = JSON.parse(text);
+	//	console.log(data);
+	//});
 });
 
 //loads the id of the element passed on the content div 
 function fdLoadID(x) {
 	myID = x.id;
-	$("#content").load(myID);
+	$("#content").load(myID, languagesMenu());
 }
 
 function fdLoad(x) {
