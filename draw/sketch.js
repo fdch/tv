@@ -1,14 +1,5 @@
-var canvas, x, y, z, xup, yup, zup;
-var xdiffn, ydiffn, zdiffn;
-var a, b, c;
-var i, f;
-var dist, velo;
-var lmove,xmove;
-var pos,col;
-var R, G, B;
-var text;
-var k;
-var dim;
+var canvas
+var i, a;
 var sx,sy,angle,radius,click;
 function setup() {
 	canvas = createCanvas(windowWidth, windowHeight);
@@ -16,7 +7,7 @@ function setup() {
 }
 function draw() {
 	col = map(mouseY, 0, height, 255, 0);
-	num = map(mouseX, 0, width, 1, 30);
+	num = map(mouseX, 0, width, 2, 14);
 	hexagon(col,num);
 }
 function hexagon(col,num,i) {
