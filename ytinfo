@@ -1,18 +1,3 @@
-
-200
- 
-- Hide headers -
- 
-cache-control:  private, max-age=0, must-revalidate, no-transform
-content-encoding:  gzip
-content-length:  26658
-content-type:  application/json; charset=UTF-8
-date:  Sun, 05 Mar 2017 00:21:08 GMT
-etag:  "uQc-MPTsstrHkQcRXL3IWLmeNsM/bai4Pjwc3v5rIbpveA8O5b5a3go"
-expires:  Sun, 05 Mar 2017 00:21:08 GMT
-server:  GSE
-vary:  Origin, X-Origin
- 
 {
  "kind": "youtube#playlistItemListResponse",
  "etag": "\"uQc-MPTsstrHkQcRXL3IWLmeNsM/bai4Pjwc3v5rIbpveA8O5b5a3go\"",

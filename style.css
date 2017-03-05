@@ -42,6 +42,7 @@ li:hover, #menu-list span:hover, #menu-list a:hover {
 }
 #worklist li {
 	margin-bottom:3px;
+	width:80%;
 }
 a {
 	text-decoration:none
