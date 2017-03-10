@@ -4,5 +4,5 @@ git init
 git add .
 git commit -m '$1'
 git push
-open https://fdch.github.io/tv
+open -a Google\Crhome --auto-open-devtools-for-tabs https://fdch.github.io/tv
 exit
