@@ -12,11 +12,12 @@ h1, h2 {
 	background:white;
 	border-radius:3px;
 }
-h3, h4, h5, h6, p, br, li {
+h3, h4, h5, h6, p, br, li, article {
 	background:white;
 	padding:3px;
 	border-radius:3px;
 }
+
 #languages {
 	cursor:pointer;
 	margin-right:20px;
