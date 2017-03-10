@@ -4,11 +4,11 @@ function getRandomMargin() {
 	return margen;
 }
 ///Make Random Margins 
-function randomMargenMotionL() {
-	$(".menulink-left").delay(4333).animate({
-		marginLeft: (getRandomMargin() * -0.5) //up to half of the right margin
-		}, 4333);
-}
+//function randomMargenMotionL() {
+//	$(".menulink-left").delay(4333).animate({
+//		marginLeft: (getRandomMargin() * -0.5) //up to half of the right margin
+//		}, 4333);
+//}
 function randomMargenMotionR() {
 	$(".menulink").delay(4333).animate({
 		marginRight: getRandomMargin()
