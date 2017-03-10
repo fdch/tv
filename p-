@@ -1,5 +1,5 @@
 #!/bin/bash
-ls -t content > worklist
+ls -t content  | cut -d . -f1 > worklist 
 git init
 git add .
 git commit -m '$1'
