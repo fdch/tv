@@ -17,16 +17,12 @@ h3, h4, h5, h6, p, br, li {
 	padding:3px;
 	border-radius:3px;
 }
-header { 
-	cursor:pointer;
-	position:relative;
-	float:left;
-}
 #languages {
 	cursor:pointer;
-	position:relative;
-	float:right;
-	margin-right:20px
+	position:fixed;
+	top:10;
+	right:10;
+	margin-right:10px
 }
 #menu{
 	position:relative;
