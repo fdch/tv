@@ -1,7 +1,4 @@
 <ul id=menu-list>
-
-<!--------------------------------[[[[[[------------------------------------->
-<a href="https://fdch.github.io/tv">[[[[[</a> 
 <!--------------------------------[BIO]------------------------------------->
 <span id=bio class=menulink onClick="fdLoadID(this)">bi[o</span> 
 <!----------------------------------[WORK]----------------------------------->
@@ -18,5 +15,4 @@ con[t<span id=contact onClick="fdLoadID(this)">act</span> ]o
 <a href="https://github.com/fdch"><span id=code class=menulink><span class=eng>cod[e</span><span class=spa >c[ó]dig]o</span></span></a> 
 <!--------------------------------[BLOG]------------------------------------->
 <a href="https://fedecamarahalac.tumblr.com"><span class="menulink blog">blo[g</span></a> 
-
 </ul><!--[menu list end]-->
