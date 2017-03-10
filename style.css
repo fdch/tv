@@ -19,10 +19,12 @@ h3, h4, h5, h6, p, br, li {
 }
 #languages {
 	cursor:pointer;
-	position:fixed;
-	top:10;
-	right:10;
-	margin-right:10px
+	position:relative;
+	top:0;
+	right:0;
+	z-index:1000;
+	background:white;
+	border-radius:3px;
 }
 #menu{
 	position:relative;
