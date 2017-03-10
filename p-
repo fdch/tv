@@ -1,9 +1,8 @@
 #!/bin/bash
-ARG=$1
-ls content > worklist
+ls -lt content > worklist
 git init
 git add .
-git commit -m '$ARG'
+git commit -m '$1'
 git push
 open https://fdch.github.io/tv
 exit

@@ -18,11 +18,5 @@ con[t<span id=contact onClick="fdLoadID(this)">act</span> ]o
 <a href="https://github.com/fdch"><span id=code class=menulink><span class=eng>cod[e</span><span class=spa >c[ó]dig]o</span></span></a> 
 <!--------------------------------[BLOG]------------------------------------->
 <a href="https://fedecamarahalac.tumblr.com"><span class="menulink blog">blo[g</span></a> 
-<!------------------------------[LANGUAGES]----------------------------------->
-<div id=languages>
-<span class=menulink-left>
-<span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>&nbsp;|&nbsp;<span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span>
-</span><!-- menulink-left (needed for margins.js) -->
-</div>
 
 </ul><!--[menu list end]-->
