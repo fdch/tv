@@ -4,7 +4,6 @@
 <script>
 $(function(){
 	$("head").load("head");
-	$("#languages").load("lang");
 	$("#menu, #content, .fd").css("opacity", "0");
 	$("#menu").load("menu", function() {
 		$(this).delay(30).animate({opacity: 1}, 100);
@@ -12,6 +11,7 @@ $(function(){
 	$("#content").load("events", function() {
 		$(this).delay(30).animate({opacity: 1}, 100);
 	});
+	$("#languages").load("lang");
 });
 </script>
 <head>
