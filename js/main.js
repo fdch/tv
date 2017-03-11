@@ -6,11 +6,7 @@ $(function() {
 	
 	languagesMenu();
 	layoutSetup(w, h);
-	
-	//readTextFile("ytinfo", function(text) {
-	//	var data = JSON.parse(text);
-	//	console.log(data);
-	//});
+
 });
 
 //loads the id of the element passed on the content div 
@@ -36,19 +32,6 @@ function languagesMenu() {
 	});
 }
 
-function readTextFile(file, callback) {
-	var rawFile = new XMLHttpRequest();
-	rawFile.overrideMimeType("application/json");
-	rawFile.open("GET", file, true);
-	rawFile.onreadystatechange = function() {
-		if (rawFile.readyState === "4" && rawFile.status == "200" ) {
-			callback(rawFile.responseText);;
-		}
-	}
-	rawFile.send(null);
-}
-
-
 //reset the layout
 function layoutSetup(w, h) {
 	if (w <= 800.) {
@@ -63,14 +46,7 @@ function layoutSetup(w, h) {
 		$(".image-window img").width(w * 0.4);
 		$("#content iframe").width(content/2.);
 	}
-	//$(".score-object").width(content).height(content * 0.7);
-	//$(".audio-object").width(content);
-	
-	//$(".video-iframe").width(content).css("margin", 0).css("padding", 0).height(content * 0.4);
-	//$(".audio-iframe").width(content).css("margin", 0).css("padding", 0).height(content * 0.15);
-	//$(".soundcloud").width(content);
-	
-
+	$("iframe, object, audio, video").width(content);
 }
 
 //TODO for work

@@ -10,6 +10,4 @@ function getContent() {
 }
 $(getContent());
 </script>
-<ul id=worklist>
-
-</ul>
+<ul id=worklist></ul>
