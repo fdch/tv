@@ -1,15 +1,14 @@
 //main function on startup
 $(function() {
-	var w = $(window).width();
-	var h = $(window).height();
 	languagesMenu();
-	layoutSetup(w, h);
+	layoutSetup();
 });
 
 //loads the id of the element passed on the content div 
 function fdLoadID(x) {
 	myID = x.id;
 	$("#content").load(myID, languagesMenu());
+	
 }
 
 function fdLoad(x) {
@@ -29,7 +28,9 @@ function languagesMenu() {
 	});
 }
 //reset the layout
-function layoutSetup(w, h) {
+function layoutSetup() {
+	var w = $(window).width();
+	var h = $(window).height();
 	if (w > 500) {
 		$("article").width(w*0.8).css("left",(w*0.1));
 	} else {
