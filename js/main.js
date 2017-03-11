@@ -28,15 +28,13 @@ function languagesMenu() {
 		$(".eng").hide(), $(".spa").show()
 	});
 }
-
 //reset the layout
 function layoutSetup(w, h) {
-	if (w <= 600.) {
+	if (w >= 800.) {
 		$("#content").width(w).css("left", w/4);
 		$("#content img").width(w * 0.4).css("margin", 0);
 		$(".image-window img").width(w * 0.6);
 		$("object, audio, video, iframe").width(w);
-	
 	} else {
 		$("#content").width(w/2.);
 		$("#content img").width(w * 0.6).css("margin", 0);
@@ -44,7 +42,6 @@ function layoutSetup(w, h) {
 		$("object, audio, video, iframe").width(w/2.);
 	}
 }
-
 //TODO for work
 $(".duotri").click(function() {
 $(".multimedia, .ensemble, .solo, .videoart, .orchestra, .inprogress").fadeOut(300);
