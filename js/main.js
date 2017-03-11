@@ -34,12 +34,10 @@ function layoutSetup(w, h) {
 		$("article").width(w-(w/6)).css("left", w/6);
 		$("#content img").width(w * 0.4).css("margin", 0);
 		$(".image-window img").width(w * 0.6);
-		$("object, audio, video, iframe").width(w);
 	} else if (w < 500) {
 		$("#content").width(w-(w/20)).css("left", w/20);
 		$("#content img").width(w * 0.6).css("margin", 0);
 		$(".image-window img").width(w * 0.4);
-		$("object, audio, video, iframe").width(w/2);
 	}
 }
 //TODO for work

@@ -67,3 +67,6 @@ a {
 	right:0;
 	z-index:-1;
 }
+object, audio, video, iframe {
+	width:inherit;
+}
