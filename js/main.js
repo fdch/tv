@@ -35,7 +35,7 @@ function layoutSetup(w, h) {
 		$("#content img").width(w * 0.4).css("margin", 0);
 		$(".image-window img").width(w * 0.6);
 	} else if (w < 500) {
-		$("#content").width(w-(w/20)).css("left", w/20);
+		$("article").width(w-(w/20)).css("left", w/20);
 		$("#content img").width(w * 0.6).css("margin", 0);
 		$(".image-window img").width(w * 0.4);
 	}
