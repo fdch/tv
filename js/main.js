@@ -31,8 +31,8 @@ function layoutSetup() {
 		w = w*0.5;
 	}
 	$("article").width(w);
-	$("img").width(w);
-	$(".fdframe").attr("width",w).css("width",w).width(w);
+	$("article img").width(w);
+	$("iframe, video, object, audio, .fdframe").attr("width",w).css("width",w).width(w);
 }
 //TODO for work
 $(".duotri").click(function() {
