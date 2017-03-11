@@ -35,18 +35,17 @@ function languagesMenu() {
 //reset the layout
 function layoutSetup(w, h) {
 	if (w <= 800.) {
-		$("#content").width(content);
+		$("#content").width(w);
 		$("#content img").width(w * 0.4).css("margin", 0);
 		$(".image-window img").width(w * 0.6);
-		$("#content iframe").width(content);
+		$("object, audio, video, iframe").width(w);
 	
 	} else {
-		$("#content").width(content/2.);
+		$("#content").width(w/2.);
 		$("#content img").width(w * 0.6).css("margin", 0);
 		$(".image-window img").width(w * 0.4);
-		$("#content iframe").width(content/2.);
+		$("object, audio, video, iframe").width(w/2.);
 	}
-	$("iframe, object, audio, video").width(content);
 }
 
 //TODO for work
