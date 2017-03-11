@@ -2,11 +2,8 @@
 $(function() {
 	var w = $(window).width();
 	var h = $(window).height();
-	var content = w * 0.9;
-	
 	languagesMenu();
 	layoutSetup(w, h);
-
 });
 
 //loads the id of the element passed on the content div 
@@ -34,8 +31,8 @@ function languagesMenu() {
 
 //reset the layout
 function layoutSetup(w, h) {
-	if (w <= 800.) {
-		$("#content").width(w);
+	if (w <= 600.) {
+		$("#content").width(w).css("left", w/4);
 		$("#content img").width(w * 0.4).css("margin", 0);
 		$(".image-window img").width(w * 0.6);
 		$("object, audio, video, iframe").width(w);
