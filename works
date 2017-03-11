@@ -1,4 +1,4 @@
-<div id=content-wrap>
+<article>
 
 
 <div id="submenu" style="display:block;margin:10px;">
@@ -201,7 +201,4 @@
 </ul> <!-- MAIN LIST ENDS -->
 </div>
 
-<div id=content-repo></div>
-
-
-</div>
+</article>

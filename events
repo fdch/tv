@@ -1,4 +1,4 @@
-<div id=content-wrap>
+<article>
 
 <!-----------------------------[UPCOMING EVENTS]----------------------------->
 <div id=upcoming>
@@ -69,4 +69,4 @@
 
 </div><!--[RECENT]-->
 
-</div><!--[CONTENT-WRAP]-->
+</article><!--[CONTENT-WRAP]-->

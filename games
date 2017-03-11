@@ -1,4 +1,4 @@
-<div id=content-wrap>
+<article>
 
 <!-- DRAW -->
 <button type=button class="button draw"onclick="location.href='draw/'"><span class=eng>draw</span><span class=spa>dibuja</span></button>
@@ -21,4 +21,4 @@
 <span class=eng><p>start typing an incomprehensible text (version 2)</p></span>
 <span class=spa><p>empezá escribiendo un texto incomprensible (versión 2)</p></span>
 
-</div>
+</article>
