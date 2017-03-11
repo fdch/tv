@@ -30,16 +30,13 @@ function languagesMenu() {
 }
 //reset the layout
 function layoutSetup(w, h) {
-	if (w >= 500) {
-		$("article").width(w-(w/6)).css("left", w/6);
-		$("#content img").width(w * 0.4).css("margin", 0);
-		$(".image-window img").width(w * 0.6);
-	} else if (w < 500) {
-		$("article").width(w-(w/20)).css("left", w/20);
-		$("#content img").width(w * 0.6).css("margin", 0);
-		$(".image-window img").width(w * 0.4);
+	if (w > 500) {
+		$("article").width(w*0.8).css("left",(w*0.1));
+	} else {
+		$("article").width(w);
 	}
-	$("object, audio, video, iframe").attr("width",w);
+	$("img").width(w * 0.4);
+	$("object, audio, video, iframe").attr("width",w).css("width",w).width(w);
 }
 //TODO for work
 $(".duotri").click(function() {
