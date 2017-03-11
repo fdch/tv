@@ -32,7 +32,7 @@ function layoutSetup() {
 	}
 	$("article").width(w);
 	$("article img").width(w);
-	$("iframe, video, object, audio, .fdframe").attr("width",w).css("width",w).width(w);
+	$("article iframe").attr("width",w).css("width",w).width(w);
 }
 //TODO for work
 $(".duotri").click(function() {
