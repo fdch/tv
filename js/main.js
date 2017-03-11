@@ -35,7 +35,7 @@ function layoutSetup(w, h) {
 		$("#content img").width(w * 0.4).css("margin", 0);
 		$(".image-window img").width(w * 0.6);
 		$("object, audio, video, iframe").width(w);
-	} else (w < 500) {
+	} else if (w < 500) {
 		$("#content").width(w/2).css("left", 0);
 		$("#content img").width(w * 0.6).css("margin", 0);
 		$(".image-window img").width(w * 0.4);
