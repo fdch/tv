@@ -36,7 +36,7 @@ function layoutSetup(w, h) {
 		$("article").width(w);
 	}
 	$("img").width(w * 0.4);
-	$("object, audio, video, iframe").attr("width",w).css("width",w).width(w);
+	$(".fdframe").attr("width",w).css("width",w).width(w);
 }
 //TODO for work
 $(".duotri").click(function() {
