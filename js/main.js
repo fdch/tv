@@ -33,7 +33,7 @@ function languagesMenu() {
 function layoutSetup() {
 	var w = $(window).width();
 	var h = $(window).height();
-	if (w > 500) {
+	if (w >= 600) {
 		w = w*0.5;
 	}
 	$("article").width(w);
