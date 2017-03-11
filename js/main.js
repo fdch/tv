@@ -39,6 +39,7 @@ function layoutSetup(w, h) {
 		$("#content img").width(w * 0.6).css("margin", 0);
 		$(".image-window img").width(w * 0.4);
 	}
+	$("object, audio, video, iframe").attr("width",w);
 }
 //TODO for work
 $(".duotri").click(function() {
