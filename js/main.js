@@ -30,16 +30,16 @@ function languagesMenu() {
 }
 //reset the layout
 function layoutSetup(w, h) {
-	if (w >= 800.) {
-		$("#content").width(w).css("left", w/4);
+	if (w >= 500) {
+		$("#content").width(w).css("left", w/8);
 		$("#content img").width(w * 0.4).css("margin", 0);
 		$(".image-window img").width(w * 0.6);
 		$("object, audio, video, iframe").width(w);
 	} else {
-		$("#content").width(w/2.);
+		$("#content").width(w/2).css("left", 0);
 		$("#content img").width(w * 0.6).css("margin", 0);
 		$(".image-window img").width(w * 0.4);
-		$("object, audio, video, iframe").width(w/2.);
+		$("object, audio, video, iframe").width(w/2);
 	}
 }
 //TODO for work
