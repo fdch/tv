@@ -1,9 +1,3 @@
-//main function on startup
-$(function() {
-	languagesMenu();
-	layoutSetup();
-});
-
 //loads the id of the element passed on the content div 
 function fdLoadID(x) {
 	myID = x.id;
