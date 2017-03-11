@@ -7,14 +7,16 @@ $(function() {
 //loads the id of the element passed on the content div 
 function fdLoadID(x) {
 	myID = x.id;
-	$("#content").load(myID, languagesMenu());
-	
+	$("#content").load(myID);
+	languagesMenu();
+	layoutSetup();
 }
 
 function fdLoad(x) {
 	$("#content").load(x);
+	languagesMenu();
+	layoutSetup();
 }
-
 //establishes the language menu behavior
 function languagesMenu() {
 	//default to english
@@ -32,11 +34,10 @@ function layoutSetup() {
 	var w = $(window).width();
 	var h = $(window).height();
 	if (w > 500) {
-		$("article").width(w*0.8).css("left",(w*0.1));
-	} else {
-		$("article").width(w);
+		w = w*0.5;
 	}
-	$("img").width(w * 0.4);
+	$("article").width(w);
+	$("img").width(w);
 	$(".fdframe").attr("width",w).css("width",w).width(w);
 }
 //TODO for work
