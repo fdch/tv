@@ -20,7 +20,7 @@ function layoutSetup() {
 	}
 	$("article").width(w);
 	$("article img").width(w);
-	$('iframe').each(function(w){
+	$('iframe').each(function(){
 		var $this = $(this);
 		$this.width(w);
 		alert($this + " now has width " + w);
