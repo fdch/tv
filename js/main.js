@@ -20,6 +20,10 @@ function layoutSetup() {
 	}
 	$("article").width(w);
 	$("article img").width(w);
+	iframeResize(w,h);
+	languagesMenu();
+}
+function iframeResize(w, h) {
 	$('iframe').each(function(w){
 		var $this = $(this);
 		$this.css({"width" : w, "height" : h/4})
@@ -28,15 +32,11 @@ function layoutSetup() {
 //loads the id of the element passed on the content div 
 function fdLoadID(x) {
 	myID = x.id;
-	$("#content").load(myID);
-	languagesMenu();
-	layoutSetup();
+	$("#content").load(myID,layoutSetup());
 }
 
 function fdLoad(x) {
-	$("#content").load(x);
-	languagesMenu();
-	layoutSetup();
+	$("#content").load(x, layoutSetup());
 }
 //TODO for work
 $(".duotri").click(function() {
