@@ -4,6 +4,7 @@ function fdLoadID(x) {
 	$("#content").load(myID);
 	languagesMenu();
 	layoutSetup();
+	adjustIframes();
 }
 
 function fdLoad(x) {
@@ -54,7 +55,6 @@ function adjustIframes()
     }
   });
 }
-$(window).on('resize load',adjustIframes);
 
 
 
