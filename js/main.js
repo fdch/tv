@@ -24,7 +24,7 @@ function layoutSetup() {
 	languagesMenu();
 }
 function iframeResize(w, h) {
-	$('iframe').each(function(w){
+	$('iframe').each(function(w,h){
 		var $this = $(this);
 		$this.css({"width" : w, "height" : h/4})
 	});
