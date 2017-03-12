@@ -22,13 +22,13 @@ function layoutSetup() {
 	$("article img").width(w);
 	$('iframe').each(function(w){
 		var $this = $(this);
-		var width = $this.width(w);
-		alert($this + " had width = " + width + ", " + "and now has width " + w);
+		$this.width(w);
+		alert($this + " now has width " + w);
 	});
 }
 //loads the id of the element passed on the content div 
 function fdLoadID(x) {
-	var myID = x.id;
+	myID = x.id;
 	$("#content").load(myID);
 	languagesMenu();
 	layoutSetup();
