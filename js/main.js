@@ -26,7 +26,8 @@ function layoutSetup() {
 function iframeResize(w, h) {
 	$('iframe').each(function(w,h){
 		var $this = $(this);
-		$this.css({"width" : w, "height" : h/4})
+		$this.css({"width" : w, "height" : h/4});
+		alert($this + w + h)
 	});
 }
 //loads the id of the element passed on the content div 
