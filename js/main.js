@@ -1,16 +1,4 @@
-//loads the id of the element passed on the content div 
-function fdLoadID(x) {
-	myID = x.id;
-	$("#content").load(myID);
-	languagesMenu();
-	layoutSetup();
-}
 
-function fdLoad(x) {
-	$("#content").load(x);
-	languagesMenu();
-	layoutSetup();
-}
 //establishes the language menu behavior
 function languagesMenu() {
 	//default to english
@@ -37,6 +25,19 @@ function layoutSetup() {
 		$this.width(w);
 		alert($this + " now has width " + w);
 	});
+}
+//loads the id of the element passed on the content div 
+function fdLoadID(x) {
+	myID = x.id;
+	$("#content").load(myID);
+	languagesMenu();
+	layoutSetup();
+}
+
+function fdLoad(x) {
+	$("#content").load(x);
+	languagesMenu();
+	layoutSetup();
 }
 //TODO for work
 $(".duotri").click(function() {
