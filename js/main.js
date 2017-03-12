@@ -22,7 +22,7 @@ function layoutSetup() {
 	$("article img").width(w);
 	$('iframe').each(function(){
 		var $this = $(this);
-		var width $this.width(w);
+		var width = $this.width(w);
 		alert($this + " had width = " width + ", " + "and now has width " + w);
 	});
 }
