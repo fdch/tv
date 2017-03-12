@@ -23,7 +23,7 @@ function layoutSetup() {
 	$('iframe').each(function(w){
 		var $this = $(this);
 		var width = $this.width(w);
-		alert($this + " had width = " width + ", " + "and now has width " + w);
+		alert($this + " had width = " + width + ", " + "and now has width " + w);
 	});
 }
 //loads the id of the element passed on the content div 
