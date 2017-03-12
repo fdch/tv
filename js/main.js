@@ -32,8 +32,32 @@ function layoutSetup() {
 	}
 	$("article").width(w);
 	$("article img").width(w);
-	$("article iframe").attr("width",w).css("width",w).width(w);
 }
+function adjustIframes()
+{
+  $('iframe').each(function(){
+    var
+    $this       = $(this),
+    proportion  = $this.data( 'proportion' ),
+    w           = $this.attr('width'),
+    actual_w    = $this.width();
+    
+    if ( ! proportion )
+    {
+        proportion = $this.attr('height') / w;
+        $this.data( 'proportion', proportion );
+    }
+  
+    if ( actual_w != w )
+    {
+        $this.css( 'height', Math.round( actual_w * proportion ) + 'px' );
+    }
+  });
+}
+$(window).on('resize load',adjustIframes);
+
+
+
 //TODO for work
 $(".duotri").click(function() {
 $(".multimedia, .ensemble, .solo, .videoart, .orchestra, .inprogress").fadeOut(300);
