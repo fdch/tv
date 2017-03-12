@@ -4,7 +4,6 @@ function fdLoadID(x) {
 	$("#content").load(myID);
 	languagesMenu();
 	layoutSetup();
-	adjustIframes();
 }
 
 function fdLoad(x) {
@@ -33,31 +32,12 @@ function layoutSetup() {
 	}
 	$("article").width(w);
 	$("article img").width(w);
+	$('iframe').each(function(w){
+		var $this = $(this);
+		$this.width(w);
+		alert($this + " now has width " + w);
+	});
 }
-function adjustIframes()
-{
-  $('iframe').each(function(){
-    var
-    $this       = $(this),
-    proportion  = $this.data( 'proportion' ),
-    w           = $this.attr('width'),
-    actual_w    = $this.width();
-    
-    if ( ! proportion )
-    {
-        proportion = $this.attr('height') / w;
-        $this.data( 'proportion', proportion );
-    }
-  
-    if ( actual_w != w )
-    {
-        $this.css( 'height', Math.round( actual_w * proportion ) + 'px' );
-    }
-  });
-}
-
-
-
 //TODO for work
 $(".duotri").click(function() {
 $(".multimedia, .ensemble, .solo, .videoart, .orchestra, .inprogress").fadeOut(300);
