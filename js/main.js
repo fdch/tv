@@ -22,8 +22,8 @@ function layoutSetup() {
 	$("article img").width(w);
 	$('iframe').each(function(){
 		var $this = $(this);
-		$this.width(w);
-		alert($this + " now has width " + w);
+		var width $this.width(w);
+		alert($this + " had width = " width + ", " + "and now has width " + w);
 	});
 }
 //loads the id of the element passed on the content div 
