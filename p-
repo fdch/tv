@@ -20,7 +20,7 @@ git push
 
 DATE=$(date +"%D %T")
 echo "$(tput setaf 2)
-Committed to tv  on $DATE $(tput sgr 0)"
+Committed to tv on $DATE $(tput sgr 0)"
 while [ $i -gt 0 ]
 do
 sleep 0.1
