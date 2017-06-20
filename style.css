@@ -1,72 +1,62 @@
 html {
-	font-family:Courier;
+  font-family:Courier;
 }
 .spa{
-	display:none;
+  display:none;
 }
 body {
-	background:url('./img/bk0.png'), url('./img/bk1.png'), url('./img/bk2.png'),url('./img/favicon-1.png');
-	background-position:top, bottom, left, right;
-	background-color:grey;
-	background-repeat:repeat;
+  background-color:black;
+  color:white;
 }
 h1, h2 {
-	font-size:1em;
-	background:white;
-	border-radius:3px;
+  font-size:1em;
 }
 h3, h4, h5, h6, p, br, li {
-	background:white;
-	padding:3px;
-	border-radius:3px;
+  padding:33px;
 }
 #languages {
-	cursor:pointer;
-	position:relative;
-	top:0;
-	right:0;
-	z-index:1000;
-	background:white;
-	border-radius:3px;
+  cursor:pointer;
+  position:relative;
+  top:0;
+  right:0;
+  z-index:1000;
 }
 #menu, #image-window {
-	position:relative;
-	top:0;
-	right:0;
-	z-index:1000;
-	background:white;
-	border-radius:3px;
+  position:relative;
+  top:0;
+  right:0;
+  z-index:1000;
 }
 #content{
-	position:relative;
-	top:5px;
+  position:relative;
+  top:5px;
 }
 #content-wrap{
-	position:relative;
+  position:relative;
 }
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 li:hover, #menu-list span:hover, #menu-list a:hover {
-	background:#EEEEEE;
-	font-weight:bold;
-	cursor:pointer;
+  border-color:white;
+  border-radius:3px;
+  font-weight:bold;
+  cursor:pointer;
 }
 #worklist li {
-	margin-bottom:3px;
-	width:80%;
+  margin-bottom:3px;
+  width:80%;
 }
 a {
-	text-decoration:none
-	color: black;
-	font-weight:bold;
+  color:lightblue;
+  font-weight:bold;
 }
 .fd{
-	position:fixed;
-	bottom:-10px;
-	right:0;
-	z-index:-1;
+  position:fixed;
+  bottom:-10px;
+  right:0;
+  z-index:-1;
 }
 iframe { 
-	max-width:100%;
+  max-width:100%;
 }
