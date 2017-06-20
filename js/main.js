@@ -20,18 +20,19 @@ function makeMenu(m, len, mitem, type) {
 function loader(x) {
   var which = x;
   switch (which) {
-    case "blog" : 
+    case "blog": 
       window.open(blogurl);
       break;
-    case "video" :
+    case "video":
       window.open(videourl);
       break;
-    case "code" :
+    case "code":
       window.open(repo);
       break;
-    default:
+    default: {
       $('content').load(x);
       $('article').width(w).height(h);
+      };
   }
 }
 
