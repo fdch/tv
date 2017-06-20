@@ -12,6 +12,10 @@ var subtitle = "Fede Camara Halac";
 var logoimage = ["img/fdch.jpg", 200, 200];
 var featURL = "https://player.vimeo.com/video/168692629"
 var featured = "<article><iframe src=\""+featURL+"\"></iframe></article>
+var bio = 
+
+
+//<p>download: <a href="cv/txt/bio-english.txt" target="_blank">bio</a>, <a //href="cv/txt/resume-english.txt"target="_blank">resume</a>, <a //href="cv/pdf/cv.pdf"target="_blank">cv</a></p>
 ////////////
 ////Title
 ////////////
@@ -37,35 +41,6 @@ function randomMargenMotionR() {
 }
 
 //SetRandom Margens going every 3000
-
 setInterval(function() {
 	randomMargenMotionR();
 }, 4333);
-
-//Every 5000, change the opacity of the fd image
-setInterval(function() {
-	var op = Math.random();
-	var timeop = (op * 4000) + 0;
-	$(".fd").delay(timeop).animate({opacity: op}, timeop);
-}, 5000);
-
-
-//fun with codeback in social
-$(".makenew").css("cursor","pointer").mouseenter(function() {
-var rwi = Math.floor(content * Math.random() * 0.5);
-var rhi = Math.floor(content * Math.random() * 0.5);
-var lim = Math.floor(Math.random()*16) + 1;
-for ( i = 0 ; i < lim; i++)
-{
- $("#content").append(document.createTextNode("<span class=makenew style=cursor:pointer><img width=" + rwi + " height=" + rhi + " src=img/codeback.png /></span>" ))
-}
-});
-$(".makenew").click(function() {
-var rwi = Math.floor(content * Math.random() * 0.5);
-var rhi = Math.floor(content * Math.random() * 0.5);
-var lim = Math.floor(Math.random()*16) + 1;
-for ( i = 0 ; i < lim; i++)
-{
- $("#content").append(document.createTextNode("<span class=makenew style=cursor:pointer><img width=" + rwi + " height=" + rhi + " src=img/codeback.png /></span>" ))
-}
-});
