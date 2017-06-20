@@ -41,8 +41,10 @@ function loader(x) {
       window.open(repo);
       break;
     case "content/work":
-      if(getContent("content/worklist"))
-      makeMenu($('#content'), aMenu.length, aMenu, "span");
+      if(getContent("content/worklist")) {
+        $('#content').html("");
+        makeMenu($('#content'), aMenu.length, aMenu, "span");
+      }
       break;
     default:
       $('#content').load(x);
