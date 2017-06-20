@@ -42,8 +42,8 @@ function loader(x) {
       break;
     case "content/work":
       if(getContent("content/worklist")) {
-        $('#content').html("");
-        makeMenu($('#content'), aMenu.length, aMenu, "span");
+        $('#content').html("<div id=worklist></div><div id=workload></div>");
+        makeMenu($('#worklist'), aMenu.length, aMenu, "li");
         aMenu = [];
       }
       break;
