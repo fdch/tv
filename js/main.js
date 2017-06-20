@@ -18,7 +18,7 @@ function makeMenu(m, len, mitem, type) {
 }
 
 function loader(x) {
-  switch (x)
+  switch (x) {
     case "blog": 
       window.open(blogurl);
       break;
@@ -28,11 +28,10 @@ function loader(x) {
     case "code":
       window.open(repo);
       break;
-    default: {
+    default:
       $('content').load(x);
       $('article').width(w).height(h);
-      }
-
+  }
 }
 
 $(function(){
