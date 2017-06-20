@@ -20,7 +20,7 @@ function makeMenu(m, len, mitem, type) {
 }
 var workMenu = new Array();
 var bioArray = new Array();
-var bioData;
+var bioData = "";
 
 function getContent(x, arr) {
   jQuery.get(x, function(data){
@@ -49,6 +49,7 @@ function loader(x) {
     case "content/bio":
       $("#submenu").html("");
       $("#content").append([bioOpen, bioData, bioClose]);
+      break;
     default:
       $("#submenu").html("");
       $('#content').load(x);
