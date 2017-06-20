@@ -10,7 +10,7 @@ var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 var title = "Multimedianautics";
 var subtitle = "Fede Camara Halac";
 var logoimage = "img/fdch.jpg";
-var featURL = "https://player.vimeo.com/video/168692629";
+var featURL = "https://player.vimeo.com/video/168692629?title=0&byline=0&portrait=0&likes=0&watchlater=0&share=0";
 var bioOpen = "<article><a href=\"img/fdch.jpg\"><img src=\"img/fdch.jpg\" title=\"[ph] aye savid\"width=200></a><h4>curriculum vitae (<a href=\"cv/\" target=\"_blank\">html</a>, <a href=\"cv/pdf/cv.pdf\" target=\"_blank\">pdf</a>)</h4>";
 var bioClose = "</article>";
 ////////////
