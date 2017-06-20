@@ -71,7 +71,5 @@ $(function(){
   makeMenu($("#menu"), mitem.length, mitem, "span");
   getContent("worklist", workMenu);
   getContent("cv/txt/bio-english.txt", bioArray);
-  
-  $("#content").append(featured);
   setInterval(randomMargin(t),t);
 });
