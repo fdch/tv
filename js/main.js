@@ -40,8 +40,9 @@ function loader(x) {
       break;
     case "work": {
       getContent(x);
-      document.getElementById('content').innerHtml = "<div id=workmenu></div>";
-      makeMenu($('#workmenu'), workMenu.length, workMenu,"span");
+      var div = document.getElementById('content').createElement('div');
+      div.setAttribute('id','workmenu');
+      makeMenu(div, workMenu.length, workMenu,"span");
       } 
       break;
     default:
