@@ -46,13 +46,11 @@ function loader(x) {
       break;
     default:
       $("#submenu").html("");
-      $('#content').load(x);
+      $('#content').html("").append(x);
       $('article').width(w).height(h);
   }
 }
 
-
-//Get a random number to be margin
 function randomMargin(t) {
   $(".menulink").animate({marginRigh:5 * Math.random() + 3},t);
 }
