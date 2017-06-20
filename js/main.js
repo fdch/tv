@@ -43,7 +43,7 @@ function loader(x) {
       break;
     case "content/work":
       $("#submenu").html("");
-      $(".backvideo").css(display:0);
+      $(".backvideo").css(display,"none");
       makeMenu($('#submenu'), workMenu.length, workMenu, "span");
       break;
     case "content/bio":
@@ -51,7 +51,7 @@ function loader(x) {
       $("#content").html("").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
       break;
     default:
-      $(".backvideo").css(display:0);
+      $(".backvideo").css(display,"none");
       $("#submenu").html("");
       $('#content').load(x);
       $('article').width(w).height(h);
