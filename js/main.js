@@ -67,17 +67,31 @@ $(".multimedia, .ensemble, .solo, .videoart, .duotrio, .inprogress").fadeOut(300
 $(".orchestra").fadeIn(300);
 });
 
+////////////
+//// Please be extra careful when you edit this file
+////////////
+var w, h;
+////////////
+//// The menu (keep items <= 6 chars long)
+////////////
+var mitem = ["bio", "work", "social", "games", "blog", "video", "code", "contact"];
+var lang = "<div id=languages><span class=menulink-left><span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>&nbsp;|&nbsp;<span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span></span></div>"
+//<img class=fd src="img/fd.png" title=fd/></img>
 
-
-
+function makeMenu(m, len, mitem, type) {
+  var i,j;
+  m.append("<nav>");
+  for (i = 0;i < len; i++) {
+    m.append("<"+type+" class=menuitem onClick=\"get" + mitem[i].substring(0,6) + "(" + mitem[i].toLowerCase().replace(/_/g,"") + ")\">  " + mitem[i].replace(/_/g," ") + "  </"+type+">");
+  }
+  m.append("</nav>");
+}
 
 $(function(){
 	$("head").append(meta);
-	$("body").append([titleData,analytics]);
-	$("#menu, #content, .fd").css("opacity", "0");
-	$("#menu").load("menu", function() {
-		$(this).delay(30).animate({opacity: 1}, 100);
-	});
+	$("body").append([lang,titleData,analytics]);
+	makeMenu($("#menu"), mitem.length, mitem, "span");
+	//$(".fd").css("opacity", "0");
 	$("#content").load("featured", function() {
 	  $(this).delay(30).animate({opacity: 1}, 100);
 	  $("iframe").load(function() {

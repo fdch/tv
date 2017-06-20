@@ -2,7 +2,9 @@
 //// Below are some editable variables
 ////////////
 var url = "https://fdch.github.io/tv";
-var repo = "https://github.com/fdch/tv";
+var repo = "https://github.com/fdch/";
+var blogurl = "https://fedecamarahalac.tumblr.com"
+var videourl = "https://vimeo.com/fedecamarahalac"
 var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 var title = "Multimedianautics";
