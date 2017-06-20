@@ -38,11 +38,9 @@ function loader(x) {
     case "code":
       window.open(repo);
       break;
-    case "work": {
+    case "work":
       getContent(x);
-      document.getElementById('content').appendChild('div').id('workmenu');
-      makeMenu($('#workmenu'), workMenu.length, workMenu,"span");
-      } 
+      makeMenu($('#content'), workMenu.length, workMenu, "span");
       break;
     default:
       $('#content').load(x);
