@@ -39,6 +39,7 @@ function unloadArray(x) {
 }
 
 function loader(x) {
+  var y = x.replace(/content\//,'');
   switch (x) {
     case "content/blog": 
       window.open(blogurl);
@@ -55,7 +56,7 @@ function loader(x) {
       break;
     default:
       $("#submenu").html("");
-      $('#content').html("").append([x+"Open","<p>"+unloadArray(x)+"</p>",x+"Close"]);
+      $('#content').html("").append([y+"Open","<p>"+unloadArray(y)+"</p>",y+"Close"]);
       $('article').width(w).height(h);
   }
 }
