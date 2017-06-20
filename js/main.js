@@ -32,8 +32,8 @@ function loader(x) {
 }
 
 $(function(){
-    w = window.innerWidth();
-	h = window.innerHeight();
+    w = Math.max( $(window).width(), window.innerWidth);
+	h = Math.max( $(window).height(), window.innerHeight);
 	$("head").append(meta);
 	$("body").append([lang,titleData,analytics]);
 	makeMenu($("#menu"), mitem.length, mitem, "span");
