@@ -16,13 +16,13 @@ function makeMenu(m, len, mitem, type) {
   }
   m.append("</nav>");
 }
-var workMenu = new Array();
+var aMenu = new Array();
 
 function getContent(x) {
 	jQuery.get(x, function(data){
 		lines = data.split("\n");
 		$.each(lines, function(n, elem) {
-			workMenu.push(elem);
+			aMenu.push(elem);
 		});
 	});
 }
@@ -39,8 +39,8 @@ function loader(x) {
       window.open(repo);
       break;
     case "work":
-      getContent(x);
-      makeMenu($('#content'), workMenu.length, workMenu, "span");
+      getContent("work");
+      makeMenu($('#content'), aMenu.length, aMenu, "span");
       break;
     default:
       $('#content').load(x);
