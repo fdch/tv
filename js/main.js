@@ -43,7 +43,7 @@ function loader(x) {
       break;
     case "content/work":
       $("#submenu").html("");
-      $(".backvideo").css(display,"none");
+      $("#backvideo").hide();
       makeMenu($('#submenu'), workMenu.length, workMenu, "span");
       break;
     case "content/bio":
@@ -51,7 +51,7 @@ function loader(x) {
       $("#content").html("").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
       break;
     default:
-      $(".backvideo").css(display,"none");
+      $("#backvideo").hide();
       $("#submenu").html("");
       $('#content').load(x);
       $('article').width(w).height(h);
@@ -62,7 +62,7 @@ function randomMargin(t) {
   $(".menuitem").animate({marginRigh:5 * Math.random() + 3},t);
 }
 
-var video = "<iframe class=backvideo src=\'"+featURL+"\'></iframe>";
+var video = "<iframe id=backvideo src=\'"+featURL+"\'></iframe>";
 
 
 $(function(){
