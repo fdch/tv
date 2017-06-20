@@ -46,7 +46,7 @@ function loader(x) {
       break;
     default:
       $("#submenu").html("");
-      $('#content').html("").append(x);
+      $('#content').load(x);
       $('article').width(w).height(h);
   }
 }
