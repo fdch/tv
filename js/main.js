@@ -22,6 +22,8 @@ var workMenu = new Array();
 var bioArray = new Array();
 var bioData = "";
 
+
+
 function getContent(x, arr) {
   jQuery.get(x, function(data){
     lines = data.split("\n");
@@ -48,7 +50,7 @@ function loader(x) {
       break;
     case "content/bio":
       $("#submenu").html("");
-      bioData = unloadArray(bioArray);
+      bioData = bioArray.join("");
       $("#content").html("").append([bioOpen, "<p>"+bioData+"</p>", bioClose]);
       break;
     default:
@@ -62,13 +64,7 @@ function randomMargin(t) {
   $(".menuitem").animate({marginRigh:5 * Math.random() + 3},t);
 }
 
-function unloadArray(x) {
- var i, data;
- for (i = 0; i<x.length; i++) {
-   data += x[i];
- }
- return data;
-}
+
 
 $(function(){
     w = Math.max( $(window).width(), window.innerWidth);
