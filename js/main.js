@@ -39,7 +39,7 @@ function loader(x) {
       window.open(repo);
       break;
     case "work":
-      getContent("work");
+      getContent("worklist");
       makeMenu($('#content'), aMenu.length, aMenu, "span");
       break;
     default:
