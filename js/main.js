@@ -25,9 +25,10 @@ function loader(x) {
     break;
     case "code" : window.open(repo); ;
     break;
-    default:
+    default: {
     $('content').load(x);
     $('article').width(w).height(h);
+    }
   }
 }
 
