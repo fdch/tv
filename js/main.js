@@ -18,13 +18,14 @@ function makeMenu(m, len, mitem, type) {
 }
 var aMenu = new Array();
 
-function getContent(x) {
+function getContent(x, callback) {
 	jQuery.get(x, function(data){
 		lines = data.split("\n");
 		$.each(lines, function(n, elem) {
 			aMenu.push(elem);
 		});
 	});
+	callback();
 }
 
 function loader(x) {
@@ -39,8 +40,8 @@ function loader(x) {
       window.open(repo);
       break;
     case "content/work":
-      getContent("content/worklist");
-      makeMenu($('#content'), aMenu.length, aMenu, "span");
+      getContent("content/worklist", makeMenu($('#content'), aMenu.length, aMenu, "span"));
+      
       break;
     default:
       $('#content').load(x);
