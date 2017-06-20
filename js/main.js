@@ -18,27 +18,20 @@ function makeMenu(m, len, mitem, type) {
 }
 
 function loader(x) {
-  switch (x) {
+  var which = x;
+  switch (which) {
     case "blog" : 
-    {
       window.open(blogurl);
-    }
-    break;
+      break;
     case "video" :
-    {
       window.open(videourl);
-    }
-    break;
+      break;
     case "code" :
-    {
       window.open(repo);
-    }
-    break;
-    default: 
-    {
+      break;
+    default:
       $('content').load(x);
       $('article').width(w).height(h);
-    };
   }
 }
 
