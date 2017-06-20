@@ -19,7 +19,6 @@ function makeMenu(m, len, mitem, type) {
 var aMenu = new Array();
 
 function getContent(x) {
-  aMenu = [];
   jQuery.get(x, function(data){
     lines = data.split("\n");
     $.each(lines, function(n, elem) {
@@ -45,6 +44,7 @@ function loader(x) {
       if(getContent("content/worklist")) {
         $('#content').html("");
         makeMenu($('#content'), aMenu.length, aMenu, "span");
+        aMenu = [];
       }
       break;
     default:
