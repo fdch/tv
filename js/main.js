@@ -18,8 +18,7 @@ function makeMenu(m, len, mitem, type) {
 }
 
 function loader(x) {
-  var which = x;
-  switch (which) {
+  switch (x)
     case "blog": 
       window.open(blogurl);
       break;
@@ -33,7 +32,7 @@ function loader(x) {
       $('content').load(x);
       $('article').width(w).height(h);
       }
-  }
+
 }
 
 $(function(){
