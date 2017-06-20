@@ -40,7 +40,7 @@ function loader(x) {
       break;
     case "work": {
       getContent(x);
-      var div = document.getElementById('content').createElement('div');
+      var div = document.getElementById('content').appendChild('div');
       div.setAttribute('id','workmenu');
       makeMenu(div, workMenu.length, workMenu,"span");
       } 
