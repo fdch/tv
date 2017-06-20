@@ -29,16 +29,16 @@ function getContent(x) {
 
 function loader(x) {
   switch (x) {
-    case "blog": 
+    case "content/blog": 
       window.open(blogurl);
       break;
-    case "video":
+    case "content/video":
       window.open(videourl);
       break;
-    case "code":
+    case "content/code":
       window.open(repo);
       break;
-    case "work":
+    case "content/work":
       getContent("content/worklist");
       makeMenu($('#content'), aMenu.length, aMenu, "span");
       break;
