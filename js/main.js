@@ -60,7 +60,7 @@ function randomMargin(t) {
   $(".menuitem").animate({marginRigh:5 * Math.random() + 3},t);
 }
 
-var video = "<video class=backvideo autoplay loop muted /><source src=\'"+featURL+"\' type=\"video/mp4\"> </video>";
+var video = "<video class=backvideo autoplay loop muted no-controls><source src=\'"+featURL+"\' type=\'video/mp4\'> </video>";
 
 
 $(function(){
