@@ -16,6 +16,17 @@ function makeMenu(m, len, mitem, type) {
   }
   m.append("</nav>");
 }
+var workMenu = new Array();
+
+function getContent(x) {
+	jQuery.get(x, function(data){
+		lines = data.split("\n");
+		$.each(lines, function(n, elem) {
+			workMenu.push("<span class="+x+" onClick=\""
++ "loader('content/" + elem + "')\">" + elem + "</span>");
+		});
+	});
+}
 
 function loader(x) {
   switch (x) {
@@ -28,8 +39,14 @@ function loader(x) {
     case "code":
       window.open(repo);
       break;
+    case "work": {
+      getContent(x);
+      $('#content').append("<div id=workmenu></div>");
+      makeMenu($('#workmenu'), workMenu.length, workMenu,"span");
+      } 
+      break;
     default:
-      $('content').load(x);
+      $('#content').load(x);
       $('article').width(w).height(h);
   }
 }
