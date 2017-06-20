@@ -1,9 +1,6 @@
 html {
   font-family:Courier;
 }
-.spa{
-  display:none;
-}
 body {
   background-color:black;
   color:white;
@@ -11,51 +8,18 @@ body {
 h1, h2 {
   font-size:1em;
 }
-h3, h4, h5, h6, p, br, li {
-  padding:33px;
-}
-#languages {
-  cursor:pointer;
-  position:relative;
-  top:0;
-  right:0;
-  z-index:1000;
-}
-#menu, #image-window {
-  position:relative;
-  top:0;
-  right:0;
-  z-index:1000;
-}
 #content{
   position:relative;
   top:5px;
 }
-#content-wrap{
-  position:relative;
-}
-ul {
-  list-style-type: none;
-}
-li:hover, #menu-list span:hover, #menu-list a:hover {
-  border-color:white;
-  border-radius:3px;
-  font-weight:bold;
+span:hover {
   cursor:pointer;
+  font-weight:bold;
 }
-#worklist li {
-  margin-bottom:3px;
-  width:80%;
-}
+
 a {
   color:lightblue;
   font-weight:bold;
-}
-.fd{
-  position:fixed;
-  bottom:-10px;
-  right:0;
-  z-index:-1;
 }
 iframe { 
   padding:1%;

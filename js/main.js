@@ -1,7 +1,9 @@
 ////////////
 //// Please be extra careful when you edit this file
 ////////////
-var w, h;
+var w;
+var h;
+var t = 4333;
 ////////////
 //// The menu (keep items <= 6 chars long)
 ////////////
@@ -49,6 +51,12 @@ function loader(x) {
   }
 }
 
+
+//Get a random number to be margin
+function randomMargin(t) {
+  $(".menulink").animate({marginRigh:5 * Math.random() + 3},t);
+}
+
 $(function(){
     w = Math.max( $(window).width(), window.innerWidth);
   h = Math.max( $(window).height(), window.innerHeight);
@@ -56,6 +64,6 @@ $(function(){
   $("body").append([lang,titleData,analytics]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
   getContent("worklist", workMenu);
-  //$(".fd").css("opacity", "0");
   loader(featured);
+  setInterval(randomMargin(t),t);
 });
