@@ -1,8 +1,6 @@
 #!/bin/bash
 i=0
 ls -t content  | cut -d . -f1 > worklist
-perl  -0777 -i -pe 's/_/ /igs' worklist
-perl  -0777 -i -pe 's/-/ /igs' worklist
 while [ $i -lt 80 ]
 do
 echo -ne "$(tput setaf 2)="
