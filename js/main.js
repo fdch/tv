@@ -39,6 +39,7 @@ function loader(x) {
       window.open(repo);
       break;
     case "content/work":
+      $("#submenu").html("");
       makeMenu($('#submenu'), workMenu.length, workMenu, "span");
       break;
     default:
