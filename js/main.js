@@ -40,7 +40,7 @@ function loader(x) {
       break;
     case "work": {
       getContent(x);
-      $('#content').append("<div id=workmenu></div>");
+      document.getElementById('content').innerHtml = "<div id=workmenu></div>";
       makeMenu($('#workmenu'), workMenu.length, workMenu,"span");
       } 
       break;
