@@ -11,8 +11,8 @@ var title = "Multimedianautics";
 var subtitle = "Fede Camara Halac";
 var logoimage = ["img/fdch.jpg", 200, 200];
 var featURL = "https://player.vimeo.com/video/168692629"
-var featured = "<article><iframe src=\""+featURL+"\"></iframe></article>
-var bio = 
+var featured = "<article><iframe src=\""+featURL+"\"></iframe></article>"
+var bio = "";
 
 
 //<p>download: <a href="cv/txt/bio-english.txt" target="_blank">bio</a>, <a //href="cv/txt/resume-english.txt"target="_blank">resume</a>, <a //href="cv/pdf/cv.pdf"target="_blank">cv</a></p>
