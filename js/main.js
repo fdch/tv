@@ -60,6 +60,7 @@ function loader(x) {
     default:
       $('#content').load(x);
       $('article').width(w).height(h);
+      break;
   }
 }
 
