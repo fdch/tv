@@ -20,10 +20,7 @@ function layoutSetup() {
 	}
 	$("article").width(w);
 	$("article img").width(w);
-	$("iframe").load(function() {
-	  $(this).width(w*0.98);
-	  $(this).height(h*0.98);
-	});
+	
 	languagesMenu();
 }
 //loads the id of the element passed on the content div 
@@ -35,6 +32,11 @@ function fdLoadID(x) {
 function fdLoad(x) {
 	$("#content").load(x, layoutSetup());
 }
+
+
+
+
+
 //TODO for work
 $(".duotri").click(function() {
 $(".multimedia, .ensemble, .solo, .videoart, .orchestra, .inprogress").fadeOut(300);
@@ -63,4 +65,26 @@ $(".ensemble").fadeIn(300);
 $(".orchestr").click(function() {
 $(".multimedia, .ensemble, .solo, .videoart, .duotrio, .inprogress").fadeOut(300);
 $(".orchestra").fadeIn(300);
+});
+
+
+
+
+
+$(function(){
+	$("head").append(meta);
+	$("body").append([titleData,analytics]);
+	$("#menu, #content, .fd").css("opacity", "0");
+	$("#menu").load("menu", function() {
+		$(this).delay(30).animate({opacity: 1}, 100);
+	});
+	$("#content").load("featured", function() {
+	  $(this).delay(30).animate({opacity: 1}, 100);
+	  $("iframe").load(function() {
+	    $(this).width(w*0.98);
+	    $(this).height(h*0.98);
+	});
+	});
+	
+	$("#languages").load("lang");
 });

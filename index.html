@@ -1,21 +1,5 @@
 <!DOCTYPE html> 
-<html>
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<script>
-$(function(){
-	$("head").load("head");
-	$("#menu, #content, .fd").css("opacity", "0");
-	$("#menu").load("menu", function() {
-		$(this).delay(30).animate({opacity: 1}, 100);
-	});
-	$("#content").load("featured", function() {
-		$(this).delay(30).animate({opacity: 1}, 100);
-	});
-	$("#languages").load("lang");
-});
-</script>
-<head>
-</head>
+<html><script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script><script type="text/javascript" src="js/config.js"></script><script type="text/javascript" src="js/main.js"></script><link rel=stylesheet href="css/style.css"></style><link rel="shortcut icon" href="img/favicon-1.png"></link><head></head>
 <body>
 <div id=languages></div>
 <h1 onclick="location.href='https://fdch.github.io/tv'">|multimedianautics|</h1>
