@@ -59,14 +59,15 @@ function loader(x) {
 function randomMargin(t) {
   $(".menuitem").animate({marginRigh:5 * Math.random() + 3},t);
 }
-
+var vstyle = "style={position: fixed\;top: 50%\;left: 50%\;min-width: 100%\;min-height: 100%\;width: auto\;height: auto\;z-index: -100\;transform: translate(-50%, -50%)\;}"
+var video = "<video "+vstyle+" src=\'"+featURL+"\' autoplay />";
 
 
 $(function(){
     w = Math.max( $(window).width(), window.innerWidth);
   h = Math.max( $(window).height(), window.innerHeight);
   $("head").append(meta);
-  $("body").append([lang,titleData,analytics]);
+  $("body").append([lang,titleData,analytics, video]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
   getContent("worklist", workMenu);
   getContent("cv/txt/bio-english.txt", bioArray);

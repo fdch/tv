@@ -9,25 +9,14 @@ var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 var title = "Multimedianautics";
 var subtitle = "Fede Camara Halac";
-var logoimage = ["img/fdch.jpg", 200];
 var featURL = "https://player.vimeo.com/video/168692629";
-var featured = "<article><iframe src=\""+featURL+"\"></iframe></article>";
-var bioOpen = "<article><a href=\"img/fdch.jpg\"><img src=\"img/fdch.jpg\" title=\"[ph] aye savid\"width=200></a><h4>curriculum vitae (<a href=\"cv/\" target=\"_blank\">html</a>, <a href=\"cv/pdf/cv.pdf\" target=\"_blank\">pdf</a>)</h4><div>";
-var bioClose = "</div></article>";
-
-
-
-
-
-
-
-
-
-//<p>download: <a href="cv/txt/bio-english.txt" target="_blank">bio</a>, <a //href="cv/txt/resume-english.txt"target="_blank">resume</a>, <a //href="cv/pdf/cv.pdf"target="_blank">cv</a></p>
+var featured =  [featURL, ";
+var bioOpen = "<article><a href=\"img/fdch.jpg\"><img src=\"img/fdch.jpg\" title=\"[ph] aye savid\"width=200></a><h4>curriculum vitae (<a href=\"cv/\" target=\"_blank\">html</a>, <a href=\"cv/pdf/cv.pdf\" target=\"_blank\">pdf</a>)</h4>";
+var bioClose = "</article>";
 ////////////
 ////Title
 ////////////
-var titleData = "<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1><h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2><div id=logo><img src=\"" + logoimage[0] + "\" height="+ logoimage[1] +"/></div><div id=menu></div><div id=submenu></div><div id=content></div>";
+var titleData = "<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1><h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2><iframe src=\"" + featURL+ "\" height="+ logoimage[1] +"/></div><div id=menu></div><div id=submenu></div><div id=content></div>";
 ////////////
 //// Meta properties
 ////////////
