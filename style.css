@@ -59,4 +59,5 @@ a {
 }
 iframe { 
   max-width:100%;
+  border-color:black;
 }
