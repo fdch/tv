@@ -20,6 +20,7 @@ function layoutSetup() {
 	}
 	$("article").width(w);
 	$("article img").width(w);
+	$("iframe").width(w*0.98).height(h*0.98);
 	languagesMenu();
 }
 //loads the id of the element passed on the content div 

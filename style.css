@@ -58,7 +58,6 @@ a {
   z-index:-1;
 }
 iframe { 
-  padding:30%;
-  max-width:100%;
+  padding:1%;
   border-color:black;
 }
