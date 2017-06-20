@@ -19,7 +19,6 @@ function makeMenu(m, len, mitem, type) {
   m.append("</nav>");
 }
 var workMenu = new Array();
-var bioData = new Array();
 
 function getContent(x, arr) {
   jQuery.get(x, function(data){
@@ -30,16 +29,7 @@ function getContent(x, arr) {
   });
 }
 
-function unloadArray(x) {
-  var i, data;
-  for (i = 0; i<x.length; i++) {
-    data += x[i];
-  }
-  return data;
-}
-
 function loader(x) {
-  var y = x.replace(/content\//,'');
   switch (x) {
     case "content/blog": 
       window.open(blogurl);
@@ -56,8 +46,7 @@ function loader(x) {
       break;
     default:
       $("#submenu").html("");
-      var data = unloadArray(y);
-      $('#content').html("").append([y+"Open","<p>"+data+"</p>",y+"Close"]);
+      $('#content').html("").append(x);
       $('article').width(w).height(h);
   }
 }
@@ -73,7 +62,6 @@ $(function(){
   $("body").append([lang,titleData,analytics]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
   getContent("worklist", workMenu);
-  getContent("cv/txt/bio-english.txt", bioData);
-  loader(featured);
+  $("#content").append(featured);
   setInterval(randomMargin(t),t);
 });
