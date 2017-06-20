@@ -63,14 +63,19 @@ function randomMargin(t) {
   $(".menuitem").animate({marginRigh:5 * Math.random() + 3},t);
 }
 
-var video = "<iframe id=backvideo src=\'"+featURL+"\'></iframe>";
-
+function randomVideo() {
+var len = featURL.length;
+var which = Math.floor(Math.random() * len);
+var video = "<iframe id=backvideo src=\'"+featURL[which]+"\'></iframe>";
+return video;
+}
 
 $(function(){
-    w = Math.max( $(window).width(), window.innerWidth);
+  w = Math.max( $(window).width(), window.innerWidth);
   h = Math.max( $(window).height(), window.innerHeight);
   $("head").append(meta);
-  $("body").append([lang,titleData,analytics, video]);
+  var vid = randomVideo();
+  $("body").append([lang,titleData,analytics, vid]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
   getContent("worklist", workMenu);
   getContent("cv/txt/bio-english.txt", bioArray);
