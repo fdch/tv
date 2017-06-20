@@ -1,6 +1,6 @@
 #!/bin/bash
 i=0
-ls -t content  | cut -d . -f1 > worklist
+#ls -t content  | cut -d . -f1 > worklist
 while [ $i -lt 80 ]
 do
 echo -ne "$(tput setaf 2)="
