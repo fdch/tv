@@ -48,7 +48,7 @@ function loader(x) {
       break;
     case "content/bio":
       $("#submenu").html("");
-      $("#content").append([bioOpen, bioData, bioClose]);
+      $("#content")html("").append([bioOpen, "<p>"+bioData+"</p>", bioClose]);
       break;
     default:
       $("#submenu").html("");
