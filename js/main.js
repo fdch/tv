@@ -43,6 +43,7 @@ function loader(x) {
       makeMenu($('#submenu'), workMenu.length, workMenu, "span");
       break;
     default:
+      $("#submenu").html("");
       $('#content').load(x);
       $('article').width(w).height(h);
   }
