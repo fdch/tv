@@ -26,8 +26,8 @@ function loader(x) {
     case "code" : window.open(repo); ;
     break;
     default:
-     document.getElementById('content').load(x);
-     document.getElementById('article').width(w).height(h);
+     $('content').load(x);
+    $('article').width(w).height(h);
   }
 }
 
