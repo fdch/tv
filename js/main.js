@@ -16,17 +16,15 @@ function makeMenu(m, len, mitem, type) {
   }
   m.append("</nav>");
 }
-var aMenu = new Array();
+var workMenu = new Array();
 
-function getContent(x) {
+function getContent(x, arr) {
   jQuery.get(x, function(data){
     lines = data.split("\n");
     $.each(lines, function(n, elem) {
-      aMenu.push(elem);
+      arr.push(elem);
     });
   });
-  if (aMenu.length > 0) return 1;
-  else return 0;
 }
 
 function loader(x) {
@@ -41,10 +39,8 @@ function loader(x) {
       window.open(repo);
       break;
     case "content/work":
-      if(getContent("worklist")) {
-        $('#content').html("<div id=worklist></div><div id=workload></div>");
-        makeMenu($('#worklist'), aMenu.length, aMenu, "li");
-        aMenu = [];
+      if() {
+        makeMenu($('#submenu'), workMenu.length, workMenu, "span");
       }
       break;
     default:
@@ -59,6 +55,7 @@ $(function(){
   $("head").append(meta);
   $("body").append([lang,titleData,analytics]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
+  getContent("worklist", "workMenu");
   //$(".fd").css("opacity", "0");
   loader("featured");
 });

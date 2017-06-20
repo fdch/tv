@@ -19,7 +19,7 @@ var bio = "";
 ////////////
 ////Title
 ////////////
-var titleData = "<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1><h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2><div id=logo><img src=\"" + logoimage[0] + "\" height="+ logoimage[1] +"/></div><div id=menu></div><div id=content></div>";
+var titleData = "<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1><h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2><div id=logo><img src=\"" + logoimage[0] + "\" height="+ logoimage[1] +"/></div><div id=menu></div><div id=submenu></div><div id=content></div>";
 ////////////
 //// Meta properties
 ////////////
