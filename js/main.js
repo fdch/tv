@@ -44,6 +44,7 @@ function loader(x) {
     case "content/work":
       $("#submenu").html("");
       $("#backvideo").hide();
+      $("#content").html("");
       makeMenu($('#submenu'), workMenu.length, workMenu, "span");
       break;
     case "content/bio":
@@ -51,9 +52,12 @@ function loader(x) {
       $("#submenu").html("");;
       $("#content").html("").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
       break;
-    default:
+    case "social":
+    case "games" :
+    case "contact" :
       $("#backvideo").hide();
       $("#submenu").html("");
+    default:
       $('#content').load(x);
       $('article').width(w).height(h);
   }
