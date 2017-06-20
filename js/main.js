@@ -19,14 +19,15 @@ function makeMenu(m, len, mitem, type) {
 var aMenu = new Array();
 
 function getContent(x) {
-	jQuery.get(x, function(data){
-		lines = data.split("\n");
-		$.each(lines, function(n, elem) {
-			aMenu.push(elem);
-		});
-	});
-	if (aMenu.length > 0) return 1;
-	else return 0;
+  aMenu = [];
+  jQuery.get(x, function(data){
+    lines = data.split("\n");
+    $.each(lines, function(n, elem) {
+      aMenu.push(elem);
+    });
+  });
+  if (aMenu.length > 0) return 1;
+  else return 0;
 }
 
 function loader(x) {
