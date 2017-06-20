@@ -109,8 +109,7 @@ $(function(){
 	  $("iframe").load(function() {
 	    $(this).width(w*0.98);
 	    $(this).height(h*0.98);
-	});
+	  });
 	});
 	
-	$("#languages").load("lang");
 });
