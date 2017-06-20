@@ -12,11 +12,10 @@ function makeMenu(m, len, mitem, type) {
   var i;
   m.append("<nav>");
   for (i = 0;i < len; i++) {
-    m.append("<"+type+" class=menuitem onClick=\"loader(\'content/" + mitem[i] + "\')\"> " + mitem[i]+ " </"+type+">");
+    m.append("<"+type+" class=menuitem onClick=\"loader(\'content/" + mitem[i] + "\')\"> " + mitem[i].replace(/_/g," ").replace(/-/g," ") + " </"+type+">");
   }
   m.append("</nav>");
 }
-//.replace(/_/g," ").replace(/-/g," ") 
 var aMenu = new Array();
 
 function getContent(x) {
@@ -42,7 +41,7 @@ function loader(x) {
       window.open(repo);
       break;
     case "content/work":
-      if(getContent("content/worklist")) {
+      if(getContent("worklist")) {
         $('#content').html("<div id=worklist></div><div id=workload></div>");
         makeMenu($('#worklist'), aMenu.length, aMenu, "li");
         aMenu = [];
