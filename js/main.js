@@ -52,7 +52,7 @@ function loader(x) {
 }
 
 function randomMargin(t) {
-  $(".menulink").animate({marginRigh:5 * Math.random() + 3},t);
+  $(".menuitem").animate({marginRigh:5 * Math.random() + 3},t);
 }
 
 $(function(){
