@@ -52,9 +52,9 @@ function loader(x) {
       $("#submenu").html("");;
       $("#content").html("").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
       break;
-    case "social":
-    case "games" :
-    case "contact" :
+    case "content/social":
+    case "content/games" :
+    case "content/contact" :
       $("#backvideo").hide();
       $("#submenu").html("");
     default:
