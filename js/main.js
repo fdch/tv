@@ -47,6 +47,7 @@ function loader(x) {
       makeMenu($('#submenu'), workMenu.length, workMenu, "span");
       break;
     case "content/bio":
+      $("#backvideo").hide();
       $("#submenu").html("");;
       $("#content").html("").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
       break;
