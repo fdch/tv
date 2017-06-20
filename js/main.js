@@ -12,7 +12,7 @@ function makeMenu(m, len, mitem, type) {
   var i;
   m.append("<nav>");
   for (i = 0;i < len; i++) {
-    m.append("<"+type+" class=menuitem onClick=\"loader(\'" + mitem[i] + "\')\"> " + mitem[i] + " </"+type+">");
+    m.append("<"+type+" class=menuitem onClick=\"loader(\'content/" + mitem[i] + "\')\"> " + mitem[i] + " </"+type+">");
   }
   m.append("</nav>");
 }
@@ -39,7 +39,7 @@ function loader(x) {
       window.open(repo);
       break;
     case "work":
-      getContent("worklist");
+      getContent("content/worklist");
       makeMenu($('#content'), aMenu.length, aMenu, "span");
       break;
     default:
