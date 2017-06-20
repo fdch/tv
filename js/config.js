@@ -9,7 +9,7 @@ var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 var title = "Multimedianautics";
 var subtitle = "Fede Camara Halac";
-var logoimage = ["img/fdch.jpg", 200, 200];
+var logoimage = ["img/fdch.jpg", 200];
 var featURL = "https://player.vimeo.com/video/168692629"
 var featured = "<article><iframe src=\""+featURL+"\"></iframe></article>"
 var bio = "";
@@ -19,7 +19,7 @@ var bio = "";
 ////////////
 ////Title
 ////////////
-var titleData = "<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1><h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2><div id=logo><img src='" + logoimage[0] + "' width="+ logoimage[1] +" height="+ logoimage[2] +"/></div><div id=menu></div><div id=content></div>";
+var titleData = "<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1><h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2><div id=logo><img src=\"" + logoimage[0] + "\" height="+ logoimage[1] +"/></div><div id=menu></div><div id=content></div>";
 ////////////
 //// Meta properties
 ////////////

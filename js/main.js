@@ -26,7 +26,7 @@ function loader(x) {
     case "code" : window.open(repo); ;
     break;
     default:
-     $('content').load(x);
+    $('content').load(x);
     $('article').width(w).height(h);
   }
 }
@@ -37,7 +37,6 @@ $(function(){
 	$("head").append(meta);
 	$("body").append([lang,titleData,analytics]);
 	makeMenu($("#menu"), mitem.length, mitem, "span");
-	
 	//$(".fd").css("opacity", "0");
-	loader(featured)
+	loader("featured");
 });
