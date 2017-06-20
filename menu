@@ -1,18 +1,17 @@
 <nav id=menu-list>
-<!--------------------------------[BIO]------------------------------------->
 <span id=bio class=menulink onClick="fdLoadID(this)">bi[o</span> 
-<!----------------------------------[WORK]----------------------------------->
+
 <span id=work class=menulink  onClick="fdLoadID(this)"><span class=eng>[work</span><span class=spa >[ob]ra</span></span> 
-<!--------------------------------[VIDEO]------------------------------------>
-<span id=video class=menulink onClick="fdLoadID(this)">>vi[deo</span>
-<!---------------------------------[SOCIAL]------------------------------------>
+
 <span id=social class=menulink onClick="fdLoadID(this)">s[ocia]l</span> 
-<!-------------------------------[CONTACTO]----------------------------------->
-con[t<span id=contact onClick="fdLoadID(this)">act</span> ]o 
-<!-------------------------------[GAMES]-------------------------------------->
+
 <span id=games class=menulink onClick="fdLoadID(this)"><span class=eng>g[ames</span><span class=spa >jue[go]s</span></span> 
-<!---------------------------------[CODE]------------------------------------>
-<a href="https://github.com/fdch"><span id=code class=menulink><span class=eng>cod[e</span><span class=spa >c[ó]dig]o</span></span></a> 
-<!--------------------------------[BLOG]------------------------------------->
+
 <a href="https://fedecamarahalac.tumblr.com"><span class="menulink blog">blo[g</span></a> 
-</nav><!--[menu list end]-->
+
+<a href="https://vimeo.com/fedecamarahalac"><span id=video class=menulink >vi[deo</span></a>
+
+<a href="https://github.com/fdch"><span id=code class=menulink><span class=eng>cod[e</span><span class=spa >c[ó]dig]o</span></span></a> 
+
+con[t<span id=contact onClick="fdLoadID(this)">act</span> ]o 
+</nav>
