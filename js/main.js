@@ -53,7 +53,7 @@ $(function(){
   $("head").append(meta);
   $("body").append([lang,titleData,analytics]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
-  getContent("worklist", "workMenu");
+  getContent("worklist", workMenu);
   //$(".fd").css("opacity", "0");
-  loader("featured");
+  loader(featured);
 });
