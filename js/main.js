@@ -18,14 +18,15 @@ function makeMenu(m, len, mitem, type) {
 }
 var aMenu = new Array();
 
-function getContent(x, callback) {
+function getContent(x) {
 	jQuery.get(x, function(data){
 		lines = data.split("\n");
 		$.each(lines, function(n, elem) {
 			aMenu.push(elem);
 		});
 	});
-	callback();
+	if (aMenu.length > 0) return 1;
+	else return 0;
 }
 
 function loader(x) {
@@ -40,8 +41,8 @@ function loader(x) {
       window.open(repo);
       break;
     case "content/work":
-      getContent("content/worklist", makeMenu($('#content'), aMenu.length, aMenu, "span"));
-      
+      if(getContent("content/worklist"))
+      makeMenu($('#content'), aMenu.length, aMenu, "span");
       break;
     default:
       $('#content').load(x);
