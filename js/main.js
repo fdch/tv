@@ -22,8 +22,7 @@ function getContent(x) {
 	jQuery.get(x, function(data){
 		lines = data.split("\n");
 		$.each(lines, function(n, elem) {
-			workMenu.push("<span class="+x+" onClick=\""
-+ "loader('content/" + elem + "')\">" + elem + "</span>");
+			workMenu.push(elem);
 		});
 	});
 }
