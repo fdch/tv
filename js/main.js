@@ -12,7 +12,7 @@ function makeMenu(m, len, mitem, type) {
   var i,j;
   m.append("<nav>");
   for (i = 0;i < len; i++) {
-    m.append("<"+type+" class=menuitem onClick=\"loader(" + mitem[i] + ")\"></"+type+">");
+    m.append("<"+type+" class=menuitem onClick=\"loader(" + mitem[i] + ")\">" + mitem[i] + "</"+type+">");
   }
   m.append("</nav>");
 }
