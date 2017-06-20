@@ -48,6 +48,7 @@ function loader(x) {
       break;
     case "content/bio":
       $("#submenu").html("");
+      bioData = unloadArray(bioArray);
       $("#content").html("").append([bioOpen, "<p>"+bioData+"</p>", bioClose]);
       break;
     default:
@@ -77,7 +78,7 @@ $(function(){
   makeMenu($("#menu"), mitem.length, mitem, "span");
   getContent("worklist", workMenu);
   getContent("cv/txt/bio-english", bioArray);
-  bioData = unloadArray(bioArray);
+  
   $("#content").append(featured);
   setInterval(randomMargin(t),t);
 });
