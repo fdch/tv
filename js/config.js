@@ -10,6 +10,8 @@ var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 var title = "Multimedianautics";
 var subtitle = "Fede Camara Halac";
 var logoimage = ["img/fdch.jpg", 200, 200];
+var featURL = "https://player.vimeo.com/video/168692629"
+var featured = "<article><iframe src=\""+featURL+"\"></iframe></article>
 ////////////
 ////Title
 ////////////
