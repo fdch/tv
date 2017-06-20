@@ -56,7 +56,8 @@ function loader(x) {
       break;
     default:
       $("#submenu").html("");
-      $('#content').html("").append([y+"Open","<p>"+unloadArray(y)+"</p>",y+"Close"]);
+      var data = unloadArray(y);
+      $('#content').html("").append([y+"Open","<p>"+data+"</p>",y+"Close"]);
       $('article').width(w).height(h);
   }
 }
