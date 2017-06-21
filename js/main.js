@@ -106,7 +106,7 @@ function getNworks() {
       var nwork = "<div \
       id="+nwid+" \
       class=\""+ecat.replace(/,/g,'').toLowerCase()+"\" \
-      style=\"{display:none,position:absolute,left:"+w+"px}\">\
+      style=\"{display:none;position:absolute;left:"+w+"px;}\">\
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>";
       if (eiurl) nwork += "<img width="+w+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
