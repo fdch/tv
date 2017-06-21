@@ -22,7 +22,6 @@ var vis = function(x) {
             prev.style.display = 'none';
         } else {
             pos++; 
-            y.style.top = pos + 'px'; 
             y.style.left = pos + 'px'; 
         }
     }
@@ -35,7 +34,6 @@ var vis = function(x) {
             prev=y;
         } else {
             pos++; 
-            y.style.top = pos + 'px'; 
             y.style.left = pos + 'px'; 
         }
     }
