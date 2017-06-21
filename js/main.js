@@ -81,10 +81,11 @@ function getNworks() {
       var eaurl = e.gsx$audiourl.$t;
       var esurl = e.gsx$scoreurl.$t;
       var eloca = e.gsx$location.$t;
-      
+      var nwid = etitl.replace(/ /g,"_").toLowerCase();
       var nwork = "<div \
-      id=id-"+etitl.replace(/ /g,"_").toLowerCase()+"\
-      class=\""+ecat.replace(/,/g,'').toLowerCase()+"\">\
+      id=id-"+nwid+" \
+      class=\""+ecat.replace(/,/g,'').toLowerCase()+"\" \
+      style=\"display:none\">\
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>\
       <h5>"+eperf+"</h5>";
@@ -96,7 +97,7 @@ function getNworks() {
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       
       nwork += "<p>"+eprog+"</p></div>";
-      var wmitem = "<span class=menuitem> "+etitl+" </span>";
+      var wmitem = "<span class=menuitem onclick=\""+vis(nwid)+"\"> "+etitl+" </span>";
       $("#workmenu").prepend(wmitem);
       $("#content article").prepend(nwork);
     }
@@ -152,6 +153,14 @@ var len = featURL.length;
 var which = Math.floor(Math.random() * len);
 var video = "<iframe id=backvideo src=\'"+featURL[which]+"\'></iframe>";
 return video;
+}
+
+function vis(x) {
+  var y = document.getElementById(x);
+  if (y.style.display === 'none')
+    y.style.display = 'block';
+  else 
+    y.style.display = 'none';
 }
 
 $(function(){
