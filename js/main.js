@@ -4,6 +4,10 @@
 var w;
 var h;
 var t = 4333;
+var dimen = "width="+w*0.5+" height="+w*0.33;
+function onclck(x) {
+  return "onclick=\"window.open(\'"+x+"\');\"";
+}
 ////////////
 //// The menu (keep items <= 6 chars long)
 ////////////
@@ -76,16 +80,14 @@ function getNworks() {
       var evurl = e.gsx$videourl.$t;
       var eaurl = e.gsx$audiourl.$t;
       var esurl = e.gsx$scoreurl.$t;
-      var nwork = "<div class=\""+ecat.replace(/,/g,'').toLowerCase()+"\"><h2>"+etitl+"</h2><h3>"+edesc+"</h3><h4>"+eperf+"</h4><h5>"+edate+"</h5><p>"+eprog+"</p>";
-      var dimen = "width="+w*0.5+" height="+w*0.33;
-      function onclck(x) {
-        return "onclick=\"window.open(\'"+x+"\');\"";
-      }
+      var nwork = "<div class=\""+ecat.replace(/,/g,'').toLowerCase()+"\"><h2>"+etitl+"</h2><h3>"+edesc+"</h3><h4>"+eperf+"</h4>;
       if (eiurl) nwork += "<img "+dimen+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
       if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
-      nwork += "<h6>Entry created on:"+estam+"</h6></div>";
+      
+      
+      nwork += "<h5>"+edate+"</h5><p>"+eprog+"</p><h6>Entry created on:"+estam+"</h6></div>";
       $("#content article").prepend(nwork);
     }
   });
