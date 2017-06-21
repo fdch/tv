@@ -109,7 +109,7 @@ function getNworks() {
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       
       nwork += "<p>"+eprog+"</p></div>";
-      var wmitem = "<span class=menuitem onclick=\""+vis(nwid)+"\"> "+etitl+" </span>";
+      var wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\"> "+etitl+" </span>";
       $("#workmenu").prepend(wmitem);
       $("#content article").prepend(nwork);
     }
