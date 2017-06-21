@@ -120,7 +120,6 @@ function getSocial() {
       $("#loadFriends").append("<h5><a href=\"" + value + "\" target=_blank title=\"" + name + "\">" + name + "</a></h5>");
     }
   });
-  }
 }
 
 function loader(x) {
