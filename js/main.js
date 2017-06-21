@@ -11,21 +11,11 @@ var mitem = ["bio", "work", "social", "games", "blog", "video", "code", "contact
 var lang = "<div id=languages><span class=menulink-left><span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>  <span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span></span></div>";
 //<img class=fd src="img/fd.png" title=fd/></img>
 var prev;
-var vis = function(x,w) {
-  var id = setInterval(frame,5);
-  var pos = w;
+var vis = function(x) {
   var y = document.getElementById(x);
   if (prev != null) prev.style.display = 'none';
   if (y !=null) {
     y.style.display = 'block';
-    function frame() {
-        if (pos == 0) {
-            clearInterval(id);
-        } else {
-            pos++; 
-            y.style.left = pos + 'px'; 
-        }
-    }
     prev=y;
   }
 };
@@ -116,7 +106,7 @@ function getNworks() {
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       
       nwork += "<p>"+eprog+"</p><h6>fdch: "+estam+"</h6></div>";
-      var wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+","+w+"\')\"> "+etitl+" </span>";
+      var wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\"> "+etitl+" </span>";
       $("#workmenu").prepend(wmitem);
       $("#content article").prepend(nwork);
     }
