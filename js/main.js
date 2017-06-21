@@ -78,7 +78,7 @@ function getNworks() {
       var esurl = e.gsx$scoreurl.$t;
       var nwork = "<div class=\""+ecat.replace(/,/g,'').toLowerCase()+"\"><h2>"+etitl+"</h2><h3>"+edesc+"</h3><h4>"+eperf+"</h4><h5>"+edate+"</h5><p>"+eprog+"</p>";
       var dimen = "width="+w+" height="+w*0.66;
-      var openif = "<iframe"+dimen+" src=\"";
+      var openif = "<iframe "+dimen+" src=\"";
       var closei = "\"></iframe>";
       var onclck = "onclick=\"window.open(\'"+eiurl+"\');\"";
       if (eiurl) nwork += "<img "+dimen+" src=\""+eiurl+"\" "+onclck+" />";
