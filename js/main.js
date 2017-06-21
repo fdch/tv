@@ -90,7 +90,7 @@ function getNworks() {
       <h5>"+eperf+"</h5>";
       
       if (eiurl) nwork += "<img "+dimen+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
-      nwork += "<h6>Performed at "+eloca+" on "+edate.toString()+"</h6>";
+      nwork += "<h6>Performed at "+eloca+" on "+edate.toDateString()+"</h6>";
       if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
