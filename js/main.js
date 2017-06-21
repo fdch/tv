@@ -60,7 +60,7 @@ function loadJSON(x,callback) {
 
 function getNworks() {
   loadJSON(sheetURL, function(response) {
-    $("#content").append("<article></article>");
+    $("#content").append("<nav id=workmenu></nav><article></article>");
     var dimen = "width="+w*0.5+" height="+w*0.33;
     function onclck(x) {
       return "onclick=\"window.open(\'"+x+"\');\"";
@@ -96,6 +96,8 @@ function getNworks() {
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       
       nwork += "<p>"+eprog+"</p></div>";
+      var wmitem = "<span class=menuitem> "+etitl+" </span>";
+      $("#workmenu").prepend(wmitem);
       $("#content article").prepend(nwork);
     }
   });
