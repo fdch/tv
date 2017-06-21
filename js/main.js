@@ -82,9 +82,9 @@ function getNworks() {
         return "onclick=\"window.open(\'"+x+"\');\"";
       }
       if (eiurl) nwork += "<img "+dimen+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
-      if (evurl) nwork += "<button type=button "+onclck(evurl)+" >Video</button>;
-      if (eaurl) nwork += "<button type=button "+onclck(eaurl)+" >Audio</button>;
-      if (esurl) nwork += "<button type=button "+onclck(esurl)+" >Score</button>;
+      if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
+      if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
+      if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       nwork += "<h6>Entry created on:"+estam+"</h6></div>";
       $("#content article").prepend(nwork);
     }
