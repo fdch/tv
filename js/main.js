@@ -81,9 +81,9 @@ function getNworks() {
       var eaurl = e.gsx$audiourl.$t;
       var esurl = e.gsx$scoreurl.$t;
       var eloca = e.gsx$location.$t;
-      var nwid = etitl.replace(/ /g,"_").toLowerCase();
+      var nwid = "id-"+etitl.replace(/ /g,"_").toLowerCase();
       var nwork = "<div \
-      id=id-"+nwid+" \
+      id="+nwid+" \
       class=\""+ecat.replace(/,/g,'').toLowerCase()+"\" \
       style=\"display:none\">\
       <h3>"+etitl+"</h3>\
