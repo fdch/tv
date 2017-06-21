@@ -12,9 +12,26 @@ var lang = "<div id=languages><span class=menulink-left><span id=english ><spa c
 //<img class=fd src="img/fd.png" title=fd/></img>
 var prev;
 var vis = function(x) {
+  var id = setInterval(frame,5);
+  var pos = 0;
   var y = document.getElementById(x);
-  if (prev != null) prev.style.display = 'none';
-  if (y !=null) { y.style.display = 'block'; prev=y;}
+  if (prev != null) {
+    function frame() {
+        if (pos == w) {
+            clearInterval(id);
+            prev.style.display = 'none';
+        } else {
+            pos++; 
+            y.style.top = pos + 'px'; 
+            y.style.left = pos + 'px'; 
+        }
+    }
+    
+  }
+  if (y !=null) {
+    y.style.display = 'block';
+    prev=y;
+  }
 };
 
 function makeMenu(m, len, mitem, type) {
@@ -102,7 +119,7 @@ function getNworks() {
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       
-      nwork += "<p>"+eprog+"</p><h6>Entry created on: "+estam+"</h6></div>";
+      nwork += "<p>"+eprog+"</p><h6>fdch: "+estam+"</h6></div>";
       var wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\"> "+etitl+" </span>";
       $("#workmenu").prepend(wmitem);
       $("#content article").prepend(nwork);
