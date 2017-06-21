@@ -79,13 +79,12 @@ function getNworks() {
       var nwork = "<div class=\""+ecat.replace(/,/g,'').toLowerCase()+"\"><h2>"+etitl+"</h2><h3>"+edesc+"</h3><h4>"+eperf+"</h4><h5>"+edate+"</h5><p>"+eprog+"</p>";
       var dimen = "width="+w*0.5+" height="+w*0.33;
       function onclck(x) {
-        var str = "onclick=\"window.open(\'"+x+"\');\"";
-        return str;
+        return "onclick=\"window.open(\'"+x+"\');\"";
       }
       if (eiurl) nwork += "<img "+dimen+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
-      if (evurl) nwork += "<button "+onclck(evurl);+">Video</button>;
-      if (eaurl) nwork += "<button "+onclck(eaurl);+">Audio</button>;
-      if (esurl) nwork += "<button "+onclck(esurl);+">Score</button>;
+      if (evurl) nwork += "<button type=button "+onclck(evurl)+" >Video</button>;
+      if (eaurl) nwork += "<button type=button "+onclck(eaurl)+" >Audio</button>;
+      if (esurl) nwork += "<button type=button "+onclck(esurl)+" >Score</button>;
       nwork += "<h6>Entry created on:"+estam+"</h6></div>";
       $("#content article").prepend(nwork);
     }
