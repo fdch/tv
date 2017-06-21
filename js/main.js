@@ -7,7 +7,7 @@ var t = 4333;
 ////////////
 //// The menu (keep items <= 6 chars long)
 ////////////
-var mitem = ["bio", "work", "social", "games", "blog", "video", "code", "contact"];
+var mitem = ["bio", "work", "social", "games", "blog", "video", "code", "contact", "wk"];
 var lang = "<div id=languages><span class=menulink-left><span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>  <span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span></span></div>";
 //<img class=fd src="img/fd.png" title=fd/></img>
 function makeMenu(m, len, mitem, type) {
