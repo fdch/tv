@@ -16,6 +16,11 @@ var bioClose = "</article>";
 var sheetID = "1e5dh1sZX1QuFFioC-1ofcPIPhwU9i-lvUzOzn4_3SLQ";
 var magicNumber = "1";
 var sheetURL = "https://spreadsheets.google.com/feeds/list/"+sheetID+"/"+magicNumber+"/public/values?alt=json";
+var contact = "<article><h3>contact</h3><p>Send me an email at <a hred=\"mailto:"+email+"\">"+email+"</a> and I will get in touch with you as fast as humanly possible. You can also follow me on social networks</p><img src=\"img/zissou.gif\" width=200/></article>";
+var gameDraw = ["draw/", "img/draw.png", "Draw concentrical polygons as they get smaller. Print page when you are done."];
+var gameType = ["<button onclick=\"window.open(\'"+gameDraw[0]+"\')\" >draw</button><p>"+gameDraw[1]+"</p><img onclick=\"window.open(\'"+gameDraw[0]+"\')\" src=\""+gameDraw[2]+"\"/>",""];
+var games = "<article>"+gameType[0]+"</article>";
+
 ////////////
 ////Title
 ////////////

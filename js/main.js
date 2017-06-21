@@ -21,7 +21,7 @@ function makeMenu(m, len, mitem, type) {
   var i;
   m.append("<nav>");
   for (i = 0;i < len; i++) {
-    m.append("<"+type+" class=menuitem onClick=\"loader(\'content/" + mitem[i] + "\')\"> " + mitem[i].replace(/_/g," ").replace(/-/g," ") + " </"+type+">");
+    m.append("<"+type+" class=menuitem onClick=\"loader(\'" + mitem[i] + "\')\"> " + mitem[i].replace(/_/g," ").replace(/-/g," ") + " </"+type+">");
   }
   m.append("</nav>");
 }
@@ -110,37 +110,55 @@ function getNworks() {
   });
 }
 
+function getSocial() {
+  loadJSON("content/social", function(response) {
+    $("#content").append("<article><div id=loadFriends></div></article>");
+    var f = JSON.parse(response);
+    for (var key in f) {
+      name = key;
+      value = f[key];
+      $("#loadFriends").append("<h5><a href=\"" + value + "\" target=_blank title=\"" + name + "\">" + name + "</a></h5>");
+    }
+  });
+  }
+}
+
 function loader(x) {
   switch (x) {
-    case "content/blog": 
+    case "blog": 
       window.open(blogurl);
       break;
     case "content/video":
       window.open(videourl);
       break;
-    case "content/code":
+    case "code":
       window.open(repo);
       break;
-    case "content/work":
+    case "work":
       $("#submenu").html("");
       $("#backvideo").hide();
       $("#content").html("");
       makeMenu($('#submenu'), workMenu.length, workMenu, "span");
       break;
-    case "content/bio":
+    case "bio":
       $("#backvideo").hide();
       $("#submenu").html("");
       $("#content").html("").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
       break;
-    case "content/wk":
+    case "wk":
        $("#backvideo").hide();
       $("#submenu").html("");
       $("#content").html("");
       getNworks();
       break;
-    case "content/social":
-    case "content/games" :
-    case "content/contact" :
+    case "social":
+      $("#backvideo").hide();
+      $("#submenu").html("");
+      $("#content").html("");
+      getSocial();
+      break;
+    case "games" :
+    case "contact" :
       $("#backvideo").hide();
       $("#submenu").html("");
     default:
