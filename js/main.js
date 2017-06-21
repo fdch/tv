@@ -14,10 +14,7 @@ var prev;
 var vis = function(x) {
   var y = document.getElementById(x);
   if (prev != null) prev.style.display = 'none';
-  if (y !=null) {
-    y.style.display = 'block';
-    prev=y;
-  }
+  if (y != null) y.style.display = 'block', prev=y;
 };
 
 function makeMenu(m, len, mitem, type) {
@@ -106,7 +103,7 @@ function getNworks() {
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       
       nwork += "<p>"+eprog+"</p><h6>fdch: "+estam+"</h6></div>";
-      var wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\"> "+etitl+" </span>";
+      var wmitem = "<span class=menuitem onclick=\"vis("+nwid+")\"> "+etitl+" </span>";
       $("#workmenu").prepend(wmitem);
       $("#content article").prepend(nwork);
     }
