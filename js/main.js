@@ -80,16 +80,22 @@ function getNworks() {
       var evurl = e.gsx$videourl.$t;
       var eaurl = e.gsx$audiourl.$t;
       var esurl = e.gsx$scoreurl.$t;
+      var eloca = e.gsx&location.$t;
       
-      var nwork = "<div class=\""+ecat.replace(/,/g,'').toLowerCase()+"\"><h2>"+etitl+"</h2><h3>"+edesc+"</h3><h4>"+eperf+"</h4>";
+      var nwork = "<div \
+      id=id-"+etitl.replace(/ /g,"_").toLowerCase()+"\
+      class=\""+ecat.replace(/,/g,'').toLowerCase()+"\">\
+      <h3>"+etitl+"</h3>\
+      <h4>"+edesc+"</h4>\
+      <h5>"+eperf+"</h5>";
       
       if (eiurl) nwork += "<img "+dimen+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
+      nwork += "<h6>Performed at "+eloca+" on "+edate+"</h6>";
       if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       
-      
-      nwork += "<h5>"+edate+"</h5><p>"+eprog+"</p><h6>Entry created on:"+estam+"</h6></div>";
+      nwork += "<p>"+eprog+"</p></div>";
       $("#content article").prepend(nwork);
     }
   });
