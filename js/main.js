@@ -71,7 +71,7 @@ function getNworks() {
       var e = entry[i];
       var estam = e.gsx$timestamp.$t;
       var etitl = e.gsx$title.$t;
-      var edate = e.gsx$date.$t;
+      var edate = new Date(e.gsx$date.$t);
       var eperf = e.gsx$performers.$t;
       var ecat = e.gsx$category.$t;
       var edesc = e.gsx$description.$t;
@@ -90,7 +90,7 @@ function getNworks() {
       <h5>"+eperf+"</h5>";
       
       if (eiurl) nwork += "<img "+dimen+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
-      nwork += "<h6>Performed at "+eloca+" on "+edate+"</h6>";
+      nwork += "<h6>Performed at "+eloca+" on "+edate.toString()+"</h6>";
       if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
