@@ -76,12 +76,12 @@ function getNworks() {
       var evurl = e.gsx$videourl.$t;
       var eaurl = e.gsx$audiourl.$t;
       var esurl = e.gsx$scoreurl.$t;
-      var nwork = "<div class=\""+ecat+"\"><h2>"+etitl+"</h2><h3>"+edesc+"</h3><h4>"+eperf+"</h4><p>"+eprog+"</p>";
+      var nwork = "<div class=\""+ecat+"\"><h2>"+etitl+"</h2><h3>"+edesc+"</h3><h4>"+eperf+"</h4><h5>"+edate+"</h5><p>"+eprog+"</p>";
       if (eiurl) nwork += "<a href=\""+eiurl+"\"><img src=\""+eiurl+"\" title=\""+etitl+"\"/></a>";
       if (evurl) nwork += "<iframe src=\""+evurl+"\"></iframe>";
       if (eaurl) nwork += "<iframe src=\""+eaurl+"\"></iframe>";
       if (esurl) nwork += "<iframe src=\""+esurl+"\"></iframe>";
-      nwork += "<h5>"+edate+"</h5><h6>"+estam+"</h6><span>Event created on: "+estam+"</></div>";
+      nwork += "<h6>Event created on:"+estam+"</h6></div>";
       $("#content article").prepend(nwork);
     }
   });
