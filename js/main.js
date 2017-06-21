@@ -97,7 +97,7 @@ function getNworks() {
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>";
       if (eiurl) nwork += "<img width="+w+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
-      nwork += "<h5>Performed by: "+eperf+", at "+eloca+" on "+edate.toDateString()+"</h5>";
+      nwork += "<h5>Performed by "+eperf+" at "+eloca+" on "+edate.toDateString()+"</h5>";
       if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
