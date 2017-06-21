@@ -42,39 +42,50 @@ function loadJSON(x,callback) {
   };
   xobj.send(null);  
 }
-function getEvents(x) {
-loadJSON("https://spreadsheets.google.com/feeds/list/1e5dh1sZX1QuFFioC-1ofcPIPhwU9i-lvUzOzn4_3SLQ/o1nbw6e/public/values?alt=json", function(response) {
-    $("#loadEvents").append("<article></article>");
-    var today = new Date();
-    var eclass = "new";
+
+/*
+"gsx$timestamp": date + time
+"gsx$title"
+"gsx$category": (csv)
+"gsx$performers"
+"gsx$date"
+"gsx$description"
+"gsx$programnotes"
+"gsx$imageurl"
+"gsx$videourl"
+"gsx$audiourl"
+"gsx$scoreurl"
+*/
+
+
+function getNworks() {
+  loadJSON(sheetURL, function(response) {
+    $("#content").append("<article></article>");
     var f = JSON.parse(response);
     var entry = f.feed.entry;
     for (var i in entry) {
       var e = entry[i];
       var estam = e.gsx$timestamp.$t;
-      var edate = new Date(e.gsx$dateandtime.$t);
-      var etime = edate.toTimeString();
       var etitl = e.gsx$title.$t;
-      var eauth = e.gsx$author.$t;
-      var edesc = e.gsx$description.$t;
-      var eloca = e.gsx$location.$t;
-      var eiurl = e.gsx$imageurl.$t;
-      if (today.getTime() > edate.getTime()) {
-        eclass = "old";
-      } else {
-        eclass = "new";
+      var edate = e.gsx$date.$t;
+      var eperf = e.gsx$performers.$t;
+      var ecat = [];
+      for (var j in e.gsx$category.$t) {
+        ecat.push(e.gsx$category.$t[j]);
       }
-      var nevent = "<div class="+eclass+">\
-  <h2>"+etitl+"</h2>\
-  <h3>"+eauth+"</h3>\
-  <h4>"+edate.toDateString()+"</h4>\
-  <a href=\""+eiurl+"\"><img src=\""+eiurl+"\" title=\""+eauth+"\"/></a>\
-  <p>"+edesc+"</p>\
-  <h5>"+eloca+"</h5>\
-  <h6>"+etime+"</h6>\
-  <span>Event created on: "+estam+"</>\
-  </div>";
-      $("#loadEvents article").prepend(nevent);
+      var edesc = e.gsx$description.$t;
+      var eprog = e.gsx$programnotes.$t;
+      var eiurl = e.gsx$imageurl.$t;
+      var evurl = e.gsx$videourl.$t;
+      var eaurl = e.gsx$audiourl.$t;
+      var esurl = e.gsx$scoreurl.$t;
+      var nwork = "<div class=\""+ecat.join("")+"\"><h2>"+etitl+"</h2><h3>"+edesc+"</h3><h4>"+eperf+"</h4><p>"+eprog+"</p>";
+      if (eiurl) nwork += "<a href=\""+eiurl+"\"><img src=\""+eiurl+"\" title=\""+etitl+"\"/></a>";
+      if (evurl) nwork += "<iframe src=\""+evurl+"\"></iframe>";
+      if (eaurl) nwork += "<iframe src=\""+eaurl+"\"></iframe>";
+      if (esurl) nwork += "<iframe src=\""+esurl+"\"></iframe>";
+      nwork += "<h5>"+edate+"</h5><h6>"+estam+"</h6><span>Event created on: "+estam+"</></div>";
+      $("#content article").prepend(nwork);
     }
   });
 }
@@ -98,8 +109,14 @@ function loader(x) {
       break;
     case "content/bio":
       $("#backvideo").hide();
-      $("#submenu").html("");;
+      $("#submenu").html("");
       $("#content").html("").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
+      break;
+    case "content/wk":
+       $("#backvideo").hide();
+      $("#submenu").html("");
+      $("#content").html("");
+      getNworks();
       break;
     case "content/social":
     case "content/games" :
