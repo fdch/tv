@@ -26,11 +26,19 @@ var vis = function(x) {
             y.style.left = pos + 'px'; 
         }
     }
-    
   }
   if (y !=null) {
-    y.style.display = 'block';
-    prev=y;
+    function frame() {
+        if (pos == w) {
+            clearInterval(id);
+            y.style.display = 'block';
+            prev=y;
+        } else {
+            pos++; 
+            y.style.top = pos + 'px'; 
+            y.style.left = pos + 'px'; 
+        }
+    }
   }
 };
 
