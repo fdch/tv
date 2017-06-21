@@ -84,11 +84,11 @@ function getNworks() {
       var nwid = "id-"+etitl.replace(/ /g,"_").toLowerCase();
       var nwork = "<div \
       id="+nwid+" \
-      class=\""+ecat.replace(/,/g,'').toLowerCase()+"\">\
+      class=\""+ecat.replace(/,/g,'').toLowerCase()+"\" \
+      style=\"display:none\">\
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>\
       <h5>"+eperf+"</h5>";
-      //style=\"display:none\">\
       if (eiurl) nwork += "<img "+dimen+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
       nwork += "<h6>Performed at "+eloca+" on "+edate.toDateString()+"</h6>";
       if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
