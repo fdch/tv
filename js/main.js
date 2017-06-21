@@ -156,10 +156,12 @@ return video;
 
 function vis(x) {
   var y = document.getElementById(x);
-  if (y != null && y.style.display === 'none')
+  if (y !=null) {
+  if (y.style.display === 'none')
     y.style.display = 'block';
   else 
     y.style.display = 'none';
+  }
 }
 
 $(function(){
