@@ -12,13 +12,20 @@ var lang = "<div id=languages><span class=menulink-left><span id=english ><spa c
 //<img class=fd src="img/fd.png" title=fd/></img>
 
 var vis = function(x) {
+  var prev;
   var y = document.getElementById(x);
   if (y !=null) {
-  if (y.style.display === 'none')
-    y.style.display = 'block';
-  else 
-    y.style.display = 'none';
+    if (y.style.display === 'none') {
+      if (prev != null) prev.style.display = 'none';
+      y.style.display = 'block';
+      prev = y;
+    }
+    else {
+      if (prev != null) prev.style.display = 'block';
+      y.style.display = 'none';
+    }
   }
+  
 };
 
 function makeMenu(m, len, mitem, type) {
