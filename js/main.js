@@ -17,16 +17,16 @@ var vis = function(x,w) {
   var y = document.getElementById(x);
   if (prev != null) prev.style.display = 'none';
   if (y !=null) {
+    y.style.display = 'block';
     function frame() {
         if (pos == 0) {
             clearInterval(id);
-            y.style.display = 'block';
-            prev=y;
         } else {
             pos++; 
             y.style.left = pos + 'px'; 
         }
     }
+    prev=y;
   }
 };
 
