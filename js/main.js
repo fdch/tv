@@ -80,7 +80,7 @@ function getNworks() {
       var evurl = e.gsx$videourl.$t;
       var eaurl = e.gsx$audiourl.$t;
       var esurl = e.gsx$scoreurl.$t;
-      var eloca = e.gsx&location.$t;
+      var eloca = e.gsx$location.$t;
       
       var nwork = "<div \
       id=id-"+etitl.replace(/ /g,"_").toLowerCase()+"\
