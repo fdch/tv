@@ -79,7 +79,7 @@ function getNworks() {
       var nwork = "<div class=\""+ecat.replace(/,/g,'').toLowerCase()+"\"><h2>"+etitl+"</h2><h3>"+edesc+"</h3><h4>"+eperf+"</h4><h5>"+edate+"</h5><p>"+eprog+"</p>";
       var openif = "<iframe width="+w/2+" height="+h/2+" src=\"";
       var closei = "\"></iframe>";
-      if (eiurl) nwork += openif.concat(ivurl,closei);
+      if (eiurl) nwork += openif.concat(eiurl,closei);
       if (evurl) nwork += openif.concat(evurl,closei);
       if (eaurl) nwork += openif.concat(eaurl,closei);
       if (esurl) nwork += openif.concat(esurl,closei);
