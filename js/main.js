@@ -70,7 +70,6 @@ function loadJSON(x,callback) {
 function getNworks() {
   loadJSON(sheetURL, function(response) {
     $("#content").append("<nav id=workmenu></nav><article></article>");
-    var dimen = "width="+w*0.5+" height="+w*0.33;
     function onclck(x) {
       return "onclick=\"window.open(\'"+x+"\');\"";
     }
@@ -98,7 +97,7 @@ function getNworks() {
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>\
       <h5>"+eperf+"</h5>";
-      if (eiurl) nwork += "<img "+dimen+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
+      if (eiurl) nwork += "<img width="+w+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
       nwork += "<h6>Performed at "+eloca+" on "+edate.toDateString()+"</h6>";
       if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
