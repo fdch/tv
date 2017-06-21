@@ -11,7 +11,7 @@ var mitem = ["bio", "work", "social", "games", "blog", "video", "code", "contact
 var lang = "<div id=languages><span class=menulink-left><span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>  <span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span></span></div>";
 //<img class=fd src="img/fd.png" title=fd/></img>
 
-var function vis(x) {
+var vis = function(x) {
   var y = document.getElementById(x);
   if (y !=null) {
   if (y.style.display === 'none')
@@ -19,7 +19,7 @@ var function vis(x) {
   else 
     y.style.display = 'none';
   }
-}
+};
 
 function makeMenu(m, len, mitem, type) {
   var i;
