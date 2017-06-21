@@ -95,10 +95,9 @@ function getNworks() {
       class=\""+ecat.replace(/,/g,'').toLowerCase()+"\" \
       style=\"display:none\">\
       <h3>"+etitl+"</h3>\
-      <h4>"+edesc+"</h4>\
-      <h5>"+eperf+"</h5>";
+      <h4>"+edesc+"</h4>";
       if (eiurl) nwork += "<img width="+w+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
-      nwork += "<h6>Performed at "+eloca+" on "+edate.toDateString()+"</h6>";
+      nwprk += "<h5>Performed by: "+eperf+"</h5><h6>Performed at "+eloca+" on "+edate.toDateString()+"</h6>";
       if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
