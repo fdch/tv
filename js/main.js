@@ -97,13 +97,14 @@ function getNworks() {
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>";
       if (eiurl) nwork += "<img width="+w+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
-      nwork += "<h5>Performed by: "+eperf+"</h5><h6>Performed at "+eloca+" on "+edate.toDateString()+"</h6>";
+      nwork += "<h5>Performed by: "+eperf+", at "+eloca+" on "+edate.toDateString()+"</h5>";
       if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       
       nwork += "<p>"+eprog+"</p></div>";
       var wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\"> "+etitl+" </span>";
+      nwork += "<h6>Entry created on: "+estam+"</h6>";
       $("#workmenu").prepend(wmitem);
       $("#content article").prepend(nwork);
     }
