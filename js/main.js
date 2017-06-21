@@ -10,6 +10,17 @@ var t = 4333;
 var mitem = ["bio", "work", "social", "games", "blog", "video", "code", "contact", "wk"];
 var lang = "<div id=languages><span class=menulink-left><span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>  <span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span></span></div>";
 //<img class=fd src="img/fd.png" title=fd/></img>
+
+var function vis(x) {
+  var y = document.getElementById(x);
+  if (y !=null) {
+  if (y.style.display === 'none')
+    y.style.display = 'block';
+  else 
+    y.style.display = 'none';
+  }
+}
+
 function makeMenu(m, len, mitem, type) {
   var i;
   m.append("<nav>");
@@ -18,6 +29,8 @@ function makeMenu(m, len, mitem, type) {
   }
   m.append("</nav>");
 }
+
+
 var workMenu = new Array();
 var bioArray = new Array();
 
@@ -152,16 +165,6 @@ var len = featURL.length;
 var which = Math.floor(Math.random() * len);
 var video = "<iframe id=backvideo src=\'"+featURL[which]+"\'></iframe>";
 return video;
-}
-
-function vis(x) {
-  var y = document.getElementById(x);
-  if (y !=null) {
-  if (y.style.display === 'none')
-    y.style.display = 'block';
-  else 
-    y.style.display = 'none';
-  }
 }
 
 $(function(){
