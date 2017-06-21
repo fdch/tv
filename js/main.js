@@ -93,7 +93,7 @@ function getNworks() {
       var nwork = "<div \
       id="+nwid+" \
       class=\""+ecat.replace(/,/g,'').toLowerCase()+"\" \
-      style=\"display:none;position:absolute;left:"+w+"px;\">\
+      style=\"display:none\">\
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>";
       if (eiurl) nwork += "<img width="+w+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
@@ -103,7 +103,7 @@ function getNworks() {
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       
       nwork += "<p>"+eprog+"</p><h6>fdch: "+estam+"</h6></div>";
-      var wmitem = "<span class=menuitem onclick=\"vis("+nwid+")\"> "+etitl+" </span>";
+      var wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\"> "+etitl+" </span>";
       $("#workmenu").prepend(wmitem);
       $("#content article").prepend(nwork);
     }
