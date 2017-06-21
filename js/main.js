@@ -102,9 +102,8 @@ function getNworks() {
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       
-      nwork += "<p>"+eprog+"</p></div>";
+      nwork += "<p>"+eprog+"</p><h6>Entry created on: "+estam+"</h6></div>";
       var wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\"> "+etitl+" </span>";
-      nwork += "<h6>Entry created on: "+estam+"</h6>";
       $("#workmenu").prepend(wmitem);
       $("#content article").prepend(nwork);
     }
