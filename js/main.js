@@ -10,9 +10,8 @@ var t = 4333;
 var mitem = ["bio", "work", "social", "games", "blog", "video", "code", "contact", "wk"];
 var lang = "<div id=languages><span class=menulink-left><span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>  <span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span></span></div>";
 //<img class=fd src="img/fd.png" title=fd/></img>
-
+var prev;
 var vis = function(x) {
-  var prev;
   var y = document.getElementById(x);
   if (prev != null) prev.style.display = 'none';
   if (y !=null) { y.style.display = 'block'; prev=y;}
