@@ -81,7 +81,7 @@ function getNworks() {
       var openif = "<iframe"+dimen+" src=\"";
       var closei = "\"></iframe>";
       var onclck = "onclick=\"window.open(\'"+eiurl+"\');\"";
-      if (eiurl) nwork += "<img "+dimen+" src=\""+eiurl+" "+onclck+" />";
+      if (eiurl) nwork += "<img "+dimen+" src=\""+eiurl+"\" "+onclck+" />";
       if (evurl) nwork += openif.concat(evurl,closei);
       if (eaurl) nwork += openif.concat(eaurl,closei);
       if (esurl) nwork += openif.concat(esurl,closei);
