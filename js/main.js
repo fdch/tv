@@ -13,11 +13,11 @@ var lang = "<div id=languages><span class=menulink-left><span id=english ><spa c
 var prev;
 var vis = function(x) {
   var id = setInterval(frame,5);
-  var pos = 0;
+  var pos = w;
   var y = document.getElementById(x);
   if (prev != null) {
     function frame() {
-        if (pos == w) {
+        if (pos == w*2) {
             clearInterval(id);
             prev.style.display = 'none';
         } else {
@@ -28,7 +28,7 @@ var vis = function(x) {
   }
   if (y !=null) {
     function frame() {
-        if (pos == w) {
+        if (pos == w*2) {
             clearInterval(id);
             y.style.display = 'block';
             prev=y;
