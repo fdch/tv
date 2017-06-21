@@ -69,10 +69,7 @@ function getNworks() {
       var etitl = e.gsx$title.$t;
       var edate = e.gsx$date.$t;
       var eperf = e.gsx$performers.$t;
-      var ecat = [];
-      for (var j in e.gsx$category.$t) {
-        ecat.push(e.gsx$category.$t[j]);
-      }
+      var ecat = e.gsx$category.$t;
       var edesc = e.gsx$description.$t;
       var eprog = e.gsx$programnotes.$t;
       var eiurl = e.gsx$imageurl.$t;
