@@ -15,20 +15,10 @@ var vis = function(x,w) {
   var id = setInterval(frame,5);
   var pos = w;
   var y = document.getElementById(x);
-  if (prev != null) {
-    function frame() {
-        if (pos == w*2) {
-            clearInterval(id);
-            prev.style.display = 'none';
-        } else {
-            pos++; 
-            y.style.left = pos + 'px'; 
-        }
-    }
-  }
+  if (prev != null) prev.style.display = 'none';
   if (y !=null) {
     function frame() {
-        if (pos == w*2) {
+        if (pos == 0) {
             clearInterval(id);
             y.style.display = 'block';
             prev=y;
@@ -116,7 +106,7 @@ function getNworks() {
       var nwork = "<div \
       id="+nwid+" \
       class=\""+ecat.replace(/,/g,'').toLowerCase()+"\" \
-      style=\"display:none\">\
+      style=\"{display:none,position:absolute,left:"+w+"px}\">\
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>";
       if (eiurl) nwork += "<img width="+w+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
