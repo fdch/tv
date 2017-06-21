@@ -30,6 +30,55 @@ function getContent(x, arr) {
   });
 }
 
+
+function loadJSON(x,callback) {
+  var xobj = new XMLHttpRequest();
+  xobj.overrideMimeType("application/json");
+  xobj.open('GET', x, true);
+  xobj.onreadystatechange = function () {
+    if (xobj.readyState == 4 && xobj.status == "200") {
+      callback(xobj.responseText);
+    }
+  };
+  xobj.send(null);  
+}
+function getEvents(x) {
+loadJSON("https://spreadsheets.google.com/feeds/list/1e5dh1sZX1QuFFioC-1ofcPIPhwU9i-lvUzOzn4_3SLQ/o1nbw6e/public/values?alt=json", function(response) {
+    $("#loadEvents").append("<article></article>");
+    var today = new Date();
+    var eclass = "new";
+    var f = JSON.parse(response);
+    var entry = f.feed.entry;
+    for (var i in entry) {
+      var e = entry[i];
+      var estam = e.gsx$timestamp.$t;
+      var edate = new Date(e.gsx$dateandtime.$t);
+      var etime = edate.toTimeString();
+      var etitl = e.gsx$title.$t;
+      var eauth = e.gsx$author.$t;
+      var edesc = e.gsx$description.$t;
+      var eloca = e.gsx$location.$t;
+      var eiurl = e.gsx$imageurl.$t;
+      if (today.getTime() > edate.getTime()) {
+        eclass = "old";
+      } else {
+        eclass = "new";
+      }
+      var nevent = "<div class="+eclass+">\
+  <h2>"+etitl+"</h2>\
+  <h3>"+eauth+"</h3>\
+  <h4>"+edate.toDateString()+"</h4>\
+  <a href=\""+eiurl+"\"><img src=\""+eiurl+"\" title=\""+eauth+"\"/></a>\
+  <p>"+edesc+"</p>\
+  <h5>"+eloca+"</h5>\
+  <h6>"+etime+"</h6>\
+  <span>Event created on: "+estam+"</>\
+  </div>";
+      $("#loadEvents article").prepend(nevent);
+    }
+  });
+}
+
 function loader(x) {
   switch (x) {
     case "content/blog": 
