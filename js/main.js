@@ -66,7 +66,7 @@ function loadJSON(x,callback) {
 */
 
 
-function getWorks() {
+function getWork() {
   loadJSON(sheetURL, function(response) {
     function onclck(x) { return "onclick=\"window.open(\'"+x+"\');\""; }
     var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
