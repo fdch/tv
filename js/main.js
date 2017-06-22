@@ -85,7 +85,7 @@ function getWork() {
       wmitems.push(wmitem);
       $("#content article").prepend(nwork);
     }
-    $("#workM").append(wmitems.join(" "));
+    $("#workM").append(wmitems.sort().join(" "));
     vis("id-"+featWork.replace(/ /g,"_").toLowerCase());
   });
 }
