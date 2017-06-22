@@ -1,23 +1,3 @@
-var w;
-var h;
-var t = 4333;
-var mitem = [
-  "bio",
-  "work",
-  "social",
-  "games",
-  "blog",
-  "video",
-  "code",
-  "contact"
-];
-var lang = "<div id=languages><span class=menulink-left><span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>  <span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span></span></div>";
-var prev;
-var vis = function(x) {
-  var y = document.getElementById(x);
-  if (prev != null) prev.style.display = 'none';
-  if (y != null) y.style.display = 'block', prev=y;
-};
 function makeMenu(m, len, mitem, type) {
   var i;
   m.append("<nav>");
@@ -163,6 +143,6 @@ $(function(){
   var vid = randomVideo();
   $("body").append([titleData,analytics, vid]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
-  getContent("cv/txt/bio-english.txt", bioArray);
+  getContent(bioFile, bioArray);
   setInterval(randomMargin(t),t);
 });
