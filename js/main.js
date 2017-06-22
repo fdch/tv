@@ -45,7 +45,7 @@ function getWork() {
   loadJSON(sheetURL, function(response) {
     function onclck(x) { return "onclick=\"window.open(\'"+x+"\');\""; }
     var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
-    var eiurl, evurl, eaurl, esurl, eloca, nwid, nwork, wmitem, latest;
+    var eiurl, evurl, eaurl, esurl, eloca, nwid, nwork, wmitem;
     f = JSON.parse(response);
     entry = f.feed.entry;
     for (i in entry) {
@@ -81,7 +81,7 @@ function getWork() {
       $("#workM").prepend(wmitem);
       $("#content article").prepend(nwork);
     }
-    vis("id-a.le.a");
+    vis("id-"+featWork.replace(/ /g,"_").toLowerCase());
   });
 }
 function getSocial() {
