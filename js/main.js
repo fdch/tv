@@ -77,7 +77,7 @@ function getWork() {
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       nwork += "<p>"+eprog+"</p><h6>fdch: "+estam+"</h6></div>";
-      wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\"> "+etitl+" </span>";
+      wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\">"+etitl+"</span>";
       $("#workM").prepend(wmitem);
       $("#content article").prepend(nwork);
     }
