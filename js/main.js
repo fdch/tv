@@ -115,7 +115,6 @@ function getSocial() {
     for (key in obj) {
       sobj = obj[key];
       $("#loadS").append("<h4>"+key+"</h4><h5>"+sobj+"</h5>");
-      }
     }
   }
 }
