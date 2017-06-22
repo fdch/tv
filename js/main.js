@@ -7,7 +7,7 @@ var t = 4333;
 ////////////
 //// The menu (keep items <= 6 chars long)
 ////////////
-var mitem = ["bio", "work", "social", "games", "blog", "video", "repo", "contact"];
+var mitem = ["bio", "work", "social", "games", "blog", "video", "code", "contact"];
 var lang = "<div id=languages><span class=menulink-left><span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>  <span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span></span></div>";
 //<img class=fd src="img/fd.png" title=fd/></img>
 var prev;
@@ -66,7 +66,7 @@ function loadJSON(x,callback) {
 */
 
 
-function getNworks() {
+function getWorks() {
   loadJSON(sheetURL, function(response) {
     function onclck(x) { return "onclick=\"window.open(\'"+x+"\');\""; }
     var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
@@ -101,7 +101,6 @@ function getNworks() {
       if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
-      
       nwork += "<p>"+eprog+"</p><h6>fdch: "+estam+"</h6></div>";
       wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\"> "+etitl+" </span>";
       $("#workM").prepend(wmitem);
@@ -109,50 +108,47 @@ function getNworks() {
     }
   });
 }
-
-function getSocial() {
-  loadJSON("content/social", function(response) {
-    var f, key, value;
-    f = JSON.parse(response);
-    for (key in f) {
-      name = key;
-      value = f[key];
-      $("#loadS").append("<h5><a href=\"" + value + "\"\
-      target=_blank title=\"" + name + "\">" + name + "</a></h5>");
-    }
-  });
-}
-
 function loader(x) {
+  $("#content").html("");
+  $("#backvideo").hide();
+  $('article').width(w).height(h);
   switch (x) {
     case "blog": 
+    window.open(blog);
+      break;
     case "video":
-    case "repo":
-      window.open(x);
+    window.open(video);
+      break;
+    case "code":
+      window.open(repo);
       break;
     case "games" :
+      $("#content").append(games);
+      break;
     case "contact" :
-      $("#content").html("").append(x);
-      $("#backvideo").hide();
-      $('article').width(w).height(h);
+      $("#content").append(contact);
       break;
     case "work":
-      $("#content").html("").append("<nav id=workM></nav><article></article>");
-      getNworks();
-      $("#backvideo").hide();
-      $('article').width(w).height(h);
+      $("#content").append("<nav id=workM></nav><article></article>");
+      getWork();
       break;
     case "bio":
-      $("#content").html("").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
-      $("#backvideo").hide();
-      $('article').width(w).height(h);
+      $("#content").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
       break;
     case "social":
-      $("#content").html("").append("<article><div id=loadS></div></article>");
-      getSocial();
-      $("#backvideo").hide();
-      $('article').width(w).height(h);
+      $("#content").append("<article><div id=loadS></div></article>");
+      loadJSON("content/social", function(response) {
+        var f, key, value;
+        f = JSON.parse(response);
+        for (key in f) {
+          name = key;
+          value = f[key];
+          $("#loadS").append("<h5><a href=\"" + value + "\" target=_blank title=\"" + name + "\">" + name + "</a></h5>");
+        }
+      });
       break;
+    default:
+    break;
   }
 }
 
