@@ -114,10 +114,10 @@ function getSocial() {
     obj = social[i];
     for (key in obj) {
       value = obj[key];
-      if(key === "Pep") $("#loadS").append("<h4>"+value+"</h4>"), continue;
-      if(key === "Soc") $("#loadS").append("<h4>"+value+"</h4>"), continue;
-      if(key === "Org") $("#loadS").append("<h4>"+value+"</h4>"), continue;
-      if(key === "Ens") $("#loadS").append("<h4>"+value+"</h4>"), continue;
+      if(key === "Pep") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
+      if(key === "Soc") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
+      if(key === "Org") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
+      if(key === "Ens") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
       $("#loadS").append("<a href=\""+key+"\" target=_blank>"+value+"</a>");
     }
   }
