@@ -13,11 +13,17 @@ h1, h2 {
   position:relative;
   top:5px;
 }
+span {
+ margin:0 4px;
+}
 span:hover {
   cursor:pointer;
   font-weight:bold;
+  text-decoration:underline;
 }
-
+nav span {
+  font-size:0.9em;
+}
 a {
   color:lightblue;
   font-weight:bold;
