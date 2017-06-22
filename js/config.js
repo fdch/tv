@@ -33,7 +33,8 @@ var fbappid = 123442671081764;
 var meta = "<meta property=og:image content='fdch.github.io/wp/"+logoimage+"'/><meta name=keywords content='"+keywords+"' /><meta name=description content='" + url + "'<meta name=robots content='index, follow' /><meta name=author content='http://githug.io/fdch' /><meta property=fb:app_id content="+fbappid+"/><meta property=og:url content='" + url + "' /><meta property=og:title content='" + title + "' /><meta property=og:site_name content='" + keywords + "'/><title>" + title + " | " + subtitle + "</title>";
 var analytics = "<!--Google Analytics--><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-60190278-1', 'auto');ga('send', 'pageview');</script><!--End Google Analytics-->";
 
-var socialArray = [ { 
+var social = [ {
+"Social" : [ { 
 "Twitter":"http://www.twitter.com/fedecamarahalac",
 "Facebook":"http://www.facebook.com/fedecamarahalac",
 "SoundCloud":"http://www.soundcloud.com/fedecamarahalac",
@@ -43,8 +44,8 @@ var socialArray = [ {
 "Tumblr":"http://fedecamarahalac.tumblr.com",
 "Flickr":"http://www.flickr.com/federicocamarahalac",
 "Linkedin":"http://linkedin.com/in/fedecamarahalac"
-} ];
-var peopleArray = [ {
+} ],
+"People" : [ {
 "Judy Klein":"https://en.wikipedia.org/wiki/Judy_Klein",
 "Jaime Oliver La Rosa":"http://www.jaimeoliver.pe",
 "Elizabeth Hoffman":"https://soundcloud.com/eliz-hoffman",
@@ -56,8 +57,8 @@ var peopleArray = [ {
 "Viola Yip":"http://www.violayip.com",
 "Ioannis Angelakis":"http://www.ioannisangelakis.com",
 "Joe Snape":"http://joesna.pe"
-} ];
-var ensemblesArray = [ {
+} ],
+"Ensembles" : [ {
 "loadbang":"http://www.loadbang.com",
 "Tak":"http://www.takensemble.com",
 "Momenta Quartet":"http://www.momentaquartet.com",
@@ -65,10 +66,11 @@ var ensemblesArray = [ {
 "Ensemble Mise-En":"http://www.miseen.org",
 "Proyecto[Red]Ensamble":"http://www.proyectoredensamble.com.ar",
 "Sapegoat":"http://www.scapegoat.fr"
-} ];
-var orgsArray = [ {
+} ],
+"Organizations" : [ {
 "Waverly Project":"http://www.waverlyproject.org",
 "Bienal Composicion Cordoba":"http://www.cordobabienal.com",
 "Puredata":"http://msp.ucsd.edu/",
 "@ayesavid":"http://www.instagram.com/ayesavid"
+} ]
 } ];

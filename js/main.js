@@ -109,15 +109,13 @@ function getWork() {
   });
 }
 function getSocial() {
-  for (var arr in socialArray,peopleArray,ensemblesArray,orgsArray) {
-    var i, obj, key, value;
-    for (var i = 0; i < arr.length; i++) {
+  var i, obj, key, value;
+    for (var i = 0; i < social.length; i++) {
       obj = arr[i];
       $("#loadS").append("<h4>"+obj+"</h4>");
       for (key in obj){
-        value = obj[key];
-        $("#loadS").append("<a href=\""+value+"\" target=_blank>"+key+"</a>");
-      }
+      value = obj[key];
+      $("#loadS").append("<a href=\""+value+"\" target=_blank>"+key+"</a>");
     }
   }
 }
