@@ -16,13 +16,17 @@ h1, h2 {
 span {
   margin:0 7px 0 0;
 }
-span:hover {
+span:hover, img:hover {
   cursor:pointer;
   font-weight:bold;
   text-decoration:underline;
 }
 nav span {
   font-size:0.9em;
+  padding:0px 5px;
+  border-radius:3px;
+  background:lightgrey;
+  color:black;
 }
 a {
   color:lightblue;
