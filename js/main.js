@@ -109,35 +109,15 @@ function getWork() {
   });
 }
 
-function getSocial() {
-  loadJSON("content/social", function(response) {
-    var f, e, i, entry, 
-    f = JSON.parse(response);
-    $("#loadS").append("<h4>Social Media</h4>");
-    entry = f.feed.Social;
-    for (i in entry) {
-      e = entry[i];
-      $("#loadS").append("<a href=\""+e.Social+"\">"+e.Social.key+"</a>");
+function getArrayUrl(x) {
+  var i, arr=x, obj, key, value;
+  for (var i = 0; i < arr.length; i++){
+  obj = arr[i];
+    for (key in obj){
+      value = obj[key];
+      return "<a href=\""+value+"\" target=_blank>"+key+"</a>";
     }
-    $("#loadS").append("<h4>Friends</h4>");
-    entry = f.feed.People;
-    for (i in entry) {
-      e = entry[i];
-      $("#loadS").append("<a href=\""+e.People+"\">"+e.People.key+"</a>");
-    }
-    $("#loadS").append("<h4>Ensembles</h4>");
-    entry = f.feed.Ensembles;
-    for (i in entry) {
-      e = entry[i];
-      $("#loadS").append("<a href=\""+e.Ensembles+"\">"+e.Ensembles.key+"</a>");
-    }
-    $("#loadS").append("<h4>Organizations</h4>");
-    entry = f.feed.Orgs;
-    for (i in entry) {
-      e = entry[i];
-      $("#loadS").append("<a href=\""+e.Orgs+"\">"+e.Orgs.key+"</a>");
-    }
-  });
+  }
 }
 
 function loader(x) {
@@ -169,7 +149,12 @@ function loader(x) {
       break;
     case "social":
       $("#content").append("<article><div id=loadS></div></article>");
-      getSocial();
+      $("#loadS").append([
+      "<h4>Social</h4>",getArrayUrl(socialArray),
+      "<h4>People</h4>",getArrayUrl(peopleArray),
+      "<h4>Ensembles</h4>",getArrayUrl(ensemblesArray),
+      "<h4>Organizations</h4>",getArrayUrl(orgsArray)
+      ]);
       break;
     default:
     break;
