@@ -111,7 +111,7 @@ function getWork() {
 function getSocial() {
   var i, obj, key, value;
     for (var i = 0; i < social.length; i++) {
-      obj = arr[i];
+      obj = social[i];
       $("#loadS").append("<h4>"+obj+"</h4>");
       for (key in obj){
       value = obj[key];
