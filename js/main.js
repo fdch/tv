@@ -116,7 +116,7 @@ function getSocial() {
       $("#loadS").append("<h4>"+key+"</h4>");
       sobj = obj[key];
       for (skey in sobj) {
-        value = sobj[skey];
+        value = sobj.skey;
         $("#loadS").append("<a href=\""+value+"\" target=_blank>"+skey+"</a>");
       }
     }
