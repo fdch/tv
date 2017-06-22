@@ -33,7 +33,10 @@
 "Talea Ensemble":"http://taleaensemble.org/",
 "Ensemble Mise-En":"http://www.miseen.org",
 "Proyecto[Red]Ensamble":"http://www.proyectoredensamble.com.ar",
-"Sapegoat":"http://www.scapegoat.fr",
+"Sapegoat":"http://www.scapegoat.fr"
+} ],
+"Orgs" :
+[ {
 "Waverly Project":"http://www.waverlyproject.org",
 "Bienal Composicion Cordoba":"http://www.cordobabienal.com",
 "Puredata":"http://msp.ucsd.edu/",
