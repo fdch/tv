@@ -123,6 +123,8 @@ function getSocial() {
       $("#loadS").append("<h4>Ensembles</h4>");
       $("#loadS").append("<a href=\""+e.Orgs+"\">"+e.Orgs.key+"</a>");
       $("#loadS").append("<h4>Organizations</h4>");
+    }
+  });
 }
 
 function loader(x) {
