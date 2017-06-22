@@ -108,6 +108,20 @@ function getWork() {
     }
   });
 }
+function getSocial() {
+  for (var arr in socialArray,peopleArray,ensemblesArray,orgsArray) {
+    var i, obj, key, value;
+    for (var i = 0; i < arr.length; i++) {
+      obj = arr[i];
+      $("#loadS").append("<h4>"+obj+"</h4>");
+      for (key in obj){
+        value = obj[key];
+        $("#loadS").append("<a href=\""+value+"\" target=_blank>"+key+"</a>");
+      }
+    }
+  }
+}
+
 function loader(x) {
   $("#content").html("");
   $("#backvideo").hide();
@@ -137,15 +151,7 @@ function loader(x) {
       break;
     case "social":
       $("#content").append("<article><div id=loadS></div></article>");
-      var i, arr=x, obj, key, value;
-      for (var i = 0; i < arr.length; i++) {
-        obj = arr[i];
-        $("#loadS").append("<h4>"+obj+"</h4>");
-        for (key in obj){
-          value = obj[key];
-          $("#loadS").append("<a href=\""+value+"\" target=_blank>"+key+"</a>");
-        }
-      }
+      getSocial();
       break;
     default:
     break;
