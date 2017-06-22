@@ -110,7 +110,7 @@ function getWork() {
 }
 function getSocial() {
   var i, obj, key, value, skey, sobj;
-  for (var i = 0; i < social.length; i++) {
+  for (i = 0; i < social.length; i++) {
     obj = social[i];
     for (key in obj) {
       value = obj[key];
@@ -118,7 +118,7 @@ function getSocial() {
       if(key === "Soc") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
       if(key === "Org") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
       if(key === "Ens") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
-      $("#loadS").append("<a href=\""+value+"\" target=_blank>"+key+"</a>");
+      $("#loadS").append("<a href=\""+value+"\" target=_blank><h5>"+key+"</h5></a>");
     }
   }
 }
