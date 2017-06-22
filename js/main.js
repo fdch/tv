@@ -130,6 +130,12 @@ function loader(x) {
     case "repo":
       window.open(x);
       break;
+    case "games" :
+    case "contact" :
+      $("#content").html("").append(x);
+      $("#backvideo").hide();
+      $('article').width(w).height(h);
+      break;
     case "work":
       $("#content").html("").append("<nav id=workM></nav><article></article>");
       getNworks();
@@ -138,9 +144,6 @@ function loader(x) {
     case "social":
       $("#content").html("").append("<article><div id=loadS></div></article>");
       getSocial();
-    case "games" :
-    case "contact" :
-      $("#content").html("").append(x);
     default:
       $("#backvideo").hide();
       $('article').width(w).height(h);
