@@ -83,9 +83,9 @@ function getWork() {
       nwork += "<p>"+eprog+"</p><h6>fdch: "+estam+"</h6></div>";
       wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\">"+etitl+"</span>";
       wmitems.push(wmitem);
-      $("#workM").append(wmitems.join(" "));
       $("#content article").prepend(nwork);
     }
+    $("#workM").append(wmitems.join(" "));
     vis("id-"+featWork.replace(/ /g,"_").toLowerCase());
   });
 }
