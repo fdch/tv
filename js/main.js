@@ -153,8 +153,6 @@ function loader(x) {
       $("#backvideo").hide();
       $('article').width(w).height(h);
       break;
-    default;
-      break;
   }
 }
 
