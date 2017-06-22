@@ -140,7 +140,7 @@ function loader(x) {
       getSocial();
     case "games" :
     case "contact" :
-      $("#content").html("").append(x];
+      $("#content").html("").append(x);
     default:
       $("#backvideo").hide();
       $('article').width(w).height(h);
