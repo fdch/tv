@@ -21,7 +21,7 @@ function makeMenu(m, len, mitem, type) {
   var i;
   m.append("<nav>");
   for (i = 0;i < len; i++) {
-    m.append("<"+type+" class=menuitem onClick=\"loader(\'" + mitem[i] + "\')\"> " + mitem[i].replace(/_/g," ").replace(/-/g," ") + " </"+type+">");
+    m.append("<"+type+" class=menuitem onClick=\"loader(" + mitem[i] + ")\"> " + mitem[i].replace(/_/g," ").replace(/-/g," ") + " </"+type+">");
   }
   m.append("</nav>");
 }
@@ -139,14 +139,21 @@ function loader(x) {
     case "work":
       $("#content").html("").append("<nav id=workM></nav><article></article>");
       getNworks();
+      $("#backvideo").hide();
+      $('article').width(w).height(h);
+      break;
     case "bio":
       $("#content").html("").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
+      $("#backvideo").hide();
+      $('article').width(w).height(h);
+      break;
     case "social":
       $("#content").html("").append("<article><div id=loadS></div></article>");
       getSocial();
-    default:
       $("#backvideo").hide();
       $('article').width(w).height(h);
+      break;
+    default;
       break;
   }
 }
