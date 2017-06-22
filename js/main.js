@@ -7,7 +7,7 @@ var t = 4333;
 ////////////
 //// The menu (keep items <= 6 chars long)
 ////////////
-var mitem = ["bio", "work", "social", "games", "blog", "video", "code", "contact", "wk"];
+var mitem = ["bio", "work", "social", "games", "blog", "video", "repo", "contact"];
 var lang = "<div id=languages><span class=menulink-left><span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>  <span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span></span></div>";
 //<img class=fd src="img/fd.png" title=fd/></img>
 var prev;
@@ -27,7 +27,6 @@ function makeMenu(m, len, mitem, type) {
 }
 
 
-var workMenu = new Array();
 var bioArray = new Array();
 
 function getContent(x, arr) {
@@ -69,42 +68,43 @@ function loadJSON(x,callback) {
 
 function getNworks() {
   loadJSON(sheetURL, function(response) {
-    $("#content").append("<nav id=workmenu></nav><article></article>");
-    function onclck(x) {
-      return "onclick=\"window.open(\'"+x+"\');\"";
-    }
-    var f = JSON.parse(response);
-    var entry = f.feed.entry;
-    for (var i in entry) {
-      var e = entry[i];
-      var estam = e.gsx$timestamp.$t;
-      var etitl = e.gsx$title.$t;
-      var edate = new Date(e.gsx$date.$t);
-      var eperf = e.gsx$performers.$t;
-      var ecat = e.gsx$category.$t;
-      var edesc = e.gsx$description.$t;
-      var eprog = e.gsx$programnotes.$t;
-      var eiurl = e.gsx$imageurl.$t;
-      var evurl = e.gsx$videourl.$t;
-      var eaurl = e.gsx$audiourl.$t;
-      var esurl = e.gsx$scoreurl.$t;
-      var eloca = e.gsx$location.$t;
-      var nwid = "id-"+etitl.replace(/ /g,"_").toLowerCase();
-      var nwork = "<div \
+    function onclck(x) { return "onclick=\"window.open(\'"+x+"\');\""; }
+    var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
+    var eiurl, evurl, eaurl, esurl, eloca, nwid, nwork, wmitem;
+    f = JSON.parse(response);
+    entry = f.feed.entry;
+    for (i in entry) {
+      e = entry[i];
+      estam = e.gsx$timestamp.$t;
+      etitl = e.gsx$title.$t;
+      edate = new Date(e.gsx$date.$t);
+      eperf = e.gsx$performers.$t;
+      ecat = e.gsx$category.$t;
+      edesc = e.gsx$description.$t;
+      eprog = e.gsx$programnotes.$t;
+      eiurl = e.gsx$imageurl.$t;
+      evurl = e.gsx$videourl.$t;
+      eaurl = e.gsx$audiourl.$t;
+      esurl = e.gsx$scoreurl.$t;
+      eloca = e.gsx$location.$t;
+      nwid = "id-"+etitl.replace(/ /g,"_").toLowerCase();
+      nwork = "<div \
       id="+nwid+" \
       class=\""+ecat.replace(/,/g,'').toLowerCase()+"\" \
       style=\"display:none\">\
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>";
-      if (eiurl) nwork += "<img width="+w+" src=\""+eiurl+"\" "+onclck(eiurl)+" />";
-      nwork += "<h5>Performed by "+eperf+" at "+eloca+" on "+edate.toDateString()+"</h5>";
+      if (eiurl) nwork += "<img width="+w+" src=\""+eiurl+"\"\
+      "+onclck(eiurl)+" />";
+      nwork += "<h5>Performed by "+eperf+" at "+eloca+" on \
+      "+edate.toDateString()+"</h5>";
       if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
       if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       
       nwork += "<p>"+eprog+"</p><h6>fdch: "+estam+"</h6></div>";
-      var wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\"> "+etitl+" </span>";
-      $("#workmenu").prepend(wmitem);
+      wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\"> "+etitl+" </span>";
+      $("#workM").prepend(wmitem);
       $("#content article").prepend(nwork);
     }
   });
@@ -112,12 +112,13 @@ function getNworks() {
 
 function getSocial() {
   loadJSON("content/social", function(response) {
-    $("#content").append("<article><div id=loadFriends></div></article>");
-    var f = JSON.parse(response);
-    for (var key in f) {
+    var f, key, value;
+    f = JSON.parse(response);
+    for (key in f) {
       name = key;
       value = f[key];
-      $("#loadFriends").append("<h5><a href=\"" + value + "\" target=_blank title=\"" + name + "\">" + name + "</a></h5>");
+      $("#loadS").append("<h5><a href=\"" + value + "\"\
+      target=_blank title=\"" + name + "\">" + name + "</a></h5>");
     }
   });
 }
@@ -125,43 +126,23 @@ function getSocial() {
 function loader(x) {
   switch (x) {
     case "blog": 
-      window.open(blogurl);
-      break;
-    case "content/video":
-      window.open(videourl);
-      break;
-    case "code":
-      window.open(repo);
+    case "video":
+    case "repo":
+      window.open(x);
       break;
     case "work":
-      $("#submenu").html("");
-      $("#backvideo").hide();
-      $("#content").html("");
-      makeMenu($('#submenu'), workMenu.length, workMenu, "span");
-      break;
-    case "bio":
-      $("#backvideo").hide();
-      $("#submenu").html("");
-      $("#content").html("").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
-      break;
-    case "wk":
-       $("#backvideo").hide();
-      $("#submenu").html("");
-      $("#content").html("");
+      $("#content").html("").append("<nav id=workM></nav><article></article>");
       getNworks();
-      break;
+    case "bio":
+      $("#content").html("").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
     case "social":
-      $("#backvideo").hide();
-      $("#submenu").html("");
-      $("#content").html("");
+      $("#content").html("").append("<article><div id=loadS></div></article>");
       getSocial();
-      break;
     case "games" :
     case "contact" :
-      $("#backvideo").hide();
-      $("#submenu").html("");
+      $("#content").html("").append(x];
     default:
-      $('#content').load(x);
+      $("#backvideo").hide();
       $('article').width(w).height(h);
       break;
   }
@@ -172,10 +153,8 @@ function randomMargin(t) {
 }
 
 function randomVideo() {
-var len = featURL.length;
-var which = Math.floor(Math.random() * len);
-var video = "<iframe id=backvideo src=\'"+featURL[which]+"\'></iframe>";
-return video;
+  var choose = Math.floor(Math.random() * featURL.length);
+  return "<iframe id=backvideo src=\'"+featURL[choose]+"\'></iframe>";
 }
 
 $(function(){
@@ -183,9 +162,8 @@ $(function(){
   h = Math.max( $(window).height(), window.innerHeight);
   $("head").append(meta);
   var vid = randomVideo();
-  $("body").append([lang,titleData,analytics, vid]);
+  $("body").append([titleData,analytics, vid]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
-  getContent("worklist", workMenu);
   getContent("cv/txt/bio-english.txt", bioArray);
   setInterval(randomMargin(t),t);
 });
