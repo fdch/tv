@@ -15,6 +15,27 @@ function getContent(x, arr) {
     });
   });
 }
+var inr=0;
+$("img").hover(setInterval(
+  function() {
+    this.setAttribute('src', images[i].src);
+    var w = images[i].width;
+    var h = images[i].height;
+    var r = w/h;
+    var title = images[i].title;
+    this.setAttribute('width',200);
+    //this.setAttribute('height',w*r);
+  }, function() {
+    inr++;
+},100));
+var createImage = function(src, title) {
+  var img   = new Image();
+  img.src   = src;
+  img.alt   = title;
+  img.title = title;
+  return img; 
+};
+var images = [];
 function loadJSON(x,callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
@@ -69,8 +90,11 @@ function getWork() {
       style=\"display:none\">\
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>";
-      if (eiurl) nwork += "<img width="+w+" src=\""+eiurl+"\"\
-      "+onclck(eiurl)+" />";
+      if (eiurl) {
+        images.push(createImage(eiurl, etitl));
+        nwork += "<img width="+w+" src=\""+eiurl+"\"\
+        "+onclck(eiurl)+" />";
+      }
       nwork += "<h5>Performed by "+eperf+" at "+eloca+" on \
       "+edate.toDateString()+"</h5>";
       if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
