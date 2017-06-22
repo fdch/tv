@@ -1,22 +1,23 @@
-////////////
-//// Please be extra careful when you edit this file
-////////////
 var w;
 var h;
 var t = 4333;
-////////////
-//// The menu (keep items <= 6 chars long)
-////////////
-var mitem = ["bio", "work", "social", "games", "blog", "video", "code", "contact"];
+var mitem = [
+  "bio",
+  "work",
+  "social",
+  "games",
+  "blog",
+  "video",
+  "code",
+  "contact"
+];
 var lang = "<div id=languages><span class=menulink-left><span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>  <span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span></span></div>";
-//<img class=fd src="img/fd.png" title=fd/></img>
 var prev;
 var vis = function(x) {
   var y = document.getElementById(x);
   if (prev != null) prev.style.display = 'none';
   if (y != null) y.style.display = 'block', prev=y;
 };
-
 function makeMenu(m, len, mitem, type) {
   var i;
   m.append("<nav>");
@@ -25,10 +26,7 @@ function makeMenu(m, len, mitem, type) {
   }
   m.append("</nav>");
 }
-
-
 var bioArray = new Array();
-
 function getContent(x, arr) {
   jQuery.get(x, function(data){
     lines = data.split("\n");
@@ -37,8 +35,6 @@ function getContent(x, arr) {
     });
   });
 }
-
-
 function loadJSON(x,callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
@@ -50,8 +46,8 @@ function loadJSON(x,callback) {
   };
   xobj.send(null);  
 }
-
 /*
+Work info is accessed by:
 "gsx$timestamp": date + time
 "gsx$title"
 "gsx$category": (csv)
@@ -64,7 +60,6 @@ function loadJSON(x,callback) {
 "gsx$audiourl"
 "gsx$scoreurl"
 */
-
 
 function getWork() {
   loadJSON(sheetURL, function(response) {
@@ -122,7 +117,6 @@ function getSocial() {
     }
   }
 }
-
 function loader(x) {
   $("#content").html("");
   $("#backvideo").hide();
@@ -158,16 +152,10 @@ function loader(x) {
     break;
   }
 }
-
-function randomMargin(t) {
-  $(".menuitem").animate({marginRigh:5 * Math.random() + 3},t);
-}
-
 function randomVideo() {
   var choose = Math.floor(Math.random() * featURL.length);
   return "<iframe id=backvideo src=\'"+featURL[choose]+"\'></iframe>";
 }
-
 $(function(){
   w = Math.max( $(window).width(), window.innerWidth);
   h = Math.max( $(window).height(), window.innerHeight);

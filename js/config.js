@@ -1,6 +1,3 @@
-////////////
-//// Below are some editable variables
-////////////
 var url = "https://fdch.github.io/tv";
 var repo = "https://github.com/fdch/";
 var blog = "https://fedecamarahalac.tumblr.com";
@@ -16,32 +13,25 @@ var bioClose = "</article>";
 var sheetID = "1e5dh1sZX1QuFFioC-1ofcPIPhwU9i-lvUzOzn4_3SLQ";
 var magicNumber = "1";
 var sheetURL = "https://spreadsheets.google.com/feeds/list/"+sheetID+"/"+magicNumber+"/public/values?alt=json";
-var contact = "<article><h3>contact</h3><p>Send me an email at <a hred=\"mailto:"+email+"\">"+email+"</a> and I will get in touch with you as fast as humanly possible. You can also follow me on social networks</p><img src=\"img/zissou.gif\" width=200/></article>";
+var contact = "<article><h3>contact</h3><p>Send me an email at <a href=\"mailto:"+email+"\">"+email+"</a> and I will get in touch with you as fast as humanly possible. You can also follow me on social networks</p><img src=\"img/zissou.gif\" width=200/></article>";
 var gameDraw = ["draw/", "img/draw.png", "Draw concentrical polygons as they get smaller. Print page when you are done."];
 var gameType = ["<button onclick=\"window.open(\'"+gameDraw[0]+"\')\" >draw</button><p>"+gameDraw[2]+"</p><img onclick=\"window.open(\'"+gameDraw[0]+"\')\" src=\""+gameDraw[1]+"\"/>",""];
 var games = "<article>"+gameType[0]+"</article>";
-
-////////////
-////Title
-////////////
 var titleData = "<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1><h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2><div id=menu></div><div id=submenu></div><div id=content></div>";
-////////////
-//// Meta properties
-////////////
 var keywords = "fedecamara, camarafede, fedecamarahalac, federico, camara, halac, camarahalac, puredata, lilypond, electronics, live video, instrumental, new music, abstract";
 var fbappid = 123442671081764;
 var meta = "<meta property=og:image content='fdch.github.io/wp/"+logoimage+"'/><meta name=keywords content='"+keywords+"' /><meta name=description content='" + url + "'<meta name=robots content='index, follow' /><meta name=author content='http://githug.io/fdch' /><meta property=fb:app_id content="+fbappid+"/><meta property=og:url content='" + url + "' /><meta property=og:title content='" + title + "' /><meta property=og:site_name content='" + keywords + "'/><title>" + title + " | " + subtitle + "</title>";
 var analytics = "<!--Google Analytics--><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-60190278-1', 'auto');ga('send', 'pageview');</script><!--End Google Analytics-->";
-
 var social = [ {
 "Soc":"Social",
+"Github" : repo,
 "Twitter":"http://www.twitter.com/fedecamarahalac",
-"Facebook":"http://www.facebook.com/fedecamarahalac",
+"Facebook": facebookUrl,
 "SoundCloud":"http://www.soundcloud.com/fedecamarahalac",
-"Vimeo":"http://www.vimeo.com/fedecamarahalac",
+"Vimeo": video,
 "Vine":"http://www.vine.co/fedecamarahalac",
 "YouTube":"https://www.youtube.com/channel/UCzOx-iKaNx9ruddNI6ykTIA",
-"Tumblr":"http://fedecamarahalac.tumblr.com",
+"Tumblr": blog,
 "Flickr":"http://www.flickr.com/federicocamarahalac",
 "Linkedin":"http://linkedin.com/in/fedecamarahalac",
 "Pep":"People",
