@@ -138,12 +138,16 @@ function loader(x) {
     case "social":
       $("#content").append("<article><div id=loadS></div></article>");
       loadJSON("content/social", function(response) {
-        var f, key, value;
+        var f, key, value, child, curl;
         f = JSON.parse(response);
         for (key in f) {
           name = key;
           value = f[key];
-          $("#loadS").append("<h5><a href=\"" + value + "\" target=_blank title=\"" + name + "\">" + name + "</a></h5>");
+          $("#loadS").append("<h4>"+name+"</h4>");
+          for (child in value) {
+            curl = value[child].
+            $("#loadS").append("<h5><a href=\"" + child + "\" target=_blank title=\"" + curl + "\">" + curl + "</a></h5>");
+          }
         }
       });
       break;
