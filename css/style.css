@@ -14,7 +14,7 @@ h1, h2 {
   top:5px;
 }
 span {
- margin:0 4px;
+  margin:0 7px 0 0;
 }
 span:hover {
   cursor:pointer;
