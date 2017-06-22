@@ -47,6 +47,7 @@ function getWork() {
     function onclck(x) { return "onclick=\"window.open(\'"+x+"\');\""; }
     var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
     var eiurl, evurl, eaurl, esurl, eloca, nwid, nwork, wmitem;
+    var wmitems = [];
     f = JSON.parse(response);
     entry = f.feed.entry;
     for (i in entry) {
@@ -81,7 +82,8 @@ function getWork() {
       if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
       nwork += "<p>"+eprog+"</p><h6>fdch: "+estam+"</h6></div>";
       wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\">"+etitl+"</span>";
-      $("#workM").prepend(wmitem);
+      wmitems.push(wmitem);
+      $("#workM").append(wmitems.join(" "));
       $("#content article").prepend(nwork);
     }
     vis("id-"+featWork.replace(/ /g,"_").toLowerCase());
