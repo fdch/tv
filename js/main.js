@@ -117,7 +117,7 @@ function getSocial() {
       sobj = obj[key];
       for (var j = 0; j < sobj.length; j++) {
         value = sobj[j];
-        $("#loadS").append("<a href=\""+value+"\" target=_blank>"+sobj+"</a>");
+        $("#loadS").append("<a href=\""+value+"\" target=_blank>"+sobj[j]+"</a>");
       }
     }
   }
