@@ -113,8 +113,8 @@ function getSocial() {
   for (var i = 0; i < social.length; i++) {
     obj = social[i];
     for (key in obj) {
-      sobj = obj[key];
-      $("#loadS").append("<h4>"+key+"</h4><h5>"+sobj.+"</h5>");
+      value = obj[key];
+      $("#loadS").append("<h4>"+key+"</h4><h5>"+value+"</h5>");
     }
   }
 }
