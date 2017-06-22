@@ -113,16 +113,29 @@ function getSocial() {
   loadJSON("content/social", function(response) {
     var f, e, i, entry, 
     f = JSON.parse(response);
-    entry = f.feed.entry;
+    $("#loadS").append("<h4>Social Media</h4>");
+    entry = f.feed.Social;
     for (i in entry) {
       e = entry[i];
-      $("#loadS").append("<h4>Social Media</h4>");
       $("#loadS").append("<a href=\""+e.Social+"\">"+e.Social.key+"</a>");
-      $("#loadS").append("<h4>Friends</h4>");
+    }
+    $("#loadS").append("<h4>Friends</h4>");
+    entry = f.feed.People;
+    for (i in entry) {
+      e = entry[i];
       $("#loadS").append("<a href=\""+e.People+"\">"+e.People.key+"</a>");
-      $("#loadS").append("<h4>Ensembles</h4>");
+    }
+    $("#loadS").append("<h4>Ensembles</h4>");
+    entry = f.feed.Ensembles;
+    for (i in entry) {
+      e = entry[i];
+      $("#loadS").append("<a href=\""+e.Ensembles+"\">"+e.Ensembles.key+"</a>");
+    }
+    $("#loadS").append("<h4>Organizations</h4>");
+    entry = f.feed.Orgs;
+    for (i in entry) {
+      e = entry[i];
       $("#loadS").append("<a href=\""+e.Orgs+"\">"+e.Orgs.key+"</a>");
-      $("#loadS").append("<h4>Organizations</h4>");
     }
   });
 }
