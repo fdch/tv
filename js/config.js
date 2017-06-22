@@ -70,3 +70,4 @@ var vis = function(x) {
   if (prev != null) prev.style.display = 'none';
   if (y != null) y.style.display = 'block', prev=y;
 };
+var today = new Date();
