@@ -118,7 +118,7 @@ function getSocial() {
       if(key === "Soc") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
       if(key === "Org") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
       if(key === "Ens") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
-      $("#loadS").append("<a href=\""+key+"\" target=_blank>"+value+"</a>");
+      $("#loadS").append("<a href=\""+value+"\" target=_blank>"+key+"</a>");
     }
   }
 }
