@@ -15,6 +15,16 @@ function getContent(x, arr) {
     });
   });
 }
+
+var createImage = function(src, title) {
+  var img   = new Image();
+  img.src   = src;
+  img.alt   = title;
+  img.title = title;
+  return img; 
+};
+var images = [];
+
 var inr=0;
 $("img").hover(setInterval(
   function() {
@@ -28,14 +38,6 @@ $("img").hover(setInterval(
   }, function() {
     inr++;
 },100));
-var createImage = function(src, title) {
-  var img   = new Image();
-  img.src   = src;
-  img.alt   = title;
-  img.title = title;
-  return img; 
-};
-var images = [];
 function loadJSON(x,callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
