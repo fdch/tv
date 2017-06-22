@@ -108,18 +108,6 @@ function getWork() {
     }
   });
 }
-
-function getArrayUrl(x) {
-  var i, arr=x, obj, key, value;
-  for (var i = 0; i < arr.length; i++){
-  obj = arr[i];
-    for (key in obj){
-      value = obj[key];
-      return "<a href=\""+value+"\" target=_blank>"+key+"</a>";
-    }
-  }
-}
-
 function loader(x) {
   $("#content").html("");
   $("#backvideo").hide();
@@ -149,12 +137,15 @@ function loader(x) {
       break;
     case "social":
       $("#content").append("<article><div id=loadS></div></article>");
-      $("#loadS").append([
-      "<h4>Social</h4>",getArrayUrl(socialArray),
-      "<h4>People</h4>",getArrayUrl(peopleArray),
-      "<h4>Ensembles</h4>",getArrayUrl(ensemblesArray),
-      "<h4>Organizations</h4>",getArrayUrl(orgsArray)
-      ]);
+      var i, arr=x, obj, key, value;
+      for (var i = 0; i < arr.length; i++) {
+        obj = arr[i];
+        $("#loadS").append("<h4>"+obj+"</h4>");
+        for (key in obj){
+          value = obj[key];
+          $("#loadS").append("<a href=\""+value+"\" target=_blank>"+key+"</a>");
+        }
+      }
       break;
     default:
     break;
