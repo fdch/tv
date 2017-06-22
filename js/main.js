@@ -145,7 +145,7 @@ function loader(x) {
           value = f[key];
           $("#loadS").append("<h4>"+name+"</h4>");
           for (child in value) {
-            curl = value[child].
+            curl = value[child];
             $("#loadS").append("<h5><a href=\"" + child + "\" target=_blank title=\"" + curl + "\">" + curl + "</a></h5>");
           }
         }
