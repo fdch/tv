@@ -124,7 +124,7 @@ function loader(x) {
       $("#content").append(contact);
       break;
     case "next" :
-      $("#next").append(next);
+      $("#content").append(next);
       break;
     case "work":
       $("#content").append("<nav id=workM></nav><article></article>");
