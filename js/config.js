@@ -18,7 +18,7 @@ var bioClose = "</article>";
 var sheetID = "1e5dh1sZX1QuFFioC-1ofcPIPhwU9i-lvUzOzn4_3SLQ";
 var magicNumber = "1";
 var sheetURL = "https://spreadsheets.google.com/feeds/list/"+sheetID+"/"+magicNumber+"/public/values?alt=json";
-var next = "<article><h3>next</h3><p>I'm delighted to be part of this year's Viginia Tech Cube Fest (<a href=\"https://www.icat.vt.edu/content/cube-fest-2017\" target=_blank>info here</a>)</p></article>";
+var next = "<article><h3>next</h3><p>I'm delighted to be part of this year's Viginia Tech Cube Fest (<a href=\"https://www.icat.vt.edu/content/cube-fest-2017\" target=_blank>info here</a>). I will take part of the Workshop at the Cube and will write a piece to be performed there on August 3rd. More info soon...</p></article>";
 var contact = "<article><h3>contact</h3><p>Send me an email at <a href=\"mailto:"+email+"\">"+email+"</a> and I will get in touch with you as fast as humanly possible. You can also follow me on social networks</p><img src=\"img/zissou.gif\" width=200/></article>";
 var gameDraw = ["draw/", "img/draw.png", "Draw concentrical polygons as they get smaller. Print page when you are done."];
 var gameType = ["<button onclick=\"window.open(\'"+gameDraw[0]+"\')\" >draw</button><p>"+gameDraw[2]+"</p><img onclick=\"window.open(\'"+gameDraw[0]+"\')\" src=\""+gameDraw[1]+"\"/>",""];
