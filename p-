@@ -1,6 +1,5 @@
 #!/bin/bash
 i=0
-#ls -t content  | cut -d . -f1 > worklist
 while [ $i -lt 80 ]
 do
 echo -ne "$(tput setaf 2)="
@@ -18,7 +17,7 @@ git push
 
 DATE=$(date +"%D %T")
 echo "$(tput setaf 2)
-Committed to tv on $DATE $(tput sgr 0)"
+Committed to fdtv on $DATE $(tput sgr 0)"
 while [ $i -gt 0 ]
 do
 sleep 0.1
