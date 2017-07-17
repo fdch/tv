@@ -21,8 +21,7 @@ var magicNumber = "1";
 var sheetURL = "https://spreadsheets.google.com/feeds/list/"+sheetID+"/"+magicNumber+"/public/values?alt=json";
 var next = "<article><h3>next</h3><p>I'm delighted to be part of this year's Viginia Tech Cube Fest (<a href=\"https://www.icat.vt.edu/content/cube-fest-2017\" target=_blank>info here</a>). I will take part of the Workshop at the Cube and will write a piece to be performed there on August 3rd. More info soon...</p></article>";
 var contact = "<article><h3>contact</h3><p>Send me an email at <a href=\"mailto:"+email+"\">"+email+"</a> and I will get in touch with you as fast as humanly possible. You can also follow me on social networks</p><img src=\"img/zissou.gif\" width=200/></article>";
-var gameDraw = ["draw/", "img/draw.png", "Draw concentrical polygons as they get smaller. Print page when you are done.",repo + "misc/tree/master/pong", raw + "misc/master/pong/screen1.jpg", "A Pd Vanilla + Gem version of the pong game.
-"];
+var gameDraw = ["draw/", "img/draw.png", "Draw concentrical polygons as they get smaller. Print page when you are done.",repo + "misc/tree/master/pong", raw + "misc/master/pong/screen1.jpg", "A Pd Vanilla + Gem version of the pong game."];
 var gameType = ["<button onclick=\"window.open(\'"+gameDraw[0]+"\')\" >draw</button><p>"+gameDraw[2]+"</p><img onclick=\"window.open(\'"+gameDraw[0]+"\')\" src=\""+gameDraw[1]+"\"/>", "<button onclick=\"window.open(\'"+gameDraw[3]+"\')\" >PONG</button><p>"+gameDraw[5]+"</p><img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\"/>"];
 var games = "<article>"+gameType.join()+"</article>";
 var titleData = "<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1><h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2><div id=menu></div><div id=submenu></div><div id=content></div>";
