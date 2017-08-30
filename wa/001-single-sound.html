@@ -1,12 +1,14 @@
+<body onmousemove="mouse_position(event);"></body>
 <script>
 window.onload=function() {
   playSound();
   
 }
 var context = new AudioContext();
+var source = context.createBufferSource();
 
 function playSound() {
-  var source = context.createBufferSource();
+  
   var request = new XMLHttpRequest();
 
   request.open('GET','voice.wav',true);
@@ -23,5 +25,10 @@ function playSound() {
   request.send();
   source.start(0);
 }
+
+function mouse_position(e) {
+  source.playbackRate = e.screenX;
+}
+
 
 </script>
