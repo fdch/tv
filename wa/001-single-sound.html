@@ -22,7 +22,7 @@ function playSound() {
     context.decodeAudioData(audioData, function(buffer) {
       source.buffer = buffer;
       source.connect(context.destination);
-      source.loop = true;  
+      //source.loop = true;  
     },
     function(e) { console.log("error decoding " + e.err); });
   }
