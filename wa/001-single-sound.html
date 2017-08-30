@@ -1,4 +1,4 @@
-<body onmousemove="mouse_position(event);" onclick="start_sound();"></body>
+<body onmousemove="mouse_position(event);"></body>
 <script>
 window.onload=function() {
   playSound();
@@ -6,10 +6,6 @@ window.onload=function() {
 }
 var context = new AudioContext();
 var source = context.createBufferSource();
-
-function startSound() {
-  source.start(0);
-}
 
 function playSound() {
   
@@ -27,6 +23,7 @@ function playSound() {
     function(e) { console.log("error decoding " + e.err); });
   }
   request.send();
+  source.start(0);
 }
 
 function mouse_position(e) {
