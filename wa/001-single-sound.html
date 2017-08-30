@@ -1,7 +1,7 @@
 <script>
 window.onload=function() {
   playSound();
-  window.alert();
+  
 }
 var context = new AudioContext();
 
@@ -21,6 +21,7 @@ function playSound() {
     function(e) { console.log("error decoding " + e.err); });
   }
   request.send();
+  source.start(0);
 }
 
 </script>
