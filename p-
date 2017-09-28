@@ -7,7 +7,7 @@ i=$[$i+1]
 done
 echo "$(tput sgr 0)"
 git add .
-if [[ $1 ]] 
+if [ $1 ] 
 then
 git commit -m "$1"
 else
