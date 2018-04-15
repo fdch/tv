@@ -104,10 +104,8 @@ function getEvents() {
       edate = new Date(e.gsx$when.$t);
       ewher= e.gsx$where.$t;
       edesc = e.gsx$description.$t;
-      nwid = "id-"+etitl.replace(/ /g,"_").toLowerCase();
-      nwork = "<div \
-      id="+nwid+" \
-      style=\"display:none\">\
+      // = "id-"+etitl.replace(/ /g,"_").toLowerCase();
+      nwork = "<div>\
       <h3>"+etitl+"</h3>\
       <h4>"+ewher+"</h4>\
       <h5>"+edate.toDateString()+"</h5></div>";
