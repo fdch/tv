@@ -105,10 +105,9 @@ function getEvents() {
       ewher= e.gsx$where.$t;
       edesc = e.gsx$description.$t;
       // = "id-"+etitl.replace(/ /g,"_").toLowerCase();
-      nwork = "<div>\
-      <h3>"+etitl+"</h3>\
-      <h4>"+ewher+"</h4>\
-      <h5>"+edate.toDateString()+"</h5></div>";
+      nwork = "<div><h3>"+etitl+" ("+ewher+")</h3>\
+      <h4>"+edate.toDateString()+"</h4>\
+      <p>"+edesc+"</p></div>";
       $("#content article").prepend(nwork);
     }
   });
