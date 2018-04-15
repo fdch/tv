@@ -108,7 +108,7 @@ function getEvents() {
       nwork = "<div><h3>"+etitl+" ("+ewher+")</h3>\
       <h4>"+edate.toDateString()+"</h4>\
       <p>"+edesc+"</p></div>";
-      $("#content article").prepend(nwork);
+      $("#content article").append(nwork);
     }
   });
 }
