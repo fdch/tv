@@ -97,6 +97,7 @@ function getEvents() {
     var wmitems = [];
     f = JSON.parse(response);
     entry = f.feed.entry;
+    $("#content article").append("<blockquote><ul>");
     for (i in entry) {
       e = entry[i];
       estam = e.gsx$timestamp.$t;
@@ -105,11 +106,12 @@ function getEvents() {
       ewher= e.gsx$where.$t;
       edesc = e.gsx$description.$t;
       // = "id-"+etitl.replace(/ /g,"_").toLowerCase();
-      nwork = "<div><h3>"+etitl+" ("+ewher+")</h3>\
+      nwork = "<li><div><h3>"+etitl+" ("+ewher+")</h3>\
       <h4>"+edate.toDateString()+"</h4>\
-      <p>"+edesc+"</p></div>";
+      <blockquote>"+edesc+"</blockquote></div></li>";
       $("#content article").append(nwork);
     }
+    $("#content article").append("</ul></blockquote>");
   });
 }
 function getSocial() {
