@@ -89,6 +89,32 @@ function getWork() {
     vis("id-"+featWork.replace(/ /g,"_").toLowerCase());
   });
 }
+function getEvents() {
+  loadJSON(eventsURL, function(response) {
+    function onclck(x) { return "onclick=\"window.open(\'"+x+"\');\""; }
+    var f, e, i, entry, estam, etitl, edate, ewher, edesc;
+    var nwid, nwork, wmitem;
+    var wmitems = [];
+    f = JSON.parse(response);
+    entry = f.feed.entry;
+    for (i in entry) {
+      e = entry[i];
+      estam = e.gsx$timestamp.$t;
+      etitl = e.gsx$what.$t;
+      edate = new Date(e.gsx$when.$t);
+      ewher= e.gsx$where.$t;
+      edesc = e.gsx$description.$t;
+      nwid = "id-"+etitl.replace(/ /g,"_").toLowerCase();
+      nwork = "<div \
+      id="+nwid+" \
+      style=\"display:none\">\
+      <h3>"+etitl+"</h3>\
+      <h4>"+ewher+"</h4>\
+      <h5>"+edate.toDateString()+"</h5></div>";
+      $("#content article").prepend(nwork);
+    }
+  });
+}
 function getSocial() {
   var i, obj, key, value, skey, sobj;
   for (i = 0; i < social.length; i++) {
@@ -124,7 +150,8 @@ function loader(x) {
       $("#content").append(contact);
       break;
     case "next" :
-      $("#content").append(next);
+      $("#content").append("<article></article>");
+      getEvents();
       break;
     case "work":
       $("#content").append("<nav id=workM></nav><article></article>");
