@@ -185,5 +185,6 @@ $(function(){
   $("body").append([titleData,analytics, vid]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
   getContent(bioFile, bioArray);
-  setInterval(randomMargin(t),t);
+  setTimeout(randomColor, 10000);
+  //setInterval(randomMargin(t),t);
 });
