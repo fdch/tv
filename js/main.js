@@ -194,7 +194,7 @@ $(function(){
   makeMenu($("#menu"), mitem.length, mitem, "span");
   getContent(bioFile, bioArray);
   var t = 10000;
-  randomColor(t);
+  //randomColor(t);
   setInterval(randomColor(t), t);
   //setInterval(randomMargin(t),t);
 });
