@@ -171,6 +171,12 @@ function randomVideo() {
   var choose = Math.floor(Math.random() * featURL.length);
   return "<iframe id=backvideo src=\'"+featURL[choose]+"\'></iframe>";
 }
+
+function randomColor() {
+  var choose = Math.floor(Math.random() * CSS_COLOR_NAMES.length);
+  $(body).animate({backgroundColor: CSS_COLOR_NAMES[choose]});
+}
+
 $(function(){
   w = Math.max( $(window).width(), window.innerWidth);
   h = Math.max( $(window).height(), window.innerHeight);
