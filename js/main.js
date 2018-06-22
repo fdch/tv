@@ -181,8 +181,8 @@ function randomColor() {
       backgroundColor: CSS_COLOR_NAMES[choose],
       color: CSS_COLOR_NAMES[chooseC]
     });
-  log.choose;
-  log.chooseC;
+  console.log(choose);
+  console.log(chooseC);
 }
 
 $(function(){
