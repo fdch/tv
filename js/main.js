@@ -176,7 +176,7 @@ function randomColor(t) {
   var len = CSS_COLOR_NAMES.length;
   var choose = Math.floor(Math.random() * len);
   var chooseC = Math.floor( (choose + len * 0.5 ) % len);
-  $("body").css(
+  $("body").animate(
     {
       backgroundColor: CSS_COLOR_NAMES[choose],
       color: CSS_COLOR_NAMES[chooseC]
