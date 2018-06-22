@@ -194,6 +194,6 @@ $(function(){
   makeMenu($("#menu"), mitem.length, mitem, "span");
   getContent(bioFile, bioArray);
   randomColor();
-  setTimeout(randomColor, 10000);
+  setTimeout(randomColor, 1000);
   //setInterval(randomMargin(t),t);
 });
