@@ -196,5 +196,6 @@ $(function(){
   var t = 5000;
   //randomColor(t);
   setInterval(randomColor(t), t);
+  $("#menu").click(randomColor(t));
   //setInterval(randomMargin(t),t);
 });
