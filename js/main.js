@@ -173,8 +173,14 @@ function randomVideo() {
 }
 
 function randomColor() {
-  var choose = Math.floor(Math.random() * CSS_COLOR_NAMES.length);
-  $("body").animate({backgroundColor: CSS_COLOR_NAMES[choose]});
+  var len = CSS_COLOR_NAMES.length;
+  var choose = Math.floor(Math.random() * len);
+  $("body").animate(
+    {
+      backgroundColor: CSS_COLOR_NAMES[choose],
+      color: CSS_COLOR_NAMES[(choose+len*0.5)%len]
+
+    });
 }
 
 $(function(){
