@@ -192,22 +192,17 @@ function randomColor(t) {
   // console.log(choose + ": " + CSS_COLOR_NAMES[choose]);
   // console.log(chooseC + ": " + CSS_COLOR_NAMES[chooseC]);
 }
-
+var whichone = 0;
 function funImage(){
-  var imgOne = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/11221571_10207839046474779_8851609088117591325_n.jpg?_nc_cat=0&oh=2f60babff78fec35fcbd51fd5c7c372d&oe=5BA85C3E";
-  var imgTwo = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13606440_10210191954416007_3357317930140210851_n.jpg?_nc_cat=0&oh=b6474cf5f756ef6c894798ddae19ffea&oe=5BB46B52";
-  var whichone = 0;
   $("#menu").click(function(){
-
     $("#rot img").rotate({duration:2, easing:'ease-out' }).fadeTo(400, 0.1);
-
   
     if (whichone == 0) {
       $("#rot img").attr('src', imgTwo).fadeTo(400, 1);
       whichone=1;
     } else {
       $("#rot img").attr('src', imgOne).fadeTo(400, 1);
-      whicone=0;
+      whichone=0;
     }
   })
 }

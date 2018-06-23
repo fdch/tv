@@ -29,7 +29,11 @@ var gameDraw = ["draw/", "img/draw.png", "Draw concentrical polygons as they get
 var gameType = ["<button onclick=\"window.open(\'"+gameDraw[0]+"\')\" >draw</button><p>"+gameDraw[2]+"</p><img onclick=\"window.open(\'"+gameDraw[0]+"\')\" src=\""+gameDraw[1]+"\"/>", "<button onclick=\"window.open(\'"+gameDraw[3]+"\')\" >PONG</button><p>"+gameDraw[5]+"</p><img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\"/>"];
 var games = "<article>"+gameType.join()+"</article>";
 
-var titleData = "<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1><h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2><div id='rot'><img src='' width='30'/></div><div id=menu></div><div id=submenu></div><div id=content></div>";
+var imgOne = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/11221571_10207839046474779_8851609088117591325_n.jpg?_nc_cat=0&oh=2f60babff78fec35fcbd51fd5c7c372d&oe=5BA85C3E";
+var imgTwo = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13606440_10210191954416007_3357317930140210851_n.jpg?_nc_cat=0&oh=b6474cf5f756ef6c894798ddae19ffea&oe=5BB46B52";
+  
+
+var titleData = "<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1><h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2><div id='rot'><img src='"+imgOne+"' width='30'/></div><div id=menu></div><div id=submenu></div><div id=content></div>";
 var keywords = "fedecamara, camarafede, fedecamarahalac, federico, camara, halac, camarahalac, puredata, lilypond, electronics, live video, instrumental, new music, abstract";
 var fbappid = 123442671081764;
 var meta = "<meta property=og:image content='"+bioImage+"'/><meta name=keywords content='"+keywords+"' /><meta name=description content='" + url + "'<meta name=robots content='index, follow' /><meta name=author content='http://githug.io/fdch' /><meta property=fb:app_id content="+fbappid+"/><meta property=og:url content='" + url + "' /><meta property=og:title content='" + title + "' /><meta property=og:site_name content='" + keywords + "'/><title>" + title + " | " + subtitle + "</title>";
