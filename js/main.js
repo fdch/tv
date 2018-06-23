@@ -131,8 +131,10 @@ function getSocial() {
 function getBio() {
     $("#content")
     .append("<article><a href=\""+bioImage+"\"><img src=\""+bioImage+"\" width=200></a>")
-    .append("<p>").load("txt/bio-english.txt").append("</p>")
-    .append("<h4>CV (<a href=\"cv/\" target=\"_blank\">html</a> - <a href=\""+bioCV+"\" target=\"_blank\">pdf</a>)</h4>");
+    .append("<p>")
+    .load("txt/bio-english.txt")
+    .append("</p>")
+    .append("<h4>CV (<a href=\"cv/\" target=\"_blank\">html</a> - <a href=\""+bioCV+"\" target=\"_blank\">pdf</a>)</h4>")
     .append("</article>");
 }
 function loader(x) {
