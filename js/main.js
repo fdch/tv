@@ -194,10 +194,6 @@ function randomColor(t) {
 }
 var whichone = 0;
 
-function imgSrc(x,y){
-  x.
-}
-
 function funImage(){
   $("#menu").click(function(){
     dur = Math.random()*5000;
