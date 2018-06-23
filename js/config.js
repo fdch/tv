@@ -55,6 +55,7 @@ var social = [ {
 "Joe Snape":"http://joesna.pe",
 "Ens":"Ensembles",
 "loadbang":"http://www.loadbang.com",
+"Rage Thormbones":"http://ragethormbones.rocks",
 "Tak":"http://www.takensemble.com",
 "Momenta Quartet":"http://www.momentaquartet.com",
 "Talea Ensemble":"http://taleaensemble.org/",

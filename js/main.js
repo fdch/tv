@@ -128,6 +128,31 @@ function getSocial() {
     }
   }
 }
+function getBio() {
+  loadJSON(eventsURL, function(response) {
+    function onclck(x) { return "onclick=\"window.open(\'"+x+"\');\""; }
+    var f, e, i, entry, estam, etitl, edate, ewher, edesc;
+    var nwid, nwork, wmitem;
+    var wmitems = [];
+    f = JSON.parse(response);
+    entry = f.feed.entry;
+    $("#content article").append("<blockquote><ul>");
+    for (i in entry) {
+      e = entry[i];
+      estam = e.gsx$timestamp.$t;
+      etitl = e.gsx$what.$t;
+      edate = new Date(e.gsx$when.$t);
+      ewher= e.gsx$where.$t;
+      edesc = e.gsx$description.$t;
+      // = "id-"+etitl.replace(/ /g,"_").toLowerCase();
+      nwork = "<li><div><h3>"+etitl+" ("+ewher+")</h3>\
+      <h4>"+edate.toDateString()+"</h4>\
+      <blockquote>"+edesc+"</blockquote></div></li>";
+      $("#content article").append(nwork);
+    }
+    $("#content article").append("</ul></blockquote>");
+  });
+}
 function loader(x) {
   $("#content").html("");
   $("#backvideo").hide();
@@ -176,11 +201,11 @@ function randomColor(t) {
   var len = CSS_COLOR_NAMES.length;
   var choose = Math.floor(Math.random() * len);
   var chooseC = Math.floor( (choose + len * 0.5 ) % len);
-  $("body").css(
+  $("body").animate(
     {
       backgroundColor: CSS_COLOR_NAMES[choose],
       color: CSS_COLOR_NAMES[chooseC]
-    });
+    }, t);
   // console.log(choose + ": " + CSS_COLOR_NAMES[choose]);
   // console.log(chooseC + ": " + CSS_COLOR_NAMES[chooseC]);
 }
