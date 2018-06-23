@@ -8,22 +8,27 @@ var blog = "https://fedecamarahalac.tumblr.com";
 var video = "https://vimeo.com/fedecamarahalac";
 var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
+
 var title = "Multimedianautics";
 var subtitle = "Fede Camara Halac";
-var logoimage = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/15032050_10211430901748916_6498585033629064846_n.jpg?_nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
-var bioFile = "cv/txt/bio-english.txt";
+
+var bioImage = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/15032050_10211430901748916_6498585033629064846_n.jpg?_nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
+var bioCV = "cv/txt/bio-english.txt";
+
 var featWork = "Lorenz Variations";
 var featURL = ["https://player.vimeo.com/video/168692629?title=0&byline=0&portrait=0&likes=0&watchlater=0&share=0","https://www.youtube.com/embed/hXONutQ_vYc?rel=0&amp;controls=0&amp;showinfo=0","https://www.youtube.com/embed/GA0_ieFjpuM?list=PL6f_f6nYVx1dLCGwSP5BQNN78SgNT2L2G&amp;controls=0&amp;showinfo=0","https://www.youtube.com/embed/gErNVvwsOdI?rel=0&amp;controls=0&amp;showinfo=0","https://www.youtube.com/embed/HpPNVJsn3XQ?rel=0&amp;controls=0&amp;showinfo=0", "https://player.vimeo.com/video/189384117?title=0&byline=0&portrait=0&likes=0&watchlater=0&share=0", "https://player.vimeo.com/video/137084409?title=0&byline=0&portrait=0&likes=0&watchlater=0&share=0","https://player.vimeo.com/video/135750747?title=0&byline=0&portrait=0&likes=0&watchlater=0&share=0","https://player.vimeo.com/video/189537568?title=0&byline=0&portrait=0&likes=0&watchlater=0&share=0","https://player.vimeo.com/video/189548950?title=0&byline=0&portrait=0&likes=0&watchlater=0&share=0","https://player.vimeo.com/video/128082938?title=0&byline=0&portrait=0&likes=0&watchlater=0&share=0","https://player.vimeo.com/video/128763368?title=0&byline=0&portrait=0&likes=0&watchlater=0&share=0","https://player.vimeo.com/video/103288412?title=0&byline=0&portrait=0&likes=0&watchlater=0&share=0","https://player.vimeo.com/video/93202065?title=0&byline=0&portrait=0&likes=0&watchlater=0&share=0"];
-var bioOpen = "<article><a href=\""+logoimage+"\"><img src=\""+logoimage+"\" width=200></a><h4>curriculum vitae (<a href=\"cv/\" target=\"_blank\">html</a>, <a href=\"cv/pdf/cv.pdf\" target=\"_blank\">pdf</a>)</h4>";
-var bioClose = "</article>";
+
 var sheetID = "1e5dh1sZX1QuFFioC-1ofcPIPhwU9i-lvUzOzn4_3SLQ";
 var sheetURL = "https://spreadsheets.google.com/feeds/list/"+sheetID+"/1/public/values?alt=json";
+
 var eventsURL = "https://spreadsheets.google.com/feeds/list/"+sheetID+"/2/public/values?alt=json";
-var next = "<article><h3>next</h3><p>I'm delighted to be part of this year's Viginia Tech Cube Fest (<a href=\"https://www.icat.vt.edu/content/cube-fest-2017\" target=_blank>info here</a>). I will take part of the Workshop at the Cube and will write a piece to be performed there on August 3rd. More info soon...</p><img src=\"https://www.icat.vt.edu/sites/default/files/u576/ICAT%20Web%20Splash.jpg\" /></article>";
+
 var contact = "<article><h3>contact</h3><p>Send me an email at <a href=\"mailto:"+email+"\">"+email+"</a> and I will get in touch with you as fast as humanly possible. You can also follow me on social networks</p><img src=\"img/zissou.gif\" width=200/></article>";
+
 var gameDraw = ["draw/", "img/draw.png", "Draw concentrical polygons as they get smaller. Print page when you are done.", repo + "misc/tree/master/pong", raw + "misc/master/pong/screen1.jpg", "A Pd Vanilla + Gem version of the pong game."];
 var gameType = ["<button onclick=\"window.open(\'"+gameDraw[0]+"\')\" >draw</button><p>"+gameDraw[2]+"</p><img onclick=\"window.open(\'"+gameDraw[0]+"\')\" src=\""+gameDraw[1]+"\"/>", "<button onclick=\"window.open(\'"+gameDraw[3]+"\')\" >PONG</button><p>"+gameDraw[5]+"</p><img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\"/>"];
 var games = "<article>"+gameType.join()+"</article>";
+
 var titleData = "<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1><h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2><div id=menu></div><div id=submenu></div><div id=content></div>";
 var keywords = "fedecamara, camarafede, fedecamarahalac, federico, camara, halac, camarahalac, puredata, lilypond, electronics, live video, instrumental, new music, abstract";
 var fbappid = 123442671081764;

@@ -129,29 +129,11 @@ function getSocial() {
   }
 }
 function getBio() {
-  loadJSON(eventsURL, function(response) {
-    function onclck(x) { return "onclick=\"window.open(\'"+x+"\');\""; }
-    var f, e, i, entry, estam, etitl, edate, ewher, edesc;
-    var nwid, nwork, wmitem;
-    var wmitems = [];
-    f = JSON.parse(response);
-    entry = f.feed.entry;
-    $("#content article").append("<blockquote><ul>");
-    for (i in entry) {
-      e = entry[i];
-      estam = e.gsx$timestamp.$t;
-      etitl = e.gsx$what.$t;
-      edate = new Date(e.gsx$when.$t);
-      ewher= e.gsx$where.$t;
-      edesc = e.gsx$description.$t;
-      // = "id-"+etitl.replace(/ /g,"_").toLowerCase();
-      nwork = "<li><div><h3>"+etitl+" ("+ewher+")</h3>\
-      <h4>"+edate.toDateString()+"</h4>\
-      <blockquote>"+edesc+"</blockquote></div></li>";
-      $("#content article").append(nwork);
-    }
-    $("#content article").append("</ul></blockquote>");
-  });
+    $("#content")
+    .append("<article><a href=\""+logoimage+"\"><img src=\""+logoimage+"\" width=200></a>")
+    .append("<p>").load("txt/bio-english.txt").append("</p>")
+    .append("<h4>CV (<a href=\"cv/\" target=\"_blank\">html</a> - <a href=\""+bioCV+"\" target=\"_blank\">pdf</a>)</h4>");
+    .append("</article>");
 }
 function loader(x) {
   $("#content").html("");
