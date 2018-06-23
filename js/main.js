@@ -195,23 +195,21 @@ function randomColor(t) {
 var whichone = 0;
 
 function imgSrc(x,y){
-  x.attr('src', y).fadeTo(400, 1);
+  x.
 }
 
 function funImage(){
   $("#menu").click(function(){
     dur = Math.random()*5000;
-    $("#rot img").rotate({
-        angle: 0,
-        animateTo: 360,
-        duration: dur
-      }).fadeTo(400, 0.1);
+    ang = Math.random()*360*2-360;
+    $("#rot img").rotate({animateTo: ang,duration: dur});
+    setTimeout($("#rot img").fadeTo(400, 0.1),dur);
   
     if (whichone == 0) {
-      imgSrc($("#rot img"),imgTwo);
+      $("#rot img").attr('src', imgTwo).fadeTo(400, 1);
       whichone=1;
     } else {
-      imgSrc($("#rot img"),imgOne);
+       $("#rot img").attr('src', imgOne).fadeTo(400, 1);
       whichone=0;
     }
   })
