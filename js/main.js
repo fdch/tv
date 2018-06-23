@@ -201,7 +201,7 @@ $(function(){
   var vid = randomVideo();
   $("body").append([titleData,analytics, vid]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
-  getContent(bioFile, bioArray);
+  //getContent(bioFile, bioArray);
   var t = 5000;
   //randomColor(t);
   setInterval(randomColor(t), t);
