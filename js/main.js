@@ -193,15 +193,22 @@ function randomColor(t) {
   // console.log(chooseC + ": " + CSS_COLOR_NAMES[chooseC]);
 }
 var whichone = 0;
+
+function imgSrc(x,y){
+  x.attr('src', y).fadeTo(400, 1);
+}
+
 function funImage(){
+  imgID = $("#rot img");
   $("#menu").click(function(){
-    $("#rot img").rotate({duration:2, easing:'ease-out' }).fadeTo(400, 0.1);
+    dur = Math.random()*5;
+    imgID.rotate({duration:dur, easing:'ease-out'}).fadeTo(400, 0.1);
   
     if (whichone == 0) {
-      $("#rot img").attr('src', imgTwo).fadeTo(400, 1);
+      imgSrc(imgID,imgTwo);
       whichone=1;
     } else {
-      $("#rot img").attr('src', imgOne).fadeTo(400, 1);
+      imgSrc(imgID,imgOne);
       whichone=0;
     }
   })
@@ -219,6 +226,7 @@ $(function(){
   var t = 5000;
   //randomColor(t);
   setInterval(randomColor(t), t);
+  funImage();
   $("#menu").click(function() { randomColor(t); } );
   //setInterval(randomMargin(t),t);
 });
