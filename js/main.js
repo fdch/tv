@@ -166,7 +166,7 @@ function loader(x) {
       getWork();
       break;
     case "bio":
-      $("#content").append([bioOpen, "<p>"+bioArray.join("")+"</p>", bioClose]);
+      getBio();
       break;
     case "social":
       $("#content").append("<article><div id=loadS></div></article>");
