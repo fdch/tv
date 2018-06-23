@@ -216,6 +216,6 @@ $(function(){
   //setInterval(function(){randomColor(t)}, t);
   setInterval(function(){funImage()},t);
   $("#menu").click(function() { randomColor(t);funImage(); } );
-  $("#rot").click(function(){rantomVideo();funImage();});
+  $("#rot").click(function(){randomVideo();funImage();});
   //setInterval(randomMargin(t),t);
 });
