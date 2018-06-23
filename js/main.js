@@ -207,7 +207,7 @@ $(function(){
   w = Math.max( $(window).width(), window.innerWidth);
   h = Math.max( $(window).height(), window.innerHeight);
   $("head").append(meta);
-  var vid = featURL[1];
+  var vid = "<iframe id=backvideo src=\'"+featURL[1]+"\'></iframe>";
   // var vid = randomVideo();
   $("body").append([titleData,analytics, vid]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
