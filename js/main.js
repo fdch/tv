@@ -199,7 +199,7 @@ function funImage(){
   ang = Math.random()*360*2-360;
   $("#rot img").rotate({animateTo: ang,duration: dur});
   if (whichone==0) {whichone=1} else {whichone=0}
-  setTimeout(function(){$("#rot img").attr('src', imgArray[whichone])},dur);
+  setTimeout(function(){$("#rot img").attr('src', imgArray[whichone])},dur/2);
 }
 
 
