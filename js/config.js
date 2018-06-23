@@ -33,7 +33,14 @@ var imgOne = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/11221571_10207839046
 var imgTwo = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13606440_10210191954416007_3357317930140210851_n.jpg?_nc_cat=0&oh=b6474cf5f756ef6c894798ddae19ffea&oe=5BB46B52";
   
 
-var titleData = "<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1><h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2><div id='rot' style='float:right'><img src='"+imgOne+"' width='30'/></div><div id=menu></div><div id=submenu></div><div id=content></div>";
+var titleData = "\
+<div id='rot' style='float:right'>\
+	<img src='"+imgOne+"' width='30'/></div>\
+<h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1>\
+<h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2>\
+<div id=menu></div>\
+<div id=submenu></div>\
+<div id=content></div>";
 var keywords = "fedecamara, camarafede, fedecamarahalac, federico, camara, halac, camarahalac, puredata, lilypond, electronics, live video, instrumental, new music, abstract";
 var fbappid = 123442671081764;
 var meta = "<meta property=og:image content='"+bioImage+"'/><meta name=keywords content='"+keywords+"' /><meta name=description content='" + url + "'<meta name=robots content='index, follow' /><meta name=author content='http://githug.io/fdch' /><meta property=fb:app_id content="+fbappid+"/><meta property=og:url content='" + url + "' /><meta property=og:title content='" + title + "' /><meta property=og:site_name content='" + keywords + "'/><title>" + title + " | " + subtitle + "</title>";
