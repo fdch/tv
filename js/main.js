@@ -195,13 +195,11 @@ function randomColor(t) {
 var whichone = 0;
 
 function funImage(){
-  $("#menu").click(function(){
-    dur = Math.random()*5000;
-    ang = Math.random()*360*2-360;
-    $("#rot img").rotate({animateTo: ang,duration: dur});
-    if (whichone==0) {whichone=1} else {whichone=0}
-    setTimeout($("#rot img").attr('src', imgArray[whichone]),dur);
-  })
+  dur = Math.random()*5000;
+  ang = Math.random()*360*2-360;
+  $("#rot img").rotate({animateTo: ang,duration: dur});
+  if (whichone==0) {whichone=1} else {whichone=0}
+  setTimeout($("#rot img").attr('src', imgArray[whichone]),dur);
 }
 
 
@@ -216,7 +214,7 @@ $(function(){
   var t = 5000;
   //randomColor(t);
   setInterval(randomColor(t), t);
-  funImage();
-  $("#menu").click(function() { randomColor(t); } );
+  setTimeout(funImage(),t);
+  $("#menu").click(function() { randomColor(t);funImage(); } );
   //setInterval(randomMargin(t),t);
 });
