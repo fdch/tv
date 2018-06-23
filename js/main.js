@@ -199,16 +199,15 @@ function imgSrc(x,y){
 }
 
 function funImage(){
-  imgID = $("#rot img");
   $("#menu").click(function(){
     dur = Math.random()*5;
-    imgID.rotate({duration:dur, easing:'ease-out'}).fadeTo(400, 0.1);
+    $("#rot img").rotate({duration:dur, easing:'ease-out'}).fadeTo(400, 0.1);
   
     if (whichone == 0) {
-      imgSrc(imgID,imgTwo);
+      imgSrc($("#rot img"),imgTwo);
       whichone=1;
     } else {
-      imgSrc(imgID,imgOne);
+      imgSrc($("#rot img"),imgOne);
       whichone=0;
     }
   })
