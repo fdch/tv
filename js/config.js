@@ -29,13 +29,12 @@ var gameDraw = ["draw/", "img/draw.png", "Draw concentrical polygons as they get
 var gameType = ["<button onclick=\"window.open(\'"+gameDraw[0]+"\')\" >draw</button><p>"+gameDraw[2]+"</p><img onclick=\"window.open(\'"+gameDraw[0]+"\')\" src=\""+gameDraw[1]+"\"/>", "<button onclick=\"window.open(\'"+gameDraw[3]+"\')\" >PONG</button><p>"+gameDraw[5]+"</p><img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\"/>"];
 var games = "<article>"+gameType.join()+"</article>";
 
-var imgOne = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/11221571_10207839046474779_8851609088117591325_n.jpg?_nc_cat=0&oh=2f60babff78fec35fcbd51fd5c7c372d&oe=5BA85C3E";
-var imgTwo = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/13606440_10210191954416007_3357317930140210851_n.jpg?_nc_cat=0&oh=b6474cf5f756ef6c894798ddae19ffea&oe=5BB46B52";
+var imgArray = ["img/imgone.png","img/imgtwo.png"];
   
 
 var titleData = "\
 <div id='rot' style='float:right'>\
-	<img src='"+imgOne+"' width='30'/></div>\
+	<img src='"+imgArray[0]+"' width='30'/></div>\
 <h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1>\
 <h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2>\
 <div id=menu></div>\

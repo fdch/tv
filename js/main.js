@@ -199,13 +199,12 @@ function funImage(){
     dur = Math.random()*5000;
     ang = Math.random()*360*2-360;
     $("#rot img").rotate({animateTo: ang,duration: dur});
-    setTimeout($("#rot img").fadeTo(400, 0.1),dur);
-  
+    $("#rot img").fadeTo(dur/2, 0);
+    setTimeout($("#rot img").attr('src', imgArray[whichone]),dur/2);
+    setTimeout($("#rot img").fadeTo(dur/2, 1),dur/2);
     if (whichone == 0) {
-      $("#rot img").attr('src', imgTwo).fadeTo(400, 1);
       whichone=1;
     } else {
-       $("#rot img").attr('src', imgOne).fadeTo(400, 1);
       whichone=0;
     }
   })
