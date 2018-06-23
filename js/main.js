@@ -198,10 +198,12 @@ function funImage(){
   $("#menu").click(function(){
     dur = Math.random()*5000;
     ang = Math.random()*360*2-360;
-    $("#rot img").rotate({animateTo: ang,duration: dur});
-    $("#rot img").fadeTo(dur/2, 0);
-    setTimeout(($("#rot img").attr('src', imgArray[whichone])),dur/2);
-    setTimeout(($("#rot img").fadeTo(dur/2, 1)),dur/2);
+    $("#rot img")
+    .rotate({animateTo: ang,duration: dur})
+    .fadeTo(dur/2, 0)
+    .attr('src', imgArray[whichone])
+    .fadeTo(dur/2, 1);
+
     if (whichone == 0) {
       whichone=1;
     } else {
