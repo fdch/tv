@@ -207,10 +207,10 @@ $(function(){
   w = Math.max( $(window).width(), window.innerWidth);
   h = Math.max( $(window).height(), window.innerHeight);
   $("head").append(meta);
-  var vid = randomVideo();
+  var vid = featURL[1];
+  // var vid = randomVideo();
   $("body").append([titleData,analytics, vid]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
-  //getContent(bioFile, bioArray);
   var t = 5000;
   //randomColor(t);
   //setInterval(function(){randomColor(t)}, t);
