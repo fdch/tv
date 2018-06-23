@@ -201,11 +201,11 @@ function randomColor(t) {
   var len = CSS_COLOR_NAMES.length;
   var choose = Math.floor(Math.random() * len);
   var chooseC = Math.floor( (choose + len * 0.5 ) % len);
-  $("body").animate(
+  $("body").css(
     {
       backgroundColor: CSS_COLOR_NAMES[choose],
       color: CSS_COLOR_NAMES[chooseC]
-    }, t);
+    });
   // console.log(choose + ": " + CSS_COLOR_NAMES[choose]);
   // console.log(chooseC + ": " + CSS_COLOR_NAMES[chooseC]);
 }
