@@ -213,8 +213,8 @@ $(function(){
   //getContent(bioFile, bioArray);
   var t = 5000;
   //randomColor(t);
-  setInterval(function(){randomColor(t)}, t);
-  setTimeout(function(){funImage()},t);
+  //setInterval(function(){randomColor(t)}, t);
+  setInterval(function(){funImage()},t);
   $("#menu").click(function() { randomColor(t);funImage(); } );
   //setInterval(randomMargin(t),t);
 });
