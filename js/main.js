@@ -200,8 +200,12 @@ function imgSrc(x,y){
 
 function funImage(){
   $("#menu").click(function(){
-    dur = Math.random()*5;
-    $("#rot img").rotate({duration:dur, easing:'ease-out'}).fadeTo(400, 0.1);
+    dur = Math.random()*5000;
+    $("#rot img").rotate({
+        angle: 0,
+        animateTo: 360,
+        duration: dur
+      }).fadeTo(400, 0.1);
   
     if (whichone == 0) {
       imgSrc($("#rot img"),imgTwo);
