@@ -199,7 +199,7 @@ function funImage(){
   ang = Math.random()*360*2-360;
   $("#rot img").rotate({animateTo: ang,duration: dur});
   if (whichone==0) {whichone=1} else {whichone=0}
-  setTimeout($("#rot img").attr('src', imgArray[whichone]),dur);
+  setTimeout(function(){$("#rot img").attr('src', imgArray[whichone])},dur);
 }
 
 
@@ -213,8 +213,8 @@ $(function(){
   //getContent(bioFile, bioArray);
   var t = 5000;
   //randomColor(t);
-  setInterval(randomColor(t), t);
-  setTimeout(funImage(),t);
+  setInterval(function(){randomColor(t)}, t);
+  setTimeout(function(){funImage()},t);
   $("#menu").click(function() { randomColor(t);funImage(); } );
   //setInterval(randomMargin(t),t);
 });
