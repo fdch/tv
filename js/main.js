@@ -177,7 +177,7 @@ function loader(x) {
 }
 function randomVideo() {
   var choose = Math.floor(Math.random() * featURL.length);
-  return "<iframe id=backvideo src=\'"+featURL[choose]+"\'></iframe>";
+  $("#backvideo").attr('src',featURL[choose]);
 }
 
 function randomColor(t) {
@@ -216,5 +216,6 @@ $(function(){
   //setInterval(function(){randomColor(t)}, t);
   setInterval(function(){funImage()},t);
   $("#menu").click(function() { randomColor(t);funImage(); } );
+  $("#rot").click(function(){rantomVideo();});
   //setInterval(randomMargin(t),t);
 });
