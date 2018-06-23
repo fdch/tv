@@ -132,7 +132,7 @@ function getBio() {
     $("#content")
     .append("<article><a href=\""+bioImage+"\"><img src=\""+bioImage+"\" width=200></a>")
     .append("<p></p>")
-    .append("<h4>CV (<a href=\"cv/\" target=\"_blank\">html</a> - <a href=\""+bioCV+"\" target=\"_blank\">pdf</a>)</h4>")
+    .append("<h4>CV (<a href=\"cv/\" target=\"_blank\">html</a> - <a href=\""+bioCV+"\" target=\"_blank\">txt</a>)</h4>")
     .append("</article>");
     $("#content p").load("cv/txt/bio-english.txt");
 }
