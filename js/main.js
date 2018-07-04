@@ -210,6 +210,7 @@ function randomColor(preset){
   var loff = preset[1];
   var dran = preset[2];
   var doff = preset[3];
+  console.log(preset);
   var light = "rgb("+pdRandom(lran,loff)+","+pdRandom(lran,loff)+","+pdRandom(lran,loff)+")";
   var dark = "rgb("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+")";
   $("body").css(
