@@ -1,6 +1,8 @@
 var w, h, t = 4333;
 var mitem = ["bio", "work", "events", "social", "games", "contact", "blog", "video", "fdch"];
 
+var stylesheet = "css/style.css";
+
 // var lang = "\<div id=languages><span class=menulink-left><span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>  <span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span></span></div>";
 
 var url = "https://fdch.github.io/tv";
@@ -107,16 +109,17 @@ electronics, live video, instrumental, new music, abstract";
 var fbappid = 123442671081764;
 
 var meta = "\
+<link rel=\"stylesheet\" href=\""+stylesheet+"\"></link>\
+<link rel=\"icon\"  type=\"image/png\"\ href=\""+favicon+">\
 <meta property=og:image content='"+imgArray[0]+"'/>\
 <meta name=keywords content='"+keywords+"' />\
 <meta name=description content='" + url + "'\
 <meta name=robots content='index, follow' />\
-<meta name=author content='http://githug.io/fdch' />\
+<meta name=author content='"+repo+"' />\
 <meta property=fb:app_id content="+fbappid+"/>\
 <meta property=og:url content='" + url + "' />\
 <meta property=og:title content='" + title + "' />\
 <meta property=og:site_name content='" + keywords + "'/>\
-<link rel=\"icon\"  type=\"image/png\"\ href=\""+favicon+">\
 <title>" + title + " | " + subtitle + "</title>";
 
 var social = [ {
