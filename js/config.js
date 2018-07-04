@@ -11,7 +11,7 @@ var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 
 var color_preset = {
 	mid:[55,200,100,20],
-	high:[10,245,10,0],
+	high:[30,190,50,10],
 	rand:[255,0,255,0]
 };
 
