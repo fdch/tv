@@ -206,8 +206,8 @@ function pickColor(thres,low){
 }
 
 function randomColor(t){
-  var dark = "("+pickColor(50,0)+","+pickColor(50,0)+","+pickColor(50,0)+")";
-  var light = "("+pickColor(64,64)+","+pickColor(64,64)+","+pickColor(64,64)+")";
+  var dark = "rgb("+pickColor(100,0)+","+pickColor(100,0)+","+pickColor(100,0)+")";
+  var light = "rgb("+pickColor(128,128)+","+pickColor(128,128)+","+pickColor(128,128)+")";
   $("body").css(
     {
       backgroundColor: dark,
