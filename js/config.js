@@ -102,7 +102,11 @@ var titleData = "\
 <div id=submenu></div>\
 <div id=content></div>";
 
-var bioEnglish = load("cv/txt/bio-english.txt");
+var bioEnglish = "";
+
+$.get('cv/txt/bio-english.txt', function(data){ bioEnglish = data });
+ 
+
 
 var keywords = "fdch, fedecamara, camarafede, fedecamarahalac,\
 federico, camara, halac, camarahalac, puredata, lilypond,\
