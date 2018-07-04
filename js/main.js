@@ -98,6 +98,7 @@ function getEvents() {
     f = JSON.parse(response);
     entry = f.feed.entry;
     $("#content article").append("<blockquote><ul>");
+    var today = new Date().toDateString();
     for (i in entry) {
       e = entry[i];
       estam = e.gsx$timestamp.$t;
@@ -106,10 +107,17 @@ function getEvents() {
       ewher= e.gsx$where.$t;
       edesc = e.gsx$description.$t;
       // = "id-"+etitl.replace(/ /g,"_").toLowerCase();
+      
+      
+
       nwork = "<li><div><h3>"+etitl+" ("+ewher+")</h3>\
       <h4>"+edate.toDateString()+"</h4>\
       <blockquote>"+edesc+"</blockquote></div></li>";
-      $("#content article").append(nwork);
+      if (today < edate) {
+        $("#content article").append(nwork);
+      } else {
+        $("#content article").prepend(nwork);
+      }
     }
     $("#content article").append("</ul></blockquote>");
   });
