@@ -206,12 +206,12 @@ function pdRandom(range,offset){
 }
 
 function randomColor(preset){
-  var lr = preset[0];
-  var lo = preset[1];
-  var dr = preset[2];
-  var dp = preset[3];
-  var light = "rgb("+pdRandom(lr,lo)+","+pdRandom(lr,lo)+","+pdRandom(lr,lo)+")";
-  var dark = "rgb("+pdRandom(dr,do)+","+pdRandom(dr,do)+","+pdRandom(dr,do)+")";
+  var lran = preset[0];
+  var loff = preset[1];
+  var dran = preset[2];
+  var doff = preset[3];
+  var light = "rgb("+pdRandom(lran,loff)+","+pdRandom(lran,loff)+","+pdRandom(lran,loff)+")";
+  var dark = "rgb("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+")";
   $("body").css(
     {
       backgroundColor: dark,
