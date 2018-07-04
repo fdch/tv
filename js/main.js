@@ -188,18 +188,36 @@ function randomVideo() {
   $("#backvideo").attr('src',featURL[choose]);
 }
 
-function randomColor(t) {
-  var len = CSS_COLOR_NAMES.length;
-  var choose = Math.floor(Math.random() * len);
-  var chooseC = Math.floor( (choose + len * 0.5 ) % len);
+// function randomColor(t) {
+//   var len = CSS_COLOR_NAMES.length;
+//   var choose = Math.floor(Math.random() * len);
+//   var chooseC = Math.floor( (choose + len * 0.5 ) % len);
+//   $("body").css(
+//     {
+//       backgroundColor: CSS_COLOR_NAMES[choose],
+//       color: CSS_COLOR_NAMES[chooseC]
+//     });
+//   // console.log(choose + ": " + CSS_COLOR_NAMES[choose]);
+//   // console.log(chooseC + ": " + CSS_COLOR_NAMES[chooseC]);
+// }
+
+function pickColor(thres,low){
+  return Math.floor(Math.random() * thres)+low;
+}
+
+function randomColor(t){
+  var dark = "("+pickColor(50,0)+","+pickColor(50,0)+","+pickColor(50,0)+")";
+  var light = "("+pickColor(64,64)+","+pickColor(64,64)+","+pickColor(64,64)+")";
   $("body").css(
     {
-      backgroundColor: CSS_COLOR_NAMES[choose],
-      color: CSS_COLOR_NAMES[chooseC]
+      backgroundColor: dark,
+      color: light
     });
-  // console.log(choose + ": " + CSS_COLOR_NAMES[choose]);
-  // console.log(chooseC + ": " + CSS_COLOR_NAMES[chooseC]);
 }
+
+
+
+
 var whichone = 0;
 
 function funImage(){
