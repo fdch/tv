@@ -243,14 +243,14 @@ $(function(){
   $("body").append([titleData,analytics, vid]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
   var t = 5000;
-  randomColor(color_preset[0]);
+  randomColor(color_preset);
   //setInterval(function(){randomColor(t)}, t);
     setInterval(function(){funImage()},t);
 
 
     // console.log(color_preset[0])
 
-  $("#menu").click(function() { randomColor(color_preset[0]);funImage(); } );
+  $("#menu").click(function() { randomColor(color_preset);funImage(); } );
   // $("#menu").click(function() { ;funImage(); } );
 
   $("#rot").click(function(){randomVideo();funImage();});

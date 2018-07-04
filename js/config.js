@@ -9,7 +9,7 @@ var video = "https://vimeo.com/fedecamarahalac";
 var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 
-var color_preset = ["55,200,100,20", "10,245,10,0", "255,0,255,0"];
+var color_preset = [55,200,100,20];
 
 var title = "fdch";
 var subtitle = "Fede Camara Halac";
