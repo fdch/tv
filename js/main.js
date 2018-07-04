@@ -201,13 +201,13 @@ function randomVideo() {
 //   // console.log(chooseC + ": " + CSS_COLOR_NAMES[chooseC]);
 // }
 
-function pickColor(thres,low){
-  return Math.floor(Math.random() * thres)+low;
+function pdRandom(range,offset){
+  return Math.floor(Math.random() * range) + offset;
 }
 
-function randomColor(t){
-  var dark = "rgb("+pickColor(100,0)+","+pickColor(100,0)+","+pickColor(100,0)+")";
-  var light = "rgb("+pickColor(128,128)+","+pickColor(128,128)+","+pickColor(128,128)+")";
+function randomColor(lr,lo,dr,do){
+  var light = "rgb("+pdRandom(lr,lo)+","+pdRandom(lr,lo)+","+pdRandom(lr,lo)+")";
+  var dark = "rgb("+pdRandom(dr,do)+","+pdRandom(dr,do)+","+pdRandom(dr,do)+")";
   $("body").css(
     {
       backgroundColor: dark,
@@ -238,10 +238,13 @@ $(function(){
   $("body").append([titleData,analytics, vid]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
   var t = 5000;
-  //randomColor(t);
+  randomColor(color_preset[0]);
   //setInterval(function(){randomColor(t)}, t);
   setInterval(function(){funImage()},t);
-  $("#menu").click(function() { randomColor(t);funImage(); } );
+
+
+  $("#menu").click(function() { randomColor(color_preset[0]);funImage(); } );
+
   $("#rot").click(function(){randomVideo();funImage();});
   //setInterval(randomMargin(t),t);
 });
