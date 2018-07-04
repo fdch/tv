@@ -205,7 +205,11 @@ function pdRandom(range,offset){
   return Math.floor(Math.random() * range) + offset;
 }
 
-function randomColor(lr,lo,dr,do){
+function randomColor(preset){
+  var lr = preset[0];
+  var lo = preset[1];
+  var dr = preset[2];
+  var dp = preset[3];
   var light = "rgb("+pdRandom(lr,lo)+","+pdRandom(lr,lo)+","+pdRandom(lr,lo)+")";
   var dark = "rgb("+pdRandom(dr,do)+","+pdRandom(dr,do)+","+pdRandom(dr,do)+")";
   $("body").css(
