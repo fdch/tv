@@ -155,7 +155,7 @@ function loader(x) {
     case "video":
     window.open(video);
       break;
-    case "code":
+    case "fdch":
       window.open(repo);
       break;
     case "games" :
@@ -164,7 +164,7 @@ function loader(x) {
     case "contact" :
       $("#content").append(contact);
       break;
-    case "next" :
+    case "events" :
       $("#content").append("<article></article>");
       getEvents();
       break;
