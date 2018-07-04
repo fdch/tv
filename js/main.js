@@ -210,7 +210,6 @@ function randomColor(preset){
   var loff = preset[1];
   var dran = preset[2];
   var doff = preset[3];
-  console.log(preset[1]);
   var light = "rgb("+pdRandom(lran,loff)+","+pdRandom(lran,loff)+","+pdRandom(lran,loff)+")";
   var darky = "rgb("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+")";
   $("body").css(
@@ -243,14 +242,14 @@ $(function(){
   $("body").append([titleData,analytics, vid]);
   makeMenu($("#menu"), mitem.length, mitem, "span");
   var t = 5000;
-  randomColor(color_preset);
+  randomColor(color_preset["high"]);
   //setInterval(function(){randomColor(t)}, t);
-    setInterval(function(){funImage()},t);
+  setInterval(function(){funImage()},t);
 
 
     // console.log(color_preset[0])
 
-  $("#menu").click(function() { randomColor(color_preset);funImage(); } );
+  $("#menu").click(function() { randomColor(color_preset["high"]);funImage(); } );
   // $("#menu").click(function() { ;funImage(); } );
 
   $("#rot").click(function(){randomVideo();funImage();});
