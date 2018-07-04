@@ -151,7 +151,7 @@ function getBio() {
     .append("<p></p>")
     .append("<h4>CV (<a href=\"cv/\" target=\"_blank\">html</a> - <a href=\""+bioCV+"\" target=\"_blank\">txt</a>)</h4>")
     .append("</article>");
-    $("#content p").load("cv/txt/bio-english.txt");
+    $("#content p").append(bioEnglish);
 }
 function loader(x) {
   $("#content").html("");

@@ -102,25 +102,30 @@ var titleData = "\
 <div id=submenu></div>\
 <div id=content></div>";
 
+var bioEnglish = load("cv/txt/bio-english.txt");
+
 var keywords = "fdch, fedecamara, camarafede, fedecamarahalac,\
 federico, camara, halac, camarahalac, puredata, lilypond,\
-electronics, live video, instrumental, new music, abstract";
-
+electronics, live-video, instrumental, new-music, abstract";
 var fbappid = 123442671081764;
+var viewport = "width=device-width, initial-scale=1.0";
+var site_name =  title + " | " + subtitle; 
+var robots  = "index,follow"
 
 var meta = "\
+<title>"+site_name+"</title>\
 <link rel=\"stylesheet\" href=\""+stylesheet+"\"></link>\
-<link rel=\"icon\"  type=\"image/png\"\ href=\""+favicon+">\
-<meta property=og:image content='"+imgArray[0]+"'/>\
-<meta name=keywords content='"+keywords+"' />\
-<meta name=description content='" + url + "'\
-<meta name=robots content='index, follow' />\
-<meta name=author content='"+repo+"' />\
-<meta property=fb:app_id content="+fbappid+"/>\
-<meta property=og:url content='" + url + "' />\
-<meta property=og:title content='" + title + "' />\
-<meta property=og:site_name content='" + keywords + "'/>\
-<title>" + title + " | " + subtitle + "</title>";
+<link rel=\"icon\"  type=\"image/png\" href=\""+favicon+"\">\
+<meta property=og:image          content='" + imgArray[0] +"'/>\
+<meta name=keywords              content='" + keywords    +"' />\
+<meta name=description           content='" + bioEnglish  + "'\
+<meta name=robots                content='" + robots      + "' />\
+<meta name=author                content='" + repo        +"' />\
+<meta name=viewport              content='" + viewport    + "'>\
+<meta property=fb:app_id         content='" + fbappid     + "'/>\
+<meta property=og:url            content='" + url         +     "' />\
+<meta property=og:title          content='" + title       + "' />\
+<meta property=og:site_name      content='" + site_name   + "'/>";
 
 var social = [ {
 "Soc":"Social",
