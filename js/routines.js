@@ -24,7 +24,7 @@ function linkify(x,y,blank){
   } else {
     target="_top";
   }
-  var title = y.slice(0, 47);
+  var title = y.slice(0, 44)+"...";
   thelink = "<a target=\""+target+"\" href=\""+y+"\" alt=\""+x+"\" title=\""+title+"\">"+x+"</a>";
   
   return thelink;
