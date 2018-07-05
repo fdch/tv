@@ -1,10 +1,6 @@
 var w, h, t = 4333;
 var mitem = ["bio", "work", "events", "social", "games", "contact", "blog", "video", "fdch"];
 
-var stylesheet = "css/style.css";
-
-// var lang = "\<div id=languages><span class=menulink-left><span id=english ><spa class=eng>[</spa>en<spa class=eng>]</spa></span>  <span id=spanish ><spa class=spa >[</spa>es<spa class=spa >]</span></span></div>";
-
 var url = "https://fdch.github.io/tv";
 var repo = "https://github.com/fdch/";
 var raw = "https://raw.githubusercontent.com/fdch/";
@@ -130,7 +126,6 @@ var robots  = "index,follow"
 
 var meta = "\
 <title>"+site_name+"</title>\
-<link rel=\"stylesheet\" href=\""+stylesheet+"\"></link>\
 <link rel=\"icon\"  type=\"image/png\" href=\""+favicon+"\">\
 <meta property=og:image          content='" + imgArray[0] +"'/>\
 <meta name=keywords              content='" + keywords    +"' />\
