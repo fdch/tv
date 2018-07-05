@@ -20,9 +20,9 @@ var title = "fdch";
 var subtitle = "Fede Camara Halac";
 
 var bioImage = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/15032050_10211430901748916_6498585033629064846_n.jpg?_nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
-var bioCV = "cv/txt/bio-english.txt";
-var bioEnglish = repo + "cv/txt/bio-english.txt";
-var bioSpanish = repo + "cv/txt/bio-spanish.txt";
+
+var bioEnglish = "cv/txt/bio-english.txt";
+var bioSpanish = "cv/txt/bio-spanish.txt";
 
 var contactGif = "\"img/zissou.gif\" width=200";
 
