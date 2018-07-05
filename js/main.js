@@ -11,8 +11,7 @@ $(function(){
     "span"
   );
   
-  $.get(repo+'cv/txt/bio-english.txt', function(data){ bioEnglish = data });
-  $.get(repo+'cv/txt/bio-spanish.txt', function(data){ bioSpanish = data });
+
 
   randomColor(color_preset["high"]);
   

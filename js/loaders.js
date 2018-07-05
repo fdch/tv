@@ -128,7 +128,7 @@ function getBio() {
     .append("<p></p>")
     .append("<h4>" + linkify("cv","cv/",1) + " ~ " + linkify(bio,bioCV,1) + "</h4>")
     .append("</article>");
-    $("#content p").append(bioEnglish);
+    $("#content p").load(bioEnglish);
 }
 //<a href=\"mailto:"+email+"\">"+email+"</a>
 function loader(x) {
