@@ -87,9 +87,11 @@ function getWritings() {
         papers.push("<p class='sidenote'>"+epublished+"</p>");
       }
       if (edownload) {
-        papers.push("<button"+ onclickify("window.open",edownload)+">"+Get it+"</button>");
+        var myButtons = "<button "+onclickify("window.open",edownload)+" >Get it</button>";
+        papers.push(myButtons);
       } 
       $("#content article").append(papers.join(""));
+
     }
 
     $("#content article").append("</blockquote>");
