@@ -60,6 +60,6 @@ footer {
   bottom:1%;
   right:3%;
   width:auto;
-  background-color:black;
+  background-color:rgba(0,0,0,0.5);
   border-radius:3px;
 }
