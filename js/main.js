@@ -7,6 +7,21 @@ var vis = function(x) {
 };
 
 
+function width(){
+   return window.innerWidth 
+       || document.documentElement.clientWidth 
+       || document.body.clientWidth 
+       || 0;
+}
+
+function height(){
+   return window.innerHeight 
+       || document.documentElement.clientHeight 
+       || document.body.clientHeight 
+       || 0;
+}
+
+
 function makeMenu(m, len, mitem, type) {
   var i;
   m.append("<nav>");
@@ -81,7 +96,7 @@ function getWork() {
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>";
       if (eiurl) {
-        nwork += "<img width="+w+" src=\""+eiurl+"\"\
+        nwork += "<img width="+width()+" src=\""+eiurl+"\"\
         "+onclck(eiurl)+" />";
       }
       nwork += "<h5>Performed by "+eperf+" at "+eloca+" on \
@@ -147,7 +162,7 @@ function getSocial() {
 }
 function getBio() {
     $("#content")
-    .append("<article><a href=\""+bioImage+"\"><img src=\""+bioImage+"\" width=200></a>")
+    .append("<article><a href=\""+bioImage+"\"><img src=\""+bioImage+"\" width="+width()/2+"></a>")
     .append("<p></p>")
     .append("<h4>CV (<a href=\"cv/\" target=\"_blank\">html</a> - <a href=\""+bioCV+"\" target=\"_blank\">txt</a>)</h4>")
     .append("</article>");
