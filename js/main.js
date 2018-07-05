@@ -221,11 +221,16 @@ function randomColor(preset){
   var doff = preset[3];
   var light = "rgb("+pdRandom(lran,loff)+","+pdRandom(lran,loff)+","+pdRandom(lran,loff)+")";
   var darky = "rgb("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+")";
+  var menuy = "rgb("+pdRandom(dran,doff)+","+pdRandom(lran,loff)+","+pdRandom(lran,loff)+")";
   $("body").css(
     {
       backgroundColor: darky,
       color: light
     });
+  $("#menu").css(
+  {
+    backgroundColor: menuy 
+  });
 }
 
 
