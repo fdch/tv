@@ -168,8 +168,8 @@ function loader(x) {
       $("#content").append([
         "<article>",
         "<h3>contact</h3>",
-        "<p>Send me an email at "+nyu+"((at))nyu.edu and I will get in touch with you (as fast as nonhumanly possible :)</p>",
-        "<p>Mandá(me) una correa electrónica a "+nyu+"((at))nyu.edu y me pongo en contacto lo más rápido que pueda (dentro de lo nohumánomente posible ;)</p>",
+        "<p>Send me an email at "+nyuid+"((at))nyu.edu and I will get in touch with you (as fast as nonhumanly possible :)</p>",
+        "<p>Mandá(me) una correa electrónica a "+nyuid+"((at))nyu.edu así me pongo en contacto lo más rápido que pueda (dentro de lo nohumánamente posible ;)</p>",
         imgify(contactGif,200),
         "</article>"
         ]);
