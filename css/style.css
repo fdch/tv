@@ -6,11 +6,12 @@ body {
   color:white;
 }
 h1, h2 {
-  font-size:1em;
+  font-size:1.1em;
   cursor:pointer;
 }
 #menubg{
   padding:1%;
+  border-radius:3px;
 }
 #content{
   position:relative;
