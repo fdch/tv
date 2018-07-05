@@ -122,13 +122,19 @@ function getSocial() {
   }
 }
 
+function loadBio(x) {
+  $("#content p").load(x);
+}
+
 function getBio() {
     $("#content")
     .append("<article>" + linkify(imgfy(bioImage,width()*0.4),bioImage,1))
+    .append("<span "+onclickify(loadBio,bioSpanish)+">ES</span> ~ ")
+    .append("<span "+onclickify(loadBio,bioEnglish)+">EN</span>")
     .append("<p></p>")
     .append("<h4>" + linkify("cv","cv/",1) + " ~ " + linkify(bio,bioCV,1) + "</h4>")
     .append("</article>");
-    $("#content p").load(bioEnglish);
+    
 }
 //<a href=\"mailto:"+email+"\">"+email+"</a>
 function loader(x) {

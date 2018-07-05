@@ -6,6 +6,18 @@ var vis = function(x) {
   if (y != null) y.style.display = 'block', prev=y;
 };
 
+function getFile(x){
+  $.get(x, function(data){
+  return data 
+  });
+}
+
+
+function onclickify(func,src) {
+  return "onclick=\""+func+"(\'"+src+"\');\""
+}
+
+
 function linkify(x,y,blank){
   var target;
 
