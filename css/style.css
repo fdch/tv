@@ -56,8 +56,10 @@ iframe {
 }
 footer {
   font-size:0.8em;
-  position: absolute;
+  position: relative;
   bottom:1%;
-  left:3%;
+  right:3%;
   width:auto;
+  background-color:black;
+  border-radius:3px;
 }
