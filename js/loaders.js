@@ -121,17 +121,21 @@ function getSocial() {
   }
 }
 
-function loadBio(x) {
-  $("#content p").load(x);
-}
+var cvLinks = [
+linkify("cv","cv/",1),
+linkify("bio-english",bioEnglish,1),
+linkify("bio-español",bioSpanish,1)
+];
+
+
 
 function getBio() {
     $("#content")
     .append("<article>" + imgify(bioImage,width()*0.4))
-    .append("<span "+onclickify(loadBio,bioSpanish)+">ES</span> ~ ")
-    .append("<span "+onclickify(loadBio,bioEnglish)+">EN</span>")
-    .append("<p></p>")
-    .append("<h4>" + linkify("cv","cv/",1) + " ~ " + linkify("bio",bioEnglish,1) + "</h4>")
+    .append("<span "+onclickify("$('#biop').load",bioSpanish)+">ES</span> ~ ")
+    .append("<span "+onclickify("$('#biop').load",bioEnglish)+">EN</span>")
+    .append("<p id=biop></p>")
+    .append("<h5>"+ cvLinks.join(tilde) +"</h5>")
     .append("</article>");
     
 }

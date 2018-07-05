@@ -11,8 +11,6 @@ $(function(){
     "span"
   );
   
-
-
   randomColor(color_preset["high"]);
   
   setInterval(
@@ -37,6 +35,6 @@ $(function(){
     linkify("audio",scloud,1)
   ]
 
-  $("footer").append(footer.join(" ~ "));
+  $("footer").append(footer.join(tilde));
 });
 /////////////////////////////////////// main

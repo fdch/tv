@@ -10,6 +10,8 @@ var video = "https://vimeo.com/fdch";
 var nyu = "fch226";
 var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
+var tilde = " ~ ";
+
 
 var color_preset = {
 	mid  : [55,200,100,20],
@@ -21,12 +23,23 @@ var title = "fdch";
 var subtitle = "Fede Camara Halac";
 
 var bioImage = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/15032050_10211430901748916_6498585033629064846_n.jpg?_nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
-
 var bioEnglish = "cv/txt/bio-english.txt";
 var bioSpanish = "cv/txt/bio-spanish.txt";
 
-var contactGif = "img/zissou.gif";
+var cvLinks = [
+	linkify("cv","cv/",1),
+	linkify("bio-english",bioEnglish,1),
+	linkify("bio-español",bioSpanish,1)
+];
 
+var footer = [
+	linkify("blog",blog,1),
+	linkify("code",repo,1),
+	linkify("video",video,1),
+	linkify("audio",scloud,1)
+]
+
+var contactGif = "img/zissou.gif";
 
 var featWork = "Lorenz Variations";
 

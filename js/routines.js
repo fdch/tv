@@ -12,11 +12,9 @@ function getFile(x){
   });
 }
 
-
 function onclickify(func,src) {
   return "onclick=\""+func+"(\'"+src+"\');\"";
 }
-
 
 function linkify(x,y,blank){
   var target;
@@ -90,7 +88,6 @@ function randomColor(preset){
   });
 }
 
-
 var whichone = 0;
 
 function funImage(){
@@ -100,4 +97,3 @@ function funImage(){
   if (whichone==0) {whichone=1} else {whichone=0}
   setTimeout(function(){$("#rot img").attr('src', imgArray[whichone])},dur/4);
 }
-
