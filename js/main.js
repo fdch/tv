@@ -2,11 +2,7 @@
 $(function(){
   $("html").css("font-family",fonts[pdRandom(fonts.length,0)]);
   
-  $("body").append([
-    titleData,
-    analytics, 
-    "<iframe id=backvideo src=\'"+featURL[pdRandom(3,0)]+"\'></iframe>"
-  ]);
+  $("body").append("<iframe id=backvideo src=\'"+featURL[pdRandom(3,0)]+"\'></iframe>");
   
   makeMenu(
     $("#menu"),
