@@ -18,7 +18,7 @@ $(function(){
       funImage()
     }, t);
   
-  $(["h1", "h2"]).click(function() {
+  $("h1, h2").click(function() {
     window.load(url)
   });
 
