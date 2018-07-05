@@ -1,5 +1,5 @@
 var w, h, t = 4333;
-var mitem = ["bio", "work", "events", "social", "games", "contact"];
+var mitem = ["bio", "unworks", "papers", "events", "social", "games", "contact"];
 
 var url = "https://fdch.github.io/tv";
 var repo = "https://github.com/fdch/";
@@ -83,6 +83,7 @@ var altjson = "/public/values?alt=json";
 var sheetURL = spreadsheets+sheetID+"1"+altjson;
 var eventsURL = spreadsheets+sheetID+"2"+altjson;
 var socialURL = spreadsheets+sheetID+"3"+altjson;
+var writingsURL = = spreadsheets+sheetID+"4"+altjson;
 
 var gameDraw = [
 "draw/",

@@ -62,6 +62,40 @@ function getWork() {
   });
 }
 
+function getWritings() {
+  loadJSON(writingsURL, function(response) {
+    var f, e, i, entry, estam, etitle, edesc, elink, epublished, edownload;
+    f = JSON.parse(response);
+    entry = f.feed.entry;
+    
+    $("#content article").append("<blockquote>");
+
+    for (i in entry) {
+      var papers=[];
+      e = entry[i];
+      estam = e.gsx$timestamp.$t;
+      etitle = e.gsx$title.$t;
+      edesc = e.gsx$description.$t;
+      elink = e.gsx$link.$t;
+      epublished = e.gsx$published.$t;
+      edownload = e.gsx$download.$t;
+
+      papers.push(linkify("<h4>"+etitle+"</h4>", elink));
+      papers.push("<p>"+edesc+"</p>");
+
+      if (epublished){
+        papers.push("<p>"+epublished+"</p>");
+      }
+      if (edownload) {
+        papers.push(linkify("Get it",edownload,1));
+      } 
+      $("#content article").append(papers.join(""));
+    }
+
+    $("#content article").append("</blockquote>");
+  });
+}
+
 function getEvents() {
   loadJSON(eventsURL, function(response) {
     var f, e, i, entry, estam, etitl, edate, ewher, edesc;
@@ -178,7 +212,7 @@ function loader(x) {
       $("#content").append("<article></article>");
       getEvents();
       break;
-    case "work":
+    case "unwork":
       $("#content").append("<nav id=workM></nav><article></article>");
       getWork();
       break;
@@ -186,8 +220,10 @@ function loader(x) {
       getBio();
       break;
     case "social":
-      $("#content").append("<article><div id=loadS></div></article>");
       getSocial();
+      break;
+    case "papers":
+      getWritings();
       break;
     default:
     break;
