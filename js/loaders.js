@@ -84,7 +84,7 @@ function getWritings() {
       papers.push("<p>"+edesc+"</p>");
 
       if (epublished){
-        papers.push("<p>"+epublished+"</p>");
+        papers.push("<p class='sidenote'>"+epublished+"</p>");
       }
       if (edownload) {
         papers.push(linkify("Get it",edownload,1));
