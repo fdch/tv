@@ -88,6 +88,18 @@ var gameType = [
 	<img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\"/>"
 ];
 
+var fonts = [
+"Courier",
+"Arial",
+"Helvetica",
+"Times New Roman",
+"Courier New",
+"Times",
+"Verdana",
+"Georgia",
+"Palatino"
+];
+
 var games = "<article>"+gameType.join()+"</article>";
 
 var imgArray = ["img/imgone.png","img/imgtwo.png"];

@@ -259,7 +259,10 @@ $(function(){
   randomColor(color_preset["high"]);
   //setInterval(function(){randomColor(t)}, t);
   setInterval(function(){funImage()},t);
-
+  $("html").css(
+  {
+    font-family: fonts[pdRandom(fonts.length,0)]
+  })
 
     // console.log(color_preset[0])
 
