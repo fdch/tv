@@ -18,6 +18,10 @@ function linkify(x,y,blank){
   return "<a target='"+target+"'' href='"+y+"' alt='"+x+"' title='"+y+"'>"+x+"</a>";
 }
 
+function imgify(src,width){
+  return "<img src=\"" + x + "\" width=" + w + "onclick=\"window.open(\'"+src+"\');\">"
+}
+
 function width(){
    return window.innerWidth 
        || document.documentElement.clientWidth 

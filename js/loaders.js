@@ -18,7 +18,6 @@ function getContent(x, arr) {
 
 function getWork() {
   loadJSON(sheetURL, function(response) {
-    function onclck(x) { return "onclick=\"window.open(\'"+x+"\');\""; }
     var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
     var eiurl, evurl, eaurl, esurl, eloca, nwid, nwork, wmitem;
     var wmitems = [];
@@ -46,8 +45,7 @@ function getWork() {
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>";
       if (eiurl) {
-        nwork += "<img width="+width()+" src=\""+eiurl+"\"\
-        "+onclck(eiurl)+" />";
+        nwork += imgfy(eiurl,width());
       }
       nwork += "<h5>Performed by "+eperf+" at "+eloca+" on \
       "+edate.toDateString()+"</h5>";
@@ -119,45 +117,36 @@ function getSocial() {
       if(key === "Soc") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
       if(key === "Org") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
       if(key === "Ens") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
-      $("#loadS").append("<a href=\""+value+"\" target=_blank><h5>"+key+"</h5></a>");
+      $("#loadS").append(linkify("<h5>"+key+"</h5>",value,1);
     }
   }
 }
 
 function getBio() {
     $("#content")
-    .append("<article><a href=\""+bioImage+"\"><img src=\""+bioImage+"\" width="+width()*0.4+"></a>")
+    .append("<article>" + linkify(imgfy(bioImage,width()*0.4),bioImage,1))
     .append("<p></p>")
-    .append("<h4>CV (<a href=\"cv/\" target=\"_blank\">html</a> - <a href=\""+bioCV+"\" target=\"_blank\">txt</a>)</h4>")
+    .append("<h4>" + linkify("cv","cv/",1) + " ~ " + linkify(bio,bioCV,1) + "</h4>")
     .append("</article>");
     $("#content p").append(bioEnglish);
 }
-
+//<a href=\"mailto:"+email+"\">"+email+"</a>
 function loader(x) {
   $("#content").html("");
   $("#backvideo").hide();
   $('article').width(width()).height(height());
   switch (x) {
-    case "blog": 
-    window.open(blog);
-      break;
-    case "video":
-    window.open(video);
-      break;
-    case "fdch":
-      window.open(repo);
-      break;
     case "games" :
       $("#content").append(games);
       break;
     case "contact" :
       $("#content").append("\
         <article><h3>contact</h3>\
-        <p>Send me an email at <a href=\"mailto:"+email+"\">"+email+"</a> \
+        <p>Send me an email at "+linkify("email",email,1)+" \
         and I will get in touch with you (as fast as nonhumanly possible :)</p>\
-        <p>Mandá(me) una correa electrónica a <a href=\"mailto:"+email+"\">"+email+"</a> \
-        y me pongo en contacto lo más rápido que pueda (dentro de lo nohumanomente posible ;)</p>\
-        <img src="+contactGif+"/></article>");
+        <p>Mandá(me) una correa electrónica a "+linkify("email",email,1)+" \
+        y me pongo en contacto lo más rápido que pueda (dentro de lo nohumánomente posible ;)</p>\
+        "+imgfy(contactGif,200)+"</article>");
       break;
     case "events" :
       $("#content").append("<article></article>");
