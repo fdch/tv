@@ -100,6 +100,21 @@ function getSocial() {
     obj = social[i];
     for (key in obj) {
       value = obj[key];
+
+
+// Github : repo,
+// Twitter:http://www.twitter.com/fedecamarahalac,
+// Facebook: facebookUrl,
+// SoundCloud:http://www.soundcloud.com/fedecamarahalac,
+// Vimeo: video,
+// Vine:http://www.vine.co/fedecamarahalac,
+// YouTube:https://www.youtube.com/channel/UCzOx-iKaNx9ruddNI6ykTIA,
+// Tumblr: blog,
+// Flickr:http://www.flickr.com/federicocamarahalac,
+// Linkedin:http://linkedin.com/in/fedecamarahalac,
+
+
+
       if(key === "Pep") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
       if(key === "Soc") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
       if(key === "Org") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
@@ -136,7 +151,13 @@ function loader(x) {
       $("#content").append(games);
       break;
     case "contact" :
-      $("#content").append(contact);
+      $("#content").append("\
+        <article><h3>contact</h3>\
+        <p>Send me an email at <a href=\"mailto:"+email+"\">"+email+"</a> \
+        and I will get in touch with you (as fast as nonhumanly possible :)</p>\
+        <p>Mandá(me) una correa electrónica a <a href=\"mailto:"+email+"\">"+email+"</a> \
+        y me pongo en contacto lo más rápido que pueda (dentro de lo nohumanomente posible ;)</p>\
+        <img src="+contactGif+"/></article>");
       break;
     case "events" :
       $("#content").append("<article></article>");
