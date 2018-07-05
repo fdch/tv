@@ -83,7 +83,7 @@ var altjson = "/public/values?alt=json";
 var sheetURL = spreadsheets+sheetID+"1"+altjson;
 var eventsURL = spreadsheets+sheetID+"2"+altjson;
 var socialURL = spreadsheets+sheetID+"3"+altjson;
-var writingsURL = = spreadsheets+sheetID+"4"+altjson;
+var writingsURL = spreadsheets+sheetID+"4"+altjson;
 
 var gameDraw = [
 "draw/",
