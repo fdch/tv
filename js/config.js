@@ -6,7 +6,7 @@ var repo = "https://github.com/fdch/";
 var raw = "https://raw.githubusercontent.com/fdch/";
 var blog = "http://ffddcchh.tumblr.com/";
 var scloud = "https://soundcloud.com/ffddcchh";
-var video = "https://vimeo.com/ffddcchh";
+var video = "https://vimeo.com/fdch";
 var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 
