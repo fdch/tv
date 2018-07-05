@@ -49,9 +49,9 @@ function getWork() {
       }
       nwork += "<h5>Performed by "+eperf+" at "+eloca+" on \
       "+edate.toDateString()+"</h5>";
-      if (evurl) nwork += "<button "+onclck(evurl)+" >Video</button>";
-      if (eaurl) nwork += "<button "+onclck(eaurl)+" >Audio</button>";
-      if (esurl) nwork += "<button "+onclck(esurl)+" >Score</button>";
+      if (evurl) nwork += "<button "+onclickify("window.open",evurl)+" >Video</button>";
+      if (eaurl) nwork += "<button "+onclickify("window.open",eaurl)+" >Audio</button>";
+      if (esurl) nwork += "<button "+onclickify("window.open",esurl)+" >Score</button>";
       nwork += "<p>"+eprog+"</p><h6>fdch: "+estam+"</h6></div>";
       wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\">"+etitl+"</span>";
       wmitems.push(wmitem);
@@ -64,7 +64,6 @@ function getWork() {
 
 function getEvents() {
   loadJSON(eventsURL, function(response) {
-    function onclck(x) { return "onclick=\"window.open(\'"+x+"\');\""; }
     var f, e, i, entry, estam, etitl, edate, ewher, edesc;
     var nwid, nwork, wmitem;
     var wmitems = [];
