@@ -18,6 +18,10 @@ $(function(){
       funImage()
     }, t);
   
+  $(["h1", "h2"]).click(function() {
+    window.load(url)
+  });
+
   $("#menu").click(function() { 
     randomColor( color_preset["high"] );
     funImage();
