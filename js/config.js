@@ -7,12 +7,17 @@ var raw = "https://raw.githubusercontent.com/fdch/";
 var blog = "http://ffddcchh.tumblr.com/";
 var scloud = "https://soundcloud.com/ffddcchh";
 var video = "https://vimeo.com/fdch";
-var nyu = "fch226";
+var nyuid = "fch226";
 var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 var tilde = " ~ ";
-
-
+var unclink = "http://artes.unc.edu.ar/";
+var nyulink = "http://gsas.nyu.edu/";
+var unc = linkify("La Universidad Nacional de Córdoba (Argentina)",unclink,1);
+var nyuTitle = "Music Composition & Theory";
+var uncTitle = "Licenciatura en Compososición Musical";
+var nyu = linkify("New York University (GSAS)",nyulink,1)
+var advisors = ["Jaime Oliver La Rosa","Elizabeth Hoffman"];
 var color_preset = {
 	mid  : [55,200,100,20],
 	high : [30,200,50,100],
@@ -20,17 +25,19 @@ var color_preset = {
 };
 
 var title = "fdch";
-var subtitle = "Fede Camara Halac";
+var subtitle = "Fede Cámara Halac";
 
 var bioImage = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/15032050_10211430901748916_6498585033629064846_n.jpg?_nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
-var bioEnglish = "cv/txt/bio-english.txt";
-var bioSpanish = "cv/txt/bio-spanish.txt";
 
-var cvLinks = [
-	linkify("cv","cv/",1),
-	linkify("bio-english",bioEnglish,1),
-	linkify("bio-español",bioSpanish,1)
-];
+var bioEnglish = subtitle+" studied "+uncTitle+" at "+unc+".\
+ He is a PhD Candidate in "+nyuTitle+" at "+nyu+" with "+advisors.join(" and ")+".\
+ His research focuses on Database Multimedia Composition.\
+ His work is available at "+url;
+
+var bioSpanish = subtitle+" estudió "+uncTitle+" en "+unc+".\
+ Es candidato de PhD de "+nyuTitle+" en "+nyu+" con "+advisors.join(" y ")+".\
+ Su investigación se centra en la Composición Multimedial con Base de Datos.\
+ Su trabajo se encuentra disponible en "+url;
 
 var footer = [
 	linkify("blog",blog,1),

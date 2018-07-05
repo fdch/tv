@@ -126,16 +126,13 @@ function getSocial() {
 
 function getBio() {
     $("#content").append([
-    "<article>",
-    imgify(bioImage,width()*0.4),
-    "<span "+onclickify("$('#biop').load",bioEnglish)+">EN</span>",
-    tilde,
-    "<span "+onclickify("$('#biop').load",bioSpanish)+">ES</span>",
-    "<p id=biop></p>",
-    "<h5>"+ cvLinks.join(tilde) +"</h5>",
-    "</article>"
+      "<article>",
+      imgify(bioImage,width()*0.4),
+      "<h5>"+ linkify("cv","cv/",1) +"</h5>",
+      "<p id=biop></p>",
+      "</article>"
     ]);
-    $('#biop').load(bioEnglish);
+    $('#biop').append([bioEnglish, bioSpanish]);
 }
 
 function loader(x) {
