@@ -55,7 +55,8 @@ iframe {
   transform: translate(-50%, -50%);
 }
 footer {
-  position: fixed;
+  position: absolute;
   bottom:1%;
   left:50%;
+  width:auto;
 }

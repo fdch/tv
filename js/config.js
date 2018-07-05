@@ -97,4 +97,4 @@ var imgArray = ["img/imgone.png","img/imgtwo.png"];
 var bioEnglish = "";
 var bioSpanish = "";
 
-var footer = "<p>blog(<a href="+blog+">ffddcchh</a>) ~ code(<a href="+repo+">fdch</a>) ~ video(<a href="+video+">fdch</a>)</p>";
+var footer = "<a href="+blog+">blog</a> ~ <a href="+repo+">code</a> ~ <a href="+video+">video</a>";
