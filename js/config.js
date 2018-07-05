@@ -78,10 +78,10 @@ raw  + "misc/master/pong/screen1.jpg",
 var gameType = [
 "<button onclick=\"window.open(\'"+gameDraw[0]+"\')\" >draw</button>\
 	<p>"+gameDraw[2]+"</p>\
-	<img onclick=\"window.open(\'"+gameDraw[0]+"\')\" src=\""+gameDraw[1]+"\"/>",
+	<img onclick=\"window.open(\'"+gameDraw[0]+"\')\" src=\""+gameDraw[1]+"\" width=200/>",
 "<button onclick=\"window.open(\'"+gameDraw[3]+"\')\" >PONG</button>\
 	<p>"+gameDraw[5]+"</p>\
-	<img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\"/>"
+	<img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\" width=200/>"
 ];
 var games = "<article>"+gameType.join()+"</article>";
 
