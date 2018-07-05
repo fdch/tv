@@ -9,6 +9,9 @@ h1, h2 {
   font-size:1em;
   cursor:pointer;
 }
+#menubg{
+  padding:2%;
+}
 #content{
   position:relative;
   top:5px;
