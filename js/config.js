@@ -83,7 +83,7 @@ var gameType = [
 	<p>"+gameDraw[5]+"</p>\
 	<img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\" width=200/>"
 ];
-var games = "<article>"+gameType.join()+"</article>";
+var games = "<article>"+gameType.join("<br/>")+"</article>";
 
 
 var fonts = [
