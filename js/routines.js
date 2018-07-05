@@ -20,13 +20,16 @@ function onclickify(func,src) {
 
 function linkify(x,y,blank){
   var target;
-
+  var thelink;
   if (blank) {
     target="_blank";
   } else {
     target="_top";
   }
-  return "<a target=\""+target+"\" href=\""+y+"\" alt=\""+x+"\" title=\""+y.slice(0, 47);+"\">"+x+"</a>";
+  var title = y.slice(0, 47);
+  thelink = "<a target=\""+target+"\" href=\""+y+"\" alt=\""+x+"\" title=\""+title+"\">"+x+"</a>";
+  
+  return thelink;
 }
 
 function imgify(src,width){
