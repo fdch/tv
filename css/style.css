@@ -23,7 +23,7 @@ h1, h2 {
 span {
   margin:0 7px 0 0;
 }
-span:hover, img:hover {
+span:hover, img:hover, a:hover{
   cursor:pointer;
   font-weight:bold;
   text-decoration:underline;

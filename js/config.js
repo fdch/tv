@@ -10,6 +10,8 @@ var video = "https://vimeo.com/fdch";
 var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 
+
+
 var color_preset = {
 	mid  : [55,200,100,20],
 	high : [30,200,50,100],
