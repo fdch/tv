@@ -55,6 +55,7 @@ iframe {
   transform: translate(-50%, -50%);
 }
 footer {
+  font-size:0.5em;
   position: fixed;
   bottom:1%;
   left:3%;
