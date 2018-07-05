@@ -6,6 +6,17 @@ var vis = function(x) {
   if (y != null) y.style.display = 'block', prev=y;
 };
 
+function linkify(x,y,blank){
+  var target;
+
+  if (blank) {
+    target="_blank";
+  } else {
+    target="_top";
+  }
+    
+  return "<a target='"+target+"'' href='"+y+"' alt='"+x+"' title='"+x+"'>"+x+"</a>";
+}
 
 function width(){
    return window.innerWidth 
