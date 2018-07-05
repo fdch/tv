@@ -96,7 +96,7 @@ function getWork() {
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>";
       if (eiurl) {
-        nwork += "<img width="+width()*0.8+" src=\""+eiurl+"\"\
+        nwork += "<img width="+width()+" src=\""+eiurl+"\"\
         "+onclck(eiurl)+" />";
       }
       nwork += "<h5>Performed by "+eperf+" at "+eloca+" on \
@@ -162,7 +162,7 @@ function getSocial() {
 }
 function getBio() {
     $("#content")
-    .append("<article><a href=\""+bioImage+"\"><img src=\""+bioImage+"\" width="+width()*0.6+"></a>")
+    .append("<article><a href=\""+bioImage+"\"><img src=\""+bioImage+"\" width="+width()*0.4+"></a>")
     .append("<p></p>")
     .append("<h4>CV (<a href=\"cv/\" target=\"_blank\">html</a> - <a href=\""+bioCV+"\" target=\"_blank\">txt</a>)</h4>")
     .append("</article>");
