@@ -15,7 +15,7 @@ function linkify(x,y,blank){
     target="_top";
   }
     
-  return "<a target='"+target+"'' href='"+y+"' alt='"+x+"' title='"+x+"'>"+x+"</a>";
+  return "<a target='"+target+"'' href='"+y+"' alt='"+x+"' title='"+y+"'>"+x+"</a>";
 }
 
 function width(){
