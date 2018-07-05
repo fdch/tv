@@ -8,13 +8,13 @@ var vis = function(x) {
 
 function getFile(x){
   $.get(x, function(data){
-  return data 
+  return data ;
   });
 }
 
 
 function onclickify(func,src) {
-  return "onclick=\""+func+"(\'"+src+"\');\""
+  return "onclick=\""+func+"(\'"+src+"\');\"";
 }
 
 
@@ -26,11 +26,11 @@ function linkify(x,y,blank){
   } else {
     target="_top";
   }
-  return "<a target=\""+target+"\" href=\""+y+"\" alt=\""+x+"\" title=\""+y.slice(0, 47);+"\">"+x+"</a>"
+  return "<a target=\""+target+"\" href=\""+y+"\" alt=\""+x+"\" title=\""+y.slice(0, 47);+"\">"+x+"</a>";
 }
 
 function imgify(src,width){
-  return "<img src=\""+ src +"\" width=\""+ width +"\" "+ onclickify("window.open",src) + "/>"
+  return "<img src=\""+ src +"\" width=\""+ width +"\" "+ onclickify("window.open",src) + "/>";
 }
 
 function width(){
