@@ -85,15 +85,15 @@ var gameType = [
 ];
 
 var fonts = [
-"Courier",
-"Arial",
-"Helvetica",
-"Times New Roman",
-"Courier New",
-"Times",
-"Verdana",
-"Georgia",
-"Palatino"
+"\'Courier\'",
+"\'Arial\'",
+"\'Helvetica\'",
+"\'Times New Roman\'",
+"\'Courier New\'",
+"\'Times\'",
+"\'Verdana\'",
+"\'Georgia\'",
+"\'Palatino\'"
 ];
 
 var games = "<article>"+gameType.join()+"</article>";
