@@ -135,10 +135,10 @@ function getBio() {
     .append("</article>");
     
 }
-//<a href=\"mailto:"+email+"\">"+email+"</a>
+
 function loader(x) {
   $("#content").html("");
-  $("#backvideo").hide();
+  $("#backvideo").hide().attr('src','');
   $('article').width(width()).height(height());
   switch (x) {
     case "games" :
@@ -149,7 +149,7 @@ function loader(x) {
         <article><h3>contact</h3>\
         <p>Send me an email at "+linkify("fch226@nyu.edu","mailto:"+email,1)+" \
         and I will get in touch with you (as fast as nonhumanly possible :)</p>\
-        <p>Mandá(me) una correa electrónica a "+linkify("fch226@nyu.edu",email,1)+" \
+        <p>Mandá(me) una correa electrónica a "+linkify("fch226@nyu.edu","mailto:"+email,1)+" \
         y me pongo en contacto lo más rápido que pueda (dentro de lo nohumánomente posible ;)</p>\
         "+imgify(contactGif,200)+"</article>");
       break;
