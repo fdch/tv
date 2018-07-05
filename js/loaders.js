@@ -127,7 +127,7 @@ function loadBio(x) {
 
 function getBio() {
     $("#content")
-    .append("<article>" + linkify(imgify(bioImage,width()*0.4),bioImage,1))
+    .append("<article>" + imgify(bioImage,width()*0.4))
     .append("<span "+onclickify(loadBio,bioSpanish)+">ES</span> ~ ")
     .append("<span "+onclickify(loadBio,bioEnglish)+">EN</span>")
     .append("<p></p>")
