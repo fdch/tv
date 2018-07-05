@@ -90,15 +90,6 @@ function getEvents() {
     $("#content article").append("</ul></blockquote>");
   });
 }
-
-function getSocial() {
-  var i, obj, key, value, skey, sobj;
-  for (i = 0; i < social.length; i++) {
-    obj = social[i];
-    for (key in obj) {
-      value = obj[key];
-
-
 // Github : repo,
 // Twitter:http://www.twitter.com/fedecamarahalac,
 // Facebook: facebookUrl,
@@ -110,29 +101,59 @@ function getSocial() {
 // Flickr:http://www.flickr.com/federicocamarahalac,
 // Linkedin:http://linkedin.com/in/fedecamarahalac,
 
+function getSocial() {
+  loadJSON(socialURL, function(response) {
+    var f, e, i, entry, estam, ename, esurname, elink, npeople;
+    var people=[];
+    var organizations=[];
+    var ensembles=[];
+    f = JSON.parse(response);
+    entry = f.feed.entry;
 
+    //everything happens as a blockquote
+    $("#content article").append("<blockquote>");
 
-      if(key === "Pep") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
-      if(key === "Soc") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
-      if(key === "Org") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
-      if(key === "Ens") {$("#loadS").append("<h4>"+value+"</h4>"); continue;}
-      $("#loadS").append(linkify("<h5>"+key+"</h5>",value,1));
+    for (i in entry) {
+      e = entry[i];
+      estam = e.gsx$timestamp.$t;
+      ename = e.gsx$name.$t;
+      esurname= e.gsx$surname.$t;
+      elink = e.gsx$link.$t;
+
+      if ("Ensemble".toLowerCase() === esurname.toLowerCase()) {
+          //is ensemble
+          ensembles.push(linkify(ename,elink,1));
+      } else if ("Organization".toLowerCase() === esurname.toLowerCase()) {
+        //is organization
+        organizations.push(linkify(ename,elink,1));
+      } else {
+        //is people
+        people.push(linkify(ename+" "+esurname+, elink));
+      } 
     }
-  }
+
+    $("#content article").append([
+      "<h4>People</h4>",
+      people.join(tilde),
+      "<h4>Ensembles</h4>",
+      ensembles.join(tilde),
+      "<h4>Organizations</h4>",
+      organizations.join(tilde),
+      "</blockquote>"]);
+  });
 }
-
-
 
 
 function getBio() {
     $("#content").append([
       "<article>",
       imgify(bioImage,width()*0.4),
-      "<h5>"+ linkify("cv","cv/",1) +"</h5>",
-      "<p id=biop></p>",
+      "<h5>"+ linkify("curriculum vitae","cv/",1) +"</h5>",
+      bioEnglish,
+      "<br/>",
+      bioSpanish,
       "</article>"
     ]);
-    $('#biop').append([bioEnglish, bioSpanish]);
 }
 
 function loader(x) {

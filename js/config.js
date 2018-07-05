@@ -29,15 +29,15 @@ var subtitle = "Fede Cámara Halac";
 
 var bioImage = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/15032050_10211430901748916_6498585033629064846_n.jpg?_nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
 
-var bioEnglish = subtitle+" studied "+uncTitle+" at "+unc+".\
+var bioEnglish = "<p>"+subtitle+" studied "+uncTitle+" at "+unc+".\
  He is a PhD Candidate in "+nyuTitle+" at "+nyu+" with "+advisors.join(" and ")+".\
  His research focuses on Database Multimedia Composition.\
- His work is available at "+url;
+ His work is available at "+url+"</p>";
 
-var bioSpanish = subtitle+" estudió "+uncTitle+" en "+unc+".\
+var bioSpanish = "<p>"+subtitle+" estudió "+uncTitle+" en "+unc+".\
  Es candidato de PhD de "+nyuTitle+" en "+nyu+" con "+advisors.join(" y ")+".\
  Su investigación se centra en la Composición Multimedial con Base de Datos.\
- Su trabajo se encuentra disponible en "+url;
+ Su trabajo se encuentra disponible en "+url+"</p>";
 
 var footer = [
 	linkify("blog",blog,1),
@@ -82,6 +82,7 @@ var sheetID = "1e5dh1sZX1QuFFioC-1ofcPIPhwU9i-lvUzOzn4_3SLQ/";
 var altjson = "/public/values?alt=json";
 var sheetURL = spreadsheets+sheetID+"1"+altjson;
 var eventsURL = spreadsheets+sheetID+"2"+altjson;
+var socialURL = spreadsheets+sheetID+"3"+altjson;
 
 var gameDraw = [
 "draw/",
