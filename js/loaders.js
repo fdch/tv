@@ -118,7 +118,7 @@ function getSocial() {
       estam = e.gsx$timestamp.$t;
       ename = e.gsx$name.$t;
       esurname= e.gsx$surname.$t;
-      elink = e.gsx$link.$t;
+      elink = e.gsx$website.$t;
 
       if ("Ensemble".toLowerCase() === esurname.toLowerCase()) {
           //is ensemble
