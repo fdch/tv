@@ -5,7 +5,8 @@ var url = "https://fdch.github.io/tv";
 var repo = "https://github.com/fdch/";
 var raw = "https://raw.githubusercontent.com/fdch/";
 var blog = "http://ffddcchh.tumblr.com/";
-var video = "https://vimeo.com/fedecamarahalac";
+var scloud = "https://soundcloud.com/ffddcchh";
+var video = "https://vimeo.com/ffddcchh";
 var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 
@@ -96,5 +97,4 @@ var imgArray = ["img/imgone.png","img/imgtwo.png"];
 var bioEnglish = "";
 var bioSpanish = "";
 
-$.get(repo+'cv/txt/bio-english.txt', function(data){ bioEnglish = data });
-$.get(repo+'cv/txt/bio-spanish.txt', function(data){ bioSpanish = data });
+var footer = "<p>blog(<a href="+blog+">ffddcchh</a>) ~ code(<a href="+repo+">fdch</a>) ~ video(<a href="+video+">fdch</a>)</p>";
