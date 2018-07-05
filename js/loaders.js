@@ -83,13 +83,14 @@ function getWritings() {
       papers.push(linkify("<h4>"+etitle+"</h4>", elink));
       papers.push("<p>"+edesc+"</p>");
 
-      if (epublished){
-        papers.push("<p class='sidenote'>"+epublished+"</p>");
-      }
+
       if (edownload) {
         var myButtons = "<button style='float:right' "+onclickify("window.open",edownload)+" >Get it</button>";
         papers.push(myButtons);
       } 
+      if (epublished){
+        papers.push("<p class='sidenote'>"+epublished+"</p>");
+      }
       $("#content article").append(papers.join(""));
 
     }
