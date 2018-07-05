@@ -11,24 +11,24 @@ var nyuid = "fch226";
 var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 var tilde = " ~ ";
-var unclink = "http://artes.unc.edu.ar/";
-var nyulink = "http://gsas.nyu.edu/";
-var unc = linkify("La Universidad Nacional de Córdoba (Argentina)",unclink,1);
-var nyuTitle = "Music Composition & Theory";
-var uncTitle = "Licenciatura en Compososición Musical";
-var nyu = linkify("New York University (GSAS)",nyulink,1)
-var advisors = ["Jaime Oliver La Rosa","Elizabeth Hoffman"];
+
 var color_preset = {
 	mid  : [55,200,100,20],
 	high : [30,200,50,100],
 	rand : [255,0,255,0]
 };
 
+
 var title = "fdch";
 var subtitle = "Fede Cámara Halac";
-
 var bioImage = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/15032050_10211430901748916_6498585033629064846_n.jpg?_nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
-
+var unclink = "http://artes.unc.edu.ar/";
+var nyulink = "http://gsas.nyu.edu/";
+var unc = linkify("La Universidad Nacional de Córdoba (Argentina)",unclink,1);
+var nyuTitle = "Music Composition & Theory";
+var uncTitle = "Licenciatura en Composición Musical";
+var nyu = linkify("New York University (GSAS)",nyulink,1)
+var advisors = ["Jaime Oliver La Rosa","Elizabeth Hoffman"];
 var bioEnglish = "<p>"+subtitle+" studied "+uncTitle+" at "+unc+".\
  He is a PhD Candidate in "+nyuTitle+" at "+nyu+" with "+advisors.join(" and ")+".\
  His research focuses on Database Multimedia Composition.\
