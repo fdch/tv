@@ -132,7 +132,7 @@ function getBio() {
     .append("<span "+onclickify(loadBio,bioSpanish)+">ES</span> ~ ")
     .append("<span "+onclickify(loadBio,bioEnglish)+">EN</span>")
     .append("<p></p>")
-    .append("<h4>" + linkify("cv","cv/",1) + " ~ " + linkify(bio,bioEnglish,1) + "</h4>")
+    .append("<h4>" + linkify("cv","cv/",1) + " ~ " + linkify("bio",bioEnglish,1) + "</h4>")
     .append("</article>");
     
 }
