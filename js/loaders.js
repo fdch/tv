@@ -128,7 +128,7 @@ function getSocial() {
         organizations.push(linkify(ename,elink,1));
       } else {
         //is people
-        people.push(linkify(ename+" "+esurname+, elink));
+        people.push(linkify(ename+" "+esurname, elink));
       } 
     }
 
