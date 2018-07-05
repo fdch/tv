@@ -87,7 +87,7 @@ function getWritings() {
         papers.push("<p class='sidenote'>"+epublished+"</p>");
       }
       if (edownload) {
-        papers.push(linkify("Get it",edownload,1));
+        papers.push("<button"+ onclickify("window.open",edownload)+">"+Get it+"</button>");
       } 
       $("#content article").append(papers.join(""));
     }
