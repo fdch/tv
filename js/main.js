@@ -262,7 +262,7 @@ $(function(){
   $("html").css(
   {
     font-family: fonts[pdRandom(fonts.length,0)]
-  })
+  });
 
     // console.log(color_preset[0])
 
