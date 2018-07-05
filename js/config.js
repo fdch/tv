@@ -83,6 +83,8 @@ var gameType = [
 	<p>"+gameDraw[5]+"</p>\
 	<img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\"/>"
 ];
+var games = "<article>"+gameType.join()+"</article>";
+
 
 var fonts = [
 "\'Courier\'",
@@ -96,17 +98,19 @@ var fonts = [
 "\'Palatino\'"
 ];
 
-var games = "<article>"+gameType.join()+"</article>";
+
 
 var imgArray = ["img/imgone.png","img/imgtwo.png"];
 var favicon = imgArray[0];
   
 var titleData = "\
+<div id='menubg'>\
 <div id='rot' style='float:right'>\
 	<img src='"+imgArray[0]+"' width='30'/></div>\
 <h1 onclick=\"location.href='"+ url + "'\">"+ title +"</h1>\
 <h2 onclick=\"location.href='" + url + "'\">" + subtitle + "</h2>\
 <div id=menu></div>\
+</div>\
 <div id=submenu></div>\
 <div id=content></div>";
 
