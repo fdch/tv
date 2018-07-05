@@ -45,7 +45,7 @@ function getWork() {
       <h3>"+etitl+"</h3>\
       <h4>"+edesc+"</h4>";
       if (eiurl) {
-        nwork += imgfy(eiurl,width());
+        nwork += imgify(eiurl,width());
       }
       nwork += "<h5>Performed by "+eperf+" at "+eloca+" on \
       "+edate.toDateString()+"</h5>";
@@ -128,7 +128,7 @@ function loadBio(x) {
 
 function getBio() {
     $("#content")
-    .append("<article>" + linkify(imgfy(bioImage,width()*0.4),bioImage,1))
+    .append("<article>" + linkify(imgify(bioImage,width()*0.4),bioImage,1))
     .append("<span "+onclickify(loadBio,bioSpanish)+">ES</span> ~ ")
     .append("<span "+onclickify(loadBio,bioEnglish)+">EN</span>")
     .append("<p></p>")
@@ -152,7 +152,7 @@ function loader(x) {
         and I will get in touch with you (as fast as nonhumanly possible :)</p>\
         <p>Mandá(me) una correa electrónica a "+linkify("email",email,1)+" \
         y me pongo en contacto lo más rápido que pueda (dentro de lo nohumánomente posible ;)</p>\
-        "+imgfy(contactGif,200)+"</article>");
+        "+imgify(contactGif,200)+"</article>");
       break;
     case "events" :
       $("#content").append("<article></article>");
