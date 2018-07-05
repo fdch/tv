@@ -1,5 +1,5 @@
 var w, h, t = 4333;
-var mitem = ["bio", "work", "events", "social", "games", "contact", "blog", "video", "fdch"];
+var mitem = ["bio", "work", "events", "social", "games", "contact"];
 
 var url = "https://fdch.github.io/tv";
 var repo = "https://github.com/fdch/";
