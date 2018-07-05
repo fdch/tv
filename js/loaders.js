@@ -220,9 +220,11 @@ function loader(x) {
       getBio();
       break;
     case "social":
+      $("#content").append("<article></article>");
       getSocial();
       break;
     case "papers":
+      $("#content").append("<article></article>");
       getWritings();
       break;
     default:
