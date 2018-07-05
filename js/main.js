@@ -19,7 +19,7 @@ $(function(){
     }, t);
   
   $("h1, h2").click(function() {
-    window.load(url)
+    window.open(url)
   });
 
   $("#menu").click(function() { 
