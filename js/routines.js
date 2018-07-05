@@ -30,7 +30,7 @@ function linkify(x,y,blank){
 }
 
 function imgify(src,width){
-  return "<img src=\""+ src +"\" width=\""+ width +"\" "+ onclickify("window.open",src) + ">"
+  return "<img src=\""+ src +"\" width=\""+ width +"\" "+ onclickify("window.open",src) + "/>"
 }
 
 function width(){

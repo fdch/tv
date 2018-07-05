@@ -24,7 +24,7 @@ var bioImage = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/15032050_102114309
 var bioEnglish = "cv/txt/bio-english.txt";
 var bioSpanish = "cv/txt/bio-spanish.txt";
 
-var contactGif = "\"img/zissou.gif\" width=200";
+var contactGif = "img/zissou.gif";
 
 
 var featWork = "Lorenz Variations";
