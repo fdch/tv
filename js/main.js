@@ -31,9 +31,9 @@ $(function(){
     funImage();
   });
   $("footer").append([
-    linkify("blog",blog,1),
-    linkify("code",repo,1),
-    linkify("video",video,1),
+    linkify("blog",blog,1)," ~ ",
+    linkify("code",repo,1)," ~ ",
+    linkify("video",video,1)," ~ ",
     linkify("audio",scloud,1)
     ]);
 });
