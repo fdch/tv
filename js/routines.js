@@ -26,12 +26,11 @@ function linkify(x,y,blank){
   } else {
     target="_top";
   }
-    
-  return "<a target='"+target+"'' href='"+y+"' alt='"+x+"' title='"+y+"'>"+x+"</a>";
+  return "<a target=\""+target+"\" href=\""+y+"\" alt=\""+x+"\" title=\""+y+"\">"+x+"</a>";
 }
 
 function imgify(src,width){
-  return "<img src=\"" + src + "\" width='" + width +"' "+ onclickify("window.open",src) + ">"
+  return "<img src=\"" + src + "\" width=\"" + width +"\" "+ onclickify("window.open",src) + ">"
 }
 
 function width(){
