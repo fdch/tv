@@ -11,7 +11,8 @@ function makeMenu(m, len, mitem, type) {
 function getWork() {
   loadJSON(sheetURL, function(response) {
     var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
-    var eiurl, evurl, eaurl, esurl, eloca, nwid, nwork, wmitem;
+    var eiurl, evurl, eaurl, esurl, eloca, nwid, wmitem;
+    var nwork = [];
     var wmitems = [];
     f = JSON.parse(response);
     entry = f.feed.entry;
@@ -119,7 +120,8 @@ function getWritings() {
 function getEvents() {
   loadJSON(eventsURL, function(response) {
     var f, e, i, entry, estam, etitl, edate, ewher, edesc;
-    var nwid, nwork, wmitem;
+    var nwid, wmitem;
+    var nwork = [];
     var wmitems = [];
     f = JSON.parse(response);
     entry = f.feed.entry;
