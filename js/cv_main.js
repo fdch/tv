@@ -9,10 +9,8 @@
 
 var teachings=[], awards=[], collaborations=[], performances=[], unworks=[];
 
-function getCV() {
+function getTeachings() {
 
-	$("main article").append("<section id=personal><ul><li>"+personal.join("</li><li>")+"</li></ul></section>");
-    
     loadJSON(cvURL[0], function(response) {
     var f, e, i, entry;
     var stamp, type, clase, institution, dept, term, year;
@@ -34,11 +32,13 @@ function getCV() {
       teachings.push("<li>"+type+" in "+clase+" at "+department+" of "+institution+" ("+term+" "+year+")</li>");
     }
     teachings.push("</ul>");
-    $("main article").append("<section id=teachings>"+teachings.join("")+"</section>");
+    $("#teachings").append(teachings.join(""));
   });
-  
-  
-  
+}
+
+
+function getAwards() {
+
   loadJSON(cvURL[1], function(response) {
    var f, e, i, entry;
     var stamp, type, title, duration, where, who, desc, url;
@@ -64,10 +64,11 @@ function getCV() {
         "</li>");
     }
     awards.push("</ul>");
-    $("main article").append("<section id=awards>"+awards.join("")+"</section>");
+    $("#awards").append(awards.join(""));
   });
+}
 
-  
+function getCollabs() {
 
   loadJSON(cvURL[2], function(response) {
    var f, e, i, entry;
@@ -91,10 +92,12 @@ function getCV() {
         "</li>");
     }
     collaborations.push("</ul>");
-    $("main article").append("<section id=collaborations>"+collaborations.join("")+"</section>");
+    $("#collaborations").append(collaborations.join(""));
   });
 
-  
+}
+
+function getPerformances() {
 
   loadJSON(cvURL[3], function(response) {
     var stamp, what, when, desc, where, instrument, who;
@@ -119,10 +122,12 @@ function getCV() {
         "</li>");
     }
     performances.push("</ul>");
-    $("main article").append("<section id=performances>"+performances.join("")+"</section>");
+    $("#performances").append(performances.join(""));
   });
+}
 
-  
+
+function getUnworks(){
 
   //get work (sheet from Works)
   loadJSON(sheetURL, function(response) {
@@ -161,12 +166,11 @@ function getCV() {
         "</ul>",
         "</li>");
     }
-    $("main article").append("<section id=unworks>"+unworks.join("")+"</section>");
+    $("#unworks").append(unworks.join(""));
   });
 
-  
-
 }
+
 
 $(function(){
   $("html").css("font-family",fonts[2]); 
@@ -180,6 +184,21 @@ $(function(){
   $("main").html("").append("<article></article>");
   $("article").width(width()).height(height());
 
-  getCV();
+  $("main article").append([
+  	"<section id=personal>"+tag("header",tag("h4","Personal Information"))+"</section>",
+  	"<section id=teachings>"+tag("header",tag("h4","Teaching Experience"))+"</section>",
+  	"<section id=awards>"+tag("header",tag("h4","Awards"))+"</section>",
+  	"<section id=unworks>"+tag("header",tag("h4","List of unworks"))+"</section>",
+  	"<section id=collaborations>"+tag("header",tag("h4","Collaborations"))+"</section>",
+  	"<section id=performance>"+tag("header",tag("h4","Performance"))+"</section>"
+  	])
+
+  $("#personal").append(tag("ul",tag("li",personal.join("</li><li>"))));
+    
+  getTeachings();
+  getAwards();
+  getUnworks();
+  getCollabs();
+  getPerformances();
 
 });
