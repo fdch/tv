@@ -11,6 +11,7 @@ var teachings=[], awards=[], collaborations=[], performances=[], unworks=[], inf
 
 function getCV() {
 	var pk = Object.keys(personal);
+	console.log(pk);
 	info=[];
 	info.push("<ul>");
 	for (var k in pk) {
