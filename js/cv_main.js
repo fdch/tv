@@ -155,14 +155,14 @@ function getUnworks(){
       eloca = e.gsx$location.$t;
 
       unworks.push(
-        "<li>"+ecat,
+        "<li>"+etitl,
         "<ul>",
-        tag("li",etitl),
         tag("li",edesc),
+        tag("li",ecat),
         tag("li",eloca),
         tag("li",edate.toDateString()),
         tag("li",eperf),
-        tag("blockquote",edesc),
+        //tag("blockquote",edesc),
         "</ul>",
         "</li>");
     }
@@ -190,7 +190,7 @@ $(function(){
   	"<section id=awards>"+tag("header",tag("h4","Awards"))+"</section>",
   	"<section id=unworks>"+tag("header",tag("h4","List of unworks"))+"</section>",
   	"<section id=collaborations>"+tag("header",tag("h4","Collaborations"))+"</section>",
-  	"<section id=performance>"+tag("header",tag("h4","Performance"))+"</section>"
+  	"<section id=performances>"+tag("header",tag("h4","Performances"))+"</section>"
   	])
 
   $("#personal").append(tag("ul",tag("li",personal.join("</li><li>"))));
