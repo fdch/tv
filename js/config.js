@@ -140,4 +140,17 @@ var gameType = [
 
 
 
+// Github : repo,
+// Twitter:http://www.twitter.com/fedecamarahalac,
+// Facebook: facebookUrl,
+// SoundCloud:http://www.soundcloud.com/fedecamarahalac,
+// Vimeo: video,
+// Vine:http://www.vine.co/fedecamarahalac,
+// YouTube:https://www.youtube.com/channel/UCzOx-iKaNx9ruddNI6ykTIA,
+// Tumblr: blog,
+// Flickr:http://www.flickr.com/federicocamarahalac,
+// Linkedin:http://linkedin.com/in/fedecamarahalac,
+
+
+
 

@@ -81,9 +81,9 @@ function getWritings() {
       edownload = e.gsx$download.$t;
 
       papers.push([
-        "<section>",
-        "<header>",
-        linkify("<h4>"+etitle+"</h4>", elink),
+        "<section>"
+        "<header>"
+        linkify("<h4>"+etitle+"</h4>", elink)
       ]);
 
       if (edownload) {
@@ -95,8 +95,8 @@ function getWritings() {
       }
 
       papers.push([
-        "</header>",
-        "<p>"+edesc+"</p>",
+        "</header>"
+        "<p>"+edesc+"</p>"
         "</section>"
       ]);
 
@@ -136,16 +136,6 @@ function getEvents() {
     $("main article").append("</ul></blockquote>");
   });
 }
-// Github : repo,
-// Twitter:http://www.twitter.com/fedecamarahalac,
-// Facebook: facebookUrl,
-// SoundCloud:http://www.soundcloud.com/fedecamarahalac,
-// Vimeo: video,
-// Vine:http://www.vine.co/fedecamarahalac,
-// YouTube:https://www.youtube.com/channel/UCzOx-iKaNx9ruddNI6ykTIA,
-// Tumblr: blog,
-// Flickr:http://www.flickr.com/federicocamarahalac,
-// Linkedin:http://linkedin.com/in/fedecamarahalac,
 
 function getSocial() {
   loadJSON(socialURL, function(response) {
@@ -206,7 +196,7 @@ function loader(x) {
   $("main").html("");
   $("#backvideo").hide().attr('src','');
   $('article').width(width()).height(height());
-  
+
   switch (x) {
     case "games" :
       $("main").append("<article>"+gameType.join("<br/>")+"</article>");
