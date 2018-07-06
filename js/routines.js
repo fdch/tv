@@ -12,8 +12,20 @@ function getFile(x){
   });
 }
 
+function makeID(x){
+  return x.replace(/,/g,'').toLowerCase();
+}
+
 function onclickify(func,src) {
   return "onclick=\""+func+"(\'"+src+"\');\"";
+}
+
+function tag(tag,text){
+  return "<"+tag+">"+text+"</"+tag+">";
+}
+
+function tagOpen(tag,text,target){
+  return "<"+tag+onclickify("window.open",target)+">"+text+"</"+tag+">";
 }
 
 function linkify(x,y,blank){
@@ -59,6 +71,17 @@ function loadJSON(x,callback) {
   };
   xobj.send(null);  
 }
+
+
+function getContent(x, arr) {
+  jQuery.get(x, function(data){
+    lines = data.split("\n");
+    $.each(lines, function(n, elem) {
+      arr.push(elem);
+    });
+  });
+}
+
 
 function randomVideo() {
   var choose = Math.floor(Math.random() * featURL.length);

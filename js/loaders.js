@@ -1,19 +1,15 @@
 function makeMenu(m, len, mitem, type) {
-  var i;
+  var i,item;
   m.append("<nav>");
   for (i = 0;i < len; i++) {
-    m.append("<"+type+" class=menuitem onClick=\"loader(\'" + mitem[i] + "\')\">" + mitem[i].replace(/_/g," ").replace(/-/g," ") + "</"+type+">");
+    item = mitem[i].replace(/_/g," ").replace(/-/g," ");
+    m.append([
+      "<span class=menuitem "+ onclickify(type,mitem[i]) +">",
+      item,
+      "</span>"
+    ]);
   }
   m.append("</nav>");
-}
-
-function getContent(x, arr) {
-  jQuery.get(x, function(data){
-    lines = data.split("\n");
-    $.each(lines, function(n, elem) {
-      arr.push(elem);
-    });
-  });
 }
 
 function getWork() {
@@ -29,7 +25,7 @@ function getWork() {
       etitl = e.gsx$title.$t;
       edate = new Date(e.gsx$date.$t);
       eperf = e.gsx$performers.$t;
-      ecat = e.gsx$category.$t;
+      ecat  = e.gsx$category.$t;
       edesc = e.gsx$description.$t;
       eprog = e.gsx$programnotes.$t;
       eiurl = e.gsx$imageurl.$t;
@@ -37,28 +33,42 @@ function getWork() {
       eaurl = e.gsx$audiourl.$t;
       esurl = e.gsx$scoreurl.$t;
       eloca = e.gsx$location.$t;
-      nwid = "id-"+etitl.replace(/ /g,"_").toLowerCase();
-      nwork = "<div \
-      id="+nwid+" \
-      class=\""+ecat.replace(/,/g,'').toLowerCase()+"\" \
-      style=\"display:none\">\
-      <h3>"+etitl+"</h3>\
-      <h4>"+edesc+"</h4>";
+      nwid  = "id-"+makeID(etitl);
+
+      nwork.push(
+        "<div id="+nwid+" class=\""+makeID(ecat)+"\" "hide">",
+        tag("h3",etitl),
+        tag("h4",edesc)
+      );
+
       if (eiurl) {
-        nwork += imgify(eiurl,width());
+        nwork.push(imgify(eiurl,width()));
       }
-      nwork += "<h5>Performed by "+eperf+" at "+eloca+" on \
-      "+edate.toDateString()+"</h5>";
-      if (evurl) nwork += "<button "+onclickify("window.open",evurl)+" >Video</button>";
-      if (eaurl) nwork += "<button "+onclickify("window.open",eaurl)+" >Audio</button>";
-      if (esurl) nwork += "<button "+onclickify("window.open",esurl)+" >Score</button>";
-      nwork += "<p>"+eprog+"</p><h6>fdch: "+estam+"</h6></div>";
+      nwork.push(
+        tag("h5","Performed by "+eperf+" at "+eloca+" on "+edate.toDateString())
+      );
+
+      if (evurl) nwork.push(tagOpen("button", "Video", evurl));
+      if (eaurl) nwork.push(tagOpen("button", "Audio", eaurl));
+      if (esurl) nwork.push(tagOpen("button", "Score", esurl)); 
+
+      nwork.push(
+        tag("p",eprog),
+        tag("h6","fdch:"+estam),
+        "</div>"
+      );
+
       wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\">"+etitl+"</span>";
+
       wmitems.push(wmitem);
-      $("main article").prepend(nwork);
+
+      $("main article").prepend(nwork.join(""));
     }
-    $("main nav").append(wmitems.sort().join(" "));
-    vis("id-"+featWork.replace(/ /g,"_").toLowerCase());
+
+    $("main nav").append(wmitems.sort().join(tilde));
+
+    vis("id-"+makeID(featWork));
+
   });
 }
 
@@ -83,13 +93,14 @@ function getWritings() {
       papers.push(
         "<section>",
         "<header>",
-        linkify("<h4>"+etitle+"</h4>", elink),
+        linkify(tag("h4",etitle), elink),
       );
 
-      
       if (epublished){
-        papers.push("<blockquote><i>"+epublished+"</i>");
-        
+        papers.push(
+          "<blockquote>",
+          tag("i",epublished)
+          );
         if (edownload) {
           papers.push(linkify("Get it here", edownload));
         } 
@@ -98,7 +109,7 @@ function getWritings() {
 
       papers.push(
         "</header>",
-        "<p>"+edesc+"</p>",
+        tag("p",edesc),
         "</section>"
       );
 
@@ -117,8 +128,9 @@ function getEvents() {
     var wmitems = [];
     f = JSON.parse(response);
     entry = f.feed.entry;
+
     $("main article").append("<blockquote><ul>");
-    var today = new Date().toDateString();
+
     for (i in entry) {
       e = entry[i];
       estam = e.gsx$timestamp.$t;
@@ -126,13 +138,19 @@ function getEvents() {
       edate = new Date(e.gsx$when.$t);
       ewher= e.gsx$where.$t;
       edesc = e.gsx$description.$t;
-      nwork = "<li><div><h3>"+etitl+" ("+ewher+")</h3>\
-      <h4>"+edate.toDateString()+"</h4>\
-      <blockquote>"+edesc+"</blockquote></div></li>";
+
+      nwork.push(
+        "<li><div>",
+        tag("h3",etitl+" ("+ewher+")"),
+        tag("h4",edate.toDateString()),
+        tag("blockquote",edesc),
+        "</div></li>"
+      );
+
       if (today < edate) {
-        $("main article").append(nwork);
+        $("main article").append(nwork.join(""));
       } else {
-        $("main article").prepend(nwork);
+        $("main article").prepend(nwork.join(""));
       }
     }
     $("main article").append("</ul></blockquote>");
@@ -142,9 +160,8 @@ function getEvents() {
 function getSocial() {
   loadJSON(socialURL, function(response) {
     var f, e, i, entry, estam, ename, esurname, elink, npeople;
-    var people=[];
-    var organizations=[];
-    var ensembles=[];
+    var people=[], organizations=[], ensembles=[];
+
     f = JSON.parse(response);
     entry = f.feed.entry;
 
@@ -160,7 +177,7 @@ function getSocial() {
 
       if ("Ensemble".toLowerCase() === esurname.toLowerCase()) {
           //is ensemble
-          ensembles.push(linkify(ename,elink,1));
+        ensembles.push(linkify(ename,elink,1));
       } else if ("Organization".toLowerCase() === esurname.toLowerCase()) {
         //is organization
         organizations.push(linkify(ename,elink,1));
@@ -171,22 +188,21 @@ function getSocial() {
     }
 
     $("main article").append([
-      "<h4>People</h4>",
+      tag("h4","People"),
       people.join(tilde),
-      "<h4>Ensembles</h4>",
+      tag("h4","Ensembles"),
       ensembles.join(tilde),
-      "<h4>Organizations</h4>",
+      tag("h4","Organizations"),
       organizations.join(tilde),
       "</blockquote>"]);
   });
 }
 
-
 function getBio() {
     $("main").append([
       "<article>",
       imgify(bioImage,width()*0.4),
-      "<h5>"+ linkify("curriculum vitae","cv/",1) +"</h5>",
+      tag("h5",linkify("curriculum vitae",cv,1)),
       bioEnglish,
       "<br/>",
       bioSpanish,
@@ -201,28 +217,28 @@ function loader(x) {
 
   switch (x) {
     case "games" :
-      $("main").append("<article>"+gameType.join("<br/>")+"</article>");
+      $("main").append(tag("article",gameType.join("<br/>")));
       break;
     case "contact" :
-      $("main").append(["<article>",contactMessage,"</article>"]);
+      $("main").append(tag("article",contactMessage));
       break;
     case "events" :
-      $("main").append("<article></article>");
+      $("main").append(tag("article",""));
       getEvents();
       break;
     case "unwork":
-      $("main").append("<nav></nav><article></article>");
+      $("main").append([tag("nav",""),tag("article","")]);
       getWork();
       break;
     case "bio":
       getBio();
       break;
     case "social":
-      $("main").append("<article></article>");
+      $("main").append(tag("article",""));
       getSocial();
       break;
     case "papers":
-      $("main").append("<article></article>");
+      $("main").append(tag("article",""));
       getWritings();
       break;
     default:

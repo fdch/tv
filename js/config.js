@@ -3,6 +3,7 @@ var mitem = ["bio", "unwork", "papers", "events", "social", "games", "contact"];
 
 var url = "https://fdch.github.io/tv";
 var repo = "https://github.com/fdch/";
+var cv = url+"/cv/";
 var raw = "https://raw.githubusercontent.com/fdch/";
 var blog = "http://ffddcchh.tumblr.com/";
 var scloud = "https://soundcloud.com/ffddcchh";
@@ -11,6 +12,8 @@ var nyuid = "fch226((at))nyu.edu";
 var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 var tilde = " ~ ";
+var hide = "style=\"display:none\"";
+var today = new Date().toDateString();
 
 var color_preset = {
 	mid  : [55,200,100,20],
@@ -91,11 +94,20 @@ vimeo[0]   + "93202065"    + vimeo[1]
 
 var spreadsheets = "https://spreadsheets.google.com/feeds/list/";
 var sheetID = "1e5dh1sZX1QuFFioC-1ofcPIPhwU9i-lvUzOzn4_3SLQ/";
+var cvID = "1vViMWDsMRnbGUgP44XNDlQrLQ3MsdgO9W91mM4MxJtw/";
 var altjson = "/public/values?alt=json";
 var sheetURL = spreadsheets+sheetID+"1"+altjson;
 var eventsURL = spreadsheets+sheetID+"2"+altjson;
 var socialURL = spreadsheets+sheetID+"3"+altjson;
 var writingsURL = spreadsheets+sheetID+"4"+altjson;
+
+var cvURL = [
+	spreadsheets+cvID+"1"+altjson,
+	spreadsheets+cvID+"2"+altjson,
+	spreadsheets+cvID+"3"+altjson,
+	spreadsheets+cvID+"4"+altjson
+];
+
 
 var fonts = [
 "\'Courier\'",

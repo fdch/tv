@@ -8,7 +8,7 @@ $(function(){
     $("#menu"),
     mitem.length,
     mitem,
-    "span"
+    "loader"
   );
   
   randomColor(color_preset["high"]);
