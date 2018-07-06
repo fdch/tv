@@ -17,7 +17,7 @@ function makeID(x){
 }
 
 function onclickify(func,src) {
-  return "onclick=\""+func+"(\'"+src+"\');\"";
+  return " onclick=\""+func+"(\'"+src+"\');\" ";
 }
 
 function tag(tag,text){
