@@ -64,7 +64,7 @@ function getCV() {
 
       awards.push(
         "<li>"+title+" for "+duration+" in "+where+" ("+type+")",
-        "<blockquote>"+desc+"<i>"+linkify(who,url)+"</i></blockquote>",
+        "<blockquote>"+desc+"<i>"+linkify(who,url,1)+"</i></blockquote>",
         "</li>");
     }
     awards.push("</ul>");
@@ -145,7 +145,7 @@ function getCV() {
       unworks.push(
         "<li>"+ecat,
         "<ul>",
-        tag("li",linkify(etitl,eaurl|evurl|esurl)),
+        tag("li",linkify(etitl,eaurl|evurl|esurl,1)),
         tag("li",edesc),
         tag("li",where),
         tag("li",edate.toDateString()),
