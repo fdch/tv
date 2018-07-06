@@ -76,7 +76,7 @@ function getCV() {
       desc         = e.gsx$description.$t;
 
       collaborations.push(
-        "<li>"+type+" in "+where+" ("+year+")",
+        "<li>"+category+" in "+where+" ("+year+")",
         tag("blockquote",desc),
         "</li>");
     }
@@ -93,7 +93,7 @@ function getCV() {
       e = entry[i];
       stamp        = e.gsx$timestamp.$t;
       what         = e.gsx$what.$t;
-      when         = e.gsx$when.$t;
+      when         = new Date(e.gsx$when.$t);
       desc         = e.gsx$how.$t;
       where        = e.gsx$where.$t;
       instrument   = e.gsx$instrument.$t;
