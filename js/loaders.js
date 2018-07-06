@@ -86,12 +86,14 @@ function getWritings() {
         linkify("<h4>"+etitle+"</h4>", elink),
       );
 
-      if (edownload) {
-        var myButtons = "<button "+onclickify("window.open",edownload)+" >Get it</button>";
-        papers.push(myButtons);
-      } 
+      
       if (epublished){
-        papers.push("<blockquote><i>"+epublished+"</i></blockquote>");
+        papers.push("<blockquote><i>"+epublished+"</i>");
+        
+        if (edownload) {
+          papers.push(linkify("Get it here", edownload));
+        } 
+        papers.push("</blockquote>");
       }
 
       papers.push(
