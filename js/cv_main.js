@@ -11,6 +11,8 @@ var teachings=[], awards=[], collaborations=[], performances=[], unworks=[];
 
 function getCV() {
 
+	$("main article").append("<section id=personal><ul><li>"+personal.join("</li><li>")+"</li></ul></section>");
+    
     loadJSON(cvURL[0], function(response) {
     var f, e, i, entry;
     var stamp, type, clase, institution, dept, term, year;
@@ -33,6 +35,9 @@ function getCV() {
     }
     teachings.push("</ul>");
   });
+  
+  $("main article").append("<section id=teachings>"+teachings.join("")+"</section>");
+  
   loadJSON(cvURL[1], function(response) {
    var f, e, i, entry;
     var stamp, type, title, duration, where, who, desc, url;
@@ -59,6 +64,9 @@ function getCV() {
     }
     awards.push("</ul>");
   });
+
+  $("main article").append("<section id=awards>"+awards.join("")+"</section>");
+
   loadJSON(cvURL[2], function(response) {
    var f, e, i, entry;
     var stamp, category, year, desc, where;
@@ -82,6 +90,9 @@ function getCV() {
     }
     collaborations.push("</ul>");
   });
+
+  $("main article").append("<section id=collaborations>"+collaborations.join("")+"</section>");
+
   loadJSON(cvURL[3], function(response) {
     var stamp, what, when, desc, where, instrument, who;
    
@@ -106,6 +117,8 @@ function getCV() {
     }
     performances.push("</ul>");
   });
+
+  $("main article").append("<section id=performances>"+performances.join("")+"</section>");
 
   //get work (sheet from Works)
   loadJSON(sheetURL, function(response) {
@@ -144,8 +157,10 @@ function getCV() {
         "</ul>",
         "</li>");
     }
-
   });
+
+  $("main article").append("<section id=unworks>"+unworks.join("")+"</section>");
+
 }
 
 $(function(){
@@ -161,12 +176,5 @@ $(function(){
   $("article").width(width()).height(height());
 
   getCV();
-
-  $("main article").append([
-    "<section id=personal><ul><li>"+personal.join("</li><li>")+"</li></ul></section>",
-    "<section id=teachings>"+teachings.join("")+"</section>",
-    "<section id=awards>"+awards.join("")+"</section>",
-    "<section id=collaborations>"+collaborations.join("")+"</section>",
-    "<section id=performances>"+performances.join("")+"</section>"
-  ]);
+  
 });
