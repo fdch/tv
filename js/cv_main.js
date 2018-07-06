@@ -29,7 +29,9 @@ function getTeachings() {
       term         = e.gsx$term.$t;
       year         = e.gsx$year.$t;
 
-      teachings.push("<li>"+type+" in "+clase+" at "+department+" of "+institution+" ("+term+" "+year+")</li>");
+      teachings.push("<li>"+type+" in "+clase+" at "+department+" of "+institution+" ("+term+" "+year+")</li>",
+      	tag("p",tilde)
+      );
     }
     teachings.push("</ul>");
     $("#teachings").append(teachings.join(""));
@@ -61,7 +63,8 @@ function getAwards() {
       awards.push(
         "<li>"+title+" for "+duration+" in "+where+" ("+type+")",
         "<blockquote>"+desc+"<i>"+linkify(who,url,1)+"</i></blockquote>",
-        "</li>");
+        "</li>",
+        tag("p",tilde));
     }
     awards.push("</ul>");
     $("#awards").append(awards.join(""));
@@ -89,7 +92,8 @@ function getCollabs() {
       collaborations.push(
         "<li>"+category+" in "+where+" ("+year+")",
         tag("blockquote",desc),
-        "</li>");
+        "</li>",
+        tag("p",tilde));
     }
     collaborations.push("</ul>");
     $("#collaborations").append(collaborations.join(""));
@@ -119,7 +123,8 @@ function getPerformances() {
       performances.push(
         "<li>"+instrument+" in "+what+" at "+where+", with "+who+" ("+when.toDateString()+")",
         tag("blockquote",desc),
-        "</li>");
+        "</li>",
+        tag("p",tilde));
     }
     performances.push("</ul>");
     $("#performances").append(performances.join(""));
