@@ -135,7 +135,7 @@ function getCV() {
       unworks.push(
         "<li>"+ecat,
         "<ul>",
-        tag("li",linkify(etitl,eaurl|evurl|esurl),
+        tag("li",linkify(etitl,eaurl|evurl|esurl)),
         tag("li",edesc),
         tag("li",where),
         tag("li",edate.toDateString()),
