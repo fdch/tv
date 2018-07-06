@@ -33,6 +33,7 @@ var nyu = linkify("New York University (GSAS)",nyulink,1)
 var advisors = ["Jaime Oliver La Rosa","Elizabeth Hoffman"];
 var currently = ["PhD Candidate","Candidato de PhD"];
 var tesis = ["Database Multimedia Composition","Composición Multimedial con Base de Datos"]
+var bday = new Date(1988, 5, 8);
 
 var bioEnglish = "<p>"+subtitle+" studied "+uncTitle+" at "+unc+".\
  He is a "+currently[0]+" in "+nyuTitle+" at "+nyu+" with "+advisors.join(" and ")+".\
@@ -46,12 +47,12 @@ var bioSpanish = "<p>"+subtitle+" estudió "+uncTitle+" en "+unc+".\
 
 var personal = [
 "Full Name: Federico Nicolás Cámara Halac",
-"Date of Birth : "+ new Date(1988, 5, 8),
+"Date of Birth : "+ bday.toDateString(),
 "Country of Birth : Argentina",
 "Mailing Address : 24 Waverly Place r.268. New York, NY 10003. USA",
 "Phone Number : (1) 347-302-0982",
 "E-mail : "+ email,
-"Graduate Education : "+ status[0] + " in "+nyuTitle+" at "+nyu+" (2013-2019)",
+"Graduate Education : "+ currently[0] + " in "+nyuTitle+" at "+nyu+" (2013-2019)",
 "Undergraduate : " +uncTitle + " at the " +unc+ "(2006-12)",
 ];
 
