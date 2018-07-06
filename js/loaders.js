@@ -217,7 +217,7 @@ function loader(x) {
       $("main").append(tag("article",gameType.join("<br/>")));
       break;
     case "contact" :
-      $("main").append(tag("article",contactMessage));
+      $("main").append(tag("article",contactMessage.join("")));
       break;
     case "events" :
       $("main").append(tag("article",""));
