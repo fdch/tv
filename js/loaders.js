@@ -54,7 +54,7 @@ function getWork() {
         "</div>"
       );
 
-      wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\">"+etitl+"</span>";
+      wmitem = "<span class=menuitem "+onclickify("vis",nwid)+">"+etitl+"</span>";
 
       wmitems.push(wmitem);
     }

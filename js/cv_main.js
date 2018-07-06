@@ -7,12 +7,21 @@
 //////////                           / ///////////
 //////////////////////////////        ///////////
 
-var teachings, awards, collaborations, performances, unworks;
+var teachings, awards, collaborations, performances, unworks, info;
 
 function getCV() {
+	var pk = personal.keys();
+	info.push("<ul>");
+	for (var k in pk) {
+		info.push(
+			tag("li",k),
+			tag("li",personal.k)
+		);
+	}
+	info.push("</ul>");
 
-  loadJSON(cvURL[0], function(response) {
-   var f, e, i, entry;
+    loadJSON(cvURL[0], function(response) {
+    var f, e, i, entry;
     var stamp, type, clase, institution, dept, term, year;
    
     f = JSON.parse(response);
@@ -164,7 +173,7 @@ $(function(){
 
   $("main article").append([
     "<section id=personal>",
-    personal.join(""), 
+    info.join(""), 
     "</section>",
     "<section id=teachings>",
     teachings.join(""), 
