@@ -36,7 +36,7 @@ function getWork() {
       nwid  = "id-"+makeID(etitl);
 
       nwork.push(
-        "<div id="+nwid+" class=\""+makeID(ecat)+"\" "hide">",
+        "<div id="+nwid+" class=\""+makeID(ecat)+"\" "+hide+">",
         tag("h3",etitl),
         tag("h4",edesc)
       );
@@ -44,9 +44,8 @@ function getWork() {
       if (eiurl) {
         nwork.push(imgify(eiurl,width()));
       }
-      nwork.push(
-        tag("h5","Performed by "+eperf+" at "+eloca+" on "+edate.toDateString())
-      );
+
+      nwork.push(tag("h5","Performed by "+eperf+" at "+eloca+" on "+edate.toDateString()));
 
       if (evurl) nwork.push(tagOpen("button", "Video", evurl));
       if (eaurl) nwork.push(tagOpen("button", "Audio", eaurl));
