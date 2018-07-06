@@ -57,7 +57,7 @@ function getWork() {
       wmitems.push(wmitem);
       $("main article").prepend(nwork);
     }
-    $("#workM").append(wmitems.sort().join(" "));
+    $("main nav").append(wmitems.sort().join(" "));
     vis("id-"+featWork.replace(/ /g,"_").toLowerCase());
   });
 }
@@ -206,9 +206,10 @@ function loader(x) {
   $("main").html("");
   $("#backvideo").hide().attr('src','');
   $('article').width(width()).height(height());
+  
   switch (x) {
     case "games" :
-      $("main").append(games);
+      $("main").append("<article>"+gameType.join("<br/>")+"</article>");
       break;
     case "contact" :
       $("main").append(["<article>",contactMessage,"</article>"]);
@@ -218,7 +219,7 @@ function loader(x) {
       getEvents();
       break;
     case "unwork":
-      $("main").append("<nav id=workM></nav><article></article>");
+      $("main").append("<nav></nav><article></article>");
       getWork();
       break;
     case "bio":

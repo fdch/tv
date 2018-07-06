@@ -18,7 +18,6 @@ var color_preset = {
 	rand : [255,0,255,0]
 };
 
-
 var title = "fdch";
 var subtitle = "Fede Cámara Halac";
 var bioImage = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/15032050_10211430901748916_6498585033629064846_n.jpg?_nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
@@ -29,15 +28,28 @@ var nyuTitle = "Music Composition & Theory";
 var uncTitle = "Licenciatura en Composición Musical";
 var nyu = linkify("New York University (GSAS)",nyulink,1)
 var advisors = ["Jaime Oliver La Rosa","Elizabeth Hoffman"];
+var status = ["PhD Candidate", "Candidato de PhD"];
+
 var bioEnglish = "<p>"+subtitle+" studied "+uncTitle+" at "+unc+".\
- He is a PhD Candidate in "+nyuTitle+" at "+nyu+" with "+advisors.join(" and ")+".\
+ He is a "+status[0]+" in "+nyuTitle+" at "+nyu+" with "+advisors.join(" and ")+".\
  His research focuses on Database Multimedia Composition.\
  His work is available at "+url+"</p>";
 
 var bioSpanish = "<p>"+subtitle+" estudió "+uncTitle+" en "+unc+".\
- Es candidato de PhD de "+nyuTitle+" en "+nyu+" con "+advisors.join(" y ")+".\
+ Es "+status[1]+" de "+nyuTitle+" en "+nyu+" con "+advisors.join(" y ")+".\
  Su investigación se centra en la Composición Multimedial con Base de Datos.\
  Su trabajo se encuentra disponible en "+url+"</p>";
+
+var personal = {
+"Full Name": "Federico Nicolás Cámara Halac",
+"Date of Birth" : new Date(1988, 5, 8),
+"Country of Birth" : "Argentina"
+"Mailing Address" : "24 Waverly Place r.268. New York, NY 10003. USA",
+"Phone Number" : "(1) 347-302-0982",
+"E-mail" : email,
+"Graduate" : status[0]+ " in "+nyuTitle+" at "+nyu+" (2013-2019)",
+"Undergraduate" : uncTitle + " at the " +unc+ "(2006-12)",
+}
 
 var footer = [
 	linkify("blog",blog,1),
@@ -85,26 +97,6 @@ var eventsURL = spreadsheets+sheetID+"2"+altjson;
 var socialURL = spreadsheets+sheetID+"3"+altjson;
 var writingsURL = spreadsheets+sheetID+"4"+altjson;
 
-var gameDraw = [
-"draw/",
-"img/draw.png",
-"Draw concentrical polygons as they get smaller. Print page when you are done.",
-repo + "misc/tree/master/pong",
-raw  + "misc/master/pong/screen1.jpg",
-"A Pd Vanilla + Gem version of the pong game."
-];
-
-var gameType = [
-"<button onclick=\"window.open(\'"+gameDraw[0]+"\')\" >draw</button>\
-	<p>"+gameDraw[2]+"</p>\
-	<img onclick=\"window.open(\'"+gameDraw[0]+"\')\" src=\""+gameDraw[1]+"\" width=200/>",
-"<button onclick=\"window.open(\'"+gameDraw[3]+"\')\" >PONG</button>\
-	<p>"+gameDraw[5]+"</p>\
-	<img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\" width=200/>"
-];
-var games = "<article>"+gameType.join("<br/>")+"</article>";
-
-
 var fonts = [
 "\'Courier\'",
 "\'Arial\'",
@@ -126,12 +118,25 @@ var contactMessage = [
  imgify(contactGif,200),
 ]
 
+///make this better:
 
+var gameDraw = [
+"draw/",
+"img/draw.png",
+"Draw concentrical polygons as they get smaller. Print page when you are done.",
+repo + "misc/tree/master/pong",
+raw  + "misc/master/pong/screen1.jpg",
+"A Pd Vanilla + Gem version of the pong game."
+];
 
-
-
-
-
+var gameType = [
+"<button onclick=\"window.open(\'"+gameDraw[0]+"\')\" >draw</button>\
+	<p>"+gameDraw[2]+"</p>\
+	<img onclick=\"window.open(\'"+gameDraw[0]+"\')\" src=\""+gameDraw[1]+"\" width=200/>",
+"<button onclick=\"window.open(\'"+gameDraw[3]+"\')\" >PONG</button>\
+	<p>"+gameDraw[5]+"</p>\
+	<img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\" width=200/>"
+];
 
 
 
