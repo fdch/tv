@@ -139,7 +139,7 @@ function getCV() {
         tag("li",edesc),
         tag("li",eloca),
         tag("li",edate.toDateString()),
-        tag("li",who),
+        tag("li",eperf),
         tag("blockquote",edesc),
         "</ul>",
         "</li>");
