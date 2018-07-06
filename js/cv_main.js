@@ -137,7 +137,7 @@ function getCV() {
         "<ul>",
         tag("li",etitl),
         tag("li",edesc),
-        tag("li",where),
+        tag("li",eloca),
         tag("li",edate.toDateString()),
         tag("li",who),
         tag("blockquote",edesc),
