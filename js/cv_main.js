@@ -163,22 +163,10 @@ $(function(){
   getCV();
 
   $("main article").append([
-    "<section id=personal>",
-    "<ul><li>",
-    personal.join("</li><li>"),
-    "</li></ul>", 
-    "</section>",
-    "<section id=teachings>",
-    teachings.join(""), 
-    "</section>",
-    "<section id=awards>",
-    awards.join(""), 
-    "</section>",
-    "<section id=collaborations>",
-    collaborations.join(""), 
-    "</section>",
-    "<section id=performances>",
-    performances.join(""), 
-    "</section>"
+    "<section id=personal><ul><li>"+personal.join("</li><li>")+"</li></ul></section>",
+    "<section id=teachings>"+teachings.join("")+"</section>",
+    "<section id=awards>"+awards.join("")+"</section>",
+    "<section id=collaborations>"+collaborations.join("")+"</section>",
+    "<section id=performances>"+performances.join("")+"</section>"
   ]);
 });
