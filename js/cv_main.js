@@ -7,8 +7,7 @@
 //////////                           / ///////////
 //////////////////////////////        ///////////
 
-var teachings, awards, collaborations, performances, unworks;
-var info=[];
+var teachings=[], awards=[], collaborations=[], performances=[], unworks=[], info=[];
 
 function getCV() {
 	var pk = Object.keys(personal);
