@@ -16,8 +16,8 @@ function getCV() {
 	info.push("<ul>");
 	for (var k in pk) {
 		info.push(
-			tag("li",k),
-			tag("li",personal.k)
+			tag("li",pk[k]),
+			tag("li",personal.pk[k])
 		);
 	}
 	info.push("</ul>");
