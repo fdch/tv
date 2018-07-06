@@ -31,7 +31,10 @@ var nyuTitle = "Music Composition & Theory";
 var uncTitle = "Licenciatura en Composición Musical";
 var nyu = linkify("New York University (GSAS)",nyulink,1)
 var advisors = ["Jaime Oliver La Rosa","Elizabeth Hoffman"];
-var status = ["PhD Candidate", "Candidato de PhD"];
+var status = [
+	"PhD Candidate",
+	"Candidato de PhD"
+];
 
 var bioEnglish = "<p>"+subtitle+" studied "+uncTitle+" at "+unc+".\
  He is a "+status[0]+" in "+nyuTitle+" at "+nyu+" with "+advisors.join(" and ")+".\
