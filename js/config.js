@@ -33,7 +33,7 @@ var nyu = linkify("New York University (GSAS)",nyulink,1)
 var advisors = ["Jaime Oliver La Rosa","Elizabeth Hoffman"];
 var currently = ["PhD Candidate","Candidato de PhD"];
 var tesis = ["Database Multimedia Composition","Composición Multimedial con Base de Datos"]
-var bday = new Date(1988, 5, 8);
+var bday = new Date(1988, 5, 8, 12, 1, 13, 128);
 
 var bioEnglish = "<p>"+subtitle+" studied "+uncTitle+" at "+unc+".\
  He is a "+currently[0]+" in "+nyuTitle+" at "+nyu+" with "+advisors.join(" and ")+".\
