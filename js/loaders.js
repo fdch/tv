@@ -57,10 +57,8 @@ function getWork() {
       wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\">"+etitl+"</span>";
 
       wmitems.push(wmitem);
-
-      $("main article").prepend(nwork.join(""));
     }
-
+    $("main article").append(nwork.join(""));
     $("main nav").append(wmitems.sort().join(tilde));
 
     vis("id-"+makeID(featWork));
