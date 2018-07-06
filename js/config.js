@@ -31,19 +31,17 @@ var nyuTitle = "Music Composition & Theory";
 var uncTitle = "Licenciatura en Composición Musical";
 var nyu = linkify("New York University (GSAS)",nyulink,1)
 var advisors = ["Jaime Oliver La Rosa","Elizabeth Hoffman"];
-var status = [
-	"PhD Candidate",
-	"Candidato de PhD"
-];
+var currently = ["PhD Candidate","Candidato de PhD"];
+var tesis = ["Database Multimedia Composition","Composición Multimedial con Base de Datos"]
 
 var bioEnglish = "<p>"+subtitle+" studied "+uncTitle+" at "+unc+".\
- He is a "+status[0]+" in "+nyuTitle+" at "+nyu+" with "+advisors.join(" and ")+".\
- His research focuses on Database Multimedia Composition.\
+ He is a "+currently[0]+" in "+nyuTitle+" at "+nyu+" with "+advisors.join(" and ")+".\
+ His research focuses on "+tesis[0]+".\
  His work is available at "+url+"</p>";
 
 var bioSpanish = "<p>"+subtitle+" estudió "+uncTitle+" en "+unc+".\
- Es "+status[1]+" de "+nyuTitle+" en "+nyu+" con "+advisors.join(" y ")+".\
- Su investigación se centra en la Composición Multimedial con Base de Datos.\
+ Es "+currently[1]+" de "+nyuTitle+" en "+nyu+" con "+advisors.join(" y ")+".\
+ Su investigación se centra en la "+tesis[1]+".\
  Su trabajo se encuentra disponible en "+url+"</p>";
 
 var personal = {
