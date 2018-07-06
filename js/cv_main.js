@@ -186,7 +186,7 @@ $(function(){
     collaborations.join(""), 
     "</section>",
     "<section id=performances>",
-    performance.join(""), 
+    performances.join(""), 
     "</section>"
   ]);
 });
