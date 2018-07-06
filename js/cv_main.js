@@ -34,9 +34,10 @@ function getCV() {
       teachings.push("<li>"+type+" in "+clase+" at "+department+" of "+institution+" ("+term+" "+year+")</li>");
     }
     teachings.push("</ul>");
+    $("main article").append("<section id=teachings>"+teachings.join("")+"</section>");
   });
   
-  $("main article").append("<section id=teachings>"+teachings.join("")+"</section>");
+  
   
   loadJSON(cvURL[1], function(response) {
    var f, e, i, entry;
@@ -63,9 +64,10 @@ function getCV() {
         "</li>");
     }
     awards.push("</ul>");
+    $("main article").append("<section id=awards>"+awards.join("")+"</section>");
   });
 
-  $("main article").append("<section id=awards>"+awards.join("")+"</section>");
+  
 
   loadJSON(cvURL[2], function(response) {
    var f, e, i, entry;
@@ -89,9 +91,10 @@ function getCV() {
         "</li>");
     }
     collaborations.push("</ul>");
+    $("main article").append("<section id=collaborations>"+collaborations.join("")+"</section>");
   });
 
-  $("main article").append("<section id=collaborations>"+collaborations.join("")+"</section>");
+  
 
   loadJSON(cvURL[3], function(response) {
     var stamp, what, when, desc, where, instrument, who;
@@ -116,9 +119,10 @@ function getCV() {
         "</li>");
     }
     performances.push("</ul>");
+    $("main article").append("<section id=performances>"+performances.join("")+"</section>");
   });
 
-  $("main article").append("<section id=performances>"+performances.join("")+"</section>");
+  
 
   //get work (sheet from Works)
   loadJSON(sheetURL, function(response) {
@@ -157,9 +161,10 @@ function getCV() {
         "</ul>",
         "</li>");
     }
+    $("main article").append("<section id=unworks>"+unworks.join("")+"</section>");
   });
 
-  $("main article").append("<section id=unworks>"+unworks.join("")+"</section>");
+  
 
 }
 
@@ -176,5 +181,5 @@ $(function(){
   $("article").width(width()).height(height());
 
   getCV();
-  
+
 });
