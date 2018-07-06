@@ -11,13 +11,12 @@ var teachings=[], awards=[], collaborations=[], performances=[], unworks=[], inf
 
 function getCV() {
 	var pk = Object.keys(personal);
-	console.log(pk);
+	//console.log(pk);
 	info=[];
 	info.push("<ul>");
 	for (var k in pk) {
 		info.push(
-			tag("li",pk[k]),
-			tag("li",personal.pk[k])
+			tag("li",pk[k]+": "+personal.pk[k])
 		);
 	}
 	info.push("</ul>");
