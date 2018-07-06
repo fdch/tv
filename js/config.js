@@ -44,16 +44,16 @@ var bioSpanish = "<p>"+subtitle+" estudió "+uncTitle+" en "+unc+".\
  Su investigación se centra en la "+tesis[1]+".\
  Su trabajo se encuentra disponible en "+url+"</p>";
 
-var personal = {
-"Full Name": "Federico Nicolás Cámara Halac",
-"Date of Birth" : new Date(1988, 5, 8),
-"Country of Birth" : "Argentina",
-"Mailing Address" : "24 Waverly Place r.268. New York, NY 10003. USA",
-"Phone Number" : "(1) 347-302-0982",
-"E-mail" : email,
-"Graduate" : status[0]+ " in "+nyuTitle+" at "+nyu+" (2013-2019)",
-"Undergraduate" : uncTitle + " at the " +unc+ "(2006-12)",
-}
+var personal = [
+"Full Name: Federico Nicolás Cámara Halac",
+"Date of Birth : "+ new Date(1988, 5, 8),
+"Country of Birth : Argentina",
+"Mailing Address : 24 Waverly Place r.268. New York, NY 10003. USA",
+"Phone Number : (1) 347-302-0982",
+"E-mail : "+ email,
+"Graduate Education : "+ status[0] + " in "+nyuTitle+" at "+nyu+" (2013-2019)",
+"Undergraduate : " +uncTitle + " at the " +unc+ "(2006-12)",
+];
 
 var footer = [
 	linkify("blog",blog,1),

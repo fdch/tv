@@ -7,19 +7,9 @@
 //////////                           / ///////////
 //////////////////////////////        ///////////
 
-var teachings=[], awards=[], collaborations=[], performances=[], unworks=[], info=[];
+var teachings=[], awards=[], collaborations=[], performances=[], unworks=[];
 
 function getCV() {
-	var pk = Object.keys(personal);
-	//console.log(pk);
-	info=[];
-	info.push("<ul>");
-	for (var k in pk) {
-		info.push(
-			tag("li",pk[k]+": "+personal[0].pk[k])
-		);
-	}
-	info.push("</ul>");
 
     loadJSON(cvURL[0], function(response) {
     var f, e, i, entry;
@@ -173,8 +163,10 @@ $(function(){
   getCV();
 
   $("main article").append([
-    "<section id=info>",
-    info.join(""), 
+    "<section id=personal>",
+    "<ul><li>",
+    personal.join("</li><li>"),
+    "</li></ul>", 
     "</section>",
     "<section id=teachings>",
     teachings.join(""), 
