@@ -7,7 +7,7 @@ var raw = "https://raw.githubusercontent.com/fdch/";
 var blog = "http://ffddcchh.tumblr.com/";
 var scloud = "https://soundcloud.com/ffddcchh";
 var video = "https://vimeo.com/fdch";
-var nyuid = "fch226";
+var nyuid = "fch226((at))nyu.edu";
 var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
 var tilde = " ~ ";
@@ -118,3 +118,21 @@ var fonts = [
 ];
 
 var imgArray = ["img/imgone.png","img/imgtwo.png"];
+
+var contactMessage = [
+ "<h3>contact</h3>",
+ "<p>Send me an email at "+nyuid+" and I will get in touch with you (as fast as nonhumanly possible :)</p>",
+ "<p>Mandá(me) una correa electrónica a "+nyuid+" así me pongo en contacto lo más rápido que pueda (dentro de lo nohumánamente posible ;)</p>",
+ imgify(contactGif,200),
+]
+
+
+
+
+
+
+
+
+
+
+

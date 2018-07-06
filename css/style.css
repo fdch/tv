@@ -16,7 +16,7 @@ h1, h2 {
 #rot {
    float:right;
 }
-#content{
+main{
   position:relative;
   top:5px;
 }

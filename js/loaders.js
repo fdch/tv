@@ -55,7 +55,7 @@ function getWork() {
       nwork += "<p>"+eprog+"</p><h6>fdch: "+estam+"</h6></div>";
       wmitem = "<span class=menuitem onclick=\"vis(\'"+nwid+"\')\">"+etitl+"</span>";
       wmitems.push(wmitem);
-      $("#content article").prepend(nwork);
+      $("main article").prepend(nwork);
     }
     $("#workM").append(wmitems.sort().join(" "));
     vis("id-"+featWork.replace(/ /g,"_").toLowerCase());
@@ -68,7 +68,7 @@ function getWritings() {
     f = JSON.parse(response);
     entry = f.feed.entry;
     
-    $("#content article").append("<blockquote>");
+    //$("main article");//.append("<blockquote>");
 
     for (i in entry) {
       var papers=[];
@@ -80,22 +80,31 @@ function getWritings() {
       epublished = e.gsx$published.$t;
       edownload = e.gsx$download.$t;
 
-      papers.push(linkify("<h4>"+etitle+"</h4>", elink));
-      papers.push("<p>"+edesc+"</p>");
-
+      papers.push([
+        "<section>",
+        "<header>",
+        linkify("<h4>"+etitle+"</h4>", elink),
+      ]);
 
       if (edownload) {
-        var myButtons = "<button style='float:right' "+onclickify("window.open",edownload)+" >Get it</button>";
+        var myButtons = "<button "+onclickify("window.open",edownload)+" >Get it</button>";
         papers.push(myButtons);
       } 
       if (epublished){
-        papers.push("<p class='sidenote'>"+epublished+"</p>");
+        papers.push("<blockquote><i>"+epublished+"</i></blockquote>");
       }
-      $("#content article").append(papers.join(""));
+
+      papers.push([
+        "</header>",
+        "<p>"+edesc+"</p>",
+        "</section>"
+      ]);
+
+      $("main article").append(papers.join(""));
 
     }
 
-    $("#content article").append("</blockquote>");
+    //$("main article").append("</blockquote>");
   });
 }
 
@@ -106,7 +115,7 @@ function getEvents() {
     var wmitems = [];
     f = JSON.parse(response);
     entry = f.feed.entry;
-    $("#content article").append("<blockquote><ul>");
+    $("main article").append("<blockquote><ul>");
     var today = new Date().toDateString();
     for (i in entry) {
       e = entry[i];
@@ -119,12 +128,12 @@ function getEvents() {
       <h4>"+edate.toDateString()+"</h4>\
       <blockquote>"+edesc+"</blockquote></div></li>";
       if (today < edate) {
-        $("#content article").append(nwork);
+        $("main article").append(nwork);
       } else {
-        $("#content article").prepend(nwork);
+        $("main article").prepend(nwork);
       }
     }
-    $("#content article").append("</ul></blockquote>");
+    $("main article").append("</ul></blockquote>");
   });
 }
 // Github : repo,
@@ -148,7 +157,7 @@ function getSocial() {
     entry = f.feed.entry;
 
     //everything happens as a blockquote
-    $("#content article").append("<blockquote>");
+    $("main article").append("<blockquote>");
 
     for (i in entry) {
       e = entry[i];
@@ -169,7 +178,7 @@ function getSocial() {
       } 
     }
 
-    $("#content article").append([
+    $("main article").append([
       "<h4>People</h4>",
       people.join(tilde),
       "<h4>Ensembles</h4>",
@@ -182,7 +191,7 @@ function getSocial() {
 
 
 function getBio() {
-    $("#content").append([
+    $("main").append([
       "<article>",
       imgify(bioImage,width()*0.4),
       "<h5>"+ linkify("curriculum vitae","cv/",1) +"</h5>",
@@ -194,40 +203,33 @@ function getBio() {
 }
 
 function loader(x) {
-  $("#content").html("");
+  $("main").html("");
   $("#backvideo").hide().attr('src','');
   $('article').width(width()).height(height());
   switch (x) {
     case "games" :
-      $("#content").append(games);
+      $("main").append(games);
       break;
     case "contact" :
-      $("#content").append([
-        "<article>",
-        "<h3>contact</h3>",
-        "<p>Send me an email at "+nyuid+"((at))nyu.edu and I will get in touch with you (as fast as nonhumanly possible :)</p>",
-        "<p>Mandá(me) una correa electrónica a "+nyuid+"((at))nyu.edu así me pongo en contacto lo más rápido que pueda (dentro de lo nohumánamente posible ;)</p>",
-        imgify(contactGif,200),
-        "</article>"
-        ]);
+      $("main").append(["<article>",contactMessage,"</article>"]);
       break;
     case "events" :
-      $("#content").append("<article></article>");
+      $("main").append("<article></article>");
       getEvents();
       break;
     case "unwork":
-      $("#content").append("<nav id=workM></nav><article></article>");
+      $("main").append("<nav id=workM></nav><article></article>");
       getWork();
       break;
     case "bio":
       getBio();
       break;
     case "social":
-      $("#content").append("<article></article>");
+      $("main").append("<article></article>");
       getSocial();
       break;
     case "papers":
-      $("#content").append("<article></article>");
+      $("main").append("<article></article>");
       getWritings();
       break;
     default:
