@@ -166,7 +166,7 @@ function getUnworks(){
         "</ul>",
         "</li>");
     }
-    $("#unworks").append(unworks.join(""));
+    $("#unworks").append(unworks.join(tag("p",tilde)));
   });
 
 }
