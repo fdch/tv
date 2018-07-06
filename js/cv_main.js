@@ -54,7 +54,7 @@ function getCV() {
 
       awards.push(
         "<li>"+title+" for "+duration+" in "+where+" ("+type+")",
-        "<blockquote>"+desc+"<i>"linkify(who,url)"</i></blockquote>",
+        "<blockquote>"+desc+"<i>"+linkify(who,url)+"</i></blockquote>",
         "</li>");
     }
     awards.push("</ul>");
