@@ -1,0 +1,19 @@
+body{
+	margin:10px 0px 0px 30px;
+	padding:0;
+	text-align:center;
+	font-family:Courier, Courier New;
+	text-align:left;
+	width:800px;
+	margin:0 auto;
+	padding:30px;
+	border:none;
+}
+h4, h5 {
+	border-bottom:1px dashed black;
+}
+footer {
+	text-align:center;
+	margin:20px 0 0 0;
+	padding:20px 0 0 0;
+}
