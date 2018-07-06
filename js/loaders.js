@@ -80,11 +80,11 @@ function getWritings() {
       epublished = e.gsx$published.$t;
       edownload = e.gsx$download.$t;
 
-      papers.push([
-        "<section>"
-        "<header>"
-        linkify("<h4>"+etitle+"</h4>", elink)
-      ]);
+      papers.push(
+        "<section>",
+        "<header>",
+        linkify("<h4>"+etitle+"</h4>", elink),
+      );
 
       if (edownload) {
         var myButtons = "<button "+onclickify("window.open",edownload)+" >Get it</button>";
@@ -94,11 +94,11 @@ function getWritings() {
         papers.push("<blockquote><i>"+epublished+"</i></blockquote>");
       }
 
-      papers.push([
-        "</header>"
-        "<p>"+edesc+"</p>"
+      papers.push(
+        "</header>",
+        "<p>"+edesc+"</p>",
         "</section>"
-      ]);
+      );
 
       $("main article").append(papers.join(""));
 
