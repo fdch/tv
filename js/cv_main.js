@@ -164,9 +164,10 @@ function getUnworks(){
         tag("li",eperf),
         //tag("blockquote",edesc),
         "</ul>",
-        "</li>");
+        "</li>",
+        tag("p",tilde));
     }
-    $("#unworks").append(unworks.join(tag("p",tilde)));
+    $("#unworks").append(unworks.join(""));
   });
 
 }
