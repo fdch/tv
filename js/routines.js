@@ -13,7 +13,7 @@ function getFile(x){
 }
 
 function makeID(x){
-  return x.replace(/,/g,'').toLowerCase();
+  return x.replace(/ /g,'_').toLowerCase();
 }
 
 function onclickify(func,src) {
