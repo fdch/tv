@@ -10,7 +10,7 @@
 var teachings, awards, collaborations, performances, unworks, info;
 
 function getCV() {
-	var pk = personal.keys();
+	var pk = Object.keys(personal);
 	info.push("<ul>");
 	for (var k in pk) {
 		info.push(
@@ -172,7 +172,7 @@ $(function(){
   getCV();
 
   $("main article").append([
-    "<section id=personal>",
+    "<section id=info>",
     info.join(""), 
     "</section>",
     "<section id=teachings>",
