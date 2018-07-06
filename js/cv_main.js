@@ -7,10 +7,12 @@
 //////////                           / ///////////
 //////////////////////////////        ///////////
 
-var teachings, awards, collaborations, performances, unworks, info;
+var teachings, awards, collaborations, performances, unworks;
+var info=[];
 
 function getCV() {
 	var pk = Object.keys(personal);
+	info=[];
 	info.push("<ul>");
 	for (var k in pk) {
 		info.push(
