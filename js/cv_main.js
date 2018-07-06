@@ -62,7 +62,7 @@ function getAwards() {
 
       awards.push(
         "<li>"+title+" for "+duration+" in "+where+" ("+type+")",
-        "<blockquote>"+desc+"<i>"+linkify(who,url,1)+"</i></blockquote>",
+        "<blockquote>"+desc+"<i> "+linkify(who,url,1)+"</i></blockquote>",
         "</li>",
         tag("p",tilde));
     }
