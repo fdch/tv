@@ -133,6 +133,7 @@ var contactMessage = [
  "<p>Send me an email at "+nyuid+" and I will get in touch with you (as fast as nonhumanly possible :)</p>",
  "<p>Mandá(me) una correa electrónica a "+nyuid+" así me pongo en contacto lo más rápido que pueda (dentro de lo nohumánamente posible ;)</p>",
  imgify(contactGif,200),
+ footer.join(tilde)
 ]
 
 ///make this better:

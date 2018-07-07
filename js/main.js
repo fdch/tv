@@ -40,5 +40,5 @@ $(function(){
     funImage();
   });
 
-  $("footer").append(footer.join(tilde));
+  $("footer").hide()//.append(footer.join(tilde));
 });
