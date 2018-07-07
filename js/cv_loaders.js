@@ -163,13 +163,13 @@ function getUnworks(id){
       edura = e.gsx$duration.$t;
 
       unworks.push(
-        "<li>"+tag("i",etitl)+". "+edesc,
+        "<li>"+tag("h5",tag("i",etitl)+". "+edesc),
         "<ul style='margin-top:0.5%'>",
-          tag("li","Duration: "+edura+" minutes."),
+          "<blockquote>"+tag("li","Duration: "+edura+" minutes."),
           tag("li","Premiered by: "+eperf),
           tag("li","Date: "+edate.toDateString()),
           tag("li","Place: "+eloca),
-          tag("li","Keywords: "+tag("i",ecat)),
+          tag("li","Keywords: "+tag("i",ecat))+"</blockquote>",
         "</ul>",
         "</li>",
       );
