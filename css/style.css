@@ -45,8 +45,8 @@ a {
   color:lightblue;
   font-weight:bold;
 }
-section header h4 {
-  cursor:pointer;
+header h4 {
+  cursor:hand;
 }
 iframe { 
   padding:1%;
