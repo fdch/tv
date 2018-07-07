@@ -58,7 +58,7 @@ $(function(){
       case 5:
         getPerformances(target);
         break;
-      default;
+      default:
       break;
     }
 
