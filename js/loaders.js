@@ -208,7 +208,7 @@ function getBio() {
 function loader(x) {
   $("main").html("");
   $("#backvideo").hide().attr('src','');
-  $('article').width(width()).height(height());
+  $('article').width(articleWidth(maxWidth));
 
   switch (x) {
     case "games" :

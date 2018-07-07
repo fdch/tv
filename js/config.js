@@ -49,7 +49,7 @@ var bioSpanish = "<p>"+subtitle+" estudió "+uncTitle+" en "+unc+".\
 
 var personal = [
 "Full Name: Federico Nicolás Cámara Halac",
-"Date of Birth : "+ bday.toDateString(),
+"Date of Birth : "+ bday,
 "Country of Birth : Argentina",
 "Mailing Address : 24 Waverly Place r.268. New York, NY 10003. USA",
 "Phone Number : (1) 347-302-0982",
@@ -157,14 +157,10 @@ var gameType = [
 
 
 
-// Github : repo,
-// Twitter:http://www.twitter.com/fedecamarahalac,
+// Twitter:http://www.twitter.com/ffddcchh,
 // Facebook: facebookUrl,
-// SoundCloud:http://www.soundcloud.com/fedecamarahalac,
-// Vimeo: video,
 // Vine:http://www.vine.co/fedecamarahalac,
 // YouTube:https://www.youtube.com/channel/UCzOx-iKaNx9ruddNI6ykTIA,
-// Tumblr: blog,
 // Flickr:http://www.flickr.com/federicocamarahalac,
 // Linkedin:http://linkedin.com/in/fedecamarahalac,
 
