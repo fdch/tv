@@ -141,12 +141,12 @@ function getEvents() {
         tag("blockquote",edesc),
         "</div></li>"
       );
-
-      if (today < edate) {
-        $("main article").append(nwork.join(""));
-      } else {
-        $("main article").prepend(nwork.join(""));
-      }
+    }
+  
+    if (today < edate) {
+      $("main article").append(nwork.join(""));
+    } else {
+      $("main article").prepend(nwork.join(""));
     }
     $("main article").append("</ul></blockquote>");
   });
