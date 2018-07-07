@@ -29,7 +29,7 @@ $(function(){
   $.each(allsections, function(index,value){
     var theid = makeID(value);
     $("main article").append(
-      "<section id="+theid+
+      "<section id="+theid+">"+
       "<header onclick=\"function(){$(\'#"+theid+" > ul\').toggle()}\">"+
       "</section>");
   });
