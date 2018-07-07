@@ -35,4 +35,5 @@ $(function(){
   getCollabs();
   getPerformances();
 
+  $("footer").append(linkify("back~", url));
 });
