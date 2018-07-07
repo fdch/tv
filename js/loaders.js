@@ -120,7 +120,7 @@ function getEvents() {
     var f, e, i, entry, estam, etitl, edate, ewher, edesc;
     var nwid, wmitem;
     var nwork = [];
-    var wmitems = [];
+    var event = [];
     f = JSON.parse(response);
     entry = f.feed.entry;
 
@@ -134,24 +134,18 @@ function getEvents() {
       ewher= e.gsx$where.$t;
       edesc = e.gsx$description.$t;
 
-
+      event = [
+        "<li><div>", 
+        tag("h3",etitl+" ("+ewher+")"),
+        tag("h4",edate.toDateString()),
+        tag("blockquote",edesc),
+        "</div></li>"      
+      ];
 
       if (today > edate) {
-        nwork.push(
-         "<li><div>",
-          tag("h3",etitl+" ("+ewher+")"),
-          tag("h4",edate.toDateString()),
-          tag("blockquote",edesc),
-          "</div></li>"
-        );
+        nwork.push(event.join(""));
       } else {
-        nwork.unshift(
-          "<li><div>",
-          tag("h3",etitl+" ("+ewher+")"),
-          tag("h4",edate.toDateString()),
-          tag("blockquote",edesc),
-          "</div></li>"
-        );
+        nwork.unshift(event.join(""));
       }
     }
 
