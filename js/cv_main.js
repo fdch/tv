@@ -23,7 +23,7 @@ $(function(){
 
   for (var i in allsections) {
     window["get"+allsections[i]];
-    var theid = allsections[i].toLowerCaps();
+    var theid = makeID(allsections[i]);
     $("main article").append(
       "<section id="+theid+
       "<header onclick=\"function(){$(\"#"+theid+" > ul\").toggle()}\""+
