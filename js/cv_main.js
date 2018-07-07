@@ -31,6 +31,7 @@ $(function(){
     $("main article").append(
       "<section id="+theid+">"+
       "<header onclick=\"function(){$(\'#"+theid+" > ul\').toggle()}\">"+
+      tag("h4",value)+"</header>"
       "</section>");
   });
   
