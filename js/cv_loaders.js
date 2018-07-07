@@ -24,8 +24,8 @@ function getTeachings() {
       title = year+tilde+type;
       job = tag("b",clase) + " at " + department + " of " + institution + " (" + term + ")";
       teachings.push(
-        tag("li",job),
-        tag("blockquote",title)
+        tag("li",title),
+        tag("blockquote",job)
       );
     }
     teachings.push("</ul>");
