@@ -13,6 +13,12 @@ var video = "https://vimeo.com/fdch";
 var nyuid = "fch226((at))nyu.edu";
 var email = "fch226@nyu.edu";
 var facebookUrl = "https://www.facebook.com/fedecamarahalac/";
+var twitter = "http://www.twitter.com/ffddcchh";
+var yt = "https://www.youtube.com/channel/UCzOx-iKaNx9ruddNI6ykTIA";
+var flickr = "http://www.flickr.com/federicocamarahalac";
+var linkedin = "http://linkedin.com/in/fedecamarahalac";
+
+
 var tilde = " ~ ";
 var hide = "style=\"display:none\"";
 var today = new Date().toDateString();
@@ -59,11 +65,17 @@ var personal = [
 "Undergraduate : " +uncTitle + " at the " +unc+ " (2006-12)",
 ];
 
+
 var footer = [
-	linkify("blog",blog,1),
-	linkify("code",repo,1),
-	linkify("video",video,1),
-	linkify("audio",scloud,1)
+	linkify("Tumblr",blog,1),
+	linkify("Github",repo,1),
+	linkify("Vimeo",video,1),
+	linkify("SoundCloud",scloud,1),
+	linkify("Twitter",twitter,1),
+	linkify("Facebook",facebookUrl,1),
+	linkify("Youtube",yt,1),
+	linkify("Flickr",flickr,1),
+	linkify("LinkedIn", linkedin,1)
 ]
 
 var contactGif = "img/zissou.gif";
@@ -133,6 +145,7 @@ var contactMessage = [
  "<p>Send me an email at "+nyuid+" and I will get in touch with you (as fast as nonhumanly possible :)</p>",
  "<p>Mandá(me) una correa electrónica a "+nyuid+" así me pongo en contacto lo más rápido que pueda (dentro de lo nohumánamente posible ;)</p>",
  imgify(contactGif,200),
+ "</br>"
  footer.join(tilde)
 ]
 
@@ -156,14 +169,6 @@ var gameType = [
 	<img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\" width=200/>"
 ];
 
-
-
-// Twitter:http://www.twitter.com/ffddcchh,
-// Facebook: facebookUrl,
-// Vine:http://www.vine.co/fedecamarahalac,
-// YouTube:https://www.youtube.com/channel/UCzOx-iKaNx9ruddNI6ykTIA,
-// Flickr:http://www.flickr.com/federicocamarahalac,
-// Linkedin:http://linkedin.com/in/fedecamarahalac,
 
 
 
