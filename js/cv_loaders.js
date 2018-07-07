@@ -1,7 +1,7 @@
 var teachings=[], awards=[], collaborations=[], performances=[], unworks=[];
 
 function getPersonal(id){
-  $("#personal").append("<ul id="+id+">"tag("li",personal.join("</li><li>"))+"</li></ul>");
+  $("#personal").append("<ul id="+id+">"+tag("li",personal.join("</li><li>"))+"</li></ul>");
 }
 
 function getTeachings(id) {
