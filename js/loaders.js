@@ -197,7 +197,7 @@ function getBio() {
     $("main").append([
       "<article>",
       imgify(bioImage,width()*0.4),
-      tag("h5",linkify("curriculum vitae",cv,1)),
+      tag("h5",linkify("curriculum vitae",cv,0)),
       bioEnglish,
       "<br/>",
       bioSpanish,
