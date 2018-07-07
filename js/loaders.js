@@ -142,8 +142,8 @@ function getEvents() {
         "</div></li>"
       );
     }
-  
-    if (today < edate) {
+
+    if (today > edate) {
       $("main article").append(nwork.join(""));
     } else {
       $("main article").prepend(nwork.join(""));
