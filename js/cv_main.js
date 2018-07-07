@@ -28,20 +28,19 @@ $(function(){
   	"<section id=performances>"   + tag("header",tag("h4","Performances"))        +"</section>"
   	])
 
-  $("#personal").append(tag("ul",tag("li",personal.join("</li><li>"))));
-    
+  getPersonal();
   getTeachings();
   getAwards();
   getUnworks();
   getCollabs();
   getPerformances();
 
-  $("#personal header h4").click(function(){$(this).add("ul").toggle()});
-  $("#teachings header h4").click(function(){$(this).add("ul").toggle()});
-  $("#awards header h4").click(function(){$(this).add("ul").toggle()});
-  $("#unworks header h4").click(function(){$(this).add("ul").toggle()});
-  $("#collaborations header h4").click(function(){$(this).add("ul").toggle()});
-  $("#performances header h4").click(function(){$(this).add("ul").toggle()});
+  toggleIt("#personal header h4","#personal ul");
+  toggleIt("#teachings header h4","#teachings ul");
+  toggleIt("#awards header h4","#awards ul");
+  toggleIt("#unworks header h4","#unworks ul");
+  toggleIt("#collaborations header h4","#collaborations ul");
+  toggleIt("#performances header h4","#performances ul");
 
   $("footer").append(linkify("back~", url));
 });

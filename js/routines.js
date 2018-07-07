@@ -6,6 +6,12 @@ var vis = function(x) {
   if (y != null) y.style.display = 'block', prev=y;
 };
 
+function toggleIt(x,y){
+  $("x").click(function(){
+    $("y").toggle()
+  });
+}
+
 function getFile(x){
   $.get(x, function(data){
   return data ;

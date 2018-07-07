@@ -1,5 +1,9 @@
 var teachings=[], awards=[], collaborations=[], performances=[], unworks=[];
 
+function getPersonal(){
+  $("#personal").append(tag("ul",tag("li",personal.join("</li><li>"))));
+}
+
 function getTeachings() {
 
     loadJSON(cvURL[0], function(response) {
