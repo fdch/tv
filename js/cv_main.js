@@ -61,7 +61,6 @@ $(function(){
       default:
       break;
     }
-
   });
-  $("footer").hide();
-  // $("footer").append(linkify("back~", url));});
+  $("footer").hide();// $("footer").append(linkify("back~", url));
+});
