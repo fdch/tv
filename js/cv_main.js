@@ -35,12 +35,12 @@ $(function(){
   getCollabs();
   getPerformances();
 
-  toggleIt($("#personal header h4"),$("#personal ul"));
-  toggleIt($("#teachings header h4"),$("#teachings ul"));
-  toggleIt($("#awards header h4"),$("#awards ul"));
-  toggleIt($("#unworks header h4"),$("#unworks ul"));
-  toggleIt($("#collaborations header h4"),$("#collaborations ul"));
-  toggleIt($("#performances header h4"),$("#performances ul"));
+  toggleIt($("#personal > header > h4"),$("#personal > ul"));
+  toggleIt($("#teachings > header > h4"),$("#teachings > ul"));
+  toggleIt($("#awards > header > h4"),$("#awards > ul"));
+  toggleIt($("#unworks > header > h4"),$("#unworks > ul"));
+  toggleIt($("#collaborations > header > h4"),$("#collaborations > ul"));
+  toggleIt($("#performances > header > h4"),$("#performances > ul"));
 
   $("footer").append(linkify("back~", url));
 });
