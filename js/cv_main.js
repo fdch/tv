@@ -31,7 +31,7 @@ $(function(){
     var target = theid+"-ul";
     var section = [
       "<section id=\""+theid+"\" >",
-      "<header onclick=\"function(){$(\'#"+target+"\').toggle()}\">",
+      "<header onclick=\"toggleIt($(\'#"+target+"\'))\">",
       tag("h4",value),
       "</header>",
       "</section>"

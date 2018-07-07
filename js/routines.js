@@ -6,10 +6,8 @@ var vis = function(x) {
   if (y != null) y.style.display = 'block', prev=y;
 };
 
-function toggleIt(x,y){
-  x.click(function(){
-    y.toggle()
-  });
+function toggleIt(x){
+    x.toggle();
 }
 
 function getFile(x){
