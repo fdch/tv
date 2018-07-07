@@ -6,6 +6,7 @@
 //////////                          /   ///////////
 //////////                           / ///////////
 //////////////////////////////        ///////////
+
 $(function(){
   $("html").css("font-family",fonts[2]); 
   
@@ -16,13 +17,22 @@ $(function(){
   $("main").html("").append("<article></article>");
   $("article, #menubg").width(articleWidth(maxWidth));
 
-  var allsections = ["Personal", "Teachings", "Awards", "Unworks", "Collaborations", "Performances"];
+  var allsections = [
+    "Personal",
+    "Teachings",
+    "Awards",
+    "Unworks",
+    "Collaborations",
+    "Performances"
+  ];
+  
   $.each(allsections, function(index,value){
-    var theid = makeID(value);    $("main article").append(
+    var theid = makeID(value);
+    $("main article").append(
       "<section id="+theid+
       "<header onclick=\"function(){$(\'#"+theid+" > ul\').toggle()}\">"+
       "</section>");
-  })
+  });
   
   getPersonal();
   getTeachings();
