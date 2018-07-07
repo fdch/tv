@@ -1,10 +1,10 @@
 var teachings=[], awards=[], collaborations=[], performances=[], unworks=[];
 
-function getPersonal(){
-  $("#personal").append(tag("ul",tag("li",personal.join("</li><li>"))));
+function getPersonal(id){
+  $("#personal").append("<ul id="+id+">"tag("li",personal.join("</li><li>"))+"</li></ul>");
 }
 
-function getTeachings() {
+function getTeachings(id) {
 
     loadJSON(cvURL[0], function(response) {
     var f, e, i, entry;
@@ -12,7 +12,7 @@ function getTeachings() {
     var title, job;
     f = JSON.parse(response);
     entry = f.feed.entry;
-    teachings = ["<ul>"]; // empty array before refilling it
+    teachings = ["<ul id="+id+">"]; // empty array before refilling it
     
 
     for (i in entry) {
@@ -38,7 +38,7 @@ function getTeachings() {
 }
 
 
-function getAwards() {
+function getAwards(id) {
 
   loadJSON(cvURL[1], function(response) {
    var f, e, i, entry;
@@ -46,7 +46,7 @@ function getAwards() {
    
     f = JSON.parse(response);
     entry = f.feed.entry;
-    awards = ["<ul>"]; // empty array before refilling it
+    awards = ["<ul id="+id+">"]; // empty array before refilling it
     
     for (i in entry) {
       e = entry[i];
@@ -70,7 +70,7 @@ function getAwards() {
   });
 }
 
-function getCollaborations() {
+function getCollaborations(id) {
 
   loadJSON(cvURL[2], function(response) {
    var f, e, i, entry;
@@ -78,7 +78,7 @@ function getCollaborations() {
    
     f = JSON.parse(response);
     entry = f.feed.entry;
-    collaborations = ["<ul>"]; // empty array before refilling it
+    collaborations = ["<ul id="+id+">"]; // empty array before refilling it
     
     for (i in entry) {
       e = entry[i];
@@ -100,14 +100,14 @@ function getCollaborations() {
 
 }
 
-function getPerformances() {
+function getPerformances(id) {
 
   loadJSON(cvURL[3], function(response) {
     var stamp, what, when, desc, where, instrument, who;
     var event, description;
     f = JSON.parse(response);
     entry = f.feed.entry;
-    performances = ["<ul>"]; // empty array before refilling it
+    performances = ["<ul id="+id+">"]; // empty array before refilling it
     
     for (i in entry) {
       e = entry[i];
@@ -134,7 +134,7 @@ function getPerformances() {
 }
 
 
-function getUnworks(){
+function getUnworks(id){
 
   //get work (sheet from Works)
   loadJSON(sheetURL, function(response) {
@@ -144,7 +144,7 @@ function getUnworks(){
     f = JSON.parse(response);
     entry = f.feed.entry;
 
-    unworks = ["<ul>"]; // empty array before refilling it
+    unworks = ["<ul id="+id+">"]; // empty array before refilling it
 
     for (i in entry) {
       e = entry[i];
