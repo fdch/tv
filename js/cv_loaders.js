@@ -85,7 +85,7 @@ function getCollabs() {
       desc         = e.gsx$description.$t;
 
       collaborations.push(
-        "<li>"+category+" in "+where+" ("+year+")",
+        "<li>"+year+". "+tag("b",category)+" in "+where+" ",
         tag("blockquote",desc),
         "</li>",
         tag("p",tilde));
@@ -155,14 +155,11 @@ function getUnworks(){
       eloca = e.gsx$location.$t;
 
       unworks.push(
-        "<li>"+etitl,
+        "<li>"+tag("i",etitl)+". "+edesc,
         "<ul>",
-        tag("li",edesc),
-        tag("li",ecat),
-        tag("li",eloca),
-        tag("li",edate.toDateString()),
-        tag("li",eperf),
-        //tag("blockquote",edesc),
+          tag("li","Performed by: "+eperf),
+          tag("li","On "+edate.toDateString()+", in "+eloca),
+          tag("li","Keywords: "+tag("i",ecat)),
         "</ul>",
         "</li>",
         tag("p",tilde));
