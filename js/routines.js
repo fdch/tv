@@ -60,6 +60,11 @@ function height(){
        || 0;
 }
 
+function articleWidth(maxW){
+  var pw  = width();
+  if (pw >= maxW) {return maxW;} else {return pw;}
+}
+
 function loadJSON(x,callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
