@@ -118,8 +118,9 @@ function getPerformances() {
       event = what+" at "+where+", with "+who;
 
       performances.push(
-        "<li>"+when.toDateString()+tilde+"("+instrument+"). ",
+        "<li>"+when.toDateString()+tilde,
         event,
+        " ("+instrument+").",
         tag("blockquote",desc),
         "</li>",
       );
