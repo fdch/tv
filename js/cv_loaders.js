@@ -160,7 +160,7 @@ function getUnworks(){
 
       unworks.push(
         "<li>"+tag("i",etitl)+". "+edesc,
-        "<ul style='margin-top:0.5%'>",
+        "<ul style='margin-top:0.5%>",
           tag("li","Duration: "+edura+" minutes."),
           tag("li","Premiered by: "+eperf),
           tag("li","Date: "+edate.toDateString()+", in "+eloca),
