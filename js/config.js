@@ -54,8 +54,9 @@ var personal = [
 "Mailing Address : 24 Waverly Place r.268. New York, NY 10003. USA",
 "Phone Number : (1) 347-302-0982",
 "E-mail : "+ email,
+"Website : "+ url,
 "Graduate Education : "+ currently[0] + " in "+nyuTitle+" at "+nyu+" (2013-2019)",
-"Undergraduate : " +uncTitle + " at the " +unc+ "(2006-12)",
+"Undergraduate : " +uncTitle + " at the " +unc+ " (2006-12)",
 ];
 
 var footer = [
