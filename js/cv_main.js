@@ -28,7 +28,7 @@ $(function(){
       "<section id="+theid+
       "<header onclick=\"function(){$(\'#"+theid+" > ul\').toggle()}\">"+
       "</section>");
-    console.log(func);
+    // console.log(func);
     window[func];
   }
 
