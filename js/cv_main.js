@@ -22,12 +22,12 @@ $(function(){
   var allsections = ["Personal", "Teachings", "Awards", "Unworks", "Collaborations", "Performances"];
 
   for (var i in allsections) {
-    window["get"+allsections[i]];
     var theid = makeID(allsections[i]);
     $("main article").append(
       "<section id="+theid+
-      "<header onclick=\"function(){$(\"#"+theid+" > ul\").toggle()}\""+
+      "<header onclick=\"function(){$(\'#"+theid+" > ul\').toggle()}\">"+
       "</section>");
+    window["get"+allsections[i]];
   }
 
   $("footer").append(linkify("back~", url));
