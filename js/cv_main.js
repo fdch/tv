@@ -17,7 +17,7 @@ $(function(){
 
   $("main").html("").append("<article></article>");
 
-  var pageW = width(;
+  var pageW = width();
   var maxWidth=700;
   var articleW;
 
