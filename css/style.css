@@ -38,6 +38,9 @@ nav span {
 ul {
   list-style: none;
 }
+li {
+  margin-bottom:0.5%;
+}
 a {
   color:lightblue;
   font-weight:bold;

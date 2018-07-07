@@ -16,7 +16,18 @@ $(function(){
   });
 
   $("main").html("").append("<article></article>");
-  $("article").width(width()).height(height());
+
+  var pageW = width(;
+  var maxWidth=700;
+  var articleW;
+
+  if (pageW >= maxWidth) {
+    articleW = maxWidth
+  } else {
+    articleW = pageW;
+  }
+
+  $("article").width(articleW).height(height());
 
   $("main article").append([
   	"<section id=personal>"       + tag("header",tag("h4","Personal Information"))+"</section>",
