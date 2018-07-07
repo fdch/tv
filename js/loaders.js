@@ -192,14 +192,12 @@ function getSocial() {
 }
 
 function getBio() {
-    $("main").append([
-      "<article>",
-      imgify(bioImage,width()*0.4),
+    $("main article").append([
+      imgify(bioImage,articleWidth(maxWidth)),
       tag("h5",linkify("curriculum vitae",cv,0)),
       bioEnglish,
       "<br/>",
-      bioSpanish,
-      "</article>"
+      bioSpanish
     ]);
 }
 
@@ -223,6 +221,7 @@ function loader(x) {
       getWork();
       break;
     case "bio":
+      $("main").append(tag("article",""));
       getBio();
       break;
     case "social":
