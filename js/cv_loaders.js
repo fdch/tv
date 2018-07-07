@@ -159,8 +159,9 @@ function getUnworks(){
       edura = e.gsx$duration.$t;
 
       unworks.push(
-        "<li>"+tag("i",etitl)+". "+edesc+" ("+edura+" min.)",
+        "<li>"+tag("i",etitl)+". "+edesc,
         "<ul>",
+          tag("li","Duration: "+edura+" minutes."),
           tag("li","Premiered by: "+eperf),
           tag("li","On "+edate.toDateString()+", in "+eloca),
           tag("li","Keywords: "+tag("i",ecat)),
