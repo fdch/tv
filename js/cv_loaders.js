@@ -100,7 +100,7 @@ function getPerformances() {
 
   loadJSON(cvURL[3], function(response) {
     var stamp, what, when, desc, where, instrument, who;
-    var event;
+    var event, description;
     f = JSON.parse(response);
     entry = f.feed.entry;
     performances = ["<ul>"]; // empty array before refilling it
@@ -115,13 +115,12 @@ function getPerformances() {
       instrument   = e.gsx$instrument.$t;
       who          = e.gsx$with.$t;
 
-      event = what+" at "+where+", with "+who;
-
+      event = tag("b",what)+" at "+where+", with "+who;
+      description = desc+"<br/>("+instrument+")";
       performances.push(
         "<li>"+when.toDateString()+tilde,
         event,
-        " ("+instrument+").",
-        tag("blockquote",desc),
+        tag("blockquote",description),
         "</li>",
       );
     }
