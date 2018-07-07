@@ -23,7 +23,7 @@ $(function(){
   	"<section id=personal>"       + tag("header",tag("h4","Personal Information"))+"</section>",
   	"<section id=teachings>"      + tag("header",tag("h4","Teaching Experience")) +"</section>",
   	"<section id=awards>"         + tag("header",tag("h4","Awards"))              +"</section>",
-  	"<section id=unworks>"        + tag("header",tag("h4","List of unworks"))     +"</section>",
+  	"<section id=unworks>"        + tag("header",tag("h4","List of Unworks~"))     +"</section>",
   	"<section id=collaborations>" + tag("header",tag("h4","Collaborations"))      +"</section>",
   	"<section id=performances>"   + tag("header",tag("h4","Performances"))        +"</section>"
   	])

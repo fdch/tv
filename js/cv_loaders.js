@@ -168,7 +168,7 @@ function getUnworks(){
           tag("li","Keywords: "+tag("i",ecat)),
         "</ul>",
         "</li>",
-        tag("p",tilde));
+      );
     }
     $("#unworks").append(unworks.join(""));
   });
