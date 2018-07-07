@@ -28,12 +28,14 @@ $(function(){
   
   $.each(allsections, function(index,value){
     var theid = makeID(value);
-    $("main article").append([
-      "<section id="+theid+">",
+    var section = [
+      "<section id=\""+theid+"\" >",
       "<header onclick=\"function(){$(\'#"+theid+" > ul\').toggle()}\">",
       tag("h4",value),
-      "</header></section>"
-    ]);
+      "</header>",
+      "</section>"
+    ]
+    $("main article").append(section.join(""));
   });
   
   getPersonal();
