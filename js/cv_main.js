@@ -32,7 +32,7 @@ $(function(){
     var section = [
       "<section id=\""+theid+"\" >",
       "<header onclick=\"toggleIt($(\'#"+target+"\'))\">",
-      tag("h4",value),
+      tag("h3",value),
       "</header>",
       "</section>"
     ]
