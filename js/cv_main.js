@@ -12,7 +12,7 @@ $(function(){
   
   randomColor(color_preset["mid"]); 
   
-  $("h1, h2").click(function() {window.open(cvurl, "_top")});
+  $("h1, h2").click(function() {window.open(cv, "_top")});
 
   $("main").html("").append("<article></article>");
   $("article, #menubg").width(articleWidth(maxWidth));
@@ -63,5 +63,5 @@ $(function(){
     }
 
   });
-  
-  $("footer").append(linkify("back~", url));});
+  $("footer").hide();
+  // $("footer").append(linkify("back~", url));});
