@@ -46,7 +46,7 @@ a {
   font-weight:bold;
 }
 header {
-  cursor:hand;
+  cursor:pointer;
 }
 iframe { 
   padding:1%;
