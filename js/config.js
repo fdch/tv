@@ -21,7 +21,7 @@ var linkedin = "http://linkedin.com/in/fedecamarahalac";
 
 var tilde = " ~ ";
 var hide = "style=\"display:none\"";
-var today = new Date().toDateString();
+var today = new Date();
 
 var color_preset = {
 	mid  : [55,200,100,20],
