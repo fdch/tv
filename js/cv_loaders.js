@@ -70,7 +70,7 @@ function getAwards() {
   });
 }
 
-function getCollabs() {
+function getCollaborations() {
 
   loadJSON(cvURL[2], function(response) {
    var f, e, i, entry;
