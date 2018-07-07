@@ -134,21 +134,29 @@ function getEvents() {
       ewher= e.gsx$where.$t;
       edesc = e.gsx$description.$t;
 
-      nwork.push(
-        "<li><div>",
-        tag("h3",etitl+" ("+ewher+")"),
-        tag("h4",edate.toDateString()),
-        tag("blockquote",edesc),
-        "</div></li>"
-      );
+
+
+      if (today > edate) {
+        nwork.push(
+         "<li><div>",
+          tag("h3",etitl+" ("+ewher+")"),
+          tag("h4",edate.toDateString()),
+          tag("blockquote",edesc),
+          "</div></li>"
+        );
+      } else {
+        nwork.unshift(
+          "<li><div>",
+          tag("h3",etitl+" ("+ewher+")"),
+          tag("h4",edate.toDateString()),
+          tag("blockquote",edesc),
+          "</div></li>"
+        );
+      }
     }
 
-    if (today > edate) {
-      $("main article").append(nwork.join(""));
-    } else {
-      $("main article").prepend(nwork.join(""));
-    }
-    $("main article").append("</ul></blockquote>");
+
+    $("main article").append([nwork.join(""),"</ul></blockquote>"]);
   });
 }
 
