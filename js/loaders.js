@@ -39,7 +39,7 @@ function getWork() {
       );
 
       if (eiurl) {
-        nwork.push(imgify(eiurl,width()));
+        nwork.push(imgify(eiurl,articleWidth(maxWidth)));
       }
 
       nwork.push(tag("h5","Performed by "+eperf+" at "+eloca+" on "+edate.toDateString()));
@@ -59,7 +59,7 @@ function getWork() {
       wmitems.push(wmitem);
     }
     $("main article").append(nwork.join(""));
-    $("main nav").append(wmitems.sort().join(tilde));
+    $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
 
     vis("id-"+makeID(featWork));
 
