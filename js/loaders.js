@@ -142,11 +142,7 @@ function getEvents() {
         "</div></li>"      
       ];
 
-      if (today > edate) {
-        nwork.push(event.join(""));
-      } else {
-        nwork.unshift(event.join(""));
-      }
+      nwork.push(event.join(""));
     }
 
 
