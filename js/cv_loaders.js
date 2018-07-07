@@ -156,9 +156,10 @@ function getUnworks(){
       eaurl = e.gsx$audiourl.$t;
       esurl = e.gsx$scoreurl.$t;
       eloca = e.gsx$location.$t;
+      edura = e.gsx$duration.$t;
 
       unworks.push(
-        "<li>"+tag("i",etitl)+". "+edesc,
+        "<li>"+tag("i",etitl)+". "+edura+" min. "+edesc,
         "<ul>",
           tag("li","Performed by: "+eperf),
           tag("li","On "+edate.toDateString()+", in "+eloca),
