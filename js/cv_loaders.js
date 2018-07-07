@@ -25,8 +25,8 @@ function getTeachings(id) {
       term         = e.gsx$term.$t;
       year         = e.gsx$year.$t;
 
-      title = year+tilde+type;
-      job = tag("b",clase) + " at " + department + " of " + institution + " (" + term + ")";
+      title = year+tilde+type + ". (" + term + ")";
+      job = tag("b",clase) + " at " + department + " of " + institution;
       teachings.push(
         tag("li",title),
         tag("blockquote",job)
