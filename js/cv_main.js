@@ -36,5 +36,12 @@ $(function(){
   getCollabs();
   getPerformances();
 
+  $("#personal").onclick(function(){$(this).add("ul").toggle()});
+  $("#teachings").onclick(function(){$(this).add("ul").toggle()});
+  $("#awards").onclick(function(){$(this).add("ul").toggle()});
+  $("#unworks").onclick(function(){$(this).add("ul").toggle()});
+  $("#collaborations").onclick(function(){$(this).add("ul").toggle()});
+  $("#performances").onclick(function(){$(this).add("ul").toggle()});
+
   $("footer").append(linkify("back~", url));
 });
