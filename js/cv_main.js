@@ -36,12 +36,12 @@ $(function(){
   getCollabs();
   getPerformances();
 
-  $("#personal").click(function(){$(this).add("ul").toggle()});
-  $("#teachings").click(function(){$(this).add("ul").toggle()});
-  $("#awards").click(function(){$(this).add("ul").toggle()});
-  $("#unworks").click(function(){$(this).add("ul").toggle()});
-  $("#collaborations").click(function(){$(this).add("ul").toggle()});
-  $("#performances").click(function(){$(this).add("ul").toggle()});
+  $("#personal header h4").click(function(){$(this).add("ul").toggle()});
+  $("#teachings header h4").click(function(){$(this).add("ul").toggle()});
+  $("#awards header h4").click(function(){$(this).add("ul").toggle()});
+  $("#unworks header h4").click(function(){$(this).add("ul").toggle()});
+  $("#collaborations header h4").click(function(){$(this).add("ul").toggle()});
+  $("#performances header h4").click(function(){$(this).add("ul").toggle()});
 
   $("footer").append(linkify("back~", url));
 });
