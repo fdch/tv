@@ -7,8 +7,8 @@ var vis = function(x) {
 };
 
 function toggleIt(x,y){
-  $("x").click(function(){
-    $("y").toggle()
+  x.click(function(){
+    y.toggle()
   });
 }
 
