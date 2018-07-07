@@ -23,11 +23,13 @@ $(function(){
 
   for (var i in allsections) {
     var theid = makeID(allsections[i]);
+    var func = "get"+allsections[i];
     $("main article").append(
       "<section id="+theid+
       "<header onclick=\"function(){$(\'#"+theid+" > ul\').toggle()}\">"+
       "</section>");
-    window["get"+allsections[i]];
+    console.log(func);
+    window[func];
   }
 
   $("footer").append(linkify("back~", url));
