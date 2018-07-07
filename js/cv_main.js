@@ -17,7 +17,7 @@ $(function(){
 
   $("main").html("").append("<article></article>");
 
-  $("article").width(articleWidth(maxWidth)).height(height());
+  $("article, #menubg").width(articleWidth(maxWidth)).height(height());
 
   $("main article").append([
   	"<section id=personal>"       + tag("header",tag("h4","Personal Information"))+"</section>",
