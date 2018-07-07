@@ -115,8 +115,8 @@ function getPerformances() {
       instrument   = e.gsx$instrument.$t;
       who          = e.gsx$with.$t;
 
-      event = tag("b",what)+" at "+where+", with "+who;
-      description = desc+"<br/>("+instrument+")";
+      event = tag("i",what)+" at "+where+", with "+who;
+      description = desc+"<br/>Performed: "+instrument+". ";
       performances.push(
         "<li>"+when.toDateString()+tilde,
         event,
