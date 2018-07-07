@@ -85,10 +85,10 @@ function getCollabs() {
       desc         = e.gsx$description.$t;
 
       collaborations.push(
-        "<li>"+year+". "+tag("b",category)+" in "+where+" ",
+        "<li>"+year+tilde+tag("b",category)+" in "+where+" ",
         tag("blockquote",desc),
-        "</li>",
-        tag("p",tilde));
+        "</li>"
+      );
     }
     collaborations.push("</ul>");
     $("#collaborations").append(collaborations.join(""));
@@ -100,7 +100,7 @@ function getPerformances() {
 
   loadJSON(cvURL[3], function(response) {
     var stamp, what, when, desc, where, instrument, who;
-   
+    var event;
     f = JSON.parse(response);
     entry = f.feed.entry;
     performances = ["<ul>"]; // empty array before refilling it
@@ -115,11 +115,14 @@ function getPerformances() {
       instrument   = e.gsx$instrument.$t;
       who          = e.gsx$with.$t;
 
+      event = what+" at "+where+", with "+who;
+
       performances.push(
-        "<li>"+instrument+" in "+what+" at "+where+", with "+who+" ("+when.toDateString()+")",
+        "<li>"+when.toDateString()+tilde+"("instrument+"). ",
+        event,
         tag("blockquote",desc),
         "</li>",
-        tag("p",tilde));
+      );
     }
     performances.push("</ul>");
     $("#performances").append(performances.join(""));
