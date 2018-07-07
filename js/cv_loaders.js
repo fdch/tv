@@ -163,7 +163,7 @@ function getUnworks(){
         "<ul>",
           tag("li","Duration: "+edura+" minutes."),
           tag("li","Premiered by: "+eperf),
-          tag("li","On "+edate.toDateString()+", in "+eloca),
+          tag("li","Date: "+edate.toDateString()+", in "+eloca),
           tag("li","Keywords: "+tag("i",ecat)),
         "</ul>",
         "</li>",
