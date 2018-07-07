@@ -1,5 +1,7 @@
 var w, h, t = 4333;
 var mitem = ["bio", "unwork", "papers", "events", "social", "games", "contact"];
+var maxWidth = 800;
+
 
 var url = "https://fdch.github.io/tv";
 var repo = "https://github.com/fdch/";
