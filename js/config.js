@@ -144,8 +144,11 @@ var contactMessage = [
  "<h3>contact</h3>",
  "<p>Send me an email at "+nyuid+" and I will get in touch with you (as fast as nonhumanly possible :)</p>",
  "<p>Mandá(me) una correa electrónica a "+nyuid+" así me pongo en contacto lo más rápido que pueda (dentro de lo nohumánamente posible ;)</p>",
+ imgify(contactGif,200),
+ "</br>",
+ "</br>",
+ tag("p",tag("i","Yes, I'm in social media.....:")),
  tag("address",footer.join(tilde)),
- imgify(contactGif,200)
 ]
 
 ///make this better:
