@@ -221,9 +221,9 @@ function getSubmit(target) {
   }
 }
 function loader(x) {
-  $("main").html("").css('background-image', 'url(' + loadingUrl + ')');
+  $("main").html("");
   $("#backvideo").hide().attr('src','');
-
+  $("main").css('background-image', 'url(' + loadingUrl + ')');
   switch (x) {
     case "games" :
       $("main").append(tag("article",gameType.join("<br/>")));
