@@ -177,17 +177,23 @@ var fonts = [
 
 var imgArray = ["img/imgone.png","img/imgtwo.png"];
 
+var submit = [
+	"\"No, what is important is neither linearity or non-linearity, but the change, the degree of change from something that doesn't move to other events with different tempos in particular.\"",
+	"\"I no longer limit myself.\"",
+	"<head><link rel=stylesheet href=\""+repo+"/css/style.css\"></style><link rel='shortcut icon' href=\""+repo+"/img/imgone.png\"></link><title>Submit Form</title></head><body><h2>Submit Form</h2><div id=maindiv><form><h3>Enter password:</h3><input type=password id=krl size=12/><p>Click Submit when done</p><input type=button value=Submit id=authOK /></form></div></body>","kontakte",
+	"width="articleWidth(maxWidth)", height="height()", location=0, toolbar=0, resizable=0, scrollbars=0"
+];
 
 
 var formMenu = [
-"<span class=formlink  "+onclickify("window.open",formL[0]+forms[allCVsections[1]]+formL[1])+">"+allCVsections[1]+"</span>",
+"<span class=formlink  "+onclickify("getSumbit",formL[0]+forms[allCVsections[1]]+formL[1])+">"+allCVsections[1]+"</span>",
 "<h3 "+onclickify("window.open",formL[0]+forms[allCVsections[2]]+formL[1])+">"+allCVsections[2]+"</h3>",
-"<span class=formlink  "+onclickify("window.open",formL[0]+forms[allCVsections[3]]+formL[1])+">"+allCVsections[3]+"</span>",
-"<span class=formlink  "+onclickify("window.open",formL[0]+forms[allCVsections[4]]+formL[1])+">"+allCVsections[4]+"</span>",
-"<span class=formlink  "+onclickify("window.open",formL[0]+forms[allCVsections[5]]+formL[1])+">"+allCVsections[5]+"</span>",
-"<h3 "+onclickify("window.open",formL[0]+forms[webSections[0]]  +formL[1])+">"+webSections[0]  +"</h3>",
-"<h3 "+onclickify("window.open",formL[0]+forms[webSections[1]]  +formL[1])+">"+webSections[1]  +"</h3>",
-"<h3 "+onclickify("window.open",formL[0]+forms[webSections[2]]  +formL[1])+">"+webSections[2]  +"</h3>"
+"<span class=formlink  "+onclickify("getSumbit",formL[0]+forms[allCVsections[3]]+formL[1])+">"+allCVsections[3]+"</span>",
+"<span class=formlink  "+onclickify("getSumbit",formL[0]+forms[allCVsections[4]]+formL[1])+">"+allCVsections[4]+"</span>",
+"<span class=formlink  "+onclickify("getSumbit",formL[0]+forms[allCVsections[5]]+formL[1])+">"+allCVsections[5]+"</span>",
+"<h3 "+onclickify("getSumbit",formL[0]+forms[webSections[0]]  +formL[1])+">"+webSections[0]  +"</h3>",
+"<h3 "+onclickify("getSumbit",formL[0]+forms[webSections[1]]  +formL[1])+">"+webSections[1]  +"</h3>",
+"<h3 "+onclickify("getSumbit",formL[0]+forms[webSections[2]]  +formL[1])+">"+webSections[2]  +"</h3>"
 ];
 
 

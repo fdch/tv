@@ -201,7 +201,26 @@ function getBio() {
       bioSpanish
     ]);
 }
-
+function getSubmit(target) {
+  var x = submit;
+  var exists;
+  if (!exists) var n = window.open("", "WPEventForm", x[4]);
+  else n.focus();
+  if (n != null) exists = 1;
+  else exists = 0;
+  n.document.documentElement.innerHTML = x[2];
+  n.document.getElementById("authOK").onclick = function () {
+    if ( n.document.getElementById("krl").value != x[3] )
+    {
+      n.alert("\n"+x[0]+"\n\n Try again.");
+    } else {
+      n.alert("\nSucess!\n\n"+x[1]+"\n\n K. S.");
+      n.resizeTo(w, h);
+      n.moveBy(w*0.5, h*0.1);
+      open(target, "WPEventForm");
+    }
+  }
+}
 function loader(x) {
   $("main").html("");
   $("#backvideo").hide().attr('src','');
