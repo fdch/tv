@@ -107,7 +107,11 @@ function getWritings() {
         "</section>"
       );
 
-      $("main article").append(papers.join(""));
+      $("main article").append([
+        papers.join(""),
+        "</br></br></br></br>",
+        formMenu[8]
+        ]);
 
     }
 
@@ -146,7 +150,12 @@ function getEvents() {
     }
 
 
-    $("main article").append([nwork.join(""),"</ul></blockquote>"]);
+    $("main article").append([
+      nwork.join(""),
+      "</ul></blockquote>",
+      "</br></br></br></br>",
+      formMenu[7]
+      ]);
   });
 }
 
@@ -187,9 +196,20 @@ function getSocial() {
       ensembles.join(tilde),
       tag("h4","Organizations"),
       organizations.join(tilde),
-      "</blockquote>"]);
+      "</blockquote>",
+      "</br></br></br></br>",
+      formMenu[6]
+      ]);
   });
 }
+
+  // "Personal",
+  // "Teachings",
+  // "Awards",
+  // "Unworks",
+  // "Collaborations",
+  // "Performances"
+
 
 function getBio() {
     $("main article").append([
@@ -197,14 +217,11 @@ function getBio() {
       tag("h5",linkify("curriculum vitae",cv,0)),
       bioEnglish,
       "<br/>",
-      bioSpanish
+      bioSpanish,
+      "</br></br></br></br>",
+      formMenu[0],formMenu[1],formMenu[2],formMenu[3],formMenu[4],formMenu[5],
     ]);
 }
-
-function getForms(x) {
-  $("main article").append([formW[0],forms.x,formW[1]]);
-}
-
 
 function loader(x) {
   $("main").html("");

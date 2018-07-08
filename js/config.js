@@ -175,15 +175,14 @@ var imgArray = ["img/imgone.png","img/imgtwo.png"];
 
 
 var formMenu = [
-	"<ul><li "+onclickify("getForms",allCVsections[1])+">"+allCVsections[1]+"</li>",
-	"<li "+onclickify("getForms",allCVsections[2])+">"+allCVsections[2]+"</li>",
-	"<li "+onclickify("getForms",allCVsections[3])+">"+allCVsections[3]+"</li>",
-	"<li "+onclickify("getForms",allCVsections[4])+">"+allCVsections[4]+"</li>",
-	"<li "+onclickify("getForms",allCVsections[5])+">"+allCVsections[5]+"</li>",
-	"<li "+onclickify("getForms",webSections[0])+">"+webSections[0]+"</li>",
-	"<li "+onclickify("getForms",webSections[1])+">"+webSections[1]+"</li>",
-	"<li "+onclickify("getForms",webSections[2])+">"+webSections[2]+"</li>",
-	"</ul>"
+	"<span "+onclickify("getForms",allCVsections[1])+">"+allCVsections[1]+"</span>",
+	"<span "+onclickify("getForms",allCVsections[2])+">"+allCVsections[2]+"</span>",
+	"<span "+onclickify("getForms",allCVsections[3])+">"+allCVsections[3]+"</span>",
+	"<span "+onclickify("getForms",allCVsections[4])+">"+allCVsections[4]+"</span>",
+	"<span "+onclickify("getForms",allCVsections[5])+">"+allCVsections[5]+"</span>",
+	"<span "+onclickify("getForms",webSections[0])  +">"+webSections[0]  +"</span>",
+	"<span "+onclickify("getForms",webSections[1])  +">"+webSections[1]  +"</span>",
+	"<span "+onclickify("getForms",webSections[2])  +">"+webSections[2]  +"</span>"
 ];
 
 
@@ -195,9 +194,7 @@ var contactMessage = [
  "</br>",
  "</br>",
  tag("p",tag("i","Yes, I'm in social media.....:")),
- tag("address",footer.join(tilde)),
- "</br></br></br></br>",
- formMenu.join("")
+ tag("address",footer.join(tilde))
 ]
 
 ///make this better:
