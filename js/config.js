@@ -165,7 +165,7 @@ var fonts = [
 var imgArray = ["img/imgone.png","img/imgtwo.png"];
 
 var disableEnter = [
-	"<script>"
+	"<script>",
 	"$(document).keypress(",
 	"    function(event){",
 	"    if (event.which == '13') {",
