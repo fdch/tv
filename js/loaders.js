@@ -7,25 +7,7 @@ function makeMenu(m, len, mitem, type) {
   }
   m.append("</nav>");
 }
-function getSubmit(target) {
-  var exists;
-  if (!exists) var n = window.open("", "WPEventForm", submit[4]);
-  else n.focus();
-  if (n != null) exists = 1;
-  else exists = 0;
-  n.document.documentElement.innerHTML = submit[2];
-  n.document.getElementById("authOK").onclick = function () {
-    if ( n.document.getElementById("krl").value != submit[3] )
-    {
-      n.alert("\n"+submit[0]+"\n\n Try again.");
-    } else {
-      n.alert("\nSucess!\n\n"+submit[1]+"\n\n Karlheinz.");
-      n.resizeTo(w, h);
-      n.moveBy(w*0.5, h*0.1);
-      open(target, "WPEventForm");
-    }
-  }
-}
+
 function getUnworks() {
   loadJSON(sheetURL, function(response) {
     var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
@@ -219,7 +201,25 @@ function getBio() {
       bioSpanish
     ]);
 }
-
+function getSubmit(target) {
+  var exists;
+  if (!exists) var n = window.open("", "WPEventForm", submit[4]);
+  else n.focus();
+  if (n != null) exists = 1;
+  else exists = 0;
+  n.document.documentElement.innerHTML = submit[2];
+  n.document.getElementById("authOK").onclick = function () {
+    if ( n.document.getElementById("krl").value != submit[3] )
+    {
+      n.alert("\n"+submit[0]+"\n\n Try again.");
+    } else {
+      n.alert("\nSucess!\n\n"+submit[1]+"\n\n Karlheinz.");
+      n.resizeTo(w, h);
+      n.moveBy(w*0.5, h*0.1);
+      open(target, "WPEventForm");
+    }
+  }
+}
 function loader(x) {
   $("main").html("");
   $("#backvideo").hide().attr('src','');
