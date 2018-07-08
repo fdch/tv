@@ -181,7 +181,7 @@ var imgArray = ["img/imgone.png","img/imgtwo.png"];
 
 var formMenu = [
 "<span class=formlink  "+onclickify("window.open",formL[0]+forms[allCVsections[1]]+formL[1])+">"+allCVsections[1]+"</span>",
-"<span class=formlink  "+onclickify("window.open",formL[0]+forms[allCVsections[2]]+formL[1])+">"+allCVsections[2]+"</span>",
+"<h3 "+onclickify("window.open",formL[0]+forms[allCVsections[2]]+formL[1])+">"+allCVsections[2]+"</h3>",
 "<span class=formlink  "+onclickify("window.open",formL[0]+forms[allCVsections[3]]+formL[1])+">"+allCVsections[3]+"</span>",
 "<span class=formlink  "+onclickify("window.open",formL[0]+forms[allCVsections[4]]+formL[1])+">"+allCVsections[4]+"</span>",
 "<span class=formlink  "+onclickify("window.open",formL[0]+forms[allCVsections[5]]+formL[1])+">"+allCVsections[5]+"</span>",
