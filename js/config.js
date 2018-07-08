@@ -226,7 +226,10 @@ var contactMessage = [
  tag("p",tag("i","Yes, I'm in social media.....")),
  tag("address",footer.join(tilde)),
  "</br></br></br></br>",
- formMenu[0],formMenu[1],formMenu[3],formMenu[4],
+ formMenu[allCVsections[1]],
+ formMenu[allCVsections[2]],
+ formMenu[allCVsections[4]],
+ formMenu[allCVsections[5]],
 ]
 
 ///make this better:
