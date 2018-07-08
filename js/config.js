@@ -192,14 +192,14 @@ var formLinks = [
 	"\'"+formL[0]+forms[webSections[2]]  +formL[1]+"\'"
 ];
 var formMenu = {
-	[allCVsections[1]]:"<span class=formlink  "+onclickify("getSumbit"+formLinks[0])+">"+allCVsections[1]+"</span>",//0
-	[allCVsections[2]]:"<span class=formlink  "+onclickify("getSumbit"+formLinks[1])+">"+allCVsections[2]+"</span>",//1
-	[allCVsections[3]]:"<h3 "                  +onclickify("getSumbit"+formLinks[2])+">"+allCVsections[3]+"</h3>  ",//2
-	[allCVsections[4]]:"<span class=formlink  "+onclickify("getSumbit"+formLinks[3])+">"+allCVsections[4]+"</span>",//3
-	[allCVsections[5]]:"<span class=formlink  "+onclickify("getSumbit"+formLinks[4])+">"+allCVsections[5]+"</span>",//4
-	[webSections[0]]  :"<h3 "                  +onclickify("getSumbit"+formLinks[5])+">"+webSections[0]  +"</h3>  ",//5
-	[webSections[1]]  :"<h3 "                  +onclickify("getSumbit"+formLinks[6])+">"+webSections[1]  +"</h3>  ",//6
-	[webSections[2]]  :"<h3 "                  +onclickify("getSumbit"+formLinks[7])+">"+webSections[2]  +"</h3>  " //7
+	teachings     :"<span class=formlink  "+onclickify("getSumbit"+formLinks[0])+">"+allCVsections[1]+"</span>",//0
+	awards        :"<span class=formlink  "+onclickify("getSumbit"+formLinks[1])+">"+allCVsections[2]+"</span>",//1
+	unwork        :"<h3 "                  +onclickify("getSumbit"+formLinks[2])+">"+allCVsections[3]+"</h3>  ",//2
+	collaborations:"<span class=formlink  "+onclickify("getSumbit"+formLinks[3])+">"+allCVsections[4]+"</span>",//3
+	performances  :"<span class=formlink  "+onclickify("getSumbit"+formLinks[4])+">"+allCVsections[5]+"</span>",//4
+	people        :"<h3 "                  +onclickify("getSumbit"+formLinks[5])+">"+webSections[0]  +"</h3>  ",//5
+	events        :"<h3 "                  +onclickify("getSumbit"+formLinks[6])+">"+webSections[1]  +"</h3>  ",//6
+	papers        :"<h3 "                  +onclickify("getSumbit"+formLinks[7])+">"+webSections[2]  +"</h3>  " //7
 };
 
 
