@@ -217,7 +217,7 @@ function loader(x) {
       $("main").append([tag("article",contactMessage.join(""))]);
       break;
     case "events" :
-      $("main").append([tag("header",tag("h4",formMenu[7])),tag("article","")]);
+      $("main").append([tag("header",tag("h4",formMenu[6])),tag("article","")]);
       getEvents();
       break;
     case "unwork":
@@ -233,7 +233,7 @@ function loader(x) {
       getPeople();
       break;
     case "papers":
-      $("main").append([tag("header",tag("h4",formMenu[6])),tag("article","")]);
+      $("main").append([tag("header",tag("h4",formMenu[7])),tag("article","")]);
       getPapers();
       break;
     default:
