@@ -175,14 +175,14 @@ var imgArray = ["img/imgone.png","img/imgtwo.png"];
 
 
 var formMenu = [
-	"<span "+onclickify("getForms",allCVsections[1])+">"+allCVsections[1]+"</span>",
-	"<span "+onclickify("getForms",allCVsections[2])+">"+allCVsections[2]+"</span>",
-	"<span "+onclickify("getForms",allCVsections[3])+">"+allCVsections[3]+"</span>",
-	"<span "+onclickify("getForms",allCVsections[4])+">"+allCVsections[4]+"</span>",
-	"<span "+onclickify("getForms",allCVsections[5])+">"+allCVsections[5]+"</span>",
-	"<span "+onclickify("getForms",webSections[0])  +">"+webSections[0]  +"</span>",
-	"<span "+onclickify("getForms",webSections[1])  +">"+webSections[1]  +"</span>",
-	"<span "+onclickify("getForms",webSections[2])  +">"+webSections[2]  +"</span>"
+	"<span "+onclickify("window.open",allCVsections[1])+">"+allCVsections[1]+"</span>",
+	"<span "+onclickify("window.open",allCVsections[2])+">"+allCVsections[2]+"</span>",
+	"<span "+onclickify("window.open",allCVsections[3])+">"+allCVsections[3]+"</span>",
+	"<span "+onclickify("window.open",allCVsections[4])+">"+allCVsections[4]+"</span>",
+	"<span "+onclickify("window.open",allCVsections[5])+">"+allCVsections[5]+"</span>",
+	"<span "+onclickify("window.open",webSections[0])  +">"+webSections[0]  +"</span>",
+	"<span "+onclickify("window.open",webSections[1])  +">"+webSections[1]  +"</span>",
+	"<span "+onclickify("window.open",webSections[2])  +">"+webSections[2]  +"</span>"
 ];
 
 

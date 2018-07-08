@@ -198,7 +198,8 @@ function getSocial() {
       organizations.join(tilde),
       "</blockquote>",
       "</br></br></br></br>",
-      formMenu[6]
+      formMenu[6],
+      "</br>"
       ]);
   });
 }
@@ -212,6 +213,7 @@ function getBio() {
       bioSpanish,
       "</br></br></br></br>",
       formMenu[0],formMenu[1],formMenu[2],formMenu[4],formMenu[5],
+      "</br>"
     ]);
 }
 
