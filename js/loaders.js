@@ -62,7 +62,7 @@ function getWork() {
     $("main article").append([
         nwork.join(""),
         "</br></br></br></br>",
-        formMenu[3]]
+        formMenu[2]]
     );
 
     $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
@@ -212,7 +212,7 @@ function getBio() {
       "<br/>",
       bioSpanish,
       "</br></br></br></br>",
-      formMenu[0],formMenu[1],formMenu[2],formMenu[4],formMenu[5],
+      formMenu[0],formMenu[1],formMenu[3],formMenu[4],formMenu[5],
       "</br>"
     ]);
 }

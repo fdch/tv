@@ -67,6 +67,14 @@ iframe {
   text-align:right;
   font-style:italic;
 }
+.formlink{
+  padding:1%;
+  font-style:bold;
+  font-size:0.7em;
+}
+.formlink:hover{
+  cursor:pointer;
+}
 footer {
   font-size:0.8em;
   padding:1%;

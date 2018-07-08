@@ -180,14 +180,14 @@ var imgArray = ["img/imgone.png","img/imgtwo.png"];
 
 
 var formMenu = [
-"<span "+onclickify("window.open",formL[0]+forms.allCVsections[1]+formL[1])+">"+allCVsections[1]+"</span>",
-"<span "+onclickify("window.open",formL[0]+forms.allCVsections[2]+formL[1])+">"+allCVsections[2]+"</span>",
-"<span "+onclickify("window.open",formL[0]+forms.allCVsections[3]+formL[1])+">"+allCVsections[3]+"</span>",
-"<span "+onclickify("window.open",formL[0]+forms.allCVsections[4]+formL[1])+">"+allCVsections[4]+"</span>",
-"<span "+onclickify("window.open",formL[0]+forms.allCVsections[5]+formL[1])+">"+allCVsections[5]+"</span>",
-"<span "+onclickify("window.open",formL[0]+forms.webSections[0]  +formL[1])+">"+webSections[0]  +"</span>",
-"<span "+onclickify("window.open",formL[0]+forms.webSections[1]  +formL[1])+">"+webSections[1]  +"</span>",
-"<span "+onclickify("window.open",formL[0]+forms.webSections[2]  +formL[1])+">"+webSections[2]  +"</span>"
+"<span class=formlink "+onclickify("window.open",formL[0]+forms.allCVsections[1]+formL[1])+">"+allCVsections[1]+"</span>",
+"<span class=formlink "+onclickify("window.open",formL[0]+forms.allCVsections[2]+formL[1])+">"+allCVsections[2]+"</span>",
+"<span class=formlink "+onclickify("window.open",formL[0]+forms.allCVsections[3]+formL[1])+">"+allCVsections[3]+"</span>",
+"<span class=formlink "+onclickify("window.open",formL[0]+forms.allCVsections[4]+formL[1])+">"+allCVsections[4]+"</span>",
+"<span class=formlink "+onclickify("window.open",formL[0]+forms.allCVsections[5]+formL[1])+">"+allCVsections[5]+"</span>",
+"<span class=formlink "+onclickify("window.open",formL[0]+forms.webSections[0]  +formL[1])+">"+webSections[0]  +"</span>",
+"<span class=formlink "+onclickify("window.open",formL[0]+forms.webSections[1]  +formL[1])+">"+webSections[1]  +"</span>",
+"<span class=formlink "+onclickify("window.open",formL[0]+forms.webSections[2]  +formL[1])+">"+webSections[2]  +"</span>"
 ];
 
 
