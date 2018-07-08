@@ -199,7 +199,6 @@ function getBio() {
       bioEnglish,
       "<br/>",
       bioSpanish
-      "</br>"
     ]);
 }
 
