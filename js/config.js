@@ -146,23 +146,10 @@ var formL = [
 	"https://docs.google.com/forms/d/e/1FAIpQLS",
 	"/viewform"
 ]
-
 var formE = [
 	"<iframe src=\"https://docs.google.com/forms/d/e/1FAIpQLS",
 	"/viewform?embedded=true\" width=\""+formD[0]+"\" height=\""+formD[1]+"\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>"
 ]
-
-var forms = {
-	[allCVsections[1]]:"els-Lj6MXZOFfUvyxLHp8uhdkNzADgh3KGjWV0-CJPUiGnkA",//teaching
-	[allCVsections[2]]:"cCNndRyaJTIqOI4KDnDxu3OSdLeVAMAAYI1p_D-ymTLi9Y7g",//awards
-	[allCVsections[3]]:"fVU3VMgZvkY3kGnG-OezP02MgqOvhwS6Z6APOflTE-ShvQVg",//unworks
-	[allCVsections[4]]:"d51ZlszfuGuvMA9WXpY56mlottnn-26JZ_whsfaG-hX_uZFw",//collaborations
-	[allCVsections[5]]:"cr_d39dnsctc4jfCZ-Tn9g6MyUsXZB0wzOPssV80KITISLfA",//performances
-	[webSections[0]]  :"cnzdRLIMTy2arVYeIYOIJS_SPdedxngAhs8qbp8gnoJpIOhw",//people
-	[webSections[1]]  :"cYgPrlbPXm3B9FDQghaaey8d5X6DpZhsOqMLP36DfrpRsOJA",//events
-	[webSections[2]]  :"ftCkAv9TzkzlgAi8dcJNofLYYWc_k8WtSet3SQTf2ObOuyMA",//papers
-}
-
 var fonts = [
 "\'Courier\'",
 "\'Arial\'",
@@ -184,6 +171,16 @@ var submit = [
 	"width="+articleWidth(maxWidth)+", height="+height()+", location=0, toolbar=0, resizable=0, scrollbars=0"
 ];
 
+var forms = {
+	[allCVsections[1]]:"els-Lj6MXZOFfUvyxLHp8uhdkNzADgh3KGjWV0-CJPUiGnkA",//teaching
+	[allCVsections[2]]:"cCNndRyaJTIqOI4KDnDxu3OSdLeVAMAAYI1p_D-ymTLi9Y7g",//awards
+	[allCVsections[3]]:"fVU3VMgZvkY3kGnG-OezP02MgqOvhwS6Z6APOflTE-ShvQVg",//unworks
+	[allCVsections[4]]:"d51ZlszfuGuvMA9WXpY56mlottnn-26JZ_whsfaG-hX_uZFw",//collaborations
+	[allCVsections[5]]:"cr_d39dnsctc4jfCZ-Tn9g6MyUsXZB0wzOPssV80KITISLfA",//performances
+	[webSections[0]]  :"cnzdRLIMTy2arVYeIYOIJS_SPdedxngAhs8qbp8gnoJpIOhw",//people
+	[webSections[1]]  :"cYgPrlbPXm3B9FDQghaaey8d5X6DpZhsOqMLP36DfrpRsOJA",//events
+	[webSections[2]]  :"ftCkAv9TzkzlgAi8dcJNofLYYWc_k8WtSet3SQTf2ObOuyMA",//papers
+}
 var formLinks = [
 	formL[0]+forms[allCVsections[1]]+formL[1],
 	formL[0]+forms[allCVsections[2]]+formL[1],
@@ -194,17 +191,16 @@ var formLinks = [
 	formL[0]+forms[webSections[1]]  +formL[1],
 	formL[0]+forms[webSections[2]]  +formL[1]
 ];
-
-var formMenu = [
-	"<span class=formlink  "+onclickify("getSumbit",formLinks[0])+">"+allCVsections[1]+"</span>",
-	"<span class=formlink  "+onclickify("getSumbit",formLinks[1])+">"+allCVsections[2]+"</span>",
-	"<h3 "                  +onclickify("getSumbit",formLinks[2])+">"+allCVsections[3]+"</h3>  ",
-	"<span class=formlink  "+onclickify("getSumbit",formLinks[3])+">"+allCVsections[4]+"</span>",
-	"<span class=formlink  "+onclickify("getSumbit",formLinks[4])+">"+allCVsections[5]+"</span>",
-	"<h3 "                  +onclickify("getSumbit",formLinks[5])+">"+webSections[0]  +"</h3>  ",
-	"<h3 "                  +onclickify("getSumbit",formLinks[6])+">"+webSections[1]  +"</h3>  ",
-	"<h3 "                  +onclickify("getSumbit",formLinks[7])+">"+webSections[2]  +"</h3>  " 
-];
+var formMenu = {
+	"teachings"     :"<span class=formlink  "+onclickify("getSumbit",formLinks[0])+">"+allCVsections[1]+"</span>",//0
+	"awards"        :"<span class=formlink  "+onclickify("getSumbit",formLinks[1])+">"+allCVsections[2]+"</span>",//1
+	"unwork"        :"<h3 "                  +onclickify("getSumbit",formLinks[2])+">"+allCVsections[3]+"</h3>  ",//2
+	"collaborations":"<span class=formlink  "+onclickify("getSumbit",formLinks[3])+">"+allCVsections[4]+"</span>",//3
+	"performances"  :"<span class=formlink  "+onclickify("getSumbit",formLinks[4])+">"+allCVsections[5]+"</span>",//4
+	"people"        :"<h3 "                  +onclickify("getSumbit",formLinks[5])+">"+webSections[0]  +"</h3>  ",//5
+	"events"        :"<h3 "                  +onclickify("getSumbit",formLinks[6])+">"+webSections[1]  +"</h3>  ",//6
+	"papers"        :"<h3 "                  +onclickify("getSumbit",formLinks[7])+">"+webSections[2]  +"</h3>  " //7
+};
 
 
 var contactMessage = [

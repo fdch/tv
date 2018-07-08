@@ -3,7 +3,7 @@ function makeMenu(m, len, mitem, type) {
   m.append("<nav>");
   for (i = 0;i < len; i++) {
     item = mitem[i].replace(/_/g," ").replace(/-/g," ");
-    m.append("<span class=menuitem "+ onclickify(type,mitem[i]) +">"+item+"</span>");
+    m.append("<span class=menuitem "+ onclickify(type,"\'"+mitem[i]+"\'") +">"+item+"</span>");
   }
   m.append("</nav>");
 }
@@ -181,11 +181,11 @@ function getPeople() {
     }//end loop
 
     $("main article").append([
-      tag("h4","People"),
+      tag("h5","People"),
       people.join(tilde),
-      tag("h4","Ensembles"),
+      tag("h5","Ensembles"),
       ensembles.join(tilde),
-      tag("h4","Organizations"),
+      tag("h5","Organizations"),
       organizations.join(tilde),
       "</blockquote>"
       ]);
