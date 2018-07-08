@@ -3,7 +3,7 @@ function makeMenu(m, len, mitem, type) {
   m.append("<nav>");
   for (i = 0;i < len; i++) {
     item = mitem[i].replace(/_/g," ").replace(/-/g," ");
-    m.append("<span class=menuitem "+ onclickify(type,"\'"+mitem[i]+"\'") +">"+item+"</span>");
+    m.append("<span class=menuitem "+ onclickify(type,mitem[i]) +">"+item+"</span>");
   }
   m.append("</nav>");
 }
