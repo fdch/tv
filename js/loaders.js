@@ -202,7 +202,6 @@ function getBio() {
     ]);
 }
 function getSubmit(target) {
-  console.log(target);
   var exists;
   if (!exists) var n = window.open("", "WPEventForm", submit[4]);
   else n.focus();
@@ -250,7 +249,6 @@ function loader(x) {
       break;
     case "papers":
       $("main").append([tag("header",formMenu[x]),tag("article","")]);
-      console.log(formMenu[x]);
       getPapers();
       break;
     default:
