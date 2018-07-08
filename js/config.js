@@ -184,16 +184,26 @@ var submit = [
 	"width="+articleWidth(maxWidth)+", height="+height()+", location=0, toolbar=0, resizable=0, scrollbars=0"
 ];
 
+var formLinks = [
+	formL[0]+forms[allCVsections[1]]+formL[1],
+	formL[0]+forms[allCVsections[2]]+formL[1],
+	formL[0]+forms[allCVsections[3]]+formL[1],
+	formL[0]+forms[allCVsections[4]]+formL[1],
+	formL[0]+forms[allCVsections[5]]+formL[1],
+	formL[0]+forms[webSections[0]]  +formL[1],
+	formL[0]+forms[webSections[1]]  +formL[1],
+	formL[0]+forms[webSections[2]]  +formL[1]
+];
 
 var formMenu = [
-"<span class=formlink  "+onclickify("getSumbit",formL[0]+forms[allCVsections[1]]+formL[1])+">"+allCVsections[1]+"</span>",
-"<span class=formlink  "+onclickify("getSumbit",formL[0]+forms[allCVsections[2]]+formL[1])+">"+allCVsections[2]+"</span>",
-"<h3 "+onclickify("getSumbit",formL[0]+forms[allCVsections[3]]+formL[1])+">"+allCVsections[3] +"</h3>",
-"<span class=formlink  "+onclickify("getSumbit",formL[0]+forms[allCVsections[4]]+formL[1])+">"+allCVsections[4]+"</span>",
-"<span class=formlink  "+onclickify("getSumbit",formL[0]+forms[allCVsections[5]]+formL[1])+">"+allCVsections[5]+"</span>",
-"<h3 "+onclickify("getSumbit",formL[0]+forms[webSections[0]]  +formL[1])+">"+webSections[0]   +"</h3>",
-"<h3 "+onclickify("getSumbit",formL[0]+forms[webSections[1]]  +formL[1])+">"+webSections[1]   +"</h3>",
-"<h3 "+onclickify("getSumbit",formL[0]+forms[webSections[2]]  +formL[1])+">"+webSections[2]   +"</h3>"
+	"<span class=formlink  "+onclickify("getSumbit",formLinks[0])+">"+allCVsections[1]+"</span>",
+	"<span class=formlink  "+onclickify("getSumbit",formLinks[1])+">"+allCVsections[2]+"</span>",
+	"<h3 "                  +onclickify("getSumbit",formLinks[2])+">"+allCVsections[3]+"</h3>  ",
+	"<span class=formlink  "+onclickify("getSumbit",formLinks[3])+">"+allCVsections[4]+"</span>",
+	"<span class=formlink  "+onclickify("getSumbit",formLinks[4])+">"+allCVsections[5]+"</span>",
+	"<h3 "                  +onclickify("getSumbit",formLinks[5])+">"+webSections[0]  +"</h3>  ",
+	"<h3 "                  +onclickify("getSumbit",formLinks[6])+">"+webSections[1]  +"</h3>  ",
+	"<h3 "                  +onclickify("getSumbit",formLinks[7])+">"+webSections[2]  +"</h3>  " 
 ];
 
 
