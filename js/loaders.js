@@ -16,6 +16,7 @@ function getWork() {
     var wmitems = [];
     f = JSON.parse(response);
     entry = f.feed.entry;
+
     for (i in entry) {
       e = entry[i];
       estam = e.gsx$timestamp.$t;
@@ -59,11 +60,7 @@ function getWork() {
       wmitems.push(wmitem);
     }//end loop
 
-    $("main article").append([
-        nwork.join(""),
-        "</br></br></br></br>",
-        formMenu[2]]
-    );
+    $("main article").append(nwork.join(""));
 
     $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
 
@@ -113,10 +110,6 @@ function getWritings() {
 
       $("main article").append(papers.join(""));
     }//end loop
-    $("main article").append([
-        "</br></br></br></br>",
-        formMenu[8]
-    ]);
   });
 }
 
@@ -152,9 +145,7 @@ function getEvents() {
 
     $("main article").append([
       nwork.join(""),
-      "</ul></blockquote>",
-      "</br></br></br></br>",
-      formMenu[7]
+      "</ul></blockquote>"
       ]);
   });
 }
@@ -196,10 +187,7 @@ function getSocial() {
       ensembles.join(tilde),
       tag("h4","Organizations"),
       organizations.join(tilde),
-      "</blockquote>",
-      "</br></br></br></br>",
-      formMenu[6],
-      "</br>"
+      "</blockquote>"
       ]);
   });
 }
@@ -212,7 +200,7 @@ function getBio() {
       "<br/>",
       bioSpanish,
       "</br></br></br></br>",
-      formMenu[0],formMenu[1],formMenu[3],formMenu[4],formMenu[5],
+      formMenu[0],formMenu[1],formMenu[3],formMenu[4],
       "</br>"
     ]);
 }
@@ -226,26 +214,26 @@ function loader(x) {
       $("main").append(tag("article",gameType.join("<br/>")));
       break;
     case "contact" :
-      $("main").append(tag("article",contactMessage.join("")));
+      $("main").append([tag("article",contactMessage.join(""))]);
       break;
     case "events" :
-      $("main").append(tag("article",""));
+      $("main").append([tag("header",tag("h4",formMenu[7])),tag("article","")]);
       getEvents();
       break;
     case "unwork":
-      $("main").append([tag("nav",""),tag("article","")]);
+      $("main").append([tag("header",tag("h4",formMenu[2])),tag("nav",""),tag("article","")]);
       getWork();
       break;
     case "bio":
-      $("main").append(tag("article",""));
+      $("main").append([tag("header",tag("h4","Bio")),tag("article","")]);
       getBio();
       break;
     case "social":
-      $("main").append(tag("article",""));
+      $("main").append([tag("header",tag("h4",formMenu[5])),tag("article","")]);
       getSocial();
       break;
     case "papers":
-      $("main").append(tag("article",""));
+      $("main").append([tag("header",tag("h4",formMenu[6])),tag("article","")]);
       getWritings();
       break;
     default:
