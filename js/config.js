@@ -182,14 +182,14 @@ var forms = {
 	[webSections[2]]  :"ftCkAv9TzkzlgAi8dcJNofLYYWc_k8WtSet3SQTf2ObOuyMA",//
 }
 var formLinks = [
-	formL[0]+forms[allCVsections[1]]+formL[1],
-	formL[0]+forms[allCVsections[2]]+formL[1],
-	formL[0]+forms[allCVsections[3]]+formL[1],
-	formL[0]+forms[allCVsections[4]]+formL[1],
-	formL[0]+forms[allCVsections[5]]+formL[1],
-	formL[0]+forms[webSections[0]]  +formL[1],
-	formL[0]+forms[webSections[1]]  +formL[1],
-	formL[0]+forms[webSections[2]]  +formL[1]
+	"\'"+formL[0]+forms[allCVsections[1]]+formL[1]+"\'",
+	"\'"+formL[0]+forms[allCVsections[2]]+formL[1]+"\'",
+	"\'"+formL[0]+forms[allCVsections[3]]+formL[1]+"\'",
+	"\'"+formL[0]+forms[allCVsections[4]]+formL[1]+"\'",
+	"\'"+formL[0]+forms[allCVsections[5]]+formL[1]+"\'",
+	"\'"+formL[0]+forms[webSections[0]]  +formL[1]+"\'",
+	"\'"+formL[0]+forms[webSections[1]]  +formL[1]+"\'",
+	"\'"+formL[0]+forms[webSections[2]]  +formL[1]+"\'"
 ];
 
 var formMenu = {
