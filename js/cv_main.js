@@ -17,15 +17,7 @@ $(function(){
   $("main").html("").append("<article></article>");
   $("article, #menubg").width(articleWidth(maxWidth));
 
-  var allsections = [
-    "Personal",
-    "Teachings",
-    "Awards",
-    "Unworks",
-    "Collaborations",
-    "Performances"
-  ];
-  $.each(allsections, function(index,value){
+  $.each(allCVsections, function(index,value){
     var theid = makeID(value);
     var target = theid+"-ul";
     var section = [

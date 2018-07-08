@@ -201,6 +201,11 @@ function getBio() {
     ]);
 }
 
+function getForms(x) {
+  $("main article").append([formW[0],forms.x,formW[1]]);
+}
+
+
 function loader(x) {
   $("main").html("");
   $("#backvideo").hide().attr('src','');

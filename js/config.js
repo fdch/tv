@@ -125,6 +125,38 @@ var cvURL = [
 	spreadsheets+cvID+"4"+altjson
 ];
 
+var allCVsections = [
+	"Personal",
+	"Teachings",
+	"Awards",
+	"Unworks",
+	"Collaborations",
+	"Performances"
+];
+
+var webSections = [
+	"People",
+	"Events",
+	"Papers"
+]
+
+var formD = [articleWidth(maxWidth),height()];
+
+var formW = [
+	"<iframe src=\"https://docs.google.com/forms/d/e/1FAIpQLS",
+	"/viewform?embedded=true\" width=\""+formD[0]+"\" height=\""+formD[1]+"\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>"
+]
+
+var forms = [
+	{allCVsections[1]:"els-Lj6MXZOFfUvyxLHp8uhdkNzADgh3KGjWV0-CJPUiGnkA"},//teaching
+	{allCVsections[2]:"cCNndRyaJTIqOI4KDnDxu3OSdLeVAMAAYI1p_D-ymTLi9Y7g"},//awards
+	{allCVsections[3]:"fVU3VMgZvkY3kGnG-OezP02MgqOvhwS6Z6APOflTE-ShvQVg"},//unworks
+	{allCVsections[4]:"d51ZlszfuGuvMA9WXpY56mlottnn-26JZ_whsfaG-hX_uZFw"},//collaborations
+	{allCVsections[5]:"cr_d39dnsctc4jfCZ-Tn9g6MyUsXZB0wzOPssV80KITISLfA"},//performances
+	{webSections[0]  :"cnzdRLIMTy2arVYeIYOIJS_SPdedxngAhs8qbp8gnoJpIOhw"},//people
+	{webSections[1]  :"cYgPrlbPXm3B9FDQghaaey8d5X6DpZhsOqMLP36DfrpRsOJA"},//events
+	{webSections[2]  :"ftCkAv9TzkzlgAi8dcJNofLYYWc_k8WtSet3SQTf2ObOuyMA"},//papers
+]
 
 var fonts = [
 "\'Courier\'",
@@ -140,6 +172,21 @@ var fonts = [
 
 var imgArray = ["img/imgone.png","img/imgtwo.png"];
 
+
+
+var formMenu = [
+	"<ul><li "+onclickify("getForms",allCVsections[1])+">"+allCVsections[1]+"</li>",
+	"<li "+onclickify("getForms",allCVsections[2])+">"+allCVsections[2]+"</li>",
+	"<li "+onclickify("getForms",allCVsections[3])+">"+allCVsections[3]+"</li>",
+	"<li "+onclickify("getForms",allCVsections[4])+">"+allCVsections[4]+"</li>",
+	"<li "+onclickify("getForms",allCVsections[5])+">"+allCVsections[5]+"</li>",
+	"<li "+onclickify("getForms",webSections[0])+">"+webSections[0]+"</li>",
+	"<li "+onclickify("getForms",webSections[1])+">"+webSections[1]+"</li>",
+	"<li "+onclickify("getForms",webSections[2])+">"+webSections[2]+"</li>",
+	"</ul>"
+];
+
+
 var contactMessage = [
  "<h3>contact</h3>",
  "<p>Send me an email at "+nyuid+" and I will get in touch with you (as fast as nonhumanly possible :)</p>",
@@ -149,6 +196,8 @@ var contactMessage = [
  "</br>",
  tag("p",tag("i","Yes, I'm in social media.....:")),
  tag("address",footer.join(tilde)),
+ "</br></br></br></br>",
+ formMenu.join("")
 ]
 
 ///make this better:
