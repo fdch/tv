@@ -66,7 +66,8 @@ function height(){
 
 function articleWidth(maxW){
   var pw  = width();
-  if (pw >= maxW) {return maxW;} else {return pw;}
+  var f = 0.9;
+  if (pw >= maxW) {return maxW*f;} else {return pw*f;}
 }
 
 function loadJSON(x,callback) {

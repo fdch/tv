@@ -40,7 +40,7 @@ function getUnworks() {
       );
 
       if (eiurl) {
-        nwork.push(imgify(eiurl,articleWidth(maxWidth)*0.9));
+        nwork.push(imgify(eiurl,articleWidth(maxWidth)));
       }
 
       nwork.push(tag("h5","Performed by "+eperf+" at "+eloca+" on "+edate.toDateString()));
@@ -254,5 +254,5 @@ function loader(x) {
     default:
     break;
   }
-  $('article').width(articleWidth(maxWidth)*0.9);
+  $('article').width(articleWidth(maxWidth));
 }
