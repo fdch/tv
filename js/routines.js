@@ -20,8 +20,14 @@ function makeID(x){
   return x.replace(/ /g,'_').toLowerCase();
 }
 
-function onclickify(func,src) {
-  return " onclick=\""+func+"(\'"+src+"\');\" ";
+function onclickify(func,src,arg) {
+
+  if (arg) {
+    return " onclick=\""+func+"(\'"+src+"\',\'"+arg+"\');\" ";
+  } else {
+    return " onclick=\""+func+"(\'"+src+"\');\" ";
+  }  
+  
 }
 
 function tag(tag,text){
@@ -29,7 +35,7 @@ function tag(tag,text){
 }
 
 function tagOpen(tag,text,target){
-  return "<"+tag+onclickify("window.open",target)+">"+text+"</"+tag+">";
+  return "<"+tag+onclickify("window.open",target,"_top")+">"+text+"</"+tag+">";
 }
 
 function linkify(x,y,blank){
@@ -47,7 +53,7 @@ function linkify(x,y,blank){
 }
 
 function imgify(src,width){
-  return "<img src=\""+ src +"\" width=\""+ width +"\" "+ onclickify("window.open",src) + "/>";
+  return "<img src=\""+ src +"\" width=\""+ width +"\" "+ onclickify("window.open",src,"_top") + "/>";
 }
 
 function width(){
