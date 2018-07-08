@@ -240,7 +240,7 @@ function loader(x) {
       getUnworks();
       break;
     case "bio":
-      $("main").append([tag("header",tag("h4","Bio")),tag("article","")]);
+      $("main").append([tag("header",tag("h3","Bio")),tag("article","")]);
       getBio();
       break;
     case "people":

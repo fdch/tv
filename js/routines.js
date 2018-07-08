@@ -66,7 +66,7 @@ function height(){
 
 function articleWidth(maxW){
   var pw  = width();
-  var f = 0.9;
+  var f = widthFactor;
   if (pw >= maxW) {return maxW*f;} else {return pw*f;}
 }
 
