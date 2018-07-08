@@ -198,9 +198,7 @@ function getBio() {
       tag("h5",linkify("curriculum vitae",cv,0)),
       bioEnglish,
       "<br/>",
-      bioSpanish,
-      "</br></br></br></br>",
-      formMenu[0],formMenu[1],formMenu[3],formMenu[4],
+      bioSpanish
       "</br>"
     ]);
 }

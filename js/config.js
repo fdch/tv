@@ -199,7 +199,9 @@ var contactMessage = [
  "</br>",
  "</br>",
  tag("p",tag("i","Yes, I'm in social media.....")),
- tag("address",footer.join(tilde))
+ tag("address",footer.join(tilde)),
+ "</br></br></br></br>",
+ formMenu[0],formMenu[1],formMenu[3],formMenu[4],
 ]
 
 ///make this better:
