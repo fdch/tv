@@ -221,7 +221,7 @@ function getSubmit(target) {
   }
 }
 function loader(x) {
-  $("main").html("");
+  $("main").html("").css('background-image', 'url(' + loadingUrl + ')');
   $("#backvideo").hide().attr('src','');
 
   switch (x) {
@@ -255,4 +255,5 @@ function loader(x) {
     break;
   }
   $('article').width(articleWidth(maxWidth));
+  $("main").css('background-image', 'url('')');
 }

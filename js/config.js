@@ -79,6 +79,7 @@ var footer = [
 ]
 
 var contactGif = "img/zissou.gif";
+var loadingUrl = "img/fdch.gif";
 
 var featWork = "Lorenz Variations";
 

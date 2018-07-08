@@ -9,6 +9,10 @@ h1, h2 {
   font-size:1.1em;
   cursor:pointer;
 }
+h3 {
+  padding-top:1%;
+  margin-top:1%;
+}
 #menubg{
   padding:1% 1% 2% 1%;
   border-radius:3px;
