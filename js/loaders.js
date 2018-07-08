@@ -57,7 +57,7 @@ function getWork() {
       wmitem = "<span class=menuitem "+onclickify("vis",nwid)+">"+etitl+"</span>";
 
       wmitems.push(wmitem);
-    }
+    }//end loop
 
     $("main article").append([
         nwork.join(""),
@@ -111,12 +111,12 @@ function getWritings() {
         "</section>"
       );
 
-      $("main article").append([
-        papers.join(""),
+      $("main article").append(papers.join(""));
+    }//end loop
+    $("main article").append([
         "</br></br></br></br>",
         formMenu[8]
-        ]);
-    }
+    ]);
   });
 }
 
@@ -148,7 +148,7 @@ function getEvents() {
       ];
 
       nwork.push(event.join(""));
-    }
+    }//end loop
 
     $("main article").append([
       nwork.join(""),
@@ -187,7 +187,7 @@ function getSocial() {
         //is people
         people.push(linkify(ename+" "+esurname, elink));
       } 
-    }
+    }//end loop
 
     $("main article").append([
       tag("h4","People"),
