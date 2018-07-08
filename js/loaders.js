@@ -254,5 +254,5 @@ function loader(x) {
     default:
     break;
   }
-  $('article').width(articleWidth(maxWidth));
+  $('article').width(articleWidth(maxWidth)*0.9);
 }
