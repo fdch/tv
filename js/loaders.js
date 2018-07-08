@@ -232,11 +232,11 @@ function loader(x) {
       $("main").append([tag("article",contactMessage.join(""))]);
       break;
     case "events" :
-      $("main").append([tag("header",formMenu.x),tag("article","")]);
+      $("main").append([tag("header",formMenu[x]),tag("article","")]);
       getEvents();
       break;
     case "unwork":
-      $("main").append([tag("header",formMenu.x),tag("nav",""),tag("article","")]);
+      $("main").append([tag("header",formMenu[x]),tag("nav",""),tag("article","")]);
       getUnworks();
       break;
     case "bio":
@@ -244,11 +244,11 @@ function loader(x) {
       getBio();
       break;
     case "people":
-      $("main").append([tag("header",formMenu.x),tag("article","")]);
+      $("main").append([tag("header",formMenu[x]),tag("article","")]);
       getPeople();
       break;
     case "papers":
-      $("main").append([tag("header",formMenu.x),tag("article","")]);
+      $("main").append([tag("header",formMenu[x]),tag("article","")]);
       getPapers();
       break;
     default:
