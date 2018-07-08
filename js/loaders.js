@@ -250,6 +250,7 @@ function loader(x) {
       break;
     case "papers":
       $("main").append([tag("header",formMenu[x]),tag("article","")]);
+      console.log(formMenu[x]);
       getPapers();
       break;
     default:
