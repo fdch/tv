@@ -255,5 +255,5 @@ function loader(x) {
     break;
   }
   $('article').width(articleWidth(maxWidth));
-  $("main").css('background-image', 'url('')');
+  $("main").css('background-image', 'url()');
 }
