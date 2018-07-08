@@ -202,6 +202,7 @@ function getBio() {
     ]);
 }
 function getSubmit(target) {
+  console.log(target);
   var exists;
   if (!exists) var n = window.open("", "WPEventForm", submit[4]);
   else n.focus();
