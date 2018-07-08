@@ -135,8 +135,10 @@ function getPerformances(id) {
 
 
 function getUnworks(id){
+//
+// this function has the same name as in loaders.js but should not conflict
+//
 
-  //get work (sheet from Works)
   loadJSON(sheetURL, function(response) {
     var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
     var eiurl, evurl, eaurl, esurl, eloca, nwid, nwork, wmitem;

@@ -1,5 +1,5 @@
 var w, h, t = 4333;
-var mitem = ["bio", "unwork", "papers", "events", "social", "games", "contact"];
+var mitem = ["bio", "unwork", "papers", "events", "people", "games", "contact"];
 var maxWidth = 810;
 
 
@@ -115,8 +115,8 @@ var cvID = "1vViMWDsMRnbGUgP44XNDlQrLQ3MsdgO9W91mM4MxJtw/";
 var altjson = "/public/values?alt=json";
 var sheetURL = spreadsheets+sheetID+"1"+altjson;
 var eventsURL = spreadsheets+sheetID+"2"+altjson;
-var socialURL = spreadsheets+sheetID+"3"+altjson;
-var writingsURL = spreadsheets+sheetID+"4"+altjson;
+var peopleURL = spreadsheets+sheetID+"3"+altjson;
+var papersURL = spreadsheets+sheetID+"4"+altjson;
 
 var cvURL = [
 	spreadsheets+cvID+"1"+altjson,
@@ -198,7 +198,7 @@ var contactMessage = [
  imgify(contactGif,200),
  "</br>",
  "</br>",
- tag("p",tag("i","Yes, I'm in social media.....:")),
+ tag("p",tag("i","Yes, I'm in social media.....")),
  tag("address",footer.join(tilde))
 ]
 

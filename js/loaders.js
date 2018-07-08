@@ -8,7 +8,7 @@ function makeMenu(m, len, mitem, type) {
   m.append("</nav>");
 }
 
-function getWork() {
+function getUnworks() {
   loadJSON(sheetURL, function(response) {
     var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
     var eiurl, evurl, eaurl, esurl, eloca, nwid, wmitem;
@@ -69,8 +69,8 @@ function getWork() {
   });
 }
 
-function getWritings() {
-  loadJSON(writingsURL, function(response) {
+function getPapers() {
+  loadJSON(papersURL, function(response) {
     var f, e, i, entry, estam, etitle, edesc, elink, epublished, edownload;
     f = JSON.parse(response);
     entry = f.feed.entry;
@@ -150,8 +150,8 @@ function getEvents() {
   });
 }
 
-function getSocial() {
-  loadJSON(socialURL, function(response) {
+function getPeople() {
+  loadJSON(peopleURL, function(response) {
     var f, e, i, entry, estam, ename, esurname, elink, npeople;
     var people=[], organizations=[], ensembles=[];
 
@@ -222,19 +222,19 @@ function loader(x) {
       break;
     case "unwork":
       $("main").append([tag("header",tag("h4",formMenu[2])),tag("nav",""),tag("article","")]);
-      getWork();
+      getUnworks();
       break;
     case "bio":
       $("main").append([tag("header",tag("h4","Bio")),tag("article","")]);
       getBio();
       break;
-    case "social":
+    case "people":
       $("main").append([tag("header",tag("h4",formMenu[5])),tag("article","")]);
-      getSocial();
+      getPeople();
       break;
     case "papers":
       $("main").append([tag("header",tag("h4",formMenu[6])),tag("article","")]);
-      getWritings();
+      getPapers();
       break;
     default:
     break;
