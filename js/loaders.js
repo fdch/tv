@@ -58,7 +58,13 @@ function getWork() {
 
       wmitems.push(wmitem);
     }
-    $("main article").append(nwork.join(""));
+
+    $("main article").append([
+        nwork.join(""),
+        "</br></br></br></br>",
+        formMenu[3]]
+    );
+
     $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
 
     vis("id-"+makeID(featWork));
@@ -72,8 +78,6 @@ function getWritings() {
     f = JSON.parse(response);
     entry = f.feed.entry;
     
-    //$("main article");//.append("<blockquote>");
-
     for (i in entry) {
       var papers=[];
       e = entry[i];
@@ -112,10 +116,7 @@ function getWritings() {
         "</br></br></br></br>",
         formMenu[8]
         ]);
-
     }
-
-    //$("main article").append("</blockquote>");
   });
 }
 
@@ -148,7 +149,6 @@ function getEvents() {
 
       nwork.push(event.join(""));
     }
-
 
     $("main article").append([
       nwork.join(""),
@@ -203,14 +203,6 @@ function getSocial() {
   });
 }
 
-  // "Personal",
-  // "Teachings",
-  // "Awards",
-  // "Unworks",
-  // "Collaborations",
-  // "Performances"
-
-
 function getBio() {
     $("main article").append([
       imgify(bioImage,articleWidth(maxWidth)),
@@ -219,7 +211,7 @@ function getBio() {
       "<br/>",
       bioSpanish,
       "</br></br></br></br>",
-      formMenu[0],formMenu[1],formMenu[2],formMenu[3],formMenu[4],formMenu[5],
+      formMenu[0],formMenu[1],formMenu[2],formMenu[4],formMenu[5],
     ]);
 }
 
