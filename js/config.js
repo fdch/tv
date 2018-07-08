@@ -1,5 +1,5 @@
 var w, h, t = 4333;
-var mitem = ["bio", "unwork", "papers", "events", "people", "games", "contact"];
+var mitem = ["bio", "unwork", "papers", "events", "people", "touch"];
 var maxWidth = 810;
 var widthFactor = 0.9;
 
@@ -227,7 +227,9 @@ var contactMessage = [
  "</br>",
  tag("p",tag("i","Yes, I'm in social media.....")),
  tag("address",footer.join(tilde)),
- "</br></br></br></br>",
+ "</br></br>",
+ tag("span","And... I have some ")+"<span "+onclickify("loader","games")+">fun </span>"tag("span","every now and then..."),
+ "</br></br>",
  formMenu[allCVsections[1]],
  formMenu[allCVsections[2]],
  formMenu[allCVsections[4]],
