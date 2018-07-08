@@ -228,7 +228,7 @@ var contactMessage = [
  tag("p",tag("i","Yes, I'm in social media.....")),
  tag("address",footer.join(tilde)),
  "</br></br>",
- tag("span","And... I have some ")+"<span "+onclickify("loader","games")+">fun </span>"+tag("span","every now and then..."),
+ tag("span","And... I have some")+tag("b","<span "+onclickify("loader","games")+">fun</span>")+tag("span","every now and then..."),
  "</br></br>",
  formMenu[allCVsections[1]],
  formMenu[allCVsections[2]],
