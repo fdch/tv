@@ -215,8 +215,8 @@ function getSubmit(target) {
       n.alert("\n"+submit[0]+"\n\n Try again.");
     } else {
       n.alert("\nSucess!\n\n"+submit[1]+"\n\n Karlheinz.");
-      n.resizeTo(w, h);
-      n.moveBy(w*0.5, h*0.1);
+      n.resizeTo(articleWidth(maxWidth), height());
+      n.moveBy(articleWidth(maxWidth), height());
       open(target, "WPEventForm");
     }
   }
