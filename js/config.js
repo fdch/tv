@@ -179,7 +179,7 @@ var disableEnter = [
 var submit = [
 	"\"No, what is important is neither linearity or non-linearity, but the change, the degree of change from something that doesn't move to other events with different tempos in particular.\"",
 	"\"I no longer limit myself.\"",
-	"<head><link rel=stylesheet href=\""+repo+"/css/style.css\"></style>"+disableEnter.join("")+"<link rel='shortcut icon' href=\""+repo+"/img/imgone.png\"></link><title>Submit Form</title></head><body><h2>Submit Form</h2><div id=maindiv><form><h3>Enter password:</h3><input type=password id=krl size=12/><p>Click Submit when done</p><input type=button value=Submit id=authOK /></form></div></body>","kontakte",
+	"<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=stylesheet href=\""+repo+"/css/style.css\"></style>"+disableEnter.join("")+"<link rel='shortcut icon' href=\""+repo+"/img/imgone.png\"></link><title>Submit Form</title></head><body><h2>Submit Form</h2><div id=maindiv><form><h3>Enter password:</h3><input type=password id=krl size=12/><p>Click Submit when done</p><input type=button value=Submit id=authOK /></form></div></body>","kontakte",
 	"width=200, height=200, location=0, toolbar=0, resizable=0, scrollbars=0"
 ];
 
