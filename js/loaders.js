@@ -8,12 +8,52 @@ function makeMenu(m, len, mitem, type) {
   m.append("</nav>");
 }
 
+// var btnOnclick = ["allCats()", "myValues()"];
+// var btnTexts   = ["all", "apply"];
+
+// for (var i in btnOnclick) {
+//   var btn = document.createElement('button');
+//   var btnTxt = document.createTextNode(btnTexts[i]);
+//   var btnAtt = document.createAttribute('onclick');
+//   btnAtt.value = btnOnclick[i];
+//   document.body.appendChild(btn);
+//   btn.appendChild(btnTxt);
+// }
+
+var person = {some:"XXXXX", less:"YYYYY"};
+
+var satus=1;
+//var form = document.getElementById("myform");
+
+function allCats(form) { 
+  status==1?status=0:status=1; 
+  for(var i=0; i < form.elements.length; i++) {
+      var e = form.elements[i].name;
+        $("#"+e).prop('checked', status==1?true:false);
+     }
+
+}
+
+function myValues(form, target) {
+  target.html("");// $("#target").html("");
+  var check=0;
+  for(var i=0; i < form.elements.length; i++) {
+    var e = form.elements[i];
+    if (e.checked) {
+      target.append(person[e.name]);
+      check++;
+    }
+  } 
+  if (!check) status=0, allCats(), myValues();
+}
+
 function getUnworks() {
   loadJSON(sheetURL, function(response) {
     var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
     var eiurl, evurl, eaurl, esurl, eloca, nwid, wmitem;
     var nwork = [];
     var wmitems = [];
+    var allCagetories = [], uniqueCats=[];
     f = JSON.parse(response);
     entry = f.feed.entry;
 
@@ -58,9 +98,30 @@ function getUnworks() {
       wmitem = "<span class=menuitem "+onclickify("vis",nwid)+">"+etitl+"</span>";
 
       wmitems.push(wmitem);
+      allCagetories.push(ecat);
+
     }//end loop
 
     $("main article").append(nwork.join(""));
+
+    var formID = "formID";
+    var formTag = document.createElement('form');
+    var formAttId = document.createAttribute('id');
+    formAttId.value = formID;
+
+    $("#submenu").appendChild(formTag);
+    formTag.setAttributeNode(formAttId);
+
+
+    var categories = JQuery.uniqueSort(allCagetories);
+    var buttons = ["all", "apply"];
+
+    for (var i in categories) {
+      makeInput([categories[i],"checkbox"],formTag);
+    };
+    for (var i in buttons) {
+      makeInput([buttons[i], "button"], formTag);
+    }
 
     $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
 

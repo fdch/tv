@@ -136,3 +136,31 @@ function funImage(){
   if (whichone==0) {whichone=1} else {whichone=0}
   setTimeout(function(){$("#rot img").attr('src', imgArray[whichone])},dur/4);
 }
+
+
+function makeInput(input,target) {
+  //makeInput([uniqueID, checkbox], parentNode);
+  var name = input[0];
+  var type = input[1];
+
+  var labelText = document.createTextNode(name);
+  
+  var inputTag = document.createElement('input');
+  var inputType = document.createAttribute('type');
+  inputType.value = type;
+  var inputId = document.createAttribute('id');
+  var inputAtt = document.createAttribute('name');
+  inputAtt.value = name;
+  inputId.value = name;
+  var labelTag = document.createElement('label');
+  var labelAtt = document.createAttribute('for');
+  labelAtt.value = name;
+
+  target.appendChild(inputTag);
+  target.appendChild(labelTag);
+  inputTag.setAttributeNode(inputType);
+  inputTag.setAttributeNode(inputId);
+  labelTag.appendChild(labelText);
+  labelTag.setAttributeNode(labelAtt);
+
+}
