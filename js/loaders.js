@@ -104,24 +104,24 @@ function getUnworks() {
 
     $("main article").append(nwork.join(""));
 
-    // var formID = "formID";
-    // var formTag = document.createElement('form');
-    // var formAttId = document.createAttribute('id');
-    // formAttId.value = formID;
+    var formID = "formID";
+    var formTag = document.createElement('form');
+    var formAttId = document.createAttribute('id');
+    formAttId.value = formID;
 
-    // var selectID = "selectID";
-    // var selectTag = document.createElement('select');
-    // var selectAtt = document.createAttribute('id');
-    // selectAtt.value = selectID;
-    // var selectClk = document.createAttribute('onclick');
-    // selectClk.value = "getValue(this)";
+    var selectID = "selectID";
+    var selectTag = document.createElement('select');
+    var selectAtt = document.createAttribute('id');
+    selectAtt.value = selectID;
+    var selectClk = document.createAttribute('onclick');
+    selectClk.value = "getValue(this)";
 
-    // document.getElementById("submenu").innerHTML = "";
-    // document.getElementById("submenu").appendChild(formTag);
-    // formTag.setAttributeNode(formAttId);
-    // formTag.appendChild(selectTag);
-    // selectTag.setAttributeNode(selectAtt);
-    // selectTag.setAttributeNode(selectClk);
+    document.getElementById("submenu").innerHTML = "";
+    document.getElementById("submenu").appendChild(formTag);
+    formTag.setAttributeNode(formAttId);
+    formTag.appendChild(selectTag);
+    selectTag.setAttributeNode(selectAtt);
+    selectTag.setAttributeNode(selectClk);
 
     var categories = new Array();
     
