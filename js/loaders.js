@@ -116,20 +116,20 @@ function getUnworks() {
     for (var i in allCategories){
       for (var j in allCategories[i]){
         var word=[];
-        var char=allCategories[i][j];
-        switch (char) {
+        var chara=allCategories[i][j];
+        switch (chara) {
           case ",":
-            categories.push(word), word=[];
+            categories.push(word), console.log(word), word=[];
             break;
           case " ":
             break;
           default:
-            word.push(makeID(char));
+            word.push(makeID(chara));
             break;
         }
       }
     }
-    console.log(categories);
+    // console.log(categories);
     var ucat = $.uniqueSort(categories);
 
     var buttons = ["all", "apply"];
