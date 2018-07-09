@@ -9,6 +9,7 @@ function makeMenu(m, len, mitem, type) {
 }
 
 function worksSubmenu(allCategories) {
+  var localCats = allCategories;
   var formID = "formID";
   var formTag = document.createElement('form');
   var formAttId = document.createAttribute('id');
@@ -31,7 +32,7 @@ function worksSubmenu(allCategories) {
 
   var categories = new Array();
 
-  jQuery.each(allCategories, function(i,v){
+  jQuery.each(localCats, function(i,v){
     var subcat = new Array(v.split(", "));
     jQuery.each(subcat, function(ii,vv){
       categories.push(subcat[vv]);
