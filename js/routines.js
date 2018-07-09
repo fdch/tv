@@ -174,7 +174,7 @@ function makeValue(input,target) {
   var elemTxt = document.createTextNode(text);
   var elemTag = document.createElement(element);
   var elemAtt = document.createAttribute(attribute);
-  elemAtt.value = text.toLowerCase();
+  elemAtt.value = text;
  
   target.appendChild(elemTag);
   elemTag.setAttributeNode(elemAtt);
