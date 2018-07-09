@@ -119,7 +119,7 @@ function getUnworks() {
         var chara=allCategories[i][j];
         switch (chara) {
           case ",":
-            categories.push(word), console.log(word), word=[];
+            categories.push(word), console.log("word:"+ word), word=[];
             break;
           case " ":
             break;
