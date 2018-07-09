@@ -21,10 +21,12 @@ function worksSubmenu(allCategories) {
   var selectClk = document.createAttribute('onclick');
   selectClk.value = "getValue(this)";
 
-  // document.getElementById("submenu").innerHTML = "";
-  document.getElementsByTagName("header")[0].appendChild(formTag);
-  formTag.setAttributeNode(formAttId);
+  var header = document.getElementsByTagName("header");
+  
+  header[0].appendChild(formTag);
   formTag.appendChild(selectTag);
+  
+  formTag.setAttributeNode(formAttId);
   selectTag.setAttributeNode(selectAtt);
   selectTag.setAttributeNode(selectClk);
 
