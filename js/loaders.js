@@ -115,7 +115,7 @@ function getUnworks() {
     selectAtt.value = selectID;
     var selectClk = document.createAttribute('onclick');
     selectClk.value = "getValue(this)";
-    
+
     document.getElementById("submenu").innerHTML = "";
     document.getElementById("submenu").appendChild(formTag);
     formTag.setAttributeNode(formAttId);
@@ -145,7 +145,7 @@ function getUnworks() {
     //   }
     // }
     // console.log(categories);
-    var ucat = $.uniqueSort(allCategories);
+    var ucat = $.uniqueSort(allCategories.split(","));
     
     // console.log(ucat.join());
 
