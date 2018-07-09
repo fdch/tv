@@ -39,6 +39,8 @@ function makeWorksSubmenu(selectID,formTag,ucats) {
 var worksLoaded=0;
 
 function getUnworks() {
+  worksLoaded=0;
+  $("header > form").html("");
   loadJSON(sheetURL, function(response) {
     var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
     var eiurl, evurl, eaurl, esurl, eloca, nwid, wmitem;
@@ -103,11 +105,11 @@ function getUnworks() {
     
     // worksSubmenu(["formID","selectID", ""],allCategories);
     if (worksLoaded==0) {
-        var formTag = makeWorksForm(workFormID);
+        var formTag = makeWorksForm("workFormID");
         makeWorksSubmenu("selCats", formTag, getUniqueCategories(allCategories));
         // makeWorksSubmenu("selTits", formTag, getUniqueCategories(allTitles));
-        makeWorksSubmenu("selPerf", formTag, getUniqueCategories(allPerformers));
-        makeWorksSubmenu("selDura", formTag, getUniqueCategories(allDurations));
+        // makeWorksSubmenu("selPerf", formTag, getUniqueCategories(allPerformers));
+        // makeWorksSubmenu("selDura", formTag, getUniqueCategories(allDurations));
         // makeWorksSubmenu("selLoca", formTag, getUniqueCategories(allLocations));
         // makeWorksSubmenu("selDate", formTag, getUniqueCategories(allDates));
         worksLoaded=1;

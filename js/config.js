@@ -217,8 +217,6 @@ var formMenu = {
 	[mitem[2]]        :"<h3                   onclick=\"getSubmit("+formLinks[7]+");\">"+webSections[2]  +"</h3>  " //7
 };
 
-var workFormID = "workFormID";
-
 
 var contactMessage = [
  "<h3>contact</h3>",
