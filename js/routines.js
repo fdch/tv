@@ -223,6 +223,35 @@ function shuffleArray(array) {
     }
     return array;
 }
+
+function makeWorksForm(formID) {
+  var formTag = document.createElement('form');
+  var formAttId = document.createAttribute('id');
+  formAttId.value = formID;
+  var header = document.getElementsByTagName("header");
+  header[0].appendChild(formTag);
+  
+  formTag.setAttributeNode(formAttId);
+  return formTag;
+}
+
+function makeWorksSubmenu(selectID,formTag,ucats) {
+
+  var selectTag = document.createElement('select');
+  var selectAtt = document.createAttribute('id');
+  selectAtt.value = selectID;
+  var selectClk = document.createAttribute('onclick');
+  selectClk.value = "getValue(this)";
+
+  formTag.appendChild(selectTag);
+  selectTag.setAttributeNode(selectAtt);
+  selectTag.setAttributeNode(selectClk);
+  var thelist = shuffleArray(ucats);
+  jQuery.each(thelist, function(i,v){
+    makeValue([v,"option", "value"],selectTag);
+  });
+}
+
 // var person = {some:"XXXXX", less:"YYYYY"};
 
 // var satus=1;

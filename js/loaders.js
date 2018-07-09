@@ -8,38 +8,7 @@ function makeMenu(m, len, mitem, type) {
   m.append("</nav>");
 }
 
-function makeWorksForm(formID) {
-  var formTag = document.createElement('form');
-  var formAttId = document.createAttribute('id');
-  formAttId.value = formID;
-  var header = document.getElementsByTagName("header");
-  header[0].appendChild(formTag);
-  
-  formTag.setAttributeNode(formAttId);
-  return formTag;
-}
-
-function makeWorksSubmenu(selectID,formTag,ucats) {
-
-  var selectTag = document.createElement('select');
-  var selectAtt = document.createAttribute('id');
-  selectAtt.value = selectID;
-  var selectClk = document.createAttribute('onclick');
-  selectClk.value = "getValue(this)";
-
-  formTag.appendChild(selectTag);
-  selectTag.setAttributeNode(selectAtt);
-  selectTag.setAttributeNode(selectClk);
-  var thelist = shuffleArray(ucats);
-  jQuery.each(thelist, function(i,v){
-    makeValue([v,"option", "value"],selectTag);
-  });
-}
-
-var worksLoaded=0;
-
 function getUnworks() {
-  worksLoaded=0;
   $("header > form").html("");
   loadJSON(sheetURL, function(response) {
     var f, e, i, entry, estam, etitl, edate, eperf, ecat, edesc, eprog;
@@ -103,17 +72,15 @@ function getUnworks() {
 
     $("main article").append(nwork.join(""));
     
-    // worksSubmenu(["formID","selectID", ""],allCategories);
-    if (worksLoaded==0) {
-        var formTag = makeWorksForm("workFormID");
-        makeWorksSubmenu("selCats", formTag, getUniqueCategories(allCategories));
-        // makeWorksSubmenu("selTits", formTag, getUniqueCategories(allTitles));
-        // makeWorksSubmenu("selPerf", formTag, getUniqueCategories(allPerformers));
-        // makeWorksSubmenu("selDura", formTag, getUniqueCategories(allDurations));
-        // makeWorksSubmenu("selLoca", formTag, getUniqueCategories(allLocations));
-        // makeWorksSubmenu("selDate", formTag, getUniqueCategories(allDates));
-        worksLoaded=1;
-    }
+    var formTag = makeWorksForm("workFormID");
+    
+    makeWorksSubmenu("selCats", formTag, getUniqueCategories(allCategories));
+    // makeWorksSubmenu("selTits", formTag, getUniqueCategories(allTitles));
+    // makeWorksSubmenu("selPerf", formTag, getUniqueCategories(allPerformers));
+    // makeWorksSubmenu("selDura", formTag, getUniqueCategories(allDurations));
+    // makeWorksSubmenu("selLoca", formTag, getUniqueCategories(allLocations));
+    // makeWorksSubmenu("selDate", formTag, getUniqueCategories(allDates));
+    
 
     $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
 
