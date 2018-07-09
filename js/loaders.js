@@ -113,6 +113,13 @@ function getUnworks() {
     formTag.setAttributeNode(formAttId);
 
 
+    for (var key in allCategories){
+      console.log("KEY: "+key + "\n VALUE: "+allCategories[key]);
+
+    }
+
+
+
     var categories = $.uniqueSort(allCagetories);
     var buttons = ["all", "apply"];
 
