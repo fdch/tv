@@ -30,8 +30,8 @@ function makeWorksSubmenu(selectID,formTag,ucats) {
   formTag.appendChild(selectTag);
   selectTag.setAttributeNode(selectAtt);
   selectTag.setAttributeNode(selectClk);
-
-  jQuery.each(ucats, function(i,v){
+  var thelist = ucats.sort();
+  jQuery.each(thelist, function(i,v){
     makeValue([v,"option", "value"],selectTag);
   });
 }
