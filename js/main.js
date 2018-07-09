@@ -37,6 +37,7 @@ $(function(){
 
   $("#rot" ).click(function() { 
     randomVideo();
+    randomColor(color_preset["high"]);
     funImage();
   });
 
