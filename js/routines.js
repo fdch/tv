@@ -167,14 +167,14 @@ function makeInput(input,target) {
 
 
 function makeValue(input,target) {
-  var text = input[0];
+  var etext = input[0];
   var element = input[1];
   var attribute = input[2];
 
-  var elemTxt = document.createTextNode(text);
+  var elemTxt = document.createTextNode(etext);
   var elemTag = document.createElement(element);
   var elemAtt = document.createAttribute(attribute);
-  elemAtt.value = text;
+  elemAtt.value = etext;
  
   target.appendChild(elemTag);
   elemTag.setAttributeNode(elemAtt);
