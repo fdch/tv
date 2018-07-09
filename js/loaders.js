@@ -16,6 +16,7 @@ function makeWorksForm(formID) {
   header[0].appendChild(formTag);
   
   formTag.setAttributeNode(formAttId);
+  return formTag;
 }
 
 function makeWorksSubmenu(selectID,formTag,ucats) {
@@ -102,13 +103,13 @@ function getUnworks() {
     
     // worksSubmenu(["formID","selectID", ""],allCategories);
     if (worksLoaded==0) {
-        makeWorksForm(workFormID);
-        makeWorksSubmenu(workFormID, "selCats", getUniqueCategories(allCategories));
-        makeWorksSubmenu(workFormID, "selTits", getUniqueCategories(allTitles));
-        makeWorksSubmenu(workFormID, "selPerf", getUniqueCategories(allPerformers));
-        makeWorksSubmenu(workFormID, "selDura", getUniqueCategories(allDurations));
-        makeWorksSubmenu(workFormID, "selLoca", getUniqueCategories(allLocations));
-        makeWorksSubmenu(workFormID, "selDate", getUniqueCategories(allDates));
+        var formTag = makeWorksForm(workFormID);
+        makeWorksSubmenu("selCats", formTag, getUniqueCategories(allCategories));
+        makeWorksSubmenu("selTits", formTag, getUniqueCategories(allTitles));
+        makeWorksSubmenu("selPerf", formTag, getUniqueCategories(allPerformers));
+        makeWorksSubmenu("selDura", formTag, getUniqueCategories(allDurations));
+        makeWorksSubmenu("selLoca", formTag, getUniqueCategories(allLocations));
+        makeWorksSubmenu("selDate", formTag, getUniqueCategories(allDates));
         worksLoaded=1;
     }
 
