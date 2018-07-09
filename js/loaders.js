@@ -152,7 +152,7 @@ function getUnworks() {
 
     for (var i in ucat) {
      // console.log(ucat[i]);
-      makeValue([ucat[i],"option", "value"],selecTag);
+      makeValue([ucat[i],"option", "value"],selectTag);
     };
     for (var i in buttons) {
       makeInput([buttons[i], "button"], formTag);
