@@ -161,15 +161,15 @@ function getUnworks() {
     //   categories.push(word)
     // }
 
-    var ucat = $.uniqueSort(categories);
+    var ucat = $.uniqueSort(categories.sort());
     // console.log(categories);
     // console.log("-------------------ucat---------------------------");
-    console.log(ucat.join());
+    // console.log(ucat.join());
 
     //var buttons = ["all", "apply"];
 
     for (var i in ucat) {
-     // console.log(ucat[i]);
+     console.log("Ucat "+i+": "+ucat[i]);
       makeValue([ucat[i],"option", "value"],selectTag);
     };
    // for (var i in buttons) {
