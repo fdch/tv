@@ -126,7 +126,7 @@ function getUnworks() {
     var categories=new Array();
     
     for (var i in allCategories){
-        console.log(allCategories[i].length);
+        // console.log(allCategories[i].length);
         var subcat =new Array();
         subcat = allCategories[i].split(",");
         for (var j in subcat) {
