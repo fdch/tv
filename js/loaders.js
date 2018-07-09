@@ -109,8 +109,18 @@ function getUnworks() {
     var formAttId = document.createAttribute('id');
     formAttId.value = formID;
 
+    var selectID = "selectID";
+    var selectTag = document.createElement('select');
+    var selectAtt = document.createAttribute('id');
+    selectAtt.value = selectID;
+    var selectClk = document.createAttribute('onclick');
+    selectClk.value = "getValue()";
+
     document.getElementById("submenu").appendChild(formTag);
     formTag.setAttributeNode(formAttId);
+    formTag.appendChild(selectTag);
+    selectTag.setAttributeNode(selectAtt);
+    selectTag.setAttributeNode(selectClk);
 
     // var categories=[];
     // for (var i in allCategories){
@@ -134,7 +144,7 @@ function getUnworks() {
     //   }
     // }
     // console.log(categories);
-    var ucat = $.uniqueSort(categories);
+    var ucat = $.uniqueSort(allCategories);
     
     // console.log(ucat.join());
 
@@ -142,7 +152,7 @@ function getUnworks() {
 
     for (var i in ucat) {
      // console.log(ucat[i]);
-      makeInput([ucat[i],"select"],formTag);
+      makeValue([ucat[i],"option", "value"],selecTag);
     };
     for (var i in buttons) {
       makeInput([buttons[i], "button"], formTag);
