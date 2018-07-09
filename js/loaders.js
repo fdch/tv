@@ -145,9 +145,16 @@ function getUnworks() {
     //   }
     // }
     // console.log(categories);
-    var ucat = $.uniqueSort(allCategories.split(","));
+
+    var categories=[];
+    for (var i in allCategories){
+      var word = allCategories[i].split(",");
+      categories.push(word)
+    }
+
+    var ucat = $.uniqueSort(categories);
     
-    // console.log(ucat.join());
+    console.log(ucat.join());
 
     //var buttons = ["all", "apply"];
 
