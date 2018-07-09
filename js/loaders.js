@@ -8,60 +8,31 @@ function makeMenu(m, len, mitem, type) {
   m.append("</nav>");
 }
 
-function worksSubmenu(allCategories) {
-  var formID = "formID";
+function makeWorksForm(formID) {
   var formTag = document.createElement('form');
   var formAttId = document.createAttribute('id');
   formAttId.value = formID;
+  var header = document.getElementsByTagName("header");
+  header[0].appendChild(formTag);
+  
+  formTag.setAttributeNode(formAttId);
+}
 
-  var selectID = "selectID";
+function makeWorksSubmenu(selectID,formTag,ucats) {
+
   var selectTag = document.createElement('select');
   var selectAtt = document.createAttribute('id');
   selectAtt.value = selectID;
   var selectClk = document.createAttribute('onclick');
   selectClk.value = "getValue(this)";
 
-  var header = document.getElementsByTagName("header");
-  
-  header[0].appendChild(formTag);
   formTag.appendChild(selectTag);
-
-  formTag.setAttributeNode(formAttId);
   selectTag.setAttributeNode(selectAtt);
   selectTag.setAttributeNode(selectClk);
 
-  var categories = new Array();
- 
-
-  jQuery.each(allCategories, function(i,v){
-    var subcat = new Array(v.split(", "));
-    jQuery.each(subcat, function(ii,vv){
-      categories.push(vv);
-    });
+  jQuery.each(ucats, function(i,v){
+    makeValue([v,"option", "value"],selectTag);
   });
-
-
-
-  // for (var i in allCategories){
-  //     // console.log(allCategories[i].length);
-  //     var subcat = new Array(allCategories[i].split(", "));
-  //     for (var j in subcat) {
-  //       categories.push(subcat[j]);
-  //     }
-  // }
-
- var cats = new Array();
- jQuery.each(categories, function(i,v){
-    jQuery.each(v, function(ii,vv){
-      cats.push(vv);
-    });
- });
-
- var ucats = unique(cats);
-
- jQuery.each(ucats, function(i,v){
-   makeValue([v,"option", "value"],selectTag);
- });
 }
 
 var worksLoaded=0;
@@ -72,7 +43,7 @@ function getUnworks() {
     var eiurl, evurl, eaurl, esurl, eloca, nwid, wmitem;
     var nwork = [];
     var wmitems = [];
-    var allCategories = [], uniqueCats=[];
+    var allCategories = [], allTitles=[], allPerformers=[], allDurations=[], allLocations=[], allDates=[];
     f = JSON.parse(response);
     entry = f.feed.entry;
 
@@ -90,6 +61,7 @@ function getUnworks() {
       eaurl = e.gsx$audiourl.$t;
       esurl = e.gsx$scoreurl.$t;
       eloca = e.gsx$location.$t;
+      edura = e.gsx$duration.$t;
       nwid  = "id-"+makeID(etitl);
 
       nwork.push(
@@ -118,14 +90,25 @@ function getUnworks() {
 
       wmitems.push(wmitem);
       allCategories.push(ecat);
+      allTitles.push(etitl);
+      allPerformers.push(eperf);
+      allDurations.push(edura);
+      allLocations.push(eloca);
+      allDates.push(edate);
 
     }//end loop
 
     $("main article").append(nwork.join(""));
     
-
+    // worksSubmenu(["formID","selectID", ""],allCategories);
     if (worksLoaded==0) {
-        worksSubmenu(allCategories);
+        makeWorksForm(workFormID);
+        makeWorksSubmenu(workFormID, "selCats", getUniqueCategories(allCategories));
+        makeWorksSubmenu(workFormID, "selTits", getUniqueCategories(allTitles));
+        makeWorksSubmenu(workFormID, "selPerf", getUniqueCategories(allPerformers));
+        makeWorksSubmenu(workFormID, "selDura", getUniqueCategories(allDurations));
+        makeWorksSubmenu(workFormID, "selLoca", getUniqueCategories(allLocations));
+        makeWorksSubmenu(workFormID, "selDate", getUniqueCategories(allDates));
         worksLoaded=1;
     }
 

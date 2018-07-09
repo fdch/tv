@@ -138,6 +138,25 @@ function funImage(){
 }
 
 
+function getUniqueCategories(allCategories){
+
+  var categories = new Array();
+  jQuery.each(allCategories, function(i,v){
+    var subcat = new Array(v.split(", "));
+    jQuery.each(subcat, function(ii,vv){
+      categories.push(vv);
+    });
+  });
+  var cats = new Array();
+  jQuery.each(categories, function(i,v){
+    jQuery.each(v, function(ii,vv){
+      cats.push(vv);
+    });
+  });
+  
+  return unique(cats);
+}
+
 function makeInput(input,target) {
   //makeInput([uniqueID, checkbox], parentNode);
   var name = input[0];
