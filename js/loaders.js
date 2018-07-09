@@ -109,7 +109,7 @@ function getUnworks() {
     var formAttId = document.createAttribute('id');
     formAttId.value = formID;
 
-    document.body.getElementById("submenu").appendChild(formTag);
+    document.getElementById("submenu").appendChild(formTag);
     formTag.setAttributeNode(formAttId);
 
 
