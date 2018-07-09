@@ -44,9 +44,10 @@ function worksSubmenu(allCategories) {
   var cats = new Array();
 
   jQuery.each(categories, function(i,v){
+    console.log(v);
     jQuery.each(v, function(ii,vv){
       cats.push(vv);
-      console.log(vv);
+      // console.log(vv);
     });
   });
 
