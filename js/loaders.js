@@ -118,17 +118,17 @@ function getUnworks() {
         var word=[];
         var chara=allCategories[i][j];
 
-        console.log("chara:"+ chara);
-        // switch (chara) {
-        //   case ",":
-        //     categories.push(word), word=[];
-        //     break;
-        //   case " ":
-        //     break;
-        //   default:
-        //     word.push(makeID(chara));
-        //     break;
-        // }
+        // console.log("chara:"+ chara);
+        switch (chara) {
+          case ",":
+            categories.push(word), word=[];
+            break;
+          case " ":
+            break;
+          default:
+            word+=(makeID(chara));
+            break;
+        }
       }
     }
     // console.log(categories);
