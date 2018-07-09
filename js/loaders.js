@@ -130,7 +130,7 @@ function getUnworks() {
         var subcat =new Array();
         subcat = allCategories[i].split(",");
         for (var j in subcat) {
-          console.log(subcat[j]);
+          categories.push(subcat);
         }
     }
 
@@ -163,7 +163,7 @@ function getUnworks() {
     // }
 
     var ucat = $.uniqueSort(categories);
-    // console.log(categories);
+    console.log(categories);
     // console.log("-------------------ucat---------------------------");
     // console.log(ucat.join());
 
