@@ -52,6 +52,7 @@ function worksSubmenu(allCategories) {
 
   jQuery.each(ucats, function(i,v){
    makeValue([v,"option", "value"],selectTag);
+   console.log(v);
   });
 }
 
