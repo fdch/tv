@@ -181,7 +181,7 @@ function makeValue(input,target) {
   elemTag.appendChild(elemTxt);
 }
 
-function getValue(this) {
-  var value = makeID(this.value);
+function getValue(x) {
+  var value = makeID(x.value);
   window.alert(value);
 }
