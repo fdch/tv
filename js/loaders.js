@@ -163,9 +163,9 @@ function getUnworks() {
     // }
 
     var ucat = $.uniqueSort(categories);
-    console.log(categories);
+    // console.log(categories);
     // console.log("-------------------ucat---------------------------");
-    // console.log(ucat.join());
+    console.log(ucat.join());
 
     //var buttons = ["all", "apply"];
 
