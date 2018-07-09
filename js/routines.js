@@ -174,7 +174,7 @@ function makeValue(input,target) {
   var elemTxt = document.createTextNode(text);
   var elemTag = document.createElement(element);
   var elemAtt = document.createAttribute(attribute);
-  elemAtt.value = name;
+  elemAtt.value = makeID(text);
  
   target.appendChild(elemTag);
   elemTag.setAttributeNode(elemAtt);
@@ -182,6 +182,6 @@ function makeValue(input,target) {
 }
 
 function getValue(x) {
-  var value = makeID(x.value);
+  var value = x.value;
   window.alert(value);
 }
