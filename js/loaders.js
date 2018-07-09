@@ -168,9 +168,9 @@ function getUnworks() {
 
     //var buttons = ["all", "apply"];
 
-    for (var i in ucat) {
-     console.log("Ucat "+i+": "+ucat[i]);
-      makeValue([ucat[i],"option", "value"],selectTag);
+    for (var i in categories) {
+     console.log("Ucat "+i+": "+categories[i]);
+      makeValue([categories[i],"option", "value"],selectTag);
     };
    // for (var i in buttons) {
    //   makeInput([buttons[i], "button"], formTag);
