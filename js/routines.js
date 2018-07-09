@@ -182,5 +182,6 @@ function makeValue(input,target) {
 }
 
 function getValue(x) {
-  window.alert(document.getElementById(x).value)
+  var value = makeID($("x").value);
+  window.alert(value);
 }
