@@ -182,6 +182,6 @@ function makeValue(input,target) {
 }
 
 function getValue(x) {
-  var value = makeID(x.val());
+  var value = makeID(x.value);
   window.alert(value);
 }
