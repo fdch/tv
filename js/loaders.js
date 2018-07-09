@@ -53,7 +53,7 @@ function getUnworks() {
     var eiurl, evurl, eaurl, esurl, eloca, nwid, wmitem;
     var nwork = [];
     var wmitems = [];
-    var allCagetories = [], uniqueCats=[];
+    var allCategories = [], uniqueCats=[];
     f = JSON.parse(response);
     entry = f.feed.entry;
 
@@ -94,11 +94,11 @@ function getUnworks() {
         tag("h6","fdch:"+estam),
         "</div>"
       );
-
+      
       wmitem = "<span class=menuitem "+onclickify("vis",nwid)+">"+etitl+"</span>";
 
       wmitems.push(wmitem);
-      allCagetories.push(ecat);
+      allCategories.push(ecat);
 
     }//end loop
 
@@ -120,7 +120,7 @@ function getUnworks() {
 
 
 
-    var categories = $.uniqueSort(allCagetories);
+    var categories = $.uniqueSort(allCategories);
     var buttons = ["all", "apply"];
 
     for (var i in categories) {
