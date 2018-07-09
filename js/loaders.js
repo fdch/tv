@@ -34,18 +34,18 @@ function allCats(form) {
 
 }
 
-function myValues(form, target) {
-  target.html("");// $("#target").html("");
-  var check=0;
-  for(var i=0; i < form.elements.length; i++) {
-    var e = form.elements[i];
-    if (e.checked) {
-      target.append(person[e.name]);
-      check++;
-    }
-  } 
-  if (!check) status=0, allCats(), myValues();
-}
+// function myValues(form, target) {
+//   target.html("");// $("#target").html("");
+//   var check=0;
+//   for(var i=0; i < form.elements.length; i++) {
+//     var e = form.elements[i];
+//     if (e.checked) {
+//       target.append(person[e.name]);
+//       check++;
+//     }
+//   } 
+//   if (!check) status=0, allCats(), myValues();
+// }
 
 function getUnworks() {
   loadJSON(sheetURL, function(response) {
@@ -114,7 +114,7 @@ function getUnworks() {
     var selectAtt = document.createAttribute('id');
     selectAtt.value = selectID;
     var selectClk = document.createAttribute('onclick');
-    selectClk.value = "getValue()";
+    selectClk.value = "getValue(\'"+selectID+"\')";
 
     document.getElementById("submenu").appendChild(formTag);
     formTag.setAttributeNode(formAttId);

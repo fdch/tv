@@ -181,4 +181,6 @@ function makeValue(input,target) {
   elemTag.appendChild(elemTxt);
 }
 
-
+function getValue(x) {
+  window.alert(document.getElementById(x).value)
+}
