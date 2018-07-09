@@ -168,10 +168,14 @@ function getUnworks() {
 
     //var buttons = ["all", "apply"];
 
-    for (var i in categories) {
       console.log("categories length: "+categories.length);
+
+    for (var i=0; i <= categories.length; i++) {
+      
       console.log("categories "+i+": "+categories[i]);
+      
       makeValue([categories[i],"option", "value"],selectTag);
+    
     };
    // for (var i in buttons) {
    //   makeInput([buttons[i], "button"], formTag);
