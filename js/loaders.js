@@ -9,7 +9,6 @@ function makeMenu(m, len, mitem, type) {
 }
 
 function worksSubmenu(allCategories) {
-  var localCats = allCategories;
   var formID = "formID";
   var formTag = document.createElement('form');
   var formAttId = document.createAttribute('id');
@@ -22,41 +21,35 @@ function worksSubmenu(allCategories) {
   var selectClk = document.createAttribute('onclick');
   selectClk.value = "getValue(this)";
 
-  // document.getElementById("menu").innerHTML = "";
-  document.getElementById("menubg").appendChild(formTag);
-
+  document.getElementById("submenu").innerHTML = "";
+  document.getElementById("submenu").appendChild(formTag);
   formTag.setAttributeNode(formAttId);
   formTag.appendChild(selectTag);
   selectTag.setAttributeNode(selectAtt);
   selectTag.setAttributeNode(selectClk);
 
   var categories = new Array();
+  
+  for (var i in allCategories){
+      // console.log(allCategories[i].length);
+      var subcat = new Array(allCategories[i].split(", "));
+      for (var j in subcat) {
+        categories.push(subcat[j]);
+      }
+  }
 
-  jQuery.each(localCats, function(i,v){
-    var subcat = new Array(v.split(", "));
-    jQuery.each(subcat, function(ii,vv){
-      categories.push(subcat[vv]);
-      // console.log(vv);
+ var cats = new Array();
+ jQuery.each(categories, function(i,v){
+    jQuery.each(v, function(ii,vv){
+      cats.push(vv);
     });
+ });
 
-  });
+ var ucats = unique(cats);
 
-  var cats = new Array();
-
-  jQuery.each(categories, function(j,k){
-    // console.log(k);
-    jQuery.each(k, function(jj,kk){
-      cats.push(kk);
-      // console.log(vv);
-    });
-  });
-
-  var ucats = unique(cats);
-
-  jQuery.each(ucats, function(i,v){
+ jQuery.each(ucats, function(i,v){
    makeValue([v,"option", "value"],selectTag);
-   // console.log(v);
-  });
+ });
 }
 
 var worksLoaded=0;
@@ -67,7 +60,7 @@ function getUnworks() {
     var eiurl, evurl, eaurl, esurl, eloca, nwid, wmitem;
     var nwork = [];
     var wmitems = [];
-    var allCategories = [];
+    var allCategories = [], uniqueCats=[];
     f = JSON.parse(response);
     entry = f.feed.entry;
 
@@ -118,7 +111,11 @@ function getUnworks() {
 
     $("main article").append(nwork.join(""));
     
-    if (worksLoaded==0) { worksSubmenu(allCategories), worksLoaded=1; }
+
+    if (worksLoaded==0) {
+        worksSubmenu(allCategories);
+        worksLoaded=1;
+    }
 
     $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
 
