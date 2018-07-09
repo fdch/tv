@@ -8,7 +8,7 @@ function makeMenu(m, len, mitem, type) {
   m.append("</nav>");
 }
 
-function worksSubmenu() {
+function worksSubmenu(allCategories) {
   var formID = "formID";
   var formTag = document.createElement('form');
   var formAttId = document.createAttribute('id');
@@ -23,7 +23,7 @@ function worksSubmenu() {
 
   // document.getElementById("menu").innerHTML = "";
   document.getElementById("menubg").appendChild(formTag);
-  
+
   formTag.setAttributeNode(formAttId);
   formTag.appendChild(selectTag);
   selectTag.setAttributeNode(selectAtt);
@@ -62,7 +62,7 @@ function getUnworks() {
     var eiurl, evurl, eaurl, esurl, eloca, nwid, wmitem;
     var nwork = [];
     var wmitems = [];
-    var allCategories = [], uniqueCats=[];
+    var allCategories = [];
     f = JSON.parse(response);
     entry = f.feed.entry;
 
@@ -113,7 +113,7 @@ function getUnworks() {
 
     $("main article").append(nwork.join(""));
     
-    if (!worksLoaded) { worksSubmenu(), worksLoaded=1; }
+    if (!worksLoaded) { worksSubmenu(allCategories), worksLoaded=1; }
 
     $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
 
