@@ -115,13 +115,13 @@ function getUnworks() {
     var categories=[];
     for (var i in allCategories){
       for (var j in allCategories[i]){
-        var word=[];
+        var word="";
         var chara=allCategories[i][j];
 
         // console.log("chara:"+ chara);
         switch (chara) {
           case ",":
-            categories.push(word), word=[];
+            categories.push(word), word="";
             break;
           case " ":
             break;
