@@ -18,7 +18,7 @@ var twitter = "http://www.twitter.com/ffddcchh";
 var yt = "https://www.youtube.com/channel/UCzOx-iKaNx9ruddNI6ykTIA";
 var flickr = "http://www.flickr.com/federicocamarahalac";
 var linkedin = "http://linkedin.com/in/fedecamarahalac";
-
+var instagram = "https://instagram.com/ffddcchh";
 
 var tilde = " ~ ";
 var hide = "style=\"display:none\"";
@@ -68,15 +68,35 @@ var personal = [
 
 
 var footer = [
-	linkify("Tumblr",blog,1),
+	tag("p","My blog is in:"),
+ 	linkify("Tumblr",blog,1),
+
+ 	tag("p","Currently my code is in:"),
 	linkify("Github",repo,1),
-	linkify("Vimeo",video,1),
-	linkify("SoundCloud",scloud,1),
-	linkify("Twitter",twitter,1),
-	linkify("Facebook",facebookUrl,1),
+	tag("p","...but I'll change this soon, becaue EvilCorp just bought it..."),
+	
+	tag("p","Most videos are in:"),
+ 	linkify("Vimeo",video,1),
+	tag("p","...and in:"),
 	linkify("Youtube",yt,1),
+	
+	tag("p","Some music is in:"),
+	linkify("SoundCloud",scloud,1),
+	
+	tag("p","Some pictures are in:"),
+	linkify("Instagram", instagram,1)
+
+	tag("p","Oddly enough, I still have some pictures in:"),
 	linkify("Flickr",flickr,1),
-	linkify("LinkedIn", linkedin,1)
+
+	tag("p","When I get all professional, I go to:"),
+	linkify("LinkedIn", linkedin,1),
+
+	tag("p","This I rarely use but I post things on occasions:"),
+	linkify("Twitter",twitter,1),
+
+	tag("p","Finally, you can become my friend here:"),
+	linkify("Facebook",facebookUrl,1),
 ]
 
 var contactGif = "img/zissou.gif";
