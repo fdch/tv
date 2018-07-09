@@ -115,7 +115,7 @@ function getUnworks() {
     var categories=[];
     for (var i in allCategories){
       for (var j in allCategories[i]){
-        var word;
+        var word=[];
         var char=allCategories[i][j];
         switch (char) {
           case ",":
