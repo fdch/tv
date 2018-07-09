@@ -226,7 +226,7 @@ var contactMessage = [
  "</br>",
  "</br>",
  tag("p",tag("i","Yes, I'm in social media.....")),
- tag("address",footer.join(tilde)),
+ tag("address",footer.join()),
  "</br></br>",
  tag("span","And... I have some")+tag("b","<span "+onclickify("loader","games")+">fun</span>")+tag("span","every now and then..."),
  "</br></br></br></br>",
