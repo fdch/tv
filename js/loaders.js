@@ -8,44 +8,53 @@ function makeMenu(m, len, mitem, type) {
   m.append("</nav>");
 }
 
-// var btnOnclick = ["allCats()", "myValues()"];
-// var btnTexts   = ["all", "apply"];
+function worksSubmenu() {
+  var formID = "formID";
+  var formTag = document.createElement('form');
+  var formAttId = document.createAttribute('id');
+  formAttId.value = formID;
 
-// for (var i in btnOnclick) {
-//   var btn = document.createElement('button');
-//   var btnTxt = document.createTextNode(btnTexts[i]);
-//   var btnAtt = document.createAttribute('onclick');
-//   btnAtt.value = btnOnclick[i];
-//   document.body.appendChild(btn);
-//   btn.appendChild(btnTxt);
-// }
+  var selectID = "selectID";
+  var selectTag = document.createElement('select');
+  var selectAtt = document.createAttribute('id');
+  selectAtt.value = selectID;
+  var selectClk = document.createAttribute('onclick');
+  selectClk.value = "getValue(this)";
 
-var person = {some:"XXXXX", less:"YYYYY"};
+  // document.getElementById("menu").innerHTML = "";
+  document.getElementById("menubg").appendChild(formTag);
+  
+  formTag.setAttributeNode(formAttId);
+  formTag.appendChild(selectTag);
+  selectTag.setAttributeNode(selectAtt);
+  selectTag.setAttributeNode(selectClk);
 
-var satus=1;
-//var form = document.getElementById("myform");
+  var categories = new Array();
 
-function allCats(form) { 
-  status==1?status=0:status=1; 
-  for(var i=0; i < form.elements.length; i++) {
-      var e = form.elements[i].name;
-        $("#"+e).prop('checked', status==1?true:false);
-     }
+  jQuery.each(allCategories, function(i,v){
+    var subcat = new Array(v.split(", "));
+    jQuery.each(subcat, function(ii,vv){
+      categories.push(subcat[vv]);
+    });
 
+  });
+
+  var cats = new Array();
+
+  jQuery.each(categories, function(i,v){
+    jQuery.each(v, function(ii,vv){
+      cats.push(vv);
+    });
+  });
+
+  var ucats = unique(cats);
+
+  jQuery.each(ucats, function(i,v){
+   makeValue([v,"option", "value"],selectTag);
+  });
 }
 
-// function myValues(form, target) {
-//   target.html("");// $("#target").html("");
-//   var check=0;
-//   for(var i=0; i < form.elements.length; i++) {
-//     var e = form.elements[i];
-//     if (e.checked) {
-//       target.append(person[e.name]);
-//       check++;
-//     }
-//   } 
-//   if (!check) status=0, allCats(), myValues();
-// }
+var worksLoaded=0;
 
 function getUnworks() {
   loadJSON(sheetURL, function(response) {
@@ -103,98 +112,8 @@ function getUnworks() {
     }//end loop
 
     $("main article").append(nwork.join(""));
-
-    var formID = "formID";
-    var formTag = document.createElement('form');
-    var formAttId = document.createAttribute('id');
-    formAttId.value = formID;
-
-    var selectID = "selectID";
-    var selectTag = document.createElement('select');
-    var selectAtt = document.createAttribute('id');
-    selectAtt.value = selectID;
-    var selectClk = document.createAttribute('onclick');
-    selectClk.value = "getValue(this)";
-
-    document.getElementById("submenu").innerHTML = "";
-    document.getElementById("submenu").appendChild(formTag);
-    formTag.setAttributeNode(formAttId);
-    formTag.appendChild(selectTag);
-    selectTag.setAttributeNode(selectAtt);
-    selectTag.setAttributeNode(selectClk);
-
-    var categories = new Array();
     
-    for (var i in allCategories){
-        // console.log(allCategories[i].length);
-        var subcat = new Array(allCategories[i].split(", "));
-        for (var j in subcat) {
-          categories.push(subcat[j]);
-        }
-    }
-
-      // for (var j in allCategories[i]){
-      //   console.log(allCategories[i][j]);
-
-      //   // var word="";
-      //   // var chara=allCategories[i][j];
-
-      //   // // console.log("chara:"+ chara);
-      //   // switch (chara) {
-      //   //   case ",":
-      //   //     console.log(word);
-      //   //     categories.push(word);
-      //   //     word="";
-      //   //     break;
-      //   //   case " ":
-      //   //     break;
-      //   //   default:
-      //   //     word+=(makeID(chara));
-      //   //     break;
-      //   // }
-      // };
-
-
-    // var categories=[];
-    // for (var i in allCategories){
-    //   var word = allCategories[i].split(", ");
-    //   categories.push(word)
-    // }
-
-    //var ucat = $.uniqueSort(categories.sort());
-    // console.log(categories);
-    // console.log("-------------------ucat---------------------------");
-    // console.log(ucat.join());
-
-    //var buttons = ["all", "apply"];
-
-      //console.log("categories length: "+categories.length);
-      // console.log(categories.join());
-
-   //  for (var i=0; i <= categories.length; i++) {
-      
-   //    console.log("categories "+i+": "+categories[i]);
-      
-   //    makeValue([categories[i],"option", "value"],selectTag);
-    
-   //  };
-   var cats = new Array();
-   jQuery.each(categories, function(i,v){
-      jQuery.each(v, function(ii,vv){
-        cats.push(vv);
-      });
-   });
-
-   var ucats = unique(cats);
-
-   jQuery.each(ucats, function(i,v){
-     makeValue([v,"option", "value"],selectTag);
-   });
-   
-
-   // // for (var i in buttons) {
-   // //   makeInput([buttons[i], "button"], formTag);
-   // // }
+    if (!worksLoaded) { worksSubmenu(), worksLoaded=1; }
 
     $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
 

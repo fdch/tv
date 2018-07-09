@@ -191,3 +191,43 @@ function unique(array) {
         return index == $.inArray(el, array);
     });
 }
+
+// var person = {some:"XXXXX", less:"YYYYY"};
+
+// var satus=1;
+// //var form = document.getElementById("myform");
+
+// function allCats(form) { 
+//   status==1?status=0:status=1; 
+//   for(var i=0; i < form.elements.length; i++) {
+//       var e = form.elements[i].name;
+//         $("#"+e).prop('checked', status==1?true:false);
+//      }
+
+// }
+
+
+// var btnOnclick = ["allCats()", "myValues()"];
+// var btnTexts   = ["all", "apply"];
+
+// for (var i in btnOnclick) {
+//   var btn = document.createElement('button');
+//   var btnTxt = document.createTextNode(btnTexts[i]);
+//   var btnAtt = document.createAttribute('onclick');
+//   btnAtt.value = btnOnclick[i];
+//   document.body.appendChild(btn);
+//   btn.appendChild(btnTxt);
+// }
+
+// function myValues(form, target) {
+//   target.html("");// $("#target").html("");
+//   var check=0;
+//   for(var i=0; i < form.elements.length; i++) {
+//     var e = form.elements[i];
+//     if (e.checked) {
+//       target.append(person[e.name]);
+//       check++;
+//     }
+//   } 
+//   if (!check) status=0, allCats(), myValues();
+// }
