@@ -94,7 +94,7 @@ function getUnworks() {
         tag("h6","fdch:"+estam),
         "</div>"
       );
-      
+
       wmitem = "<span class=menuitem "+onclickify("vis",nwid)+">"+etitl+"</span>";
 
       wmitems.push(wmitem);
@@ -112,15 +112,14 @@ function getUnworks() {
     document.getElementById("submenu").appendChild(formTag);
     formTag.setAttributeNode(formAttId);
 
-
-    for (var key in allCategories){
-      console.log("KEY: "+key + "\n VALUE: "+allCategories[key]);
-
+    var categories=[];
+    for (var i in allCategories){
+      for (var j in allCategories[i]){
+        categories.push(allCategories[i][j]);
+      }
     }
+    categories = $.uniqueSort(categories);
 
-
-
-    var categories = $.uniqueSort(allCategories);
     var buttons = ["all", "apply"];
 
     for (var i in categories) {
