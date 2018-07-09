@@ -178,12 +178,17 @@ function getUnworks() {
    //    makeValue([categories[i],"option", "value"],selectTag);
     
    //  };
-
    jQuery.each(categories, function(i,v){
-    makeValue([v,"option", "value"],selectTag);
+      var cats = new Array();
+      cats.push(v.split(","));
    });
 
+   var ucats = jQuery.uniqueSort(cats);
 
+   jQuery.each(ucats, function(i,v){
+     makeValue([v,"option", "value"],selectTag);
+   });
+   
 
    // // for (var i in buttons) {
    // //   makeInput([buttons[i], "button"], formTag);

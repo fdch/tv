@@ -183,5 +183,5 @@ function makeValue(input,target) {
 
 function getValue(x) {
   var value = x.value;
-  window.alert(value);
+  console.log(value);
 }
