@@ -36,7 +36,7 @@ function worksSubmenu(allCategories) {
     var subcat = new Array(v.split(", "));
     jQuery.each(subcat, function(ii,vv){
       categories.push(subcat[vv]);
-      console.log(vv);
+      // console.log(vv);
     });
 
   });
@@ -46,6 +46,7 @@ function worksSubmenu(allCategories) {
   jQuery.each(categories, function(i,v){
     jQuery.each(v, function(ii,vv){
       cats.push(vv);
+      console.log(vv);
     });
   });
 
