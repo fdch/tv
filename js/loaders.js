@@ -133,6 +133,8 @@ function getUnworks() {
     }
     // console.log(categories);
     var ucat = $.uniqueSort(categories);
+    
+    console.log(ucat.join());
 
     var buttons = ["all", "apply"];
 
