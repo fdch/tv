@@ -134,6 +134,7 @@ function getUnworks() {
     var buttons = ["all", "apply"];
 
     for (var i in ucat) {
+      console.log(ucat[i]);
       makeInput([ucat[i],"checkbox"],formTag);
     };
     for (var i in buttons) {
