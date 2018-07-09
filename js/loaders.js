@@ -115,7 +115,8 @@ function getUnworks() {
     selectAtt.value = selectID;
     var selectClk = document.createAttribute('onclick');
     selectClk.value = "getValue(this)";
-
+    
+    document.getElementById("submenu").innerHTML = "";
     document.getElementById("submenu").appendChild(formTag);
     formTag.setAttributeNode(formAttId);
     formTag.appendChild(selectTag);
