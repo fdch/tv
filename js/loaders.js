@@ -22,7 +22,7 @@ function worksSubmenu(allCategories) {
   selectClk.value = "getValue(this)";
 
   // document.getElementById("submenu").innerHTML = "";
-  document.getElementsByTagName("header").prepend(formTag);
+  document.getElementsByTagName("header").appendChild(formTag);
   formTag.setAttributeNode(formAttId);
   formTag.appendChild(selectTag);
   selectTag.setAttributeNode(selectAtt);
