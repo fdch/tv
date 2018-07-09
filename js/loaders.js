@@ -161,7 +161,7 @@ function getUnworks() {
     //   categories.push(word)
     // }
 
-    var ucat = $.uniqueSort(categories.sort());
+    //var ucat = $.uniqueSort(categories.sort());
     // console.log(categories);
     // console.log("-------------------ucat---------------------------");
     // console.log(ucat.join());
@@ -169,17 +169,18 @@ function getUnworks() {
     //var buttons = ["all", "apply"];
 
       console.log("categories length: "+categories.length);
-
-    for (var i=0; i <= categories.length; i++) {
+      console.log(categories.join());
       
-      console.log("categories "+i+": "+categories[i]);
+   //  for (var i=0; i <= categories.length; i++) {
       
-      makeValue([categories[i],"option", "value"],selectTag);
+   //    console.log("categories "+i+": "+categories[i]);
+      
+   //    makeValue([categories[i],"option", "value"],selectTag);
     
-    };
-   // for (var i in buttons) {
-   //   makeInput([buttons[i], "button"], formTag);
-   // }
+   //  };
+   // // for (var i in buttons) {
+   // //   makeInput([buttons[i], "button"], formTag);
+   // // }
 
     $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
 
