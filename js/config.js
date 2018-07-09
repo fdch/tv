@@ -69,7 +69,7 @@ var personal = [
 
 var footer = [
 	"I still have "          	+linkify("Tumblr",blog,1)+" because I'm old",
- 	"Currently my code is in: "	+linkify("Github",repo,1)+"...but I'll change this soon, becaue EvilCorp just bought it..",
+ 	"Currently, my code is in: "	+linkify("Github",repo,1)+"...but I'll change this soon, becaue EvilCorp just bought it..",
 	"Most videos are on: "     	+linkify("Vimeo",video,1)+"...and in:"+linkify("Youtube",yt,1),
 	"Some music is on: "       	+linkify("SoundCloud",scloud,1),
 	"I post pictures on : "   	+linkify("Instagram", instagram,1),
