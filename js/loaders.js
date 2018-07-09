@@ -129,12 +129,13 @@ function getUnworks() {
         }
       }
     }
+    console.log(categories);
     var ucat = $.uniqueSort(categories);
 
     var buttons = ["all", "apply"];
 
     for (var i in ucat) {
-      console.log(ucat[i]);
+     // console.log(ucat[i]);
       makeInput([ucat[i],"checkbox"],formTag);
     };
     for (var i in buttons) {
