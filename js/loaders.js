@@ -36,6 +36,7 @@ function worksSubmenu(allCategories) {
     var subcat = new Array(v.split(", "));
     jQuery.each(subcat, function(ii,vv){
       categories.push(subcat[vv]);
+      console.log(vv);
     });
 
   });
@@ -52,7 +53,7 @@ function worksSubmenu(allCategories) {
 
   jQuery.each(ucats, function(i,v){
    makeValue([v,"option", "value"],selectTag);
-   console.log(v);
+   // console.log(v);
   });
 }
 
