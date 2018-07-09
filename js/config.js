@@ -68,16 +68,16 @@ var personal = [
 
 
 var footer = [
-	tag("p","My blog is in: "          	+linkify("Tumblr",blog,1)),
- 	tag("p","Currently my code is in: "	+linkify("Github",repo,1)+"...but I'll change this soon, becaue EvilCorp just bought it..."),
-	tag("p","Most videos are on: "     	+linkify("Vimeo",video,1)+"...and in:"+linkify("Youtube",yt,1)),
-	tag("p","Some music is on: "       	+linkify("SoundCloud",scloud,1)),
-	tag("p","I post pictures on : "   	+linkify("Instagram", instagram,1)),
-	tag("p","Oddly enough, I still have some pics in: "+linkify("Flickr",flickr,1)),
-	tag("p","When I get like "+tag("i","professional")+" and all, I go to: "+linkify("LinkedIn", linkedin,1)),
-	tag("p","I rarely use "             +linkify("Twitter",twitter,1)+", but I post things on occasions."),
-	tag("p","Finally, you can become my friend here: "+linkify("Facebook",facebookUrl,1)),
-]
+	"I still have "          	+linkify("Tumblr",blog,1)+" because I'm old.",
+ 	"Currently my code is in: "	+linkify("Github",repo,1)+"...but I'll change this soon, becaue EvilCorp just bought it...",
+	"Most videos are on: "     	+linkify("Vimeo",video,1)+"...and in:"+linkify("Youtube",yt,1),
+	"Some music is on: "       	+linkify("SoundCloud",scloud,1),
+	"I post pictures on : "   	+linkify("Instagram", instagram,1),
+	"Oddly enough, I still have some pics in: "+linkify("Flickr",flickr,1),
+	"When I get like "+tag("i","professional")+" and all, I go to: "+linkify("LinkedIn", linkedin,1),
+	"I rarely use "             +linkify("Twitter",twitter,1)+", but I post things on occasions.",
+	"Finally, you can become my friend here: "+linkify("Facebook",facebookUrl,1)
+];
 
 var contactGif = "img/zissou.gif";
 var loadingUrl = "img/fdch.gif";
@@ -226,7 +226,7 @@ var contactMessage = [
  "</br>",
  "</br>",
  tag("p",tag("i","Yes, I'm in social media.....")),
- tag("address",footer.join()),
+ tag("address",tag("blockquote",footer.join())),
  "</br></br>",
  tag("span","And... I have some")+tag("b","<span "+onclickify("loader","games")+">fun</span>")+tag("span","every now and then..."),
  "</br></br></br></br>",
