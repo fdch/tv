@@ -123,39 +123,41 @@ function getUnworks() {
     selectTag.setAttributeNode(selectAtt);
     selectTag.setAttributeNode(selectClk);
 
-    // var categories=[];
-    // for (var i in allCategories){
-    //   for (var j in allCategories[i]){
-    //     var word="";
-    //     var chara=allCategories[i][j];
-
-    //     // console.log("chara:"+ chara);
-    //     switch (chara) {
-    //       case ",":
-    //         console.log(word);
-    //         categories.push(word);
-    //         word="";
-    //         break;
-    //       case " ":
-    //         break;
-    //       default:
-    //         word+=(makeID(chara));
-    //         break;
-    //     }
-    //   }
-    // }
-    // 
-
     var categories=[];
     for (var i in allCategories){
-      var word = allCategories[i].split(", ");
-      categories.push(word)
+      for (var j in allCategories[i]){
+        console.log(allCategories[i][j]);
+
+        // var word="";
+        // var chara=allCategories[i][j];
+
+        // // console.log("chara:"+ chara);
+        // switch (chara) {
+        //   case ",":
+        //     console.log(word);
+        //     categories.push(word);
+        //     word="";
+        //     break;
+        //   case " ":
+        //     break;
+        //   default:
+        //     word+=(makeID(chara));
+        //     break;
+        // }
+      }
     }
+    
+
+    // var categories=[];
+    // for (var i in allCategories){
+    //   var word = allCategories[i].split(", ");
+    //   categories.push(word)
+    // }
 
     var ucat = $.uniqueSort(categories);
-    console.log(categories);
-    console.log("-------------------ucat---------------------------");
-    console.log(ucat.join());
+    // console.log(categories);
+    // console.log("-------------------ucat---------------------------");
+    // console.log(ucat.join());
 
     //var buttons = ["all", "apply"];
 
