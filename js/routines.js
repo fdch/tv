@@ -221,6 +221,7 @@ function shuffleArray(array) {
         array[i] = array[j];
         array[j] = temp;
     }
+    return array;
 }
 // var person = {some:"XXXXX", less:"YYYYY"};
 
