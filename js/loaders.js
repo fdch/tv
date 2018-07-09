@@ -125,6 +125,7 @@ function getUnworks() {
 
     var categories=[];
     for (var i in allCategories){
+        console.log(allCategories[i].length);
       for (var j in allCategories[i]){
         console.log(allCategories[i][j]);
 
@@ -144,7 +145,7 @@ function getUnworks() {
         //     word+=(makeID(chara));
         //     break;
         // }
-      }
+      };
     }
     
 
