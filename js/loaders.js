@@ -178,9 +178,11 @@ function getUnworks() {
    //    makeValue([categories[i],"option", "value"],selectTag);
     
    //  };
+   var cats = new Array();
    jQuery.each(categories, function(i,v){
-      var cats = new Array();
-      cats.push(v.split(","));
+      jQuery.each(v, function(ii,vv)){
+        cats.push(vv);
+      }
    });
 
    var ucats = jQuery.uniqueSort(cats);
