@@ -84,7 +84,7 @@ var footer = [
 	linkify("SoundCloud",scloud,1),
 	
 	tag("p","Some pictures are in:"),
-	linkify("Instagram", instagram,1)
+	linkify("Instagram", instagram,1),
 
 	tag("p","Oddly enough, I still have some pictures in:"),
 	linkify("Flickr",flickr,1),
