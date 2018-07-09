@@ -54,16 +54,30 @@ function makeWorksForm(formID) {
 }
 
 function makeWorksSubmenu(selectID,formTag,ucats) {
+  var labelTag = document.createElement('label');
+  var labelAtt = document.createAttribute('for');
+  labelAtt.value = selectID;
+
+  var labelText = document.createTextNode(selectID);
+
+
 
   var selectTag = document.createElement('select');
   var selectAtt = document.createAttribute('id');
+  var selectNam = document.createAttribute('name');
+  selectNam.value = selectID;
   selectAtt.value = selectID;
   var selectClk = document.createAttribute('onclick');
   selectClk.value = "getValue(this)";
 
+
   formTag.appendChild(selectTag);
+  formTag.appendChild(labelTag);
   selectTag.setAttributeNode(selectAtt);
   selectTag.setAttributeNode(selectClk);
+  labelTag.appendChild(labelText);
+  labelTag.setAttributeNode(labelAtt);
+
   var thelist = shuffleArray(ucats);
   jQuery.each(thelist, function(i,v){
     makeValue([v,"option", "value"],selectTag);

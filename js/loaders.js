@@ -1,13 +1,3 @@
-function makeMenu(m, len, mitem, type) {
-  var i,item;
-  m.append("<nav>");
-  for (i = 0;i < len; i++) {
-    item = mitem[i].replace(/_/g," ").replace(/-/g," ");
-    m.append("<span class=menuitem "+ onclickify(type,mitem[i]) +">"+item+"</span>");
-  }
-  m.append("</nav>");
-}
-
 function getUnworks() {
   $("header > form").html("");
   loadJSON(sheetURL, function(response) {
@@ -74,7 +64,7 @@ function getUnworks() {
     
     var formTag = makeWorksForm("workFormID");
     
-    makeWorksSubmenu("selCats", formTag, getUniqueCategories(allCategories));
+    makeWorksSubmenu("Categories", formTag, getUniqueCategories(allCategories));
     // makeWorksSubmenu("selTits", formTag, getUniqueCategories(allTitles));
     // makeWorksSubmenu("selPerf", formTag, getUniqueCategories(allPerformers));
     // makeWorksSubmenu("selDura", formTag, getUniqueCategories(allDurations));
