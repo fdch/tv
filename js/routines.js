@@ -185,3 +185,9 @@ function getValue(x) {
   var value = x.value;
   console.log(value);
 }
+
+function unique(array) {
+    return $.grep(array, function(el, index) {
+        return index == $.inArray(el, array);
+    });
+}

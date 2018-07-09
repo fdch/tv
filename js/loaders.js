@@ -185,7 +185,7 @@ function getUnworks() {
       });
    });
 
-   var ucats = jQuery.uniqueSort(cats);
+   var ucats = unique(cats);
 
    jQuery.each(ucats, function(i,v){
      makeValue([v,"option", "value"],selectTag);
