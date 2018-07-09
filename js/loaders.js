@@ -115,7 +115,7 @@ function getUnworks() {
 
     $("main article").append(nwork.join(""));
     
-    if (!worksLoaded) { worksSubmenu(allCategories), worksLoaded=1; }
+    if (worksLoaded==0) { worksSubmenu(allCategories), worksLoaded=1; }
 
     $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
 
