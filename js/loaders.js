@@ -169,7 +169,8 @@ function getUnworks() {
     //var buttons = ["all", "apply"];
 
     for (var i in categories) {
-     console.log("Ucat "+i+": "+categories[i]);
+      console.log("categories length: "+categories.length);
+      console.log("categories "+i+": "+categories[i]);
       makeValue([categories[i],"option", "value"],selectTag);
     };
    // for (var i in buttons) {
