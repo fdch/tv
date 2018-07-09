@@ -180,9 +180,9 @@ function getUnworks() {
    //  };
    var cats = new Array();
    jQuery.each(categories, function(i,v){
-      jQuery.each(v, function(ii,vv)){
+      jQuery.each(v, function(ii,vv){
         cats.push(vv);
-      }
+      });
    });
 
    var ucats = jQuery.uniqueSort(cats);
