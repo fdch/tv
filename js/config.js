@@ -68,35 +68,15 @@ var personal = [
 
 
 var footer = [
-	tag("p","My blog is in:"),
- 	linkify("Tumblr",blog,1),
-
- 	tag("p","Currently my code is in:"),
-	linkify("Github",repo,1),
-	tag("p","...but I'll change this soon, becaue EvilCorp just bought it..."),
-	
-	tag("p","Most videos are in:"),
- 	linkify("Vimeo",video,1),
-	tag("p","...and in:"),
-	linkify("Youtube",yt,1),
-	
-	tag("p","Some music is in:"),
-	linkify("SoundCloud",scloud,1),
-	
-	tag("p","Some pictures are in:"),
-	linkify("Instagram", instagram,1),
-
-	tag("p","Oddly enough, I still have some pictures in:"),
-	linkify("Flickr",flickr,1),
-
-	tag("p","When I get all professional, I go to:"),
-	linkify("LinkedIn", linkedin,1),
-
-	tag("p","This I rarely use but I post things on occasions:"),
-	linkify("Twitter",twitter,1),
-
-	tag("p","Finally, you can become my friend here:"),
-	linkify("Facebook",facebookUrl,1),
+	tag("p","My blog is in: "          	+linkify("Tumblr",blog,1)),
+ 	tag("p","Currently my code is in: "	+linkify("Github",repo,1)+"...but I'll change this soon, becaue EvilCorp just bought it..."),
+	tag("p","Most videos are on: "     	+linkify("Vimeo",video,1)+"...and in:"+linkify("Youtube",yt,1)),
+	tag("p","Some music is on: "       	+linkify("SoundCloud",scloud,1)),
+	tag("p","I post pictures on : "   	+linkify("Instagram", instagram,1)),
+	tag("p","Oddly enough, I still have some pics in: "+linkify("Flickr",flickr,1)),
+	tag("p","When I get like "+tag("i","professional")+" and all, I go to: "+linkify("LinkedIn", linkedin,1)),
+	tag("p","I rarely use "             +linkify("Twitter",twitter,1)+", but I post things on occasions."),
+	tag("p","Finally, you can become my friend here: "+linkify("Facebook",facebookUrl,1)),
 ]
 
 var contactGif = "img/zissou.gif";
@@ -249,7 +229,7 @@ var contactMessage = [
  tag("address",footer.join(tilde)),
  "</br></br>",
  tag("span","And... I have some")+tag("b","<span "+onclickify("loader","games")+">fun</span>")+tag("span","every now and then..."),
- "</br></br>",
+ "</br></br></br></br>",
  formMenu[allCVsections[1]],
  formMenu[allCVsections[2]],
  formMenu[allCVsections[4]],
