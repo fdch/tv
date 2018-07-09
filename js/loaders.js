@@ -123,14 +123,13 @@ function getUnworks() {
     selectTag.setAttributeNode(selectAtt);
     selectTag.setAttributeNode(selectClk);
 
-    var categories=new Array();
+    var categories = new Array();
     
     for (var i in allCategories){
         // console.log(allCategories[i].length);
-        var subcat =new Array();
-        subcat = allCategories[i].split(",");
+        var subcat = new Array(allCategories[i].split(", "));
         for (var j in subcat) {
-          categories.push(subcat);
+          categories.push(subcat[j]);
         }
     }
 
