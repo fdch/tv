@@ -112,27 +112,27 @@ function getUnworks() {
     document.getElementById("submenu").appendChild(formTag);
     formTag.setAttributeNode(formAttId);
 
-    var categories=[];
-    for (var i in allCategories){
-      for (var j in allCategories[i]){
-        var word="";
-        var chara=allCategories[i][j];
+    // var categories=[];
+    // for (var i in allCategories){
+    //   for (var j in allCategories[i]){
+    //     var word="";
+    //     var chara=allCategories[i][j];
 
-        // console.log("chara:"+ chara);
-        switch (chara) {
-          case ",":
-            console.log(word);
-            categories.push(word);
-            word="";
-            break;
-          case " ":
-            break;
-          default:
-            word+=(makeID(chara));
-            break;
-        }
-      }
-    }
+    //     // console.log("chara:"+ chara);
+    //     switch (chara) {
+    //       case ",":
+    //         console.log(word);
+    //         categories.push(word);
+    //         word="";
+    //         break;
+    //       case " ":
+    //         break;
+    //       default:
+    //         word+=(makeID(chara));
+    //         break;
+    //     }
+    //   }
+    // }
     // console.log(categories);
     var ucat = $.uniqueSort(categories);
     
@@ -142,7 +142,7 @@ function getUnworks() {
 
     for (var i in ucat) {
      // console.log(ucat[i]);
-      makeInput([ucat[i],"checkbox"],formTag);
+      makeInput([ucat[i],"select"],formTag);
     };
     for (var i in buttons) {
       makeInput([buttons[i], "button"], formTag);

@@ -152,15 +152,15 @@ function makeInput(input,target) {
   var inputAtt = document.createAttribute('name');
   inputAtt.value = name;
   inputId.value = name;
-  var labelTag = document.createElement('label');
-  var labelAtt = document.createAttribute('for');
-  labelAtt.value = name;
+  // var labelTag = document.createElement('label');
+  // var labelAtt = document.createAttribute('for');
+  // labelAtt.value = name;
 
   target.appendChild(inputTag);
   target.appendChild(labelTag);
   inputTag.setAttributeNode(inputType);
   inputTag.setAttributeNode(inputId);
-  labelTag.appendChild(labelText);
-  labelTag.setAttributeNode(labelAtt);
+  // labelTag.appendChild(labelText);
+  // labelTag.setAttributeNode(labelAtt);
 
 }
