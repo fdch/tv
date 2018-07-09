@@ -113,7 +113,7 @@ function getUnworks() {
     formTag.setAttributeNode(formAttId);
 
 
-    var categories = JQuery.uniqueSort(allCagetories);
+    var categories = $.uniqueSort(allCagetories);
     var buttons = ["all", "apply"];
 
     for (var i in categories) {
