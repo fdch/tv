@@ -58,7 +58,7 @@ function makeWorksSubmenu(selectID,formTag,ucats) {
   var labelAtt = document.createAttribute('for');
   labelAtt.value = selectID;
 
-  var labelText = document.createTextNode(selectID);
+  var labelText = document.createTextNode(selectID+": ");
 
 
 
@@ -71,8 +71,8 @@ function makeWorksSubmenu(selectID,formTag,ucats) {
   selectClk.value = "getValue(this)";
 
 
-  formTag.appendChild(selectTag);
   formTag.appendChild(labelTag);
+  formTag.appendChild(selectTag);
   selectTag.setAttributeNode(selectAtt);
   selectTag.setAttributeNode(selectClk);
   labelTag.appendChild(labelText);
