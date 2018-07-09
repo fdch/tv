@@ -30,7 +30,7 @@ function makeWorksSubmenu(selectID,formTag,ucats) {
   formTag.appendChild(selectTag);
   selectTag.setAttributeNode(selectAtt);
   selectTag.setAttributeNode(selectClk);
-  var thelist = ucats.sort();
+  var thelist = shuffleArray(ucats);
   jQuery.each(thelist, function(i,v){
     makeValue([v,"option", "value"],selectTag);
   });
@@ -105,10 +105,10 @@ function getUnworks() {
     if (worksLoaded==0) {
         var formTag = makeWorksForm(workFormID);
         makeWorksSubmenu("selCats", formTag, getUniqueCategories(allCategories));
-        makeWorksSubmenu("selTits", formTag, getUniqueCategories(allTitles));
+        // makeWorksSubmenu("selTits", formTag, getUniqueCategories(allTitles));
         makeWorksSubmenu("selPerf", formTag, getUniqueCategories(allPerformers));
         makeWorksSubmenu("selDura", formTag, getUniqueCategories(allDurations));
-        makeWorksSubmenu("selLoca", formTag, getUniqueCategories(allLocations));
+        // makeWorksSubmenu("selLoca", formTag, getUniqueCategories(allLocations));
         // makeWorksSubmenu("selDate", formTag, getUniqueCategories(allDates));
         worksLoaded=1;
     }
