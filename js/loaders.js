@@ -21,8 +21,8 @@ function worksSubmenu(allCategories) {
   var selectClk = document.createAttribute('onclick');
   selectClk.value = "getValue(this)";
 
-  document.getElementById("submenu").innerHTML = "";
-  document.getElementById("submenu").appendChild(formTag);
+  // document.getElementById("submenu").innerHTML = "";
+  document.getElementsByTagName("header").prepend(formTag);
   formTag.setAttributeNode(formAttId);
   formTag.appendChild(selectTag);
   selectTag.setAttributeNode(selectAtt);
