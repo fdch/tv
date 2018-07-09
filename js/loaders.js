@@ -121,7 +121,8 @@ function getUnworks() {
         // console.log("chara:"+ chara);
         switch (chara) {
           case ",":
-            categories+=word;
+            console.log(word);
+            categories.push(word);
             word="";
             break;
           case " ":
