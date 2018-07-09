@@ -115,15 +115,26 @@ function getUnworks() {
     var categories=[];
     for (var i in allCategories){
       for (var j in allCategories[i]){
-        categories.push(allCategories[i][j]);
+        var word;
+        var char=allCategories[i][j];
+        switch (char) {
+          case ",":
+            categories.push(word), word=[];
+            break;
+          case " ":
+            break;
+          default:
+            word.push(makeID(char));
+            break;
+        }
       }
     }
-    categories = $.uniqueSort(categories);
+    var ucat = $.uniqueSort(categories);
 
     var buttons = ["all", "apply"];
 
-    for (var i in categories) {
-      makeInput([categories[i],"checkbox"],formTag);
+    for (var i in ucat) {
+      makeInput([ucat[i],"checkbox"],formTag);
     };
     for (var i in buttons) {
       makeInput([buttons[i], "button"], formTag);
