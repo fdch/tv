@@ -126,26 +126,30 @@ function getUnworks() {
     var categories=[];
     for (var i in allCategories){
         console.log(allCategories[i].length);
-      for (var j in allCategories[i]){
-        console.log(allCategories[i][j]);
 
-        // var word="";
-        // var chara=allCategories[i][j];
 
-        // // console.log("chara:"+ chara);
-        // switch (chara) {
-        //   case ",":
-        //     console.log(word);
-        //     categories.push(word);
-        //     word="";
-        //     break;
-        //   case " ":
-        //     break;
-        //   default:
-        //     word+=(makeID(chara));
-        //     break;
-        // }
-      };
+      // for (var j in allCategories[i]){
+      //   console.log(allCategories[i][j]);
+
+      //   // var word="";
+      //   // var chara=allCategories[i][j];
+
+      //   // // console.log("chara:"+ chara);
+      //   // switch (chara) {
+      //   //   case ",":
+      //   //     console.log(word);
+      //   //     categories.push(word);
+      //   //     word="";
+      //   //     break;
+      //   //   case " ":
+      //   //     break;
+      //   //   default:
+      //   //     word+=(makeID(chara));
+      //   //     break;
+      //   // }
+      // };
+
+      
     }
     
 
