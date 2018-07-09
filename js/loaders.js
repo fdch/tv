@@ -109,7 +109,7 @@ function getUnworks() {
         makeWorksSubmenu("selPerf", formTag, getUniqueCategories(allPerformers));
         makeWorksSubmenu("selDura", formTag, getUniqueCategories(allDurations));
         makeWorksSubmenu("selLoca", formTag, getUniqueCategories(allLocations));
-        makeWorksSubmenu("selDate", formTag, getUniqueCategories(allDates));
+        // makeWorksSubmenu("selDate", formTag, getUniqueCategories(allDates));
         worksLoaded=1;
     }
 
