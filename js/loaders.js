@@ -25,20 +25,30 @@ function worksSubmenu(allCategories) {
   
   header[0].appendChild(formTag);
   formTag.appendChild(selectTag);
-  
+
   formTag.setAttributeNode(formAttId);
   selectTag.setAttributeNode(selectAtt);
   selectTag.setAttributeNode(selectClk);
 
   var categories = new Array();
-  
-  for (var i in allCategories){
-      // console.log(allCategories[i].length);
-      var subcat = new Array(allCategories[i].split(", "));
-      for (var j in subcat) {
-        categories.push(subcat[j]);
-      }
-  }
+ 
+
+  jQuery.each(allCategories, function(i,v){
+    var subcat = new Array(v.split(", "));
+    jQuery.each(subcat, function(ii,vv){
+      categories.push(vv);
+    });
+  });
+
+
+
+  // for (var i in allCategories){
+  //     // console.log(allCategories[i].length);
+  //     var subcat = new Array(allCategories[i].split(", "));
+  //     for (var j in subcat) {
+  //       categories.push(subcat[j]);
+  //     }
+  // }
 
  var cats = new Array();
  jQuery.each(categories, function(i,v){
