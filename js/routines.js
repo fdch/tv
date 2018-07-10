@@ -47,7 +47,7 @@ function linkify(x,y,blank){
     target="_top";
   }
   var title = y.slice(0, 44)+"...";
-  thelink = "<a target=\""+target+"\" href=\""+y+"\" alt=\""+x+"\" title=\""+title+"\">"+x+"</a>";
+  thelink = "<a target=\""+target+"\" href=\""+y+"\" alt=\""+x+"\" title=\""+title+"\" rel=\"nofollow\"  >"+x+"</a>";
   
   return thelink;
 }

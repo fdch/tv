@@ -19,23 +19,22 @@ function makeMenu(input, target, funcName) {
   return navTag;
 }
 
-function makeRot(input, target){
-  // var divTag = document.createElement('div');
-  // var divId = document.createAttribute('id');
-  // divId.value = input;
-  
-  // target.appendChild(divTag);
-  // divTag.setAttributeNode(divId);
+function makeRot(input, target, func){
 
   var imgTag = document.createElement('img');
-  var imgSrc = document.createAttribute('src');
-  imgSrc.value = input[0];
-  var imgWidth = document.createAttribute('width');
-  imgWidth.value = input[2];
 
+  var attributes = [
+    document.createAttribute('src').value = input[0],
+    document.createAttribute('width').value = input[2],
+    document.createAttribute('style').value = input[3],
+    document.createAttribute('onclick').value = func(imgTag)
+  ];
+   
   target.appendChild(imgTag);
-  imgTag.setAttributeNode(imgWidth);
-  imgTag.setAttributeNode(imgSrc);
+
+  for (var i in attributes) {
+    imgTag.setAttributeNode(attributes[i]);
+  }
 
   return imgTag;
 }

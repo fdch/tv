@@ -21,7 +21,12 @@ var yt = "https://www.youtube.com/channel/UCzOx-iKaNx9ruddNI6ykTIA";
 var flickr = "http://www.flickr.com/federicocamarahalac";
 var linkedin = "http://linkedin.com/in/fedecamarahalac";
 var instagram = "https://instagram.com/ffddcchh";
-var rotImg = [raw+"tv/master/img/imgone-76.png",raw+"tv/master/img/imgone-76-i.png", 30];
+var rotImg = [
+	raw+"tv/master/img/imgone-76.png",
+	raw+"tv/master/img/imgone-76-i.png",
+	30,
+	"position:absolute;right:1%;top:1%"
+];
 
 var tilde = " ~ ";
 var hide = "style=\"display:none\"";

@@ -19,13 +19,21 @@ $(function(){
   var h1Tag = document.getElementsByTagName('h1')[0];
   footerTag = document.getElementsByTagName('footer')[0];
 
-  var rotImgTag = makeRot(rotImg, bodyTag);
+  var rotImgTagFunc = function() {
+    randomVideo();
+    randomColor(color_preset["high"]);
+    funImage(rotImgTag, rotImg);
+  }
+
+
+  var rotImgTag = makeRot(rotImg, bodyTag, rotImgTagFunc);
   var navTag = makeMenu(mitem, headerTag , "loader");
 
   randomColor(color_preset["high"]);
   
   setInterval( function(){ funImage(rotImgTag, rotImg) }, t);
   
+
   var h1Click = document.createAttribute('onclick');
   h1Click.value = "window.open("+url+", \'_top\')";
   h1Tag.setAttributeNode(h1Click);
@@ -36,9 +44,7 @@ $(function(){
   });
 
   rotImgTag.click(function() { 
-    randomVideo();
-    randomColor(color_preset["high"]);
-    funImage(rotImgTag, rotImg);
+    
   });
 
   var footerDisplay = document.createAttribute('style');
