@@ -65,14 +65,14 @@ function getUnworks() {
     var formTag = makeWorksForm("workFormID");
     
     makeWorksSubmenu("category", formTag, getUniqueCategories(allCategories));
-    // makeWorksSubmenu("selTits", formTag, getUniqueCategories(allTitles));
+    makeWorksSubmenu("title", formTag, getUniqueCategories(allTitles));
     // makeWorksSubmenu("selPerf", formTag, getUniqueCategories(allPerformers));
     // makeWorksSubmenu("selDura", formTag, getUniqueCategories(allDurations));
     // makeWorksSubmenu("selLoca", formTag, getUniqueCategories(allLocations));
     // makeWorksSubmenu("selDate", formTag, getUniqueCategories(allDates));
     
 
-    $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
+    // $("main nav").width(articleWidth(maxWidth)).append(wmitems.sort().join(tilde));
 
     vis("id-"+makeID(featWork));
 
