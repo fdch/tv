@@ -106,12 +106,11 @@ function makeValue(input,target) {
   elemTag.appendChild(elemTxt);
 }
 
-function makeWorksForm(formID) {
+function makeWorksForm(input,target) {
   var formTag = document.createElement('form');
   var formAttId = document.createAttribute('id');
-  formAttId.value = formID;
-  var header = document.getElementsByTagName("header");
-  header[0].appendChild(formTag);
+  formAttId.value = input;
+  target.appendChild(formTag);
   
   formTag.setAttributeNode(formAttId);
   return formTag;

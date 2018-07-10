@@ -62,7 +62,7 @@ function getUnworks() {
 
     $("main article").append(nwork.join(""));
     
-    var formTag = makeWorksForm("workFormID");
+    var formTag = makeWorksForm("workFormID", headerTag[1]);
     
     makeWorksSubmenu("category", formTag, getUniqueCategories(allCategories));
     makeWorksSubmenu("title", formTag, getUniqueCategories(allTitles));
