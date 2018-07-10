@@ -29,7 +29,7 @@ $(function(){
   
   var h1Click = document.createAttribute('onclick');
   h1Click.value = "window.open("+url+", \'_top\')";
-  h1.setAttributeNode(h1Click);
+  h1Tag.setAttributeNode(h1Click);
 
   navTag.click(function() { 
     randomColor( color_preset["high"] );
