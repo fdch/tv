@@ -8,7 +8,7 @@ function makeMenu(m, len, mitem, type) {
   m.append("</nav>");
 }
 
-function makeRot(input, target){
+function makeRot(input, target, image){
   var divTag = document.createElement('div');
   var divId = document.createAttribute('id');
   divId.value = input;
@@ -18,9 +18,9 @@ function makeRot(input, target){
 
   var imgTag = document.createElement('img');
   var imgSrc = document.createAttribute('src');
-  imgSrc.value = repo+imgRot[0];
+  imgSrc.value = repo+image[0];
   var imgWidth = document.createAttribute('width');
-  imgWidth.value = imgRot[1];
+  imgWidth.value = image[1];
 
   divTag.appendChild(imgTag);
   imgTag.setAttributeNode(imgWidth);

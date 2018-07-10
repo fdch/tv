@@ -68,7 +68,6 @@ var personal = [
 "Undergraduate : " +uncTitle + " at the " +unc+ " (2006-12)",
 ];
 
-
 var footer = [
 	"I still have "          	+linkify("Tumblr",blog,1)+" because I'm old",
  	"Currently, my code is on "	+linkify("Github",repo,1)+" ...but I'll change this soon, because EvilCorp just bought it..",
