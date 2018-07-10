@@ -28,7 +28,7 @@ $(function(){
   
 
   var h1Click = document.createAttribute('onclick');
-  h1Click.value = "window.open("+url+", \'_top\')";
+  h1Click.value = "window.open(\'"+url+"\', \'_top\');";
   h1Tag.setAttributeNode(h1Click);
 
   navTag.click(function() { 

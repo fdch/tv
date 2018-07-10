@@ -26,7 +26,7 @@ var rotImg = [
 	raw+"tv/master/img/imgone-76-i.png",
 	30,
 	"position:absolute;right:1%;top:1%",
-	"rotImgId"
+	"#rotImgId"
 ];
 
 var tilde = " ~ ";
