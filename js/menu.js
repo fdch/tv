@@ -1,17 +1,17 @@
 function makeMenu(m, len, mitem, type) {
 
-  var navTag = createElement('nav');
+  var navTag = document.createElement('nav');
   m.appendChild(navTag);
 
   for (var i = 0;i < len; i++) {
     var item = mitem[i].replace(/_/g," ").replace(/-/g," ");
-    var spanTag = createElement('span'); 
+    var spanTag = document.createElement('span'); 
     navTag.appendChild(spanTag);
-    var spanClass = createAttribute('class');
+    var spanClass = document.createAttribute('class');
     spanClass.value = "menuitem";
-    var spanOnclick = createAttribute('onclick');
+    var spanOnclick = document.createAttribute('onclick');
     spanOnclick.value = type+"\'"+mitem[i]+"\'";
-    var spanText = createTextNode(item);
+    var spanText = document.createTextNode(item);
     var attNodes = [spanClass,spanOnclick];
     for (var k in attNodes) { spanTag.setAttributeNode(attNodes[k]); };
     spanTag.appendChild(spanText);
