@@ -140,6 +140,13 @@ function funImage(input){
   },dur/4);
 }
 
+function imgClicker (x) {
+  randomVideo();
+  randomColor(color_preset["high"]);
+  funImage(x.id, rotImg);
+}
+
+
 
 function getUniqueCategories(allCategories){
 
