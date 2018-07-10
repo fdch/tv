@@ -7,8 +7,10 @@ function makeMenu(m, len, mitem, type) {
     var item = mitem[i].replace(/_/g," ").replace(/-/g," ");
     var spanTag = createElement('span'); 
     navTag.appendChild(spanTag);
-    var spanClass = createAttribute('class'), spanClass.value = "menuitem";
-    var spanOnclick = createAttribute('onclick'), spanOnclick.value = type+"\'"+mitem[i]+"\'";
+    var spanClass = createAttribute('class');
+    spanClass.value = "menuitem";
+    var spanOnclick = createAttribute('onclick');
+    spanOnclick.value = type+"\'"+mitem[i]+"\'";
     var spanText = createTextNode(item);
     var attNodes = [spanClass,spanOnclick];
     for (var k in attNodes) { spanTag.setAttributeNode(attNodes[k]); };
