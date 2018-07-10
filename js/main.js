@@ -24,7 +24,7 @@ $(function(){
 
   randomColor(color_preset["high"]);
   
-  setInterval( function(){ funImage(rotImgTag, rotImg) }, t);
+  setInterval( function(){ funImage(rotImg) }, t);
   
 
   var h1Click = document.createAttribute('onclick');
@@ -33,7 +33,7 @@ $(function(){
 
   navTag.click(function() { 
     randomColor( color_preset["high"] );
-    funImage(rotImgTag, rotImg);
+    funImage(rotImg);
   });
 
   rotImgTag.click(function() { 
@@ -45,5 +45,5 @@ $(function(){
   footerTag.setAttributeNode(footerDisplay);
 
   makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
-  window.alert(rotImgTag);
+  //window.alert(rotImgTag);
 });

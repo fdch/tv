@@ -25,11 +25,14 @@ function makeRot(input, target){
   var rotation = "function() {\
     randomVideo();\
     randomColor(color_preset[\"high\"]);\
-    funImage("+imgTag+", rotImg);\
+    funImage("+input[4]+", rotImg);\
   }";
 
   var imgSrc = document.createAttribute('src');
   imgSrc.value = input[0];
+
+  var imgId = document.createAttribute('id');
+  imgId.value = input[4];
 
   var imgWidth = document.createAttribute('width');
   imgWidth.value = input[2];
@@ -40,7 +43,7 @@ function makeRot(input, target){
   var imgClick = document.createAttribute('onclick');
   imgClick.value = rotation;
 
-  var attributes = [imgSrc, imgWidth, imgStyle, imgClick];
+  var attributes = [imgSrc, imgWidth, imgStyle, imgClick, imgId];
    
   target.appendChild(imgTag);
 

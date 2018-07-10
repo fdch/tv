@@ -129,13 +129,13 @@ function randomColor(preset){
 
 var whichone = 0;
 
-function funImage(input,target){
+function funImage(input){
   dur = Math.random()*5000;
   ang = Math.random()*360*2-360;
-  input.rotate({animateTo: ang,duration: dur});
+  $("#"+input[4]).rotate({animateTo: ang,duration: dur});
   if (whichone==0) {whichone=1} else {whichone=0}
   setTimeout(function(){
-    input.attr('src', target[whichone])
+    $("#"+input[4]).attr('src', input[whichone])
   },dur/4);
 }
 
