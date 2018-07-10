@@ -19,10 +19,10 @@ $(function(){
   var h1Tag = document.getElementsByTagName('h1')[0];
   footerTag = document.getElementsByTagName('footer')[0];
 
-  var rotImgTagFunc = function() {
+  var rotImgTagFunc = function(x) {
     randomVideo();
     randomColor(color_preset["high"]);
-    funImage(rotImgTag, rotImg);
+    funImage(x, rotImg);
   }
 
 
