@@ -28,7 +28,7 @@ function makeRot(input, target, image){
 
   var imgTag = document.createElement('img');
   var imgSrc = document.createAttribute('src');
-  imgSrc.value = repo+image[0];
+  imgSrc.value = image[0];
   var imgWidth = document.createAttribute('width');
   imgWidth.value = image[2];
 
