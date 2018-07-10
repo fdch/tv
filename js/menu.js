@@ -22,11 +22,11 @@ function makeMenu(input, target, funcName) {
 function makeRot(input, target){ 
   var imgTag = document.createElement('img');
 
-  var rotation = "function() {\
-    randomVideo();\
-    randomColor(color_preset[\"high\"]);\
-    funImage("+input[4]+", rotImg);\
-  }";
+  var rotation = function() {
+    randomVideo();
+    randomColor(color_preset["high"]);
+    funImage(input[4], rotImg);
+  };
 
   var imgSrc = document.createAttribute('src');
   imgSrc.value = input[0];
