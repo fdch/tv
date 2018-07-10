@@ -16,9 +16,10 @@ function makeMenu(input, target, funcName) {
     for (var k in attNodes) { spanTag.setAttributeNode(attNodes[k]); };
     spanTag.appendChild(spanText);
   }
+  return navTag;
 }
 
-function makeRot(input, target, image){
+function makeRot(input, target){
   // var divTag = document.createElement('div');
   // var divId = document.createAttribute('id');
   // divId.value = input;
@@ -28,9 +29,9 @@ function makeRot(input, target, image){
 
   var imgTag = document.createElement('img');
   var imgSrc = document.createAttribute('src');
-  imgSrc.value = image[0];
+  imgSrc.value = input[0];
   var imgWidth = document.createAttribute('width');
-  imgWidth.value = image[2];
+  imgWidth.value = input[2];
 
   target.appendChild(imgTag);
   imgTag.setAttributeNode(imgWidth);
@@ -39,15 +40,14 @@ function makeRot(input, target, image){
   return imgTag;
 }
 
-function makeBackVideo(input, target) {
-  var body = document.getElementsByTagName(target);
+function makeBackVideo(input, target, source) {
   var iframeTag = document.createElement('iframe');
   var iframeId = document.createAttribute('id');
   var iframeSrc = document.createAttribute('src');
   iframeId.value = input;
-  iframeSrc.value = featURL[pdRandom(2,0)];
+  iframeSrc.value = source;
 
-  body[0].appendChild(iframeTag);
+  target.appendChild(iframeTag);
   iframeTag.setAttributeNode(iframeId);
   iframeTag.setAttributeNode(iframeSrc);
 }

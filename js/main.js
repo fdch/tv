@@ -8,36 +8,44 @@
 ///          ////////               \\\        ////       //
 //          ///////                   \\\      ////       //
 $(function(){
+  var htmlTag = document.getElementsByTagName('html')[0];
 
-  $("html").css("font-family",fonts[pdRandom(fonts.length,0)]);
+  var htmlStyle = document.createAttribute('style');
+  htmlStyle.value = "font-family:"+fonts[pdRandom(fonts.length,0)];
+  htmlTag.setAttributeNode(htmlStyle);
+
   
-  var header = document.getElementsByTagName('header');
+  var bodyTag = document.getElementsByTagName('body')[0];
+  var headerTag = document.getElementsByTagName('header')[0];
+  var h1Tag = document.getElementsByTagName('h1')[0];
+  var footerTag = document.getElementsByTagName('footer')[0];
 
-  var rotImgTag = makeRot("menu", header[0], rotImg);
+  var rotImgTag = makeRot(rotImg, bodyTag);
+  var navTag = makeMenu(mitem, headerTag , "loader");
 
-  makeMenu(mitem,header[0],"loader");
-  
   randomColor(color_preset["high"]);
   
   setInterval( function(){ funImage(rotImgTag, rotImg) }, t);
   
-  $("h1").click(function() {
-    window.open(url, "_top")
-  });
+  var h1Click = document.createAttribute('onclick');
+  h1Click.value = "window.open("+url+", \'_top\')";
+  h1.setAttributeNode(h1Click);
 
-  $("#menu").click(function() { 
+  navTag.click(function() { 
     randomColor( color_preset["high"] );
     funImage(rotImgTag, rotImg);
   });
 
-  $("#menu > img" ).click(function() { 
+  rotImgTag.click(function() { 
     randomVideo();
     randomColor(color_preset["high"]);
     funImage(rotImgTag, rotImg);
   });
 
-  $("footer").hide()//.append(footer.join(tilde));
-  
-  makeBackVideo("backvideo", "body");
+  var footerDisplay = document.createAttribute('style');
+  footerDisplay = "display:none";
+  footerTag.setAttributeNode(footerDisplay);
+
+  makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
 
 });

@@ -105,7 +105,7 @@ function randomVideo() {
 }
 
 function pdRandom(range,offset){
-  return Math.floor(Math.random() * range) + offset;
+  return Math.floor(Math.random() * range) + offset?offset:0;
 }
 
 function randomColor(preset){
