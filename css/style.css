@@ -8,6 +8,7 @@ body {
 h1, h2 {
   font-size:1.1em;
   cursor:pointer;
+  margin:1% 0 2% 0;
 }
 h3 {
   padding-top:1%;
