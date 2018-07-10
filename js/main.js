@@ -43,7 +43,7 @@ $(function(){
   });
 
   var footerDisplay = document.createAttribute('style');
-  footerDisplay = "display:none";
+  footerDisplay.value = "display:none";
   footerTag.setAttributeNode(footerDisplay);
 
   makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
