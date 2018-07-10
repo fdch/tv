@@ -1,10 +1,20 @@
 function makeMenu(m, len, mitem, type) {
-  var i,item;
-  m.append("<nav>");
-  for (i = 0;i < len; i++) {
-    item = mitem[i].replace(/_/g," ").replace(/-/g," ");
-    m.append("<span class=menuitem "+ onclickify(type,mitem[i]) +">"+item+"</span>");
+
+  var navTag = createElement('nav');
+  m.appendChild(navTag);
+
+  for (var i = 0;i < len; i++) {
+    var item = mitem[i].replace(/_/g," ").replace(/-/g," ");
+    var spanTag = createElement('span'); 
+    navTag.appendChild(spanTag);
+    var spanClass = createAttribute('class'), spanClass.value = "menuitem";
+    var spanOnclick = createAttribute('onclick'), spanOnclick.value = type+"\'"+mitem[i]+"\'";
+    var spanText = createTextNode(item);
+    var attNodes = [spanClass,spanOnclick];
+    for (var k in attNodes) { spanTag.setAttributeNode(attNodes[k]); };
+    spanTag.appendChild(spanText);
   }
+  
   m.append("</nav>");
 }
 
@@ -20,11 +30,13 @@ function makeRot(input, target, image){
   var imgSrc = document.createAttribute('src');
   imgSrc.value = repo+image[0];
   var imgWidth = document.createAttribute('width');
-  imgWidth.value = image[1];
+  imgWidth.value = image[2];
 
   divTag.appendChild(imgTag);
   imgTag.setAttributeNode(imgWidth);
   imgTag.setAttributeNode(imgSrc);
+
+  return imgTag;
 }
 
 function makeBackVideo(input, target) {
