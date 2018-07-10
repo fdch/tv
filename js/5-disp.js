@@ -1,5 +1,7 @@
 function layout(x) {
-  removeChilds(mainTag);
+  while (mainTag.firstChild) 
+    mainTag.removeChild(mainTag.firstChild);
+  
   iframeSrc.value = "";
   // $("main").css('background-image', 'url(' + loadingUrl + ')');
   var h2Tag = document.createElement('h2');

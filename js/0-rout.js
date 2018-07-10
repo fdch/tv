@@ -1,8 +1,3 @@
-function removeChilds(myNode) {
-  while (myNode.firstChild) 
-    myNode.removeChild(myNode.firstChild);
-}
-
 var prev;
 
 var vis = function(x) {
