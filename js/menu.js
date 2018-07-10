@@ -1,23 +1,21 @@
-function makeMenu(m, len, mitem, type) {
+function makeMenu(input, target, funcName) {
 
   var navTag = document.createElement('nav');
-  m.appendChild(navTag);
+  target.appendChild(navTag);
 
-  for (var i = 0;i < len; i++) {
-    var item = mitem[i].replace(/_/g," ").replace(/-/g," ");
+  for (var i = 0;i < input.length; i++) {
+    var item = input[i].replace(/_/g," ").replace(/-/g," ");
     var spanTag = document.createElement('span'); 
     navTag.appendChild(spanTag);
     var spanClass = document.createAttribute('class');
     spanClass.value = "menuitem";
     var spanOnclick = document.createAttribute('onclick');
-    spanOnclick.value = type+"\'"+mitem[i]+"\'";
+    spanOnclick.value = funcName+"\'"+input[i]+"\'";
     var spanText = document.createTextNode(item);
     var attNodes = [spanClass,spanOnclick];
     for (var k in attNodes) { spanTag.setAttributeNode(attNodes[k]); };
     spanTag.appendChild(spanText);
   }
-  
-  m.append("</nav>");
 }
 
 function makeRot(input, target, image){

@@ -15,7 +15,7 @@ $(function(){
 
   var rotImgTag = makeRot("menu", header[0], rotImg);
 
-  makeMenu(header[0],mitem.length,mitem,"loader");
+  makeMenu(mitem,header[0],"loader");
   
   randomColor(color_preset["high"]);
   
