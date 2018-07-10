@@ -1,4 +1,7 @@
-var htmlTag, bodyTag, headerTag, mainTag, footerTag;
+var loaded=0, loading=0;
+
+var htmlTag, bodyTag, headerTag, navTag, mainTag, footerTag,iframeTag,iframeSrc;
+var allUnworks={}, allPapers={}, allEvents={}, allPeople={};
 
 var w, h, t = 4333;
 var mitem = ["bio", "unwork", "papers", "events", "people", "touch"];
@@ -22,8 +25,8 @@ var flickr = "http://www.flickr.com/federicocamarahalac";
 var linkedin = "http://linkedin.com/in/fedecamarahalac";
 var instagram = "https://instagram.com/ffddcchh";
 var rotImg = [
-	"/img/imgone-76.png",
-	"/img/imgone-76-i.png",
+	raw+"/img/imgone-76.png",
+	raw+"/img/imgone-76-i.png",
 	30,
 	"position:absolute;right:1%;top:1%",
 	"rotImgId"
@@ -123,10 +126,14 @@ var spreadsheets = "https://spreadsheets.google.com/feeds/list/";
 var sheetID = "1e5dh1sZX1QuFFioC-1ofcPIPhwU9i-lvUzOzn4_3SLQ/";
 var cvID = "1vViMWDsMRnbGUgP44XNDlQrLQ3MsdgO9W91mM4MxJtw/";
 var altjson = "/public/values?alt=json";
-var sheetURL = spreadsheets+sheetID+"1"+altjson;
-var eventsURL = spreadsheets+sheetID+"2"+altjson;
-var peopleURL = spreadsheets+sheetID+"3"+altjson;
-var papersURL = spreadsheets+sheetID+"4"+altjson;
+
+
+var unworkGS = spreadsheets+sheetID+"1"+altjson;
+var eventsGS = spreadsheets+sheetID+"2"+altjson;
+var peopleGS = spreadsheets+sheetID+"3"+altjson;
+var papersGS = spreadsheets+sheetID+"4"+altjson;
+
+allGS = [unworkGS, papersGS, eventsGS, peopleGS];
 
 var cvURL = [
 	spreadsheets+cvID+"1"+altjson,
@@ -215,14 +222,17 @@ var formLinks = [
 ];
 
 var formMenu = {
-	[allCVsections[1]]:"<span class=formlink  onclick=\"getSubmit("+formLinks[0]+");\">"+allCVsections[1]+"</span>",//0
-	[allCVsections[2]]:"<span class=formlink  onclick=\"getSubmit("+formLinks[1]+");\">"+allCVsections[2]+"</span>",//1
-	[mitem[1]]        :"<h2                   onclick=\"getSubmit("+formLinks[2]+");\">"+allCVsections[3]+"</h2>  ",//2
-	[allCVsections[4]]:"<span class=formlink  onclick=\"getSubmit("+formLinks[3]+");\">"+allCVsections[4]+"</span>",//3
-	[allCVsections[5]]:"<span class=formlink  onclick=\"getSubmit("+formLinks[4]+");\">"+allCVsections[5]+"</span>",//4
-	[mitem[4]]        :"<h2                   onclick=\"getSubmit("+formLinks[5]+");\">"+webSections[0]  +"</h2>  ",//5
-	[mitem[3]]        :"<h2                   onclick=\"getSubmit("+formLinks[6]+");\">"+webSections[1]  +"</h2>  ",//6
-	[mitem[2]]        :"<h2                   onclick=\"getSubmit("+formLinks[7]+");\">"+webSections[2]  +"</h2>  " //7
+	[allCVsections[1]]:"getSubmit("+formLinks[0]+");",//0
+	[allCVsections[2]]:"getSubmit("+formLinks[1]+");",//1
+	[mitem[1]]        :"getSubmit("+formLinks[2]+");",//2
+	[allCVsections[4]]:"getSubmit("+formLinks[3]+");",//3
+	[allCVsections[5]]:"getSubmit("+formLinks[4]+");",//4
+	[mitem[4]]        :"getSubmit("+formLinks[5]+");",//5
+	[mitem[3]]        :"getSubmit("+formLinks[6]+");",//6
+	[mitem[2]]        :"getSubmit("+formLinks[7]+");", //7
+	"games"           :"",
+	[mitem[5]]        :"",
+	[mitem[0]]        :""
 };
 
 

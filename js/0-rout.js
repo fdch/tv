@@ -1,3 +1,8 @@
+function removeChilds(myNode) {
+  while (myNode.firstChild) 
+    myNode.removeChild(myNode.firstChild);
+}
+
 var prev;
 
 var vis = function(x) {
@@ -108,7 +113,7 @@ function pdRandom(range,offset){
   return Math.floor(Math.random() * range) + offset?offset:0;
 }
 
-function randomColor(preset){
+function randomColor(preset, target){
   var lran = preset[0];
   var loff = preset[1];
   var dran = preset[2];
@@ -116,15 +121,14 @@ function randomColor(preset){
   var light = "rgb("+pdRandom(lran,loff)+","+pdRandom(lran,loff)+","+pdRandom(lran,loff)+")";
   var darky = "rgb("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+")";
   var menuy = "rgba("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+",0.3)";
-  $("body").css(
-    {
-      backgroundColor: darky,
-      color: light
-    });
-  $("#menubg").css(
-  {
-    backgroundColor: menuy 
-  });
+
+  var targetAtt = document.createAttribute('style');
+  targetAtt.value = "background-color:" + darky +"; color:"+light+";";
+  target[0].setAttributeNode(targetAtt);
+
+  targetAtt.value = "background-color:" + menuy +";";
+  target[1].setAttributeNode(targetAtt);
+
 }
 
 var whichone = 0;
@@ -190,6 +194,78 @@ function shuffleArray(array) {
     }
     return array;
 }
+function getSubmit(target) {
+  var exists;
+  if (!exists) var n = window.open("", "WPEventForm", submit[4]);
+  else n.focus();
+  if (n != null) exists = 1;
+  else exists = 0;
+  n.document.documentElement.innerHTML = submit[2];
+  n.document.getElementById("authOK").onclick = function () {
+    if ( n.document.getElementById("krl").value != submit[3] )
+    {
+      n.alert("\n"+submit[0]+"\n\n Try again.");
+    } else {
+      n.alert("\nSucess!\n\n"+submit[1]+"\n\n Karlheinz.");
+      n.resizeTo(articleWidth(maxWidth), height());
+      n.moveBy(articleWidth(maxWidth)*0.3, 0);
+      open(target, "WPEventForm");
+    }
+  }
+}
+
+function randomFont(target) {
+  targetStyle = document.createAttribute('style');
+  targetStyle.value = "font-family:"+fonts[pdRandom(fonts.length)];
+  target.setAttributeNode(targetStyle);
+}
+
+
+// var wid={};//the new empty object of objects
+
+// var worknames = ["one", "two", "three", "four"];
+// //some substrings
+// var keyse = ["oo","tt","trtr","ff"];
+
+
+// for (var i in worknames) {
+//   //make each workname a new key for a new object
+//    nkey = String(worknames[i]);
+//    wid[nkey]={};//the new object
+//   for (var k in keyse) {
+//     //make each substring a new key in each new object
+//         nsubkey = String(keyse[k]);
+//         wid[nkey][nsubkey]= "somevalue ";
+//     }
+// }
+// var demo = document.getElementById("demo");
+// var mkeys = Object.keys(wid);
+
+// for (var i in mkeys) {
+//   var par = document.createElement('p');
+//   demo.appendChild(par);
+//   var skeys = Object.keys(wid[mkeys[i]]); //find object sub keys
+//   for (var k in skeys) {
+//       var thestuff = wid[mkeys[i]][skeys[k]]; ///this is how to access each property
+//       var txt = document.createTextNode(thestuff);
+//       par.appendChild(txt);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // var person = {some:"XXXXX", less:"YYYYY"};
 

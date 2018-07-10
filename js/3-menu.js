@@ -16,6 +16,12 @@ function makeMenu(input, target, funcName) {
     for (var k in attNodes) { spanTag.setAttributeNode(attNodes[k]); };
     spanTag.appendChild(spanText);
   }
+
+  var navClick = document.createAttribute('onclick');
+  navClick.value = "function(){randomColor("+color_preset['high']+",\
+                   ["+bodyTag+","+headerTag[0]+"]),funImage("+rotImg+");";
+  navTag.setAttributeNode(navClick);
+
   return navTag;
 }
 
@@ -49,9 +55,9 @@ function makeRot(input, target){
 }
 
 function makeBackVideo(input, target, source) {
-  var iframeTag = document.createElement('iframe');
+  iframeTag = document.createElement('iframe');
   var iframeId = document.createAttribute('id');
-  var iframeSrc = document.createAttribute('src');
+  iframeSrc = document.createAttribute('src');
   iframeId.value = input;
   iframeSrc.value = source;
 
@@ -103,7 +109,7 @@ function makeValue(input,target) {
   elemTag.appendChild(elemTxt);
 }
 
-function makeWorksForm(input,target) {
+function makeForm(input,target) {
   var formTag = document.createElement('form');
   var formAttId = document.createAttribute('id');
   formAttId.value = input;
@@ -113,7 +119,7 @@ function makeWorksForm(input,target) {
   return formTag;
 }
 
-function makeWorksSubmenu(selectID,formTag,ucats) {
+function makeDropdowns(selectID,formTag,ucats) {
   var labelTag = document.createElement('label');
   var labelAtt = document.createAttribute('for');
   labelAtt.value = selectID;
