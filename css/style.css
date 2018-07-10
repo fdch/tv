@@ -13,11 +13,12 @@ h3 {
   padding-top:1%;
   margin-top:1%;
 }
-#menu{
+header {
   padding:1% 1% 2% 1%;
   border-radius:3px;
+  cursor:pointer;
 }
-#menu img {
+header img {
    float:right;
 }
 main{
@@ -49,9 +50,7 @@ a {
   color:lightblue;
   font-weight:bold;
 }
-header {
-  cursor:pointer;
-}
+
 iframe { 
   padding:1%;
   border-color:black;

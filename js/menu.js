@@ -19,12 +19,12 @@ function makeMenu(input, target, funcName) {
 }
 
 function makeRot(input, target, image){
-  var divTag = document.createElement('div');
-  var divId = document.createAttribute('id');
-  divId.value = input;
+  // var divTag = document.createElement('div');
+  // var divId = document.createAttribute('id');
+  // divId.value = input;
   
-  target.appendChild(divTag);
-  divTag.setAttributeNode(divId);
+  // target.appendChild(divTag);
+  // divTag.setAttributeNode(divId);
 
   var imgTag = document.createElement('img');
   var imgSrc = document.createAttribute('src');
@@ -32,7 +32,7 @@ function makeRot(input, target, image){
   var imgWidth = document.createAttribute('width');
   imgWidth.value = image[2];
 
-  divTag.appendChild(imgTag);
+  target.appendChild(imgTag);
   imgTag.setAttributeNode(imgWidth);
   imgTag.setAttributeNode(imgSrc);
 
