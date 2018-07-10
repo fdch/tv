@@ -8,17 +8,16 @@
 ///          ////////               \\\        ////       //
 //          ///////                   \\\      ////       //
 $(function(){
-  var htmlTag = document.getElementsByTagName('html')[0];
+  htmlTag = document.getElementsByTagName('html')[0];
 
   var htmlStyle = document.createAttribute('style');
   htmlStyle.value = "font-family:"+fonts[pdRandom(fonts.length,0)];
   htmlTag.setAttributeNode(htmlStyle);
-
   
-  var bodyTag = document.getElementsByTagName('body')[0];
-  var headerTag = document.getElementsByTagName('header')[0];
+  bodyTag = document.getElementsByTagName('body')[0];
+  headerTag = document.getElementsByTagName('header')[0];
   var h1Tag = document.getElementsByTagName('h1')[0];
-  var footerTag = document.getElementsByTagName('footer')[0];
+  footerTag = document.getElementsByTagName('footer')[0];
 
   var rotImgTag = makeRot(rotImg, bodyTag);
   var navTag = makeMenu(mitem, headerTag , "loader");
@@ -47,5 +46,4 @@ $(function(){
   footerTag.setAttributeNode(footerDisplay);
 
   makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
-
 });

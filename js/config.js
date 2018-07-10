@@ -1,3 +1,5 @@
+var htmlTag, bodyTag, headerTag, mainTag, footerTag;
+
 var w, h, t = 4333;
 var mitem = ["bio", "unwork", "papers", "events", "people", "touch"];
 var maxWidth = 810;
@@ -255,8 +257,6 @@ var gameType = [
 	<p>"+gameDraw[5]+"</p>\
 	<img onclick=\"window.open(\'"+gameDraw[3]+"\')\" src=\""+gameDraw[4]+"\" width=200/>"
 ];
-
-
 
 
 
