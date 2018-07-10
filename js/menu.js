@@ -23,12 +23,19 @@ function makeRot(input, target, func){
 
   var imgTag = document.createElement('img');
 
-  var attributes = [
-    document.createAttribute('src').value = input[0],
-    document.createAttribute('width').value = input[2],
-    document.createAttribute('style').value = input[3],
-    document.createAttribute('onclick').value = func(imgTag)
-  ];
+  var imgSrc = document.createAttribute('src');
+  imgSrc.value = input[0];
+  
+  var imgWidth = document.createAttribute('width');
+  imgWidth.value = input[2];
+
+  var imgStyle = document.createAttribute('style');
+  imgStyle.value = input[3];
+
+  var imgClick = document.createAttribute('onclick');
+  imgClick.value = func(imgTag);
+
+  var attributes = [imgSrc, imgWidth, imgStyle, imgClick];
    
   target.appendChild(imgTag);
 
