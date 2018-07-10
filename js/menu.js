@@ -10,7 +10,7 @@ function makeMenu(input, target, funcName) {
     var spanClass = document.createAttribute('class');
     spanClass.value = "menuitem";
     var spanOnclick = document.createAttribute('onclick');
-    spanOnclick.value = funcName+"\'"+input[i]+"\'";
+    spanOnclick.value = funcName+"(\'"+input[i]+"\')";
     var spanText = document.createTextNode(item);
     var attNodes = [spanClass,spanOnclick];
     for (var k in attNodes) { spanTag.setAttributeNode(attNodes[k]); };
