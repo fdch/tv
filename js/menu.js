@@ -32,8 +32,8 @@ function makeBackVideo(input, target) {
   var iframeTag = document.createElement('iframe');
   var iframeId = document.createAttribute('id');
   var iframeSrc = document.createAttribute('src');
-  iframeId = input;
-  iframeSrc = featURL[pdRandom(2,0)];
+  iframeId.value = input;
+  iframeSrc.value = featURL[pdRandom(2,0)];
 
   body[0].appendChild(iframeTag);
   iframeTag.setAttributeNode(iframeId);
