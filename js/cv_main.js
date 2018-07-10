@@ -12,7 +12,7 @@ $(function(){
   
   randomColor(color_preset["mid"]); 
   
-  $("h1, h2").click(function() {window.open(cv, "_top")});
+  $("h1").click(function() {window.open(cv, "_top")});
 
   $("main").html("").append("<article></article>");
   $("article, #menubg").width(articleWidth(maxWidth));
@@ -23,7 +23,7 @@ $(function(){
     var section = [
       "<section id=\""+theid+"\" >",
       "<header onclick=\"toggleIt($(\'#"+target+"\'))\">",
-      tag("h3",value),
+      tag("h2",value),
       "</header>",
       "</section>"
     ]

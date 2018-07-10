@@ -27,6 +27,19 @@ function makeRot(input, target){
   imgTag.setAttributeNode(imgSrc);
 }
 
+function makeBackVideo(input, target) {
+  var body = document.getElementsByTagName(target);
+  var iframeTag = document.createEllement('iframe');
+  var iframeId = document.createAttribute('id');
+  var iframeSrc = document.createAttribute('src');
+  iframeId = input;
+  iframeSrc = featURL[pdRandom(2,0)];
+
+  body[0].appendChild(iframeTag);
+  iframeTag.setAttributeNode(iframeId);
+  iframeTag.setAttributeNode(iframeSrc);
+}
+
 function makeInput(input,target) {
   //makeInput([uniqueID, checkbox], parentNode);
   var name = input[0];

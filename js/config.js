@@ -211,12 +211,12 @@ var formLinks = [
 var formMenu = {
 	[allCVsections[1]]:"<span class=formlink  onclick=\"getSubmit("+formLinks[0]+");\">"+allCVsections[1]+"</span>",//0
 	[allCVsections[2]]:"<span class=formlink  onclick=\"getSubmit("+formLinks[1]+");\">"+allCVsections[2]+"</span>",//1
-	[mitem[1]]        :"<h3                   onclick=\"getSubmit("+formLinks[2]+");\">"+allCVsections[3]+"</h3>  ",//2
+	[mitem[1]]        :"<h2                   onclick=\"getSubmit("+formLinks[2]+");\">"+allCVsections[3]+"</h2>  ",//2
 	[allCVsections[4]]:"<span class=formlink  onclick=\"getSubmit("+formLinks[3]+");\">"+allCVsections[4]+"</span>",//3
 	[allCVsections[5]]:"<span class=formlink  onclick=\"getSubmit("+formLinks[4]+");\">"+allCVsections[5]+"</span>",//4
-	[mitem[4]]        :"<h3                   onclick=\"getSubmit("+formLinks[5]+");\">"+webSections[0]  +"</h3>  ",//5
-	[mitem[3]]        :"<h3                   onclick=\"getSubmit("+formLinks[6]+");\">"+webSections[1]  +"</h3>  ",//6
-	[mitem[2]]        :"<h3                   onclick=\"getSubmit("+formLinks[7]+");\">"+webSections[2]  +"</h3>  " //7
+	[mitem[4]]        :"<h2                   onclick=\"getSubmit("+formLinks[5]+");\">"+webSections[0]  +"</h2>  ",//5
+	[mitem[3]]        :"<h2                   onclick=\"getSubmit("+formLinks[6]+");\">"+webSections[1]  +"</h2>  ",//6
+	[mitem[2]]        :"<h2                   onclick=\"getSubmit("+formLinks[7]+");\">"+webSections[2]  +"</h2>  " //7
 };
 
 

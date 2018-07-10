@@ -11,8 +11,6 @@ $(function(){
 
   $("html").css("font-family",fonts[pdRandom(fonts.length,0)]);
   
-  $("body").append("<iframe id=backvideo src=\'"+featURL[pdRandom(2,0)]+"\'></iframe>");
-  
   var header = document.getElementsByTagName('header');
 
   makeRot("menu", header[0]);
@@ -21,12 +19,9 @@ $(function(){
   
   randomColor(color_preset["high"]);
   
-  setInterval(
-    function(){
-      funImage()
-    }, t);
+  setInterval( function(){ funImage() }, t);
   
-  $("h1, h2").click(function() {
+  $("h1").click(function() {
     window.open(url, "_top")
   });
 
@@ -42,4 +37,7 @@ $(function(){
   });
 
   $("footer").hide()//.append(footer.join(tilde));
+  
+  makeBackVideo("backvideo", "body");
+
 });

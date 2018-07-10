@@ -191,11 +191,11 @@ function getPeople() {
     }//end loop
 
     $("main article").append([
-      tag("h5","People"),
+      tag("h3","People"),
       people.join(tilde),
-      tag("h5","Ensembles"),
+      tag("h3","Ensembles"),
       ensembles.join(tilde),
-      tag("h5","Organizations"),
+      tag("h3","Organizations"),
       organizations.join(tilde),
       "</blockquote>"
       ]);
@@ -205,7 +205,7 @@ function getPeople() {
 function getBio() {
     $("main article").append([
       imgify(bioImage,articleWidth(maxWidth)),
-      tag("h5",linkify("curriculum vitae",cv,0)),
+      tag("h4",linkify("curriculum vitae",cv,0)),
       bioEnglish,
       "<br/>",
       bioSpanish
@@ -250,7 +250,7 @@ function loader(x) {
       getUnworks();
       break;
     case "bio":
-      $("main").append([tag("header",tag("h3","Bio")),tag("article","")]);
+      $("main").append([tag("header",tag("h2","Bio")),tag("article","")]);
       getBio();
       break;
     case "people":
