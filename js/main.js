@@ -19,14 +19,7 @@ $(function(){
   var h1Tag = document.getElementsByTagName('h1')[0];
   footerTag = document.getElementsByTagName('footer')[0];
 
-  var rotImgTagFunc = function(x) {
-    randomVideo();
-    randomColor(color_preset["high"]);
-    funImage(x, rotImg);
-  }
-
-
-  var rotImgTag = makeRot(rotImg, bodyTag, rotImgTagFunc);
+  var rotImgTag = makeRot(rotImg, bodyTag);
   var navTag = makeMenu(mitem, headerTag , "loader");
 
   randomColor(color_preset["high"]);

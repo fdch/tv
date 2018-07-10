@@ -19,13 +19,18 @@ function makeMenu(input, target, funcName) {
   return navTag;
 }
 
-function makeRot(input, target, func){
-
+function makeRot(input, target){ 
   var imgTag = document.createElement('img');
+
+  var rotation = "function() {\
+    randomVideo();\
+    randomColor(color_preset[\"high\"]);\
+    funImage("+imgTag+", rotImg);\
+  }";
 
   var imgSrc = document.createAttribute('src');
   imgSrc.value = input[0];
-  
+
   var imgWidth = document.createAttribute('width');
   imgWidth.value = input[2];
 
@@ -33,7 +38,7 @@ function makeRot(input, target, func){
   imgStyle.value = input[3];
 
   var imgClick = document.createAttribute('onclick');
-  imgClick.value = func(imgTag);
+  imgClick.value = rotation;
 
   var attributes = [imgSrc, imgWidth, imgStyle, imgClick];
    
