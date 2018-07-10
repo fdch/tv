@@ -1,3 +1,31 @@
+function makeMenu(m, len, mitem, type) {
+  var i,item;
+  m.append("<nav>");
+  for (i = 0;i < len; i++) {
+    item = mitem[i].replace(/_/g," ").replace(/-/g," ");
+    m.append("<span class=menuitem "+ onclickify(type,mitem[i]) +">"+item+"</span>");
+  }
+  m.append("</nav>");
+}
+
+function makeRot(input, target){
+  var divTag = document.createElement('div');
+  var divId = document.createAttribute('id');
+  divId.value = input;
+  
+  target.appendChild(divTag);
+  divTag.setAttributeNode(divId);
+
+  var imgTag = document.createElement('img');
+  var imgSrc = document.createAttribute('src');
+  imgSrc.value = repo+imgRot[0];
+  var imgWidth = document.createAttribute('width');
+  imgWidth.value = imgRot[1];
+
+  divTag.appendChild(imgTag);
+  imgTag.setAttributeNode(imgWidth);
+  imgTag.setAttributeNode(imgSrc);
+}
 
 function makeInput(input,target) {
   //makeInput([uniqueID, checkbox], parentNode);
@@ -83,13 +111,5 @@ function makeWorksSubmenu(selectID,formTag,ucats) {
     makeValue([v,"option", "value"],selectTag);
   });
 }
-function makeMenu(m, len, mitem, type) {
-  var i,item;
-  m.append("<nav>");
-  for (i = 0;i < len; i++) {
-    item = mitem[i].replace(/_/g," ").replace(/-/g," ");
-    m.append("<span class=menuitem "+ onclickify(type,mitem[i]) +">"+item+"</span>");
-  }
-  m.append("</nav>");
-}
+
 

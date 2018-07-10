@@ -19,7 +19,9 @@ var yt = "https://www.youtube.com/channel/UCzOx-iKaNx9ruddNI6ykTIA";
 var flickr = "http://www.flickr.com/federicocamarahalac";
 var linkedin = "http://linkedin.com/in/fedecamarahalac";
 var instagram = "https://instagram.com/ffddcchh";
+var rotImg = ["/img/imgone-76.png", 30];
 
+ 
 var tilde = " ~ ";
 var hide = "style=\"display:none\"";
 var today = new Date();

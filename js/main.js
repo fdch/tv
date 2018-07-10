@@ -8,16 +8,16 @@
 ///          ////////               \\\        ////       //
 //          ///////                   \\\      ////       //
 $(function(){
+
   $("html").css("font-family",fonts[pdRandom(fonts.length,0)]);
   
   $("body").append("<iframe id=backvideo src=\'"+featURL[pdRandom(2,0)]+"\'></iframe>");
   
-  makeMenu(
-    $("#menu"),
-    mitem.length,
-    mitem,
-    "loader"
-  );
+  var header = document.getElementsByTagName('header');
+
+  makeRot("menu", header[0]);
+
+  makeMenu(header[0],mitem.length,mitem,"loader");
   
   randomColor(color_preset["high"]);
   
@@ -35,7 +35,7 @@ $(function(){
     funImage();
   });
 
-  $("#rot" ).click(function() { 
+  $("#menu > img" ).click(function() { 
     randomVideo();
     randomColor(color_preset["high"]);
     funImage();
