@@ -77,8 +77,8 @@ iframe {
   font-size:0.7em;
 }
 select{
-  display:block;
-  padding:1%;
+  display:inline;
+  padding:0.8%;
 }
 footer {
   font-size:0.8em;
