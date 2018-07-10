@@ -64,8 +64,8 @@ function getUnworks() {
     
     var formTag = makeWorksForm("workFormID");
     
+    makeWorksSubmenu("category", formTag, getUniqueCategories(allCategories));
     makeWorksSubmenu("title", formTag, getUniqueCategories(allTitles));
-    makeWorksSubmenu("category", formTag, getUniqueCategories(allCategories));    
     // makeWorksSubmenu("selPerf", formTag, getUniqueCategories(allPerformers));
     // makeWorksSubmenu("selDura", formTag, getUniqueCategories(allDurations));
     // makeWorksSubmenu("selLoca", formTag, getUniqueCategories(allLocations));
