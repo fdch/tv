@@ -29,7 +29,7 @@ function makeRot(input, target, image){
 
 function makeBackVideo(input, target) {
   var body = document.getElementsByTagName(target);
-  var iframeTag = document.createEllement('iframe');
+  var iframeTag = document.createElement('iframe');
   var iframeId = document.createAttribute('id');
   var iframeSrc = document.createAttribute('src');
   iframeId = input;
