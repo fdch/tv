@@ -233,12 +233,12 @@ function anchor(link,text,target){
   return tag;
 }
 
-function h(kind,text,onclick,title){
+function h(kind,text,onclick,titl){
   let tag = document.createElement('h'+kind);
   let node = document.createTextNode(text?text:'');
   tag.setAttribute('onclick', onclick?onclick:'');
   tag.setAttribute('style', onclick?'cursor:pointer;':'');
-  tag.setAttribute('title', title?title:node.nodeValue);
+  tag.setAttribute('title', titl?titl:node.nodeValue);
   tag.appendChild(node);
   return tag;
 }
@@ -253,12 +253,12 @@ function element(tag,text,id,onclick,width) {
   return elem;
 }
 
-function img(src,width,title ) {
+function img(src,width,titl ) {
   let tag = document.createElement('img');
   let anc = anchor(src);
   tag.setAttribute('src', src);
   tag.setAttribute('width', width);
-  tag.setAttribute('title', title?title:"Click me");
+  tag.setAttribute('title', titl?titl:"Click me");
   anc.appendChild(tag);
   return anc;      
 }
