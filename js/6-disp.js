@@ -46,7 +46,7 @@ function display(x) {
 
       let imgTag = img(bioImage, articleWidth(maxWidth),"Fede Camara Halac");
       let spTag = element('p',bioSpanish,'bio-eng');
-      let enTag = element('p',bioEnglish'bio-spa');
+      let enTag = element('p',bioEnglish,'bio-spa');
 
       let alltags = [imgTag,spTag,enTag];
 
