@@ -8,7 +8,7 @@ function display(x) {
   
 
   var headerTag = element('header');
-  var htitleTag = h(2,x,"getSubmit(formLink[\'"+x+"\']);");
+  var htitleTag = h(2,x,"getSubmit(\'"+x+"\']);");
   headerTag.appendChild(htitleTag);
 
   main.appendChild(headerTag);

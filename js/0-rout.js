@@ -207,7 +207,7 @@ function getSubmit(target) {
       n.alert("\nSucess!\n\n"+submit[1]+"\n\n Karlheinz.");
       n.resizeTo(articleWidth(maxWidth), height());
       n.moveBy(articleWidth(maxWidth)*0.3, 0);
-      open(String(target), "editForm");
+      open(formLink[String(target)], "editForm");
     }
   }
 }
