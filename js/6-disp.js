@@ -20,7 +20,7 @@ function display(x) {
       displayEvents(articlTag,Object.keys(allEvents))
       break;
     case "people":
-      displayPeople(articleTag,Object.keys(allPeople));
+      displayPeople(articlTag,Object.keys(allPeople));
       break;
     default:
     break;
