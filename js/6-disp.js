@@ -30,7 +30,7 @@ function resetDisplay(x){
   let submitX = "getSubmit(\'"+x+"\');";
   //remove previous stuff
   removeChilds(mainTag);
-  iframeSrc.value = "";
+  iframeSrc.value = '';
   // $("main").css('background-image', 'url(' + loadingUrl + ')');
   //the header
   var headerTag = element('header');
@@ -38,9 +38,9 @@ function resetDisplay(x){
   headerTag.appendChild(htitleTag);
 
   if('unwork'===x) {
-    var formTag = element('form',"workFilters");
-    makeDropdowns("category", formTag, getUniqueCategories(allCategories));
-    makeDropdowns("title", formTag, getUniqueCategories(allTitles));
+    var formTag = element('form','','workFilters');
+    makeDropdowns('category', formTag, getUniqueCategories(allCategories));
+    makeDropdowns('title', formTag, getUniqueCategories(allTitles));
     headerTag.appendChild(formTag);
   }
 
@@ -120,7 +120,9 @@ function displayUnwork(target,source) {
     if (aurl) aaa.push(element('button','Audio',x+'-aurl',"windo.open(\'"+aurl+"\',\'_top\');"));
     if (vurl) aaa.push(element('button','Video',x+'-vurl',"windo.open(\'"+vurl+"\',\'_top\');"));
     if (surl) aaa.push(element('button','Score',x+'-surl',"windo.open(\'"+surl+"\',\'_top\');"));
-      
+
+    for (let i in aaa) artiTag.appendChild(aaa[i]);
+     
     let timest = element('h6',time);
     footTag.appendChild(timest);
   }
