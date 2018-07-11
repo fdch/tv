@@ -1,3 +1,10 @@
+
+function removeChilds(x) {
+  while (x.firstChild) 
+    x.removeChild(x.firstChild);
+}
+
+
 var prev;
 
 var vis = function(x) {
@@ -38,19 +45,6 @@ function tagOpen(tag,text,target){
   return "<"+tag+onclickify("window.open",target,"_top")+">"+text+"</"+tag+">";
 }
 
-function linkify(x,y,blank){
-  var target;
-  var thelink;
-  if (blank) {
-    target="_blank";
-  } else {
-    target="_top";
-  }
-  var title = y.slice(0, 44)+"...";
-  thelink = "<a target=\""+target+"\" href=\""+y+"\" alt=\""+x+"\" title=\""+title+"\" rel=\"nofollow\"  >"+x+"</a>";
-  
-  return thelink;
-}
 
 function imgify(src,width){
   return "<img src=\""+ src +"\" width=\""+ width +"\" "+ onclickify("window.open",src,"_top") + "/>";
@@ -213,6 +207,39 @@ function randomFont(target) {
   targetStyle = document.createAttribute('style');
   targetStyle.value = "font-family:"+fonts[pdRandom(fonts.length)];
   target.setAttributeNode(targetStyle);
+}
+
+
+
+function anchor(link,text,target){
+  let tag = document.createElement('a');
+
+  tag.setAttribute('href',link);
+  tag.setAttribute('alt' ,link.slice(0, 44)+ " ...");
+  tag.setAttribute('rel', 'nofollow');
+  tag.setAttribute('target', target?:target:"_top");
+
+  tag.appendChild(document.createTextNode(text));
+
+  return tag;
+}
+
+function h(kind,text,onclick){
+  let tag = document.createElement('h'+kind);
+  let node = document.createTextNode(text?text:'');
+  tag.setAttribute('onclick', onclick?onclick:'');
+  tag.setAttribute('style', onclick?'cursor:pointer;':'');
+  tag.setAttribute('title', onclick?onclick:node.nodeValue);
+  tag.appendChild(node);
+  return tag;
+}
+
+function element(tag,text,id) {
+  let elem = document.createElement(tag);
+  let node = document.createTextNode(text?text:'');
+  elem.setAttribute('id',id?id:'');
+  elem.appendChild(node);
+  return elem;
 }
 
 

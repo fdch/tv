@@ -16,7 +16,7 @@ $(function(){
   var h1Tag = document.getElementsByTagName('h1')[0];
   footerTag = document.getElementsByTagName('footer')[0];
   var rotImgTag = makeRot(rotImg, bodyTag);
-  navTag = makeMenu(mitem, headerTag[0] , "layout");
+  navTag = makeMenu(mitem, headerTag[0] , "display");
   randomColor(color_preset["high"], [bodyTag,headerTag[0]]);
   var footerDisplay = document.createAttribute('style');
   footerDisplay.value = "display:none";

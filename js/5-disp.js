@@ -1,32 +1,26 @@
-function layout(x) {
-  while (mainTag.firstChild) 
-    mainTag.removeChild(mainTag.firstChild);
-  
+function display(x) {
+  removeChilds(mainTag);
+
   iframeSrc.value = "";
+  
   // $("main").css('background-image', 'url(' + loadingUrl + ')');
-  var h2Tag = document.createElement('h2');
-  var h2Click = document.createAttribute('onclick');
-  h2Click.value = formMenu[x];
+  
+  var h2 = h(2,x,formMenu[x]);
+  
+  mainTag.appendChild(h2);
 
-  var h2Text = document.createTextNode(x);
-  mainTag.appendChild(h2Tag);
-  h2Tag.appendChild(h2Text);
-  h2Tag.setAttributeNode(h2Click);
-
-  var sectionTag = document.createElement('section');
-  var sectionId = document.createAttribute('id');
-  sectionId.value = x;
+  var sectionTag = element('section', x);
   mainTag.appendChild(sectionTag);
-  sectionTag.setAttributeNode(sectionId);
-
-  var subheaderTag = document.createElement('header');
+  
+  var subheaderTag = element('header');
   sectionTag.appendChild(subheaderTag);
 
-  var articleTag = document.createElement('article');
+  var articleTag = element('article');
   sectionTag.appendChild(articleTag);
 
   switch (x) {
     case "games" :
+
       $("main").append(tag("article",gameType.join("<br/>")));
       break;
     case "touch" :
@@ -48,37 +42,31 @@ function layout(x) {
       for (var i in pKeys) {
         var nPid = pKeys[i];
 
+
         var titlTag = document.createTextNode(allPapers[nPid]["apTitl"]);
         var descTag = document.createTextNode(allPapers[nPid]["apDesc"]);
         var publTag = document.createTextNode(allPapers[nPid]["apPubl"]);
         var downTag = document.createTextNode(allPapers[nPid]["apDown"]);
         var timeTag = document.createTextNode(allPapers[nPid]["apTime"]);
+        var linkTag = anchor(allPapers[nPid]["apLink"],titlTag);
         
-        var aTag = document.createElement('a');
-        var aHref = document.createAttribute('href');
-        aHref.value = allPapers[nPid]["apLink"];
-        var aTarget = document.createAttribute('target');
-        aTarget.value = "_top";
-        var aRel = document.createAttribute('rel');
-        aRel.value = "nofollow";
-        
+
+        var sTag = section(nPid);
+
         var h3Tag = document.createElement('h3');
         var pTag = document.createElement('p');
         
-        var sTag = document.createElement('section');
-        var sId = document.createAttribute('id');
-        sId.value = nPid; 
+      
+
         articleTag.appendChild(sTag);
-        sTag.setAttributeNode(sId);
+        
 
         var hTag = document.createElement('header');
         sTag.appendChild(hTag);
         hTag.appendChild(h3Tag);
-        h3Tag.appendChild(aTag);
-        aTag.setAttributeNode(aHref);
-        aTag.setAttributeNode(aTarget);
-        aTag.setAttributeNode(aRel);
-        aTag.appendChild(titlTag);
+
+        h3Tag.appendChild(linkTag);
+
         var artTag = document.createElement('article');
         sTag.appendchild(artTag);
         artTag.appendChild(pTag);
