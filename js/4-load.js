@@ -6,7 +6,7 @@ function loadAll(sheets) {
     f = JSON.parse(response);
     entry = f.feed.entry;
     allUnwork={};
-    allCategories=[], allTitles=[];
+    allCategories=[], allTitles=[],allWorkId=[];
     for (i in entry) {
       e = entry[i];
       var title = e.gsx$title.$t;
@@ -29,7 +29,9 @@ function loadAll(sheets) {
 
       allCategories.push(categ);
       allTitles.push(title);
+      allWorkId.puth(nwid);
     }
+    uniqueCategories = getUniqueCategories(allCategories);
   });
   //papers
   loadJSON(sheets[1], function(response) {

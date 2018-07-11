@@ -150,10 +150,10 @@ function imgClicker(x) {
 
 
 
-function getUniqueCategories(allCategories){
+function getUniqueCategories(x){
 
   var categories = new Array();
-  jQuery.each(allCategories, function(i,v){
+  jQuery.each(x, function(i,v){
     var subcat = new Array(v.split(", "));
     jQuery.each(subcat, function(ii,vv){
       categories.push(vv);
@@ -170,8 +170,30 @@ function getUniqueCategories(allCategories){
 }
 
 function getValue(x) {
-  var value = x.value;
-  console.log(value);
+  var titl = x.title;
+  var valu = x.value;
+  switch (titl) {
+    case "title":
+      for (let i in allWorkId) {
+        var onoff;
+        var current = allWorkId[i];
+        var wid = document.getElementById(current);
+        if(valu!==current) onoff = "none";
+        else onoff = "initial";
+        wid.setAttribute('style', "display:"+onoff);
+      }
+      break;
+    case "category":
+      var classes = document.getElementsByClassname(valu);
+      for (let i in allWorkId)
+        document.getElementById(allWorkId[i]).setAttribute('style', 'display:none');
+      for (let i in classes)
+        classes[i].setAttribute('style', "display:initial");
+      break;
+    default:
+      break;
+  }
+ // console.log(value);
 }
 
 function unique(array) {

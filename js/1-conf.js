@@ -6,7 +6,7 @@ var allPapers={};
 var allEvents={};
 var allPeople={};
 
-var allCategories=[], allTitles=[];
+var allCategories=[], allTitles=[],allWorkId=[],uniqueCategories=[];
 
 var w, h, t = 4333;
 var mitem = ["bio", "unwork", "papers", "events", "people", "touch"];
