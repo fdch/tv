@@ -9,6 +9,7 @@ function loadAll(sheets) {
       e = entry[i];
       var title = e.gsx$title.$t;
       var nwid  = "id-"+makeID(title);
+      allUnworks[nwid]={};
       allUnworks[nwid]["awTitl"] = title;
       allUnworks[nwid]["awTime"] = e.gsx$timestamp.$t;
       allUnworks[nwid]["awDate"] = new Date(e.gsx$date.$t);
@@ -33,6 +34,7 @@ function loadAll(sheets) {
       e = entry[i];
       var title = e.gsx$title.$t;
       var npid = "id-"+makeID(title);
+      allPapers[npid]={};
       allPapers[npid]["apTitl"] = title;
       allPapers[npid]["apTime"] = e.gsx$timestamp.$t;
       allPapers[npid]["apDesc"] = e.gsx$description.$t;
@@ -50,6 +52,7 @@ function loadAll(sheets) {
       e = entry[i];
       var title = e.gsx$what.$t;
       var neid = "id-"+makeID(title);
+      allEvents[neid]={};
       allEvents[neid]["aeWhat"] = title;
       allEvents[neid]["aeTime"] = e.gsx$timestamp.$t;
       allEvents[neid]["aeWhen"] = new Date(e.gsx$when.$t);
@@ -66,6 +69,7 @@ function loadAll(sheets) {
       e = entry[i];
       var name = e.gsx$name.$t;
       var nPid = "id-"+makeID(name);
+      allPeople[nPid]={};
       allPeople[nPid]["aPName"] = name;
       allPeople[nPid]["aPTime"] = e.gsx$timestamp.$t;
       allPeople[nPid]["aPSurn"] = e.gsx$surname.$t;
