@@ -216,9 +216,21 @@ function displayPeople(target,source) {
     let footTag = element('footer');
     sectTag.appendChild(footTag);
 
-    let htitle = h(3,name,"window.open(\'"+webs+"\', \'_top\');");
+    switch (last) {
+      case "Ensemble":
+
+        break;
+      case "Organization":
+
+        break
+      default:
+
+        break;
+    }
+
+    let htitle = h(4,name,"window.open(\'"+webs+"\', \'_top\');");
     headTag.appendChild(htitle);
-    let footer = element('h6',time);
-    footTag.appendChild(footer);
+    // let footer = element('h6',time);
+    // footTag.appendChild(footer);
    }
 }
