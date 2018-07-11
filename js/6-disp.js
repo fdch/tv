@@ -57,7 +57,6 @@ function displayBiogra(target) {
 
   let headTag = element('header');
   let artiTag = element('article');
-  artiTag.setAttribute('width', articleWidth(maxWidth));
   sectTag.appendChild(headTag);
   sectTag.appendChild(artiTag);
 
@@ -100,7 +99,6 @@ function displayUnwork(target,source) {
     let headTag = element('header');
     sectTag.appendChild(headTag);
     let artiTag = element('article');
-    artiTag.setAttribute('width', articleWidth(maxWidth));
     sectTag.appendChild(artiTag);
     let footTag = element('footer');
     sectTag.appendChild(footTag);
@@ -144,7 +142,6 @@ function displayPapers(target,source) {
     let headTag = element('header');
     sectTag.appendChild(headTag);
     let artiTag = element('article');
-    artiTag.setAttribute('width', articleWidth(maxWidth));
     sectTag.appendChild(artiTag);
     let footTag = element('footer');
     sectTag.appendChild(footTag);
@@ -178,7 +175,6 @@ function displayEvents(source) {
     let headTag = element('header');
     sectTag.appendChild(headTag);
     let artiTag = element('article');
-    artiTag.setAttribute('width', articleWidth(maxWidth));
     sectTag.appendChild(artiTag);
     let footTag = element('footer');
     sectTag.appendChild(footTag);
@@ -213,7 +209,6 @@ function displayPeople(source) {
     let headTag = element('header');
     sectTag.appendChild(headTag);
     let artiTag = element('article');
-    artiTag.setAttribute('width', articleWidth(maxWidth));
     sectTag.appendChild(artiTag);
     let footTag = element('footer');
     sectTag.appendChild(footTag);
