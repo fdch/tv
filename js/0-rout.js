@@ -194,7 +194,7 @@ function shuffleArray(array) {
 }
 function getSubmit(target) {
   var exists;
-  var page = "\""+formLinks[target]+"\"";
+  var page = formLinks[target];
   if (!exists) var n = window.open("", "asdfyj", submit[4]);
   else n.focus();
   if (n != null) exists = 1;
