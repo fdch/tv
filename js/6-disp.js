@@ -204,8 +204,6 @@ function displayPeople(target,source) {
     let time = allPeople[x]["aPTime"];
     let webs = allPeople[x]["aPWebs"];
 
-    let name = titl + " " + last;
-
     let sectTag = element('section','', x);
     target.appendChild(sectTag);
 
@@ -218,13 +216,11 @@ function displayPeople(target,source) {
 
     switch (last) {
       case "Ensemble":
-
-        break;
       case "Organization":
-
+        var name = titl;
         break
       default:
-
+        var name = titl + " " + last;
         break;
     }
 
