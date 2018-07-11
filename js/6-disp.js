@@ -1,7 +1,9 @@
 function display(x) {
+  main = mainTag;
 
-  window.alert(mainTag.nodeValue);
-  removeChilds(mainTag);
+  window.alert(main.nodeValue);
+  
+  removeChilds(main);
 
   iframeSrc.value = "";
   
@@ -12,11 +14,11 @@ function display(x) {
   var htitleTag = h(2,x,formMenu[x]);
   headerTag.appendChild(htitleTag);
 
-  mainTag.appendChild(headerTag);
+  main.appendChild(headerTag);
   
 
   var articlTag = element('article', x);
-  mainTag.appendChild(articlTag);
+  main.appendChild(articlTag);
   
   
 
