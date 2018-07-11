@@ -112,7 +112,7 @@ function displayUnworks(target,source) {
     let perfor = h(5,perfMessage);
     var aaa = [progra,perfor];
 
-    if (iurl) aaa.push(img(iurl, articleWidth(maxWidth),title);
+    if (iurl) aaa.push(img(iurl, articleWidth(maxWidth),title));
     if (aurl) aaa.push(element('button','Audio',x+'-aurl',"windo.open(\'"+aurl+"\',\'_top\');"));
     if (vurl) aaa.push(element('button','Video',x+'-vurl',"windo.open(\'"+vurl+"\',\'_top\');"));
     if (surl) aaa.push(element('button','Score',x+'-surl',"windo.open(\'"+surl+"\',\'_top\');"));
