@@ -79,10 +79,11 @@ function loadAll(sheets) {
       allPeople[nPid]["aPSurn"] = e.gsx$surname.$t;
       allPeople[nPid]["aPWebs"] = e.gsx$website.$t;
     }
+    window.alert(Object.keys(allPeople));
   });
   loading = 0;
   loaded = 1; //set it as loaded if it is loaded asynchronously
-  window.alert(Object.keys(allPeople));
+  
   return 1; //actually not checking if stuf loaded...
 }
 
