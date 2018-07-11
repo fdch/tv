@@ -17,7 +17,7 @@ $(function(){
   footerTag.setAttribute('style', 'display:none');  
 
   var h1Tag = document.getElementsByTagName('h1')[0];
-  h1Tag.setAttribute('onclick','window.open(\'url\', \'_top\');');
+  h1Tag.setAttribute('onclick',"window.open(\'"+url+"\', \'_top\');");
   
   makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
   var rotImgTag = makeRot(rotImg, bodyTag);
