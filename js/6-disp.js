@@ -108,7 +108,7 @@ function displayUnwork(target,source) {
     headTag.appendChild(htitle);
     headTag.appendChild(hstitl);
 
-    var perfMessage = "Premiered by "+perf+" on "+date.toDateString()+", in "+loca;
+    var perfMessage = "Premiered by "+perf+" on "+date.toDateString()+", at "+loca;
 
     let progra = element('p',prog);
     let perfor = h(5,perfMessage);
