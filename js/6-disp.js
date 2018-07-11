@@ -119,6 +119,7 @@ function displayUnworks(target,source) {
       
     let timest = element('h6',time);
     footTag.appendChild(timest);
+  }
 }
 function displayPapers(target,source) {
   for (var i in source) {
