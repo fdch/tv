@@ -148,7 +148,7 @@ function displayPapers(target,source) {
     let htitle = h(3,titl,"windo.open(\'"+link+"\',\'_top\'");
     headTag.appendChild(htitle);
 
-    let desrip = element('p',desc);
+    let descrip = element('p',desc);
     artiTag.appendChild(descrip);
 
     let footer = element('p',publ);
