@@ -5,10 +5,11 @@ function loadAll(sheets) {
     var f, e, i, entry;
     f = JSON.parse(response);
     entry = f.feed.entry;
+    allUnworks={};
     for (i in entry) {
       e = entry[i];
       var title = e.gsx$title.$t;
-      var nwid  = "id-"+makeID(title);
+      var nwid  = String("id-"+makeID(title));
       allUnworks[nwid]={};
       allUnworks[nwid]["awTitl"] = title;
       allUnworks[nwid]["awTime"] = e.gsx$timestamp.$t;
@@ -30,10 +31,11 @@ function loadAll(sheets) {
     var f, e, i, entry;
     f = JSON.parse(response);
     entry = f.feed.entry; 
+    allPapers={};
     for (i in entry) {
       e = entry[i];
       var title = e.gsx$title.$t;
-      var npid = "id-"+makeID(title);
+      var npid = String("id-"+makeID(title));
       allPapers[npid]={};
       allPapers[npid]["apTitl"] = title;
       allPapers[npid]["apTime"] = e.gsx$timestamp.$t;
@@ -48,10 +50,11 @@ function loadAll(sheets) {
     var f, e, i, entry;
     f = JSON.parse(response);
     entry = f.feed.entry;
+    allEvents={};
     for (i in entry) {
       e = entry[i];
       var title = e.gsx$what.$t;
-      var neid = "id-"+makeID(title);
+      var neid = String("id-"+makeID(title));
       allEvents[neid]={};
       allEvents[neid]["aeWhat"] = title;
       allEvents[neid]["aeTime"] = e.gsx$timestamp.$t;
@@ -65,10 +68,11 @@ function loadAll(sheets) {
     var f, e, i, entry;
     f = JSON.parse(response);
     entry = f.feed.entry;
+    allPeople={};
     for (i in entry) {
       e = entry[i];
       var name = e.gsx$name.$t;
-      var nPid = "id-"+makeID(name);
+      var nPid = String("id-"+makeID(name));
       allPeople[nPid]={};
       allPeople[nPid]["aPName"] = name;
       allPeople[nPid]["aPTime"] = e.gsx$timestamp.$t;
