@@ -25,11 +25,6 @@ function display(x) {
     default:
     break;
   }
-  var artWidth = articleWidth(maxWidth);
-  var allArticles = document.getElementsByTagName('article');
-  for (let i in allArticles){
-    allArticles[i].setAttribute('width', artWidth);
-  }
 }
 function resetDisplay(x){
   let submitX = "getSubmit(\'"+x+"\');";
@@ -41,7 +36,7 @@ function resetDisplay(x){
   var headerTag = element('header');
   let htitleTag = h(2, x, submitX);
   headerTag.appendChild(htitleTag);
-  
+
   if('unwork'===x) {
     var formTag = element('form',"workFilters");
     makeDropdowns("category", formTag, getUniqueCategories(allCategories));
@@ -53,6 +48,7 @@ function resetDisplay(x){
   //the article
   var articlTag = element('article','', x);
   mainTag.appendChild(articlTag);
+  articlTag.setAttribute('width', articleWidth(maxWidth));
   return articlTag;
 }
 function displayBio(target) {
@@ -61,6 +57,7 @@ function displayBio(target) {
 
   let headTag = element('header');
   let artiTag = element('article');
+  artiTag.setAttribute('width', articleWidth(maxWidth));
   sectTag.appendChild(headTag);
   sectTag.appendChild(artiTag);
 
@@ -102,6 +99,7 @@ function displayUnworks(target,source) {
     let headTag = element('header');
     sectTag.appendChild(headTag);
     let artiTag = element('article');
+    artiTag.setAttribute('width', articleWidth(maxWidth));
     sectTag.appendChild(artiTag);
     let footTag = element('footer');
     sectTag.appendChild(footTag);
@@ -142,6 +140,7 @@ function displayPapers(target,source) {
     let headTag = element('header');
     sectTag.appendChild(headTag);
     let artiTag = element('article');
+    artiTag.setAttribute('width', articleWidth(maxWidth));
     sectTag.appendChild(artiTag);
     let footTag = element('footer');
     sectTag.appendChild(footTag);
@@ -174,6 +173,7 @@ function displayEvents(source) {
     let headTag = element('header');
     sectTag.appendChild(headTag);
     let artiTag = element('article');
+    artiTag.setAttribute('width', articleWidth(maxWidth));
     sectTag.appendChild(artiTag);
     let footTag = element('footer');
     sectTag.appendChild(footTag);
@@ -184,7 +184,7 @@ function displayEvents(source) {
     var aaa = [htitle,hsubti,hssubt];
     for (let j in aaa) headTag.appendChild(aaa[j]);
     
-    let desrip = element('p',desc);
+    let descrip = element('p',desc);
     artiTag.appendChild(descrip);
 
     let footer = element('h6',time);
@@ -207,6 +207,7 @@ function displayPeople(source) {
     let headTag = element('header');
     sectTag.appendChild(headTag);
     let artiTag = element('article');
+    artiTag.setAttribute('width', articleWidth(maxWidth));
     sectTag.appendChild(artiTag);
     let footTag = element('footer');
     sectTag.appendChild(footTag);
