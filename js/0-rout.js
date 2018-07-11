@@ -184,7 +184,7 @@ function getValue(x) {
       }
       break;
     case "category":
-      var classes = document.getElementsByClassname(valu);
+      var classes = document.getElementsByClassName(valu);
       for (let i in allWorkId)
         document.getElementById(allWorkId[i]).setAttribute('style', 'display:none');
       for (let i in classes)
