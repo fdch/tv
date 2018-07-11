@@ -161,7 +161,7 @@ function displayPapers(target,source) {
     for (let j in aaa) {footTag.appendChild(aaa[j]);}
   }
 }
-function displayEvents(source) {
+function displayEvents(target,source) {
   var keys = Object.keys(source);
   for (var i in keys) {
     var x = keys[i];
@@ -170,7 +170,7 @@ function displayEvents(source) {
     var when = allEvents[x]["aeWhen"];
     var wher = allEvents[x]["aeWher"];
     var time = allEvents[x]["aeTime"];
-    console.log(x + ": "+ titl + " "+ desc + " "+ when + " "+ wher + " "+ time);
+    // console.log(x + ": "+ titl + " "+ desc + " "+ when + " "+ wher + " "+ time);
 
     let sectTag = element('section','', x);
     target.appendChild(sectTag);
@@ -195,7 +195,7 @@ function displayEvents(source) {
     footTag.appendChild(footer);
   }
 }
-function displayPeople(source) {
+function displayPeople(target,source) {
   var keys = Object.keys(source);
   for (var i in keys) {
     let x = keys[i];
