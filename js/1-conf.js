@@ -47,10 +47,10 @@ var subtitle = "Fede Cámara Halac";
 var bioImage = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/15032050_10211430901748916_6498585033629064846_n.jpg?_nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
 var unclink = "http://artes.unc.edu.ar/";
 var nyulink = "http://gsas.nyu.edu/";
-var unc = linkify("La Universidad Nacional de Córdoba (Argentina)",unclink,1);
+var unc = "La Universidad Nacional de Córdoba (Argentina)";
 var nyuTitle = "Music Composition & Theory";
 var uncTitle = "Licenciatura en Composición Musical";
-var nyu = linkify("New York University (GSAS)",nyulink,1)
+var nyu = "New York University (GSAS)";
 var advisors = ["Jaime Oliver La Rosa","Elizabeth Hoffman"];
 var currently = ["PhD Candidate","Candidato de PhD"];
 var tesis = ["Database Multimedia Composition","Composición Multimedial con Base de Datos"]
