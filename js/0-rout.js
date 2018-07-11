@@ -124,12 +124,8 @@ function randomColor(preset, target){
   var darky = "rgb("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+")";
   var menuy = "rgba("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+",0.3)";
 
-  var targetAtt = document.createAttribute('style');
-  targetAtt.value = "background-color:" + darky +"; color:"+light+";";
-  target[0].setAttributeNode(targetAtt);
-
-  targetAtt.value = "background-color:" + menuy +";";
-  target[1].setAttributeNode(targetAtt);
+  target[0].setAttribute('style', "background-color:" + darky +"; color:"+light+";");
+  target[1].setAttribute('style', "background-color:" + menuy +";");
 
 }
 
