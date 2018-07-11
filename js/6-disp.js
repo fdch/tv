@@ -152,11 +152,12 @@ function displayPapers(target,source) {
     let descrip = element('p',desc);
     artiTag.appendChild(descrip);
 
-    let footer = element('p',publ);
-    let downlo = anchor(down,title);
-    let timest = element('h6',time);
-    var aaa = [footer,downlo,timest];
-    for (let j in aaa) footTag.appendChild(aaa[j]);
+    var aaa = [];
+    aaa.push(element('h6',time));
+    if(publ) aaa.push(element('p',publ));
+    if(down) aaa.push(anchor(down,titl));
+             
+    for (let j in aaa) {footTag.appendChild(aaa[j]);}
   }
 }
 function displayEvents(source) {
@@ -169,7 +170,7 @@ function displayEvents(source) {
     var wher = allEvents[x]["aeWher"];
     var time = allEvents[x]["aeTime"];
     console.log(x + ": "+ titl + " "+ desc + " "+ when + " "+ wher + " "+ time);
-    
+
     let sectTag = element('section','', x);
     target.appendChild(sectTag);
 
