@@ -14,7 +14,7 @@ function display(x) {
   main.appendChild(headerTag);
   
 
-  var articlTag = element('article', x);
+  var articlTag = element('article','', x);
   main.appendChild(articlTag);
   
   
