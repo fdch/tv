@@ -77,19 +77,19 @@ function displayBiogra(target) {
 function displayUnwork(target,source) {
   for (var i in source) {
     let x = source[i];
-    let titl = allUnworks[x]["awTitl"]; ////////////
-    let time = allUnworks[x]["awTime"];
-    let date = allUnworks[x]["awDate"]; ////////////
-    let perf = allUnworks[x]["awPerf"]; ////////////
-    let cate = allUnworks[x]["awCate"]; ////////////
-    let desc = allUnworks[x]["awDesc"]; ////////////
-    let prog = allUnworks[x]["awProg"]; ////////////
-    let iurl = allUnworks[x]["awIurl"]; ////////////
-    let vurl = allUnworks[x]["awVurl"]; ////////////
-    let aurl = allUnworks[x]["awAurl"]; ////////////
-    let surl = allUnworks[x]["awSurl"]; ////////////
-    let loca = allUnworks[x]["awLoca"]; ////////////
-    let dura = allUnworks[x]["awDura"]; 
+    let titl = allUnwork[x]["awTitl"]; ////////////
+    let time = allUnwork[x]["awTime"];
+    let date = allUnwork[x]["awDate"]; ////////////
+    let perf = allUnwork[x]["awPerf"]; ////////////
+    let cate = allUnwork[x]["awCate"]; ////////////
+    let desc = allUnwork[x]["awDesc"]; ////////////
+    let prog = allUnwork[x]["awProg"]; ////////////
+    let iurl = allUnwork[x]["awIurl"]; ////////////
+    let vurl = allUnwork[x]["awVurl"]; ////////////
+    let aurl = allUnwork[x]["awAurl"]; ////////////
+    let surl = allUnwork[x]["awSurl"]; ////////////
+    let loca = allUnwork[x]["awLoca"]; ////////////
+    let dura = allUnwork[x]["awDura"]; 
 
     let sectTag = element('section','', x);
     target.appendChild(sectTag);
