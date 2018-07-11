@@ -29,7 +29,7 @@ function loadAll(sheets) {
 
       allCategories.push(categ);
       allTitles.push(title);
-      allWorkId.puth(nwid);
+      allWorkId.push(nwid);
     }
     uniqueCategories = getUniqueCategories(allCategories);
   });
