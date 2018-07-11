@@ -237,10 +237,10 @@ var contactMessage = [
  "</br></br>",
  tag("span","And... I have some")+tag("b","<span "+onclickify("loader","games")+">fun</span>")+tag("span","every now and then..."),
  "</br></br></br></br>",
- formMenu[allCVsections[1]],
- formMenu[allCVsections[2]],
- formMenu[allCVsections[4]],
- formMenu[allCVsections[5]],
+ // formMenu[allCVsections[1]],
+ // formMenu[allCVsections[2]],
+ // formMenu[allCVsections[4]],
+ // formMenu[allCVsections[5]],
 ]
 
 ///make this better:
