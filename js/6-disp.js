@@ -11,16 +11,16 @@ function display(x) {
       displayBiogra(article);
       break;
     case "unwork":
-      displayUnwork(article,Object.keys(allUnwork));
+      displayUnwork(article,allUnwork);
       break;
     case "papers":
-      displayPapers(article,Object.keys(allPapers));
+      displayPapers(article,allPapers);
       break;
     case "events":
-      displayEvents(article,Object.keys(allEvents));
+      displayEvents(article,allEvents);
       break;
     case "people":
-      displayPeople(article,Object.keys(allPeople));
+      displayPeople(article,allPeople);
       break;
     default:
     break;
@@ -75,8 +75,9 @@ function displayBiogra(target) {
   }
 }
 function displayUnwork(target,source) {
-  for (var i in source) {
-    let x = source[i];
+  var keys = Object.keys(source);
+  for (var i in keys) {
+    let x = keys[i];
     let titl = allUnwork[x]["awTitl"]; ////////////
     let time = allUnwork[x]["awTime"];
     let date = allUnwork[x]["awDate"]; ////////////
@@ -125,8 +126,9 @@ function displayUnwork(target,source) {
   }
 }
 function displayPapers(target,source) {
-  for (var i in source) {
-    let x = source[i];
+  var keys = Object.keys(source);
+  for (var i in keys) {
+    let x = keys[i];
     let titl = allPapers[x]["apTitl"];
     let desc = allPapers[x]["apDesc"];
     let publ = allPapers[x]["apPubl"];
@@ -159,8 +161,9 @@ function displayPapers(target,source) {
   }
 }
 function displayEvents(source) {
-  for (var i in source) {
-    var x = source[i];
+  var keys = Object.keys(source);
+  for (var i in keys) {
+    var x = keys[i];
     var titl = allEvents[x]["aeWhat"];
     var desc = allEvents[x]["aeDesc"];
     var when = allEvents[x]["aeWhen"];
@@ -192,12 +195,13 @@ function displayEvents(source) {
   }
 }
 function displayPeople(source) {
-  for (var i in source) {
-    let x = source[i];
+  var keys = Object.keys(source);
+  for (var i in keys) {
+    let x = keys[i];
     let titl = allPeople[x]["aPName"];
-    let last = allPeople[nPid]["aPSurn"];
+    let last = allPeople[x]["aPSurn"];
     let time = allPeople[x]["aPTime"];
-    let webs = allPeople[nPid]["aPWebs"];
+    let webs = allPeople[x]["aPWebs"];
 
     let name = titl + " " + last;
 
