@@ -115,9 +115,9 @@ function displayUnwork(target,source) {
     var aaa = [progra,perfor];
 
     if (iurl) aaa.push(img(iurl, articleWidth(maxWidth),title));
-    if (aurl) aaa.push(element('button','Audio',x+'-aurl',"windo.open(\'"+aurl+"\',\'_top\');"));
-    if (vurl) aaa.push(element('button','Video',x+'-vurl',"windo.open(\'"+vurl+"\',\'_top\');"));
-    if (surl) aaa.push(element('button','Score',x+'-surl',"windo.open(\'"+surl+"\',\'_top\');"));
+    if (aurl) aaa.push(element('button','Audio',x+'-aurl',"window.open(\'"+aurl+"\',\'_top\');"));
+    if (vurl) aaa.push(element('button','Video',x+'-vurl',"window.open(\'"+vurl+"\',\'_top\');"));
+    if (surl) aaa.push(element('button','Score',x+'-surl',"window.open(\'"+surl+"\',\'_top\');"));
 
     for (let i in aaa) artiTag.appendChild(aaa[i]);
      
@@ -146,7 +146,7 @@ function displayPapers(target,source) {
     let footTag = element('footer');
     sectTag.appendChild(footTag);
 
-    let htitle = h(3,titl,"windo.open(\'"+link+"\',\'_top\'");
+    let htitle = h(3,titl,"window.open(\'"+link+"\',\'_top\'");
     headTag.appendChild(htitle);
 
     let descrip = element('p',desc);
