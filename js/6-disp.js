@@ -1,8 +1,5 @@
 function display(x) {
   main = mainTag;
-
-  window.alert(main.nodeValue);
-  
   removeChilds(main);
 
   iframeSrc.value = "";
@@ -11,7 +8,7 @@ function display(x) {
   
 
   var headerTag = element('header');
-  var htitleTag = h(2,x,formMenu[x]);
+  var htitleTag = h(2,x,"Submit(\'formLink["+x+"]\');");
   headerTag.appendChild(htitleTag);
 
   main.appendChild(headerTag);

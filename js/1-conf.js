@@ -211,30 +211,19 @@ var forms = {
 	[webSections[2]]  :"ftCkAv9TzkzlgAi8dcJNofLYYWc_k8WtSet3SQTf2ObOuyMA",//
 }
 var formLinks = [
-	"\'"+formL[0]+forms[allCVsections[1]]+formL[1]+"\'",
-	"\'"+formL[0]+forms[allCVsections[2]]+formL[1]+"\'",
-	"\'"+formL[0]+forms[allCVsections[3]]+formL[1]+"\'",
-	"\'"+formL[0]+forms[allCVsections[4]]+formL[1]+"\'",
-	"\'"+formL[0]+forms[allCVsections[5]]+formL[1]+"\'",
-	"\'"+formL[0]+forms[webSections[0]]  +formL[1]+"\'",
-	"\'"+formL[0]+forms[webSections[1]]  +formL[1]+"\'",
-	"\'"+formL[0]+forms[webSections[2]]  +formL[1]+"\'"
-];
-
-var formMenu = {
-	[allCVsections[1]]:"getSubmit("+formLinks[0]+");",//0
-	[allCVsections[2]]:"getSubmit("+formLinks[1]+");",//1
-	[mitem[1]]        :"getSubmit("+formLinks[2]+");",//2
-	[allCVsections[4]]:"getSubmit("+formLinks[3]+");",//3
-	[allCVsections[5]]:"getSubmit("+formLinks[4]+");",//4
-	[mitem[4]]        :"getSubmit("+formLinks[5]+");",//5
-	[mitem[3]]        :"getSubmit("+formLinks[6]+");",//6
-	[mitem[2]]        :"getSubmit("+formLinks[7]+");", //7
+	[allCVsections[1]]"\'"+formL[0]+forms[allCVsections[1]]+formL[1]+"\'",
+	[allCVsections[2]]"\'"+formL[0]+forms[allCVsections[2]]+formL[1]+"\'",
+	[mitem[1]]        "\'"+formL[0]+forms[allCVsections[3]]+formL[1]+"\'",
+	[allCVsections[4]]"\'"+formL[0]+forms[allCVsections[4]]+formL[1]+"\'",
+	[allCVsections[5]]"\'"+formL[0]+forms[allCVsections[5]]+formL[1]+"\'",
+	[mitem[4]]        "\'"+formL[0]+forms[webSections[0]]  +formL[1]+"\'",
+	[mitem[3]]        "\'"+formL[0]+forms[webSections[1]]  +formL[1]+"\'",
+	[mitem[2]]        "\'"+formL[0]+forms[webSections[2]]  +formL[1]+"\'",
 	"games"           :"",
 	[mitem[5]]        :"",
 	[mitem[0]]        :""
-};
 
+];
 
 var contactMessage = [
  "<h3>contact</h3>",
