@@ -146,7 +146,7 @@ function displayPapers(target,source) {
     let footTag = element('footer');
     sectTag.appendChild(footTag);
 
-    let htitle = h(3,titl,"window.open(\'"+link+"\',\'_top\'");
+    let htitle = h(3,titl,"window.open(\'"+link+"\',\'_top\');");
     headTag.appendChild(htitle);
 
     let descrip = element('p',desc);
@@ -155,7 +155,7 @@ function displayPapers(target,source) {
     var aaa = [];
     aaa.push(element('h6',time));
     if(publ) aaa.push(element('p',publ));
-    if(down) aaa.push(anchor(down,titl));
+    if(down) aaa.push(anchor(down));
              
     for (let j in aaa) {footTag.appendChild(aaa[j]);}
   }
