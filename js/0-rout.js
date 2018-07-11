@@ -228,7 +228,7 @@ function anchor(link,text,target){
   tag.setAttribute('rel', 'nofollow');
   tag.setAttribute('target', target?target:"_top");
 
-  tag.appendChild(document.createTextNode(text));
+  tag.appendChild(document.createTextNode(text?text:''));
 
   return tag;
 }
