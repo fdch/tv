@@ -1,22 +1,30 @@
 function display(x) {
+
+  window.alert(mainTag.nodeValue);
   removeChilds(mainTag);
 
   iframeSrc.value = "";
   
   // $("main").css('background-image', 'url(' + loadingUrl + ')');
   
-  var h2 = h(2,x,formMenu[x]);
-  
-  mainTag.appendChild(h2);
 
-  var sectionTag = element('section', x);
-  mainTag.appendChild(sectionTag);
-  
-  var subheaderTag = element('header');
-  sectionTag.appendChild(subheaderTag);
+  var headerTag = element('header');
+  var htitleTag = h(2,x,formMenu[x]);
+  headerTag.appendChild(htitleTag);
 
-  var articleTag = element('article');
-  sectionTag.appendChild(articleTag);
+  mainTag.appendChild(headerTag);
+  
+
+  var articlTag = element('article', x);
+  mainTag.appendChild(articlTag);
+  
+  
+
+  
+
+
+
+  
 
   switch (x) {
     case "games" :
@@ -58,7 +66,7 @@ function display(x) {
         
       
 
-        articleTag.appendChild(sTag);
+        articlTag.appendChild(sTag);
         
 
         var hTag = document.createElement('header');
