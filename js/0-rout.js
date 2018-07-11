@@ -253,12 +253,12 @@ function element(tag,text,id) {
 
 function img(src,width,title ) {
   let tag = document.createElement('img');
-  let anchor = anchor(src);
+  let anc = anchor(src);
   tag.setAttribute('src', src);
   tag.setAttribute('width', width);
   tag.setAttribute('title', title?title:"Click me");
-  anchor.appendChild(tag);
-  return anchor;      
+  anc.appendChild(tag);
+  return anc;      
 }
 
 // var wid={};//the new empty object of objects
