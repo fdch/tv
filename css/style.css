@@ -84,7 +84,7 @@ select{
   padding:0.8%;
   margin-right:1%;
 }
-footer {
+/*footer {
   font-size:0.8em;
   padding:1%;
   position: fixed;
@@ -93,4 +93,4 @@ footer {
   width:auto;
   background-color:rgba(0,0,0,0.5);
   border-radius:3px;
-}
+}*/
