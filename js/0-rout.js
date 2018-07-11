@@ -37,6 +37,19 @@ function onclickify(func,src,arg) {
   
 }
 
+function linkify(x,y,blank){
+  var target;
+  var thelink;
+  if (blank) {
+    target="_blank";
+  } else {
+    target="_top";
+  }
+  var title = y.slice(0, 44)+"...";
+  thelink = "<a target=\""+target+"\" href=\""+y+"\" alt=\""+x+"\" title=\""+title+"\" rel=\"nofollow\"  >"+x+"</a>";
+  
+  return thelink;
+}
 function tag(tag,text){
   return "<"+tag+">"+text+"</"+tag+">";
 }
@@ -217,7 +230,7 @@ function anchor(link,text,target){
   tag.setAttribute('href',link);
   tag.setAttribute('alt' ,link.slice(0, 44)+ " ...");
   tag.setAttribute('rel', 'nofollow');
-  tag.setAttribute('target', target?:target:"_top");
+  tag.setAttribute('target', target?target:"_top");
 
   tag.appendChild(document.createTextNode(text));
 
