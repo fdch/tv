@@ -193,7 +193,7 @@ function getValue(x) {
     default:
       break;
   }
- // console.log(value);
+  console.log(titl + ": " + valu);
 }
 
 function unique(array) {
