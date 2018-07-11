@@ -40,7 +40,7 @@ function resetDisplay(x){
   if('unwork'===x) {
     var formTag = element('form','','workFilters');
     makeDropdowns('category', formTag, uniqueCategories);
-    makeDropdowns('title', formTag, allTitles);
+    //makeDropdowns('title', formTag, allTitles);
     headerTag.appendChild(formTag);
   }
 
