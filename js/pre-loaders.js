@@ -202,15 +202,6 @@ function getPeople() {
   });
 }
 
-function getBio() {
-    $("main article").append([
-      imgify(bioImage,articleWidth(maxWidth)),
-      tag("h4",linkify("curriculum vitae",cv,0)),
-      bioEnglish,
-      "<br/>",
-      bioSpanish
-    ]);
-}
 function getSubmit(target) {
   var exists;
   if (!exists) var n = window.open("", "WPEventForm", submit[4]);

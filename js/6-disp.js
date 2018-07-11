@@ -27,15 +27,32 @@ function display(x) {
 
   switch (x) {
     case "games" :
-
-      $("main").append(tag("article",gameType.join("<br/>")));
+      articlTag.innerHTML = gameType.join("<br/>");
       break;
     case "touch" :
-      $("main").append([tag("article",contactMessage.join(""))]);
+      articlTag.innerHTML = contactMessage.join("");
       break;
     case "bio":
-      $("main").append([tag("header",tag("h2","Bio")),tag("article","")]);
-      getBio();
+      let sectTag = element('section');
+      articlTag.appendChild(sectTag);
+
+      let headTag = element('header');
+      let artiTag = element('article');
+      sectTag.appendChild(headTag);
+      sectTag.appendChild(artiTag);
+
+      let curTag = h(3,"Curriculum Vitae", "window.open("+cv+", '_top');");      
+      headTag.appendChild(curTag);
+
+      let imgTag = img(bioImage, articleWidth(maxWidth),"Fede Camara Halac");
+      let spTag = element('p',bioSpanish,'bio-eng');
+      let enTag = element('p',bioEnglish'bio-spa');
+
+      let alltags = [imgTag,spTag,enTag];
+
+      for (let i in alltags){
+        artiTag.appendChild(alltags[i]);
+      }
       break;
     case "unwork":
       var formTag = makeForm("workFilters", subheaderTag);

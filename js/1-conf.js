@@ -56,15 +56,15 @@ var currently = ["PhD Candidate","Candidato de PhD"];
 var tesis = ["Database Multimedia Composition","Composición Multimedial con Base de Datos"]
 var bday = new Date(1988, 5, 8, 12, 1, 13, 128);
 
-var bioEnglish = "<p>"+subtitle+" studied "+uncTitle+" at "+unc+".\
+var bioEnglish = subtitle+" studied "+uncTitle+" at "+unc+".\
  He is a "+currently[0]+" in "+nyuTitle+" at "+nyu+" with "+advisors.join(" and ")+".\
  His research focuses on "+tesis[0]+".\
- His work is available at "+url+"</p>";
+ His work is available at "+url;
 
-var bioSpanish = "<p>"+subtitle+" estudió "+uncTitle+" en "+unc+".\
+var bioSpanish = subtitle+" estudió "+uncTitle+" en "+unc+".\
  Es "+currently[1]+" de "+nyuTitle+" en "+nyu+" con "+advisors.join(" y ")+".\
  Su investigación se centra en la "+tesis[1]+".\
- Su trabajo se encuentra disponible en "+url+"</p>";
+ Su trabajo se encuentra disponible en "+url;
 
 var personal = [
 "Full Name: Federico Nicolás Cámara Halac",
