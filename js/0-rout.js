@@ -233,12 +233,12 @@ function anchor(link,text,target){
   return tag;
 }
 
-function h(kind,text,onclick){
+function h(kind,text,onclick,title){
   let tag = document.createElement('h'+kind);
   let node = document.createTextNode(text?text:'');
   tag.setAttribute('onclick', onclick?onclick:'');
   tag.setAttribute('style', onclick?'cursor:pointer;':'');
-  tag.setAttribute('title', onclick?onclick:node.nodeValue);
+  tag.setAttribute('title', title?title:node.nodeValue);
   tag.appendChild(node);
   return tag;
 }

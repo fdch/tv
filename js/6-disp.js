@@ -41,7 +41,7 @@ function display(x) {
       sectTag.appendChild(headTag);
       sectTag.appendChild(artiTag);
 
-      let curTag = h(3,"Curriculum Vitae", "window.open("+cv+", '_top');");      
+      let curTag = h(3,"Curriculum Vitae", "window.open(\'"+cv+"\', '_top');");      
       headTag.appendChild(curTag);
 
       let imgTag = img(bioImage, articleWidth(maxWidth),"Fede Camara Halac");
