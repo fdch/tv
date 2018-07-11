@@ -170,7 +170,7 @@ function displayEvents(target,source) {
     var when = allEvents[x]["aeWhen"];
     var wher = allEvents[x]["aeWher"];
     var time = allEvents[x]["aeTime"];
-    // console.log(x + ": "+ titl + " "+ desc + " "+ when + " "+ wher + " "+ time);
+    console.log(x + ": "+ titl + " "+ desc + " "+ when + " "+ wher + " "+ time);
 
     let sectTag = element('section','', x);
     target.appendChild(sectTag);
