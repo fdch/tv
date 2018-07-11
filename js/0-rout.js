@@ -194,7 +194,7 @@ function shuffleArray(array) {
 }
 function getSubmit(target) {
   var exists;
-  if (!exists) var n = window.open("", "editForm", submit[4]);
+  if (!exists) var n = window.open("", "asdfyj", submit[4]);
   else n.focus();
   if (n != null) exists = 1;
   else exists = 0;
@@ -207,7 +207,7 @@ function getSubmit(target) {
       n.alert("\nSucess!\n\n"+submit[1]+"\n\n Karlheinz.");
       n.resizeTo(articleWidth(maxWidth), height());
       n.moveBy(articleWidth(maxWidth)*0.3, 0);
-      open(String(formLinks[String(target)]), "editForm");
+      window.open("\""+formLinks[target]+"\"", "asdfyj");
     }
   }
 }
