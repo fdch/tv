@@ -155,7 +155,7 @@ function displayPapers(target,source) {
     var aaa = [];
     aaa.push(element('h6',time));
     if(publ) aaa.push(element('p',publ));
-    if(down) aaa.push(anchor(down));
+    if(down) aaa.push(anchor(down,down));
              
     for (let j in aaa) {footTag.appendChild(aaa[j]);}
   }
