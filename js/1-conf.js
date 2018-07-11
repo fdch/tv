@@ -210,20 +210,20 @@ var forms = {
 	[webSections[1]]  :"cYgPrlbPXm3B9FDQghaaey8d5X6DpZhsOqMLP36DfrpRsOJA",//
 	[webSections[2]]  :"ftCkAv9TzkzlgAi8dcJNofLYYWc_k8WtSet3SQTf2ObOuyMA",//
 }
-var formLinks = [
-	[allCVsections[1]]"\'"+formL[0]+forms[allCVsections[1]]+formL[1]+"\'",
-	[allCVsections[2]]"\'"+formL[0]+forms[allCVsections[2]]+formL[1]+"\'",
-	[mitem[1]]        "\'"+formL[0]+forms[allCVsections[3]]+formL[1]+"\'",
-	[allCVsections[4]]"\'"+formL[0]+forms[allCVsections[4]]+formL[1]+"\'",
-	[allCVsections[5]]"\'"+formL[0]+forms[allCVsections[5]]+formL[1]+"\'",
-	[mitem[4]]        "\'"+formL[0]+forms[webSections[0]]  +formL[1]+"\'",
-	[mitem[3]]        "\'"+formL[0]+forms[webSections[1]]  +formL[1]+"\'",
-	[mitem[2]]        "\'"+formL[0]+forms[webSections[2]]  +formL[1]+"\'",
+var formLinks = {
+	[allCVsections[1]]:"\'"+formL[0]+forms[allCVsections[1]]+formL[1]+"\'",
+	[allCVsections[2]]:"\'"+formL[0]+forms[allCVsections[2]]+formL[1]+"\'",
+	[mitem[1]]        :"\'"+formL[0]+forms[allCVsections[3]]+formL[1]+"\'",
+	[allCVsections[4]]:"\'"+formL[0]+forms[allCVsections[4]]+formL[1]+"\'",
+	[allCVsections[5]]:"\'"+formL[0]+forms[allCVsections[5]]+formL[1]+"\'",
+	[mitem[4]]        :"\'"+formL[0]+forms[webSections[0]]  +formL[1]+"\'",
+	[mitem[3]]        :"\'"+formL[0]+forms[webSections[1]]  +formL[1]+"\'",
+	[mitem[2]]        :"\'"+formL[0]+forms[webSections[2]]  +formL[1]+"\'",
 	"games"           :"",
 	[mitem[5]]        :"",
 	[mitem[0]]        :""
 
-];
+};
 
 var contactMessage = [
  "<h3>contact</h3>",
