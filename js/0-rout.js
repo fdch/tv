@@ -205,7 +205,6 @@ function getSubmit(target) {
     {
       n.alert("\n"+submit[0]+"\n\n Try again.");
     } else {
-      n.alert("\nSucess!\n\n"+submit[1]+"\n\n Karlheinz.");
       n.resizeTo(articleWidth(maxWidth), height());
       n.moveBy(articleWidth(maxWidth)*0.3, 0);
       open(page, "asdfyj");
@@ -244,10 +243,11 @@ function h(kind,text,onclick,title){
   return tag;
 }
 
-function element(tag,text,id) {
+function element(tag,text,id,onclick) {
   let elem = document.createElement(tag);
   let node = document.createTextNode(text?text:'');
   elem.setAttribute('id',id?id:'');
+  elem.setAttribute('onclick',onclick?onclick:'');
   elem.appendChild(node);
   return elem;
 }

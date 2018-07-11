@@ -1,30 +1,182 @@
-function display(x) {
-  main = mainTag;
-  removeChilds(main);
-
+function resetDisplay(){
+  let submitX = "getSubmit(\'"+x+"\');";
+  //remove previous stuff
+  removeChilds(mainTag);
   iframeSrc.value = "";
-  
   // $("main").css('background-image', 'url(' + loadingUrl + ')');
-  
-
+  //the header
   var headerTag = element('header');
-  var htitleTag = h(2,x,"getSubmit(\'"+x+"\');");
+  let htitleTag = h(2, x, submitX);
   headerTag.appendChild(htitleTag);
-
-  main.appendChild(headerTag);
-  
-
+  mainTag.appendChild(headerTag);
+  //the article
   var articlTag = element('article','', x);
-  main.appendChild(articlTag);
-  
-  
+  mainTag.appendChild(articlTag);
+  return articlTag;
+}
+function displayBio(target) {
+  let sectTag = element('section');
+  target.appendChild(sectTag);
 
-  
+  let headTag = element('header');
+  let artiTag = element('article');
+  sectTag.appendChild(headTag);
+  sectTag.appendChild(artiTag);
 
+  let curTag = h(3,"Curriculum Vitae", "window.open(\'"+cv+"\', '_top');");      
+  headTag.appendChild(curTag);
 
+  let imgTag = img(bioImage, articleWidth(maxWidth),"Fede Camara Halac");
+  let spTag = element('p',bioSpanish,'bio-eng');
+  let enTag = element('p',bioEnglish,'bio-spa');
 
-  
+  let alltags = [imgTag,spTag,enTag];
 
+  for (let i in alltags){
+    artiTag.appendChild(alltags[i]);
+  }
+}
+function displayUnworks(target,source) {
+  for (var i in source) {
+    let x = source[i];
+    let titl = allUnworks[x]["awTitl"]; ////////////
+    let time = allUnworks[x]["awTime"];
+    let date = allUnworks[x]["awDate"]; ////////////
+    let perf = allUnworks[x]["awPerf"]; ////////////
+    let cate = allUnworks[x]["awCate"]; ////////////
+    let desc = allUnworks[x]["awDesc"]; ////////////
+    let prog = allUnworks[x]["awProg"]; ////////////
+    let iurl = allUnworks[x]["awIurl"]; ////////////
+    let vurl = allUnworks[x]["awVurl"]; ////////////
+    let aurl = allUnworks[x]["awAurl"]; ////////////
+    let surl = allUnworks[x]["awSurl"]; ////////////
+    let loca = allUnworks[x]["awLoca"]; ////////////
+    let dura = allUnworks[x]["awDura"]; 
+
+    let sectTag = element('section','', x);
+    target.appendChild(sectTag);
+
+    sectTag.setAttribute('class', cate.join(" "));
+
+    let headTag = element('header');
+    sectTag.appendChild(headTag);
+    let artiTag = element('article');
+    sectTag.appendChild(artiTag);
+    let footTag = element('footer');
+    sectTag.appendChild(footTag);
+
+    let htitle = h(3,titl);
+    let hstitl = h(4,desc);
+    headTag.appendChild(htitle);
+    headTag.appendChild(hstitl);
+
+    var perfMessage = "Premiered by "+perf+" on "+date.toDateString()+", in "+loca;
+
+    let progra = element('p',prog);
+    let perfor = h(5,perfMessage);
+    var aaa = [progra,perfor];
+
+    if (iurl) aaa.push(img(iurl, articleWidth(maxWidth),title);
+    if (aurl) aaa.push(element('button','Audio',x+'-aurl',"windo.open(\'"+aurl+"\',\'_top\');"));
+    if (vurl) aaa.push(element('button','Video',x+'-vurl',"windo.open(\'"+vurl+"\',\'_top\');"));
+    if (surl) aaa.push(element('button','Score',x+'-surl',"windo.open(\'"+surl+"\',\'_top\');"));
+      
+    let timest = element('h6',time);
+    footTag.appendChild(timest);
+}
+function displayPapers(target,source) {
+  for (var i in source) {
+    let x = source[i];
+    let titl = allPapers[x]["apTitl"];
+    let desc = allPapers[x]["apDesc"];
+    let publ = allPapers[x]["apPubl"];
+    let down = allPapers[x]["apDown"];
+    let time = allPapers[x]["apTime"];
+    let link = allPapers[x]["apLink"];
+
+    let sectTag = element('section','', x);
+    target.appendChild(sectTag);
+
+    let headTag = element('header');
+    sectTag.appendChild(headTag);
+    let artiTag = element('article');
+    sectTag.appendChild(artiTag);
+    let footTag = element('footer');
+    sectTag.appendChild(footTag);
+
+    let htitle = h(3,titl,"windo.open(\'"+link+"\',\'_top\'");
+    headTag.appendChild(htitle);
+
+    let desrip = element('p',desc);
+    artiTag.appendChild(descrip);
+
+    let footer = element('p',publ);
+    let downlo = anchor(down,title);
+    let timest = element('h6',time);
+    var aaa = [footer,downlo,timest];
+    for (let j in aaa) footTag.appendChild(aaa[j]);
+  }
+}
+function displayEvents(source) {
+  for (var i in source) {
+    var x = source[i];
+    var titl = allEvents[x]["aeWhat"];
+    var desc = allEvents[x]["aeDesc"];
+    var when = allEvents[x]["aeWhen"];
+    var wher = allEvents[x]["aeWher"];
+    var time = allEvents[x]["aeTime"];
+
+    let sectTag = element('section','', x);
+    target.appendChild(sectTag);
+
+    let headTag = element('header');
+    sectTag.appendChild(headTag);
+    let artiTag = element('article');
+    sectTag.appendChild(artiTag);
+    let footTag = element('footer');
+    sectTag.appendChild(footTag);
+
+    let htitle = h(3,titl);
+    let hsubti = h(4,wher);
+    let hssubt = h(5,when);
+    var aaa = [htitle,hsubti,hssubt];
+    for (let j in aaa) headTag.appendChild(aaa[j]);
+    
+    let desrip = element('p',desc);
+    artiTag.appendChild(descrip);
+
+    let footer = element('h6',time);
+    footTag.appendChild(footer);
+  }
+}
+function displayPeople(source) {
+  for (var i in source) {
+    let x = source[i];
+    let titl = allPeople[x]["aPName"];
+    let last = allPeople[nPid]["aPSurn"];
+    let time = allPeople[x]["aPTime"];
+    let webs = allPeople[nPid]["aPWebs"];
+
+    let name = titl + " " + last;
+
+    let sectTag = element('section','', x);
+    target.appendChild(sectTag);
+
+    let headTag = element('header');
+    sectTag.appendChild(headTag);
+    let artiTag = element('article');
+    sectTag.appendChild(artiTag);
+    let footTag = element('footer');
+    sectTag.appendChild(footTag);
+
+    let htitle = h(3,name,"window.open(\'"+webs+"\', \'_top\');");
+    headTag.appendChild(htitle);
+    let footer = element('h6',time);
+    footTag.appendChild(footer);
+   }
+}
+function display(x) {
+  articlTag = resetDisplay();
   switch (x) {
     case "games" :
       articlTag.innerHTML = gameType.join("<br/>");
@@ -33,176 +185,29 @@ function display(x) {
       articlTag.innerHTML = contactMessage.join("");
       break;
     case "bio":
-      let sectTag = element('section');
-      articlTag.appendChild(sectTag);
-
-      let headTag = element('header');
-      let artiTag = element('article');
-      sectTag.appendChild(headTag);
-      sectTag.appendChild(artiTag);
-
-      let curTag = h(3,"Curriculum Vitae", "window.open(\'"+cv+"\', '_top');");      
-      headTag.appendChild(curTag);
-
-      let imgTag = img(bioImage, articleWidth(maxWidth),"Fede Camara Halac");
-      let spTag = element('p',bioSpanish,'bio-eng');
-      let enTag = element('p',bioEnglish,'bio-spa');
-
-      let alltags = [imgTag,spTag,enTag];
-
-      for (let i in alltags){
-        artiTag.appendChild(alltags[i]);
-      }
+      displayBio(articlTag);
       break;
     case "unwork":
       var formTag = makeForm("workFilters", subheaderTag);
       makeDropdowns("category", formTag, getUniqueCategories(awCate));
       makeDropdowns("title", formTag, getUniqueCategories(awTitl));
-
-     // articleTag.appendChild()
+      displayUnworks(articlTag),Object.keys(allUnworks);
       break;
     case "papers":
-      var pKeys = Object.keys(allPapers);
-      for (var i in pKeys) {
-        var nPid = pKeys[i];
-
-
-        var titlTag = document.createTextNode(allPapers[nPid]["apTitl"]);
-        var descTag = document.createTextNode(allPapers[nPid]["apDesc"]);
-        var publTag = document.createTextNode(allPapers[nPid]["apPubl"]);
-        var downTag = document.createTextNode(allPapers[nPid]["apDown"]);
-        var timeTag = document.createTextNode(allPapers[nPid]["apTime"]);
-        var linkTag = anchor(allPapers[nPid]["apLink"],titlTag);
-        
-
-        var sTag = section(nPid);
-
-        var h3Tag = document.createElement('h3');
-        var pTag = document.createElement('p');
-        
-      
-
-        articlTag.appendChild(sTag);
-        
-
-        var hTag = document.createElement('header');
-        sTag.appendChild(hTag);
-        hTag.appendChild(h3Tag);
-
-        h3Tag.appendChild(linkTag);
-
-        var artTag = document.createElement('article');
-        sTag.appendchild(artTag);
-        artTag.appendChild(pTag);
-        pTag.appendChild(descTag);
-        var fTag = document.createElement('footer');
-        sTag.appendChild(fTag);
-        fTag.appendChild(apPubl);
-        fTag.appendChild(apDown);
-        fTag.appendChild(timeTag);
-      }
+      displayPapers(articlTag,Object.keys(allPapers));
       break;
     case "events":
-      var eKeys = Object.keys(allEvents);
-      for (var i in eKeys) {
-        var neid = eKeys[i];
-        var titlTag = document.createTextNode(allEvents[neid]["aeWhat"]);
-        var descTag = document.createTextNode(allEvents[neid]["aeDesc"]);
-        var whenTag = document.createTextNode(allEvents[neid]["aeWhen"]);
-        var wherTag = document.createTextNode(allEvents[neid]["aeWher"]);
-        var timeTag = document.createTextNode(allEvents[neid]["aeTime"]);
-        
-        // var aTag = document.createElement('a');
-        // var aHref = document.createAttribute('href');
-        // aHref.value = allEvents[pKeys[i]]["apLink"];
-        var h3Tag = document.createElement('h3');
-        var h4Tag = document.createElement('h4');
-        var h5Tag = document.createElement('h5');
-        var pTag = document.createElement('p');
-        
-        var sTag = document.createElement('section');
-        var sId = document.createAttribute('id');
-        sId.value = nPid; 
-        articleTag.appendChild(sTag);
-        sTag.setAttributeNode(sId);
-
-        var hTag = document.createElement('header');
-        sTag.appendChild(hTag);
-        hTag.appendChild(h3Tag);
-        hTag.appendChild(h4Tag);
-        hTag.appendChild(h5Tag);
-        h3Tag.appendChild(titlTag);
-        h4Tag.appendChild(whenTag);
-        h5Tag.appendChild(wherTag);
-        
-        // aTag.appendChild(h3Tag);
-        var artTag = document.createElement('article');
-        sTag.appendchild(artTag);
-        artTag.appendChild(pTag);
-        pTag.appendChild(descTag);
-        var fTag = document.createElement('footer');
-        sTag.appendChild(fTag);
-        // fTag.appendChild(apPubl);
-        // fTag.appendChild(apDown);
-        fTag.appendChild(timeTag);
-      }
+      displayEvents(articlTag,Object.keys(allEvents))
       break;
     case "people":
-      var pKeys = Object.keys(allPeople);
-      for (var i in pKeys) {
-        var nPid = pKeys[i];
-        var titlTag = document.createTextNode(allPeople[nPid]["aPName"]+" "+allPeople[nPid]["aPSurn"]);
-        // var descTag = document.createTextNode();
-        // var linkTag = document.createTextNode(allPeople[nPid]["aPWebs"]);
-        // var wherTag = document.createTextNode(allPeople[nPid]["aPWher"]);
-        var timeTag = document.createTextNode(allPeople[nPid]["aPTime"]);
-        
-        var aTag = document.createElement('a');
-        var aHref = document.createAttribute('href');
-        var aTarget = document.createAttribute('target');
-        aTarget.value = "_top";
-        var aRel = document.createAttribute('rel');
-        aRel.value = "nofollow";
-        aHref.value = allPeople[nPid]["aPWebs"];
-        // var h3Tag = document.createElement('h3');
-        // var h4Tag = document.createElement('h4');
-        // var h5Tag = document.createElement('h5');
-        var pTag = document.createElement('p');
-        
-        var sTag = document.createElement('section');
-        var sId = document.createAttribute('id');
-        sId.value = nPid; 
-        articleTag.appendChild(sTag);
-        sTag.setAttributeNode(sId);
-
-        // var hTag = document.createElement('header');
-        // sTag.appendChild(hTag);
-        // hTag.appendChild(h3Tag);
-        // hTag.appendChild(h4Tag);
-        // hTag.appendChild(h5Tag);
-        // h3Tag.appendChild(titlTag);
-        // h4Tag.appendChild(whenTag);
-        // h5Tag.appendChild(wherTag);
-        
-        // aTag.appendChild(h3Tag);
-        var artTag = document.createElement('article');
-        sTag.appendchild(artTag);
-        artTag.appendChild(pTag);
-        pTag.appendChild(aTag);
-        aTag.appendChild(titlTag)
-        aTag.setAttributeNode(aHref);
-        aTag.setAttributeNode(aTarget);
-        aTag.setAttributeNode(aRel);
-        var fTag = document.createElement('footer');
-        sTag.appendChild(fTag);
-        // fTag.appendChild(apPubl);
-        // fTag.appendChild(apDown);
-        fTag.appendChild(timeTag);
-      }
+      displayPeople(articleTag,Object.keys(allPeople));
       break;
     default:
     break;
   }
-  // $('article').width(articleWidth(maxWidth));
-  // $("main").css('background-image', 'url()');
+  var artWidth = articleWidth(maxWidth);
+  let allArticles = document.getElementsByTagName('article');
+  for (let i in allArticles){
+    allArticles[i].setAttribute('width', artWidth);
+  }
 }
