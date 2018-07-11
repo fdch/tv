@@ -1,26 +1,26 @@
 function display(x) {
-  articlTag = resetDisplay(x);
+  article = resetDisplay(x);
   switch (x) {
     case "games" :
-      articlTag.innerHTML = gameType.join("<br/>");
+      article.innerHTML = gameType.join("<br/>");
       break;
     case "touch" :
-      articlTag.innerHTML = contactMessage.join("");
+      article.innerHTML = contactMessage.join("");
       break;
     case "bio":
-      displayBio(articlTag);
+      displayBiogra(article);
       break;
     case "unwork":
-      displayUnworks(articlTag),Object.keys(allUnworks);
+      displayUnwork(article,Object.keys(allUnwork));
       break;
     case "papers":
-      displayPapers(articlTag,Object.keys(allPapers));
+      displayPapers(article,Object.keys(allPapers));
       break;
     case "events":
-      displayEvents(articlTag,Object.keys(allEvents))
+      displayEvents(article,Object.keys(allEvents));
       break;
     case "people":
-      displayPeople(articlTag,Object.keys(allPeople));
+      displayPeople(article,Object.keys(allPeople));
       break;
     default:
     break;
@@ -51,7 +51,7 @@ function resetDisplay(x){
   articlTag.setAttribute('width', articleWidth(maxWidth));
   return articlTag;
 }
-function displayBio(target) {
+function displayBiogra(target) {
   let sectTag = element('section');
   target.appendChild(sectTag);
 
@@ -74,7 +74,7 @@ function displayBio(target) {
     artiTag.appendChild(alltags[i]);
   }
 }
-function displayUnworks(target,source) {
+function displayUnwork(target,source) {
   for (var i in source) {
     let x = source[i];
     let titl = allUnworks[x]["awTitl"]; ////////////

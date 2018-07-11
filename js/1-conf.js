@@ -1,7 +1,11 @@
 var loaded=0, loading=0;
 
-var htmlTag, bodyTag, headerTag, navTag, mainTag, footerTag,iframeTag,iframeSrc;
-var allUnworks={}, allPapers={}, allEvents={}, allPeople={};
+var htmlTag, bodyTag, headerTag, navTag, mainTag, footerTag, iframeTag, iframeSrc;
+var allUnwork={};
+var allPapers={};
+var allEvents={};
+var allPeople={};
+
 var allCategories=[], allTitles=[];
 
 var w, h, t = 4333;
