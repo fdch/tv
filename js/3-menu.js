@@ -18,7 +18,7 @@ function makeMenu(input, target, funcName) {
   }
 
   var navClick = document.createAttribute('onclick');
-  navClick.value = "(function(){randomColor(color_preset['high'],[bodyTag,headerTag[0]]),funImage(rotImg);)()";
+  navClick.value = "(function(){randomColor(color_preset['high'],[bodyTag,headerTag[0]]),funImage(rotImg);})()";
   navTag.setAttributeNode(navClick);
 
   return navTag;
