@@ -153,9 +153,10 @@ function displayPapers(target,source) {
     artiTag.appendChild(descrip);
 
     var aaa = [];
-    aaa.push(element('h6',time));
+    
     if(publ) aaa.push(element('p',publ));
     if(down) aaa.push(anchor(down,down));
+    aaa.push(element('h6',time));
              
     for (let j in aaa) {footTag.appendChild(aaa[j]);}
   }
