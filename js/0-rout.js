@@ -194,6 +194,7 @@ function shuffleArray(array) {
 }
 function getSubmit(target) {
   var exists;
+  var page = "\""+formLinks[target]+"\"";
   if (!exists) var n = window.open("", "asdfyj", submit[4]);
   else n.focus();
   if (n != null) exists = 1;
@@ -207,7 +208,7 @@ function getSubmit(target) {
       n.alert("\nSucess!\n\n"+submit[1]+"\n\n Karlheinz.");
       n.resizeTo(articleWidth(maxWidth), height());
       n.moveBy(articleWidth(maxWidth)*0.3, 0);
-      window.open("\""+formLinks[target]+"\"", "asdfyj");
+      open(page, "asdfyj");
     }
   }
 }
