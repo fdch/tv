@@ -1,5 +1,5 @@
 function display(x) {
-  articlTag = resetDisplay();
+  articlTag = resetDisplay(x);
   switch (x) {
     case "games" :
       articlTag.innerHTML = gameType.join("<br/>");
@@ -34,7 +34,7 @@ function display(x) {
     allArticles[i].setAttribute('width', artWidth);
   }
 }
-function resetDisplay(){
+function resetDisplay(x){
   let submitX = "getSubmit(\'"+x+"\');";
   //remove previous stuff
   removeChilds(mainTag);
