@@ -1,3 +1,39 @@
+function display(x) {
+  articlTag = resetDisplay();
+  switch (x) {
+    case "games" :
+      articlTag.innerHTML = gameType.join("<br/>");
+      break;
+    case "touch" :
+      articlTag.innerHTML = contactMessage.join("");
+      break;
+    case "bio":
+      displayBio(articlTag);
+      break;
+    case "unwork":
+      var formTag = makeForm("workFilters", subheaderTag);
+      makeDropdowns("category", formTag, getUniqueCategories(awCate));
+      makeDropdowns("title", formTag, getUniqueCategories(awTitl));
+      displayUnworks(articlTag),Object.keys(allUnworks);
+      break;
+    case "papers":
+      displayPapers(articlTag,Object.keys(allPapers));
+      break;
+    case "events":
+      displayEvents(articlTag,Object.keys(allEvents))
+      break;
+    case "people":
+      displayPeople(articleTag,Object.keys(allPeople));
+      break;
+    default:
+    break;
+  }
+  var artWidth = articleWidth(maxWidth);
+  let allArticles = document.getElementsByTagName('article');
+  for (let i in allArticles){
+    allArticles[i].setAttribute('width', artWidth);
+  }
+}
 function resetDisplay(){
   let submitX = "getSubmit(\'"+x+"\');";
   //remove previous stuff
@@ -174,40 +210,4 @@ function displayPeople(source) {
     let footer = element('h6',time);
     footTag.appendChild(footer);
    }
-}
-function display(x) {
-  articlTag = resetDisplay();
-  switch (x) {
-    case "games" :
-      articlTag.innerHTML = gameType.join("<br/>");
-      break;
-    case "touch" :
-      articlTag.innerHTML = contactMessage.join("");
-      break;
-    case "bio":
-      displayBio(articlTag);
-      break;
-    case "unwork":
-      var formTag = makeForm("workFilters", subheaderTag);
-      makeDropdowns("category", formTag, getUniqueCategories(awCate));
-      makeDropdowns("title", formTag, getUniqueCategories(awTitl));
-      displayUnworks(articlTag),Object.keys(allUnworks);
-      break;
-    case "papers":
-      displayPapers(articlTag,Object.keys(allPapers));
-      break;
-    case "events":
-      displayEvents(articlTag,Object.keys(allEvents))
-      break;
-    case "people":
-      displayPeople(articleTag,Object.keys(allPeople));
-      break;
-    default:
-    break;
-  }
-  var artWidth = articleWidth(maxWidth);
-  let allArticles = document.getElementsByTagName('article');
-  for (let i in allArticles){
-    allArticles[i].setAttribute('width', artWidth);
-  }
 }
