@@ -170,7 +170,7 @@ function getUniqueCategories(x){
 }
 
 function getValue(x) {
-  var titl = x.title;
+  var titl = x.name;
   var valu = x.value;
   switch (titl) {
     case "title":
