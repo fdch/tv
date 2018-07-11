@@ -6,16 +6,18 @@ function loadAll(sheets) {
     f = JSON.parse(response);
     entry = f.feed.entry;
     allUnworks={};
+    allCategories=[], allTitles=[];
     for (i in entry) {
       e = entry[i];
       var title = e.gsx$title.$t;
+      var categ = e.gsx$category.$t;
       var nwid  = String("id-"+makeID(title));
       allUnworks[nwid]={};
       allUnworks[nwid]["awTitl"] = title;
       allUnworks[nwid]["awTime"] = e.gsx$timestamp.$t;
       allUnworks[nwid]["awDate"] = new Date(e.gsx$date.$t);
       allUnworks[nwid]["awPerf"] = e.gsx$performers.$t;
-      allUnworks[nwid]["awCate"] = e.gsx$category.$t;
+      allUnworks[nwid]["awCate"] = categ;
       allUnworks[nwid]["awDesc"] = e.gsx$description.$t;
       allUnworks[nwid]["awProg"] = e.gsx$programnotes.$t;
       allUnworks[nwid]["awIurl"] = e.gsx$imageurl.$t;
@@ -24,6 +26,9 @@ function loadAll(sheets) {
       allUnworks[nwid]["awSurl"] = e.gsx$scoreurl.$t;
       allUnworks[nwid]["awLoca"] = e.gsx$location.$t;
       allUnworks[nwid]["awDura"] = e.gsx$duration.$t;
+
+      allCategories.push(categ);
+      allTitles.push(title);
     }
   });
   //papers

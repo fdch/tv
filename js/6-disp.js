@@ -11,9 +11,6 @@ function display(x) {
       displayBio(articlTag);
       break;
     case "unwork":
-      var formTag = makeForm("workFilters", subheaderTag);
-      makeDropdowns("category", formTag, getUniqueCategories(awCate));
-      makeDropdowns("title", formTag, getUniqueCategories(awTitl));
       displayUnworks(articlTag),Object.keys(allUnworks);
       break;
     case "papers":
@@ -44,6 +41,14 @@ function resetDisplay(x){
   var headerTag = element('header');
   let htitleTag = h(2, x, submitX);
   headerTag.appendChild(htitleTag);
+  
+  if('unwork'===x) {
+    var formTag = element('form',"workFilters");
+    makeDropdowns("category", formTag, getUniqueCategories(allCategories));
+    makeDropdowns("title", formTag, getUniqueCategories(allTitles));
+    headerTag.appendChild(formTag);
+  }
+
   mainTag.appendChild(headerTag);
   //the article
   var articlTag = element('article','', x);

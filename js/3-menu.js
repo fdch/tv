@@ -92,61 +92,29 @@ function makeInput(input,target) {
 
 }
 
-
-function makeValue(input,target) {
-  var etext = input[0];
-  var element = input[1];
-  var attribute = input[2];
-
-  var elemTxt = document.createTextNode(etext);
-  var elemTag = document.createElement(element);
-  var elemAtt = document.createAttribute(attribute);
-  elemAtt.value = etext;
- 
-  target.appendChild(elemTag);
-  elemTag.setAttributeNode(elemAtt);
-  elemTag.appendChild(elemTxt);
-}
-
-function makeForm(input,target) {
-  var formTag = document.createElement('form');
-  var formAttId = document.createAttribute('id');
-  formAttId.value = input;
-  target.appendChild(formTag);
-  
-  formTag.setAttributeNode(formAttId);
-  return formTag;
-}
-
-function makeDropdowns(selectID,formTag,ucats) {
-  var labelTag = document.createElement('label');
-  var labelAtt = document.createAttribute('for');
-  labelAtt.value = selectID;
-
-  var labelText = document.createTextNode(selectID+": ");
-
-
-
-  var selectTag = document.createElement('select');
-  var selectAtt = document.createAttribute('id');
-  var selectNam = document.createAttribute('name');
-  selectNam.value = selectID;
-  selectAtt.value = selectID;
-  var selectClk = document.createAttribute('onclick');
-  selectClk.value = "getValue(this)";
-
-
-  formTag.appendChild(labelTag);
-  formTag.appendChild(selectTag);
-  selectTag.setAttributeNode(selectAtt);
-  selectTag.setAttributeNode(selectClk);
+function makeDropdowns(id,target,list) {
+  let labelTag = document.createElement('label');
+  labelTag.setAttribute('for',id);
+  let labelText = document.createTextNode(id+": ");
   labelTag.appendChild(labelText);
-  labelTag.setAttributeNode(labelAtt);
 
-  var thelist = shuffleArray(ucats);
-  jQuery.each(thelist, function(i,v){
-    makeValue([v,"option", "value"],selectTag);
-  });
+  let selectTag = document.createElement('select');
+  selectTag.setAttribute('id',id);
+  selectTag.setAttribute('name',id);
+  selectTag.setAttribute('onclick', 'getValue(this)');
+
+  var thelist = shuffleArray(list);
+  for (let i in thelist) {
+    //makeValue([thelist[i], 'option', 'value'],selectTag);
+    let val = thelist[i];
+    let elemTxt = document.createTextNode(val);
+    let elemTag = document.createElement('option');
+    elemTag.setAttribute('value', val);
+    elemTag.appendChild(elemTxt);
+    selectTag.appendChild(elemTag);
+  }
+  target.appendChild(labelTag);
+  target.appendChild(selectTag);
 }
 
 

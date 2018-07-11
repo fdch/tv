@@ -2,6 +2,7 @@ var loaded=0, loading=0;
 
 var htmlTag, bodyTag, headerTag, navTag, mainTag, footerTag,iframeTag,iframeSrc;
 var allUnworks={}, allPapers={}, allEvents={}, allPeople={};
+var allCategories=[], allTitles=[];
 
 var w, h, t = 4333;
 var mitem = ["bio", "unwork", "papers", "events", "people", "touch"];
