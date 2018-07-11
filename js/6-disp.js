@@ -29,7 +29,7 @@ function display(x) {
     break;
   }
   var artWidth = articleWidth(maxWidth);
-  let allArticles = document.getElementsByTagName('article');
+  var allArticles = document.getElementsByTagName('article');
   for (let i in allArticles){
     allArticles[i].setAttribute('width', artWidth);
   }
@@ -63,10 +63,10 @@ function displayBio(target) {
   headTag.appendChild(curTag);
 
   let imgTag = img(bioImage, articleWidth(maxWidth),"Fede Camara Halac");
-  let spTag = element('p',bioSpanish,'bio-eng');
-  let enTag = element('p',bioEnglish,'bio-spa');
+  let spTag = element('p',bioSpanish,'bio-spa');
+  let enTag = element('p',bioEnglish,'bio-eng');
 
-  let alltags = [imgTag,spTag,enTag];
+  let alltags = [imgTag,enTag,spTag];
 
   for (let i in alltags){
     artiTag.appendChild(alltags[i]);
