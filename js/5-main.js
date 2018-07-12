@@ -21,7 +21,7 @@ function main() {
   
   w = width(); h = height();
   
-  if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display");
+  if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display", headerTag[0].clientWidth*0.6);
   if(!iframeTag) iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
   if(!rotImgTag) rotImgTag = makeRot(rotImg, headerTag[0], headerTag[0].clientHeight*0.5);
   
