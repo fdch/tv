@@ -21,7 +21,7 @@ function main() {
   
   if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display");
   if(!iframeTag) iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
-  if(!rotImgTag) rotImgTag = makeRot(rotImg, bodyTag);
+  if(!rotImgTag) rotImgTag = makeRot(rotImg, headerTag[0]);
   
   randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
 

@@ -29,7 +29,7 @@ function makeRot(input, target){
   imgTag.setAttribute('style', input[3]);
   imgTag.setAttribute('onclick', "imgClicker(this);");
   
-  target.appendChild(imgTag);
+  target.insertAdjacentElement('afterbegin', imgTag);
 
   return imgTag;
 }
