@@ -103,8 +103,7 @@ function getContent(x, arr) {
   });
 }
 function randomVideo() {
-  var choose = Math.floor(Math.random() * featURL.length);
-  $("#backvideo").attr('src',featURL[choose]);
+  iframeSrc.setAttribute('src',featURL[Math.floor(Math.random()*featURL.length)]);
 }
 function pdRandom(range,offset){
   return Math.floor(Math.random() * range) + offset?offset:0;
@@ -192,8 +191,6 @@ function unique(array) {
 }
 //Randomize array element order in-place. Using Durstenfeld shuffle algorithm
 function shuffleArray(array) {
-
-
     for (var i = array.length - 1; i > 0; i--) {
         var j = Math.floor(Math.random() * (i + 1));
         var temp = array[i];
@@ -222,7 +219,7 @@ function getSubmit(target) {
   }
 }
 function randomFont(target) {
-  target.setAttribute('style','font-family:'+fonts[pdRandom(fonts.length)]);
+  target.setAttribute('style',"font-family:"+fonts[pdRandom(fonts.length)]+";");
 }
 function anchor(link,text,target){
   let tag = document.createElement('a');
