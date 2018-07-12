@@ -5,6 +5,11 @@ var allUnwork={};
 var allPapers={};
 var allEvents={};
 var allPeople={};
+var allCVUnwork={};
+var allCVPerfor={};
+var allCVAwards={};
+var allCVCollab={};
+var allCVTeachi={};
 
 var allCategories=[], allTitles=[],allWorkId=[],uniqueCategories=[];
 
