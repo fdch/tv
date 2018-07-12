@@ -282,6 +282,7 @@ function displayCVTeachi(target,source){
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
+  window.alert(keys);
   for (var i in keys) {
     var x = keys[i];
     var time = source[x]["aTTime"];
