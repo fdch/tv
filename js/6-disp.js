@@ -1,5 +1,5 @@
 function display(x) {
-  currpage = mitems.findIndex(mtiem => mitem === x)+1;
+  currpage = mitem.findIndex(item => item === x)+1;
   console.log(currpage);
   article = resetDisplay(x);
   switch (x) {
