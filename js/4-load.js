@@ -109,7 +109,7 @@ function loadAll(sheets) {
       allTeachi[nTid]["aTTerm"] = e.gsx$term.$t;
       allTeachi[nTid]["aTYear"] = year;
     }
-     window.alert(Object.keys(allTeachi));
+     // window.alert(Object.keys(allTeachi));
   });
   //awards
   loadJSON(sheets[5], function(response) {
@@ -131,6 +131,7 @@ function loadAll(sheets) {
       allAwards[nAid]["aADesc"] = e.gsx$description.$t;
       allAwards[nAid]["aAUrll"] = e.gsx$url.$t;
     }
+    window.alert(Object.keys(allAwards));
   });
   //collabs
   loadJSON(sheets[6], function(response) {
