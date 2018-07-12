@@ -225,7 +225,7 @@ function anchor(link,text,target){
   let tag = document.createElement('a');
 
   tag.setAttribute('href',link);
-  tag.setAttribute('alt' ,link.slice(0, 44)+ " ...");
+  tag.setAttribute('alt' ,link.length>44?link.slice(0, 44)+ " ...":link);
   tag.setAttribute('rel', 'nofollow');
   tag.setAttribute('target', target?target:"_top");
 
