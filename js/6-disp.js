@@ -310,6 +310,7 @@ function displayCVTeachi(target,source){
 
     let footer = element('h6',time);
     footTag.appendChild(footer);
+    window.alert(job);
   }
 }
 function displayCVAwards(target,source){
