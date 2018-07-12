@@ -26,6 +26,7 @@ function display(x) {
       break;
     case "init"  :
       main();
+      iframeTag.setAttribute('src',featURL[pdRandom(featURL.length)]);
       break
     default:
     break;
