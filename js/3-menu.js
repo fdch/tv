@@ -6,7 +6,7 @@ function makeMenu(input, target, funcName) {
     let item = input[i].replace(/_/g," ").replace(/-/g," ");
     let btn = document.createElement('button'); 
     btn.setAttribute('type', 'button');
-    btn.setAttribute('title',x);
+    btn.setAttribute('title', input[i]);
     if(1==i) btn.setAttribute('autofocus','');
     btn.setAttribute('onclick', funcName+"(\'"+input[i]+"\')" );
     let btnTxt = document.createTextNode(item);
