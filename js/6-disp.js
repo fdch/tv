@@ -243,45 +243,38 @@ function displayPeople(target,source) {
     // footTag.appendChild(footer);
    }
 }
-function displayCV(x, target) {
-  switch (x) {
-    case "Personal" :
-      target.innerHTML = "<ul>"+tag("li",personal.join("</li><li>"))+"</li></ul>";
-      break;
-    case "Teachings" :
-      displayCVTeachi(target,allTeachi);
-      break;
-    case "Awards"   :
-      displayCVAwards(target,allAwards);
-      break;
-    case "Unworks":
-      displayCVUnwork(target,allUnwork);
-      break;
-    case "Collaborations":
-      displayCVCollab(target,allCollab);
-      break;
-    case "Performances":
-      displayCVPerfor(target,allPerfor);
-       break
-    default:
-    break;
-  }
-}
-function resetDisplayCV(x){
-  //remove previous stuff
-  removeChilds(mainTag);
-  //the header
+function displayCV(x) {
   var headerTag = element('header');
   let htitleTag = element("h2", x);
-  headerTag.appendChild(htitleTag);
-
   headerTag.appendChild(htitleTag);
   mainTag.appendChild(headerTag);
   //the article
   var articlTag = element('article','', x);
   mainTag.appendChild(articlTag);
   articlTag.setAttribute('style', "width:"+articleWidth(maxWidth)+"px;");
-  return articlTag;
+  switch (x) {
+    case "Personal" :
+      articlTag.innerHTML = "<ul>"+tag("li",personal.join("</li><li>"))+"</li></ul>";
+      break;
+    case "Teachings" :
+      displayCVTeachi(articlTag,allTeachi);
+      break;
+    case "Awards"   :
+      displayCVAwards(articlTag,allAwards);
+      break;
+    case "Unworks":
+      displayCVUnwork(articlTag,allUnwork);
+      break;
+    case "Collaborations":
+      displayCVCollab(articlTag,allCollab);
+      break;
+    case "Performances":
+      displayCVPerfor(articlTag,allPerfor);
+      break
+    default:
+      removeChilds(mainTag);
+    break;
+  }
 }
 function displayCVTeachi(target,source){
   var sectTag = element('section','',"teachings");

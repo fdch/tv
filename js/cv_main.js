@@ -1,5 +1,5 @@
 
-//////////////////////////////  /           ///////////
+/////////////////////////////////           ///////////
 //////////                       /         ///////////
 //////////                        /       ///////////
 //////////  this is the CV script  /     ///////////
@@ -18,7 +18,7 @@ function mainCV() {
   footerTag.setAttribute('style', 'display:none');  
 
   if(!h1titlTag) h1titlTag = document.getElementsByTagName('h1')[0];
-  h1titlTag.setAttribute('onclick',"display(\'cv\');");
+  h1titlTag.setAttribute('onclick',"displayCV(\'reset\');");
       
   randomColor(color_preset["mid"], [bodyTag, headerTag[0]] );
 
@@ -27,6 +27,5 @@ function mainCV() {
     if (!loaded) loaded = loadAll(allGS);
       else if (loaded) break; 
     }
-  var article = resetDisplayCV(x);
-  for (var i in allCVsections) displayCV(allCVsections[i], article);
+  for (var i in allCVsections) displayCV(allCVsections[i]);
 }
