@@ -273,6 +273,7 @@ function displayCV(x) {
       break
     default:
       removeChilds(mainTag);
+      for (var i in allCVsections) displayCV(allCVsections[i]);
     break;
   }
 }
