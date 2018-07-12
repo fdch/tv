@@ -23,48 +23,25 @@ function makeMenu(input, target, funcName) {
 
   return navTag;
 }
-
 function makeRot(input, target){ 
   var imgTag = document.createElement('img');
 
-  var imgSrc = document.createAttribute('src');
-  imgSrc.value = input[0];
-
-  var imgId = document.createAttribute('id');
-  imgId.value = input[4];
-
-  var imgWidth = document.createAttribute('width');
-  imgWidth.value = input[2];
-
-  var imgStyle = document.createAttribute('style');
-  imgStyle.value = input[3];
-
-  var imgClick = document.createAttribute('onclick');
-  imgClick.value = "imgClicker(this);";
-
-  var attributes = [imgSrc, imgWidth, imgStyle, imgClick, imgId];
-   
+  imgTag.setAttribute('src', input[0]);
+  imgTag.setAttribute('id', input[4]);
+  imgTag.setAttribute('width', input[2]);
+  imgTag.setAttribute('style', input[3]);
+  imgTag.setAttribute('onclick', "imgClicker(this);");
+  
   target.appendChild(imgTag);
-
-  for (var i in attributes) {
-    imgTag.setAttributeNode(attributes[i]);
-  }
 
   return imgTag;
 }
-
-function makeBackVideo(input, target, source) {
+function makeBackVideo(id, target, source) {
   iframeTag = document.createElement('iframe');
-  var iframeId = document.createAttribute('id');
-  iframeSrc = document.createAttribute('src');
-  iframeId.value = input;
-  iframeSrc.value = source;
-
+  iframeTag.setAttribute('id', input);
+  iframeTag.setAttribute('src', source);
   target.appendChild(iframeTag);
-  iframeTag.setAttributeNode(iframeId);
-  iframeTag.setAttributeNode(iframeSrc);
 }
-
 function makeInput(input,target) {
   //makeInput([uniqueID, checkbox], parentNode);
   var name = input[0];
@@ -89,9 +66,7 @@ function makeInput(input,target) {
   inputTag.setAttributeNode(inputId);
   labelTag.appendChild(labelText);
   labelTag.setAttributeNode(labelAtt);
-
 }
-
 function makeDropdowns(id,target,list) {
   let labelTag = document.createElement('label');
   labelTag.setAttribute('for',id);
@@ -116,5 +91,3 @@ function makeDropdowns(id,target,list) {
   target.appendChild(labelTag);
   target.appendChild(selectTag);
 }
-
-

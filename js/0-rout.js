@@ -11,9 +11,9 @@ var vis = function(x) {
   var y = document.getElementById(x);
   if (prev != null) prev.style.display = 'none';
   if (y != null) y.style.display = 'block', prev=y;
-};
+}
 
-function toggleIt(x){
+function toggleIt(x) {
     x.toggle();
 }
 
@@ -143,9 +143,9 @@ function funImage(input){
 }
 
 function imgClicker(x) {
-  randomVideo();
+  if (1>currpage) randomVideo();
   randomColor(color_preset["high"]);
-  funImage(x.id, rotImg);
+  funImage(x.id, rotImg);  
 }
 
 
@@ -235,11 +235,8 @@ function getSubmit(target) {
 }
 
 function randomFont(target) {
-  targetStyle = document.createAttribute('style');
-  targetStyle.value = "font-family:"+fonts[pdRandom(fonts.length)];
-  target.setAttributeNode(targetStyle);
+  target.setAttribute('style','font-family:'+fonts[pdRandom(fonts.length)]);
 }
-
 
 
 function anchor(link,text,target){
