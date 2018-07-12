@@ -47,7 +47,7 @@ function resetDisplay(x){
   var headerTag = element('header');
 
   let submitX = "getSubmit(\'"+x+"\');";
-  let htitleTag = h(2, x, submitX);
+  let htitleTag = element("h2", x,'', submitX);
   headerTag.appendChild(htitleTag);
 
   if('unwork'===x) {
@@ -73,7 +73,7 @@ function displayBiogra(target) {
   sectTag.appendChild(headTag);
   sectTag.appendChild(artiTag);
 
-  let curTag = h(3,"Curriculum Vitae", "window.open(\'"+cv+"\', '_top');");      
+  let curTag = element("h3","Curriculum Vitae",'', "window.open(\'"+cv+"\', '_top');");      
   headTag.appendChild(curTag);
 
   let imgTag = img(bioImage, articleWidth(maxWidth),"Fede Camara Halac");
@@ -116,15 +116,15 @@ function displayUnwork(target,source) {
     let footTag = element('footer');
     sectTag.appendChild(footTag);
 
-    let htitle = h(3,titl);
-    let hstitl = h(4,desc);
+    let htitle = element("h3",titl);
+    let hstitl = element("h4",desc);
     headTag.appendChild(htitle);
     headTag.appendChild(hstitl);
 
     var perfMessage = "Premiered by "+perf+" on "+date.toDateString()+", at "+loca;
 
     let progra = element('p',prog);
-    let perfor = h(5,perfMessage);
+    let perfor = element("h5",perfMessage);
     var aaa = [progra,perfor];
 
     if (iurl) aaa.push(img(iurl, articleWidth(maxWidth),titl));
@@ -159,7 +159,7 @@ function displayPapers(target,source) {
     let footTag = element('footer');
     sectTag.appendChild(footTag);
 
-    let htitle = h(3,titl,"window.open(\'"+link+"\',\'_top\');");
+    let htitle = element("h3",titl,'',"window.open(\'"+link+"\',\'_top\');");
     headTag.appendChild(htitle);
 
     let descrip = element('p',desc);
@@ -195,9 +195,9 @@ function displayEvents(target,source) {
     let footTag = element('footer');
     sectTag.appendChild(footTag);
 
-    let htitle = h(3,titl);
-    let hsubti = h(4,wher);
-    let hssubt = h(5,when);
+    let htitle = element("h3",titl);
+    let hsubti = element("h4",wher);
+    let hssubt = element("h5",when);
     var aaa = [htitle,hsubti,hssubt];
     for (let j in aaa) headTag.appendChild(aaa[j]);
     
@@ -237,7 +237,7 @@ function displayPeople(target,source) {
         break;
     }
 
-    let htitle = h(5,name,"window.open(\'"+webs+"\', \'_top\');");
+    let htitle = element("h5",name,'',"window.open(\'"+webs+"\', \'_top\');");
     headTag.appendChild(htitle);
     // let footer = element('h6',time);
     // footTag.appendChild(footer);

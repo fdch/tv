@@ -249,15 +249,6 @@ function anchor(link,text,target){
 
   return tag;
 }
-function h(kind,text,onclick,titl){
-  let tag = document.createElement('h'+kind);
-  let node = document.createTextNode(text?text:'');
-  tag.setAttribute('onclick', onclick?onclick:'');
-  tag.setAttribute('style', onclick?'cursor:pointer;':'');
-  tag.setAttribute('title', titl?titl:node.nodeValue);
-  tag.appendChild(node);
-  return tag;
-}
 function element(tag,text,id,onclick,width) {
   let elem = document.createElement(tag);
   let node = document.createTextNode(text?text:'');
