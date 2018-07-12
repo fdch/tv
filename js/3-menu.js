@@ -19,12 +19,12 @@ function makeMenu(input, target, funcName) {
 
   return navTag;
 }
-function makeRot(input, target, width){ 
+function makeRot(input, target){ 
   var imgTag = document.createElement('img');
 
   imgTag.setAttribute('src', input[0]);
   imgTag.setAttribute('id', input[3]);
-  imgTag.setAttribute('width', width);
+  imgTag.setAttribute('width', 30);
   imgTag.setAttribute('style', input[2]);
   imgTag.setAttribute('title', input[4]);
   imgTag.setAttribute('onclick', input[5]);
