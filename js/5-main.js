@@ -31,5 +31,5 @@ function main() {
   setInterval( function(){ funImage(rotImg) }, t);
 
   loadAll(allGS);
-  console.log(pdRandom(10));
+  // console.log(pdRandom(10));
 }
