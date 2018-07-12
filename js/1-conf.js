@@ -147,20 +147,17 @@ var sheetID = "1e5dh1sZX1QuFFioC-1ofcPIPhwU9i-lvUzOzn4_3SLQ/";
 var cvID = "1vViMWDsMRnbGUgP44XNDlQrLQ3MsdgO9W91mM4MxJtw/";
 var altjson = "/public/values?alt=json";
 
-
-var unworkGS = spreadsheets+sheetID+"1"+altjson;
-var eventsGS = spreadsheets+sheetID+"2"+altjson;
-var peopleGS = spreadsheets+sheetID+"3"+altjson;
-var papersGS = spreadsheets+sheetID+"4"+altjson;
-
-allGS = [unworkGS, papersGS, eventsGS, peopleGS];
-
-var cvURL = [
-	spreadsheets+cvID+"1"+altjson,
-	spreadsheets+cvID+"2"+altjson,
-	spreadsheets+cvID+"3"+altjson,
-	spreadsheets+cvID+"4"+altjson
+var allGS = [
+	spreadsheets+sheetID+"1"+altjson,
+	spreadsheets+sheetID+"2"+altjson,
+	spreadsheets+sheetID+"3"+altjson,
+	spreadsheets+sheetID+"4"+altjson,
+	spreadsheets+cvID   +"1"+altjson,
+	spreadsheets+cvID   +"2"+altjson,
+	spreadsheets+cvID   +"3"+altjson,
+	spreadsheets+cvID   +"4"+altjson
 ];
+
 
 var allCVsections = [
 	"Personal",

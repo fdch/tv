@@ -41,9 +41,8 @@ function resetDisplay(x){
 
   iframeTag.setAttribute('src','');
   // $("main").css('background-image', 'url(' + loadingUrl + ')');
-  //the header
-  
 
+  //the header
   var headerTag = element('header');
 
   let submitX = "getSubmit(\'"+x+"\');";
@@ -61,7 +60,7 @@ function resetDisplay(x){
   //the article
   var articlTag = element('article','', x);
   mainTag.appendChild(articlTag);
-  articlTag.setAttribute('width', articleWidth(maxWidth));
+  articlTag.setAttribute('style', "width:"+articleWidth(maxWidth)+"px;");
   return articlTag;
 }
 function displayBiogra(target) {
@@ -148,6 +147,7 @@ function displayPapers(target,source) {
     let down = allPapers[x]["apDown"];
     let time = allPapers[x]["apTime"];
     let link = allPapers[x]["apLink"];
+    let date = allPapers[x]["apDate"];
 
     let sectTag = element('section','', x);
     target.appendChild(sectTag);
@@ -159,7 +159,7 @@ function displayPapers(target,source) {
     let footTag = element('footer');
     sectTag.appendChild(footTag);
 
-    let htitle = element("h3",titl,'',"window.open(\'"+link+"\',\'_top\');");
+    let htitle = element("h3",titl+" ("+date+")",'',"window.open(\'"+link+"\',\'_top\');");
     headTag.appendChild(htitle);
 
     let descrip = element('p',desc);
@@ -242,4 +242,237 @@ function displayPeople(target,source) {
     // let footer = element('h6',time);
     // footTag.appendChild(footer);
    }
+}
+function displayCV(x) {
+  article = resetDisplayCV(x);
+  switch (x) {
+    case "Personal" :
+      article.innerHTML = "<ul>"+tag("li",personal.join("</li><li>"))+"</li></ul>";
+      break;
+    case "Teachings" :
+      displayCVTeachi(article,allTeachi);
+      break;
+    case "Awards"   :
+      displayCVAwards(article,allAwards);
+      break;
+    case "Unworks":
+      displayCVUnwork(article,allUnwork);
+      break;
+    case "Collaborations":
+      displayCVCollab(article,allCollab);
+      break;
+    case "Performances":
+      displayCVPerfor(article,allPerfor);
+       break
+    default:
+    break;
+  }
+}
+function resetDisplayCV(x){
+  //remove previous stuff
+  removeChilds(mainTag);
+  //the header
+  var headerTag = element('header');
+  let htitleTag = element("h2", x);
+  headerTag.appendChild(htitleTag);
+
+  headerTag.appendChild(htitleTag);
+  mainTag.appendChild(headerTag);
+  //the article
+  var articlTag = element('article','', x);
+  mainTag.appendChild(articlTag);
+  articlTag.setAttribute('style', "width:"+articleWidth(maxWidth)+"px;");
+  return articlTag;
+}
+function displayCVTeachi(target,source){
+  var sectTag = element('section','',"teachings");
+  target.appendChild(sectTag);
+
+  var keys = Object.keys(source);
+  for (var i in keys) {
+    var x = keys[i];
+    var time = allTeachi[x]["aTTime"];
+    var type = allTeachi[x]["aTType"];///
+    var clas = allTeachi[x]["aTClas"];///
+    var inst = allTeachi[x]["aTInst"];///
+    var dept = allTeachi[x]["aTDept"];///
+    var term = allTeachi[x]["aTTerm"];///
+    var year = allTeachi[x]["aTYear"];///
+    
+    let headTag = element('header');
+    sectTag.appendChild(headTag);
+    let artiTag = element('article');
+    sectTag.appendChild(artiTag);
+    let footTag = element('footer');
+    sectTag.appendChild(footTag);
+
+    let titl = year+tilde+type + ". (" + term + ")";
+    let htitle = element("h3",titl);
+    headTag.appendChild(htitle);
+
+    let job = clas + " at " + dept + " of " + inst;
+    let descrip = element("blockquote",job);
+
+    artiTag.appendChild(descrip);
+
+    let footer = element('h6',time);
+    footTag.appendChild(footer);
+  }
+}
+function displayCVAwards(target,source){
+  var sectTag = element('section','',"awards");
+  target.appendChild(sectTag);
+
+  var keys = Object.keys(source);
+  for (var i in keys) {
+    var x = keys[i];
+    var time = allAwards[x]["aATime"];
+    var type = allAwards[x]["aAType"];
+    var titl = allAwards[x]["aATitl"];
+    var dura = allAwards[x]["aADura"];
+    var wher = allAwards[x]["aAWher"];
+    var whoo = allAwards[x]["aAWhoo"];
+    var desc = allAwards[x]["aADesc"];
+    var urll = allAwards[x]["aAUrll"];
+    
+
+    let headTag = element('header');
+    sectTag.appendChild(headTag);
+    let artiTag = element('article');
+    sectTag.appendChild(artiTag);
+    let footTag = element('footer');
+    sectTag.appendChild(footTag);
+
+    let awar = titl+" for "+dura+" in "+wher+" ("+type+")";
+    let htitle = element("h3",awar);
+    headTag.appendChild(htitle);
+
+    let descrip = element("blockquote",desc);
+    let refer = element("i", whoo, "", "window.open("+urll+",\'_top\')");
+    descrip.appendChild(refer);
+    artiTag.appendChild(descrip);
+
+    let footer = element('h6',time);
+    footTag.appendChild(footer);
+  }
+}
+
+function displayCVUnwork(target,source){
+  var sectTag = element('section','',"unwork");
+  target.appendChild(sectTag);
+
+  var keys = Object.keys(source);
+  for (var i in keys) {
+    let x = keys[i];
+    let titl = allUnwork[x]["awTitl"]; ////////////
+    let time = allUnwork[x]["awTime"];
+    let date = allUnwork[x]["awDate"]; ////////////
+    let perf = allUnwork[x]["awPerf"]; ////////////
+    let cate = allUnwork[x]["awCate"]; ////////////
+    let desc = allUnwork[x]["awDesc"]; ////////////
+    let prog = allUnwork[x]["awProg"]; ////////////
+    let iurl = allUnwork[x]["awIurl"]; ////////////
+    let vurl = allUnwork[x]["awVurl"]; ////////////
+    let aurl = allUnwork[x]["awAurl"]; ////////////
+    let surl = allUnwork[x]["awSurl"]; ////////////
+    let loca = allUnwork[x]["awLoca"]; ////////////
+    let dura = allUnwork[x]["awDura"]; 
+
+    let headTag = element('header');
+    sectTag.appendChild(headTag);
+    let artiTag = element('article');
+    sectTag.appendChild(artiTag);
+    let footTag = element('footer');
+    sectTag.appendChild(footTag);
+
+    let htitle = element("h3",titl);
+    let hstitl = element("h4",desc);
+    headTag.appendChild(htitle);
+    headTag.appendChild(hstitl);
+
+    var lis = [
+      "Duration: "+dura+" minutes.",
+      "Premiered by: "+perf,
+      "Date: "+date.toDateString(),
+      "Place: "+loca,
+      "Keywords: "+cate
+    ];
+
+    let ulTag = element("ul");
+    for (let j in lis){
+      let liTag = element("li", lis[i]);
+      ulTag.appendChild(liTag);
+    }
+
+    artiTag.appendChild(ulTag);
+     
+    let timest = element('h6',time);
+    footTag.appendChild(timest);
+  }
+}
+function displayCVCollab(target,source){
+  var sectTag = element('section','',"collaborations");
+  target.appendChild(sectTag);
+
+  var keys = Object.keys(source);
+  for (var i in keys) {
+    var x = keys[i];
+    var time = allCollabs[x]["aCTime"];
+    var cate = allCollabs[x]["aCCate"];
+    var year = allCollabs[x]["aCYear"];
+    var wher = allCollabs[x]["aCWher"];
+    var desc = allCollabs[x]["aCDesc"];
+
+    let headTag = element('header');
+    sectTag.appendChild(headTag);
+    let artiTag = element('article');
+    sectTag.appendChild(artiTag);
+    let footTag = element('footer');
+    sectTag.appendChild(footTag);
+
+    let colla = year+tilde+cate+" in "+wher;
+    let htitle = element("h3",colla);
+    headTag.appendChild(htitle);
+
+    let descrip = element("blockquote",desc);
+    artiTag.appendChild(descrip);
+
+    let footer = element('h6',time);
+    footTag.appendChild(footer);
+  }
+}
+function displayCVPerfor(target,source){
+  var sectTag = element('section','',"collaborations");
+  target.appendChild(sectTag);
+
+  var keys = Object.keys(source);
+  for (var i in keys) {
+    var x = keys[i];
+    var time = allPerfor[x]["aPTime"];
+    var what = allPerfor[x]["aPWhat"];
+    var when = allPerfor[x]["aPWhen"];
+    var howw = allPerfor[x]["aPHoww"];
+    var wher = allPerfor[x]["aPWher"];
+    var inst = allPerfor[x]["aPInst"];
+    var with = allPerfor[x]["aPWith"];
+
+    let headTag = element('header');
+    sectTag.appendChild(headTag);
+    let artiTag = element('article');
+    sectTag.appendChild(artiTag);
+    let footTag = element('footer');
+    sectTag.appendChild(footTag);
+
+    let event = when.toDateString()+tilde+what +" at "+wher+", with "+with;
+    let htitle = element("h3",event);
+    headTag.appendChild(htitle);
+
+    let descrip = element("blockquote",howw);
+    let perfor = element("i", "Performed: "+inst+".");
+    artiTag.appendChild(descrip);
+    artiTag.appendChild(perfor);
+
+    let footer = element('h6',time);
+    footTag.appendChild(footer);
+  }
 }

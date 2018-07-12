@@ -50,6 +50,7 @@ function loadAll(sheets) {
       allPapers[npid]["apLink"] = e.gsx$link.$t;
       allPapers[npid]["apPubl"] = e.gsx$published.$t;
       allPapers[npid]["apDown"] = e.gsx$download.$t;
+      allPapers[npid]["apDate"] = e.gsx$date.$t;
     }//end loop
   });
   //events
@@ -87,6 +88,85 @@ function loadAll(sheets) {
       allPeople[nPid]["aPWebs"] = e.gsx$website.$t;
     }
     // window.alert(Object.keys(allPeople));
+  });
+  //teachings
+  loadJSON(sheets[4], function(response) {
+    var f, e, i, entry;
+    f = JSON.parse(response);
+    entry = f.feed.entry;
+    allTeachi={};
+    for (i in entry) {
+      e = entry[i];
+      var clas = e.gsx$class.$t;
+      var year = e.gsx$year.$t;
+      var nTid = String("id-"+makeID(clas+year));
+      allTeachi[nTid]={};
+      allTeachi[nTid]["aTTime"] = e.gsx$timestamp.$t;
+      allTeachi[nTid]["aTType"] = e.gsx$type.$t;
+      allTeachi[nTid]["aTClas"] = clas;
+      allTeachi[nTid]["aTInst"] = e.gsx$institution.$
+      allTeachi[nTid]["aTDept"] = e.gsx$department.$t
+      allTeachi[nTid]["aTTerm"] = e.gsx$term.$t;
+      allTeachi[nTid]["aTYear"] = year;
+    }
+    // window.alert(Object.keys(allPeople));
+  });
+  //awards
+  loadJSON(sheets[5], function(response) {
+    var f, e, i, entry;   
+    f = JSON.parse(response);
+    entry = f.feed.entry;
+    allAwards={};    
+    for (i in entry) {
+      e = entry[i];
+      var titl = e.gsx$title.$t;
+      var wher = e.gsx$where.$t;
+      var nAid = String("id-"+makeID(titl+wher));
+      allAwards[nAid]["aATime"] = e.gsx$timestamp.$t;
+      allAwards[nAid]["aAType"] = e.gsx$type.$t;
+      allAwards[nAid]["aATitl"] = titl;
+      allAwards[nAid]["aADura"] = e.gsx$duration.$t;
+      allAwards[nAid]["aAWher"] = wher;
+      allAwards[nAid]["aAWhoo"] = e.gsx$who.$t;
+      allAwards[nAid]["aADesc"] = e.gsx$description.$t;
+      allAwards[nAid]["aAUrll"] = e.gsx$url.$t;
+    }
+  });
+  //collabs
+  loadJSON(sheets[6], function(response) {
+   var f, e, i, entry;   
+    f = JSON.parse(response);
+    entry = f.feed.entry;    
+    for (i in entry) {
+      e = entry[i];
+      var year = e.gsx$year.$t;
+      var cate = e.gsx$category.$t;
+      var nCid = String("id-"+makeID(year+cate));
+      allCollabs[nCid]["aCTime"] = e.gsx$timestamp.$t;
+      allCollabs[nCid]["aCCate"] = cate;
+      allCollabs[nCid]["aCYear"] = year;
+      allCollabs[nCid]["aCWher"] = e.gsx$where.$t;
+      allCollabs[nCid]["aCDesc"] = e.gsx$description.$t;
+    }
+  });
+  //perfor
+  loadJSON(sheets[7], function(response) {
+    var f, e, i, entry; 
+    f = JSON.parse(response);
+    entry = f.feed.entry;    
+    for (i in entry) {
+      e = entry[i];
+      var what = e.gsx$what.$t;
+      var when = e.gsx$when.$t;
+      var nPid = String("id-"+makeID(what+when));
+      allPerfor[nPid]["aPTime"] = e.gsx$timestamp.$t;
+      allPerfor[nPid]["aPWhat"] = what;
+      allPerfor[nPid]["aPWhen"] = new Date(when);
+      allPerfor[nPid]["aPHoww"] = e.gsx$how.$t;
+      allPerfor[nPid]["aPWher"] = e.gsx$where.$t;
+      allPerfor[nPid]["aPInst"] = e.gsx$instrument.$t;
+      allPerfor[nPid]["aPWith"] = e.gsx$with.$t;
+    }
   });
   loading = 0;
   loaded = 1; //set it as loaded if it is loaded asynchronously

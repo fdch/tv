@@ -7,28 +7,25 @@
 //////////                           / ///////////
 //////////////////////////////        ///////////
 
-$(function(){
-  $("html").css("font-family",fonts[2]); 
-  
-  randomColor(color_preset["mid"]); 
-  
-  $("h1").click(function() {window.open(cv, "_top")});
+function mainCV() {
+  if(!htmlTag)   htmlTag   = document.getElementsByTagName('html')[0];
+  htmlTag.setAttribute('style', "font-family:"+fonts[2]+";");
 
-  $("main").html("").append("<article></article>");
-  $("article, #menubg").width(articleWidth(maxWidth));
+  if(!bodyTag)   bodyTag   = document.getElementsByTagName('body')[0];
+  if(!headerTag) headerTag = document.getElementsByTagName('header');
+  if(!mainTag)   mainTag   = document.getElementsByTagName('main')[0];
+  if(!footerTag) footerTag = document.getElementsByTagName('footer')[0];
+  footerTag.setAttribute('style', 'display:none');  
 
-  $.each(allCVsections, function(index,value){
-    var theid = makeID(value);
-    var target = theid+"-ul";
-    var section = [
-      "<section id=\""+theid+"\" >",
-      "<header onclick=\"toggleIt($(\'#"+target+"\'))\">",
-      tag("h2",value),
-      "</header>",
-      "</section>"
-    ]
-    $("main article").append(section.join(""));
-    cvLoader(index,target);
-  });
-  $("footer").hide();// $("footer").append(linkify("back~", url));
-});
+  if(!h1titlTag) h1titlTag = document.getElementsByTagName('h1')[0];
+  h1titlTag.setAttribute('onclick',"display(\'cv\');");
+      
+  randomColor(color_preset["mid"], [bodyTag, headerTag[0]] );
+
+  if (!loading) 
+    while (!loaded) { 
+    if (!loaded) loaded = loadAll(allGS);
+      else if (loaded) break; 
+    }
+  for (var i in allCVsections) displayCV(allCVsections[i]);
+}
