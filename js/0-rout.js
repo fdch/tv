@@ -254,7 +254,7 @@ function element(tag,text,id,onclick,width) {
   let node = document.createTextNode(text?text:'');
   elem.setAttribute('id',id?id:'');
   elem.setAttribute('onclick',onclick?onclick:'');
-  elem.setAttribute('width',width?width:'inherit');
+  // elem.setAttribute('width',width?width:'inherit');
   elem.setAttribute('style',"width:"+(width?width+"px;":'inherit;'));
   elem.appendChild(node);
   return elem;
