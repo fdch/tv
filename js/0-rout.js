@@ -17,7 +17,7 @@ function getFile(x){
   });
 }
 function makeID(x){
-  return x.replace(/ /g,'_').toLowerCase();
+  return x.replace(/ /g,'_').toLowerCase().slice(0,7);
 }
 function onclickify(func,src,arg) {
   if (arg) {
