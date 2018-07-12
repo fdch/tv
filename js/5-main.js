@@ -26,9 +26,9 @@ function main() {
   if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display");
   
   if(!rotImgTag) rotImgTag = makeRot(rotImg, headerTag[0], headSiz[1]);
-  resizeHeader();
   
-  
+  resized();
+    
   randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
 
   setInterval( function(){ funImage(rotImg) }, t);
