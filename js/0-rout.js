@@ -103,7 +103,7 @@ function getContent(x, arr) {
   });
 }
 function randomVideo() {
-  iframeSrc.setAttribute('src',featURL[Math.floor(Math.random()*featURL.length)]);
+  iframeTag.setAttribute('src',featURL[Math.floor(Math.random()*featURL.length)]);
 }
 function pdRandom(range,offset){
   return Math.floor(Math.random() * range) + offset?offset:0;
