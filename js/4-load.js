@@ -109,7 +109,7 @@ function loadAll(sheets) {
       allTeachi[nTid]["aTTerm"] = e.gsx$term.$t;
       allTeachi[nTid]["aTYear"] = year;
     }
-    // window.alert(Object.keys(allPeople));
+     window.alert(Object.keys(allTeachi));
   });
   //awards
   loadJSON(sheets[5], function(response) {
