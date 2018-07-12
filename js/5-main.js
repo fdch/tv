@@ -28,6 +28,8 @@ function main() {
   if(!iframeTag) iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
   if(!rotImgTag) rotImgTag = makeRot(rotImg, headerTag[0], headSiz[1]);
   
+  
+  
   randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
 
   setInterval( function(){ funImage(rotImg) }, t);

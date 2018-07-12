@@ -74,9 +74,9 @@ function resizeHeader(){
   var i = iH>hH/2?hH/2:iH;
   var n = Math.floor(hW*0.6)
  
-  navigaTag.setAttribute('width', n);
-  rotImgTag.setAttribute('width', i);
-  return [i,n];
+  if(navigaTag) navigaTag.setAttribute('width', n);
+  if(rotImgTag) rotImgTag.setAttribute('width', i);
+  return [n,i];
 }
 function resized(){
   w = width();
