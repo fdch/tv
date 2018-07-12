@@ -16,12 +16,10 @@ var currpage=0;
 var loaded=0, loading=0;
 
 
-
-
-var w, h, t = 4333;
+var w, h;
+var t = 4333;
 var maxWidth = 810;
 var widthFactor = 0.9;
-
 
 var url = "https://fdch.github.io/tv";
 var repo = "https://github.com/fdch/";
@@ -38,10 +36,13 @@ var yt = "https://www.youtube.com/channel/UCzOx-iKaNx9ruddNI6ykTIA";
 var flickr = "http://www.flickr.com/federicocamarahalac";
 var linkedin = "http://linkedin.com/in/fedecamarahalac";
 var instagram = "https://instagram.com/ffddcchh";
+
+var rotImgWidth = w*0.25;
+
 var rotImg = [
 	raw+"tv/master/img/imgone-76.png",
 	raw+"tv/master/img/imgone-76-i.png",
-	30,
+	rotImgWidth<=30?String(30+"px"):String(rotImgWidth+"px"),
 	"position:absolute;right:10px;top:10px;clip-path: circle(50% at center)",
 	"rotImgId",
 	"fdch~",

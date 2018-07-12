@@ -26,6 +26,9 @@ function main() {
   randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
 
   setInterval( function(){ funImage(rotImg) }, t);
+
+  w = width();
+  h = height();
  
   if (!loading) 
     while (!loaded) { 
