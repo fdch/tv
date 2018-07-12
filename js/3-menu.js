@@ -1,4 +1,4 @@
-function makeMenu(input, target, funcName, maxWidth) {
+function makeMenu(input, target, funcName, maxW) {
 
   var navTag = document.createElement('nav');
   
@@ -15,7 +15,7 @@ function makeMenu(input, target, funcName, maxWidth) {
   }
   var nclick = "randomizeStuff();";
   navTag.setAttribute('onclick',nclick);
-  navTag.setAttribute('style', "max-width:"+(maxWidth-55)+"px;");
+  navTag.setAttribute('style', "max-width:"+(maxW-55)+"px;");
 
   target.appendChild(navTag);
 
