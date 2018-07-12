@@ -10,6 +10,7 @@ var allCategories=[], allTitles=[],allWorkId=[],uniqueCategories=[];
 
 var w, h, t = 4333;
 var mitem = ["bio", "unwork", "papers", "events", "people", "touch"];
+var currpage=0;
 var maxWidth = 810;
 var widthFactor = 0.9;
 
