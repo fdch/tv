@@ -23,7 +23,7 @@ function main() {
   var hW = headerTag[0].clientWidth;
   var navMax = hW-(hH/2);
   var imgMax = hH/2;
-  console.log("navmax: "+navmax+" imgmax: "+imgmax);
+  console.log("navmax: "+navMax+" imgmax: "+imgMax);
 
   if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display", navMax);
   if(!iframeTag) iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
