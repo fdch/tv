@@ -72,7 +72,7 @@ function resizeHeader(){
   var iH = Math.floor(hW*0.15);
 
   var i = iH>=hH?hH:iH;
-  var n = Math.floor(hW*0.7)
+  var n = w-i-55;
  
   if(navigaTag) navigaTag.setAttribute('width', n);
   if(rotImgTag) rotImgTag.setAttribute('width', i);

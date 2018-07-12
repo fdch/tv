@@ -23,7 +23,7 @@ function main() {
   
   bodyTag.setAttribute('onresize', 'resized()');
 
-  if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display", headSiz[0]);
+  if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display");
   
   if(!rotImgTag) rotImgTag = makeRot(rotImg, headerTag[0], headSiz[1]);
   resizeHeader();
