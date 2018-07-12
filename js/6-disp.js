@@ -89,19 +89,19 @@ function displayUnwork(target,source) {
   var keys = Object.keys(source);
   for (var i in keys) {
     let x = keys[i];
-    let titl = allUnwork[x]["awTitl"]; ////////////
-    let time = allUnwork[x]["awTime"];
-    let date = allUnwork[x]["awDate"]; ////////////
-    let perf = allUnwork[x]["awPerf"]; ////////////
-    let cate = allUnwork[x]["awCate"]; ////////////
-    let desc = allUnwork[x]["awDesc"]; ////////////
-    let prog = allUnwork[x]["awProg"]; ////////////
-    let iurl = allUnwork[x]["awIurl"]; ////////////
-    let vurl = allUnwork[x]["awVurl"]; ////////////
-    let aurl = allUnwork[x]["awAurl"]; ////////////
-    let surl = allUnwork[x]["awSurl"]; ////////////
-    let loca = allUnwork[x]["awLoca"]; ////////////
-    let dura = allUnwork[x]["awDura"]; 
+    let titl = source[x]["awTitl"]; ////////////
+    let time = source[x]["awTime"];
+    let date = source[x]["awDate"]; ////////////
+    let perf = source[x]["awPerf"]; ////////////
+    let cate = source[x]["awCate"]; ////////////
+    let desc = source[x]["awDesc"]; ////////////
+    let prog = source[x]["awProg"]; ////////////
+    let iurl = source[x]["awIurl"]; ////////////
+    let vurl = source[x]["awVurl"]; ////////////
+    let aurl = source[x]["awAurl"]; ////////////
+    let surl = source[x]["awSurl"]; ////////////
+    let loca = source[x]["awLoca"]; ////////////
+    let dura = source[x]["awDura"]; 
 
     let sectTag = element('section','', x);
     target.appendChild(sectTag);
@@ -141,13 +141,13 @@ function displayPapers(target,source) {
   var keys = Object.keys(source);
   for (var i in keys) {
     let x = keys[i];
-    let titl = allPapers[x]["apTitl"];
-    let desc = allPapers[x]["apDesc"];
-    let publ = allPapers[x]["apPubl"];
-    let down = allPapers[x]["apDown"];
-    let time = allPapers[x]["apTime"];
-    let link = allPapers[x]["apLink"];
-    let date = allPapers[x]["apDate"];
+    let titl = source[x]["apTitl"];
+    let desc = source[x]["apDesc"];
+    let publ = source[x]["apPubl"];
+    let down = source[x]["apDown"];
+    let time = source[x]["apTime"];
+    let link = source[x]["apLink"];
+    let date = source[x]["apDate"];
 
     let sectTag = element('section','', x);
     target.appendChild(sectTag);
@@ -178,11 +178,11 @@ function displayEvents(target,source) {
   var keys = Object.keys(source);
   for (var i in keys) {
     var x = keys[i];
-    var titl = allEvents[x]["aeWhat"];
-    var desc = allEvents[x]["aeDesc"];
-    var when = allEvents[x]["aeWhen"];
-    var wher = allEvents[x]["aeWher"];
-    var time = allEvents[x]["aeTime"];
+    var titl = source[x]["aeWhat"];
+    var desc = source[x]["aeDesc"];
+    var when = source[x]["aeWhen"];
+    var wher = source[x]["aeWher"];
+    var time = source[x]["aeTime"];
     //console.log(x + ": "+ titl + " "+ desc + " "+ when + " "+ wher + " "+ time);
 
     let sectTag = element('section','', x);
@@ -212,10 +212,10 @@ function displayPeople(target,source) {
   var keys = Object.keys(source);
   for (var i in keys) {
     let x = keys[i];
-    let titl = allPeople[x]["aPName"];
-    let last = allPeople[x]["aPSurn"];
-    let time = allPeople[x]["aPTime"];
-    let webs = allPeople[x]["aPWebs"];
+    let titl = source[x]["aPName"];
+    let last = source[x]["aPSurn"];
+    let time = source[x]["aPTime"];
+    let webs = source[x]["aPWebs"];
 
     let sectTag = element('section','', x);
     target.appendChild(sectTag);
@@ -284,13 +284,13 @@ function displayCVTeachi(target,source){
   var keys = Object.keys(source);
   for (var i in keys) {
     var x = keys[i];
-    var time = allTeachi[x]["aTTime"];
-    var type = allTeachi[x]["aTType"];///
-    var clas = allTeachi[x]["aTClas"];///
-    var inst = allTeachi[x]["aTInst"];///
-    var dept = allTeachi[x]["aTDept"];///
-    var term = allTeachi[x]["aTTerm"];///
-    var year = allTeachi[x]["aTYear"];///
+    var time = source[x]["aTTime"];
+    var type = source[x]["aTType"];///
+    var clas = source[x]["aTClas"];///
+    var inst = source[x]["aTInst"];///
+    var dept = source[x]["aTDept"];///
+    var term = source[x]["aTTerm"];///
+    var year = source[x]["aTYear"];///
     
     let headTag = element('header');
     sectTag.appendChild(headTag);
@@ -320,14 +320,14 @@ function displayCVAwards(target,source){
   var keys = Object.keys(source);
   for (var i in keys) {
     var x = keys[i];
-    var time = allAwards[x]["aATime"];
-    var type = allAwards[x]["aAType"];
-    var titl = allAwards[x]["aATitl"];
-    var dura = allAwards[x]["aADura"];
-    var wher = allAwards[x]["aAWher"];
-    var whoo = allAwards[x]["aAWhoo"];
-    var desc = allAwards[x]["aADesc"];
-    var urll = allAwards[x]["aAUrll"];
+    var time = source[x]["aATime"];
+    var type = source[x]["aAType"];
+    var titl = source[x]["aATitl"];
+    var dura = source[x]["aADura"];
+    var wher = source[x]["aAWher"];
+    var whoo = source[x]["aAWhoo"];
+    var desc = source[x]["aADesc"];
+    var urll = source[x]["aAUrll"];
     
 
     let headTag = element('header');
@@ -350,7 +350,6 @@ function displayCVAwards(target,source){
     footTag.appendChild(footer);
   }
 }
-
 function displayCVUnwork(target,source){
   var sectTag = element('section','',"unwork");
   target.appendChild(sectTag);
@@ -358,19 +357,19 @@ function displayCVUnwork(target,source){
   var keys = Object.keys(source);
   for (var i in keys) {
     let x = keys[i];
-    let titl = allUnwork[x]["awTitl"]; ////////////
-    let time = allUnwork[x]["awTime"];
-    let date = allUnwork[x]["awDate"]; ////////////
-    let perf = allUnwork[x]["awPerf"]; ////////////
-    let cate = allUnwork[x]["awCate"]; ////////////
-    let desc = allUnwork[x]["awDesc"]; ////////////
-    let prog = allUnwork[x]["awProg"]; ////////////
-    let iurl = allUnwork[x]["awIurl"]; ////////////
-    let vurl = allUnwork[x]["awVurl"]; ////////////
-    let aurl = allUnwork[x]["awAurl"]; ////////////
-    let surl = allUnwork[x]["awSurl"]; ////////////
-    let loca = allUnwork[x]["awLoca"]; ////////////
-    let dura = allUnwork[x]["awDura"]; 
+    let titl = source[x]["awTitl"]; ////////////
+    let time = source[x]["awTime"];
+    let date = source[x]["awDate"]; ////////////
+    let perf = source[x]["awPerf"]; ////////////
+    let cate = source[x]["awCate"]; ////////////
+    let desc = source[x]["awDesc"]; ////////////
+    let prog = source[x]["awProg"]; ////////////
+    let iurl = source[x]["awIurl"]; ////////////
+    let vurl = source[x]["awVurl"]; ////////////
+    let aurl = source[x]["awAurl"]; ////////////
+    let surl = source[x]["awSurl"]; ////////////
+    let loca = source[x]["awLoca"]; ////////////
+    let dura = source[x]["awDura"]; 
 
     let headTag = element('header');
     sectTag.appendChild(headTag);
@@ -411,11 +410,11 @@ function displayCVCollab(target,source){
   var keys = Object.keys(source);
   for (var i in keys) {
     var x = keys[i];
-    var time = allCollab[x]["aCTime"];
-    var cate = allCollab[x]["aCCate"];
-    var year = allCollab[x]["aCYear"];
-    var wher = allCollab[x]["aCWher"];
-    var desc = allCollab[x]["aCDesc"];
+    var time = source[x]["aCTime"];
+    var cate = source[x]["aCCate"];
+    var year = source[x]["aCYear"];
+    var wher = source[x]["aCWher"];
+    var desc = source[x]["aCDesc"];
 
     let headTag = element('header');
     sectTag.appendChild(headTag);
@@ -442,13 +441,13 @@ function displayCVPerfor(target,source){
   var keys = Object.keys(source);
   for (var i in keys) {
     var x = keys[i];
-    var time = allPerfor[x]["aPTime"];
-    var what = allPerfor[x]["aPWhat"];
-    var when = allPerfor[x]["aPWhen"];
-    var howw = allPerfor[x]["aPHoww"];
-    var wher = allPerfor[x]["aPWher"];
-    var inst = allPerfor[x]["aPInst"];
-    var witt = allPerfor[x]["aPWith"];
+    var time = source[x]["aPTime"];
+    var what = source[x]["aPWhat"];
+    var when = source[x]["aPWhen"];
+    var howw = source[x]["aPHoww"];
+    var wher = source[x]["aPWher"];
+    var inst = source[x]["aPInst"];
+    var witt = source[x]["aPWith"];
 
     let headTag = element('header');
     sectTag.appendChild(headTag);
