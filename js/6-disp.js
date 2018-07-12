@@ -1,6 +1,6 @@
 function display(x) {
   currpage = mitem.findIndex(item => item === x);
-  console.log(currpage);
+  //console.log(currpage);
   article = resetDisplay(x);
   switch (x) {
     case "games" :
@@ -25,7 +25,7 @@ function display(x) {
       displayPeople(article,allPeople);
       break;
     case "init"  :
-      window.open(url,'_top');
+      main();
       break
     default:
     break;
@@ -35,9 +35,14 @@ function resetDisplay(x){
   
   //remove previous stuff
   removeChilds(mainTag);
+
+  if(!currpage) return; 
+
   iframeTag.setAttribute('src','');
   // $("main").css('background-image', 'url(' + loadingUrl + ')');
   //the header
+  
+
   var headerTag = element('header');
 
   let submitX = "getSubmit(\'"+x+"\');";

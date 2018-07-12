@@ -7,7 +7,7 @@
 ////           /////  //          \\\         ////       ///
 ///           ////////              \\\       ////       ///
 //           ///////                  \\\     ////       ///
-$(function(){
+function main() {
   htmlTag = document.getElementsByTagName('html')[0];
   randomFont(htmlTag);  
   mainTag = document.getElementsByTagName('main')[0];
@@ -29,7 +29,7 @@ $(function(){
  
   if (!loading) 
     while (!loaded) { 
-    if (loaded==0) loaded = loadAll(allGS);
-      else if (loaded==1) break; 
+    if (!loaded) loaded = loadAll(allGS);
+      else if (loaded) break; 
     }
-});
+}
