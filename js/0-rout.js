@@ -116,9 +116,12 @@ function randomColor(preset, target){
   var light = "rgb("+pdRandom(lran,loff)+","+pdRandom(lran,loff)+","+pdRandom(lran,loff)+")";
   var darky = "rgb("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+")";
   var menuy = "rgba("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+",0.3)";
-
+try{
   target[0].setAttribute('style', "background-color:" + darky +"; color:"+light+";");
   target[1].setAttribute('style', "background-color:" + menuy +";");
+}catch(err) {
+  console.log(err);
+}
 }
 var whichone = 0;
 // var flipped = 1;
