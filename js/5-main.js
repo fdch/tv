@@ -28,7 +28,7 @@ function main() {
 
 
   if(!iframeTag) iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
-  if(!rotImgTag) rotImgTag = makeRot(rotImg, headerTag[0], Math.floor(hW*0.25));
+  if(!rotImgTag) rotImgTag = makeRot(rotImg, headerTag[0], Math.floor(hW*0.125));
   
   randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
 
