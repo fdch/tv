@@ -5,7 +5,7 @@
   background-color:black;
   color:white;
 }*/
-h1, h2 {
+h1, h2, h3, h4, h5, h6{
   cursor:pointer;
   margin:3px 0;
   padding:0;
@@ -13,21 +13,20 @@ h1, h2 {
 h1 {
   font-size:0.8em;
 }
-h3 {
+/*h3 {
   padding-top:2px;
   margin-top:2px;
-}
-header {
+}*/
+header, article{
   padding:5px 0px 0px 10px;
   margin:0;
   border-radius:3px;
-  cursor:pointer;
 }
-nav span {
+/*nav span {
   padding:5px;
   border-radius:3px;
   background:lightgrey;
-}
+}*/
 button {
   padding:3px 5px;
   font-size:0.8em;
@@ -35,7 +34,7 @@ button {
   border-radius:4px;
 }
 button:hover {
-  background-color:red;
+  background-color:lightblue;
   cursor:pointer;
 }
 /*main{
@@ -47,8 +46,7 @@ button:hover {
 }*/
 span:hover, img:hover, a:hover{
   cursor:pointer;
-  font-weight:bold;
-  text-decoration:none;
+  text-decoration:underline;
 }
 
 
