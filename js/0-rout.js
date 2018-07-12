@@ -34,7 +34,7 @@ function linkify(x,y,blank){
   } else {
     target="_top";
   }
-  var title = y.slice(0, 44)+"...";
+  var title = y.length>44?y.slice(0, 44)+"...":y;
   thelink = "<a target=\""+target+"\" href=\""+y+"\" alt=\""+x+"\" title=\""+title+"\" rel=\"nofollow\"  >"+x+"</a>";
   
   return thelink;
