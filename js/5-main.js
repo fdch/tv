@@ -19,11 +19,12 @@ function main() {
   if(!h1titlTag) h1titlTag = document.getElementsByTagName('h1')[0];
   h1titlTag.setAttribute('onclick',"display(\'init\');");
   
-  w = width(); h = height();
-  
-  if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display", headerTag[0].clientWidth*0.6);
+  var hH = headerTag[0].clientHeight;
+  var hW = headerTag[0].clientWidth;
+
+  if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display", hw-hH/2);
   if(!iframeTag) iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
-  if(!rotImgTag) rotImgTag = makeRot(rotImg, headerTag[0], headerTag[0].clientHeight*0.5);
+  if(!rotImgTag) rotImgTag = makeRot(rotImg, headerTag[0], hH/2);
   
   randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
 
