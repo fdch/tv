@@ -21,10 +21,10 @@ function main() {
   
   var hH = headerTag[0].clientHeight;
   var hW = headerTag[0].clientWidth;
- 
+  bodyTag.setAttribute('onresize', 'resized()');
 
 
-  if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display", Math.floor(hW*0.75));
+  if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display", Math.floor(hW*0.6));
 
 
   if(!iframeTag) iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);

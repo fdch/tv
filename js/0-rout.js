@@ -65,6 +65,18 @@ function articleWidth(maxW){
   var f = widthFactor;
   if (pw >= maxW) {return maxW*f;} else {return pw*f;}
 }
+function resized(){
+  w = width();
+  h = height();
+
+  var hH = headerTag[0].clientHeight;
+  var hW = headerTag[0].clientWidth;
+  
+  navigaTag.setAttribute('width', Math.floor(hW*0.6));
+  rotImgTag.setAttribute('width', Math.floor(hW*0.12));
+  
+
+}
 function loadJSON(x,callback) {
   var xobj = new XMLHttpRequest();
   xobj.overrideMimeType("application/json");
