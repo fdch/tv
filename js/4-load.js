@@ -121,7 +121,7 @@ function loadAll(sheets) {
       e = entry[i];
       var titl = e.gsx$title.$t;
       var wher = e.gsx$where.$t;
-      var nAid = String("id-"+makeID(titl+wher));
+      var nAid = String("id-"+makeID(titl+wher).slice(0,7));
       allAwards[nAid]["aATime"] = e.gsx$timestamp.$t;
       allAwards[nAid]["aAType"] = e.gsx$type.$t;
       allAwards[nAid]["aATitl"] = titl;
