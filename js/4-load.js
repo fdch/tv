@@ -136,24 +136,26 @@ function loadAll(sheets) {
   loadJSON(sheets[6], function(response) {
    var f, e, i, entry;   
     f = JSON.parse(response);
-    entry = f.feed.entry;    
+    entry = f.feed.entry;
+    allCollab={};  
     for (i in entry) {
       e = entry[i];
       var year = e.gsx$year.$t;
       var cate = e.gsx$category.$t;
       var nCid = String("id-"+makeID(year+cate));
-      allCollabs[nCid]["aCTime"] = e.gsx$timestamp.$t;
-      allCollabs[nCid]["aCCate"] = cate;
-      allCollabs[nCid]["aCYear"] = year;
-      allCollabs[nCid]["aCWher"] = e.gsx$where.$t;
-      allCollabs[nCid]["aCDesc"] = e.gsx$description.$t;
+      allCollab[nCid]["aCTime"] = e.gsx$timestamp.$t;
+      allCollab[nCid]["aCCate"] = cate;
+      allCollab[nCid]["aCYear"] = year;
+      allCollab[nCid]["aCWher"] = e.gsx$where.$t;
+      allCollab[nCid]["aCDesc"] = e.gsx$description.$t;
     }
   });
   //perfor
   loadJSON(sheets[7], function(response) {
     var f, e, i, entry; 
     f = JSON.parse(response);
-    entry = f.feed.entry;    
+    entry = f.feed.entry;
+    allPerfor={};   
     for (i in entry) {
       e = entry[i];
       var what = e.gsx$what.$t;

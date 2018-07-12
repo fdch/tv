@@ -417,11 +417,11 @@ function displayCVCollab(target,source){
   var keys = Object.keys(source);
   for (var i in keys) {
     var x = keys[i];
-    var time = allCollabs[x]["aCTime"];
-    var cate = allCollabs[x]["aCCate"];
-    var year = allCollabs[x]["aCYear"];
-    var wher = allCollabs[x]["aCWher"];
-    var desc = allCollabs[x]["aCDesc"];
+    var time = allCollab[x]["aCTime"];
+    var cate = allCollab[x]["aCCate"];
+    var year = allCollab[x]["aCYear"];
+    var wher = allCollab[x]["aCWher"];
+    var desc = allCollab[x]["aCDesc"];
 
     let headTag = element('header');
     sectTag.appendChild(headTag);
@@ -442,7 +442,7 @@ function displayCVCollab(target,source){
   }
 }
 function displayCVPerfor(target,source){
-  var sectTag = element('section','',"collaborations");
+  var sectTag = element('section','',"performances");
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
