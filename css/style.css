@@ -32,13 +32,15 @@ button {
   font-size:0.8em;
   margin:5px 10px 10px 0px;
   border-radius:4px;
+  background-color:#EEE;
 }
 button:hover {
   background-color:lightblue;
   cursor:pointer;
 }
 button:focus {
-  background: pink;
+  background: lightblue;
+  outline:none;
 }
 /*main{
   position:relative;
@@ -51,7 +53,9 @@ span:hover, img:hover, a:hover{
   cursor:pointer;
   text-decoration:underline;
 }
-
+a:focus{
+  outline:none;
+}
 
 ul {
   list-style: none;
