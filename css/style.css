@@ -30,17 +30,13 @@ nav span {
   background:lightgrey;
 }
 button {
-  padding:3px;
+  padding:3px 5px;
   font-size:0.8em;
-  margin-right:10px;
-  border:none;
-  border-radius:15px;
+  margin:5px 10px 10px 0px;
+  border-radius:4px;
 }
 button:hover {
-  border-style:dotted;
-  border-width:2px;
-  border-color: #EEE;
-
+  text-decoration:underline;
 }
 /*main{
   position:relative;
