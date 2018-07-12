@@ -22,10 +22,8 @@ function mainCV() {
       
   randomColor(color_preset["mid"], [bodyTag, headerTag[0]] );
 
-  if (!loading) 
-    while (!loaded) { 
-    if (!loaded) loaded = loadAll(allGS);
-      else if (loaded) break; 
-    }
-  for (var i in allCVsections) displayCV(allCVsections[i]);
+  if (!loading && !loaded)
+    if (loadAll(allGS)) 
+      for (var i in allCVsections)
+        displayCV(allCVsections[i]);
 }

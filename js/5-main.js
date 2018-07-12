@@ -32,9 +32,6 @@ function main() {
 
   setInterval( function(){ funImage(rotImg) }, t);
 
-  if (!loading) 
-    while (!loaded) { 
-    if (!loaded) loaded = loadAll(allGS);
-      else if (loaded) break; 
-    }
+  if (!loading && !loaded)
+    if (loadAll(allGS))
 }
