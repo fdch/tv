@@ -1,6 +1,6 @@
 var loaded=0, loading=0;
 
-var htmlTag, bodyTag, headerTag, navTag, mainTag, footerTag, iframeTag, iframeSrc;
+var htmlTag, bodyTag, headerTag, navTag, mainTag, footerTag, iframeTag;
 var allUnwork={};
 var allPapers={};
 var allEvents={};
