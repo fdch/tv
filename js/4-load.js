@@ -122,6 +122,7 @@ function loadAll(sheets) {
       var titl = e.gsx$title.$t;
       var wher = e.gsx$where.$t;
       var nAid = String("id-"+makeID(titl+wher));
+      allAwards[nAid]={};  
       allAwards[nAid]["aATime"] = e.gsx$timestamp.$t;
       allAwards[nAid]["aAType"] = e.gsx$type.$t;
       allAwards[nAid]["aATitl"] = titl;
@@ -144,6 +145,7 @@ function loadAll(sheets) {
       var year = e.gsx$year.$t;
       var cate = e.gsx$category.$t;
       var nCid = String("id-"+makeID(year+cate));
+      allCollab[nCid]={};
       allCollab[nCid]["aCTime"] = e.gsx$timestamp.$t;
       allCollab[nCid]["aCCate"] = cate;
       allCollab[nCid]["aCYear"] = year;
@@ -162,6 +164,7 @@ function loadAll(sheets) {
       var what = e.gsx$what.$t;
       var when = e.gsx$when.$t;
       var nPid = String("id-"+makeID(what+when));
+      allPerfor[nPid]={};
       allPerfor[nPid]["aPTime"] = e.gsx$timestamp.$t;
       allPerfor[nPid]["aPWhat"] = what;
       allPerfor[nPid]["aPWhen"] = new Date(when);
