@@ -464,7 +464,7 @@ function displayCVPerfor(target,source){
     let descrip = element("blockquote",howw);
     let perfor = element("i", "Performed: "+inst+".");
     artiTag.appendChild(descrip);
-    artiTag.appendChild(perfor);
+    descrip.appendChild(perfor);
 
     let footer = element('h6',time);
     footTag.appendChild(footer);
