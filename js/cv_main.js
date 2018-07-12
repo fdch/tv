@@ -22,12 +22,5 @@ function mainCV() {
       
   randomColor(color_preset["mid"], [bodyTag, headerTag[0]] );
 
-  if (!loading && !loaded) {
-    if (loadAll(allGS)) {
-      console.log("loaded all");
-      for (var i in allCVsections){
-        displayCV(allCVsections[i]);
-      }
-    }
-  }
+  loadAll(allGS);
 }
