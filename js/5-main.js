@@ -22,7 +22,7 @@ function main() {
   var hH = headerTag[0].clientHeight;
   var hW = headerTag[0].clientWidth;
 
-  if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display", hw-hH/2);
+  if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display", hW-hH/2);
   if(!iframeTag) iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
   if(!rotImgTag) rotImgTag = makeRot(rotImg, headerTag[0], hH/2);
   
