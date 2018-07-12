@@ -1,19 +1,19 @@
-html {
+/*html {
   font-family:Courier;
-}
-body {
+}*/
+/*body {
   background-color:black;
   color:white;
-}
+}*/
 h1, h2 {
   font-size:1.1em;
   cursor:pointer;
-  margin:1% 0;
+  margin:3px 0;
   padding:0;
 }
 h3 {
-  padding-top:1%;
-  margin-top:1%;
+  padding-top:2px;
+  margin-top:2px;
 }
 header {
   /*padding:1% 1% 2% 1%;*/
@@ -25,13 +25,13 @@ header {
 header img {
    float:right;
 }
-main{
+/*main{
   position:relative;
   top:5px;
-}
-span {
+}*/
+/*span {
   margin:0 7px 0 0;
-}
+}*/
 span:hover, img:hover, a:hover{
   cursor:pointer;
   font-weight:bold;
@@ -39,7 +39,7 @@ span:hover, img:hover, a:hover{
 }
 nav span {
   font-size:0.9em;
-  padding:0px 5px;
+  padding:5px;
   border-radius:3px;
   background:lightgrey;
   color:black;
@@ -47,18 +47,18 @@ nav span {
 ul {
   list-style: none;
 }
-li {
+/*li {
   margin-bottom:0.5%;
-}
-a {
+}*/
+/*a {
   color:lightblue;
   font-weight:bold;
-}
+}*/
 
-iframe { 
+/*iframe { 
   padding:1%;
   border-color:black;
-}
+}*/
 #backvideo {
   position: fixed;
   top: 50%;
