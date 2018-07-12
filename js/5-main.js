@@ -21,10 +21,13 @@ function main() {
   
   var hH = headerTag[0].clientHeight;
   var hW = headerTag[0].clientWidth;
+  var navMax = hW-(hH/2);
+  var imgMax = hH/2;
+  console.log("navmax: "+navmax+" imgmax: "+imgmax);
 
-  if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display", hW-hH/2);
+  if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display", navMax);
   if(!iframeTag) iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
-  if(!rotImgTag) rotImgTag = makeRot(rotImg, headerTag[0], hH/2);
+  if(!rotImgTag) rotImgTag = makeRot(rotImg, headerTag[0], imgMax);
   
   randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
 
