@@ -282,7 +282,7 @@ function displayCVTeachi(target,source){
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
-  window.alert(keys);
+  // window.alert(keys);
   for (var i in keys) {
     var x = keys[i];
     var time = source[x]["aTTime"];
@@ -311,7 +311,7 @@ function displayCVTeachi(target,source){
 
     let footer = element('h6',time);
     footTag.appendChild(footer);
-    window.alert(job);
+    // window.alert(job);
   }
 }
 function displayCVAwards(target,source){
@@ -394,7 +394,7 @@ function displayCVUnwork(target,source){
 
     let ulTag = element("ul");
     for (let j in lis){
-      let liTag = element("li", lis[i]);
+      let liTag = element("li", lis[j]);
       ulTag.appendChild(liTag);
     }
 
