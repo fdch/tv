@@ -116,7 +116,7 @@ function randomColor(preset, target){
   var doff = preset[3];
   var light = "rgb("+pdRandom(lran,loff)+","+pdRandom(lran,loff)+","+pdRandom(lran,loff)+")";
   var darky = "rgb("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+")";
-  var menuy = "rgba("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+",0.8)";
+  var menuy = "rgba("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+",1)";
 
   target[0].setAttribute('style', "background-color:" + darky +"; color:"+light+";");
   target[1].setAttribute('style', "background-color:" + menuy +";");
