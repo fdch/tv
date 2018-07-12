@@ -69,10 +69,9 @@ function resizeHeader(){
   var hH = headerTag[0].clientHeight;
   var hW = headerTag[0].clientWidth;
 
-  var iH = Math.floor(hW*0.12);
-  var max = Math.floor(hH*0.8);
-  
-  var i = iH>max?max:iH;
+  var iH = Math.floor(hW*0.15);
+
+  var i = iH>=hH?hH:iH;
   var n = Math.floor(hW*0.6)
  
   if(navigaTag) navigaTag.setAttribute('width', n);
