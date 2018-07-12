@@ -144,7 +144,7 @@ function funImage(input){
     rotImgTag.setAttribute('src', input[whichone]);
   },dur/4);
 
-  set Timeout(function(){
+  setTimeout(function(){
     rotImgTag.setAttribute('style',flipper.join(""));
   },dur/5);
 }
