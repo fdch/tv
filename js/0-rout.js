@@ -72,7 +72,7 @@ function resizeHeader(){
   var iH = Math.floor(hW*0.15);
 
   var i = iH>=hH?hH:iH;
-  var n = w-i-55; //a button box is about 55px wide...
+  var n = w-i-100; //a button box is about 55px wide...
  
   if(navigaTag) navigaTag.setAttribute('width', n);
   if(rotImgTag) rotImgTag.setAttribute('width', i);
