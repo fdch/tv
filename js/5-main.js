@@ -20,7 +20,7 @@ function main() {
   h1titlTag.setAttribute('onclick',"display(\'init\');");
   
   if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display");
-  if(!iframeTag) iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
+  if(!iframeTag) iframeTag = makeBackVideo("backvideo", mainTag, featURL[pdRandom(2)]);
   if(!rotImgTag) rotImgTag = makeRot(rotImg, bodyTag);
   
   randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
