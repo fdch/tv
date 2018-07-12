@@ -1,25 +1,20 @@
 function makeMenu(input, target, funcName) {
 
   var navTag = document.createElement('nav');
-  target.appendChild(navTag);
-
-  for (var i = 0;i < input.length; i++) {
-    var item = input[i].replace(/_/g," ").replace(/-/g," ");
-    var spanTag = document.createElement('span'); 
-    navTag.appendChild(spanTag);
-    var spanClass = document.createAttribute('class');
-    spanClass.value = "menuitem";
-    var spanOnclick = document.createAttribute('onclick');
-    spanOnclick.value = funcName+"(\'"+input[i]+"\')";
-    var spanText = document.createTextNode(item);
-    var attNodes = [spanClass,spanOnclick];
-    for (var k in attNodes) { spanTag.setAttributeNode(attNodes[k]); };
+  
+  for (var i=1; i < input.length; i++) {
+    let item = input[i].replace(/_/g," ").replace(/-/g," ");
+    let spanTag = document.createElement('span'); 
+    spanTag.setAttribute('class', 'menuitem');
+    spanTag.setAttribute('onclick', funcName+"(\'"+input[i]+"\')" );
+    let spanText = document.createTextNode(item);
     spanTag.appendChild(spanText);
+    navTag.appendChild(spanTag);
   }
+  var nclick = "(function(){randomColor(color_preset['high'],[bodyTag,headerTag[0]]),funImage(rotImg);})()";
+  navTag.setAttribute('onclick',nclick);
 
-  var navClick = document.createAttribute('onclick');
-  navClick.value = "(function(){randomColor(color_preset['high'],[bodyTag,headerTag[0]]),funImage(rotImg);})()";
-  navTag.setAttributeNode(navClick);
+  target.appendChild(navTag);
 
   return navTag;
 }

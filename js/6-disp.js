@@ -1,5 +1,5 @@
 function display(x) {
-  currpage = mitem.findIndex(item => item === x)+1;
+  currpage = mitem.findIndex(item => item === x);
   console.log(currpage);
   article = resetDisplay(x);
   switch (x) {
@@ -9,7 +9,7 @@ function display(x) {
     case "touch" :
       article.innerHTML = contactMessage.join("");
       break;
-    case "bio":
+    case "bio"   :
       displayBiogra(article);
       break;
     case "unwork":
@@ -24,6 +24,9 @@ function display(x) {
     case "people":
       displayPeople(article,allPeople);
       break;
+    case "init"  :
+      window.open(url);
+      break
     default:
     break;
   }
@@ -36,7 +39,7 @@ function resetDisplay(x){
   // $("main").css('background-image', 'url(' + loadingUrl + ')');
   //the header
   var headerTag = element('header');
-  
+
   let submitX = "getSubmit(\'"+x+"\');";
   let htitleTag = h(2, x, submitX);
   headerTag.appendChild(htitleTag);

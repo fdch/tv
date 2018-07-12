@@ -17,13 +17,12 @@ $(function(){
   footerTag.setAttribute('style', 'display:none');  
 
   var h1Tag = document.getElementsByTagName('h1')[0];
-  h1Tag.setAttribute('onclick',"window.open(\'"+url+"\', \'_top\');");
+  h1Tag.setAttribute('onclick',"display(\'init\');");
   
   navigaTag = makeMenu(mitem, headerTag[0] , "display");
   iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
   rotImgTag = makeRot(rotImg, bodyTag);
   
-
   randomColor(color_preset["high"], [bodyTag,headerTag[0]]);
 
   setInterval( function(){ funImage(rotImg) }, t);

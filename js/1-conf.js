@@ -10,7 +10,7 @@ var allPeople={};
 
 var allCategories=[], allTitles=[],allWorkId=[],uniqueCategories=[];
 
-var mitem = ["bio", "unwork", "papers", "events", "people", "touch"];
+var mitem = ["init", "bio", "unwork", "papers", "events", "people", "touch"];
 var currpage=0;
 
 var loaded=0, loading=0;
