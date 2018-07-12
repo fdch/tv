@@ -27,5 +27,6 @@ function mainCV() {
     if (!loaded) loaded = loadAll(allGS);
       else if (loaded) break; 
     }
-  for (var i in allCVsections) displayCV(allCVsections[i]);
+  var article = resetDisplayCV(x);
+  for (var i in allCVsections) displayCV(allCVsections[i], article);
 }

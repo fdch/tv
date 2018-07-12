@@ -243,26 +243,25 @@ function displayPeople(target,source) {
     // footTag.appendChild(footer);
    }
 }
-function displayCV(x) {
-  article = resetDisplayCV(x);
+function displayCV(x, target) {
   switch (x) {
     case "Personal" :
-      article.innerHTML = "<ul>"+tag("li",personal.join("</li><li>"))+"</li></ul>";
+      target.innerHTML = "<ul>"+tag("li",personal.join("</li><li>"))+"</li></ul>";
       break;
     case "Teachings" :
-      displayCVTeachi(article,allTeachi);
+      displayCVTeachi(target,allTeachi);
       break;
     case "Awards"   :
-      displayCVAwards(article,allAwards);
+      displayCVAwards(target,allAwards);
       break;
     case "Unworks":
-      displayCVUnwork(article,allUnwork);
+      displayCVUnwork(target,allUnwork);
       break;
     case "Collaborations":
-      displayCVCollab(article,allCollab);
+      displayCVCollab(target,allCollab);
       break;
     case "Performances":
-      displayCVPerfor(article,allPerfor);
+      displayCVPerfor(target,allPerfor);
        break
     default:
     break;
