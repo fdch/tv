@@ -8,12 +8,12 @@
 ///           ////////              \\\       ////       ///
 //           ///////                  \\\     ////       ///
 function main() {
-  if(! (htmlTag = document.getElementsByTagName('html')[0]) );
+  if(! (htmlTag   = document.getElementsByTagName('html')[0]) );
   randomFont(htmlTag);  
   
-  if(! (mainTag = document.getElementsByTagName('main')[0]) );
-  if(! (bodyTag = document.getElementsByTagName('body')[0]) );
-  if(! (headerTag = document.getElementsByTagName('header')) );
+  if(! (mainTag   = document.getElementsByTagName('main')[0]) );
+  if(! (bodyTag   = document.getElementsByTagName('body')[0]) );
+  if(! (headerTag = document.getElementsByTagName('header'))  );
   if(! (footerTag = document.getElementsByTagName('footer')[0]) );
   footerTag.setAttribute('style', 'display:none');  
 
