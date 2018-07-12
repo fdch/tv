@@ -75,7 +75,7 @@ function resizeHeader(){
   var n = w-i-60; //a button box is about 55px wide...
  
   if(navigaTag) navigaTag.setAttribute('style', "width:"+n+";");
-  if(rotImgTag) rotImgTag.setAttribute('style', rotImgStyle.join("")+"width:"+i+";");
+  if(rotImgTag) rotImgTag.setAttribute('width', i);
   return [n,i];
 }
 function resized(){
