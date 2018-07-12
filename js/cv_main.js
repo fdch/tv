@@ -22,7 +22,9 @@ function mainCV() {
       
   randomColor(color_preset["mid"], [bodyTag, headerTag[0]] );
 
-  loadAll(allGS);
-  for (var i in allCVsections) displayCV(allCVsections[i]);
+  var check = 0;
+  if (check=loadAll(allGS))
+    for (var i in allCVsections)
+      displayCV(allCVsections[i]);
 
 }

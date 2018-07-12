@@ -173,7 +173,7 @@ function loadAll(sheets) {
       allPerfor[nPid]["aPInst"] = e.gsx$instrument.$t;
       allPerfor[nPid]["aPWith"] = e.gsx$with.$t;
     }
-    console.log(Object.keys(allPerfor));
+    //console.log(Object.keys(allPerfor));
   });
   loading = 0;
   loaded = 1; //set it as loaded if it is loaded asynchronously
