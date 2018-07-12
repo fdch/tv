@@ -13,8 +13,8 @@ function makeMenu(input, target, funcName) {
     btn.appendChild(btnTxt);
     navTag.appendChild(btn);
   }
-  var nclick = "randomizeStuff();";
-  navTag.setAttribute('onclick',nclick);
+  navTag.setAttribute('onclick',"randomizeStuff();");
+
   target.appendChild(navTag);
 
   return navTag;
