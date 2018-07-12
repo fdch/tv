@@ -29,13 +29,15 @@ function display(x) {
   }
 }
 function resetDisplay(x){
-  let submitX = "getSubmit(\'"+x+"\');";
+  
   //remove previous stuff
   removeChilds(mainTag);
-  iframeSrc.value = '';
+  iframeTag.setAttribute('src','');
   // $("main").css('background-image', 'url(' + loadingUrl + ')');
   //the header
   var headerTag = element('header');
+  
+  let submitX = "getSubmit(\'"+x+"\');";
   let htitleTag = h(2, x, submitX);
   headerTag.appendChild(htitleTag);
 
