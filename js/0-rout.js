@@ -107,6 +107,7 @@ function randomVideo() {
   iframeTag.setAttribute('src',featURL[Math.floor(Math.random()*featURL.length)]);
 }
 function pdRandom(range,offset){
+  offset = offset || 0;
   return Math.floor(Math.Random() * range) + offset;
 }
 function randomColor(preset, target){
