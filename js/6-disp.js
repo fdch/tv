@@ -25,7 +25,7 @@ function display(x) {
       displayPeople(article,allPeople);
       break;
     case "init"  :
-      window.open(url);
+      window.open(url,'_top');
       break
     default:
     break;
