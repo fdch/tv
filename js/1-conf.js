@@ -43,7 +43,7 @@ var rotImg = [
 	raw+"tv/master/img/imgone-76.png",
 	raw+"tv/master/img/imgone-76-i.png",
 	rotImgWidth<=30?String(30+"px"):String(rotImgWidth+"px"),
-	"position:absolute;right:10px;top:10px;clip-path: circle(50% at center)",
+	"position:absolute;right:10px;top:10px;clip-path:circle(50% at center);-webkit-clip-path:circle(50% at center)",
 	"rotImgId",
 	"fdch~",
 	"imgClicker(this);"
