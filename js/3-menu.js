@@ -20,15 +20,15 @@ function makeMenu(input, target, funcName) {
 
   return navTag;
 }
-function makeRot(input, target){ 
+function makeRot(input, target, width){ 
   var imgTag = document.createElement('img');
 
   imgTag.setAttribute('src', input[0]);
-  imgTag.setAttribute('id', input[4]);
-  imgTag.setAttribute('width', input[2]);
-  imgTag.setAttribute('style', input[3]);
-  imgTag.setAttribute('title', input[5]);
-  imgTag.setAttribute('onclick', input[6]);
+  imgTag.setAttribute('id', input[3]);
+  imgTag.setAttribute('width', width);
+  imgTag.setAttribute('style', input[2]);
+  imgTag.setAttribute('title', input[4]);
+  imgTag.setAttribute('onclick', input[5]);
   
   target.insertAdjacentElement('afterbegin', imgTag);
 

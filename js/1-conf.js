@@ -37,13 +37,18 @@ var flickr = "http://www.flickr.com/federicocamarahalac";
 var linkedin = "http://linkedin.com/in/fedecamarahalac";
 var instagram = "https://instagram.com/ffddcchh";
 
-var rotImgWidth = w*0.25;
+var rotImgStyle= [
+	"position:absolute;",
+	"right:10px;",
+	"top:10px;",
+	"clip-path:circle(50% at center);",
+	"-webkit-clip-path:circle(50% at center)"
+];
 
 var rotImg = [
 	raw+"tv/master/img/imgone-76.png",
 	raw+"tv/master/img/imgone-76-i.png",
-	rotImgWidth<=30?String(30+"px"):String(rotImgWidth+"px"),
-	"position:absolute;right:10px;top:10px;clip-path:circle(50% at center);-webkit-clip-path:circle(50% at center)",
+	rotImgStyle.join(""),
 	"rotImgId",
 	"fdch~",
 	"imgClicker(this);"
