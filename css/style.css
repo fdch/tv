@@ -37,6 +37,9 @@ button:hover {
   background-color:lightblue;
   cursor:pointer;
 }
+button:focus {
+  background: pink;
+}
 /*main{
   position:relative;
   top:5px;
