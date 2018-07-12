@@ -454,7 +454,7 @@ function displayCVPerfor(target,source){
     var howw = allPerfor[x]["aPHoww"];
     var wher = allPerfor[x]["aPWher"];
     var inst = allPerfor[x]["aPInst"];
-    var with = allPerfor[x]["aPWith"];
+    var witt = allPerfor[x]["aPWith"];
 
     let headTag = element('header');
     sectTag.appendChild(headTag);
@@ -463,7 +463,7 @@ function displayCVPerfor(target,source){
     let footTag = element('footer');
     sectTag.appendChild(footTag);
 
-    let event = when.toDateString()+tilde+what +" at "+wher+", with "+with;
+    let event = when.toDateString()+tilde+what +" at "+wher+", with "+witt;
     let htitle = element("h3",event);
     headTag.appendChild(htitle);
 
