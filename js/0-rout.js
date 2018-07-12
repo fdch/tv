@@ -70,7 +70,7 @@ function resizeHeader(){
   var hW = headerTag[0].clientWidth;
 
   var iH = Math.floor(hW*0.15);
-  var hHmax = Math.floor(hH*0.8);
+  var hHmax = Math.floor(hH*0.8)-2;
 
   var i = iH>=hHmax?hHmax:iH;
   var n = w-i-60; //a button box is about 55px wide...
