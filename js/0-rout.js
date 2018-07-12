@@ -145,7 +145,7 @@ function funImage(input){
   },dur/4);
 
   setTimeout(function(){
-    rotImgTag.setAttribute('style',flipper.join(""));
+    rotImgTag.setAttribute('style',flipper.concat(rotImgStyle).join(""));
   },dur/5);
 }
 function randomizeStuff(){
