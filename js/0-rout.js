@@ -76,7 +76,7 @@ function resizeHeader(){
  
   if(navigaTag) navigaTag.setAttribute('style', "width:"+n+"px;");
   if(rotImgTag) rotImgTag.setAttribute('width', i);
-  return [n,i];
+  //return [n,i];
 }
 function resized(){
   w = width();
@@ -154,8 +154,7 @@ function randomizeStuff(){
 }
 function imgClicker(x) {
   if (!currpage) randomVideo();
-  randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
-  funImage(rotImg);  
+  randomizeStuff();  
 }
 function getUniqueCategories(x){
 
