@@ -20,6 +20,7 @@ var w, h;
 var t = 4333;
 var maxWidth = 810;
 var widthFactor = 0.9;
+var headSiz = [maxWidth,30]; //header max size, rotIm init size
 
 var url = "https://fdch.github.io/tv";
 var repo = "https://github.com/fdch/";
