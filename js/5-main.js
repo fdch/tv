@@ -8,20 +8,20 @@
 ///           ////////              \\\       ////       ///
 //           ///////                  \\\     ////       ///
 function main() {
-  htmlTag = document.getElementsByTagName('html')[0];
+  if(! (htmlTag = document.getElementsByTagName('html')[0]) );
   randomFont(htmlTag);  
-  mainTag = document.getElementsByTagName('main')[0];
-  bodyTag = document.getElementsByTagName('body')[0];
-  headerTag = document.getElementsByTagName('header');
-  footerTag = document.getElementsByTagName('footer')[0];
+  if(! (mainTag = document.getElementsByTagName('main')[0]) );
+  if(! (bodyTag = document.getElementsByTagName('body')[0]) );
+  if(! (headerTag = document.getElementsByTagName('header')) );
+  if(! (footerTag = document.getElementsByTagName('footer')[0]) );
   footerTag.setAttribute('style', 'display:none');  
 
-  var h1Tag = document.getElementsByTagName('h1')[0];
+  if(! (var h1Tag = document.getElementsByTagName('h1')[0]) );
   h1Tag.setAttribute('onclick',"display(\'init\');");
   
-  navigaTag = makeMenu(mitem, headerTag[0] , "display");
-  iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
-  rotImgTag = makeRot(rotImg, bodyTag);
+  if(! (navigaTag = makeMenu(mitem, headerTag[0] , "display")) );
+  if(! (iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)])) );
+  if(! (rotImgTag = makeRot(rotImg, bodyTag)) );
   
   randomColor(color_preset["high"], [bodyTag,headerTag[0]]);
 
