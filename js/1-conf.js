@@ -1,7 +1,7 @@
 
 
 var htmlTag, bodyTag, headerTag, mainTag, footerTag;
-var navigaTag, iframeTag, rotImgTag;
+var h1titlTag, navigaTag, iframeTag, rotImgTag;
 
 var allUnwork={};
 var allPapers={};
