@@ -23,13 +23,6 @@ header {
   border-radius:3px;
   cursor:pointer;
 }
-header img {
-   position:relative;
-   float:left;
-   width:30px;
-   clip-path: circle(50% at center);
-}
-
 nav span {
   padding:5px;
   border-radius:3px;
