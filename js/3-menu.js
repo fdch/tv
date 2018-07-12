@@ -27,7 +27,8 @@ function makeRot(input, target){
   imgTag.setAttribute('id', input[4]);
   imgTag.setAttribute('width', input[2]);
   imgTag.setAttribute('style', input[3]);
-  imgTag.setAttribute('onclick', "imgClicker(this);");
+  imgTAg.setAttribute('title', input[5]);
+  imgTag.setAttribute('onclick', input[6]);
   
   target.insertAdjacentElement('afterbegin', imgTag);
 
