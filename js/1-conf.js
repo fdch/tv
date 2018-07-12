@@ -1,6 +1,8 @@
-var loaded=0, loading=0;
 
-var htmlTag, bodyTag, headerTag, navTag, mainTag, footerTag, iframeTag;
+
+var htmlTag, bodyTag, headerTag, mainTag, footerTag;
+var navigaTag, iframeTag, rotImgTag;
+
 var allUnwork={};
 var allPapers={};
 var allEvents={};
@@ -8,9 +10,15 @@ var allPeople={};
 
 var allCategories=[], allTitles=[],allWorkId=[],uniqueCategories=[];
 
-var w, h, t = 4333;
 var mitem = ["bio", "unwork", "papers", "events", "people", "touch"];
 var currpage=0;
+
+var loaded=0, loading=0;
+
+
+
+
+var w, h, t = 4333;
 var maxWidth = 810;
 var widthFactor = 0.9;
 

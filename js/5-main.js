@@ -19,9 +19,10 @@ $(function(){
   var h1Tag = document.getElementsByTagName('h1')[0];
   h1Tag.setAttribute('onclick',"window.open(\'"+url+"\', \'_top\');");
   
-  makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
-  var rotImgTag = makeRot(rotImg, bodyTag);
-  navTag = makeMenu(mitem, headerTag[0] , "display");
+  navigaTag = makeMenu(mitem, headerTag[0] , "display");
+  iframeTag = makeBackVideo("backvideo", bodyTag, featURL[pdRandom(2)]);
+  rotImgTag = makeRot(rotImg, bodyTag);
+  
 
   randomColor(color_preset["high"], [bodyTag,headerTag[0]]);
 
