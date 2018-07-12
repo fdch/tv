@@ -30,6 +30,9 @@ span:hover, img:hover, a:hover{
   cursor:pointer;
   text-decoration:underline;
 }
+a {
+  color:lightblue;
+}
 a:focus{
   outline:none;
 }
