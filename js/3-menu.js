@@ -4,14 +4,16 @@ function makeMenu(input, target, funcName) {
   
   for (var i=1; i < input.length; i++) {
     let item = input[i].replace(/_/g," ").replace(/-/g," ");
-    let spanTag = document.createElement('span'); 
-    spanTag.setAttribute('class', 'menuitem');
-    spanTag.setAttribute('onclick', funcName+"(\'"+input[i]+"\')" );
-    let spanText = document.createTextNode(item);
-    spanTag.appendChild(spanText);
-    navTag.appendChild(spanTag);
+    let btn = document.createElement('button'); 
+    btn.setAttribute('type', 'button');
+    btn.setAttribute('title',x);
+    if(1==i) btn.setAttribute('autofocus','');
+    btn.setAttribute('onclick', funcName+"(\'"+input[i]+"\')" );
+    let btnTxt = document.createTextNode(item);
+    btn.appendChild(btnTxt);
+    navTag.appendChild(btn);
   }
-  var nclick = "(function(){randomColor(color_preset['high'],[bodyTag,headerTag[0]]),funImage(rotImg);})()";
+  var nclick = "randomizeStuff();";
   navTag.setAttribute('onclick',nclick);
 
   target.appendChild(navTag);

@@ -114,6 +114,10 @@ function funImage(input){
     $(theid).attr('src', input[whichone])
   },dur/4);
 }
+function randomizeStuff(){
+  randomColor(color_preset['high'],[bodyTag,headerTag[0]]);
+  funImage(rotImg);
+}
 function imgClicker(x) {
   if (!currpage) randomVideo();
   randomColor(color_preset["high"]);
