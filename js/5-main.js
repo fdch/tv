@@ -21,8 +21,9 @@ function main() {
   
   var hH = headerTag[0].clientHeight;
   var hW = headerTag[0].clientWidth;
-  var navMax = hW-(hH/2);
-  var imgMax = hH/2;
+ 
+  var imgMax = Math.floor(hH*0.8);
+  var navMax = hW-imgMax;
   console.log("navmax: "+navMax+" imgmax: "+imgMax);
 
   if(!navigaTag) navigaTag = makeMenu(mitem, headerTag[0] , "display", navMax);
