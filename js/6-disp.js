@@ -282,7 +282,7 @@ function displayCVTeachi(target,source){
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
-  // window.alert(keys);
+  console.log(keys);
   for (var i in keys) {
     var x = keys[i];
     var time = source[x]["aTTime"];
@@ -319,6 +319,7 @@ function displayCVAwards(target,source){
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
+  console.log(keys);
   for (var i in keys) {
     var x = keys[i];
     var time = source[x]["aATime"];
@@ -356,6 +357,7 @@ function displayCVUnwork(target,source){
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
+  console.log(keys);
   for (var i in keys) {
     let x = keys[i];
     let titl = source[x]["awTitl"]; ////////////
@@ -409,6 +411,7 @@ function displayCVCollab(target,source){
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
+  console.log(keys);
   for (var i in keys) {
     var x = keys[i];
     var time = source[x]["aCTime"];
@@ -440,6 +443,7 @@ function displayCVPerfor(target,source){
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
+  console.log(keys);
   for (var i in keys) {
     var x = keys[i];
     var time = source[x]["aPTime"];
