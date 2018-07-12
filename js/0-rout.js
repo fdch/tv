@@ -65,20 +65,23 @@ function articleWidth(maxW){
   var f = widthFactor;
   if (pw >= maxW) {return maxW*f;} else {return pw*f;}
 }
-function resized(){
-  w = width();
-  h = height();
-
+function resizeHeader(){
   var hH = headerTag[0].clientHeight;
   var hW = headerTag[0].clientWidth;
 
-  var imgWidth = Math.floor(hW*0.12);
+  var iH = Math.floor(hW*0.12);
 
-  
-  navigaTag.setAttribute('width', Math.floor(hW*0.6));
-  rotImgTag.setAttribute('width', imgWidth>hH/2?hH/2:imgWidth);
-
-
+  var i = iH>hH/2?hH/2:iH;
+  var n = Math.floor(hW*0.6)
+ 
+  navigaTag.setAttribute('width', n);
+  rotImgTag.setAttribute('width', i);
+  return [i,n];
+}
+function resized(){
+  w = width();
+  h = height();
+  resizeHeader();
 }
 function loadJSON(x,callback) {
   var xobj = new XMLHttpRequest();
