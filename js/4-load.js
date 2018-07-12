@@ -1,4 +1,4 @@
-function loadAll(sheets) {
+function loadAll(sheets, callback) {
   loading = 1;
   //works
   loadJSON(sheets[0], function(response) {
@@ -177,6 +177,9 @@ function loadAll(sheets) {
   });
   loading = 0;
   loaded = 1; //set it as loaded if it is loaded asynchronously
+
+  if(callback) callback();
+
   return 1; //actually not checking if stuf loaded...
 }
 

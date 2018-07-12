@@ -22,12 +22,15 @@ function mainCV() {
       
   randomColor(color_preset["mid"], [bodyTag, headerTag[0]] );
 
-  var check = 0;
-  if (check=loadAll(allGS)) {
-    setTimeout(function(){
-      loadCV();
-    }, 3000);
-  }
+  // var check = 0;
+  // if (check=loadAll(allGS)) {
+  //   setTimeout(function(){
+  //     loadCV();
+  //   }, 3000);
+  // }
+  loadAll(allGS,loadCV);
+
+
 }
 
 function loadCV() {
