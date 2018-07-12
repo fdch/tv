@@ -132,7 +132,7 @@ function loadAll(sheets) {
       allAwards[nAid]["aADesc"] = e.gsx$description.$t;
       allAwards[nAid]["aAUrll"] = e.gsx$url.$t;
     }
-    // window.alert(Object.keys(allAwards));
+    console.log(Object.keys(allAwards));
   });
   //collabs
   loadJSON(sheets[6], function(response) {
@@ -173,6 +173,7 @@ function loadAll(sheets) {
       allPerfor[nPid]["aPInst"] = e.gsx$instrument.$t;
       allPerfor[nPid]["aPWith"] = e.gsx$with.$t;
     }
+    console.log(Object.keys(allPerfor));
   });
   loading = 0;
   loaded = 1; //set it as loaded if it is loaded asynchronously

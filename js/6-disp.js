@@ -330,7 +330,6 @@ function displayCVAwards(target,source){
     var whoo = source[x]["aAWhoo"];
     var desc = source[x]["aADesc"];
     var urll = source[x]["aAUrll"];
-    
 
     let headTag = element('header');
     sectTag.appendChild(headTag);
