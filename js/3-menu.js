@@ -15,7 +15,6 @@ function makeMenu(input, target, funcName) {
   }
   var nclick = "randomizeStuff();";
   navTag.setAttribute('onclick',nclick);
-
   target.appendChild(navTag);
 
   return navTag;

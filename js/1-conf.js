@@ -41,7 +41,7 @@ var rotImgStyle= [
 	"right:10px;",
 	"top:10px;",
 	"clip-path:circle(50% at center);",
-	"-webkit-clip-path:circle(50% at center)"
+	"-webkit-clip-path:circle(50% at center);"
 ];
 
 var rotImg = [
