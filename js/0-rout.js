@@ -124,7 +124,7 @@ var whichone = 0;
 function funImage(input){
   dur = Math.random()*5000;
   ang = Math.random()*360*2-360;
-  theid = String("#"+input[4]);
+  theid = String("#"+input[3]);
   $(theid).rotate({animateTo: ang,duration: dur});
   if (whichone==0) {whichone=1} else {whichone=0}
   setTimeout(function(){
@@ -137,7 +137,7 @@ function randomizeStuff(){
 }
 function imgClicker(x) {
   if (!currpage) randomVideo();
-  randomColor(color_preset["high"]);
+  randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
   funImage(x.id, rotImg);  
 }
 function getUniqueCategories(x){
