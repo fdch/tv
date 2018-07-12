@@ -121,15 +121,32 @@ function randomColor(preset, target){
   target[1].setAttribute('style', "background-color:" + menuy +";");
 }
 var whichone = 0;
+var flipped = 1;
 function funImage(input){
   dur = Math.random()*5000;
   ang = Math.random()*360*2-360;
-  theid = String("#"+input[3]);
-  $(theid).rotate({animateTo: ang,duration: dur});
+    
+  $(String("#"+input[3])).rotate({animateTo: ang,duration: dur});
+  
   if (whichone==0) {whichone=1} else {whichone=0}
+  flipped = flipped==1?(-1):1;
+    
+  var flipper = [
+    "-moz-transform: scaleX("+flipped+");",
+    "-o-transform: scaleX("+flipped+");",
+    "-webkit-transform: scaleX("+flipped+");",
+    "transform: scaleX("+flipped+");",
+    "filter: FlipH;",
+    "-ms-filter: \'FlipH\';",
+  ];
+       
   setTimeout(function(){
-    $(theid).attr('src', input[whichone])
+    rotImgTag.setAttribute('src', input[whichone]);
   },dur/4);
+
+  set Timeout(function(){
+    rotImgTag.setAttribute('style',flipper.join(""));
+  },dur/5);
 }
 function randomizeStuff(){
   randomColor(color_preset['high'],[bodyTag,headerTag[0]]);

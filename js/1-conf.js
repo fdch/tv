@@ -1,5 +1,3 @@
-
-
 var htmlTag, bodyTag, headerTag, mainTag, footerTag;
 var h1titlTag, navigaTag, iframeTag, rotImgTag;
 
