@@ -71,10 +71,13 @@ function resized(){
 
   var hH = headerTag[0].clientHeight;
   var hW = headerTag[0].clientWidth;
+
+  var imgWidth = Math.floor(hW*0.12);
+
   
   navigaTag.setAttribute('width', Math.floor(hW*0.6));
-  rotImgTag.setAttribute('width', Math.floor(hW*0.12));
-  
+  rotImgTag.setAttribute('width', imgWidth>hH/2?hH/2:imgWidth);
+
 
 }
 function loadJSON(x,callback) {
