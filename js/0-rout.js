@@ -116,12 +116,9 @@ function randomColor(preset, target){
   var light = "rgb("+pdRandom(lran,loff)+","+pdRandom(lran,loff)+","+pdRandom(lran,loff)+")";
   var darky = "rgb("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+")";
   var menuy = "rgba("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+",0.3)";
-try{
+
   target[0].setAttribute('style', "background-color:" + darky +"; color:"+light+";");
   target[1].setAttribute('style', "background-color:" + menuy +";");
-}catch(err) {
-  console.log(err);
-}
 }
 var whichone = 0;
 // var flipped = 1;
@@ -131,7 +128,7 @@ function funImage(input){
     
   $(String("#"+input[3])).rotate({animateTo: ang,duration: dur});
   
-  if (whichone==0) {whichone=1} else {whichone=0}
+  if (whichone==0) {whichone=1} else {whichone=0};
   // flipped = flipped==1?(-1):1;
     
   // var flipper = [
@@ -158,7 +155,7 @@ function randomizeStuff(){
 function imgClicker(x) {
   if (!currpage) randomVideo();
   randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
-  funImage(x.id, rotImg);  
+  funImage(rotImg);  
 }
 function getUniqueCategories(x){
 
