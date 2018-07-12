@@ -1,10 +1,3 @@
-/*html {
-  font-family:Courier;
-}*/
-/*body {
-  background-color:black;
-  color:white;
-}*/
 h1, h2, h3, h4, h5, h6{
   cursor:pointer;
   margin:3px 0;
@@ -13,20 +6,11 @@ h1, h2, h3, h4, h5, h6{
 h1 {
   font-size:0.8em;
 }
-/*h3 {
-  padding-top:2px;
-  margin-top:2px;
-}*/
 header, article, footer{
   padding:5px 0px 0px 10px;
   margin:0;
   border-radius:3px;
 }
-/*nav span {
-  padding:5px;
-  border-radius:3px;
-  background:lightgrey;
-}*/
 button {
   padding:3px 5px;
   font-size:0.8em;
@@ -42,13 +26,6 @@ button:focus {
   background: lightblue;
   outline:none;
 }
-/*main{
-  position:relative;
-  top:5px;
-}*/
-/*span {
-  margin:0 7px 0 0;
-}*/
 span:hover, img:hover, a:hover{
   cursor:pointer;
   text-decoration:underline;
@@ -56,22 +33,9 @@ span:hover, img:hover, a:hover{
 a:focus{
   outline:none;
 }
-
 ul {
   list-style: none;
 }
-/*li {
-  margin-bottom:0.5%;
-}*/
-/*a {
-  color:lightblue;
-  font-weight:bold;
-}*/
-
-/*iframe { 
-  padding:1%;
-  border-color:black;
-}*/
 #backvideo {
   position: fixed;
   top: 50%;
@@ -99,5 +63,6 @@ select{
   font-size:0.8em;
 }
 footer {
-  float:right;
+  position:relative;
+  right:0;
 }

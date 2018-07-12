@@ -132,7 +132,7 @@ function funImage(input){
   $(String("#"+input[3])).rotate({animateTo: ang,duration: dur});
   
   if (whichone==0) {whichone=1} else {whichone=0}
-  flipped = flipped==1?(-1):1;
+  // flipped = flipped==1?(-1):1;
     
   // var flipper = [
   //   "-moz-transform: scaleX("+flipped+");",
