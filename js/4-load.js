@@ -132,7 +132,7 @@ function loadAll(sheets) {
       allAwards[nAid]["aADesc"] = e.gsx$description.$t;
       allAwards[nAid]["aAUrll"] = e.gsx$url.$t;
     }
-    console.log(Object.keys(allAwards));
+    //console.log(Object.keys(allAwards));
   });
   //collabs
   loadJSON(sheets[6], function(response) {
