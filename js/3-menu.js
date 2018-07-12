@@ -36,6 +36,7 @@ function makeBackVideo(id, target, source) {
   iframeTag.setAttribute('id', id);
   iframeTag.setAttribute('src', source);
   target.appendChild(iframeTag);
+  return iframeTag;
 }
 function makeInput(input,target) {
   //makeInput([uniqueID, checkbox], parentNode);
