@@ -19,7 +19,7 @@ function mainCV() {
   headerTag[0].setAttribute('onclick',"displayCV(\'reset\');");
   resized();
   mainBack = document.createAttribute('style');
-  mainBack.value = backImg+"width:"+w+";height:"+h+";";
+  mainBack.value = backImg+"width:"+w+"px;height:"+h+"px;";
   mainTag.setAttributeNode(mainBack);
       
   randomColor(color_preset["mid"], [bodyTag, headerTag[0]] );

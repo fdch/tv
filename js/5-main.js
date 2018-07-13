@@ -12,7 +12,7 @@ function main() {
   if(!headerTag)headerTag=document.getElementsByTagName('header');
   if(!mainTag)  mainTag  =document.getElementsByTagName('main')[0];
   mainBack = document.createAttribute('style');
-  mainBack.value = backImg;
+  mainBack.value = backImg+"width:"+w+"px;height:"+h+"px;";
   mainTag.setAttributeNode(mainBack);
   if(!iframeTag)iframeTag=makeBackVideo("bkvid",bodyTag,featURL[pdRandom(2)]);
   mainBack.value = '';
