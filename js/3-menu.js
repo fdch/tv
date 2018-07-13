@@ -78,6 +78,7 @@ function makeDropdowns(id,target,list) {
   selectTag.setAttribute('onchange', 'getValue(this)');
 
   var thelist = shuffleArray(list);
+  
   for (let i in thelist) {
     let val = thelist[i];
     let elemTxt = document.createTextNode(val);
