@@ -30,8 +30,6 @@ function main() {
 
   if(!navigaTag)navigaTag=makeMenu(mitem, headerTag[0] , "display");
   if(!rotImgTag)rotImgTag=makeRot(rotImg, headerTag[0]);
-
-  headerTag[0].setAttribute('style', 'padding-left:10px');
   
   loadAll(allGS);
 
