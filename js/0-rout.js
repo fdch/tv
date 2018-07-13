@@ -235,25 +235,6 @@ function getValue(x) {
     }
     wid.setAttribute('style', "display:"+onoff);
   }
-
-
-
-
-  switch (name) {
-    case "title":
-      for (let i in allWorkId) {
-        var onoff;
-        var current = allWorkId[i];
-        var wid = document.getElementById(current);
-        
-        wid.setAttribute('style', "display:"+onoff);
-      }
-      break;
-    default:
-      
-
-      break;
-  }
   console.log(name + ": " + valu);
 }
 function unique(array) {
