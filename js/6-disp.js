@@ -1,6 +1,6 @@
 function display(x) {
   currpage = mitem.findIndex(item => item === x);
-  mainBack.value = backImg;
+  mainBack.value = backImg+"width:"+w+"px;height:"+h+"px;";
   //console.log(currpage);
   article = resetDisplay(x);
   switch (x) {
