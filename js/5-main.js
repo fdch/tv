@@ -14,7 +14,7 @@ function main() {
   if(!mainTag)  mainTag  =document.getElementsByTagName('main')[0];
   mainBack = document.createAttribute('style');
   mainBack.value = backImg+"width:"+w+"px;height:"+h+"px;";
-  mainTag.setAttributeNode(mainBack);
+  //mainTag.setAttributeNode(mainBack);
 
   if(!bodyTag)  bodyTag  =document.getElementsByTagName('body')[0];
   bodyTag.setAttribute('onresize', 'resized()');
