@@ -145,11 +145,11 @@ function funImage(input){
 }
 function randomizeStuff(){
   funImage(rotImg);
-  let times = pdRandom(30,5);
+  let times = pdRandom(25,5);
   while (times) {
     setTimeout(function(){
     randomColor(color_preset['high'],[bodyTag,headerTag[0]]);
-    },pdRandom(100*times,30));
+    },pdRandom(60*times,30));
 
     times--;
   }
