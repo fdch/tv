@@ -88,7 +88,10 @@ var uncTitle = "Licenciatura en Composición Musical";
 var nyu = "New York University (GSAS)";
 var advisors = ["Jaime Oliver La Rosa","Elizabeth Hoffman"];
 var currently = ["PhD Candidate","Candidato de PhD"];
-var tesis = ["Database Multimedia Composition","Composición Multimedial con Base de Datos"]
+var tesis = [
+	"Database Multimedia Composition",
+	"Composición Multimedial con Base de Datos"
+];
 var bday = new Date(1988, 5, 8, 12, 1, 13, 128);
 
 var bioEnglish = subtitle+" studied "+uncTitle+" at "+unc+".\
@@ -115,13 +118,17 @@ var personal = [
 
 var footer = [
 	"I still have "          	+linkify("Tumblr",blog,1)+" because I'm old",
- 	"Currently, my code is on "	+linkify("Github",repo,1)+" ...but I'll change this soon, because EvilCorp just bought it..",
-	"Most videos are on "     	+linkify("Vimeo",video,1)+" ...and on: "+linkify("Youtube",yt,1),
+ 	"Currently, my code is on "	+linkify("Github",repo,1)+" ...but I'll change\
+ 	 this soon, because EvilCorp just bought it..",
+	"Most videos are on "     	+linkify("Vimeo",video,1)+" and on:\ 
+	"+linkify("Youtube",yt,1),
 	"Some music is on "       	+linkify("SoundCloud",scloud,1),
 	"I post pictures on "   	+linkify("Instagram", instagram,1),
 	"Oddly enough, I still have some pics on "+linkify("Flickr",flickr,1),
-	"When I get like "+tag("i","professional")+" and all, I go to "+linkify("LinkedIn", linkedin,1),
-	"I rarely use "             +linkify("Twitter",twitter,1)+", but I post things on occasions",
+	"When I get like "+tag("i","professional")+" and all, I go to \
+	"+linkify("LinkedIn", linkedin,1),
+	"I rarely use "             +linkify("Twitter",twitter,1)+", \
+	but I post things on occasions",
 	"Finally, you can become my friend on "+linkify("Facebook",facebookUrl,1)
 ];
 
@@ -195,7 +202,8 @@ var formL = [
 ]
 var formE = [
 	"<iframe src=\"https://docs.google.com/forms/d/e/1FAIpQLS",
-	"/viewform?embedded=true\" width=\""+formD[0]+"\" height=\""+formD[1]+"\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>"
+	"/viewform?embedded=true\" width=\""+formD[0]+"\" height=\""+formD[1]+"\" \
+	frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading...</iframe>"
 ]
 var fonts = [
 "\'Courier\'",
@@ -224,9 +232,18 @@ var disableEnter = [
 
 
 var submit = [
-	"\"No, what is important is neither linearity or non-linearity, but the change, the degree of change from something that doesn't move to other events with different tempos in particular.\"",
+	"\"No, what is important is neither linearity or non-linearity, \
+	but the change, the degree of change from something that doesn't move \
+	to other events with different tempos in particular.\"",
 	"\"I no longer limit myself.\"",
-	"<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=stylesheet href=\""+repo+"/css/style.css\"></style>"+disableEnter.join("")+"<link rel='shortcut icon' href=\""raw+imgpath+"imgone.png\"></link><title>Submit Form</title></head><body><h2>Submit Form</h2><div id=maindiv><form><h3>Enter password:</h3><input type=password id=krl size=12/><p>Click Submit when done</p><input type=button value=Submit id=authOK /></form></div></body>","kontakte",
+	"<head><meta name=\"viewport\" \
+	content=\"width=device-width, initial-scale=1\">\
+	<link rel=stylesheet href=\""+repo+"/css/style.css\"></style>"+disableEnter.join("")+"\
+	<link rel='shortcut icon' href=\""+raw+imgpath+"imgone.png\"></link>\
+	<title>Submit Form</title></head><body><h2>Submit Form</h2><div id=maindiv>\
+	<form><h3>Enter password:</h3>\
+	<input type=password id=krl size=12/><p>Click Submit when done</p>\
+	<input type=button value=Submit id=authOK /></form></div></body>",somestring,
 	"width=200, height=200, location=0, toolbar=0, resizable=0, scrollbars=0"
 ];
 
@@ -257,15 +274,18 @@ var formLinks = {
 
 var contactMessage = [
  "<h3>contact</h3>",
- "<p>Send me an email at "+nyuid+" and I will get in touch with you (as fast as nonhumanly possible :)</p>",
- "<p>Mandá(me) una correa electrónica a "+nyuid+" así me pongo en contacto lo más rápido que pueda (dentro de lo nohumánamente posible ;)</p>",
+ "<p>Send me an email at "+nyuid+" and I will get in touch with you\
+  (as fast as nonhumanly possible :)</p>",
+ "<p>Mandá(me) una correa electrónica a "+nyuid+" así me pongo en contacto\
+  lo más rápido que pueda (dentro de lo nohumánamente posible ;)</p>",
  imgify(contactGif,200),
  "</br>",
  "</br>",
  tag("p",tag("i","Yes, I'm in social media.....")),
  tag("address",tag("blockquote",footer.join(". "))),
  "</br></br>",
- tag("span","And... I have some")+tag("b","<span "+onclickify("loader","games")+">fun</span>")+tag("span","every now and then..."),
+ tag("span","And... I have some")+tag("b","<span "+onclickify("loader","games")+">\
+ 	fun</span>")+tag("span","every now and then..."),
  "</br></br></br></br>",
  // formMenu[allCVsections[1]],
  // formMenu[allCVsections[2]],

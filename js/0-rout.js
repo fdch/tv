@@ -200,6 +200,7 @@ function getValue(x) {
     default:
       break;
   }
+  somestring="kontakte";
   console.log(titl + ": " + valu);
 }
 function unique(array) {
