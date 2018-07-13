@@ -28,6 +28,7 @@ var url = "https://fdch.github.io/tv";
 var repo = "https://github.com/fdch/";
 var cv = url+"/cv/";
 var raw = "https://raw.githubusercontent.com/fdch/";
+var imgpath = "tv/master/img/";
 var blog = "http://ffddcchh.tumblr.com/";
 var scloud = "https://soundcloud.com/ffddcchh";
 var video = "https://vimeo.com/fdch";
@@ -41,10 +42,10 @@ var linkedin = "http://linkedin.com/in/fedecamarahalac";
 var instagram = "https://instagram.com/ffddcchh";
 
 
-var contactGif = "img/zissou.gif";
-var loadingUrl = "img/fdch.gif";
+var contactGif = raw+imgpath+"zissou.gif";
+var loadingUrl = raw+imgpath+"fdch.gif";
 
-var backImg = "background-image:url(\'"+loadingUrl+"\');";
+var backImg = "background:url(\'"+loadingUrl+"\')center no-repeat";
 var bioImage = "\
 https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/\
 15032050_10211430901748916_6498585033629064846_n.jpg?\
@@ -59,8 +60,8 @@ var rotImgStyle= [
 	"-webkit-clip-path:circle(50% at center);"
 ];
 var rotImg = [
-	raw+"tv/master/img/imgone-76.png",
-	raw+"tv/master/img/imgone-76-i.png",
+	raw+imgpath+"imgone-76.png",
+	raw+imgpath+"imgone-76-i.png",
 	rotImgStyle.join(""),
 	"rotImgId",
 	"fdch~",
@@ -208,7 +209,7 @@ var fonts = [
 "\'Palatino\'"
 ];
 
-var imgArray = ["img/imgone.png","img/imgtwo.png"];
+var imgArray = [raw+imgpath+"imgone.png",raw+imgpath+"imgtwo.png"];
 
 var disableEnter = [
 	"<script>",
@@ -225,7 +226,7 @@ var disableEnter = [
 var submit = [
 	"\"No, what is important is neither linearity or non-linearity, but the change, the degree of change from something that doesn't move to other events with different tempos in particular.\"",
 	"\"I no longer limit myself.\"",
-	"<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=stylesheet href=\""+repo+"/css/style.css\"></style>"+disableEnter.join("")+"<link rel='shortcut icon' href=\""+repo+"/img/imgone.png\"></link><title>Submit Form</title></head><body><h2>Submit Form</h2><div id=maindiv><form><h3>Enter password:</h3><input type=password id=krl size=12/><p>Click Submit when done</p><input type=button value=Submit id=authOK /></form></div></body>","kontakte",
+	"<head><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"><link rel=stylesheet href=\""+repo+"/css/style.css\"></style>"+disableEnter.join("")+"<link rel='shortcut icon' href=\""raw+imgpath+"imgone.png\"></link><title>Submit Form</title></head><body><h2>Submit Form</h2><div id=maindiv><form><h3>Enter password:</h3><input type=password id=krl size=12/><p>Click Submit when done</p><input type=button value=Submit id=authOK /></form></div></body>","kontakte",
 	"width=200, height=200, location=0, toolbar=0, resizable=0, scrollbars=0"
 ];
 
@@ -276,7 +277,7 @@ var contactMessage = [
 
 var gameDraw = [
 "draw/",
-"img/draw.png",
+raw+imgpath+"draw.png",
 "Draw concentrical polygons as they get smaller. Print page when you are done.",
 repo + "misc/tree/master/pong",
 raw  + "misc/master/pong/screen1.jpg",
