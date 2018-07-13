@@ -154,6 +154,11 @@ function randomizeStuff(){
     times--;
   }
 }
+function navClicker() {
+
+  randomColor(color_preset['high'],[bodyTag,headerTag[0]]);
+
+}
 function imgClicker(x) {
   if (!currpage) randomVideo();
   randomizeStuff();  
