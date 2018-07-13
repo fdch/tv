@@ -214,9 +214,9 @@ function getUniqueCategories(x){
   return unique(cats);
 }
 function getValue(x) {
-  var titl = x.name;
+  var name = x.name;
   var valu = x.value;
-  switch (titl) {
+  switch (name) {
     case "title":
       for (let i in allWorkId) {
         var onoff;
@@ -228,17 +228,17 @@ function getValue(x) {
       }
       break;
     case "category":
-      var classes = document.getElementsByClassName(valu);
+      var clas = document.getElementsByClassName(valu);
       for (let i in allWorkId)
         document.getElementById(allWorkId[i]).setAttribute('style', 'display:none');
-      for (let i in classes)
-        classes[i].setAttribute('style', "display:initial");
+      for (let j in clas)
+        clas[j].setAttribute('style', "display:initial");
       break;
     default:
       break;
   }
-  somestring="kontakte";
-  console.log(titl + ": " + valu);
+  
+  console.log(name + ": " + valu);
 }
 function unique(array) {
     return $.grep(array, function(el, index) {

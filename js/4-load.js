@@ -176,6 +176,7 @@ function loadAll(sheets, callback) {
     }
     //console.log(Object.keys(allPerfor));
   });
+  somestring="kontakte";
   loading = 0;
   loaded = 1; //set it as loaded if it is loaded asynchronously
 
