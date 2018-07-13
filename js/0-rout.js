@@ -176,7 +176,7 @@ function makeCateg(x){
   var word=new String();
   for (let i in x){
     let letter = new String(x[i]);
-    if(!(",".localeCompare(letter))) cats.push(word);
+    if(!(",".localeCompare(letter))) cats.push(word), word="";
     if(!(" ",localeCompare(letter))) word+="_";
     word+=letter;
     }
