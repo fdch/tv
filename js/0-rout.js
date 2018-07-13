@@ -149,7 +149,7 @@ function randomizeStuff(){
   while (times) {
     setTimeout(function(){
     randomColor(color_preset['high'],[bodyTag,headerTag[0]]);
-    },pdRandom(30*times,30));
+    },pdRandom(100*times,30));
 
     times--;
   }
