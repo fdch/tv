@@ -163,9 +163,11 @@ function makeCateg(x){
   var cats= new Array();
   for (let i in x){
     var sub= new Array();
-    sub = x[i].split(", ");
+    sub = x[i];//.split(", ");
+    console.log("----sub-------- :"+sub);
     for (let j in sub) {
       cats.push(makeID(sub[j]));
+    console.log("-id- :"+sub);
     }
   }
   return cats;
