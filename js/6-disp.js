@@ -80,14 +80,12 @@ function displayBiogra(target) {
   sectTag.appendChild(headTag);
   sectTag.appendChild(artiTag);
 
-  let curTag = element("h3","Curriculum Vitae",'', "window.open(\'"+cv+"\', '_top');");      
-  headTag.appendChild(curTag);
-
+  let curTag = element("button","CV",'', "window.open(\'"+cv+"\', '_top');");      
   let imgTag = img(bioImage, articleWidth(maxWidth),"Fede Camara Halac");
   let spTag = element('p',bioSpanish,'bio-spa');
   let enTag = element('p',bioEnglish,'bio-eng');
 
-  let alltags = [imgTag,enTag,spTag];
+  let alltags = [imgTag,enTag,spTag,curTag];
 
   for (let i in alltags){
     artiTag.appendChild(alltags[i]);
