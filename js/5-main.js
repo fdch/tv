@@ -18,8 +18,10 @@ function main() {
 
   if(!bodyTag)  bodyTag  =document.getElementsByTagName('body')[0];
   bodyTag.setAttribute('onresize', 'resized()');
-  if(!iframeTag)iframeTag=makeBackVideo("bkvid",bodyTag,featURL[pdRandom(2)]);
-  
+  if(!iframeTag){
+    iframeTag=makeBackVideo("bkvid",bodyTag,featURL[pdRandom(2)]);
+    iframeTag.setAttributeNode(mainBack);
+  }
   mainBack.value = '';
   randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
   setInterval( function(){ funImage(rotImg) }, t);
