@@ -194,7 +194,8 @@ function makeCateg(x){
 function getUniqueCategories(x){
   var cats = new Array();
   for (var i in x){
-    cats.push(x[i].replace(/_/g,' '));
+    let st = new String(x[i]);
+    cats.push(st.replace(/_/g,' '));
   }
   // var categories = new Array();
   // jQuery.each(x, function(i,v){
