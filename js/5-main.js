@@ -8,7 +8,6 @@
 function main() {
   if(!htmlTag)  htmlTag  =document.getElementsByTagName('html')[0];
   randomFont(htmlTag);
-
   if(!headerTag)headerTag=document.getElementsByTagName('header');
   resized();
   if(!mainTag)  mainTag  =document.getElementsByTagName('main')[0];
@@ -30,9 +29,10 @@ function main() {
 
   if(!navigaTag)navigaTag=makeMenu(mitem, headerTag[0] , "display");
   if(!rotImgTag)rotImgTag=makeRot(rotImg, headerTag[0]);
-  
+
   loadAll(allGS);
 
   if(!footerTag)footerTag=document.getElementsByTagName('footer')[0];
-  footerTag.setAttribute('style', 'display:none');  
+  footerTag.setAttribute('style', 'display:none');
+  resized();  
 }
