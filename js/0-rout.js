@@ -216,33 +216,44 @@ function getUniqueCategories(x){
 function getValue(x) {
   var name = x.name;
   var valu = x.value;
+  var onoff;
+  for (let i in allWorkId){
+    let wid = document.getElementById(allWorkId[i]);
+    switch(name) {
+    case "title":
+      if(valu!==wid)
+        onoff = "none;";
+      else
+        onoff = "initial;";
+      break;
+    default:
+      if(!(wid.classList.contains(valu)))
+        onoff = "none;";
+      else
+        onoff = "initial;";
+      break;
+    }
+    wid.setAttribute('style', "display:"+onoff);
+  }
+
+
+
+
   switch (name) {
     case "title":
       for (let i in allWorkId) {
         var onoff;
         var current = allWorkId[i];
         var wid = document.getElementById(current);
-        if(valu!==current) onoff = "none";
-        else onoff = "initial";
+        
         wid.setAttribute('style', "display:"+onoff);
       }
       break;
-    case "category":
-      var clas = document.getElementsByClassName(valu);
-      for (let i in allWorkId)
-        document.getElementById(allWorkId[i]).setAttribute('style', 'display:none');
-      for (let j in clas){
-        var classes=[];
-        if(classes=clas[j])
-          for (let k in classes)
-            classes[k].setAttribute('style', "display:initial");
-        
-      }
-      break;
     default:
+      
+
       break;
   }
-  
   console.log(name + ": " + valu);
 }
 function unique(array) {
