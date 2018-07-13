@@ -17,7 +17,7 @@ function mainCV() {
   if(!footerTag) footerTag = document.getElementsByTagName('footer')[0];
   footerTag.setAttribute('style', 'display:none');  
   headerTag[0].setAttribute('onclick',"displayCV(\'reset\');");
-  mainBack = createAttribute('style');
+  mainBack = document.createAttribute('style');
   mainBack.value = "background-image:"+loadingUrl+";";
   mainTag.setAttributeNode(mainBack);
       
