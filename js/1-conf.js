@@ -40,7 +40,7 @@ var flickr = "http://www.flickr.com/federicocamarahalac";
 var linkedin = "http://linkedin.com/in/fedecamarahalac";
 var instagram = "https://instagram.com/ffddcchh";
 
-
+var backImg = "background-image:url(\'"+loadingUrl+"\');";
 var bioImage = "\
 https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/\
 15032050_10211430901748916_6498585033629064846_n.jpg?\

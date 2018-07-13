@@ -1,5 +1,6 @@
 function display(x) {
   currpage = mitem.findIndex(item => item === x);
+  mainBack.value = backImg;
   //console.log(currpage);
   article = resetDisplay(x);
   switch (x) {
@@ -11,18 +12,23 @@ function display(x) {
       break;
     case "bio"   :
       displayBiogra(article);
+      mainBack.value = '';
       break;
     case "unwork":
       displayUnwork(article,allUnwork);
+      mainBack.value = '';
       break;
     case "papers":
       displayPapers(article,allPapers);
+      mainBack.value = '';
       break;
     case "events":
       displayEvents(article,allEvents);
+      mainBack.value = '';
       break;
     case "people":
       displayPeople(article,allPeople);
+      mainBack.value = '';
       break;
     case "init"  :
       main();
