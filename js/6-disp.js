@@ -258,19 +258,19 @@ function displayCV(x) {
       articlTag.innerHTML = "<ul>"+tag("li",personal.join("</li><li>"))+"</li></ul>";
       break;
     case "Teachings" :
-      displayCVTeachi(articlTag,allTeachi);
+      displayCVTeachi(articlTag,allTeachi,x.toLowerCase());
       break;
     case "Awards"   :
-      displayCVAwards(articlTag,allAwards);
+      displayCVAwards(articlTag,allAwards,x.toLowerCase());
       break;
     case "Unworks":
-      displayCVUnwork(articlTag,allUnwork);
+      displayCVUnwork(articlTag,allUnwork,x.toLowerCase());
       break;
     case "Collaborations":
-      displayCVCollab(articlTag,allCollab);
+      displayCVCollab(articlTag,allCollab,x.toLowerCase());
       break;
     case "Performances":
-      displayCVPerfor(articlTag,allPerfor);
+      displayCVPerfor(articlTag,allPerfor,x.toLowerCase());
       break
     default:
       removeChilds(mainTag);
@@ -278,8 +278,8 @@ function displayCV(x) {
     break;
   }
 }
-function displayCVTeachi(target,source){
-  var sectTag = element('section','',"teachings");
+function displayCVTeachi(target,source,id){
+  var sectTag = element('section','',id);
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
@@ -315,8 +315,8 @@ function displayCVTeachi(target,source){
     // window.alert(job);
   }
 }
-function displayCVAwards(target,source){
-  var sectTag = element('section','',"awards");
+function displayCVAwards(target,source,id){
+  var sectTag = element('section','',id);
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
@@ -352,8 +352,8 @@ function displayCVAwards(target,source){
     footTag.appendChild(footer);
   }
 }
-function displayCVUnwork(target,source){
-  var sectTag = element('section','',"unwork");
+function displayCVUnwork(target,source,id){
+  var sectTag = element('section','',id);
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
@@ -406,8 +406,8 @@ function displayCVUnwork(target,source){
     footTag.appendChild(timest);
   }
 }
-function displayCVCollab(target,source){
-  var sectTag = element('section','',"collaborations");
+function displayCVCollab(target,source,id){
+  var sectTag = element('section','',id);
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
@@ -438,8 +438,8 @@ function displayCVCollab(target,source){
     footTag.appendChild(footer);
   }
 }
-function displayCVPerfor(target,source){
-  var sectTag = element('section','',"performances");
+function displayCVPerfor(target,source,id){
+  var sectTag = element('section','',id);
   target.appendChild(sectTag);
 
   var keys = Object.keys(source);
