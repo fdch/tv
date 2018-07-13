@@ -2,7 +2,7 @@ function removeChilds(x) {
   while (x.firstChild) 
     x.removeChild(x.firstChild);
 }
-var prev;
+var prev,somestring;
 var vis = function(x) {
   var y = document.getElementById(x);
   if (prev != null) prev.style.display = 'none';
