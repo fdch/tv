@@ -104,7 +104,8 @@ function getContent(x, arr) {
   });
 }
 function randomVideo() {
-  iframeTag.setAttribute('src',featURL[Math.floor(Math.random()*featURL.length)]);
+  let len = featURL.length;
+  iframeTag.setAttribute('src',featURL[Math.floor(Math.random()*len)]);
 }
 function pdRandom(range,offset){
   offset = offset || 0;
@@ -158,20 +159,7 @@ function imgClicker(x) {
   if (!currpage) randomVideo();
   randomizeStuff();  
 }
-
 function makeCateg(x){
-  // var cats= new Array();
-  // for (let i in x){
-  //   var sub= new Array();
-  //   sub = x[i];//.split(", ");
-  //   console.log("----sub-------- :"+sub);
-  //   for (let j in sub) {
-  //     let ids = makeID(sub[j]);
-  //     cats.push(ids);
-  //   console.log("-id- :"+ids);
-  //   }
-  // }
-  // return cats;
   var cats=new Array();
   var word=new String();
   for (let i in x){
@@ -190,27 +178,12 @@ function makeCateg(x){
   // console.log(cats.join(tilde));
   return cats;
 }
-
 function getUniqueCategories(x){
   var cats = new Array();
   for (var i in x){
     let st = new String(x[i]);
     cats.push(st.replace(/_/g,' '));
   }
-  // var categories = new Array();
-  // jQuery.each(x, function(i,v){
-  //   var subcat = new Array(v.split(", "));
-  //   jQuery.each(subcat, function(ii,vv){
-  //     categories.push(vv);
-  //   });
-  // });
-  // var cats = new Array();
-  // jQuery.each(categories, function(i,v){
-  //   jQuery.each(v, function(ii,vv){
-  //     cats.push(vv);
-  //   });
-  // });
-  
   return unique(cats);
 }
 function getValue(x) {
