@@ -8,6 +8,8 @@
 function main() {
   if(!htmlTag)  htmlTag  =document.getElementsByTagName('html')[0];
   randomFont(htmlTag);
+  
+  if(!headerTag)headerTag=document.getElementsByTagName('header');
   resized();
   if(!mainTag)  mainTag  =document.getElementsByTagName('main')[0];
   mainBack = document.createAttribute('style');
@@ -25,7 +27,6 @@ function main() {
   if(!h1titlTag)h1titlTag=document.getElementsByTagName('h1')[0];
   h1titlTag.setAttribute('onclick',"display(\'init\');");
 
-  if(!headerTag)headerTag=document.getElementsByTagName('header');
   if(!navigaTag)navigaTag=makeMenu(mitem, headerTag[0] , "display");
   if(!rotImgTag)rotImgTag=makeRot(rotImg, headerTag[0]);
   
