@@ -10,7 +10,7 @@ function loadAll(sheets, callback) {
     for (i in entry) {
       e = entry[i];
       var title = e.gsx$title.$t;
-      var categ = e.gsx$category.$t;
+      var categ = makeCateg(e.gsx$category.$t);
       var nwid  = String("id-"+makeID(title));
       allUnwork[nwid]={};
       allUnwork[nwid]["awTitl"] = title;
@@ -30,7 +30,7 @@ function loadAll(sheets, callback) {
       allCategories.push(categ);
       allTitles.push(title);
       allWorkId.push(nwid);
-      makeCateg(categ);
+      // makeCateg(categ);
     }
     uniqueCategories = getUniqueCategories(allCategories);
   });

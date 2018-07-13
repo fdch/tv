@@ -187,7 +187,7 @@ function makeCateg(x){
     }
     word+=letter;
   }
-  console.log(cats.join(tilde));
+  // console.log(cats.join(tilde));
   return cats;
 }
 
