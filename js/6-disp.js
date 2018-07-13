@@ -80,16 +80,12 @@ function displayBiogra(target) {
   sectTag.appendChild(headTag);
   sectTag.appendChild(artiTag);
 
-  let curTag = element("button","CV",'', "window.open(\'"+cv+"\', '_top');");      
-  let imgTag = img(bioImage, articleWidth(maxWidth),"Fede Camara Halac");
-  let spTag = element('p',bioSpanish,'bio-spa');
-  let enTag = element('p',bioEnglish,'bio-eng');
-
-  let alltags = [imgTag,enTag,spTag,curTag];
-
-  for (let i in alltags){
-    artiTag.appendChild(alltags[i]);
-  }
+  let alltags = new Array();
+  alltags.push(img(bioImage, articleWidth(maxWidth),"Fede Camara Halac"));
+  alltags.push(element('p',bioSpanish,'bio-spa'));
+  alltags.push(element('p',bioEnglish,'bio-eng'));
+  alltags.push(element("button","CV",'', "window.open(\'"+cv+"\', '_top');")); 
+  for (let i in alltags) artiTag.appendChild(alltags[i]);
 }
 function displayUnwork(target,source) {
   var keys = Object.keys(source);
@@ -128,14 +124,13 @@ function displayUnwork(target,source) {
 
     var perfMessage = "Premiered by "+perf+" on "+date.toDateString()+", at "+loca;
 
-    let progra = element('p',prog);
-    let perfor = element("h5",perfMessage);
-    var aaa = [progra,perfor];
-
+    var aaa = new Array();
     if (iurl) aaa.push(img(iurl, articleWidth(maxWidth),titl));
     if (aurl) aaa.push(element('button','Audio',x+'-aurl',"window.open(\'"+aurl+"\',\'_top\');"));
     if (vurl) aaa.push(element('button','Video',x+'-vurl',"window.open(\'"+vurl+"\',\'_top\');"));
     if (surl) aaa.push(element('button','Score',x+'-surl',"window.open(\'"+surl+"\',\'_top\');"));
+    if (prog) aaa.push(element('p',prog));
+    if (perf) aaa.push(element("h5",perfMessage));
 
     for (let i in aaa) artiTag.appendChild(aaa[i]);
      
@@ -201,13 +196,13 @@ function displayEvents(target,source) {
     let footTag = element('footer');
     sectTag.appendChild(footTag);
 
-    let htitle = element("h3",titl);
-    let hsubti = element("h4",wher);
-    let hssubt = element("h5",when);
-    var aaa = [htitle,hsubti,hssubt];
+    let aaa = new Array();
+    aaa.push(element("h3",titl));
+    aaa.push(element("h4",wher));
+    aaa.push(element("h5",when.toDateString()));
     for (let j in aaa) headTag.appendChild(aaa[j]);
     
-    let descrip = element('p',desc);
+    let descrip = element('blockquote',desc);
     artiTag.appendChild(descrip);
 
     let footer = element('h6',time);
@@ -243,7 +238,7 @@ function displayPeople(target,source) {
         break;
     }
 
-    let htitle = element("h5",name,'',"window.open(\'"+webs+"\', \'_top\');");
+    let htitle = element("span",name,'',"window.open(\'"+webs+"\', \'_top\');");
     headTag.appendChild(htitle);
     // let footer = element('h6',time);
     // footTag.appendChild(footer);
