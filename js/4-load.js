@@ -27,12 +27,12 @@ function loadAll(sheets, callback) {
       allUnwork[nwid]["awLoca"] = e.gsx$location.$t;
       allUnwork[nwid]["awDura"] = e.gsx$duration.$t;
 
-      allCategories.push(categ);
+      for (let j in categ) allCategories.push(categ[j]);
       allTitles.push(title);
       allWorkId.push(nwid);
       // makeCateg(categ);
     }
-    uniqueCategories = unique(allCategories);
+    uniqueCategories = getUniqueCategories(allCategories);
   });
   //papers
   loadJSON(sheets[1], function(response) {

@@ -192,20 +192,23 @@ function makeCateg(x){
 }
 
 function getUniqueCategories(x){
-
-  var categories = new Array();
-  jQuery.each(x, function(i,v){
-    var subcat = new Array(v.split(", "));
-    jQuery.each(subcat, function(ii,vv){
-      categories.push(vv);
-    });
-  });
   var cats = new Array();
-  jQuery.each(categories, function(i,v){
-    jQuery.each(v, function(ii,vv){
-      cats.push(vv);
-    });
-  });
+  for (var i in x){
+    cats.push(x[i].replace(/_/g,' '));
+  }
+  // var categories = new Array();
+  // jQuery.each(x, function(i,v){
+  //   var subcat = new Array(v.split(", "));
+  //   jQuery.each(subcat, function(ii,vv){
+  //     categories.push(vv);
+  //   });
+  // });
+  // var cats = new Array();
+  // jQuery.each(categories, function(i,v){
+  //   jQuery.each(v, function(ii,vv){
+  //     cats.push(vv);
+  //   });
+  // });
   
   return unique(cats);
 }
