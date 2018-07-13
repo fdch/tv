@@ -248,6 +248,15 @@ function getSubmit(target) {
     }
   }
 }
+function menuClick(x,e) {
+  let id = x.title;
+  if (e.shiftKey) {
+    getSubmit(id);
+  } else {
+    display(id);
+  }
+}
+
 function randomFont(target) {
   target.setAttribute('style',"font-family:"+fonts[pdRandom(fonts.length)]+";");
 }

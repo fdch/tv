@@ -53,8 +53,8 @@ function resetDisplay(x){
   //the header
   var headerTag = element('header');
 
-  let submitX = "getSubmit(\'"+x+"\');";
-  let htitleTag = element("h2", x,'', submitX);
+  //let submitX = "getSubmit(\'"+x+"\');";
+  let htitleTag = element("h2", x, '', "display(\'"+x+"\')");//,'', submitX);
   headerTag.appendChild(htitleTag);
 
   if('unwork'===x) {

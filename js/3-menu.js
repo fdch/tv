@@ -1,4 +1,4 @@
-function makeMenu(input, target, funcName) {
+function makeMenu(input, target) {
 
   var navTag = document.createElement('nav');
   
@@ -8,7 +8,7 @@ function makeMenu(input, target, funcName) {
     btn.setAttribute('type', 'button');
     btn.setAttribute('title', input[i]);
     if(1==i) btn.setAttribute('autofocus','');
-    btn.setAttribute('onclick', funcName+"(\'"+input[i]+"\')" );
+    btn.setAttribute('onclick', "menuClick(this,event);" );//funcName+"(\'"+input[i]+"\')"
     let btnTxt = document.createTextNode(item);
     btn.appendChild(btnTxt);
     navTag.appendChild(btn);
