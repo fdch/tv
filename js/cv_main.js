@@ -30,11 +30,4 @@ function mainCV() {
       loadCV();
     }, 3000);
   }
-  // loadAll(allGS,loadCV);
-}
-
-function loadCV() {
-  mainBack.value='';
-  for (var i in allCVsections)
-    displayCV(allCVsections[i]);
 }

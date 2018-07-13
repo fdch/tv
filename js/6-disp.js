@@ -479,3 +479,8 @@ function displayCVPerfor(target,source){
     footTag.appendChild(footer);
   }
 }
+function loadCV() {
+  mainBack.value='';
+  for (var i in allCVsections)
+    displayCV(allCVsections[i]);
+}
