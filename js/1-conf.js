@@ -198,7 +198,7 @@ var fonts = [
 ];
 
 var imgArray = [raw+imgpath+"imgone.png",raw+imgpath+"imgtwo.png"];
-
+var somestring='kontakte';
 var disableEnter = [
 	"<script>",
 	"$(document).keypress(",

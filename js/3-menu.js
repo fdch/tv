@@ -8,7 +8,8 @@ function makeMenu(input, target) {
     btn.setAttribute('type', 'button');
     btn.setAttribute('title', input[i]);
     if(1==i) btn.setAttribute('autofocus','');
-    btn.setAttribute('onclick', "menuClick(this,event);" );//funcName+"(\'"+input[i]+"\')"
+    btn.setAttribute('onclick', "menuClick(this,event);")
+    btn.setAttribute('ontouchstart', "menuTouchStart(this,event);");
     let btnTxt = document.createTextNode(item);
     btn.appendChild(btnTxt);
     navTag.appendChild(btn);

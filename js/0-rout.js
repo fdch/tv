@@ -2,7 +2,6 @@ function removeChilds(x) {
   while (x.firstChild) 
     x.removeChild(x.firstChild);
 }
-var somestring;
 function toggle(id) {
   x = document.getElementById(id);
   if (x.style.display === "none") {
