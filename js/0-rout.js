@@ -255,6 +255,14 @@ function menuClick(x,e) {
     display(id);
   }
 }
+function menuTouchStart(x,e) {
+  let id = x.title;
+  if (e.touches.length > 1) {
+    getSubmit(id);
+  } else {
+    display(id);
+  }
+}
 
 function randomFont(target) {
   target.setAttribute('style',"font-family:"+fonts[pdRandom(fonts.length)]+";");
@@ -281,12 +289,15 @@ function element(tag,text,id,onclick,width) {
   elem.appendChild(node);
   return elem;
 }
-function img(src,width,titl ) {
+function img(src,width,titl) {
   let tag = document.createElement('img');
+  let div = document.createElement('div');
   let anc = anchor(src);
   tag.setAttribute('src', src);
   tag.setAttribute('width', width);
   tag.setAttribute('title', titl?titl:"Click me");
+  div.setAttribute('style','width:inherit;overflow:hidden;border-radius:15px;');
   anc.appendChild(tag);
-  return anc;      
+  div.appendChild(anc);
+  return div;      
 }
