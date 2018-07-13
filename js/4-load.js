@@ -27,7 +27,7 @@ function loadAll(sheets, callback) {
       allUnwork[nwid]["awLoca"] = e.gsx$location.$t;
       allUnwork[nwid]["awDura"] = e.gsx$duration.$t;
 
-      for (let j in categ) allCategories.push(categ[j]);
+      for (let j in categ) allCategories.push(categ[j].join(" "));
       allTitles.push(title);
       allWorkId.push(nwid);
       // makeCateg(categ);
