@@ -165,7 +165,7 @@ function makeCateg(x){
   for (let i in x){
     let letter = new String(x[i]);
     if(!(",".localeCompare(letter))){
-      cats.push(word);
+      cats.push(word.replace(/\W/g," ").toLowerCase());
       word="";
       continue;
     }
@@ -182,9 +182,9 @@ function getUniqueCategories(x){
   var cats = new Array();
   for (var i in x){
     let st = new String(x[i]);
-    cats.push(st.replace(/_/g,' '));
+    cats.push(st.replace(/\W/g,' '));
   }
-  return unique(cats);
+  return unique(unique(cats));
 }
 function getValue(x) {
   var name = x.name;
