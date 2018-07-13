@@ -17,8 +17,9 @@ function mainCV() {
   if(!footerTag) footerTag = document.getElementsByTagName('footer')[0];
   footerTag.setAttribute('style', 'display:none');  
   headerTag[0].setAttribute('onclick',"displayCV(\'reset\');");
+  resized();
   mainBack = document.createAttribute('style');
-  mainBack.value = backImg;
+  mainBack.value = backImg+"width:"+w+";height:"+h+";";
   mainTag.setAttributeNode(mainBack);
       
   randomColor(color_preset["mid"], [bodyTag, headerTag[0]] );
