@@ -208,7 +208,7 @@ function getValue(x) {
     }
     wid.setAttribute('style', "display:"+onoff);
   }
-  console.log(name + ": " + valu);
+ // console.log(name + ": " + valu);
 }
 function unique(array) {
     return $.grep(array, function(el, index) {
