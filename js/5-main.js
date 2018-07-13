@@ -19,8 +19,7 @@ function main() {
   if(!bodyTag)  bodyTag  =document.getElementsByTagName('body')[0];
   bodyTag.setAttribute('onresize', 'resized()');
   if(!iframeTag){
-    iframeTag=makeBackVideo("bkvid",bodyTag,featURL[pdRandom(2)]);
-    iframeTag.setAttributeNode(mainBack);
+    iframeTag=makeBackVideo("bkvid",bodyTag,featURL[pdRandom(2)],mainBack);
   }
   mainBack.value = '';
   randomColor(color_preset["high"], [bodyTag, headerTag[0]] );

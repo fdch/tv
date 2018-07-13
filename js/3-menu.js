@@ -33,10 +33,11 @@ function makeRot(input, target){
 
   return imgTag;
 }
-function makeBackVideo(id, target, source) {
+function makeBackVideo(id, target, source, style) {
   iframeTag = document.createElement('iframe');
   iframeTag.setAttribute('id', id);
   iframeTag.setAttribute('src', source);
+  iframeTag.setAttributeNode(style);
   target.appendChild(iframeTag);
   return iframeTag;
 }
