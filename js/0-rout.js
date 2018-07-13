@@ -95,14 +95,6 @@ function loadJSON(x,callback) {
   };
   xobj.send(null);  
 }
-function getContent(x, arr) {
-  jQuery.get(x, function(data){
-    lines = data.split("\n");
-    $.each(lines, function(n, elem) {
-      arr.push(elem);
-    });
-  });
-}
 function randomVideo() {
   let len = featURL.length;
   iframeTag.setAttribute('src',featURL[Math.floor(Math.random()*len)]);
@@ -152,8 +144,15 @@ function funImage(input){
   // },dur/5);
 }
 function randomizeStuff(){
-  randomColor(color_preset['high'],[bodyTag,headerTag[0]]);
   funImage(rotImg);
+  let times = pdRandom(30,5);
+  while (times) {
+    setTimeout(function(){
+    randomColor(color_preset['high'],[bodyTag,headerTag[0]]);
+    },pdRandom(30*times,30));
+
+    times--;
+  }
 }
 function imgClicker(x) {
   if (!currpage) randomVideo();
