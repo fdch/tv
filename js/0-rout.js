@@ -158,6 +158,19 @@ function imgClicker(x) {
   if (!currpage) randomVideo();
   randomizeStuff();  
 }
+
+function makeCateg(x){
+  var cats= new Array();
+  for (let i in x){
+    var sub= new Array();
+    sub = x[i].split(", ");
+    for (let j in sub) {
+      cats.push(makeID(sub[j]));
+    }
+  }
+  return cats;
+}
+
 function getUniqueCategories(x){
 
   var categories = new Array();

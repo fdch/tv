@@ -33,11 +33,11 @@ function makeRot(input, target){
 
   return imgTag;
 }
-function makeBackVideo(id, target, source, style) {
+function makeBackVideo(id, target, source, st) {
   iframeTag = document.createElement('iframe');
   iframeTag.setAttribute('id', id);
   iframeTag.setAttribute('src', source);
-  iframeTag.setAttributeNode(style);
+  iframeTag.setAttributeNode(st);
   target.appendChild(iframeTag);
   return iframeTag;
 }
@@ -75,11 +75,10 @@ function makeDropdowns(id,target,list) {
   let selectTag = document.createElement('select');
   selectTag.setAttribute('id',id);
   selectTag.setAttribute('name',id);
-  selectTag.setAttribute('onclick', 'getValue(this)');
+  selectTag.setAttribute('onchange', 'getValue(this)');
 
   var thelist = shuffleArray(list);
   for (let i in thelist) {
-    //makeValue([thelist[i], 'option', 'value'],selectTag);
     let val = thelist[i];
     let elemTxt = document.createTextNode(val);
     let elemTag = document.createElement('option');

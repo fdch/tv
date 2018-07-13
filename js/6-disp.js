@@ -6,9 +6,11 @@ function display(x) {
   switch (x) {
     case "games" :
       article.innerHTML = gameType.join("<br/>");
+      mainBack.value = '';
       break;
     case "touch" :
       article.innerHTML = contactMessage.join("");
+      mainBack.value = '';
       break;
     case "bio"   :
       displayBiogra(article);

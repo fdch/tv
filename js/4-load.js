@@ -10,7 +10,7 @@ function loadAll(sheets, callback) {
     for (i in entry) {
       e = entry[i];
       var title = e.gsx$title.$t;
-      var categ = e.gsx$category.$t;
+      var categ = makeCateg(e.gsx$category.$t);
       var nwid  = String("id-"+makeID(title));
       allUnwork[nwid]={};
       allUnwork[nwid]["awTitl"] = title;
