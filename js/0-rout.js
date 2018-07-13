@@ -232,8 +232,10 @@ function getValue(x) {
       for (let i in allWorkId)
         document.getElementById(allWorkId[i]).setAttribute('style', 'display:none');
       for (let j in clas){
-        console.log(clas[j]);
-        clas[j].setAttribute('style', "display:initial");
+        var classes=[];
+        if(classes=clas[j])
+          for (let k in classes)
+            classes[k].setAttribute('style', "display:initial");
         
       }
       break;
