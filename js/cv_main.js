@@ -23,7 +23,6 @@ function mainCV() {
       
   randomColor(color_preset["mid"], [bodyTag, headerTag[0]] );
 
-
   var check = 0;
   if (check=loadAll(allGS)) {
     setTimeout(function(){
