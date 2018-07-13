@@ -120,8 +120,7 @@ var footer = [
 	"I still have "          	+linkify("Tumblr",blog,1)+" because I'm old",
  	"Currently, my code is on "	+linkify("Github",repo,1)+" ...but I'll change\
  	 this soon, because EvilCorp just bought it..",
-	"Most videos are on "     	+linkify("Vimeo",video,1)+" and on:\ 
-	"+linkify("Youtube",yt,1),
+	"Most videos are on "     	+linkify("Vimeo",video,1)+" and on: "+linkify("Youtube",yt,1),
 	"Some music is on "       	+linkify("SoundCloud",scloud,1),
 	"I post pictures on "   	+linkify("Instagram", instagram,1),
 	"Oddly enough, I still have some pics on "+linkify("Flickr",flickr,1),
