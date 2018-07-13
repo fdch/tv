@@ -180,6 +180,7 @@ function makeCateg(x){
     if(!(" ".localeCompare(letter))) word+="_";
     word+=letter;
     }
+  console.log(cats.join(""));
   return cats;
 }
 
