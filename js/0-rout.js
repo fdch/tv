@@ -170,7 +170,7 @@ function makeCateg(x){
       continue;
     }
     if(!(" ".localeCompare(letter))){ 
-      word+="_";
+      //word+="_";
       continue;
     }
     word+=letter;
@@ -200,7 +200,7 @@ function getValue(x) {
         onoff = "initial;";
       break;
     default:
-      if(!(wid.classList.contains(valu)))
+      if(!(wid.classList.contains(valu||valu.replace(/W/g,''))))
         onoff = "none;";
       else
         onoff = "initial;";
