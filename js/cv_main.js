@@ -16,11 +16,13 @@ function mainCV() {
   if(!mainTag)   mainTag   = document.getElementsByTagName('main')[0];
   if(!footerTag) footerTag = document.getElementsByTagName('footer')[0];
   footerTag.setAttribute('style', 'display:none');  
-
-  if(!h1titlTag) h1titlTag = document.getElementsByTagName('h1')[0];
-  h1titlTag.setAttribute('onclick',"displayCV(\'reset\');");
+  headerTag[0].setAttribute('onclick',"displayCV(\'reset\');");
+  mainBack = createAttribute('style');
+  mainBack.value = "background-image:"+loadingUrl+";";
+  mainTag.setAttributeNode(mainBack);
       
   randomColor(color_preset["mid"], [bodyTag, headerTag[0]] );
+
 
   var check = 0;
   if (check=loadAll(allGS)) {
@@ -29,11 +31,10 @@ function mainCV() {
     }, 3000);
   }
   // loadAll(allGS,loadCV);
-
-
 }
 
 function loadCV() {
+  mainBack.value='';
   for (var i in allCVsections)
     displayCV(allCVsections[i]);
 }

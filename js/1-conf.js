@@ -1,5 +1,6 @@
 var htmlTag, bodyTag, headerTag, mainTag, footerTag;
 var h1titlTag, navigaTag, iframeTag, rotImgTag;
+var mainBack;
 
 var allUnwork={};
 var allPapers={};
@@ -39,6 +40,15 @@ var flickr = "http://www.flickr.com/federicocamarahalac";
 var linkedin = "http://linkedin.com/in/fedecamarahalac";
 var instagram = "https://instagram.com/ffddcchh";
 
+
+var bioImage = "\
+https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/\
+15032050_10211430901748916_6498585033629064846_n.jpg?\
+_nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
+
+var contactGif = "img/zissou.gif";
+var loadingUrl = "img/fdch.gif";
+
 var rotImgStyle= [
 	"position:absolute;",
 	"right:12px;",
@@ -46,7 +56,6 @@ var rotImgStyle= [
 	"clip-path:circle(50% at center);",
 	"-webkit-clip-path:circle(50% at center);"
 ];
-
 var rotImg = [
 	raw+"tv/master/img/imgone-76.png",
 	raw+"tv/master/img/imgone-76-i.png",
@@ -68,7 +77,6 @@ var color_preset = {
 
 var title = "fdch";
 var subtitle = "Fede Cámara Halac";
-var bioImage = "https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/15032050_10211430901748916_6498585033629064846_n.jpg?_nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
 var unclink = "http://artes.unc.edu.ar/";
 var nyulink = "http://gsas.nyu.edu/";
 var unc = "La Universidad Nacional de Córdoba (Argentina)";
@@ -114,8 +122,6 @@ var footer = [
 	"Finally, you can become my friend on "+linkify("Facebook",facebookUrl,1)
 ];
 
-var contactGif = "img/zissou.gif";
-var loadingUrl = "img/fdch.gif";
 
 var featWork = "Lorenz Variations";
 
