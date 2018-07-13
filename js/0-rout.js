@@ -2,14 +2,14 @@ function removeChilds(x) {
   while (x.firstChild) 
     x.removeChild(x.firstChild);
 }
-var prev,somestring;
-var vis = function(x) {
-  var y = document.getElementById(x);
-  if (prev != null) prev.style.display = 'none';
-  if (y != null) y.style.display = 'block', prev=y;
-}
-function toggleIt(x) {
-    x.toggle();
+var somestring;
+function toggle(id) {
+  x = document.getElementById(id);
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
 }
 function getFile(x){
   $.get(x, function(data){

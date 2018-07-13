@@ -251,7 +251,7 @@ function displayPeople(target,source) {
 }
 function displayCV(x) {
   var headerTag = element('header');
-  let htitleTag = element("h2", x);
+  let htitleTag = element("h2", x, '', "toggle('"+x+"');");
   headerTag.appendChild(htitleTag);
   mainTag.appendChild(headerTag);
   //the article

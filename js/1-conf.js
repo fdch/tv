@@ -1,26 +1,14 @@
 var htmlTag, bodyTag, headerTag, mainTag, footerTag;
 var h1titlTag, navigaTag, iframeTag, rotImgTag;
 var mainBack;
-
-var allUnwork={};
-var allPapers={};
-var allEvents={};
-var allPeople={};
-var allPerfor={};
-var allAwards={};
-var allCollab={};
-var allTeachi={};
-
+var allUnwork={}, allPapers={}, allEvents={}, allPeople={};
+var allPerfor={}, allAwards={}, allCollab={}, allTeachi={};
 var allCategories=[], allTitles=[],allWorkId=[],uniqueCategories=[];
 
 var mitem = ["init", "bio", "unwork", "papers", "events", "people", "touch"];
-var currpage=0;
+var currpage=0, loaded=0, loading=0;
 
-var loaded=0, loading=0;
-
-
-var w, h;
-var t = 4333;
+var w, h, t = 4333;
 var maxWidth = 810;
 var widthFactor = 0.9;
 
@@ -41,7 +29,6 @@ var flickr = "http://www.flickr.com/federicocamarahalac";
 var linkedin = "http://linkedin.com/in/fedecamarahalac";
 var instagram = "https://instagram.com/ffddcchh";
 
-
 var contactGif = raw+imgpath+"zissou.gif";
 var loadingUrl = raw+imgpath+"fdch.gif";
 
@@ -50,7 +37,6 @@ var bioImage = "\
 https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/\
 15032050_10211430901748916_6498585033629064846_n.jpg?\
 _nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
-
 
 var rotImgStyle= [
 	"position:absolute;",
@@ -69,8 +55,6 @@ var rotImg = [
 ];
 
 var tilde = " ~ ";
-var hide = "style=\"display:none\"";
-var today = new Date();
 
 var color_preset = {
 	mid  : [55,200,100,20],
@@ -130,9 +114,6 @@ var footer = [
 	but I post things on occasions",
 	"Finally, you can become my friend on "+linkify("Facebook",facebookUrl,1)
 ];
-
-
-var featWork = "Lorenz Variations";
 
 var vimeo = [
 "https://player.vimeo.com/video/",
