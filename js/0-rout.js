@@ -160,17 +160,26 @@ function imgClicker(x) {
 }
 
 function makeCateg(x){
-  var cats= new Array();
+  // var cats= new Array();
+  // for (let i in x){
+  //   var sub= new Array();
+  //   sub = x[i];//.split(", ");
+  //   console.log("----sub-------- :"+sub);
+  //   for (let j in sub) {
+  //     let ids = makeID(sub[j]);
+  //     cats.push(ids);
+  //   console.log("-id- :"+ids);
+  //   }
+  // }
+  // return cats;
+  var cats=new Array();
+  var word=new String();
   for (let i in x){
-    var sub= new Array();
-    sub = x[i];//.split(", ");
-    console.log("----sub-------- :"+sub);
-    for (let j in sub) {
-      let ids = makeID(sub[j]);
-      cats.push(ids);
-    console.log("-id- :"+ids);
+    let letter = new String(x[i]);
+    if(!(",".localeCompare(letter))) cats.push(word);
+    if(!(" ",localeCompare(letter))) word+="_";
+    word+=letter;
     }
-  }
   return cats;
 }
 
