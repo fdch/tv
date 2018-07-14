@@ -67,7 +67,7 @@ function resetDisplay(x){
   //remove previous stuff
   var c;
   if (removeChilds(mainTag)) {
-    if( c=x.localeCompare('init') ) {
+    if( !x.localeCompare('init') ) {
         console.log("comparison rendered: \'"+c+"\'");
         console.log("exiting because we are on \'"+x+"\' page");
         return void 0;//we are on init page
