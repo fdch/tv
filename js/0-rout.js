@@ -227,7 +227,7 @@ function getValue(x) {
         onoff = "initial;";
       break;
     default:
-      display(name);
+      display(valu);
       break;
     }
     wid.setAttribute('style', "display:"+onoff);
