@@ -1,5 +1,5 @@
 function display(x) {
-  currpage = mitem.findIndex(item => item === x);
+  currpage = mitem.findIndex(item => item === String(x));
   mainTag.style.background = backImg;
   //console.log(currpage);
   article = resetDisplay(x);
