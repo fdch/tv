@@ -69,14 +69,15 @@ function resizeHeader(){
   var hW = w;
 
   var iH = Math.floor(hW*0.15);
-  var hHmax = Math.floor(hH*0.7);
+  var hHmax = Math.floor(hH*0.6);
 
   var i = iH>=hHmax?hHmax:iH;
+  var iPad = i*0.25;
   var n = w-i-60; //a button box is about 55px wide...
   headerTag[0].style.width = w+"px";
   if(mainTag)   mainTag.style.marginTop = hH+"px";
   if(navigaTag) navigaTag.style.width = n+"px";
-  if(rotImgTag) rotImgTag.setAttribute('width', i);
+  if(rotImgTag) rotImgTag.setAttribute('width', i), rotImgTag.style.padding= iPad+"px";
   //return [n,i];
 }
 function resized(){
