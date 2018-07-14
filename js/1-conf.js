@@ -1,9 +1,9 @@
 var htmlTag, bodyTag, headerTag, mainTag, footerTag;
-var h1titlTag, navigaTag, iframeTag, rotImgTag, navSelTag, imgDivTag, formTag;
+var h1titlTag, navigaTag, iframeTag, rotImgTag, navSelTag, imgDivTag, wCatTag;
 var mainBack;
 var allUnwork={}, allPapers={}, allEvents={}, allPeople={};
 var allPerfor={}, allAwards={}, allCollab={}, allTeachi={};
-var allCategories=[], allTitles=[],allWorkId=[],uniqueCategories=[];
+var allCategories=[], allTitles=[],allWorkId=[],uCategories=[];
 
 var mitem = [
 "init",

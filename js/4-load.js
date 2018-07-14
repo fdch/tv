@@ -32,7 +32,7 @@ function loadAll(sheets, callback) {
       allWorkId.push(nwid);
       // makeCateg(categ);
     }
-    uniqueCategories = getUniqueCategories(allCategories);
+    uCategories = getUniqueCategories(allCategories);
   });
   //papers
   loadJSON(sheets[1], function(response) {
