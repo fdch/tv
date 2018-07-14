@@ -5,7 +5,7 @@ function display(x) {
     x = x.value;
   }
   currpage = mitem.findIndex(item => item === x);
-
+  console.log("Display \'"+x+"\', currpage: "+currpage);
   mainTag.style.background = backImg;
   //console.log(currpage);
   article = resetDisplay(x);
@@ -66,7 +66,10 @@ function display(x) {
 function resetDisplay(x){ 
   //remove previous stuff
   if (removeChilds(mainTag)) {
-    if( currpage && !(x.localeCompare('init'))) {
+    if( x.localeCompare('init') ) {
+        console.log("exiting because we are on \'"+x+"\' page");
+        return void 0;//we are on init page
+      } else if ( currpage ) {
         //remove backvid
         iframeTag.src = '';
         if(catDivTag) catDivTag.style.display = "none";
@@ -80,10 +83,10 @@ function resetDisplay(x){
         mainTag.appendChild(articlTag);
         articlTag.style.width = articleWidth(maxWidth)+"px";
         return articlTag;
+      } else {
+          console.log("Something is very wrong with: \'"+x+"\'");
       }
-      else {
-        return void 0;//we are on init page
-      }
+
   } else {
     console.log("could not remove elements and create article");
     return void 0; //there was an error
