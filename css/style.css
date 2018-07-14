@@ -46,8 +46,9 @@ button:hover {
   background-color:lightblue;
   cursor:pointer;
 }
-button:focus {
+button:focus, select:focus{
   background: lightblue;
+  border:1px solid black;
 /*  outline:none;*/
 }
 span:hover, img:hover, a:hover{
