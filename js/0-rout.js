@@ -68,7 +68,7 @@ function resizeHeader(){
 
   // headerTag[0].style.width = w+"px";
   
-   var hH = headerTag[0].clientHeight;
+   // var hH = headerTag[0].clientHeight;
 
   // var hW = headerTag[0].clientWidth;
 
@@ -85,11 +85,11 @@ function resizeHeader(){
   
 
 
-  if(rotImgTag) {
-    rotImgTag.setAttribute('width', hH*0.98);
-    // rotImgTag.setAttribute('height', hH*0.98);
-    // rotImgTag.style.padding= hH*0.01+"px";
-  }
+  // if(rotImgTag) {
+  //   rotImgTag.setAttribute('width', hH);
+  //   // rotImgTag.setAttribute('height', hH*0.98);
+  //   // rotImgTag.style.padding= hH*0.01+"px";
+  // }
 
 
 
