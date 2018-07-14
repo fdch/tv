@@ -504,7 +504,7 @@ function displayCVPerfor(target,source,id){
   }
 }
 function displayMedia(target,source,type) {
-  for (let i=0; i<=source.legth-1 ; i=i+2) {
+  for (let i=0; i<=source.length-1 ; i=i+2) {
     //var elem = element('h4',source[i])
     let medi = element(type);
     medi.src = source[i+1];
