@@ -27,12 +27,14 @@ function main() {
 
   
   if(!navigaTag) {
-    navigaTag = element('nav');
+    navigaTag = document.getElementById('navtag');
     headerTag[0].appendChild(navigaTag);
     navSelTag = makeDropdowns("navtag", navigaTag, mitem);
   }
+
   //if(!navigaTag)navigaTag=makeMenu(mitem, headerTag[0] , "display");
-  if(!rotImgTag)rotImgTag=makeRot(rotImg, headerTag[0]);
+  imgDivTag = document.getElementById('imgdiv');
+  if(!rotImgTag)rotImgTag=makeRot(rotImg, imgDivTag);
   
   loadAll(allGS);
 
