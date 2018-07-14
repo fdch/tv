@@ -21,9 +21,10 @@ var currpage=0, loaded=0, loading=0;
 
 var w, h, t = 4333;
 var maxWidth = 810;
+var maxHeight = maxWidth;
 var widthFactor = 0.9;
 var hAlpha = 1.0;
-var minHHeight = 40;
+var minHHeight = 55;
 
 var url = "https://fdch.github.io/tv";
 var repo = "https://github.com/fdch/";
