@@ -23,7 +23,7 @@ h1 {
   display:inline;
   float:left;
 }
-#navdiv, #imgdiv, #catdiv{
+.headtitle {
   display:inline;
   margin:0 5px;
   float:left;

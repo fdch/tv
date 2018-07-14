@@ -21,12 +21,11 @@ function display(x) {
       //extra stuff for the category selectbox
       
       if(!catDivTag) {
-        catDivTag = element('nav','','catdiv');
+        catDivTag = document.createElement('nav');
         catSelTag = makeDropdowns('category', catDivTag, uCategories);
         //makeDropdowns('title', formTag, allTitles);
-        catSelTag.autofocus = true;
-        catSelTag.style.display = 'inline';
-        catSelTag.style.float = 'left';
+        catDivTag.autofocus = true;
+        catDivTag.className = "headtitle";
         headerTag[0].appendChild(catDivTag)
       }
 
