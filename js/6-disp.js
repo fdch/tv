@@ -27,6 +27,8 @@ function display(x) {
         catDivTag.autofocus = true;
         catDivTag.className = "headtitle";
         headerTag[0].appendChild(catDivTag)
+      } else {
+        catDivTag.style.display = 'inline';
       }
 
       displayUnwork(article,allUnwork);
@@ -62,9 +64,7 @@ function resetDisplay(x){
     if( currpage ) {
         //remove backvid
         iframeTag.src = '';
-        if(typeof(catDivTag) != 'undefined' && catDivTag != null) {
-          headerTag[0].removeChild(catDivTag);    
-        }
+        catDivTag.style.display = "none";
         //the header
         var headTag = element('header');
         let htitleTag = element("h2", x, '', "display(\'"+x+"\')");
