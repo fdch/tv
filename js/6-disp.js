@@ -18,6 +18,11 @@ function display(x) {
       mainTag.style.background = 'none';
       break;
     case "unwork":
+      //extra stuff for the category selectbox
+      var formTag = element('form','','workFilters');
+      makeDropdowns('category', formTag, uniqueCategories, 1);
+      //makeDropdowns('title', formTag, allTitles);
+      navSelTag.appendChild(formTag);
       displayUnwork(article,allUnwork);
       mainTag.style.background = 'none';
       break;
@@ -47,23 +52,13 @@ function resetDisplay(x){
   //remove previous stuff
   if (removeChilds(mainTag)) {
     if( currpage ) {
-    
-        iframeTag.setAttribute('src','');
-        // $("main").css('background-image', 'url(' + loadingUrl + ')');
-    
+        //remove backvid
+        iframeTag.setAttribute('src','');    
         //the header
         var headerTag = element('header');
         let htitleTag = element("h2", x, '', "display(\'"+x+"\')");
         headerTag.appendChild(htitleTag);
-        
-        if(x.localeCompare('unwork')) {
-          var formTag = element('form','','workFilters');
-          makeDropdowns('category', formTag, uniqueCategories, 1);
-          //makeDropdowns('title', formTag, allTitles);
-          navSelTag.appendChild(formTag);
-        }
         mainTag.appendChild(headerTag);
-
         //the article
         var articlTag = element('article','', x);
         mainTag.appendChild(articlTag);
