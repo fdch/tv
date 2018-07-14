@@ -1,3 +1,20 @@
+body {
+  margin:0;
+}
+#menuheader {
+  margin:0;
+  padding:5px;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  overflow:hidden;
+}
+main {
+  margin-top:30px
+  padding:10px;
+  height:1500px;
+}
 h1, h2, h3, h4, h5, h6{
   cursor:pointer;
   margin:3px 0;
@@ -6,13 +23,8 @@ h1, h2, h3, h4, h5, h6{
 h1 {
   font-size:0.8em;
 }
-#menuheader {
-  margin:0;
-  padding:5px;
-  position:fixed;
-  top:0;
-  left:0;
-}
+
+
 article, footer{
   padding-top:5px;
   margin:0;
