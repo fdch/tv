@@ -72,6 +72,11 @@ function resizeHeader(){
   
    var hH = headerTag[0].clientHeight;
 
+   if (hH <= minHHeight) {
+    headerTag[0].style.height = minHHeight+"px";
+    hH = minHHeight;
+   }
+
   // var hW = headerTag[0].clientWidth;
 
   // var iH = Math.floor(hW*0.15);
