@@ -64,7 +64,7 @@ function resetDisplay(x){
     if( currpage ) {
         //remove backvid
         iframeTag.src = '';
-        catDivTag.style.display = "none";
+        if(catDivTag) catDivTag.style.display = "none";
         //the header
         var headTag = element('header');
         let htitleTag = element("h2", x, '', "display(\'"+x+"\')");
