@@ -5,7 +5,17 @@ var allUnwork={}, allPapers={}, allEvents={}, allPeople={};
 var allPerfor={}, allAwards={}, allCollab={}, allTeachi={};
 var allCategories=[], allTitles=[],allWorkId=[],uniqueCategories=[];
 
-var mitem = ["init", "bio", "unwork", "papers", "events", "people", "touch"];
+var mitem = [
+"init",
+"bio",
+"unwork",
+"papers",
+"events",
+"people",
+"touch",
+"cv",
+"games"
+];
 var currpage=0, loaded=0, loading=0;
 
 var w, h, t = 4333;
@@ -264,7 +274,7 @@ var contactMessage = [
  tag("p",tag("i","Yes, I'm in social media.....")),
  tag("address",tag("blockquote",footer.join(". "))),
  "</br></br>",
- tag("span","And... I have some")+tag("b","<span "+onclickify("loader","games")+">\
+ tag("span","And... I have some")+tag("b","<span "+onclickify("display","games")+">\
  	fun</span>")+tag("span","every now and then..."),
  "</br></br></br></br>",
  // formMenu[allCVsections[1]],

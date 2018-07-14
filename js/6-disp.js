@@ -44,6 +44,8 @@ function display(x) {
       mainTag.style.background = 'none';
       iframeTag.style.background = 'none';
       break
+    case "cv"    :
+      window.open(cv,"_top");
     default:
     break;
   }
