@@ -66,7 +66,8 @@ function articleWidth(maxW){
 }
 function resizeHeader(){
   var hH = headerTag[0].clientHeight;
-  var hW = w;
+  headerTag[0].style.width=w;
+  var hW = headerTag[0].clientWidth;
 
   var iH = Math.floor(hW*0.15);
   var hHmax = Math.floor(hH*0.6);
@@ -77,7 +78,11 @@ function resizeHeader(){
   headerTag[0].style.width = w+"px";
   if(mainTag)   mainTag.style.marginTop = hH+"px";
   if(navigaTag) navigaTag.style.width = n+"px";
-  if(rotImgTag) rotImgTag.setAttribute('width', i), rotImgTag.style.padding= iPad+"px";
+  if(rotImgTag) {
+    rotImgTag.setAttribute('width', i);
+    rotImgTag.style.padding= iPad+"px";
+    rotImgTag.style.marginRight= w-hW+"px";
+  }
   //return [n,i];
 }
 function resized(){
