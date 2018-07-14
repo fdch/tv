@@ -93,6 +93,15 @@ function resizeHeader(){
 
 
   if(rotImgTag) rotImgTag.setAttribute('width', hH*0.9);
+  if(h1titlTag) {
+    h1titlTag.style.marginTop = (hH*0.5)-h1titlTag.clientHeight;
+  }
+  if(navSelTag) {
+    navSelTag.style.marginTop = (hH*0.5)-navSelTag.clientHeight;
+  }
+  if(catDivTag) {
+    catDivTag.style.marginTop = (hH*0.5)-catDivTag.clientHeight;
+  }
   //   // rotImgTag.setAttribute('height', hH*0.98);
   //   // rotImgTag.style.padding= hH*0.01+"px";
   // }
