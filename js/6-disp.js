@@ -521,6 +521,7 @@ function displayMedia(target,source,type) {
     media.controls = false;
     media.title = source[i];
     target.appendChild(media);
+    console.log(source[i]);
   }
 
 }
