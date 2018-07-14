@@ -68,7 +68,7 @@ function resizeHeader(){
 
   // headerTag[0].style.width = w+"px";
   
-  // var hH = headerTag[0].clientHeight;
+   var hH = headerTag[0].clientHeight;
   // var hW = headerTag[0].clientWidth;
 
   // var iH = Math.floor(hW*0.15);
@@ -77,18 +77,18 @@ function resizeHeader(){
   // var i = iH>=hHmax?hHmax:iH;
   // var iPad = i*0.25;
   // var n = w-i-60; //a button box is about 55px wide...
-  // headerTag[0].style.width = w+"px";
+   // headerTag[0].style.width = w+"px";
   
   // if(navigaTag) navigaTag.style.width = n+"px";
   
   
 
 
-  // if(rotImgTag) {
-  //   rotImgTag.setAttribute('width', i);
-  //   rotImgTag.style.padding= iPad+"px";
-  //   // rotImgTag.style.marginRight= w-hW+iPad+"px";
-  // }
+  if(rotImgTag) {
+    rotImgTag.setAttribute('width', i*0.6);
+    rotImgTag.setAttribute('height', i*0.6);
+    rotImgTag.style.padding= i*0.6*0.25+"px";
+  }
 
 
 
