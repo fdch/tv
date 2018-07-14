@@ -23,7 +23,7 @@ h1 {
   display:inline;
   float:left;
 }
-nav {
+#navdiv, #imgdiv{
   display:inline;
   margin:0 5px;
   float:left;
