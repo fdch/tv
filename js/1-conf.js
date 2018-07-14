@@ -1,5 +1,6 @@
 var htmlTag, bodyTag, headerTag, mainTag, footerTag;
-var h1titlTag, navigaTag, iframeTag, rotImgTag, navSelTag, imgDivTag, catDivTag;
+var h1titlTag, navigaTag, iframeTag, rotImgTag, 
+navSelTag, imgDivTag, catDivTag,catSelTag;
 var mainBack;
 var allUnwork={}, allPapers={}, allEvents={}, allPeople={};
 var allPerfor={}, allAwards={}, allCollab={}, allTeachi={};

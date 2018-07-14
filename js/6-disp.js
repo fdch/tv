@@ -19,10 +19,15 @@ function display(x) {
       break;
     case "unwork":
       //extra stuff for the category selectbox
-      catDivTag = element('div','','catdiv');
-      makeDropdowns('category', catDivTag, uCategories);
-      headerTag[0].appendChild(catDivTag)
-      //makeDropdowns('title', formTag, allTitles);
+      
+      if(!catDivTag) {
+        catDivTag = element('div','','catdiv');
+        catSelTag = makeDropdowns('category', catDivTag, uCategories);
+        //makeDropdowns('title', formTag, allTitles);
+        catSelTag.autofocus = true;
+        headerTag[0].appendChild(catDivTag)
+      }
+      
       displayUnwork(article,allUnwork);
       mainTag.style.background = 'none';
       break;
