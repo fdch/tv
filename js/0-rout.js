@@ -216,26 +216,25 @@ function getValue(x) {
       let wid = document.getElementById(allWorkId[i]);
       switch(name) {
       case "title":
-        if(valu!==wid)
-          onoff = "none;";
+        if(valu.localeCompare(wid))
+          wid.style.display = "initial";
         else
-          onoff = "initial;";
+          wid.style.display = "none";
         break;
       case "categories":
-        if(!(wid.classList.contains(valu||valu.replace(/W/g,''))))
-          onoff = "none;";
+        if( wid.classList.contains( valu || valu.replace(/W/g,'')) )
+          wid.style.display = "initial";
         else
-          onoff = "initial;";
+          wid.style.display = "none";
         break;
       default:
         break;
       }
-      wid.setAttribute('style', "display:"+onoff);
     }
   } else {
     display(valu);
   }
- // console.log(name + ": " + valu);
+  console.log(name + ": " + valu);
 }
 function unique(array) {
     return $.grep(array, function(el, index) {
