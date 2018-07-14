@@ -66,34 +66,34 @@ function articleWidth(maxW){
 }
 function resizeHeader(){
 
-  headerTag[0].style.width = w+"px";
+  // headerTag[0].style.width = w+"px";
   
-  var hH = headerTag[0].clientHeight;
-  var hW = headerTag[0].clientWidth;
+  // var hH = headerTag[0].clientHeight;
+  // var hW = headerTag[0].clientWidth;
 
-  var iH = Math.floor(hW*0.15);
-  var hHmax = Math.floor(hH*0.6);
+  // var iH = Math.floor(hW*0.15);
+  // var hHmax = Math.floor(hH*0.8);
 
-  var i = iH>=hHmax?hHmax:iH;
-  var iPad = i*0.25;
-  var n = w-i-60; //a button box is about 55px wide...
-  headerTag[0].style.width = w+"px";
+  // var i = iH>=hHmax?hHmax:iH;
+  // var iPad = i*0.25;
+  // var n = w-i-60; //a button box is about 55px wide...
+  // headerTag[0].style.width = w+"px";
   
-  if(navigaTag) navigaTag.style.width = n+"px";
+  // if(navigaTag) navigaTag.style.width = n+"px";
   
   
 
 
-  if(rotImgTag) {
-    rotImgTag.setAttribute('width', i);
-    rotImgTag.style.padding= iPad+"px";
-    rotImgTag.style.marginRight= w-hW+iPad+"px";
-  }
+  // if(rotImgTag) {
+  //   rotImgTag.setAttribute('width', i);
+  //   rotImgTag.style.padding= iPad+"px";
+  //   // rotImgTag.style.marginRight= w-hW+iPad+"px";
+  // }
 
 
 
 
-  if(mainTag)   mainTag.style.marginTop = hH+"px";
+  // if(mainTag)   mainTag.style.marginTop = hH+"px";
 //return [n,i];
 }
 function resized(){
