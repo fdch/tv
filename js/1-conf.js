@@ -19,8 +19,8 @@ var mitem = [
 "touch",
 "cv",
 "games",
-"audio",
-"video"
+// "audio",
+// "video"
 ];
 var currpage=0, loaded=0, loading=0;
 
