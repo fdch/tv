@@ -211,7 +211,7 @@ function getValue(x) {
   var name = x.name;
   var valu = x.value;
   var onoff;
-  if ("title"===name || "categories"===name) {
+  if (!(name.localeCompare("title") || name.localeCompare("categories"))) {
     for (let i in allWorkId){
       let wid = document.getElementById(allWorkId[i]);
       switch(name) {
@@ -233,7 +233,7 @@ function getValue(x) {
       wid.setAttribute('style', "display:"+onoff);
     }
   } else {
-    display(valu);
+    display(String(valu));
   }
  // console.log(name + ": " + valu);
 }

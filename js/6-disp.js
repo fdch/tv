@@ -46,7 +46,7 @@ function resetDisplay(x){
   //remove previous stuff
   removeChilds(mainTag);
 
-  if( x.localeCompare('init') ) return; 
+  if( !currpage ) return; 
 
   iframeTag.setAttribute('src','');
   // $("main").css('background-image', 'url(' + loadingUrl + ')');
