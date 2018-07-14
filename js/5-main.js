@@ -25,7 +25,13 @@ function main() {
   if(!h1titlTag)h1titlTag=document.getElementsByTagName('h1')[0];
   h1titlTag.setAttribute('onclick',"display(\'init\');");
 
-  if(!navigaTag)navigaTag=makeMenu(mitem, headerTag[0] , "display");
+
+  if(!navigaTag) {
+    navigaTag=element('nav');
+    headerTag[0].appendChild(navigaTag);
+    navSelTag = makeDropdowns("navtag", navigaTag, mitem);
+  }
+  //if(!navigaTag)navigaTag=makeMenu(mitem, headerTag[0] , "display");
   if(!rotImgTag)rotImgTag=makeRot(rotImg, headerTag[0]);
   
   loadAll(allGS);

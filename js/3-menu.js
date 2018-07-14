@@ -65,4 +65,5 @@ function makeDropdowns(id,target,list) {
   }
   target.appendChild(labelTag);
   target.appendChild(selectTag);
+  return selectTag;
 }
