@@ -6,6 +6,7 @@ body {
   position:fixed;
   top:0;
   left:0;
+  width:100%;
   overflow:hidden;
 }
 main {
@@ -38,7 +39,7 @@ button:hover {
 }
 button:focus {
   background: lightblue;
-  outline:none;
+/*  outline:none;*/
 }
 span:hover, img:hover, a:hover{
   cursor:pointer;
@@ -47,9 +48,9 @@ span:hover, img:hover, a:hover{
 a {
   color:lightblue;
 }
-a:focus{
+/*a:focus{
   outline:none;
-}
+}*/
 ul {
   list-style: none;
 }
