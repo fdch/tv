@@ -33,5 +33,5 @@ function main() {
   if(!footerTag)footerTag=document.getElementsByTagName('footer')[0];
   footerTag.setAttribute('style', 'display:none');
   resized();
-  iframeTag.style.background = '';  
+  ZiframeTag.style.background = '';  
 }
