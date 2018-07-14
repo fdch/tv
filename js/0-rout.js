@@ -69,6 +69,7 @@ function resizeHeader(){
   // headerTag[0].style.width = w+"px";
   
    var hH = headerTag[0].clientHeight;
+
   // var hW = headerTag[0].clientWidth;
 
   // var iH = Math.floor(hW*0.15);
@@ -85,9 +86,10 @@ function resizeHeader(){
 
 
   if(rotImgTag) {
-    rotImgTag.setAttribute('width', hH*0.98);
-    rotImgTag.setAttribute('height', hH*0.98);
-    rotImgTag.style.padding= hH*0.01+"px";
+    var pad = rotImgTag.styl
+    rotImgTag.setAttribute('width', hH*0.98+"px");
+    rotImgTag.setAttribute('height', hH*0.98+"px");
+    // rotImgTag.style.padding= hH*0.01+"px";
   }
 
 
