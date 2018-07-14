@@ -25,9 +25,16 @@ h1 {
 }
 .headtitle {
   display:inline;
-  margin:0 5px;
+  margin-top:10px;
+  margin-left:5px;
+  margin-right:0;
+  margin-bottom:0;
   float:left;
   border-width: 0;
+}
+nav select {
+  postition:relative;
+  top:-3px;
 }
 /*button {
   font-size:1em;

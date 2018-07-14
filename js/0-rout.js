@@ -67,30 +67,13 @@ function articleWidth(maxW){
   if (pw >= maxW) {return maxW*f;} else {return pw*f;}
 }
 function resizeHeader(){
-
-  // headerTag[0].style.width = w+"px";
   
-   var hH = headerTag[0].clientHeight;
+  var hH = headerTag[0].clientHeight;
 
-   if (hH <= minHHeight) {
+  if (h <= 500) {
     headerTag[0].style.height = minHHeight+"px";
     hH = minHHeight;
-   }
-
-  // var hW = headerTag[0].clientWidth;
-
-  // var iH = Math.floor(hW*0.15);
-  // var hHmax = Math.floor(hH*0.8);
-
-  // var i = iH>=hHmax?hHmax:iH;
-  // var iPad = i*0.25;
-  // var n = w-i-60; //a button box is about 55px wide...
-   // headerTag[0].style.width = w+"px";
-  
-  // if(navigaTag) navigaTag.style.width = n+"px";
-  
-  
-
+  }
 
   if(rotImgTag) rotImgTag.setAttribute('width', hH*0.9);
   if(h1titlTag) {
@@ -102,15 +85,9 @@ function resizeHeader(){
   if(catDivTag) {
     catDivTag.style.marginTop = (hH*0.5)-catDivTag.clientHeight;
   }
-  //   // rotImgTag.setAttribute('height', hH*0.98);
-  //   // rotImgTag.style.padding= hH*0.01+"px";
-  // }
-
-
-
 
   if(mainTag)   mainTag.style.marginTop = hH+"px";
-//return [n,i];
+
 }
 function resized(){
   w = width();
