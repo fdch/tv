@@ -62,9 +62,11 @@ function display(x) {
       break;
     case "video":
       displayMedia(article,allVideos, 'video');
+      mainTag.style.background = 'none';
       break;
     case "audio":
       displayMedia(article,allAudios, 'audio');
+      mainTag.style.background = 'none';
       break;
     default:
     break;
