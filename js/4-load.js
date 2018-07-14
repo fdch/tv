@@ -32,8 +32,8 @@ function loadAll(sheets, callback) {
       for (let j in categ) allCategories.push(categ[j]);
       allTitles.push(title);
       allWorkId.push(nwid);
-      if(vide)allVideos.push(vide);
-      if(audi)allAudios.push(audi);
+      if(vide)allVideos.push(title,vide);
+      if(audi)allAudios.push(title,audi);
       // makeCateg(categ);
     }
     uCategories = getUniqueCategories(allCategories);
