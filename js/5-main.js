@@ -11,8 +11,7 @@ function main() {
   if(!headerTag)headerTag=document.getElementsByTagName('header');
   resized();
   if(!mainTag)  mainTag  =document.getElementsByTagName('main')[0];
-  mainBack = document.createAttribute('style');
-  mainBack.value = backImg+"width:"+w+"px;height:"+h+"px;";
+  mainBack.style.background = backImg;
   //mainTag.setAttributeNode(mainBack);
 
   if(!bodyTag)  bodyTag  =document.getElementsByTagName('body')[0];
