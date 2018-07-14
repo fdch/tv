@@ -67,7 +67,8 @@ function articleWidth(maxW){
 function resizeHeader(){
 
   headerTag[0].style.width = w+"px";
-
+  
+  var hH = headerTag[0].clientHeight;
   var hW = headerTag[0].clientWidth;
 
   var iH = Math.floor(hW*0.15);
@@ -80,7 +81,7 @@ function resizeHeader(){
   
   if(navigaTag) navigaTag.style.width = n+"px";
   
-  var hH = headerTag[0].clientHeight;
+  
 
 
   if(rotImgTag) {
