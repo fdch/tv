@@ -25,6 +25,7 @@ function display(x) {
         catSelTag = makeDropdowns('category', catDivTag, uCategories);
         //makeDropdowns('title', formTag, allTitles);
         catSelTag.autofocus = true;
+        catSelTag.style.display = 'inline';
         headerTag[0].appendChild(catDivTag)
       }
 
