@@ -33,7 +33,7 @@ h1 {
   border-width: 0;
 }
 nav select {
-  postition:relative;
+  position:relative;
   top:-3px;
 }
 /*button {
