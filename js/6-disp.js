@@ -22,7 +22,7 @@ function display(x) {
       var formTag = element('form','','workFilters');
       makeDropdowns('category', formTag, uniqueCategories, 1);
       //makeDropdowns('title', formTag, allTitles);
-      navSelTag.appendChild(formTag);
+      headerTag[0].appendChild(formTag);
       displayUnwork(article,allUnwork);
       mainTag.style.background = 'none';
       break;
@@ -55,7 +55,8 @@ function resetDisplay(x){
   if (removeChilds(mainTag)) {
     if( currpage ) {
         //remove backvid
-        iframeTag.src = '';    
+        iframeTag.src = '';
+        if(formTag) headerTag[0].removeChild(formTag);    
         //the header
         var headerTag = element('header');
         let htitleTag = element("h2", x, '', "display(\'"+x+"\')");
