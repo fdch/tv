@@ -11,8 +11,7 @@ function main() {
   if(!headerTag)headerTag=document.getElementsByTagName('header');
   resized();
   if(!mainTag)  mainTag  =document.getElementsByTagName('main')[0];
-  mainBack.style.background = backImg;
-  //mainTag.setAttributeNode(mainBack);
+  mainTag.style.background = backImg;
 
   if(!bodyTag)  bodyTag  =document.getElementsByTagName('body')[0];
   bodyTag.setAttribute('onresize', 'resized()');

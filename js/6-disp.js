@@ -1,41 +1,41 @@
 function display(x) {
   currpage = mitem.findIndex(item => item === x);
-  mainBack.style.background = backImg;
+  mainTag.style.background = backImg;
   //console.log(currpage);
   article = resetDisplay(x);
   switch (x) {
     case "games" :
       article.innerHTML = gameType.join("<br/>");
-      mainBack.style.background = '';
+      mainTag.style.background = '';
       break;
     case "touch" :
       article.innerHTML = contactMessage.join("");
-      mainBack.style.background = '';
+      mainTag.style.background = '';
       break;
     case "bio"   :
       displayBiogra(article);
-      mainBack.style.background = '';
+      mainTag.style.background = '';
       break;
     case "unwork":
       displayUnwork(article,allUnwork);
-      mainBack.style.background = '';
+      mainTag.style.background = '';
       break;
     case "papers":
       displayPapers(article,allPapers);
-      mainBack.style.background = '';
+      mainTag.style.background = '';
       break;
     case "events":
       displayEvents(article,allEvents);
-      mainBack.style.background = '';
+      mainTag.style.background = '';
       break;
     case "people":
       displayPeople(article,allPeople);
-      mainBack.style.background = '';
+      mainTag.style.background = '';
       break;
     case "init"  :
       main();
       iframeTag.setAttribute('src',featURL[pdRandom(featURL.length)]);
-      mainBack.style.background = '';
+      mainTag.style.background = '';
       break
     default:
     break;
