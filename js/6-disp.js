@@ -59,6 +59,13 @@ function display(x) {
       break
     case "cv"    :
       window.open(cv,"_top");
+      break;
+    case "video":
+      console.log(allVideos.join("\n"));
+      break;
+    case "audio":
+      console.log(allAudios.join("\n"));
+      break;
     default:
     break;
   }

@@ -5,6 +5,7 @@ var mainBack;
 var allUnwork={}, allPapers={}, allEvents={}, allPeople={};
 var allPerfor={}, allAwards={}, allCollab={}, allTeachi={};
 var allCategories=[], allTitles=[],allWorkId=[],uCategories=[];
+var allVideos=[], allAudios=[];
 
 var userLang;
 
@@ -17,7 +18,9 @@ var mitem = [
 "people",
 "touch",
 "cv",
-"games"
+"games",
+"audio",
+"video"
 ];
 var currpage=0, loaded=0, loading=0;
 

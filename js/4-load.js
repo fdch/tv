@@ -12,6 +12,8 @@ function loadAll(sheets, callback) {
       var title = e.gsx$title.$t;
       var categ = makeCateg(e.gsx$category.$t);
       var nwid  = String("id-"+makeID(title));
+      var vide = e.gsx$videourl.$t;
+      var audi = e.gsx$audiourl.$t;
       allUnwork[nwid]={};
       allUnwork[nwid]["awTitl"] = title;
       allUnwork[nwid]["awTime"] = e.gsx$timestamp.$t;
@@ -21,8 +23,8 @@ function loadAll(sheets, callback) {
       allUnwork[nwid]["awDesc"] = e.gsx$description.$t;
       allUnwork[nwid]["awProg"] = e.gsx$programnotes.$t;
       allUnwork[nwid]["awIurl"] = e.gsx$imageurl.$t;
-      allUnwork[nwid]["awVurl"] = e.gsx$videourl.$t;
-      allUnwork[nwid]["awAurl"] = e.gsx$audiourl.$t;
+      allUnwork[nwid]["awVurl"] = vide;
+      allUnwork[nwid]["awAurl"] = audi;
       allUnwork[nwid]["awSurl"] = e.gsx$scoreurl.$t;
       allUnwork[nwid]["awLoca"] = e.gsx$location.$t;
       allUnwork[nwid]["awDura"] = e.gsx$duration.$t;
@@ -30,6 +32,8 @@ function loadAll(sheets, callback) {
       for (let j in categ) allCategories.push(categ[j]);
       allTitles.push(title);
       allWorkId.push(nwid);
+      if(vide)allVideos.push(vide);
+      if(audi)allAudios.push(audi);
       // makeCateg(categ);
     }
     uCategories = getUniqueCategories(allCategories);
