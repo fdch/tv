@@ -60,11 +60,11 @@ function display(x) {
     case "cv"    :
       window.open(cv,"_top");
       break;
-    case "video":
+    case "video" :
       displayMedia(article,allVideos, 'video');
       mainTag.style.background = 'none';
       break;
-    case "audio":
+    case "audio" :
       displayMedia(article,allAudios, 'audio');
       mainTag.style.background = 'none';
       break;
@@ -504,7 +504,7 @@ function displayCVPerfor(target,source,id){
   }
 }
 function displayMedia(target,source,type) {
-  for (let i=0; i<=source.legth ; i+=2) {
+  for (let i=0; i<=source.legth-1 ; i=i+2) {
     //var elem = element('h4',source[i])
     let media = element(type);
     media.src = source[i+1];
