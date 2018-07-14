@@ -4,7 +4,7 @@ function display(x) {
   } else {
     x = x.value;
   }
-  currpage = mitem.findIndex(item => item === x);
+  // currpage = mitem.findIndex(item => item === x);
   // console.log("Display \'"+x+"\', currpage: "+currpage);
   mainTag.style.background = backImg;
   //console.log(currpage);
@@ -508,7 +508,7 @@ function displayMedia(target,source,type) {
     //var elem = element('h4',source[i])
     let media = element(type);
     media.src = source[i+1];
-    media.width = target.clientWidth/2
+    media.width = target.clientWidth/2;
     media.style.border = "none";
     media.style.padding = "none";
     media.style.margin = "none";
@@ -521,7 +521,7 @@ function displayMedia(target,source,type) {
     media.controls = false;
     media.title = source[i];
     target.appendChild(media);
-    console.log(source[i]);
+    //console.log(source[i]);
   }
 
 }
