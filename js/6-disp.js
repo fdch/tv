@@ -506,38 +506,24 @@ function displayCVPerfor(target,source,id){
 function displayMedia(target,source,type) {
   for (let i=0; i<=source.legth-1 ; i=i+2) {
     //var elem = element('h4',source[i])
-    let media = element(type);
-    media.src = source[i+1];
-    media.width = target.clientWidth/2;
-    media.style.border = "none";
-    media.style.padding = "none";
-    media.style.margin = "none";
-    media.style.position = "relative";
-    media.style.float = "left";
+    let medi = element(type);
+    medi.src = source[i+1];
+    medi.width = target.clientWidth/2;
+    medi.style.border = "none";
+    medi.style.padding = "none";
+    medi.style.margin = "none";
+    medi.style.position = "relative";
+    medi.style.float = "left";
 
     // video.overflow = false;
     // video.scrolling = "no";
     // video.frameborder = 'none';
-    media.controls = false;
-    media.title = source[i];
-    target.appendChild(media);
+    medi.controls = false;
+    medi.title = source[i];
+    target.appendChild(medi);
     //console.log(source[i]);
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 function loadCV() {
   mainBack.value='';
   for (var i in allCVsections)
