@@ -62,7 +62,7 @@ function resetDisplay(x){
         //the article
         var articlTag = element('article','', x);
         mainTag.appendChild(articlTag);
-        articlTag.style.width: articleWidth(maxWidth)+"px";
+        articlTag.style.width = articleWidth(maxWidth)+"px";
         return articlTag;
       }
       else {
