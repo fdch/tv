@@ -66,7 +66,7 @@ function display(x) {
 function resetDisplay(x){ 
   //remove previous stuff
   if (removeChilds(mainTag)) {
-    if( currpage ) {
+    if( currpage && !(x.localeCompare('init'))) {
         //remove backvid
         iframeTag.src = '';
         if(catDivTag) catDivTag.style.display = "none";
