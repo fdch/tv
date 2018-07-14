@@ -210,33 +210,28 @@ function getUniqueCategories(x){
   return unique(unique(cats));
 }
 function getValue(x) {
-  var name = String(x.name);
-  var valu = String(x.value);
+  var name = x.name;
+  var valu = x.value;
   var onoff;
-  if (!(name.localeCompare("title") || name.localeCompare("categories"))) {
-    for (let i in allWorkId){
-      let wid = document.getElementById(allWorkId[i]);
-      switch(name) {
-      case "title":
-        if(valu.localeCompare(wid))
-          wid.style.display = "initial";
-        else
-          wid.style.display = "none";
-        break;
-      case "categories":
-        if( wid.classList.contains( valu || valu.replace(/W/g,'')) )
-          wid.style.display = "initial";
-        else
-          wid.style.display = "none";
-        break;
-      default:
-        break;
-      }
+  for (let i in allWorkId) {
+    let wid = document.getElementById(allWorkId[i]);
+    switch(name) {
+    case "title":
+      if(valu.localeCompare(wid))
+        wid.style.display = "initial";
+      else
+        wid.style.display = "none";
+      break;
+    case "categories":
+      if( wid.classList.contains(valu || valu.replace(/W/g,'')) )
+        wid.style.display = "initial";
+      else
+        wid.style.display = "none";
+      break;
+    default:
+      break;
     }
-  } else {
-    display(valu);
-  }
-  console.log(name + ": " + valu);
+  //console.log(name + ": " + valu);
 }
 function unique(array) {
     return $.grep(array, function(el, index) {
