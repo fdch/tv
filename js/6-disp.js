@@ -19,7 +19,9 @@ function display(x) {
       break;
     case "unwork":
       //extra stuff for the category selectbox
-      wCatTag = makeDropdowns('category', headerTag[0], uCategories);
+      catDivTag = element('div','','catdiv');
+      makeDropdowns('category', catDivTag, uCategories);
+      headerTag[0].appendChild(catDivTag)
       //makeDropdowns('title', formTag, allTitles);
       displayUnwork(article,allUnwork);
       mainTag.style.background = 'none';
@@ -54,7 +56,7 @@ function resetDisplay(x){
     if( currpage ) {
         //remove backvid
         iframeTag.src = '';
-        if(wCatTag) headerTag[0].removeChild(wCatTag);    
+        if(catDivTag) headerTag[0].removeChild(catDivTag);    
         //the header
         var headerTag = element('header');
         let htitleTag = element("h2", x, '', "display(\'"+x+"\')");
