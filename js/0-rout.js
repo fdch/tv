@@ -208,8 +208,8 @@ function getUniqueCategories(x){
   return unique(unique(cats));
 }
 function getValue(x) {
-  var name = x.name;
-  var valu = x.value;
+  var name = String(x.name);
+  var valu = String(x.value);
   var onoff;
   if (!(name.localeCompare("title") || name.localeCompare("categories"))) {
     for (let i in allWorkId){
@@ -233,7 +233,7 @@ function getValue(x) {
       wid.setAttribute('style', "display:"+onoff);
     }
   } else {
-    display(String(valu));
+    display(valu);
   }
  // console.log(name + ": " + valu);
 }
