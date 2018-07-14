@@ -236,7 +236,7 @@ function getValue(x) {
       }
       break;
     default:
-      display(valu);
+      display(String(valu));
       break;
   }
 
