@@ -231,6 +231,7 @@ function getValue(x) {
     default:
       break;
     }
+  }
   //console.log(name + ": " + valu);
 }
 function unique(array) {
