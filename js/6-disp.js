@@ -60,7 +60,7 @@ function resetDisplay(x){
   let htitleTag = element("h2", x, '', "display(\'"+x+"\')");//,'', submitX);
   headerTag.appendChild(htitleTag);
 
-  if('unwork'===x) {
+  if(x.localeCompare('unwork')) {
     var formTag = element('form','','workFilters');
     makeDropdowns('category', formTag, uniqueCategories, 1);
     //makeDropdowns('title', formTag, allTitles);
@@ -71,7 +71,7 @@ function resetDisplay(x){
   //the article
   var articlTag = element('article','', x);
   mainTag.appendChild(articlTag);
-  articlTag.setAttribute('style', "width:"+articleWidth(maxWidth)+"px;");
+  articlTag.style.width: articleWidth(maxWidth)+"px";
   return articlTag;
 }
 function displayBiogra(target) {
