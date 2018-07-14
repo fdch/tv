@@ -112,7 +112,7 @@ function randomColor(preset, target){
   var menuy = "rgba("+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+pdRandom(dran,doff)+","+hAlpha+")";
 
   target[0].setAttribute('style', "background-color:" + darky +"; color:"+light+";");
-  target[1].setAttribute('style', "padding-left:10px;background-color:" + menuy +";");
+  target[1].setAttribute('style', "background-color:" + menuy +";");
 }
 var whichone = 0;
 // var flipped = 1;
