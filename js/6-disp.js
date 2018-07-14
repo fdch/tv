@@ -61,10 +61,10 @@ function display(x) {
       window.open(cv,"_top");
       break;
     case "video":
-      console.log(allVideos.join("\n"));
+      displayMedia(article,allVideos, 'video');
       break;
     case "audio":
-      console.log(allAudios.join("\n"));
+      displayMedia(article,allAudios, 'audio');
       break;
     default:
     break;
@@ -501,6 +501,40 @@ function displayCVPerfor(target,source,id){
     footTag.appendChild(footer);
   }
 }
+function displayMedia(target,source,type) {
+  for (let i=0; i<=source.legth ; i+=2) {
+    //var elem = element('h4',source[i])
+    let media = element(type);
+    media.src = source[i+1];
+    media.width = target.clientWidth/2
+    media.style.border = "none";
+    media.style.padding = "none";
+    media.style.margin = "none";
+    media.style.position = "relative";
+    media.style.float = "left";
+
+    // video.overflow = false;
+    // video.scrolling = "no";
+    // video.frameborder = 'none';
+    media.controls = false;
+    media.title = source[i];
+    target.appendChild(media);
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 function loadCV() {
   mainBack.value='';
   for (var i in allCVsections)
