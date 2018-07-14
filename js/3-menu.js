@@ -43,7 +43,7 @@ function makeBackVideo(id, target, source, loading) {
   target.appendChild(iframeTag);
   return iframeTag;
 }
-function makeDropdowns(id,target,list, label) {
+function makeDropdowns(id,target,list, onchange,label) {
   if (label) {
     let labelTag = document.createElement('label');
     labelTag.setAttribute('for',id);
@@ -55,7 +55,7 @@ function makeDropdowns(id,target,list, label) {
   let selectTag = document.createElement('select');
   selectTag.setAttribute('id',id);
   selectTag.setAttribute('name',id);
-  selectTag.setAttribute('onchange', 'getValue(this)');
+  selectTag.setAttribute('onchange', onchange);
 
   var thelist = shuffleArray(list);
   
