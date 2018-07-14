@@ -27,7 +27,7 @@ function display(x) {
         catSelTag.autofocus = true;
         headerTag[0].appendChild(catDivTag)
       }
-      
+
       displayUnwork(article,allUnwork);
       mainTag.style.background = 'none';
       break;
@@ -61,7 +61,9 @@ function resetDisplay(x){
     if( currpage ) {
         //remove backvid
         iframeTag.src = '';
-        if(catDivTag) headerTag[0].removeChild(catDivTag);    
+        if(typeof(catDivTag) != 'undefined' && catDivTag != null) {
+          headerTag[0].removeChild(catDivTag);    
+        }
         //the header
         var headTag = element('header');
         let htitleTag = element("h2", x, '', "display(\'"+x+"\')");
