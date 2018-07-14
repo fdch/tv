@@ -65,8 +65,10 @@ function display(x) {
 }
 function resetDisplay(x){ 
   //remove previous stuff
+  var c;
   if (removeChilds(mainTag)) {
-    if( x.localeCompare('init') ) {
+    if( c=x.localeCompare('init') ) {
+        console.log("comparison rendered: \'"+c+"\'");
         console.log("exiting because we are on \'"+x+"\' page");
         return void 0;//we are on init page
       } else if ( currpage ) {
