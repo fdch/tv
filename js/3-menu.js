@@ -42,11 +42,14 @@ function makeBackVideo(id, target, source, loading) {
   target.appendChild(iframeTag);
   return iframeTag;
 }
-function makeDropdowns(id,target,list) {
-  let labelTag = document.createElement('label');
-  labelTag.setAttribute('for',id);
-  let labelText = document.createTextNode(id+": ");
-  labelTag.appendChild(labelText);
+function makeDropdowns(id,target,list, label) {
+  if (label) {
+    let labelTag = document.createElement('label');
+    labelTag.setAttribute('for',id);
+    let labelText = document.createTextNode(id+": ");
+    labelTag.appendChild(labelText);
+    target.appendChild(labelTag);
+  }
 
   let selectTag = document.createElement('select');
   selectTag.setAttribute('id',id);
@@ -63,7 +66,7 @@ function makeDropdowns(id,target,list) {
     elemTag.appendChild(elemTxt);
     selectTag.appendChild(elemTag);
   }
-  target.appendChild(labelTag);
+  
   target.appendChild(selectTag);
   return selectTag;
 }
