@@ -211,27 +211,36 @@ function getValue(x) {
   var name = x.name;
   var valu = x.value;
   var onoff;
-  for (let i in allWorkId){
-    let wid = document.getElementById(allWorkId[i]);
-    switch(name) {
+  switch(name) {
     case "title":
-      if(valu!==wid)
-        onoff = "none;";
-      else
-        onoff = "initial;";
-      break;
     case "categories":
-      if(!(wid.classList.contains(valu||valu.replace(/W/g,''))))
-        onoff = "none;";
-      else
-        onoff = "initial;";
+      for (let i in allWorkId){
+        let wid = document.getElementById(allWorkId[i]);
+        switch(name) {
+        case "title":
+          if(valu!==wid)
+            onoff = "none;";
+          else
+            onoff = "initial;";
+          break;
+        case "categories":
+          if(!(wid.classList.contains(valu||valu.replace(/W/g,''))))
+            onoff = "none;";
+          else
+            onoff = "initial;";
+          break;
+        default:
+          break;
+        }
+        wid.setAttribute('style', "display:"+onoff);
+      }
       break;
     default:
       display(valu);
       break;
-    }
-    wid.setAttribute('style', "display:"+onoff);
   }
+
+
  // console.log(name + ": " + valu);
 }
 function unique(array) {
