@@ -46,7 +46,7 @@ function display(x) {
 function resetDisplay(x){
   
   //remove previous stuff
-  removeChilds(mainTag);
+  if (removeChilds(mainTag)) {
 
   if( !currpage ) return; 
 
@@ -73,6 +73,10 @@ function resetDisplay(x){
   mainTag.appendChild(articlTag);
   articlTag.style.width: articleWidth(maxWidth)+"px";
   return articlTag;
+  } else {
+    console.log("could not remove elements and create article");
+    return void 0;
+  }
 }
 function displayBiogra(target) {
   let sectTag = element('section');

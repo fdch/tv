@@ -1,6 +1,8 @@
 function removeChilds(x) {
-  while (x.firstChild) 
-    x.removeChild(x.firstChild);
+  while (x.firstChild) {
+      x.removeChild(x.firstChild);
+  } 
+  if(!x.firstChild) return 1
 }
 function toggle(id) {
   x = document.getElementById(id);
