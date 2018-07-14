@@ -22,7 +22,7 @@ function display(x) {
       
       if(!catDivTag) {
         catDivTag = document.createElement('nav');
-        catSelTag = makeDropdowns('category', catDivTag, uCategories, 'display(this.value)');
+        catSelTag = makeDropdowns('category', catDivTag, uCategories, 'getValue(this)');
         //makeDropdowns('title', formTag, allTitles);
         catDivTag.autofocus = true;
         catDivTag.className = "headtitle";
