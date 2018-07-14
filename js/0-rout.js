@@ -74,7 +74,7 @@ function resizeHeader(){
   var i = iH>=hHmax?hHmax:iH;
   var n = w-i-60; //a button box is about 55px wide...
   headerTag[0].style.width = w+"px";
-  mainTag.style.marginTop = hH+"px";
+  if(mainTag)   mainTag.style.marginTop = hH+"px";
   if(navigaTag) navigaTag.style.width = n+"px";
   if(rotImgTag) rotImgTag.setAttribute('width', i);
   //return [n,i];
