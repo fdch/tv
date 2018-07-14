@@ -41,6 +41,7 @@ _nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
 
 var rotImgStyle= [
 	"float:right",
+	"margin-right:25px",
 	"clip-path:circle(50% at center)",
 	"-webkit-clip-path:circle(50% at center)"
 ];
