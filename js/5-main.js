@@ -43,4 +43,6 @@ function main() {
   footerTag.setAttribute('style', 'display:none');
   resized();
   iframeTag.style.background = '';  
+  userLang = navigator.language || navigator.userLanguage; 
+  console.log("The language is: " + userLang);
 }

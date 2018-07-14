@@ -6,6 +6,8 @@ var allUnwork={}, allPapers={}, allEvents={}, allPeople={};
 var allPerfor={}, allAwards={}, allCollab={}, allTeachi={};
 var allCategories=[], allTitles=[],allWorkId=[],uCategories=[];
 
+var userLang;
+
 var mitem = [
 "init",
 "bio",
