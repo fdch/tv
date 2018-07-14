@@ -65,8 +65,9 @@ function articleWidth(maxW){
   if (pw >= maxW) {return maxW*f;} else {return pw*f;}
 }
 function resizeHeader(){
-  var hH = headerTag[0].clientHeight;
-  headerTag[0].style.width=w;
+
+  headerTag[0].style.width = w+"px";
+
   var hW = headerTag[0].clientWidth;
 
   var iH = Math.floor(hW*0.15);
@@ -76,14 +77,23 @@ function resizeHeader(){
   var iPad = i*0.25;
   var n = w-i-60; //a button box is about 55px wide...
   headerTag[0].style.width = w+"px";
-  if(mainTag)   mainTag.style.marginTop = hH+"px";
+  
   if(navigaTag) navigaTag.style.width = n+"px";
+  
+  var hH = headerTag[0].clientHeight;
+
+
   if(rotImgTag) {
     rotImgTag.setAttribute('width', i);
     rotImgTag.style.padding= iPad+"px";
-    rotImgTag.style.marginRight= w-hW+"px";
+    rotImgTag.style.marginRight= w-hW+iPad+"px";
   }
-  //return [n,i];
+
+
+
+
+  if(mainTag)   mainTag.style.marginTop = hH+"px";
+//return [n,i];
 }
 function resized(){
   w = width();
