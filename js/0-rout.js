@@ -222,19 +222,19 @@ function getValue(x) {
             onoff = "none;";
           else
             onoff = "initial;";
-          //break;
+          break;
         case "categories":
           if(!(wid.classList.contains(valu||valu.replace(/W/g,''))))
             onoff = "none;";
           else
             onoff = "initial;";
-          //break;
+          break;
         default:
           break;
         }
         wid.setAttribute('style', "display:"+onoff);
       }
-      //break;
+      break;
     default:
       display(valu);
       break;
