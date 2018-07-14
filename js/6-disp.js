@@ -35,6 +35,7 @@ function display(x) {
     case "init"  :
       main();
       iframeTag.setAttribute('src',featURL[pdRandom(featURL.length)]);
+      mainBack.value = '';
       break
     default:
     break;
