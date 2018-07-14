@@ -40,8 +40,8 @@ https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/\
 _nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
 
 var rotImgStyle= [
-	"float:right",
-	//"margin-right:25px",
+	// "float:right",
+	"margin-left:5px",
 	"clip-path:circle(40% at 50% 50%)",
 	"-webkit-clip-path:circle(40% at 50% 50%)"
 ];

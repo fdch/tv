@@ -30,8 +30,8 @@ function makeRot(input, target){
   imgTag.setAttribute('title', input[4]);
   imgTag.setAttribute('onclick', input[5]);
   
-  // target.insertAdjacentElement('afterbegin', imgTag);
-  target.appendChild(imgTag);
+  target.insertAdjacentElement('afterbegin', imgTag);
+  // target.appendChild(imgTag);
 
   return imgTag;
 }
