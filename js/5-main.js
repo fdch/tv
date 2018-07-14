@@ -30,6 +30,7 @@ function main() {
     navigaTag = document.getElementById('navtag');
     headerTag[0].appendChild(navigaTag);
     navSelTag = makeDropdowns("navtag", navigaTag, mitem);
+    navSelTag.setAttribute('autofocus','');
   }
 
   //if(!navigaTag)navigaTag=makeMenu(mitem, headerTag[0] , "display");
