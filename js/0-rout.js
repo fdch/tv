@@ -85,9 +85,9 @@ function resizeHeader(){
 
 
   if(rotImgTag) {
-    rotImgTag.setAttribute('width', hH*0.9);
-    rotImgTag.setAttribute('height', hH*0.9);
-    rotImgTag.style.padding= hH*0.05+"px";
+    rotImgTag.setAttribute('width', hH*0.98);
+    rotImgTag.setAttribute('height', hH*0.98);
+    rotImgTag.style.padding= hH*0.01+"px";
   }
 
 
