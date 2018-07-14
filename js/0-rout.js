@@ -70,7 +70,7 @@ function resizeHeader(){
   
   var hH = headerTag[0].clientHeight;
 
-  if (h <= maxHeight) {
+  if (h >= maxHeight) {
     headerTag[0].style.height = minHHeight+"px";
     hH = minHHeight;
   }
