@@ -58,10 +58,10 @@ function resetDisplay(x){
         iframeTag.src = '';
         if(catDivTag) headerTag[0].removeChild(catDivTag);    
         //the header
-        var headerTag = element('header');
+        var headTag = element('header');
         let htitleTag = element("h2", x, '', "display(\'"+x+"\')");
-        headerTag.appendChild(htitleTag);
-        mainTag.appendChild(headerTag);
+        headTag.appendChild(htitleTag);
+        mainTag.appendChild(headTag);
         //the article
         var articlTag = element('article','', x);
         mainTag.appendChild(articlTag);

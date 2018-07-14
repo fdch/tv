@@ -23,7 +23,7 @@ h1 {
   display:inline;
   float:left;
 }
-#navdiv, #imgdiv, select{
+#navdiv, #imgdiv, #catdiv{
   display:inline;
   margin:0 5px;
   float:left;
