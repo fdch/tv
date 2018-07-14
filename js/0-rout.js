@@ -310,14 +310,15 @@ function element(tag,text,id,onclick,width) {
   elem.appendChild(node);
   return elem;
 }
-function img(src,width,titl) {
+function img(src,width,titl,id) {
   let tag = document.createElement('img');
   let div = document.createElement('div');
   let anc = anchor(src);
-  tag.setAttribute('src', src);
-  tag.setAttribute('width', width);
-  tag.setAttribute('title', titl?titl:"Click me");
-  div.setAttribute('style','width:inherit;overflow:hidden;border-radius:15px;');
+  if (id)    tag.setAttribute('id',id);
+  if (src)   tag.setAttribute('src', src);
+  if (width) tag.setAttribute('width', width);
+  if (titl)  tag.setAttribute('title', titl);
+  div.setAttribute('style',"width:inherit;overflow:hidden;border-radius:15px;");
   anc.appendChild(tag);
   div.appendChild(anc);
   return div;      
