@@ -21,7 +21,7 @@ function display(x) {
       //extra stuff for the category selectbox
       
       if(!catDivTag) {
-        catDivTag = element('div','','catdiv');
+        catDivTag = element('nav','','catdiv');
         catSelTag = makeDropdowns('category', catDivTag, uCategories);
         //makeDropdowns('title', formTag, allTitles);
         catSelTag.autofocus = true;
