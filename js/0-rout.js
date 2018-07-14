@@ -217,7 +217,7 @@ function getValue(x) {
     let wid = document.getElementById(allWorkId[i]);
     switch(name) {
     case "title":
-      if(valu.localeCompare(wid))
+      if(valu === wid)
         wid.style.display = "initial";
       else
         wid.style.display = "none";
