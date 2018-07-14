@@ -40,7 +40,7 @@ function display(x) {
       break;
     case "init"  :
       main();
-      iframeTag.setAttribute('src',featURL[pdRandom(featURL.length)]);
+      iframeTag.src = featURL[pdRandom(featURL.length)];
       mainTag.style.background = 'none';
       iframeTag.style.background = 'none';
       break
@@ -53,7 +53,7 @@ function resetDisplay(x){
   if (removeChilds(mainTag)) {
     if( currpage ) {
         //remove backvid
-        iframeTag.setAttribute('src','');    
+        iframeTag.src = '';    
         //the header
         var headerTag = element('header');
         let htitleTag = element("h2", x, '', "display(\'"+x+"\')");
