@@ -43,39 +43,39 @@ function display(x) {
     break;
   }
 }
-function resetDisplay(x){
-  
+function resetDisplay(x){ 
   //remove previous stuff
   if (removeChilds(mainTag)) {
+    if( currpage ) {
+    
+        iframeTag.setAttribute('src','');
+        // $("main").css('background-image', 'url(' + loadingUrl + ')');
+    
+        //the header
+        var headerTag = element('header');
+        let htitleTag = element("h2", x, '', "display(\'"+x+"\')");
+        headerTag.appendChild(htitleTag);
+        
+        if(x.localeCompare('unwork')) {
+          var formTag = element('form','','workFilters');
+          makeDropdowns('category', formTag, uniqueCategories, 1);
+          //makeDropdowns('title', formTag, allTitles);
+          navSelTag.appendChild(formTag);
+        }
+        mainTag.appendChild(headerTag);
 
-  if( !currpage ) return; 
-
-  iframeTag.setAttribute('src','');
-  // $("main").css('background-image', 'url(' + loadingUrl + ')');
-
-  //the header
-  var headerTag = element('header');
-
-  //let submitX = "getSubmit(\'"+x+"\');";
-  let htitleTag = element("h2", x, '', "display(\'"+x+"\')");//,'', submitX);
-  headerTag.appendChild(htitleTag);
-
-  if(x.localeCompare('unwork')) {
-    var formTag = element('form','','workFilters');
-    makeDropdowns('category', formTag, uniqueCategories, 1);
-    //makeDropdowns('title', formTag, allTitles);
-    navSelTag.appendChild(formTag);
-  }
-
-  mainTag.appendChild(headerTag);
-  //the article
-  var articlTag = element('article','', x);
-  mainTag.appendChild(articlTag);
-  articlTag.style.width: articleWidth(maxWidth)+"px";
-  return articlTag;
+        //the article
+        var articlTag = element('article','', x);
+        mainTag.appendChild(articlTag);
+        articlTag.style.width: articleWidth(maxWidth)+"px";
+        return articlTag;
+      }
+      else {
+        return void 0;//we are on init page
+      }
   } else {
     console.log("could not remove elements and create article");
-    return void 0;
+    return void 0; //there was an error
   }
 }
 function displayBiogra(target) {
