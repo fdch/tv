@@ -7,7 +7,7 @@
 //////           //////////////////     ////////////////////  //////////    //
 function main() {
   if(!htmlTag)  htmlTag  =document.getElementsByTagName('html')[0];
-  randomFont(htmlTag);
+  htmlTag.style.fontFamily = fonts[2];
   if(!headerTag)headerTag=document.getElementsByTagName('header');
   resized();
   if(!mainTag)  mainTag  =document.getElementsByTagName('main')[0];

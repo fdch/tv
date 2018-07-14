@@ -9,7 +9,7 @@
 
 function mainCV() {
   if(!htmlTag)   htmlTag   = document.getElementsByTagName('html')[0];
-  htmlTag.setAttribute('style', "font-family:"+fonts[2]+";");
+  htmlTag.style.fontFamily = fonts[2];
 
   if(!bodyTag)   bodyTag   = document.getElementsByTagName('body')[0];
   if(!headerTag) headerTag = document.getElementsByTagName('header');
