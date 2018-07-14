@@ -19,7 +19,7 @@ function display(x) {
       break;
     case "unwork":
       //extra stuff for the category selectbox
-      var formTag = element('form','','workFilters');
+      formTag = element('form','','workFilters');
       makeDropdowns('category', formTag, uniqueCategories, 1);
       //makeDropdowns('title', formTag, allTitles);
       headerTag[0].appendChild(formTag);
