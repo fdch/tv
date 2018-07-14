@@ -29,7 +29,7 @@ function main() {
   if(!navigaTag) {
     navigaTag = document.getElementById('navtag');
    // headerTag[0].appendChild(navigaTag);
-    navSelTag = makeDropdowns("navseltag", navigaTag, mitem, 'display(this.value)');
+    navSelTag = makeDropdowns("navseltag", navigaTag, mitem, 'display(this)');
     navSelTag.autofocus = true;
   }
 

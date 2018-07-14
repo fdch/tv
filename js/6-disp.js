@@ -1,4 +1,9 @@
 function display(x) {
+  if (typeof x == 'string' || x instanceof String) {
+    x = x;
+  } else {
+    x = x.value;
+  }
   currpage = mitem.findIndex(item => item === x);
 
   mainTag.style.background = backImg;
