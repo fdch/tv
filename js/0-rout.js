@@ -214,7 +214,9 @@ function getValue(x) {
         wid.style.display = "none";
       break;
     case "categories":
-      if( wid.classList.contains(valu || valu.replace(/W/g,'')) )
+      let clist = wid.classList;
+      console.log(clist);
+      if( clist.contains(valu || valu.replace(/W/g,'')) )
         wid.style.display = "initial";
       else
         wid.style.display = "none";
