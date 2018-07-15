@@ -213,7 +213,7 @@ function getValue(x) {
       else
         wid.style.display = "none";
       break;
-    case "categories":
+    case "category":
       let clist = wid.classList;
       console.log(clist);
       if( clist.contains(valu || valu.replace(/W/g,'')) )
