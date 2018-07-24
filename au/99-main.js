@@ -49,7 +49,7 @@ function main() {
 
 	aCtx = createAudioContext();
 
-	makeRig(aCtx,pdRandom(40,5),0);
+	makeRig(aCtx,pdRandom(20,5),0);
 	// anOsc[0].
 	var nexttime=10;
 	setInterval(function(){
