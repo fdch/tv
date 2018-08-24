@@ -213,6 +213,8 @@ function displayEvents(target,source) {
     var when = source[x]["aeWhen"];
     var wher = source[x]["aeWher"];
     var time = source[x]["aeTime"];
+    var eurl = source[x]["aeEURL"];
+    var iurl = source[x]["aeIURL"];
     //console.log(x + ": "+ titl + " "+ desc + " "+ when + " "+ wher + " "+ time);
 
     let sectTag = element('section','', x);
@@ -229,8 +231,13 @@ function displayEvents(target,source) {
     aaa.push(element("h3",titl));
     aaa.push(element("h4",wher));
     aaa.push(element("h5",when.toDateString()));
+    aaa.push(element("a",eurl));
     for (let j in aaa) headTag.appendChild(aaa[j]);
     
+
+    let imagen = img(iurl,articleWidth(maxWidth/3),titl);
+    artiTag.appendChild(imagen); 
+
     let descrip = element('blockquote',desc);
     artiTag.appendChild(descrip);
 

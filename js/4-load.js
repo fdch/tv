@@ -74,6 +74,8 @@ function loadAll(sheets, callback) {
       allEvents[neid]["aeWhen"] = new Date(e.gsx$when.$t);
       allEvents[neid]["aeWher"] = e.gsx$where.$t;
       allEvents[neid]["aeDesc"] = e.gsx$description.$t;
+      allEvents[neid]["aeIURL"] = e.gsx$imgurl.$t;
+      allEvents[neid]["aeEURL"] = e.gsx$eventurl.$t;
     }
   });
   //people
