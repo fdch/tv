@@ -52,10 +52,11 @@ var contactGif = raw+imgpath+"zissou.gif";
 var loadingUrl = raw+imgpath+"fdch.gif";
 
 var backImg = "url(\'"+loadingUrl+"\') center no-repeat;";
-var bioImage = "\
+//var bioImage = "\
 https://scontent-cdg2-1.xx.fbcdn.net/v/t1.0-9/\
 15032050_10211430901748916_6498585033629064846_n.jpg?\
 _nc_cat=0&oh=9e8629831420574084cff15ba1ec6d87&oe=5BACC900";
+var bioImage = raw + imgpath + "bio.jpg";
 
 var rotImgStyle= [
 	"float:left",
