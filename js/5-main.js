@@ -18,7 +18,7 @@ function main() {
   if(!bodyTag)  bodyTag  =document.getElementsByTagName('body')[0];
   bodyTag.setAttribute('onresize', 'resized()');
   if(!iframeTag){
-    iframeTag=makeBackVideo("bkvid",bodyTag,featURL[pdRandom(2)],backImg);
+    iframeTag=makeBackVideo("bkvid",bodyTag,featURL[featURL.length-1],backImg);
   }
   randomColor(color_preset["high"], [bodyTag, headerTag[0]] );
   setInterval( function(){ funImage(rotImg) }, t);
